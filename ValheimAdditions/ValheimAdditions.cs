@@ -1,20 +1,20 @@
-﻿// JotunnModStub
+﻿// ValheimAdditions
 // a Valheim mod skeleton using Jötunn
 // 
-// File:    JotunnModStub.cs
-// Project: JotunnModStub
+// File:    ValheimAdditions.cs
+// Project: ValheimAdditions
 
 using BepInEx;
 
-namespace JotunnModStub
+namespace ValheimAdditions
 {
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
     [BepInDependency(Jotunn.Main.ModGuid)]
     //[NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Minor)]
-    internal class JotunnModStub : BaseUnityPlugin
+    internal class ValheimAdditions : BaseUnityPlugin
     {
-        public const string PluginGUID = "com.jotunn.jotunnmodstub";
-        public const string PluginName = "JotunnModStub";
+        public const string PluginGUID = "com.jotunn.ValheimAdditions";
+        public const string PluginName = "ValheimAdditions";
         public const string PluginVersion = "0.0.1";
 
         private void Awake()
