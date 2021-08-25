@@ -98,9 +98,9 @@ namespace ValheimAdditions
         private void LoadAssets()
         {
             Jotunn.Logger.LogInfo($"Embedded resources: {string.Join(",", typeof(ValheimAdditions).Assembly.GetManifestResourceNames())}");
-            EmbeddedResourceBundle = AssetUtils.LoadAssetBundleFromResources("greenmetal_arrow", typeof(ValheimAdditions).Assembly);
+            EmbeddedResourceBundle = AssetUtils.LoadAssetBundleFromResources("valheimadditions", typeof(ValheimAdditions).Assembly);
             Jotunn.Logger.LogDebug("VA - Loaded: " + EmbeddedResourceBundle.GetAllAssetNames());
-            GreenMetalArrowPrefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/ValheimAdditions/GreenMetalArrow.prefab");
+            GreenMetalArrowPrefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/Custom/GreenMetal_Arrow.prefab");
 
             Jotunn.Logger.LogInfo("Valhiem Additions Assets - Loaded.");
         }
