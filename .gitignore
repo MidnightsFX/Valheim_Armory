@@ -373,3 +373,6 @@ Environment.props
 
 # not the generated dll for thunderstore
 */Package/plugins/*
+
+# not the asset files from unity
+ValheimAdditionsUnity/Assets
