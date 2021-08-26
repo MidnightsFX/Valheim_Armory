@@ -36,28 +36,11 @@ namespace ValheimAdditions
 
             LoadAssets();
             AddMockedItems();
-            //LoadRecipes();
-            
+            AddLocalizations();
+            // should unload assets once we have them linked in, originals not needed
+
             // To learn more about Jotunn's features, go to
             // https://valheim-modding.github.io/Jotunn/tutorials/overview.html
-        }
-
-        private static void RecipeGreenMetalArrow()
-        {
-            // Create a custom recipe with a RecipeConfig
-            CustomRecipe greenMetalArrow = new CustomRecipe(new RecipeConfig()
-            {
-                Item = "greenmetal_arrow",                    // Name of the item prefab to be crafted
-                Requirements = new RequirementConfig[]  // Resources and amount needed for it to be crafted
-                {
-                    new RequirementConfig { Item = "Feather", Amount = 3 },
-                    new RequirementConfig { Item = "Wood", Amount = 4 },
-                    new RequirementConfig { Item = "BlackMetal", Amount = 3 }
-                },
-                Amount = 20,  // Amount provided from recipe
-
-            });
-            ItemManager.Instance.AddRecipe(greenMetalArrow);
         }
 
         private void AddMockedItems()
@@ -70,39 +53,41 @@ namespace ValheimAdditions
                 ItemManager.Instance.AddItem(CI);
 
                 Recipe recipe = ScriptableObject.CreateInstance<Recipe>();
-                recipe.name = "Recipe_CapeIronBackpack";
+                recipe.name = "Recipe_GreenMetal_Arrow";
                 recipe.m_item = GreenMetalArrowPrefab.GetComponent<ItemDrop>();
-                recipe.m_craftingStation = Mock<CraftingStation>.Create("piece_workbench");
+                recipe.m_craftingStation = Mock<CraftingStation>.Create("forge");
                 recipe.m_amount = 20;
                 var ingredients = new List<Piece.Requirement>
                 {
-                    MockRequirement.Create("Feather", 6),
+                    MockRequirement.Create("Feathers", 6),
                     MockRequirement.Create("Wood", 4),
-                    MockRequirement.Create("BlackMetal", 3),
+                    MockRequirement.Create("BlackMetal", 2),
                 };
                 recipe.m_resources = ingredients.ToArray();
                 CustomRecipe CR = new CustomRecipe(recipe, true, true);
                 ItemManager.Instance.AddRecipe(CR);
 
-                Jotunn.Logger.LogDebug("VA - GreenMetalArrow Item & Recipe Loaded.");
+                Jotunn.Logger.LogInfo("VA - GreenMetalArrow Item & Recipe Loaded.");
             }
+
         }
 
-            private void LoadRecipes()
+        private void AddLocalizations()
         {
-            RecipeGreenMetalArrow();
-
-            Jotunn.Logger.LogInfo("Valhiem Additions Recipes - Loaded.");
+            LocalizationManager.Instance.AddLocalization(new LocalizationConfig("English")
+            {
+                Translations = {
+                    {"item_arrow_greenmetal", "Blackmetal arrow"}, {"item_arrow_greenmetal_description", "A piercing darkness, may your aim be true."},
+                }
+            });
         }
 
         private void LoadAssets()
         {
             Jotunn.Logger.LogInfo($"Embedded resources: {string.Join(",", typeof(ValheimAdditions).Assembly.GetManifestResourceNames())}");
-            EmbeddedResourceBundle = AssetUtils.LoadAssetBundleFromResources("valheimadditions", typeof(ValheimAdditions).Assembly);
-            Jotunn.Logger.LogDebug("VA - Loaded: " + EmbeddedResourceBundle.GetAllAssetNames());
-            GreenMetalArrowPrefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/Custom/GreenMetal_Arrow.prefab");
-
-            Jotunn.Logger.LogInfo("Valhiem Additions Assets - Loaded.");
+            EmbeddedResourceBundle = AssetUtils.LoadAssetBundleFromResources("vabundle", typeof(ValheimAdditions).Assembly);
+            GreenMetalArrowPrefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/Custom/GreenMetalArrow.prefab");
+            Jotunn.Logger.LogInfo($"VA - Loaded: {EmbeddedResourceBundle.GetAllAssetNames()}");
         }
 
         private void FejdStartup_Awake(On.FejdStartup.orig_Awake orig, FejdStartup self)

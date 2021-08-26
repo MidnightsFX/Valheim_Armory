@@ -376,3 +376,6 @@ Environment.props
 
 # not the asset files from unity
 ValheimAdditionsUnity/Assets
+
+# Releases are not stored in git
+ValheimAdditions/Releases

@@ -1,14 +1,15 @@
 ﻿# ValheimAdditions
-Upon building for release, this README.md is copied into the `Package` folder for thunderstore packaging. Remember to also edit the manifest.json and supply your own mod icon.
+
+Valheim Additions is a small mod designed to add some missing pieces to help fill gaps in the Valheim ecosystem.
 
 ## Installation (manual)
-
+Toss the ValheimAdditions folder and files into your plugins folder.
 
 ## Features
-
+* Adds a blackmetal arrow!
 
 ## Changelog
+0.0.1 - Added blackmetal arrow, minimal asset modification.
 
-
-## Known issues
-You can find the github at:
+## Issues
+Please report any issues you encounter on the [github issue tracker](https://github.com/MidnightsFX/Valheim_Additions/issues)

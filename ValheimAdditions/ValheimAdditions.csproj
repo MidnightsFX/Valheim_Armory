@@ -86,7 +86,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <EmbeddedResource Include="AssetsEmbedded\greenmetal_arrow" />
+    <None Include="AssetsEmbedded\greenmetal_arrow" />
+    <EmbeddedResource Include="AssetsEmbedded\vabundle" />
+    <None Include="AssetsEmbedded\valheimadditions" />
+    <None Include="AssetsEmbedded\valheimadditions.manifest" />
+    <None Include="AssetsEmbedded\greenmetal_arrow.manifest" />
+    <None Include="AssetsEmbedded\va_assets" />
     <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>
