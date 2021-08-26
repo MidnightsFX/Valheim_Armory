@@ -9,6 +9,7 @@ Toss the ValheimAdditions folder and files into your plugins folder.
 * Adds a blackmetal arrow!
 
 ## Changelog
+0.0.2 - Fixed shader not set for dust particles during arrow shots.
 0.0.1 - Added blackmetal arrow, minimal asset modification.
 
 ## Issues
