@@ -1,5 +1,6 @@
 ﻿# ValheimAdditions
-Valheim Additions is a small mod designed to add some missing pieces to help fill gaps in the Valheim ecosystem. Hopefully this mod helps fill that gaps for others too. 
+Valheim Additions is a small mod designed to add some missing pieces to help fill gaps in the Valheim ecosystem. Hopefully this helps fill some gaps for others. 
+These were things that I felt were missing from the game, 
 
 This mod is balanced to be mostly lore friendly.
 
@@ -10,7 +11,7 @@ Disclaimer:
 
 
 ## Installation (manual)
-Toss the ValheimAdditions folder and files into your plugins folder. Technically the only thing required is the ValheimAdditions.ddl, configs will generate on first run.
+Toss the ValheimAdditions folder and files into your plugins folder.
 
 ## Whats included
 
@@ -42,7 +43,7 @@ Config options for enabling/disabling all added items
 
 0.3.6
  - Added Serpent scale shield
- - Updated Jotunn to 2.10
+ - Updated Jotunn 2.10
 
 0.2.6
  - Added server sided configuration to enable items/recipes
@@ -69,5 +70,5 @@ Config options for enabling/disabling all added items
 Please report any issues you encounter on the [github issue tracker](https://github.com/MidnightsFX/Valheim_Additions/issues)
 
 ## Credits
-* [Hammer](https://assetstore.unity.com/packages/3d/props/weapons/free-rpg-weapons-199738)
-* [Sword Model](https://assetstore.unity.com/packages/3d/props/weapons/free-low-poly-swords-rpg-weapons-198166)
+Hammer - https://assetstore.unity.com/packages/3d/props/weapons/free-rpg-weapons-199738
+Sword - https://assetstore.unity.com/packages/3d/props/weapons/free-low-poly-swords-rpg-weapons-198166
