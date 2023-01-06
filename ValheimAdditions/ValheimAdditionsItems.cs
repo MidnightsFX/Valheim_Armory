@@ -17,10 +17,12 @@ namespace ValheimAdditions
             AddBoneArrowItem(EmbeddedResourceBundle, cfg);
             AddSurtlingFireArrowItem(EmbeddedResourceBundle, cfg);
             AddAncientWoodArrowItem(EmbeddedResourceBundle, cfg);
+            AddChitinArrowItem(EmbeddedResourceBundle, cfg);
             AddWoodBoltItem(EmbeddedResourceBundle, cfg);
             AddBronzeCrossbowItem(EmbeddedResourceBundle, cfg);
             AddAbyssalSwordItem(EmbeddedResourceBundle, cfg);
             AddSerpentBucklerItem(EmbeddedResourceBundle, cfg);
+            AddHeavyChitinAtgeirItem(EmbeddedResourceBundle, cfg);
 
             // Not added
             // AddThunderHammerItem(EmbeddedResourceBundle, cfg);
@@ -123,9 +125,10 @@ namespace ValheimAdditions
             }
         }
 
+        // Surtling Fire Arrow
         private void AddSurtlingFireArrowItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
-            // Surtling Fire Arrow
+            
             if (cfg.SurtlingFireArrowConfigEnabled.Value == false)
                 Logger.LogWarning("Surtling Fire Arrow not loaded.");
             else
@@ -159,7 +162,6 @@ namespace ValheimAdditions
         // Ancient Wood Arrow Enablement, recipe and applied configuration
         private void AddAncientWoodArrowItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
-            // Bone Arrow
             if (cfg.AncientWoodArrowConfigEnabled.Value == false)
                 Logger.LogWarning("Ancient Wood Arrow not loaded.");
             else
@@ -187,10 +189,41 @@ namespace ValheimAdditions
             }
         }
 
+        // Chitin Arrow Enablement, recipe and applied configuration
+        private void AddChitinArrowItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
+        {
+            if (cfg.ChitinArrowConfigEnabled.Value == false)
+                Logger.LogWarning("Chitin Arrow not loaded.");
+            else
+            {
+                GameObject prefab = EmbeddedResourceBundle.LoadAsset<GameObject>("assets/custom/chitinarrow.prefab");
+                Sprite sprite = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/arrow_chitin.png");
+
+                // Modify any configurable values before adding the object
+                var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
+                item.m_shared.m_damages.m_pierce = cfg.ChitinArrowPierceDamage.Value;
+                item.m_shared.m_damages.m_slash = cfg.ChitinArrowSlashDamage.Value;
+
+                // Add recipe
+                AddRecipeForAsset(
+                    "VAChitin_Arrow",
+                    prefab,
+                    new[] { sprite },
+                    new[]
+                    {
+                        new RequirementConfig { Item = "Feathers", Amount = 1 },
+                        new RequirementConfig { Item = "Wood", Amount = 8 },
+                        new RequirementConfig { Item = "Chitin", Amount = 3 },
+                    },
+                    "piece_workbench",
+                    20
+                 );
+            }
+        }
+
         // Wood Bolt Enablement, recipe and applied configuration
         private void AddWoodBoltItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
-            // Bone Arrow
             if (cfg.WoodBoltConfigEnabled.Value == false)
                 Logger.LogWarning("Wood Bolt not loaded.");
             else
@@ -220,7 +253,6 @@ namespace ValheimAdditions
         // Bronze Crossbow Enablement, recipe and applied configuration
         private void AddBronzeCrossbowItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
-            // Bone Arrow
             if (cfg.BronzeCrossbowConfigEnabled.Value == false)
                 Logger.LogWarning("Bronze Crossbow not loaded.");
             else
@@ -250,9 +282,10 @@ namespace ValheimAdditions
             }
         }
 
+        // Abyssal Sword
         private void AddAbyssalSwordItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
-            // Abyssal Sword
+            
             if (cfg.AbyssalSwordConfigEnabled.Value == false)
                 Logger.LogWarning("Abyssal Sword not loaded.");
             else
@@ -275,6 +308,41 @@ namespace ValheimAdditions
                         new RequirementConfig { Item = "LeatherScraps", Amount = 3, AmountPerLevel = 2 },
                         new RequirementConfig { Item = "Bronze", Amount = 1, AmountPerLevel = 1 },
                         new RequirementConfig { Item = "Chitin", Amount = 8, AmountPerLevel = 4 },
+                    },
+                    "forge",
+                    1
+                 );
+            }
+        }
+
+        // Royal Abyssal Atgeir
+        private void AddHeavyChitinAtgeirItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
+        {
+            
+            if (cfg.RoyalAbyssalAtgeirConfigEnabled.Value == false)
+                Logger.LogWarning("Royal Abyssal Atgeir not loaded.");
+            else
+            {
+                GameObject prefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/Custom/atgeirchitin.prefab");
+                Sprite icon = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/chitin_heavy_atgeir_small.png");
+
+                // Modify any configurable values before adding the object
+                var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
+                item.m_shared.m_damages.m_pierce = cfg.RoyalAbyssalAtgeirPierceDamage.Value;
+                item.m_shared.m_damages.m_slash = cfg.RoyalAbyssalAtgeirSlashDamage.Value;
+                item.m_shared.m_damages.m_spirit = cfg.RoyalAbyssalAtgeirSpiritDamage.Value;
+
+                // Add recipe & item
+                AddRecipeForAsset(
+                    "VARoyal_Atgeir",
+                    prefab,
+                    new[] { icon },
+                    new[]
+                    {
+                        new RequirementConfig { Item = "FineWood", Amount = 4, AmountPerLevel = 2 },
+                        new RequirementConfig { Item = "Silver", Amount = 4, AmountPerLevel = 2 },
+                        new RequirementConfig { Item = "Chitin", Amount = 8, AmountPerLevel = 4 },
+                        new RequirementConfig { Item = "JuteRed", Amount = 6, AmountPerLevel = 4 },
                     },
                     "forge",
                     1

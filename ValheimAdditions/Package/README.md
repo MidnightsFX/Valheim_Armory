@@ -14,16 +14,18 @@ Toss the ValheimAdditions folder and files into your plugins folder. Technically
 
 ## Whats included
 
-<a href="https://imgur.com/UxDoiNH"><img src="https://i.imgur.com/UxDoiNH.png" title="VA gallery source: imgur.com" /></a>
+<a href="https://imgur.com/XUrhrP5"><img src="https://i.imgur.com/XUrhrP5.png" title="VA gallery source: imgur.com" /></a>
 
 * Blackmetal arrow (Requires Forge)
 * Surtling Core Arrow (Requires Workbench)
 * Bone arrow (Requires Workbench)
 * Ancientwood Arrow (Requires Workbench)
+* Chitin Arrow (Requires Workbench)
 * Wood Bolt (Requires Artisan table)
 * Bronze Crossbow (Requires Artisan table)
 * Chitin Sword (Requires Forge)
 * Serpent Scale Buckler (Requires Forge)
+* Royal Abyssal Atgeir (Requires Forge)
 
 ### Features
 
@@ -35,10 +37,17 @@ Config options for enabling/disabling and tuning of all added items
 
 ## Future Plans
 * Wood level atgier
-* chitin atgier
+* Chitin Shield
 
 
 ## Changelog
+0.5.10
+- Added Royal Abyssal Atgeir
+- Added Chitin Arrow
+
+0.4.10
+- More shader fixes
+
 0.4.9
 - Added Bronze Crossbow
 - Added Wood Bolt
@@ -85,5 +94,4 @@ Config options for enabling/disabling and tuning of all added items
 Please report any issues you encounter on the [github issue tracker](https://github.com/MidnightsFX/Valheim_Additions/issues)
 
 ## Credits
-* [Hammer](https://assetstore.unity.com/packages/3d/props/weapons/free-rpg-weapons-199738)
 * [Sword Model](https://assetstore.unity.com/packages/3d/props/weapons/free-low-poly-swords-rpg-weapons-198166)

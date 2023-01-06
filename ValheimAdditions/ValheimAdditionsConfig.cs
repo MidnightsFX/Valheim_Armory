@@ -31,6 +31,11 @@ namespace ValheimAdditions
         public ConfigEntry<bool> AncientWoodArrowConfigEnabled;
         public ConfigEntry<int> AncientWoodArrowPierceDamage;
 
+        //Config for ChitinArrow
+        public ConfigEntry<bool> ChitinArrowConfigEnabled;
+        public ConfigEntry<int> ChitinArrowSlashDamage;
+        public ConfigEntry<int> ChitinArrowPierceDamage;
+
         // Config for WoodBolt
         public ConfigEntry<bool> WoodBoltConfigEnabled;
         public ConfigEntry<int> WoodBoltPierceDamage;
@@ -47,6 +52,12 @@ namespace ValheimAdditions
         public ConfigEntry<bool> AbyssalSwordConfigEnabled;
         public ConfigEntry<int> AbyssalSwordBluntDamage;
         public ConfigEntry<int> AbyssalSwordSlashDamage;
+
+        // Config for RoyalAbyssalAtgeir
+        public ConfigEntry<bool> RoyalAbyssalAtgeirConfigEnabled;
+        public ConfigEntry<int> RoyalAbyssalAtgeirPierceDamage;
+        public ConfigEntry<int> RoyalAbyssalAtgeirSlashDamage;
+        public ConfigEntry<int> RoyalAbyssalAtgeirSpiritDamage;
 
         public ConfigEntry<bool> EnableDebugMode;
 
@@ -65,10 +76,12 @@ namespace ValheimAdditions
             CreateSurtlingFireArrowConfig(Config);
             CreateBoneArrowConfig(Config);
             CreateAncientWoodArrowConfig(Config);
+            CreateChitinArrowConfig(Config);
             CreateWoodBoltConfig(Config);
             CreateBronzeCrossbowConfig(Config);
             CreateSerpentBucklerConfig(Config);
             CreateAbyssalSwordConfig(Config);
+            CreateRoyalAbyssalAtgeirConfig(Config);
 
             // Debugmode
             CreateDebugConfig(Config);
@@ -98,7 +111,7 @@ namespace ValheimAdditions
             SurtlingFireArrowFireDamage = Config.Bind("Server config", "SurtlingFireArrowFireDamage", 45,
                 new ConfigDescription("Fire Damage value, whole number.", null,
                 new ConfigurationManagerAttributes { IsAdminOnly = true }));
-            SurtlingFireArrowPierceDamage = Config.Bind("Server config", "SurtlingFireArrowPierceDamage", 15,
+            SurtlingFireArrowPierceDamage = Config.Bind("Server config", "SurtlingFireArrowPierceDamage", 35,
                 new ConfigDescription("Pierce Damage value, whole number.", null,
                 new ConfigurationManagerAttributes { IsAdminOnly = true }));
         }
@@ -122,6 +135,20 @@ namespace ValheimAdditions
                 new ConfigurationManagerAttributes { IsAdminOnly = true }));
             AncientWoodArrowPierceDamage = Config.Bind("Server config", "AncientWoodArrowPierceDamage", 48,
                 new ConfigDescription("Pierce Damage value, whole number.", null,
+                new ConfigurationManagerAttributes { IsAdminOnly = true }));
+        }
+
+        // Configuration values for ChitinArrow
+        private void CreateChitinArrowConfig(ConfigFile Config)
+        {
+            ChitinArrowConfigEnabled = Config.Bind("Server config", "ChitinArrowConfigEnabled", true,
+                new ConfigDescription("Enable the Chitin Arrow (ALL configs require mod-reload to take effect).", null,
+                new ConfigurationManagerAttributes { IsAdminOnly = true }));
+            ChitinArrowPierceDamage = Config.Bind("Server config", "ChitinArrowPierceDamage", 32,
+                new ConfigDescription("Pierce Damage value, whole number.", null,
+                new ConfigurationManagerAttributes { IsAdminOnly = true }));
+            ChitinArrowSlashDamage = Config.Bind("Server config", "ChitinArrowSlashDamage", 22,
+                new ConfigDescription("Slash Damage value, whole number.", null,
                 new ConfigurationManagerAttributes { IsAdminOnly = true }));
         }
 
@@ -169,6 +196,23 @@ namespace ValheimAdditions
                 new ConfigurationManagerAttributes { IsAdminOnly = true }));
             AbyssalSwordSlashDamage = Config.Bind("Server config", "AbyssalSwordSlashDamage", 35,
                 new ConfigDescription("Slash Damage value, whole number.", null,
+                new ConfigurationManagerAttributes { IsAdminOnly = true }));
+        }
+
+        // Configuration values for RoyalAbyssalAtgeir
+        private void CreateRoyalAbyssalAtgeirConfig(ConfigFile Config)
+        {
+            RoyalAbyssalAtgeirConfigEnabled = Config.Bind("Server config", "EnableRoyalAbyssalAtgeir", true,
+                new ConfigDescription("Enable the Royal Abyssal Atgeir (chitin atgeir) (ALL configs require mod-reload to take effect).", null,
+                new ConfigurationManagerAttributes { IsAdminOnly = true }));
+            RoyalAbyssalAtgeirPierceDamage = Config.Bind("Server config", "RoyalAbyssalAtgeirPierceDamage", 65,
+                new ConfigDescription("Pierce Damage value, whole number.", null,
+                new ConfigurationManagerAttributes { IsAdminOnly = true }));
+            RoyalAbyssalAtgeirSlashDamage = Config.Bind("Server config", "RoyalAbyssalAtgeirSlashDamage", 35,
+                new ConfigDescription("Slash Damage value, whole number.", null,
+                new ConfigurationManagerAttributes { IsAdminOnly = true }));
+            RoyalAbyssalAtgeirSpiritDamage = Config.Bind("Server config", "RoyalAbyssalAtgeirSpiritDamage", 25,
+                new ConfigDescription("Spirit Damage value, whole number.", null,
                 new ConfigurationManagerAttributes { IsAdminOnly = true }));
         }
 

@@ -1,7 +1,7 @@
 ﻿{
   "name": "ValheimAdditions",
   "description": "Valheim Additions is a small mod designed to add some missing pieces to help fill gaps in the Valheim ecosystem.",
-  "version_number": "0.4.9",
+  "version_number": "0.5.10",
   "website_url": "https://github.com/MidnightsFX/Valheim_Additions",
   "dependencies": [
     "denikson-BepInExPack_Valheim-5.4.1901",
