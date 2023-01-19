@@ -13,6 +13,11 @@ namespace ValheimAdditions
         // constructor, add all items on init
         public ValheimAdditionsItems(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
+            if (cfg.EnableDebugMode.Value == true)
+            {
+                Logger.LogInfo("Loading Items.");
+            }
+
             AddGreenMetalArrowItem(EmbeddedResourceBundle, cfg);
             AddBoneArrowItem(EmbeddedResourceBundle, cfg);
             AddSurtlingFireArrowItem(EmbeddedResourceBundle, cfg);
@@ -23,6 +28,8 @@ namespace ValheimAdditions
             AddAbyssalSwordItem(EmbeddedResourceBundle, cfg);
             AddSerpentBucklerItem(EmbeddedResourceBundle, cfg);
             AddHeavyChitinAtgeirItem(EmbeddedResourceBundle, cfg);
+            AddAntlerAtgeirItem(EmbeddedResourceBundle, cfg);
+            AddBlackmetalSledgeItem(EmbeddedResourceBundle, cfg);
 
             // Not added
             // AddThunderHammerItem(EmbeddedResourceBundle, cfg);
@@ -61,27 +68,59 @@ namespace ValheimAdditions
             }
         }
 
+        // Helper to load prefabs, safety checks
+        private GameObject LoadPrefab(AssetBundle bundle, string to_load)
+        {
+            GameObject prefab = null;
+            try
+            {
+                prefab = bundle.LoadAsset<GameObject>(to_load);
+            } catch (Exception ex)
+            {
+                Logger.LogError($"Error while loading Prefab: {to_load}: {ex.Message}");
+            }
+            return prefab;
+
+        }
+
+        // Helper to load sprites, safety checks
+        private Sprite LoadSprite(AssetBundle bundle, string to_load)
+        {
+            to_load = to_load.ToLower();
+            Sprite sprite = null;
+            try
+            {
+                sprite = bundle.LoadAsset<Sprite>(to_load);
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError($"Error while loading Sprite: {to_load}: {ex.Message}");
+            }
+            return sprite;
+
+        }
+
         // GreenMetal Arrow Enablement, recipe and applied configuration
         private void AddGreenMetalArrowItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
             // GreenMetal Arrow
-            if (cfg.GreenMetalArrowConfigEnabled.Value == false)
-                Logger.LogWarning("GreenMetal Arrow not loaded.");
-            else
-            {
-                GameObject greenMetalArrowPrefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/Custom/ArrowGreenMetal.prefab");
-                Sprite greenMetalArrowSprite = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/arrow_greenmetal.png");
+            if (cfg.GreenMetalArrowConfigEnabled.Value == false) {
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("GreenMetal Arrow not loaded."); }
+            } else {
+                Logger.LogInfo("GreenMetal Arrow Loading assets.");
+                GameObject prefab = LoadPrefab(EmbeddedResourceBundle, "Assets/Custom/ArrowGreenMetal.prefab");
+                Sprite sprite = LoadSprite(EmbeddedResourceBundle, "Assets/Custom/Icons/arrow_greenmetal.png");
 
                 // Modify any configurable values before adding the object
-                var item = greenMetalArrowPrefab.GetComponent<ItemDrop>()?.m_itemData;
+                var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
                 item.m_shared.m_damages.m_blunt = cfg.GreenMetalArrowBluntDamage.Value;
                 item.m_shared.m_damages.m_pierce = cfg.GreenMetalArrowPierceDamage.Value;
 
                 // Add the recipe with helper
                 AddRecipeForAsset(
-                    "GreenMetal_Arrow",
-                    greenMetalArrowPrefab,
-                    new[] { greenMetalArrowSprite },
+                    "VAGreenMetal_Arrow",
+                    prefab,
+                    new[] { sprite },
                     new[]
                     {
                         new RequirementConfig { Item = "Feathers", Amount = 1 },
@@ -98,22 +137,21 @@ namespace ValheimAdditions
         private void AddBoneArrowItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
             // Bone Arrow
-            if (cfg.BoneArrowConfigEnabled.Value == false)
-                Logger.LogWarning("Bone Arrow not loaded.");
-            else
-            {
-                GameObject boneArrowPrefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/Custom/ArrowBone.prefab");
-                Sprite boneArrowSprite = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/bone_arrow.png");
+            if (cfg.BoneArrowConfigEnabled.Value == false) { 
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("Bone Arrow not loaded."); }
+            } else {
+                GameObject prefab = LoadPrefab(EmbeddedResourceBundle, "Assets/Custom/ArrowBone.prefab");
+                Sprite sprite = LoadSprite(EmbeddedResourceBundle, "Assets/Custom/Icons/bone_arrow.png");
 
                 // Modify any configurable values before adding the object
-                var item = boneArrowPrefab.GetComponent<ItemDrop>()?.m_itemData;
+                var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
                 item.m_shared.m_damages.m_pierce = cfg.BoneArrowPierceDamage.Value;
 
                 // Add recipe
                 AddRecipeForAsset(
-                    "Bone_Arrow",
-                    boneArrowPrefab,
-                    new[] { boneArrowSprite },
+                    "VABone_Arrow",
+                    prefab,
+                    new[] { sprite },
                     new[]
                     {
                         new RequirementConfig { Item = "Feathers", Amount = 1 },
@@ -128,24 +166,22 @@ namespace ValheimAdditions
         // Surtling Fire Arrow
         private void AddSurtlingFireArrowItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
-            
-            if (cfg.SurtlingFireArrowConfigEnabled.Value == false)
-                Logger.LogWarning("Surtling Fire Arrow not loaded.");
-            else
-            {
-                GameObject surtlingArrowPrefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/Custom/ArrowSurtlingFire.prefab");
-                Sprite surtlingArrowSprite = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/surtlingCore_Arrow.png");
+            if (cfg.SurtlingFireArrowConfigEnabled.Value == false) {
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("Surtling Fire Arrow not loaded."); }
+            } else {
+                GameObject prefab = LoadPrefab(EmbeddedResourceBundle, "assets/custom/arrow_surtling_fire.prefab");
+                Sprite sprite = LoadSprite(EmbeddedResourceBundle, "assets/custom/icons/surtlingcore_arrow.png");
 
                 // Modify any configurable values before adding the object
-                var item = surtlingArrowPrefab.GetComponent<ItemDrop>()?.m_itemData;
+                var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
                 item.m_shared.m_damages.m_pierce = cfg.SurtlingFireArrowPierceDamage.Value;
                 item.m_shared.m_damages.m_fire = cfg.SurtlingFireArrowFireDamage.Value;
 
                 // Add recipe
                 AddRecipeForAsset(
-                    "SurtlingCore_Arrow",
-                    surtlingArrowPrefab,
-                    new[] { surtlingArrowSprite },
+                    "VASurtlingCore_Arrow",
+                    prefab,
+                    new[] { sprite },
                     new[]
                     {
                         new RequirementConfig { Item = "Feathers", Amount = 2 },
@@ -162,12 +198,11 @@ namespace ValheimAdditions
         // Ancient Wood Arrow Enablement, recipe and applied configuration
         private void AddAncientWoodArrowItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
-            if (cfg.AncientWoodArrowConfigEnabled.Value == false)
-                Logger.LogWarning("Ancient Wood Arrow not loaded.");
-            else
-            {
-                GameObject prefab = EmbeddedResourceBundle.LoadAsset<GameObject>("assets/custom/arrowancient.prefab");
-                Sprite sprite = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/ancient_arrow.png");
+            if (cfg.AncientWoodArrowConfigEnabled.Value == false) {
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("Ancient Wood Arrow not loaded."); }
+            } else {
+                GameObject prefab = LoadPrefab(EmbeddedResourceBundle, "assets/custom/arrowancient.prefab");
+                Sprite sprite = LoadSprite(EmbeddedResourceBundle, "Assets/Custom/Icons/ancient_arrow.png");
 
                 // Modify any configurable values before adding the object
                 var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
@@ -175,7 +210,7 @@ namespace ValheimAdditions
 
                 // Add recipe
                 AddRecipeForAsset(
-                    "Ancient_Arrow",
+                    "VAAncient_Arrow",
                     prefab,
                     new[] { sprite },
                     new[]
@@ -192,12 +227,11 @@ namespace ValheimAdditions
         // Chitin Arrow Enablement, recipe and applied configuration
         private void AddChitinArrowItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
-            if (cfg.ChitinArrowConfigEnabled.Value == false)
-                Logger.LogWarning("Chitin Arrow not loaded.");
-            else
-            {
-                GameObject prefab = EmbeddedResourceBundle.LoadAsset<GameObject>("assets/custom/chitinarrow.prefab");
-                Sprite sprite = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/arrow_chitin.png");
+            if (cfg.ChitinArrowConfigEnabled.Value == false) {
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("Chitin Arrow not loaded."); }
+            } else {
+                GameObject prefab = LoadPrefab(EmbeddedResourceBundle, "assets/custom/chitinarrow.prefab");
+                Sprite sprite = LoadSprite(EmbeddedResourceBundle, "Assets/Custom/Icons/arrow_chitin.png");
 
                 // Modify any configurable values before adding the object
                 var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
@@ -224,12 +258,11 @@ namespace ValheimAdditions
         // Wood Bolt Enablement, recipe and applied configuration
         private void AddWoodBoltItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
-            if (cfg.WoodBoltConfigEnabled.Value == false)
-                Logger.LogWarning("Wood Bolt not loaded.");
-            else
-            {
-                GameObject prefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/Custom/BoltWood.prefab");
-                Sprite sprite = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/bolt_wood.png");
+            if (cfg.WoodBoltConfigEnabled.Value == false) {
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("Wood Bolt not loaded."); }
+            } else {
+                GameObject prefab = LoadPrefab(EmbeddedResourceBundle, "Assets/Custom/BoltWood.prefab");
+                Sprite sprite = LoadSprite(EmbeddedResourceBundle, "Assets/Custom/Icons/bolt_wood.png");
 
                 // Modify any configurable values before adding the object
                 var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
@@ -237,7 +270,7 @@ namespace ValheimAdditions
 
                 // Add recipe
                 AddRecipeForAsset(
-                    "Wood_Bolt",
+                    "VAWood_Bolt",
                     prefab,
                     new[] { sprite },
                     new[]
@@ -253,12 +286,11 @@ namespace ValheimAdditions
         // Bronze Crossbow Enablement, recipe and applied configuration
         private void AddBronzeCrossbowItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
-            if (cfg.BronzeCrossbowConfigEnabled.Value == false)
-                Logger.LogWarning("Bronze Crossbow not loaded.");
-            else
-            {
-                GameObject prefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/Custom/CrossbowBronze.prefab");
-                Sprite sprite = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/bronze_crossbow.png");
+            if (cfg.BronzeCrossbowConfigEnabled.Value == false) {
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("Bronze Crossbow not loaded."); }
+            } else {
+                GameObject prefab = LoadPrefab(EmbeddedResourceBundle, "Assets/Custom/CrossbowBronze.prefab");
+                Sprite sprite = LoadSprite(EmbeddedResourceBundle, "Assets/Custom/Icons/bronze_crossbow.png");
 
                 // Modify any configurable values before adding the object
                 var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
@@ -266,7 +298,7 @@ namespace ValheimAdditions
 
                 // Add recipe
                 AddRecipeForAsset(
-                    "Bronze_Crossbow",
+                    "VABronze_Crossbow",
                     prefab,
                     new[] { sprite },
                     new[]
@@ -286,23 +318,22 @@ namespace ValheimAdditions
         private void AddAbyssalSwordItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
             
-            if (cfg.AbyssalSwordConfigEnabled.Value == false)
-                Logger.LogWarning("Abyssal Sword not loaded.");
-            else
-            {
-                GameObject chitinSwordPrefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/Custom/SwordChitin.prefab");
-                Sprite chitinSwordSprite = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/chitin_sword.png");
+            if (cfg.AbyssalSwordConfigEnabled.Value == false) {
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("Abyssal Sword not loaded."); }
+            } else {
+                GameObject prefab = LoadPrefab(EmbeddedResourceBundle, "Assets/Custom/SwordChitin.prefab");
+                Sprite sprite = LoadSprite(EmbeddedResourceBundle, "Assets/Custom/Icons/chitin_sword.png");
 
                 // Modify any configurable values before adding the object
-                var item = chitinSwordPrefab.GetComponent<ItemDrop>()?.m_itemData;
+                var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
                 item.m_shared.m_damages.m_blunt = cfg.AbyssalSwordBluntDamage.Value;
                 item.m_shared.m_damages.m_slash = cfg.AbyssalSwordSlashDamage.Value;
 
                 // Add recipe & item
                 AddRecipeForAsset(
-                    "Chitin_sword",
-                    chitinSwordPrefab,
-                    new[] { chitinSwordSprite },
+                    "VAChitin_sword",
+                    prefab,
+                    new[] { sprite },
                     new[]
                     {
                         new RequirementConfig { Item = "LeatherScraps", Amount = 3, AmountPerLevel = 2 },
@@ -319,10 +350,9 @@ namespace ValheimAdditions
         private void AddHeavyChitinAtgeirItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
             
-            if (cfg.RoyalAbyssalAtgeirConfigEnabled.Value == false)
-                Logger.LogWarning("Royal Abyssal Atgeir not loaded.");
-            else
-            {
+            if (cfg.RoyalAbyssalAtgeirConfigEnabled.Value == false) { 
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("Royal Abyssal Atgeir not loaded."); }
+            } else {
                 GameObject prefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/Custom/atgeirchitin.prefab");
                 Sprite icon = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/chitin_heavy_atgeir_small.png");
 
@@ -350,25 +380,87 @@ namespace ValheimAdditions
             }
         }
 
+        private void AddAntlerAtgeirItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
+        {
+            if (cfg.AntlerAtgeirConfigEnabled.Value == false) {
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("Antler Atgeir not loaded."); }
+            } else {
+                GameObject prefab = LoadPrefab(EmbeddedResourceBundle, $"Assets/Custom/atgeir_antler{cfg.AntlerAtgeirModel.Value}.prefab");
+                Sprite sprite = LoadSprite(EmbeddedResourceBundle, $"Assets/Custom/Icons/antler_atgeir{cfg.AntlerAtgeirModel.Value}_large.png");
+
+                // Modify any configurable values before adding the object
+                var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
+                item.m_shared.m_damages.m_pierce = cfg.AntlerAtgeirPierceDamage.Value;
+
+                // Add recipe & item
+                AddRecipeForAsset(
+                    "VAAntler_atgeir",
+                    prefab,
+                    new[] { sprite },
+                    new[]
+                    {
+                        new RequirementConfig { Item = "Wood", Amount = 8, AmountPerLevel = 6 },
+                        new RequirementConfig { Item = "HardAntler", Amount = 3, AmountPerLevel = 2 },
+                        new RequirementConfig { Item = "Resin", Amount = 4, AmountPerLevel = 2 },
+                    },
+                    "piece_workbench",
+                    1
+                 );
+            }
+        }
+
+        private void AddBlackmetalSledgeItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
+        {
+            if (cfg.AntlerAtgeirConfigEnabled.Value == false)
+            {
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("Blackmetal Sledge not loaded."); }
+            }
+            else
+            {
+                GameObject prefab = LoadPrefab(EmbeddedResourceBundle, $"Assets/Custom/blackmetal_sledge.prefab");
+                Sprite sprite = LoadSprite(EmbeddedResourceBundle, $"Assets/Custom/Icons/blackmetal_hammer.png");
+
+                // Modify any configurable values before adding the object
+                var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
+                item.m_shared.m_damages.m_blunt = cfg.BlackmetalSledgeBluntDamage.Value;
+                item.m_shared.m_damages.m_lightning = cfg.BlackmetalSledgeLightningDamage.Value;
+
+                // Add recipe & item
+                AddRecipeForAsset(
+                    "VABlackmetal_Sledge",
+                    prefab,
+                    new[] { sprite },
+                    new[]
+                    {
+                        new RequirementConfig { Item = "BlackMetal", Amount = 18, AmountPerLevel = 6 },
+                        new RequirementConfig { Item = "Iron", Amount = 4, AmountPerLevel = 2 },
+                        new RequirementConfig { Item = "Thunderstone", Amount = 4, AmountPerLevel = 2 },
+                        new RequirementConfig { Item = "LoxPelt", Amount = 2 },
+                    },
+                    "forge",
+                    1
+                 );
+            }
+        }
+
         private void AddSerpentBucklerItem(AssetBundle EmbeddedResourceBundle, ValheimAdditionsConfig cfg)
         {
             // Serpent Scale Buckler
-            if (cfg.AbyssalSwordConfigEnabled.Value == false)
-                Logger.LogWarning("Serpent Buckler not loaded.");
-            else
-            {
-                GameObject serpentBucklerPrefab = EmbeddedResourceBundle.LoadAsset<GameObject>("Assets/Custom/SerpentShieldBuckler.prefab");
-                Sprite serpentBucklerSprite = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/serpentscale_buckler.png");
+            if (cfg.AbyssalSwordConfigEnabled.Value == false) {
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("Serpent Buckler not loaded."); }
+            } else {
+                GameObject prefab = LoadPrefab(EmbeddedResourceBundle, "Assets/Custom/SerpentShieldBuckler.prefab");
+                Sprite sprite = LoadSprite(EmbeddedResourceBundle, "Assets/Custom/Icons/serpentscale_buckler.png");
 
                 // Modify any configurable values before adding the object
-                var item = serpentBucklerPrefab.GetComponent<ItemDrop>()?.m_itemData;
+                var item = prefab.GetComponent<ItemDrop>()?.m_itemData;
                 item.m_shared.m_blockPower = cfg.SerpentBucklerBlockPowerBase.Value;
 
                 // Add recipe & Item
                 AddRecipeForAsset(
-                    "Serpent_buckler",
-                    serpentBucklerPrefab,
-                    new[] { serpentBucklerSprite },
+                    "VASerpent_buckler",
+                    prefab,
+                    new[] { sprite },
                     new[]
                     {
                         new RequirementConfig { Item = "SerpentScale", Amount = 6, AmountPerLevel = 4 },

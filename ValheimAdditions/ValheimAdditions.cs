@@ -37,7 +37,8 @@ namespace ValheimAdditions
             // Load assets
             LoadAssets(cfg);
 
-            // Build the item creation class, provide configuration for toggles and loaded resources
+            // Build the piece & item creation classes, provide configuration for toggles and loaded resources
+            new ValheimAdditionsPieces(EmbeddedResourceBundle, cfg);
             new ValheimAdditionsItems(EmbeddedResourceBundle, cfg);
 
             AddLocalizations();
@@ -52,7 +53,8 @@ namespace ValheimAdditions
 
             // Add translations for our custom items
             Localization.AddTranslation("English", new Dictionary<string, string>
-            {
+            {   
+                // Items
                 {"item_arrow_greenmetal", "Blackmetal Arrow"}, {"item_arrow_greenmetal_description", "A piercing darkness, may your aim be true."},
                 {"item_bone_arrow", "Bone Arrow"}, {"item_arrow_bone_description", "Just giving a greydwarf a bone."},
                 {"item_arrow_surtlingfire", "Surtling Fire Arrow"}, {"item_arrow_surtlingfire_description", "This does not seem safe, hopefully more so for what you are aiming at."},
@@ -64,6 +66,10 @@ namespace ValheimAdditions
                 {"item_lightning_hammer", "Elding Hammer"}, {"item_hammer_lightning_description", "A bunch of thunderstones tied together with metal, what could go wrong?"},
                 {"item_serpent_buckler", "Serpent Scaled Buckler"}, {"item_serpent_buckler_description", "A flexible wooden-iron woven shield fronted by an array of shiny scales."},
                 {"item_atgeir_chitin_heavy", "Royal Abyssal Atgeir"}, {"item_atgeir_chitin_heavy_description", "A sharpened Chitin Atgeir with a silvercore, fit for the bravest of vikings."},
+                {"item_atgeir_antler", "Antlergeir"}, {"item_atgeir_antler_description", "Sharp Deer Antlers attached to a wooden pole. Not as sharp as a blade, but also not very heavy."},
+                {"item_sledge_blackmetal", "Sky Shatter"}, {"item_sledge_blackmetal_description", "Heavy chunks of blackmetal fused with thunderstones. Causes lightning strikes."},
+                // Pieces
+                {"artisan_upgrade1", "Experimental Equipment"}, {"artisan_upgrade1_description", "A Bucket filled with the same magical tears that seem to make mechanical componets move, with a bunch of mechanical bits tossed in. What could we make with these?"},
             });
         }
 
@@ -73,7 +79,12 @@ namespace ValheimAdditions
             {
                 Logger.LogInfo($"Embedded resources: {string.Join(",", typeof(ValheimAdditions).Assembly.GetManifestResourceNames())}");
             }
-            EmbeddedResourceBundle = AssetUtils.LoadAssetBundleFromResources("vabundle", typeof(ValheimAdditions).Assembly);
+            EmbeddedResourceBundle = AssetUtils.LoadAssetBundleFromResources("ValheimAdditions.AssetsEmbedded.vabundle", typeof(ValheimAdditions).Assembly);
+
+            if (cfg.EnableDebugMode.Value == true)
+            {
+                Logger.LogInfo($"Asset Names: {string.Join(",", EmbeddedResourceBundle.GetAllAssetNames())}");
+            }
         }
 
         private void UnloadAssets()
