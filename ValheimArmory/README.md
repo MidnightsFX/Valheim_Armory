@@ -172,6 +172,8 @@ Everything is optionally configurable through the ingame mod configuration UI pr
 
 Otherwise a configuration file located at `/BepInEx/config/com.jotunn.ValheimArmory.cfg` contains all of the configuration.
 
+Please note that basically ALL of the configuration is server sided. Which means that **it requires a restart of your game to take effect**. This allows me to ensure that the server and the client are always in sync with the details of everything- like how much damage you did to that greydwarf.
+
 ---
 
 ## Currently in-progress
