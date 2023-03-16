@@ -27,18 +27,18 @@ Below are all of the items added by this mod. The descriptions and information h
   | ----------- | ----------- | ----------- | ----------- |
   | Bone arrow | Workbench | Meadows | ![bone arrow icon](https://imgur.com/KUYj0Zp.png) |
   | Chitin arrow | Workbench | Ocean | ![chitin arrow icon](https://imgur.com/LKNQnEt.png) |
-  | Anicent Wood arrow | Workbench | Swamp | ![ancient wood arrow icon](https://imgur.com/d28tCPw.png) |
+  | Ancient Wood arrow | Workbench | Swamp | ![ancient wood arrow icon](https://imgur.com/d28tCPw.png) |
   | Surtling Fire arrow | Forge | Mountain | ![surtling fire arrow icon](https://i.imgur.com/lLFiUc8.png) |
   | Blackmetal arrow | Forge | Plains | ![blackmetal arrow icon](https://imgur.com/yiJKz6s.png) | 
   | Wood Crossbow Bolt | Artisan | Post-Mountain | ![wood crossbow bolt](https://imgur.com/UTbO8aG.png) |
 
   Arrows Added here fill out a number of additional roles, and importantly add new resource sinks.
   * Bone arrows add a cheap arrow alternative to wood, burn your extra bones today!
-  * Chitin arrows add a cheap variation to wood arrows, use all those useless barnicles!
+  * Chitin arrows add a cheap variation to wood arrows, use all those useless barnacles!
   * Ancient wood arrows add a yet stronger sink for ancient wood
   * Surtling Fire arrows add a stronger variation of the fire arrow at a time when you can make some of the best use of it
   * Blackmetal arrows help complete the metal arrow variants
-  * Wood bolts provide a cheap, and ealier game alternative to more expensive crossbow bolts- at a lower damage
+  * Wood bolts provide a cheap, and earlier game alternative to more expensive crossbow bolts- at a lower damage
 </details>
 
 <details>

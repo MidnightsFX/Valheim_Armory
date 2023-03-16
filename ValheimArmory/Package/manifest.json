@@ -1,10 +1,10 @@
 ﻿{
-  "name": "ValheimAdditions",
-  "description": "Valheim Additions is a small mod designed to add some missing pieces to help fill gaps in the Valheim ecosystem.",
-  "version_number": "0.7.2",
-  "website_url": "https://github.com/MidnightsFX/Valheim_Additions",
+  "name": "ValheimArmory",
+  "description": "ValheimArmory hopes to create a more diverse but not sprawling selection of weapons to make all playstyles feel fully supported at each level.",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/MidnightsFX/Valheim_Armory",
   "dependencies": [
-    "denikson-BepInExPack_Valheim-5.4.1901",
-    "ValheimModding-Jotunn-2.10.3"
+    "denikson-BepInExPack_Valheim-5.4.2100",
+    "ValheimModding-Jotunn-2.11.0"
   ]
 }
