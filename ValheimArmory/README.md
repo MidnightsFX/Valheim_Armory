@@ -209,6 +209,11 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.0.1**
+```
+- Fixed Iron level sword recipe, should now actually require Iron.
+```
+
 **1.0.0**
 ```
 - Release! I'm sure its got bugs somewhere

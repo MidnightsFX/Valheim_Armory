@@ -276,8 +276,8 @@ namespace ValheimArmory
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Bronze", new Tuple<int, int>(25, 8) },
-                    { "RoundLog", new Tuple<int, int>(8, 2) }
+                    { "Iron", new Tuple<int, int>(25, 8) },
+                    { "ElderBark", new Tuple<int, int>(6, 2) }
                 }
             );
 
