@@ -21,9 +21,9 @@ namespace ValheimArmory
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Minor)]
     internal class ValheimArmory : BaseUnityPlugin
     {
-        public const string PluginGUID = "com.jotunn.ValheimArmory";
+        public const string PluginGUID = "com.midnightsfx.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.0.0";
+        public const string PluginVersion = "1.1.0";
 
         AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -56,7 +56,7 @@ namespace ValheimArmory
             {   
                 // Items
                 {"item_arrow_greenmetal", "Blackmetal Arrow"}, {"item_arrow_greenmetal_description", "A piercing darkness, may your aim be true."},
-                {"item_bone_arrow", "Bone Arrow"}, {"item_arrow_bone_description", "Just giving a greydwarf a bone."},
+                {"item_bone_arrow", "Bone Arrow"}, {"item_bone_arrow_description", "Just giving a greydwarf a bone."},
                 {"item_arrow_surtlingfire", "Surtling Fire Arrow"}, {"item_arrow_surtlingfire_description", "This does not seem safe, hopefully more so for what you are aiming at."},
                 {"item_ancient_arrow", "Ancient Wood Arrow"}, {"item_ancient_arrow_description", "Looks like it will splinter at any given time."},
                 {"item_arrow_chitin", "Chitin Arrow"}, {"item_arrow_chitin_description", "Not as sharp as other arrows but it causes a nasty cut regardless."},
@@ -73,6 +73,12 @@ namespace ValheimArmory
                 {"item_bronze_greatsword", "Bronze Greatsword"}, {"item_bronze_greatsword_description", "A massive bronze blade handled with corewood, not very durable but quite sharp."},
                 {"item_iron_greatsword", "Iron Greatsword"}, {"item_iron_greatsword_description", "A huge rough iron blade with a hewn stone hilt. With a big enough blade, anything dies."},
                 {"item_silver_greatsword", "Silver Runic Greatsword"}, {"item_silver_greatsword_description", "Silver forged with wrought iron, emblazoned with runes to ward off the undead."},
+                {"item_dagger_iron", "Iron Dagger"}, {"item_dagger_iron_description", "Not as sharp as the Abyssal knife, but it cuts nicely."},
+                {"item_dagger_iron_2h", "Rouge Daggers"}, {"item_dagger_iron_2h_description", "Two Iron knives makes you one average viking rouge."},
+                {"item_dagger_bronze", "Bronze Dagger"}, {"item_dagger_bronze_description", "Sharper than copper, its a piercing stab."},
+                {"item_dagger_bronze_2h", "Rascal Daggers"}, {"item_dagger_bronze_description_2h", "Now you just need to start leveling your pickpocket skill."},
+                {"item_dagger_silver", "Silver Dagger"}, {"item_dagger_silver_description", "A Sharp silver short blade etched with runes."},
+                {"item_dagger_silver_2h", "Blackguard Runic Daggers"}, {"item_dagger_silver_2h_description", "Men and beast alike fear the slice and dice."},
                 // Pieces
                 // {"artisan_upgrade1", "Experimental Equipment"}, {"artisan_upgrade1_description", "A Bucket filled with the same magical tears that seem to make mechanical componets move, with a bunch of mechanical bits tossed in. What could we make with these?"},
             });

@@ -80,9 +80,44 @@ Below are all of the items added by this mod. The descriptions and information h
 </details>
 
 <details>
+  <summary>Knives</summary>
+  
+  ### Progression of Daggers/knives (1h) with the mod installed
+  ![gallery of 1h dagger/knives](https://i.imgur.com/gBAdBfN.png)
+  
+  ### Added Daggers
+
+  | Name | Crafted At | Stage | Icon |
+  | ----------- | ----------- | ----------- | ----------- |
+  | Bronze Dagger | Forge | Blackforest | ![bronze dagger icon](https://i.imgur.com/AyWevGx.png) |
+  | Iron Dagger | Forge | Swamp | ![iron dagger icon](https://i.imgur.com/9MBSw5X.png) |
+  | Silver Dagger | Forge | Mountain | ![silver dagger icon](https://i.imgur.com/SL2G0Vn.png) |
+
+  ---
+
+  ### Progression of Daggers/knives (2h) with the mod installed
+  ![gallery of 2h dagger/knives](https://i.imgur.com/zWccdHu.png)
+
+  ### Added 2H Daggers
+
+  | Name | Crafted At | Stage | Icon |
+  | ----------- | ----------- | ----------- | ----------- |
+  | Rascal Daggers | Forge | Blackforest | ![rascal daggers icon](https://i.imgur.com/88MEras.png) |
+  | Rogue Daggers | Forge | Swamp | ![rogue daggers icon](https://i.imgur.com/1kyTYjP.png) |
+  | Blackguard Runic Daggers | Forge | Mountain | ![blackguard runic daggers icon](https://i.imgur.com/8HwWqah.png) |
+
+  * Note: 2H Daggers will float infront of item wall mounts due to their seperated attachment style. They display normally on an item stand.
+
+  Knives are a very quick weapon which really start showing their power once you have some sneaking skills and get close enough to a strong target to sneak attack them. However most knives split their damage very evenly, meaning the run into the same problem that other hybrid weapons do in this game. They don't scale very well, require lots of leveling weapon and sneak wise to really show their colors. This is addressed by filling in the weapon catagory with Daggers, which tilt their damage type more to pierce, which will give all you stealth archers a more consistent experiance. But importantly also makes them stronger against the targets you are most likely to want to sneak attack.
+
+  The addition of 2H daggers at lower tiers also provides you a way to focus on that playstyle all of the way up till the current end of the game.
+
+</details>
+
+<details>
   <summary>Bows</summary>
   
-  ### Progression of Great Axes with the mod installed
+  ### Progression of Crossbows with the mod installed
   ![gallery of crossbows](https://i.imgur.com/XP7ZtCs.png)
   
   ### Added Crossbows
@@ -170,18 +205,25 @@ Everything is optionally configurable through the ingame mod configuration UI pr
   * [Thunderstore link](https://valheim.thunderstore.io/package/TJzilla/BepInEx_ConfigurationManager/)
   * [Nexus Link](https://www.nexusmods.com/valheim/mods/740)
 
-Otherwise a configuration file located at `/BepInEx/config/com.jotunn.ValheimArmory.cfg` contains all of the configuration.
+Otherwise a configuration file located at `/BepInEx/config/com.midnightsfx.ValheimArmory.cfg` contains all of the configuration.
 
 Please note that basically ALL of the configuration is server sided. Which means that **it requires a restart of your game to take effect**. This allows me to ensure that the server and the client are always in sync with the details of everything- like how much damage you did to that greydwarf.
+
+Current configuration options:
+* Damage
+* Recipe
+* Stamina cost
+* Block amount
+* Crafted amount (where applicable)
 
 ---
 
 ## Currently in-progress
 <details>
   <summary>Potential Spoilers!</summary>
-  
-  Sorry nothing right now. I'm taking a short break from modding after the initial release of this mod.
-  If there is something you'd like me to work on vote for it [here](https://poll-maker.com/poll4743457x8A99432B-147)!
+  Noodling on what kind of weapons could be made for the elemental themed boss weapons.
+
+  If there is something you'd like me to work on vote for it [here](https://poll-maker.com/poll4772706xc1794073-148)!
 </details>
 
 ---
@@ -189,15 +231,13 @@ Please note that basically ALL of the configuration is server sided. Which means
 ## Future Plans
 <details>
   <summary>Potential Spoilers!</summary>
-  
-  * Configuration for enable/disable recipes and recipe costs
-  * prettier in-game config editing
   * Chitin Shield
   * Named Mace (blackmetal mace)
-  * More boss theme weapons
+  * More boss themed weapons
   * Silver sledge
-  * Line of 2H daggers (Black Forest level, Swamp Level, Mountains level)
-  If there is something you'd like me to work on vote for it [here](https://poll-maker.com/poll4743457x8A99432B-147)!
+  * Crossbow Updates
+  * 2H Warhammers (Maces but bigger)
+  If there is something you'd like me to work on vote for it [here](https://poll-maker.com/poll4772706xc1794073-148)!
 </details>
 
 ---
@@ -209,6 +249,17 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.1.0**
+```
+- Added Daggers
+- Added 2H Daggers
+
+- Significant updates to the configuration code, more things are now configurable!
+	- Stamina cost for primary and secondary attacks
+	- Crafting costs
+	- Where things are crafted at
+```
+
 **1.0.1**
 ```
 - Fixed Iron level sword recipe, should now actually require Iron.
