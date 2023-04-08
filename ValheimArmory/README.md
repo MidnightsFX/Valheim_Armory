@@ -231,12 +231,14 @@ Current configuration options:
 ## Future Plans
 <details>
   <summary>Potential Spoilers!</summary>
+
   * Chitin Shield
   * Named Mace (blackmetal mace)
   * More boss themed weapons
   * Silver sledge
   * Crossbow Updates
   * 2H Warhammers (Maces but bigger)
+
   If there is something you'd like me to work on vote for it [here](https://poll-maker.com/poll4772706xc1794073-148)!
 </details>
 
