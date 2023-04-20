@@ -206,6 +206,34 @@ namespace ValheimArmory
                     { "DragonTear", new Tuple<int, int>(1, 0) },
                 }
             );
+
+            // Antler Bow
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                cfg,
+                new Dictionary<string, string>() {
+                    { "name", "Eikthyrs Bow" },
+                    { "catagory", "Bows" },
+                    { "prefab", "VAAntler_Bow" },
+                    { "sprite", "antler_bow" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "pierce", new Tuple<float, float, float, bool>(32, 0, 120, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(22, 0, 90, true) },
+                    { "block", new Tuple<float, float, float, bool>(9, 0, 25, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "FineWood", new Tuple<int, int>(12, 8) },
+                    { "Bronze", new Tuple<int, int>(6, 4) },
+                    { "HardAntler", new Tuple<int, int>(2, 2) },
+                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) },
+                }
+            );
         }
 
         private void LoadSwords(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
@@ -234,6 +262,35 @@ namespace ValheimArmory
                     { "LeatherScraps", new Tuple<int, int>(3, 2) },
                     { "Bronze", new Tuple<int, int>(2, 1) },
                     { "Chitin", new Tuple<int, int>(8, 4) },
+                }
+            );
+
+            // Antler Sword
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                cfg,
+                new Dictionary<string, string>() {
+                    { "name", "Eikthyrs Sword" },
+                    { "catagory", "Swords" },
+                    { "prefab", "VAAntler_Sword" },
+                    { "sprite", "antler_sword" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "slash", new Tuple<float, float, float, bool>(25, 0, 90, true) },
+                    { "blunt", new Tuple<float, float, float, bool>(15, 0, 90, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(25, 0, 120, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 30, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "LeatherScraps", new Tuple<int, int>(2, 2) },
+                    { "Bronze", new Tuple<int, int>(6, 6) },
+                    { "HardAntler", new Tuple<int, int>(2, 2) },
+                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) },
                 }
             );
 
@@ -349,6 +406,37 @@ namespace ValheimArmory
                 }
             );
 
+            // Antler Battleaxe
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                cfg,
+                new Dictionary<string, string>() {
+                    { "name", "Eikthyrs Greataxe" },
+                    { "catagory", "Axes" },
+                    { "prefab", "VAAntler_greataxe" },
+                    { "sprite", "antler_greataxe" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "blunt", new Tuple<float, float, float, bool>(15, 0, 200, true) },
+                    { "slash", new Tuple<float, float, float, bool>(35, 0, 200, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(25, 0, 200, true) },
+                    { "chop", new Tuple<float, float, float, bool>(40, 0, 200, true) },
+                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(5, 1, 20, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "RoundLog", new Tuple<int, int>(26, 22) },
+                    { "Bronze", new Tuple<int, int>(6, 6) },
+                    { "HardAntler", new Tuple<int, int>(4, 2) },
+                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) },
+                }
+            );
+
             // Blackmetal Battleaxe
             new ValArmoryItem(
                 EmbeddedResourceBundle,
@@ -418,26 +506,27 @@ namespace ValheimArmory
                 EmbeddedResourceBundle,
                 cfg,
                 new Dictionary<string, string>() {
-                    { "name", "Antler Atgeir" },
+                    { "name", "Eikthyrs Atgeir" },
                     { "catagory", "Atgeirs" },
                     { "prefab", "VAatgeir_antler" },
-                    { "sprite", "antler_atgeir_large" },
+                    { "sprite", "antler_atgeir" },
                     { "craftedAt", "piece_workbench" }
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "slash", new Tuple<float, float, float, bool>(25, 0, 90, true) },
-                    { "lightning", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "slash", new Tuple<float, float, float, bool>(23, 0, 90, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(18, 0, 25, true) },
                     { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(7, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(16, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Wood", new Tuple<int, int>(24, 8) },
+                    { "Wood", new Tuple<int, int>(24, 20) },
+                    { "Resin", new Tuple<int, int>(32, 26) },
                     { "HardAntler", new Tuple<int, int>(4, 2) },
-                    { "Resin", new Tuple<int, int>(4, 2) }
+                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) },
                 }
             );
 
@@ -504,6 +593,36 @@ namespace ValheimArmory
 
         private void LoadDaggers(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
         {
+            // Antler 1H Daggers
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                cfg,
+                new Dictionary<string, string>() {
+                    { "name", "Eikthyrs Dagger" },
+                    { "catagory", "Daggers" },
+                    { "prefab", "VAAntler_dagger" },
+                    { "sprite", "antler_dagger" },
+                    { "craftedAt", "piece_workbench" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "block", new Tuple<float, float, float, bool>(11, 0, 48, true) },
+                    { "slash", new Tuple<float, float, float, bool>(10, 0, 99, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(16, 0, 99, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(14, 0, 99, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(6, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "RoundLog", new Tuple<int, int>(2, 1) },
+                    { "Resin", new Tuple<int, int>(20, 12) },
+                    { "HardAntler", new Tuple<int, int>(1, 1) },
+                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) },
+                }
+            );
+
             // Bronze 2H Daggers
             new ValArmoryItem(
                 EmbeddedResourceBundle,
@@ -717,15 +836,18 @@ namespace ValheimArmory
             metadata["short_item_name"] = string.Join("", metadata["name"].Split(default(string[]), StringSplitOptions.RemoveEmptyEntries));
 
             // create config
+            if (cfg.EnableDebugMode.Value == true) { Logger.LogDebug($"Creating Configuration Values for {metadata["name"]}"); }
             CreateAndLoadConfigValues(cfg, metadata, itemdata, itemtoggles, recipedata);
 
             // If the item is not enabled we do not load it
             if (itemtoggles["enabled"] != false)
             {
                 // load assets
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogDebug($"Loading bundled assets for {metadata["name"]}"); }
                 GameObject prefab = EmbeddedResourceBundle.LoadAsset<GameObject>($"Assets/Custom/Weapons/{metadata["catagory"]}/{metadata["prefab"]}.prefab");
                 Sprite sprite = EmbeddedResourceBundle.LoadAsset<Sprite>($"Assets/Custom/Icons/{metadata["sprite"]}.png");
                 // modify item/recipe
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogDebug($"Modifying itemdata for {metadata["name"]}, applying configured values."); }
                 ModifyItemData(prefab.GetComponent<ItemDrop>()?.m_itemData, itemdata);
 
                 // Add the recipe with helper
@@ -743,8 +865,12 @@ namespace ValheimArmory
                     Icons = new[] { sprite },
                     Requirements = recipe
                 };
-                if (cfg.EnableDebugMode.Value == true) { Logger.LogDebug($"Recipe Data: {recipe.ToArray()}"); }
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogDebug($"Setting Recipe Data: {recipe.ToArray()}"); }
                 AddRecipeForAsset($"VA{metadata["short_item_name"]}", prefab, itemcfg);
+            }
+            else 
+            {
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogDebug($"{metadata["name"]} is not enabled, and was not loaded."); }
             }
         }
 
@@ -841,19 +967,6 @@ namespace ValheimArmory
                 {
                     if (Config.EnableDebugMode.Value == true) { Logger.LogInfo($"Updated recipe: resouce: {entry.Key} build: {entry.Value.Item1} upgrade: {entry.Value.Item2}"); }
                     recipedata.Add(entry.Key, entry.Value);
-                }
-                if (Config.EnableDebugMode.Value == true)
-                {
-                    String resulting_recipe_data = "";
-                    foreach (KeyValuePair<string, Tuple<int, int>> entry in recipedata)
-                    {
-                        resulting_recipe_data += $" {entry.Key}={entry.Value.Item1},{entry.Value.Item2}";
-                    }
-                    if (Config.EnableDebugMode.Value == true)
-                    {
-                        Logger.LogInfo($"Resulting Recipe Data: {resulting_recipe_data}");
-                    }
-                    
                 }
             }
             else
