@@ -189,6 +189,7 @@ Current configuration options:
 ## Currently in-progress
 <details>
   <summary>Potential Spoilers!</summary>
+  
   Boss Weapon Release roadmap
   * Eikthyr Weapons (first set of 3) [done]
   * Elder Weapons (first set of 3)
@@ -207,7 +208,6 @@ Current configuration options:
 ## Future Plans
 <details>
   <summary>Potential Spoilers!</summary>
-  * Weapons for each boss
 
   * Filling out the line of fists (maybe wood), Bronze, Iron, Blackmetal
   * Chitin Shield
