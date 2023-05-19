@@ -23,7 +23,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "com.midnightsfx.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.2.0";
+        public const string PluginVersion = "1.2.1";
 
         AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -60,9 +60,14 @@ namespace ValheimArmory
                 {"item_arrow_surtlingfire", "Surtling Fire Arrow"}, {"item_arrow_surtlingfire_description", "This does not seem safe, hopefully more so for what you are aiming at."},
                 {"item_ancient_arrow", "Ancient Wood Arrow"}, {"item_ancient_arrow_description", "Looks like it will splinter at any given time."},
                 {"item_arrow_chitin", "Chitin Arrow"}, {"item_arrow_chitin_description", "Not as sharp as other arrows but it causes a nasty cut regardless."},
-                {"item_bolt_wood", "Wood Bolt"}, {"item_bolt_wood_description", "A little more than a pointy stick. Shot hard enough, it sure hurts!"},
+                {"item_bolt_wood", "Corewood Bolt"}, {"item_bolt_wood_description", "A little more than a pointy stick. Shot hard enough, it still hurts!"},
+                {"item_bolt_bronze", "Bronze Bolt"}, {"item_bolt_bronze_description", "Bronze crossbow bolts a bit sharper than corewood."},
+                {"item_bolt_iron_poison", "Iron Poison Bolt"}, {"item_bolt_iron_poison_description", "A sharp Iron bolt tipped with poison, speeding death."},
+                {"item_bolt_silver_frost", "Silver Frost Bolt"}, {"item_bolt_silver_frost_description", "Silver bolts, encased in ice deadly to the firey and dead."},
+                {"item_bolt_surtling", "Blackmetal Surtling Bolt"}, {"item_bolt_surtling_description", "A Blackmetal core housing a surtling core, this is gunna burn."},
                 // Bows
-                {"item_crossbow_bronze", "Bronze Crossbow"}, {"item_crossbow_bronze_description", "Not perfect, but a weapon like this should be able to hurl bolts at incredible speeds. Not very durable."},
+                {"item_arbalist_bronze", "Bronze Arbelist"}, {"item_arbalist_bronze_description", "The arbelist is a huge improvement over the crossbows power, but a bit more unwiedly."},
+                {"item_crossbow_bronze", "Bronze Crossbow"}, {"item_crossbow_bronze_description", "A simple bronze crossbow, powerful but a bit fragile."},
                 // Swords
                 {"item_sword_chitin", "Abyssal Sword"}, {"item_sword_chitin_description", "It may not be the sharpest but with enough force it still hurts, a lot."},
                 // Shields
@@ -91,6 +96,14 @@ namespace ValheimArmory
                 {"item_sword_antler", "Eikthyrs Rage" }, {"item_sword_antler_description", "Twisted Antlers bound by chains from Eikthyrs remains, still seething with energy."},
                 {"item_atgeir_antler", "Eikthyrs Charge"}, {"item_atgeir_antler_description", "A Branch from Eikthyrs crown still sparking attached to a pole, the Antlergeir."},
                 {"item_battleaxe_antler", "Eikthyrs Crown"}, {"item_battleaxe_antler_description", "Twin Antlers sharpened and chained, they still spark with Eikthyrs life."},
+                // Boss Weapons | Elder
+                {"item_sledge_elder", "Elders Rock"}, {"item_sledge_elder_description", "A giant stone held by living vines fused with the blood of the Elder itself."},
+                {"item_elder_roundshield", "Elders Bulwark"}, {"item_elder_roundshield_description", "Wood fused with the blood of the Elder,."},
+                {"item_crossbow_elder", "Elders Vinethrower"}, {"item_crossbow_elder_description", "Living vines strung for a crossbow, hopefully they don't grow anymore."},
+                // Boss Weapons | Moder
+                {"item_spear_moder", "Moders Reach"}, {"item_spear_moder_description", "A blade of ice, continually frozen by tears from Moder herself."},
+                {"item_sword_moder", "Moders Bite"}, {"item_sword_moder_description", "A longblade made from ice, perpetually chilled by the essence of the dragon mother."},
+                {"item_crossbow_moder", "Moders Dream"}, {"item_crossbow_moder_description", "A blade of ice, continually frozen by tears from Moder herself."},
             });
 
             Localization.AddTranslation("German", new Dictionary<string, string>
@@ -127,11 +140,11 @@ namespace ValheimArmory
                 {"item_dagger_silver", "Silberner Dolch"}, {"item_dagger_silver_description", "Eine scharfe silberne kurze Klinge, die mit Runen geätzt ist."},
                 {"item_dagger_silver_2h", "Schwarzwächter-Runendolche"}, {"item_dagger_silver_2h_description", "Menschen und Bestien fürchten gleichermaßen die Scheiben und Würfel."},
                 // Boss Weapons | Eikthyrs
-                {"item_bow_antler", "Eikthyrs Herald" }, {"item_bow_antler_description", "Herald of lightning, may all hear its thunder."},
-                {"item_dagger_antler", "Eikthyrs Spike" }, {"item_dagger_antler_description", "A sharpened shard from Eikthyrs antlers, still teaming with electricity."},
-                {"item_sword_antler", "Eikthyrs Rage" }, {"item_sword_antler_description", "Twisted Antlers bound by chains from Eikthyrs remains, still seething with energy."},
-                {"item_atgeir_antler", "Eikthyrs Charge"}, {"item_atgeir_antler_description", "A Branch from Eikthyrs crown still sparking attached to a pole, the Antlergeir."},
-                {"item_battleaxe_antler", "Eikthyrs Crown"}, {"item_battleaxe_antler_description", "Twin Antlers sharpened and chained, they still spark with Eikthyrs life."},
+                {"item_bow_antler", "Eikthyrs Verkündung" }, {"item_bow_antler_description", "Verkünder des Blitzes, mögen alle seinen Donner hören."},
+                {"item_dagger_antler", "Eikthyrs Spitze" }, {"item_dagger_antler_description", "Ein geschärfter Splitter von Eikthyrs Geweih, der noch immer Elektrizität ausstrahlt."},
+                {"item_sword_antler", "Eikthyrs Wut" }, {"item_sword_antler_description", "Verdrehte Geweihe, gebunden an Ketten aus Eikthyrs Überresten, die immer noch vor Energie brodeln."},
+                {"item_atgeir_antler", "Eikthyrs Ladung"}, {"item_atgeir_antler_description", "Ein Zweig von Eikthyrs Krone, der funkelnd an einer Stange befestigt ist, dem Antlergeir."},
+                {"item_battleaxe_antler", "Eikthyrs Krone"}, {"item_battleaxe_antler_description", "Doppelgeweih geschärft und angekettet, sie sprühen immer noch vor Eikthys Leben."},
             });
         }
 

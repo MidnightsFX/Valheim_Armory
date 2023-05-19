@@ -22,17 +22,16 @@ Below are all of the items added by this mod. The descriptions and information h
 
 Here is a sample gallery of weapons added by this mod.
 
-![Sample Gallery of added content](https://i.imgur.com/M2YrtP9.png)
+![Sample Gallery of added content](https://i.imgur.com/WisOiMc.png)
 
 Below is more information on all of the items added, what tier they are in, where they are crafted and at what progression point. All of the sections below are expandable to view the details.
 
 <details>
   <summary>Boss Weapons</summary>
-  Currently the only added boss weapons are Eikthyrs
-
-  These weapons are split into two groups, one requiring the workbench and the other the forge. Meaning that some of these weapons will require metals from the black forest.
-
+  
   ### Eikthyrs
+
+    These weapons are split into two groups, one requiring the workbench and the other the forge. Meaning that some of these weapons will require metals from the black forest.
 
   | Name | Crafted At | Stage | Icon |
   | ----------- | ----------- | ----------- | ----------- |
@@ -40,7 +39,24 @@ Below is more information on all of the items added, what tier they are in, wher
   | Antler Dagger | Workbench | Post-Meadows | ![Antler Dagger Icon](https://i.imgur.com/TImtKNo.png) |
   | Antler Sword | Forge | Post-Meadows | ![Antler Sword Icon](https://i.imgur.com/uw1ZNgz.png) |
   | Antler Atgeir | Workbench | Post-Meadows | ![Antler Atgier Icon](https://i.imgur.com/URdXvZc.png) |
-  | Antler Greataxe | Forge | Post-Meadows | ![Antler Greataxe Icon](https://i.imgur.com/jIAHbCD.png) | 
+  | Antler Greataxe | Forge | Post-Meadows | ![Antler Greataxe Icon](https://i.imgur.com/jIAHbCD.png) |
+
+  ### Elder
+  | Elders Rock | Forge | Post-Blackforest | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
+  | Elders Bulwark | Forge | Post-Blackforest | ![Elders roundshield icon](https://i.imgur.com/MaZMD4l.png) |
+  | Elders Vinethrower | Forge | Post-Blackforest | ![Antler Greataxe Icon](https://i.imgur.com/fDaATMs.png) |
+
+  ### Bonemass
+  Coming soon! Vote for boss weapons to get these sooner.
+
+  ### Moder
+  | Moders Bite | Forge | Post-Mountain | ![Ice sword Icon](https://i.imgur.com/iXVICFY.png) |
+  | Moders Reach | Forge | Post-Mountain | ![Ice Spear Icon](https://i.imgur.com/X4CuFZs.png) |
+  | Moders Dream | Forge | Post-Mountain | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
+
+  ### Yagluth
+  Coming soon! Vote for boss weapons to get these sooner.
+
 </details>
 
 <details>
@@ -53,9 +69,13 @@ Below is more information on all of the items added, what tier they are in, wher
   | Bone arrow | Workbench | Meadows | ![bone arrow icon](https://imgur.com/KUYj0Zp.png) |
   | Chitin arrow | Workbench | Ocean | ![chitin arrow icon](https://imgur.com/LKNQnEt.png) |
   | Ancient Wood arrow | Workbench | Swamp | ![ancient wood arrow icon](https://imgur.com/d28tCPw.png) |
-  | Surtling Fire arrow | Forge | Mountain | ![surtling fire arrow icon](https://i.imgur.com/lLFiUc8.png) |
+  | Surtling Fire arrow | Forge | Mountain | ![surtling fire arrow icon](https://i.imgur.com/K5Erlwt.png) |
   | Blackmetal arrow | Forge | Plains | ![blackmetal arrow icon](https://imgur.com/yiJKz6s.png) | 
-  | Wood Crossbow Bolt | Artisan | Post-Mountain | ![wood crossbow bolt](https://imgur.com/UTbO8aG.png) |
+  | Wood Bolt | Artisan | Blackforest | ![wood crossbow bolt](https://imgur.com/UTbO8aG.png) |
+  | Bronze Bolt | Artisan | Blackforest | ![bronze bolt](https://i.imgur.com/cUJTlB3.png) |
+  | Iron Poison Bolt | Artisan | Swamp | ![iron poison bolt](https://i.imgur.com/mVLDfm8.png) |
+  | Silver Frost Bolt | Artisan | Mountain | ![Silver Frost bolt](https://i.imgur.com/0FGHrBB.png) |
+  | Blackmetal Surtling Bolt | Artisan | Plains | ![blackmetal surtling bolt](https://i.imgur.com/iZ5fOrF.png) |
 
 </details>
 
@@ -116,7 +136,8 @@ Below is more information on all of the items added, what tier they are in, wher
 
   | Name | Crafted At | Stage | Icon |
   | ----------- | ----------- | ----------- | ----------- |
-  | Bronze Crossbow | Forge | Post-Mountain | ![bronze crossbow icon](https://i.imgur.com/iuk67H0.png) |
+  | Bronze Crossbow | Forge | Blackforest | ![bronze crossbow icon](https://i.imgur.com/GkWbooT.png) |
+  | Bronze Arbalist | Forge | Plains | ![bronze arbalist icon](https://i.imgur.com/iuk67H0.png) |
 
 </details>
 
@@ -179,9 +200,11 @@ Please note that basically ALL of the configuration is server sided. Which means
 
 Current configuration options:
 * Damage
+* Damage per level
 * Recipe
 * Stamina cost
 * Block amount
+* block per level
 * Crafted amount (where applicable)
 
 ---
@@ -189,15 +212,14 @@ Current configuration options:
 ## Currently in-progress
 <details>
   <summary>Potential Spoilers!</summary>
-  
+
+  * Game engine update, script updates
+
   Boss Weapon Release roadmap
-  * Eikthyr Weapons (first set of 3) [done]
-  * Elder Weapons (first set of 3)
-  * Bonemass Weapons (first set of 3), Eikthyr weapon upgraded varients
-  * Moder Weapons (first set of 3), Elder weapon upgrade varients
+  * Bonemass Weapons (first set of 3)
   * Yagluth Weapons (first set of 3)
 
-  The Boss weapon roadmap will take a number of updates which will be broken into 1 update per boss. Other content updates will happen between boss weapon updates.
+  The Boss weapon roadmap will take a number of updates. Feel free to submit ideas to the github.
 
 
   If there is something you'd like me to work on vote for it [here](https://poll-maker.com/poll4772706xc1794073-148)!
@@ -213,7 +235,6 @@ Current configuration options:
   * Chitin Shield
   * Named Mace (blackmetal mace)
   * Silver sledge
-  * Crossbow Updates
   * 2H Warhammers (Maces but bigger)
   * Better VFX for weapons
   * New spear alternatives
@@ -230,6 +251,23 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.3.0**
+```
+- 3 new weapons based on the Elder
+- 3 new weapons based on the Moder
+- new crossbow and a handful of new bolts!
+- bugfix for the antler dagger not being impacted by gravity
+- fixed the default recipe for 1h bronze dagger
+
+```
+
+**1.2.1**
+```
+- Finished current german localization
+- Updated the surtling core arrow icon
+
+```
+
 **1.2.0**
 ```
 - Added Eikthyr Bow, Dagger, Sword & Greataxe
@@ -260,9 +298,10 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 ```
 
 ## Issues
-Please report any issues you encounter on the [github issue tracker](https://github.com/MidnightsFX/Valheim_Additions/issues)
+Please report any issues you encounter on the [github issue tracker](https://github.com/MidnightsFX/Valheim_Armory/issues)
 
 ## Credits
+* Some texture resources generated from [withpoly](https://withpoly.com/browse/textures)
 * [Sword Model](https://assetstore.unity.com/packages/3d/props/weapons/free-low-poly-swords-rpg-weapons-198166)
 * Jotun community for answering some silly questions :)
 * The Valheim team at Irongate which makes all of this possible!
