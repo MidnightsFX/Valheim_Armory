@@ -23,7 +23,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "com.midnightsfx.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.2.1";
+        public const string PluginVersion = "1.3.2";
 
         AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -115,8 +115,13 @@ namespace ValheimArmory
                 {"item_ancient_arrow", "Uralter Holzpfeil"}, {"item_ancient_arrow_description", "Sieht so aus, als würde es jederzeit splittern."},
                 {"item_arrow_chitin", "Chitin-Pfeil"}, {"item_arrow_chitin_description", "Nicht so scharf wie andere Pfeile, aber es verursacht trotzdem einen bösen Schnitt."},
                 {"item_bolt_wood", "Holzbolzen"}, {"item_bolt_wood_description", "Etwas mehr als ein spitzer Stock. Hart genug geschossen, tut es sicher weh!"},
+                {"item_bolt_bronze", "Bronzebolzen"}, {"item_bolt_bronze_description", "Armbrustbolzen aus Bronze, etwas schärfer als Kernholzbolzen."},
+                {"item_bolt_iron_poison", "Eisengiftbolzen"}, {"item_bolt_iron_poison_description", "Ein scharfer Eisenbolzen mit giftiger Spitze, für einen schnelleren Tod."},
+                {"item_bolt_silver_frost", "Silberner Frostbolzen"}, {"item_bolt_silver_frost_description", "Silberne Bolzen, umhüllt von Eis, tödlich für die Feurigen und Toten."},
+                {"item_bolt_surtling", "Schwarzmetall-Surtling-Bolzen"}, {"item_bolt_surtling_description", "Ein Schwarzmetallbolzen, in dem sich ein Surtling-Kern befindet, das wird brennen."},
                 // Bows
-                {"item_crossbow_bronze", "Bronzene Armbrust"}, {"item_crossbow_bronze_description", "Nicht perfekt, aber eine Waffe wie diese sollte in der Lage sein, Bolzen mit unglaublicher Geschwindigkeit zu schleudern. Nicht sehr langlebig."},
+                {"item_arbalist_bronze", "Bronzener Arbalest"}, {"item_arbalist_bronze_description", "Die Arbalest ist eine enorme Verbesserung gegenüber der Kraft der Armbrust, aber etwas unhandlicher."},
+                {"item_crossbow_bronze", "Bronzene Armbrust"}, {"item_crossbow_bronze_description", "Eine einfache Armbrust aus Bronze, kraftvoll aber etwas zerbrechlich."},
                 // Swords
                 {"item_sword_chitin", "Abgründiges Schwert"}, {"item_sword_chitin_description", "Es ist vielleicht nicht das schärfste, aber mit genug Kraft tut es immer noch sehr weh."},
                 // Shields
@@ -145,6 +150,14 @@ namespace ValheimArmory
                 {"item_sword_antler", "Eikthyrs Wut" }, {"item_sword_antler_description", "Verdrehte Geweihe, gebunden an Ketten aus Eikthyrs Überresten, die immer noch vor Energie brodeln."},
                 {"item_atgeir_antler", "Eikthyrs Ladung"}, {"item_atgeir_antler_description", "Ein Zweig von Eikthyrs Krone, der funkelnd an einer Stange befestigt ist, dem Antlergeir."},
                 {"item_battleaxe_antler", "Eikthyrs Krone"}, {"item_battleaxe_antler_description", "Doppelgeweih geschärft und angekettet, sie sprühen immer noch vor Eikthys Leben."},
+                // Boss Weapons | Elder
+                {"item_sledge_elder", "Uralter Fels"}, {"item_sledge_elder_description", "Ein riesiger Stein, der von lebenden Ranken gehalten wird und mit dem Blut des Ältesten selbst verschmolzen ist."},
+                {"item_elder_roundshield", "Bollwerk der Ältesten"}, {"item_elder_roundshield_description", "Holz verschmolzen mit dem Blut des Ältesten."},
+                {"item_crossbow_elder", "Uralter Rankenwerfer"}, {"item_crossbow_elder_description", "Lebende Ranken, aufgereiht für eine Armbrust, hoffentlich wachsen sie nicht mehr."},
+                // Boss Weapons | Moder
+                {"item_spear_moder", "Drachen Speer"}, {"item_spear_moder_description", "Eine Klinge aus Eis, die ständig von den Tränen der Drachenmutter eingefroren wird."},
+                {"item_sword_moder", "Drachen Schwert"}, {"item_sword_moder_description", "Eine Langklinge aus Eis, ständig gekühlt durch die Essenz der Drachenmutter."},
+                {"item_crossbow_moder", "Drachen Armbrust"}, {"item_crossbow_moder_description", "Ein Flügel aus Eis, der ständig von den Tränen der Drachenmutter eingefroren wird."},
             });
         }
 

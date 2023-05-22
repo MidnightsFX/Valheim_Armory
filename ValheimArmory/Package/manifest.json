@@ -1,7 +1,7 @@
 ﻿{
   "name": "ValheimArmory",
   "description": "ValheimArmory hopes to create a more diverse but not sprawling selection of weapons to make all playstyles feel fully supported at each level.",
-  "version_number": "1.3.0",
+  "version_number": "1.3.2",
   "website_url": "https://github.com/MidnightsFX/Valheim_Armory",
   "dependencies": [
     "denikson-BepInExPack_Valheim-5.4.2100",

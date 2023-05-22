@@ -29,7 +29,7 @@ Below is more information on all of the items added, what tier they are in, wher
 <details>
   <summary>Boss Weapons</summary>
   
-  ### Eikthyrs
+  ## Eikthyrs
 
     These weapons are split into two groups, one requiring the workbench and the other the forge. Meaning that some of these weapons will require metals from the black forest.
 
@@ -41,15 +41,19 @@ Below is more information on all of the items added, what tier they are in, wher
   | Antler Atgeir | Workbench | Post-Meadows | ![Antler Atgier Icon](https://i.imgur.com/URdXvZc.png) |
   | Antler Greataxe | Forge | Post-Meadows | ![Antler Greataxe Icon](https://i.imgur.com/jIAHbCD.png) |
 
-  ### Elder
+  ## Elder
+  | Name | Crafted At | Stage | Icon |
+  | ----------- | ----------- | ----------- | ----------- |
   | Elders Rock | Forge | Post-Blackforest | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
   | Elders Bulwark | Forge | Post-Blackforest | ![Elders roundshield icon](https://i.imgur.com/MaZMD4l.png) |
   | Elders Vinethrower | Forge | Post-Blackforest | ![Antler Greataxe Icon](https://i.imgur.com/fDaATMs.png) |
 
-  ### Bonemass
+  ## Bonemass
   Coming soon! Vote for boss weapons to get these sooner.
 
-  ### Moder
+  ## Moder
+  | Name | Crafted At | Stage | Icon |
+  | ----------- | ----------- | ----------- | ----------- |
   | Moders Bite | Forge | Post-Mountain | ![Ice sword Icon](https://i.imgur.com/iXVICFY.png) |
   | Moders Reach | Forge | Post-Mountain | ![Ice Spear Icon](https://i.imgur.com/X4CuFZs.png) |
   | Moders Dream | Forge | Post-Mountain | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
@@ -209,6 +213,13 @@ Current configuration options:
 
 ---
 
+## FAQ
+
+Q. The bronze crossbow costs dragon tears?
+- A. Delete the config for the bronze crossbow (or your whole config file).
+
+---
+
 ## Currently in-progress
 <details>
   <summary>Potential Spoilers!</summary>
@@ -251,6 +262,16 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.3.2**
+```
+- Updated German localization
+```
+
+**1.3.1**
+```
+- Fixed the antler greataxe being held the wrong way
+```
+
 **1.3.0**
 ```
 - 3 new weapons based on the Elder
