@@ -262,6 +262,15 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.3.3**
+```
+- Fixed wood bolt triggering the invalid recipe warning
+- Fixed a particle mock for arrow feathers not resolving on some versions of valheim
+- Rebalance of most boss weapons, and a few outlier non-boss weapons. Recipes are slightly more expensive overall and damage is generall down across the board.
+	This primarily brings boss weapons in line with the next tier weapon minus a small bit. The balance change is just to the default config values.
+	If you want to keep your weapons more powerful continue using your existing config, defaults will only be applied if you do not have a value set (new or deleted config).
+```
+
 **1.3.2**
 ```
 - Updated German localization
@@ -322,7 +331,9 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 Please report any issues you encounter on the [github issue tracker](https://github.com/MidnightsFX/Valheim_Armory/issues)
 
 ## Credits
+* German translations provided by SACK3000
 * Some texture resources generated from [withpoly](https://withpoly.com/browse/textures)
 * [Sword Model](https://assetstore.unity.com/packages/3d/props/weapons/free-low-poly-swords-rpg-weapons-198166)
+* Hugo for his advice and help getting skinned meshes running
 * Jotun community for answering some silly questions :)
 * The Valheim team at Irongate which makes all of this possible!
