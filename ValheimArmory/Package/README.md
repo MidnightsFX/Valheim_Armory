@@ -49,7 +49,11 @@ Below is more information on all of the items added, what tier they are in, wher
   | Elders Vinethrower | Forge | Post-Blackforest | ![Antler Greataxe Icon](https://i.imgur.com/fDaATMs.png) |
 
   ## Bonemass
-  Coming soon! Vote for boss weapons to get these sooner.
+  | Name | Crafted At | Stage | Icon |
+  | ----------- | ----------- | ----------- | ----------- |
+  | Bonemasses Rage | Forge | Post-Swamp | ![Bonemass Warhammer icon](https://i.imgur.com/IvJzuX3.png) |
+  | Bonemasses  | Forge | Post-Swamp | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
+  | Elders Rock | Forge | Post-Swamp | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
 
   ## Moder
   | Name | Crafted At | Stage | Icon |
