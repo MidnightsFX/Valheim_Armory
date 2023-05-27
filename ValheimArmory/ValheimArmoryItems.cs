@@ -408,7 +408,7 @@ namespace ValheimArmory
                 EmbeddedResourceBundle,
                 cfg,
                 new Dictionary<string, string>() {
-                    { "name", "Bronze Crossbow" },
+                    { "name", "Moder Crossbow" },
                     { "catagory", "Bows" },
                     { "prefab", "VACrossbowModer" },
                     { "sprite", "moder_crossbow" },

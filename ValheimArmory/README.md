@@ -262,6 +262,11 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.3.4**
+```
+- Fixed Moders crossbow not being configurable and using the wrong defaults
+```
+
 **1.3.3**
 ```
 - Fixed wood bolt triggering the invalid recipe warning

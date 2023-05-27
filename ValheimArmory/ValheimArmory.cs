@@ -23,7 +23,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "com.midnightsfx.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.3.3";
+        public const string PluginVersion = "1.3.4";
 
         AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -103,7 +103,7 @@ namespace ValheimArmory
                 // Boss Weapons | Moder
                 {"item_spear_moder", "Moders Reach"}, {"item_spear_moder_description", "A blade of ice, continually frozen by tears from Moder herself."},
                 {"item_sword_moder", "Moders Bite"}, {"item_sword_moder_description", "A longblade made from ice, perpetually chilled by the essence of the dragon mother."},
-                {"item_crossbow_moder", "Moders Dream"}, {"item_crossbow_moder_description", "A blade of ice, continually frozen by tears from Moder herself."},
+                {"item_crossbow_moder", "Moders Dream"}, {"item_crossbow_moder_description", "A double compound bow powered by a core of the mother dragons tears."},
             });
 
             Localization.AddTranslation("German", new Dictionary<string, string>
