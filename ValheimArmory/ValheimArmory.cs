@@ -100,6 +100,10 @@ namespace ValheimArmory
                 {"item_sledge_elder", "Elders Rock"}, {"item_sledge_elder_description", "A giant stone held by living vines fused with the blood of the Elder itself."},
                 {"item_elder_roundshield", "Elders Bulwark"}, {"item_elder_roundshield_description", "Wood fused with the blood of the Elder,."},
                 {"item_crossbow_elder", "Elders Vinethrower"}, {"item_crossbow_elder_description", "Living vines strung for a crossbow, hopefully they don't grow anymore."},
+                // Boss Weapons | Bonemass
+                {"item_bonemass_warhammer", "Bonemasses Rage"}, {"item_bonemass_warhammer_description", "A mighty warhammer made from skulls of the dead imbued with the hatred of bonemass. A warhammer behaves like a 2H club instead of a sledge."},
+                {"item_bonemass_greatsword", "Bonemasses Legacy"}, {"item_bonemass_greatsword_description", "A massive ancient bone sharpened to a point mounted on a skull."},
+                {"item_bonemass_dagger", "Bonemasses Ritual"}, {"item_bonemass_dagger_description", "A Thin Iron blade coated in poison embellished by the bones of the dead."},
                 // Boss Weapons | Moder
                 {"item_spear_moder", "Moders Reach"}, {"item_spear_moder_description", "A blade of ice, continually frozen by tears from Moder herself."},
                 {"item_sword_moder", "Moders Bite"}, {"item_sword_moder_description", "A longblade made from ice, perpetually chilled by the essence of the dragon mother."},
