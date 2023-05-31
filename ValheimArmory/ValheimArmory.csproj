@@ -65,6 +65,9 @@
     <EmbeddedResource Include="AssetsEmbedded\vabundle" />
     <None Include="DoPrebuild.props" />
     <None Include="Environment.props" />
+    <None Include="localizations\English.json" />
+    <None Include="localizations\German.json" />
+    <None Include="localizations\Russian.json" />
     <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>
@@ -87,6 +90,11 @@
       $(BuildDependsOn);
       JotunnPostBuildTaskWin
     </BuildDependsOn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetDir)\$(TargetFileName)" "C:\Users\carls\AppData\Roaming\r2modmanPlus-local\Valheim\profiles\Modtest\BepInEx\plugins" /q /y /i
+
+</PostBuildEvent>
   </PropertyGroup>
   <Target Name="EnsureEnvironmentPropsImport" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

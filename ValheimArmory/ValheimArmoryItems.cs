@@ -902,11 +902,41 @@ namespace ValheimArmory
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Chitin", new Tuple<int, int>(14, 8) },
+                    { "Chitin", new Tuple<int, int>(14, 10) },
                     { "JuteRed", new Tuple<int, int>(4, 2) },
-                    { "FineWood", new Tuple<int, int>(6, 3) },
-                    { "Silver", new Tuple<int, int>(4, 2) }
+                    { "FineWood", new Tuple<int, int>(14, 7) },
+                    { "Silver", new Tuple<int, int>(8, 6) }
                     
+                }
+            );
+
+            // Royal Abyssal Atgeir
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                cfg,
+                new Dictionary<string, string>() {
+                    { "name", "Silver Atgeir" },
+                    { "catagory", "Atgeirs" },
+                    { "prefab", "VASilverAtgeir" },
+                    { "sprite", "silver_atgeir" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "pierce", new Tuple<float, float, float, bool>(82, 0, 250, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "spirit", new Tuple<float, float, float, bool>(22, 0, 120, true) },
+                    { "spirit_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "block", new Tuple<float, float, float, bool>(28, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(28, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "Silver", new Tuple<int, int>(30, 15) },
+                    { "ElderBark", new Tuple<int, int>(12, 8) },
+                    { "JuteRed", new Tuple<int, int>(4, 2) },
                 }
             );
         }
