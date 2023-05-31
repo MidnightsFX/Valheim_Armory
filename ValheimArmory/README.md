@@ -9,11 +9,6 @@ This mod is balanced to be mostly lore friendly with a preference for fun and en
 This mod is highly configurable, you can use all of it, parts or tune it as you need.
 
 
-Disclaimer:
-- This is my first Unity, and Valhiem mod
-- My original goal with modding was to just make a singular new arrow
-- I'm not a gamedev, I suck at textures, modeling and don't know the unity loaders
-- I'm learning as I go, and welcome feedback
 
 
 # Features
@@ -51,9 +46,9 @@ Below is more information on all of the items added, what tier they are in, wher
   ## Bonemass
   | Name | Crafted At | Stage | Icon |
   | ----------- | ----------- | ----------- | ----------- |
-  | Bonemasses Rage | Forge | Post-Swamp | ![Bonemass Warhammer icon](https://i.imgur.com/IvJzuX3.png) |
-  | Bonemasses  | Forge | Post-Swamp | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
-  | Elders Rock | Forge | Post-Swamp | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
+  | Bonemasses Rage | Forge | Post-Swamp | ![Bonemass Warhammer icon](https://i.imgur.com/sg9yGYu.png) |
+  | Bonemasses Legacy  | Forge | Post-Swamp | ![bonemass greatsword icon](https://i.imgur.com/OWfG9nK.png) |
+  | Bonemasses Ritual | Forge | Post-Swamp | ![Bonemasses dagger icon](https://i.imgur.com/o9qxcEG.png) |
 
   ## Moder
   | Name | Crafted At | Stage | Icon |
@@ -95,6 +90,7 @@ Below is more information on all of the items added, what tier they are in, wher
   | Name | Crafted At | Stage | Icon |
   | ----------- | ----------- | ----------- | ----------- |
   | Royal Abyssal Atgeir | Forge | Mountain | ![royal abyssal atgeir icon](https://i.imgur.com/FCO85Nq.png) |
+  | Silver Atgeir | Forge | Mountain | ![silver atgeir icon](https://i.imgur.com/WLB6PWp.png) |
 </details>
 
 
@@ -222,6 +218,13 @@ Current configuration options:
 Q. The bronze crossbow costs dragon tears?
 - A. Delete the config for the bronze crossbow (or your whole config file).
 
+
+Q. Why does x weapon look bad?
+- A.
+	- This is my first Unity, and Valhiem mod
+	- My original goal with modding was to just make a singular new arrow
+	- I'm not a gamedev, I suck at textures, modeling and don't know the unity loaders
+	- I'm learning as I go, and welcome feedback
 ---
 
 ## Currently in-progress
@@ -266,6 +269,15 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.4.0**
+```
+- Added initial bonemass boss weapons!
+- First 2H warhammer added, likely slightly overpowered. This weapon acts like a 2H axe or sword, but does blunt damage.
+- Added silver Atgeir, this is a direct upgrade between Iron & Blackmetal
+- Updates to how localizations are added, better support for multiple languages
+- Added Russian translation
+```
+
 **1.3.4**
 ```
 - Fixed Moders crossbow not being configurable and using the wrong defaults
