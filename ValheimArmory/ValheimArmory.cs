@@ -14,6 +14,7 @@ using Jotunn.Configs;
 using System.Collections.Generic;
 using BepInEx.Configuration;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace ValheimArmory
 {
@@ -42,7 +43,7 @@ namespace ValheimArmory
             new ValheimArmoryPieces(EmbeddedResourceBundle, cfg); // not used right now
             new ValheimArmoryItems(EmbeddedResourceBundle, cfg);
 
-            AddLocalizations();
+            AddLocalizations(cfg);
             UnloadAssets();
         }
 
@@ -52,19 +53,27 @@ namespace ValheimArmory
         // "item_sword_description": "sword-description-here",
         // the localization file itself should be a casematched language as defined by one of the "folder" language names from here:
         // https://valheim-modding.github.io/Jotunn/data/localization/language-list.html
-        private void AddLocalizations()
+        private void AddLocalizations(VAConfig cfg)
         {
             Localization = new CustomLocalization();
             LocalizationManager.Instance.AddLocalization(Localization);
 
+            // ValheimArmory.localizations.English.json,ValheimArmory.localizations.German.json,ValheimArmory.localizations.Russian.json
             // load all localization files within the localizations directory
-            foreach (string fileName in Directory.GetFiles("localizations", "*.json"))
+            foreach (string embeddedResouce in typeof(ValheimArmory).Assembly.GetManifestResourceNames())
             {
+                if (!embeddedResouce.Contains("localizations")) { continue; }
                 // Read the localization file
-                string localization = File.ReadAllText(fileName);
-                // Localization name without the .json
-                var localization_name = fileName.Remove(fileName.Length - 5);
-                Localization.AddTranslation("English", localization);
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogInfo($"Reading {embeddedResouce}"); }
+                string localization = ReadEmbeddedResourceFile(embeddedResouce);
+                // since I use comments in the localization that are not valid JSON those need to be stripped
+                string cleaned_localization = Regex.Replace(localization, @"\/\/.*", "");
+                // Just the localization name
+                var localization_name = embeddedResouce.Split('.');
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogInfo($"Adding localization: {localization_name[2]}"); }
+                if (cfg.EnableDebugMode.Value == true) { Logger.LogInfo($"Localization Text: {cleaned_localization}"); }
+                //Localization.AddTranslation(localization_name[2], localization);
+                Localization.AddJsonFile(localization_name[2], cleaned_localization);
             }
         }
 
@@ -85,6 +94,20 @@ namespace ValheimArmory
         private void UnloadAssets()
         {
             EmbeddedResourceBundle.Unload(false);
+        }
+
+        // This reads an embedded file resouce name, these are all resouces packed into the DLL
+        // they all have a format following this:
+        // ValheimArmory.localizations.English.json
+        private string ReadEmbeddedResourceFile(string filename)
+        {
+            using (var stream = typeof(ValheimArmory).Assembly.GetManifestResourceStream(filename))
+            {
+                using (var reader = new StreamReader(stream))
+                {
+                    return reader.ReadToEnd();
+                }
+            }
         }
 
     }
