@@ -95,5 +95,10 @@
   "item_sword_moder": "Drachen Schwert",
   "item_sword_moder_description": "Eine Langklinge aus Eis, ständig gekühlt durch die Essenz der Drachenmutter.",
   "item_crossbow_moder": "Drachen Armbrust",
-  "item_crossbow_moder_description": "Ein doppelt zusammengesetzter Bogen, der von einem Kern aus den Tränen der Drachenmutter angetrieben wird."
+  "item_crossbow_moder_description": "Ein doppelt zusammengesetzter Bogen, der von einem Kern aus den Tränen der Drachenmutter angetrieben wird.",
+  // Boss Weapons | Yagluth
+  "item_yagluth_atgeir": "Yagluths Spitzkrone",
+  "item_yagluth_atgeir_description": "Ein Fragment aus seiner Krone, montiert auf einem Speer. Es strahlt noch immer eine unsterbliche, feurige Wut aus.",
+  "item_yagluth_greatsword": "Yagluths Leibklinge",
+  "item_yagluth_greatsword_description": "Eine riesige Klinge aus schwarzem Metall und den Überresten von Yagluth selbst."
 }

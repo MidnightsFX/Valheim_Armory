@@ -25,7 +25,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "com.midnightsfx.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.4.0";
+        public const string PluginVersion = "1.5.0";
 
         AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -71,7 +71,8 @@ namespace ValheimArmory
                 // Just the localization name
                 var localization_name = embeddedResouce.Split('.');
                 if (cfg.EnableDebugMode.Value == true) { Logger.LogInfo($"Adding localization: {localization_name[2]}"); }
-                if (cfg.EnableDebugMode.Value == true) { Logger.LogInfo($"Localization Text: {cleaned_localization}"); }
+                // Logging some characters seem to cause issues sometimes
+                // if (cfg.EnableDebugMode.Value == true) { Logger.LogInfo($"Localization Text: {cleaned_localization}"); }
                 //Localization.AddTranslation(localization_name[2], localization);
                 Localization.AddJsonFile(localization_name[2], cleaned_localization);
             }

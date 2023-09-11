@@ -8,7 +8,12 @@ This mod is balanced to be mostly lore friendly with a preference for fun and en
 
 This mod is highly configurable, you can use all of it, parts or tune it as you need.
 
+## Translations
+This mod will always have an up-to-date English localization, as that is what I can provide as its author.
+However, I do welcome community translations!
 
+If you would like to contribute a new translation, or improve an existing one please feel free to reach out to me or provide a translation file in the same format as one of the existing ones.
+[Found here](https://github.com/MidnightsFX/Valheim_Armory/tree/master/ValheimArmory/localizations)
 
 
 # Features
@@ -17,7 +22,7 @@ Below are all of the items added by this mod. The descriptions and information h
 
 Here is a sample gallery of weapons added by this mod.
 
-![Sample Gallery of added content](https://i.imgur.com/WisOiMc.png)
+![Sample Gallery of added content](https://i.imgur.com/bl5tTcl.png)
 
 Below is more information on all of the items added, what tier they are in, where they are crafted and at what progression point. All of the sections below are expandable to view the details.
 
@@ -58,7 +63,10 @@ Below is more information on all of the items added, what tier they are in, wher
   | Moders Dream | Forge | Post-Mountain | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
 
   ### Yagluth
-  Coming soon! Vote for boss weapons to get these sooner.
+  | Name | Crafted At | Stage | Icon |
+  | ----------- | ----------- | ----------- | ----------- |
+  | Yagluths Reach | Forge | Post-Plains | ![darkmetal atgeir](https://i.imgur.com/LXLNlF0.png) |
+  | Yagluths Hatred | Forge | Post-Plains | ![darkmetal greatsword](https://i.imgur.com/diyEKHx.png) |
 
 </details>
 
@@ -218,6 +226,8 @@ Current configuration options:
 Q. The bronze crossbow costs dragon tears?
 - A. Delete the config for the bronze crossbow (or your whole config file).
 
+Q. Why does disabling the recipe do nothing?
+- A. You must have an item enabled, for the recipe disable flag to do anything. When an item is disabled it is completely removed from the game, so its recipe doesn't matter.
 
 Q. Why does x weapon look bad?
 - A.
@@ -225,6 +235,7 @@ Q. Why does x weapon look bad?
 	- My original goal with modding was to just make a singular new arrow
 	- I'm not a gamedev, I suck at textures, modeling and don't know the unity loaders
 	- I'm learning as I go, and welcome feedback
+	- I do this in my few hours of free time, sometimes I don't have that time
 ---
 
 ## Currently in-progress
@@ -232,15 +243,16 @@ Q. Why does x weapon look bad?
   <summary>Potential Spoilers!</summary>
 
   * Game engine update, script updates
+  * Designing Boss Weapons for the mistlands
 
   Boss Weapon Release roadmap
-  * Bonemass Weapons (first set of 3)
-  * Yagluth Weapons (first set of 3)
+  * Yagluth Weapons Additions
+  * Additional weapon types for all existing bosses
 
   The Boss weapon roadmap will take a number of updates. Feel free to submit ideas to the github.
 
 
-  If there is something you'd like me to work on vote for it [here](https://poll-maker.com/poll4772706xc1794073-148)!
+  Help me decide what to work on by [voting](https://linkto.run/p/EY5YFUA2) on new content! 
 </details>
 
 ---
@@ -248,7 +260,8 @@ Q. Why does x weapon look bad?
 ## Future Plans
 <details>
   <summary>Potential Spoilers!</summary>
-
+  
+  * Filling out boss weapons for most/all playstyles (long term)
   * Filling out the line of fists (maybe wood), Bronze, Iron, Blackmetal
   * Chitin Shield
   * Named Mace (blackmetal mace)
@@ -256,8 +269,9 @@ Q. Why does x weapon look bad?
   * 2H Warhammers (Maces but bigger)
   * Better VFX for weapons
   * New spear alternatives
+  * Eitr using weapons (magic weapons)
 
-  If there is something you'd like me to work on vote for it [here](https://poll-maker.com/poll4772706xc1794073-148)!
+   Help me decide what to work on by [voting](https://linkto.run/p/EY5YFUA2) on new content! 
 </details>
 
 ---
@@ -269,6 +283,26 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.5.2**
+```
+- Added Chinese translation
+```
+
+**1.5.1**
+```
+- Hildirs Update support validated!
+- Updated to Jotunn 2.12.7
+- Added the option to enable/disable craftable state for all items. This is seperate from enabling the item itself, you can now enable the item to be loaded into the game. 
+	But keep it non-craftable, this might be useful if you only want a specific weapon to drop from Epicloot etc.
+```
+
+**1.5.0**
+```
+- Added two Yagluth themed weapons
+- Added configuration for block to all weapons and shields
+- Updated Jotunn to 2.12.4
+```
+
 **1.4.0**
 ```
 - Added initial bonemass boss weapons!
@@ -353,6 +387,7 @@ Please report any issues you encounter on the [github issue tracker](https://git
 
 ## Credits
 * German translations provided by SACK3000
+* Chinese translations provided by ZhiTian Wu
 * Some texture resources generated from [withpoly](https://withpoly.com/browse/textures)
 * [Sword Model](https://assetstore.unity.com/packages/3d/props/weapons/free-low-poly-swords-rpg-weapons-198166)
 * Hugo for his advice and help getting skinned meshes running

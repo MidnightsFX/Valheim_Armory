@@ -95,5 +95,10 @@
   "item_sword_moder": "Moders Bite",
   "item_sword_moder_description": "A longblade made from ice, perpetually chilled by the essence of the dragon mother.",
   "item_crossbow_moder": "Moders Dream",
-  "item_crossbow_moder_description": "A double compound bow powered by a core of the mother dragons tears."
+  "item_crossbow_moder_description": "A double compound bow powered by a core of the mother dragons tears.",
+  // Boss Weapons | Yagluth
+  "item_yagluth_atgeir": "Yagluths Reach",
+  "item_yagluth_atgeir_description": "A fragment of yagluths crown, mounted on a pike. It still emits an undying firey anger.",
+  "item_yagluth_greatsword": "Yagluths Hatred",
+  "item_yagluth_greatsword_description": "A giant blade hewn from blackmetal and the remains of Yagluth himself."
 }
