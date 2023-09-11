@@ -34,6 +34,8 @@
   // Atgeirs
   "item_atgeir_chitin_heavy": "Алебарда падшего короля",
   "item_atgeir_chitin_heavy_description": "Хитиновая алебарда с серебряным сердечником. Оружие, достойное храбрейших викингов.",
+  "item_silver_atgeir": "Серебряная Алебарда",
+  "item_silver_atgeir_description": "Массивный серебряный клинок с обсидиановым сердечником, оружие повелителя зверей.",
   // Hammers
   "item_sledge_blackmetal": "Разрушитель небес",
   "item_sledge_blackmetal_description": "Тяжелый молот из черного металла, инкрустирован громовыми камнями. Способен вызвать удар молнии.",
@@ -80,6 +82,13 @@
   "item_elder_roundshield_description": "Кусок дерева, пропитанный кровью Древнего. Я думаю, он подойдет в качестве щита.",
   "item_crossbow_elder": "Рука Древнего",
   "item_crossbow_elder_description": "Лозы Древнего послужили тетивой для этого арбалета, я надеюсь, они больше не растут.",
+  // Boss Weapons | Bonemass
+  "item_bonemass_warhammer": "Ярость Костомассы",
+  "item_bonemass_warhammer_description": "Пропитанный ненавистью Костомассы, могучий молот, сделанный из черепов. Ведет себя как двуручная дубина.",
+  "item_bonemass_greatsword": "Наследие Костомассы",
+  "item_bonemass_greatsword_description": "Массивная заостренная кость с гардой из черепа.",
+  "item_bonemass_dagger": "Ритуальный клинок Костомассы",
+  "item_bonemass_dagger_description": "Пропитанный ядом, железный клинок. Украшен осколками костей.",
   // Boss Weapons | Moder
   "item_spear_moder": "Предел Матери",
   "item_spear_moder_description": "Серебряное копье, замороженное слезами Матери.",
@@ -87,4 +96,5 @@
   "item_sword_moder_description": "Длинный ледяной меч, проклятый Матерью.",
   "item_crossbow_moder": "Грезы Матери",
   "item_crossbow_moder_description": "Замерзший серебряный арбалет с частичкой души Матери."
+
 }

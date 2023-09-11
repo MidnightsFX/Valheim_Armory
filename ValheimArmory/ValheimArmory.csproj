@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\JotunnLib.2.11.6\build\JotunnLib.props" Condition="Exists('..\packages\JotunnLib.2.11.6\build\JotunnLib.props')" />
+  <Import Project="..\packages\JotunnLib.2.12.7\build\JotunnLib.props" Condition="Exists('..\packages\JotunnLib.2.12.7\build\JotunnLib.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -44,6 +44,18 @@
     <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MonoMod.Backports, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoMod.Backports.1.0.1\lib\net452\MonoMod.Backports.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Core, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoMod.Core.1.0.1\lib\net452\MonoMod.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Iced, Version=1.17.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoMod.Core.1.0.1\lib\net452\MonoMod.Iced.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.ILHelpers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MonoMod.ILHelpers.1.0.0\lib\net452\MonoMod.ILHelpers.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -68,6 +80,7 @@
     <EmbeddedResource Include="localizations\English.json" />
     <EmbeddedResource Include="localizations\German.json" />
     <EmbeddedResource Include="localizations\Russian.json" />
+    <None Include="localizations\Chinese.json" />
     <None Include="packages.config" />
     <None Include="README.md" />
   </ItemGroup>
@@ -93,6 +106,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(TargetDir)\$(TargetFileName)" "C:\Users\carls\AppData\Roaming\r2modmanPlus-local\Valheim\profiles\Modtest\BepInEx\plugins" /q /y /i
+xcopy "$(TargetDir)\$(TargetFileName)" "C:\Users\carls\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Valheim\profiles\Modtesting\BepInEx\plugins" /q /y /i
 
 </PostBuildEvent>
   </PropertyGroup>
@@ -106,6 +120,6 @@
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\JotunnLib.2.11.6\build\JotunnLib.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JotunnLib.2.11.6\build\JotunnLib.props'))" />
+    <Error Condition="!Exists('..\packages\JotunnLib.2.12.7\build\JotunnLib.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JotunnLib.2.12.7\build\JotunnLib.props'))" />
   </Target>
 </Project>

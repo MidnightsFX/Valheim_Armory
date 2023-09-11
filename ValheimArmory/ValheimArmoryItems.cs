@@ -299,6 +299,7 @@ namespace ValheimArmory
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "pierce", new Tuple<float, float, float, bool>(130, 0, 300, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(140, 0, 300, true) },
                     { "block", new Tuple<float, float, float, bool>(14, 0, 60, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(125, 0, 300, true) },
@@ -330,6 +331,7 @@ namespace ValheimArmory
                     { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "lightning", new Tuple<float, float, float, bool>(18, 0, 90, true) },
                     { "lightning_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(5, 0, 50, true) },
                     { "block", new Tuple<float, float, float, bool>(9, 0, 25, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                 },
@@ -359,6 +361,7 @@ namespace ValheimArmory
                     { "pierce", new Tuple<float, float, float, bool>(40, 0, 300, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "block", new Tuple<float, float, float, bool>(14, 0, 60, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(140, 0, 300, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(125, 0, 300, true) },
                 },
@@ -390,6 +393,7 @@ namespace ValheimArmory
                     { "spirit", new Tuple<float, float, float, bool>(15, 0, 300, true) },
                     { "spirit_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
                     { "block", new Tuple<float, float, float, bool>(14, 0, 60, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(140, 0, 300, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(125, 0, 300, true) },
                 },
@@ -421,6 +425,7 @@ namespace ValheimArmory
                     { "frost", new Tuple<float, float, float, bool>(40, 0, 300, true) },
                     { "frost_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "block", new Tuple<float, float, float, bool>(14, 0, 60, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(140, 0, 300, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(125, 0, 300, true) },
                 },
@@ -454,6 +459,8 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "slash", new Tuple<float, float, float, bool>(35, 0, 120, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 30, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                 },
@@ -485,6 +492,8 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(1, 0, 20, true) },
                     { "lightning", new Tuple<float, float, float, bool>(12, 0, 120, true) },
                     { "lightning_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 30, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
                 },
@@ -517,6 +526,8 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
                     { "frost", new Tuple<float, float, float, bool>(25, 0, 120, true) },
                     { "frost_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 30, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
                 },
@@ -545,6 +556,7 @@ namespace ValheimArmory
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(60, 0, 200, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
                     { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
@@ -572,6 +584,7 @@ namespace ValheimArmory
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(74, 0, 250, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
                     { "block", new Tuple<float, float, float, bool>(24, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(25, 1, 50, true) },
@@ -601,6 +614,7 @@ namespace ValheimArmory
                     { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "spirit", new Tuple<float, float, float, bool>(30, 0, 120, true) },
                     { "spirit_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
                     { "block", new Tuple<float, float, float, bool>(38, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(17, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(30, 1, 50, true) },
@@ -632,6 +646,7 @@ namespace ValheimArmory
                     { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "poison", new Tuple<float, float, float, bool>(35, 0, 250, true) },
                     { "poison_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
                     { "block", new Tuple<float, float, float, bool>(24, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(25, 1, 50, true) },
@@ -643,6 +658,38 @@ namespace ValheimArmory
                     { "WitheredBone", new Tuple<int, int>(18, 12) },
                     { "Wishbone", new Tuple<int, int>(1, 1) },
                     { "TrophyBonemass", new Tuple<int, int>(1, 1) },
+                }
+            );
+
+            // Yagluth Greatsword
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                cfg,
+                new Dictionary<string, string>() {
+                    { "name", "Yagluths Greatsword" },
+                    { "catagory", "Swords" },
+                    { "prefab", "VAYagluth_greatsword" },
+                    { "sprite", "yagluth_greatsword" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "slash", new Tuple<float, float, float, bool>(130, 0, 250, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
+                    { "fire", new Tuple<float, float, float, bool>(25, 0, 250, true) },
+                    { "fire_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
+                    { "block", new Tuple<float, float, float, bool>(30, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(17, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(31, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "BlackMetal", new Tuple<int, int>(16, 12) },
+                    { "Iron", new Tuple<int, int>(6, 6) },
+                    { "TrophyGoblinKing", new Tuple<int, int>(1, 1) },
+                    { "YagluthDrop", new Tuple<int, int>(3, 2) },
                 }
             );
         }
@@ -666,6 +713,7 @@ namespace ValheimArmory
                     { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "chop", new Tuple<float, float, float, bool>(65, 0, 200, true) },
                     { "chop_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(65, 0, 200, true) },
                     { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(5, 1, 20, true) },
@@ -700,6 +748,7 @@ namespace ValheimArmory
                     { "lightning_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "chop", new Tuple<float, float, float, bool>(40, 0, 200, true) },
                     { "chop_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(65, 0, 200, true) },
                     { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(5, 1, 20, true) },
@@ -733,6 +782,7 @@ namespace ValheimArmory
                     { "chop_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "fire", new Tuple<float, float, float, bool>(70, 0, 160, true) },
                     { "fire_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(65, 0, 200, true) },
                     { "block", new Tuple<float, float, float, bool>(52, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 50, true) },
@@ -766,6 +816,7 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "lightning", new Tuple<float, float, float, bool>(38, 0, 120, true) },
                     { "lightning_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(200, 0, 400, true) },
                     { "block", new Tuple<float, float, float, bool>(48, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
@@ -797,6 +848,7 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(4, 0, 20, true) },
                     { "spirit", new Tuple<float, float, float, bool>(12, 0, 99, true) },
                     { "spirit_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(150, 0, 400, true) },
                     { "block", new Tuple<float, float, float, bool>(48, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
@@ -828,6 +880,7 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
                     { "poison", new Tuple<float, float, float, bool>(32, 0, 99, true) },
                     { "poison_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(65, 0, 400, true) },
                     { "block", new Tuple<float, float, float, bool>(48, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 50, true) },
@@ -862,6 +915,7 @@ namespace ValheimArmory
                     { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "lightning", new Tuple<float, float, float, bool>(18, 0, 25, true) },
                     { "lightning_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
                     { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(16, 1, 50, true) },
@@ -895,6 +949,7 @@ namespace ValheimArmory
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "spirit", new Tuple<float, float, float, bool>(25, 0, 120, true) },
                     { "spirit_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
                     { "block", new Tuple<float, float, float, bool>(28, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(28, 1, 50, true) },
@@ -910,7 +965,7 @@ namespace ValheimArmory
                 }
             );
 
-            // Royal Abyssal Atgeir
+            // Silver Atgeir
             new ValArmoryItem(
                 EmbeddedResourceBundle,
                 cfg,
@@ -927,6 +982,7 @@ namespace ValheimArmory
                     { "pierce_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "spirit", new Tuple<float, float, float, bool>(22, 0, 120, true) },
                     { "spirit_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
                     { "block", new Tuple<float, float, float, bool>(28, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(28, 1, 50, true) },
@@ -937,6 +993,38 @@ namespace ValheimArmory
                     { "Silver", new Tuple<int, int>(30, 15) },
                     { "ElderBark", new Tuple<int, int>(12, 8) },
                     { "JuteRed", new Tuple<int, int>(4, 2) },
+                }
+            );
+
+            // Yagluth Atgeir
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                cfg,
+                new Dictionary<string, string>() {
+                    { "name", "Yagluths Reach" },
+                    { "catagory", "Atgeirs" },
+                    { "prefab", "VAYagluthAtgeir" },
+                    { "sprite", "yagluth_atgeir" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "pierce", new Tuple<float, float, float, bool>(105, 0, 250, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(8, 0, 25, true) },
+                    { "fire", new Tuple<float, float, float, bool>(25, 0, 120, true) },
+                    { "fire_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(58, 0, 120, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(36, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "BlackMetal", new Tuple<int, int>(8, 8) },
+                    { "Iron", new Tuple<int, int>(20, 20) },
+                    { "TrophyGoblinKing", new Tuple<int, int>(1, 1) },
+                    { "YagluthDrop", new Tuple<int, int>(3, 2) },
                 }
             );
         }
@@ -958,6 +1046,7 @@ namespace ValheimArmory
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "block", new Tuple<float, float, float, bool>(48, 0, 120, true) },
                     { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
+                    { "deflection_force", new Tuple<float, float, float, bool>(25, 0, 120, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                 },
@@ -985,6 +1074,7 @@ namespace ValheimArmory
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "block", new Tuple<float, float, float, bool>(38, 0, 120, true) },
                     { "block_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
+                    { "deflection_force", new Tuple<float, float, float, bool>(25, 0, 120, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                 },
@@ -1021,6 +1111,7 @@ namespace ValheimArmory
                     { "pierce_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
                     { "lightning", new Tuple<float, float, float, bool>(8, 0, 99, true) },
                     { "lightning_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(6, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
                 },
@@ -1052,6 +1143,7 @@ namespace ValheimArmory
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "pierce", new Tuple<float, float, float, bool>(19, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(12, 0, 40, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(7, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                 },
@@ -1082,6 +1174,7 @@ namespace ValheimArmory
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "pierce", new Tuple<float, float, float, bool>(16, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(6, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
                 },
@@ -1112,6 +1205,7 @@ namespace ValheimArmory
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "pierce", new Tuple<float, float, float, bool>(37, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(12, 0, 40, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
                 },
@@ -1142,6 +1236,7 @@ namespace ValheimArmory
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "pierce", new Tuple<float, float, float, bool>(22, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(7, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(22, 1, 50, true) },
                 },
@@ -1176,6 +1271,7 @@ namespace ValheimArmory
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "spirit", new Tuple<float, float, float, bool>(32, 0, 99, true) },
                     { "spirit_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(12, 0, 40, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(32, 1, 50, true) },
                 },
@@ -1208,6 +1304,7 @@ namespace ValheimArmory
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "spirit", new Tuple<float, float, float, bool>(18, 0, 99, true) },
                     { "spirit_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(30, 1, 50, true) },
                 },
@@ -1240,6 +1337,7 @@ namespace ValheimArmory
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "poison", new Tuple<float, float, float, bool>(12, 0, 99, true) },
                     { "poison_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(7, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(22, 1, 50, true) },
                 },
@@ -1278,6 +1376,7 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(1, 0, 20, true) },
                     { "frost", new Tuple<float, float, float, bool>(32, 0, 99, true) },
                     { "frost_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
                 },
@@ -1301,7 +1400,7 @@ namespace ValheimArmory
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="EmbeddedResourceBundle"></param>
+        /// <param name="EmbeddedResourceBundle"> The embedded assets</param>
         /// <param name="cfg"> config file to add things to</param>
         /// <param name="metadata">Key(string)-Value(string) dictionary of item metadata eg: "name" = "Green Metal Arrow"</param>
         /// <param name="itemdata">Key(string)-Value(Tuple) dictionary of item metadata with config metadata eg: "blunt" = < 15(value), 0(min), 200(max), true(cfg_enable_flag) > </param>
@@ -1326,6 +1425,7 @@ namespace ValheimArmory
             if (!crafting_stations.Contains(metadata["craftedAt"])) { throw new ArgumentException($"Catagory {metadata["craftedAt"]} must be a valid crafting station: {crafting_stations}"); }
             if (recipedata.Count > 4) { throw new ArgumentException($"Recipe data can't have more than 4 requirements"); }
             if (!itemtoggles.ContainsKey("enabled")) { itemtoggles.Add("enabled", true); }
+            if (!itemtoggles.ContainsKey("craftable")) { itemtoggles.Add("craftable", true); }
             // needed metadata - item name without spaces
             metadata["short_item_name"] = string.Join("", metadata["name"].Split(default(string[]), StringSplitOptions.RemoveEmptyEntries));
 
@@ -1352,10 +1452,12 @@ namespace ValheimArmory
                     recipe[recipe_index] = new RequirementConfig { Item = entry.Key, Amount = entry.Value.Item1, AmountPerLevel = entry.Value.Item2 };
                     recipe_index++;
                 }
+
                 ItemConfig itemcfg = new ItemConfig()
                 {
                     Amount = (int)itemdata["amount"].Item1,
                     CraftingStation = $"{metadata["craftedAt"]}",
+                    Enabled = itemtoggles["craftable"],
                     Icons = new[] { sprite },
                     Requirements = recipe
                 };
@@ -1378,7 +1480,8 @@ namespace ValheimArmory
         private void CreateAndLoadConfigValues(VAConfig Config, Dictionary<String, String> metadata, Dictionary<String, Tuple<float, float, float, bool>> itemdata, Dictionary<String, bool> itemtoggles, Dictionary<String, Tuple<int, int>> recipedata)
         {
             itemtoggles["enabled"] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-Enable", itemtoggles["enabled"], $"Enable/Disable the {metadata["name"]}.").Value;
-            
+            itemtoggles["craftable"] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-Craftable", itemtoggles["craftable"], $"Enable/Disable the crafting recipe for {metadata["name"]}.").Value;
+
             // Set and update the crafted at value
             String craftedAt_temp = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-CraftedAt", metadata["craftedAt"], $"Where the recipe is crafted at, valid values: 'forge', 'piece_workbench', 'blackforge', 'piece_artisanstation'.").Value;
             if (!crafting_stations.Contains(craftedAt_temp))
@@ -1393,7 +1496,7 @@ namespace ValheimArmory
             // Item bolean flag configs
             foreach (KeyValuePair<string, bool> entry in itemtoggles)
             {
-                if (entry.Key == "enabled") { continue; }
+                if (entry.Key == "enabled" || entry.Key == "craftable") { continue; }
                 itemtoggles[entry.Key] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-{entry.Key}", entry.Value, $"{entry.Key} enable(true)/disable(false).", true).Value;
             }
             // Item float valued configs
@@ -1489,7 +1592,7 @@ namespace ValheimArmory
         }
 
         /// <summary>
-        /// Helper to bind configs for flaot types
+        /// Helper to bind configs for float types
         /// </summary>
         /// <param name="config_file"></param>
         /// <param name="catagory"></param>
@@ -1635,7 +1738,7 @@ namespace ValheimArmory
                     case "parry":
                         item.m_shared.m_timedBlockBonus = entry.Value.Item1;
                         break;
-                    case "blockforce":
+                    case "block_force":
                         item.m_shared.m_deflectionForce = entry.Value.Item1;
                         break;
                     case "timed_block_bonus":
