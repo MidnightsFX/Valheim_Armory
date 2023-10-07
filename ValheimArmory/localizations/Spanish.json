@@ -52,9 +52,9 @@
   "item_silver_greatsword": "Gran espada rúnica de plata",
   "item_silver_greatsword_description": "Plata forjada con hierro forjado, blasonada con runas para alejar a los no muertos.",
   // Daggers
-  "item_daga_de_hierro": "Daga de hierro",
+  "item_dagger_iron": "Daga de hierro",
   "item_dagger_iron_description": "No tan afilada como el cuchillo abisal, pero corta bien.",
-  "item_daga_hierro_2h": "Dagas Rojas",
+  "item_dagger_iron_2h": "Dagas Rojas",
   "item_dagger_iron_2h_description": "Dos cuchillos de hierro te convierten en un vikingo ladron medio.",
   "item_dagger_bronze": "Daga de Bronce",
   "item_dagger_bronze_description": "Más afilada que el cobre, es una puñalada penetrante",
