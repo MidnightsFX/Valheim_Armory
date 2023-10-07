@@ -283,6 +283,17 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.5.4**
+```
+- Added Spanish Translation
+- Fixed missing sound effects for Elders hammer
+```
+
+**1.5.3**
+```
+- Fixed Chinese Translation not loading properly
+```
+
 **1.5.2**
 ```
 - Added Chinese translation
