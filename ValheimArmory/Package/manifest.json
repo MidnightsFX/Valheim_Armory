@@ -1,7 +1,7 @@
 ﻿{
   "name": "ValheimArmory",
   "description": "ValheimArmory hopes to create a more diverse but not sprawling selection of weapons to make all playstyles feel fully supported at each level.",
-  "version_number": "1.5.7",
+  "version_number": "1.5.8",
   "website_url": "https://discord.gg/Dmr9PQTy9m",
   "dependencies": [
     "denikson-BepInExPack_Valheim-5.4.2200",

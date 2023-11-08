@@ -1490,7 +1490,7 @@ namespace ValheimArmory
             if (!metadata.ContainsKey("sprite")) { throw new ArgumentException($"Item must have a sprite"); }
             if (!metadata.ContainsKey("craftedAt")) { throw new ArgumentException($"Item must have a craftedAt"); }
             if (!itemdata.ContainsKey("amount")) { throw new ArgumentException($"Item must have an amount to be crafted"); }
-            if (!crafting_stations.Contains(metadata["craftedAt"])) { throw new ArgumentException($"Catagory {metadata["craftedAt"]} must be a valid crafting station: {crafting_stations}"); }
+            //if (!crafting_stations.Contains(metadata["craftedAt"])) { throw new ArgumentException($"Catagory {metadata["craftedAt"]} must be a valid crafting station: {crafting_stations}"); }
             if (recipedata.Count > 4) { throw new ArgumentException($"Recipe data can't have more than 4 requirements"); }
             if (!itemtoggles.ContainsKey("enabled")) { itemtoggles.Add("enabled", true); }
             if (!itemtoggles.ContainsKey("craftable")) { itemtoggles.Add("craftable", true); }
@@ -1551,16 +1551,8 @@ namespace ValheimArmory
             itemtoggles["craftable"] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-Craftable", itemtoggles["craftable"], $"Enable/Disable the crafting recipe for {metadata["name"]}.").Value;
 
             // Set and update the crafted at value
-            String craftedAt_temp = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-CraftedAt", metadata["craftedAt"], $"Where the recipe is crafted at, valid values: 'forge', 'piece_workbench', 'blackforge', 'piece_artisanstation'.").Value;
-            if (!crafting_stations.Contains(craftedAt_temp))
-            {
-                Logger.LogWarning($"{metadata["catagory"]} - {metadata["name"]} - {metadata["short_item_name"]}-CraftedAt is not valid and the default will be used. Valid values: 'forge', 'piece_workbench', 'blackforge', 'piece_artisanstation'.");
-            }
-            else
-            {
-              metadata["craftedAt"] = craftedAt_temp;
-            }
-                
+            metadata["craftedAt"] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-CraftedAt", metadata["craftedAt"], $"Where the recipe is crafted at, eg: 'forge', 'piece_workbench', 'blackforge', 'piece_artisanstation'.").Value;
+
             // Item bolean flag configs
             foreach (KeyValuePair<string, bool> entry in itemtoggles)
             {

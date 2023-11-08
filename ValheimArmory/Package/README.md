@@ -290,6 +290,12 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.5.8**
+```
+- Fixing arrow text description for arrows including a non-printable control character
+- Improving flexibility of crafting station configuration options for all craftable weapons/ammos
+```
+
 **1.5.7**
 ```
 - Default configuration for Valheim Enchantment System (VES) and Epic Loot now available in the mod folder
