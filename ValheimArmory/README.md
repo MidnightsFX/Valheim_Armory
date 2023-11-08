@@ -8,6 +8,12 @@ This mod is balanced to be mostly lore friendly with a preference for fun and en
 
 This mod is highly configurable, you can use all of it, parts or tune it as you need.
 
+Got a bug to report or just want to chat about the mod? Drop by the discord or github.
+|||||
+|--|--|--|--|
+| Discord | [![discord logo](https://i.imgur.com/uE6umQE.png)](https://discord.gg/Dmr9PQTy9m) | Github | [![github logo](https://i.imgur.com/lvbP5OF.png)](https://github.com/MidnightsFX/Valheim_Armory) |
+
+
 ## Translations
 This mod will always have an up-to-date English localization, as that is what I can provide as its author.
 However, I do welcome community translations!
@@ -223,6 +229,13 @@ Current configuration options:
 
 ## FAQ
 
+Q. Valheim Enchanting System doesn't support these weapons?
+- A. There is a default VES config in the VA folder (`VES.ValheimArmory.default.yml`), it must be moved to the VES config folder. This gives you full control of configurations that are actually applied in regards to VES.
+	 The folder you should place this config file in is `BepInEx\config\ValheimEnchantmentSystem\AdditionalEnchantmentReqs`
+
+Q. Epic Loot doesn't automatically drop these weapons, what gives?
+- A. There is a default Epic Loot config folder (EpicLoot_Valheim_Armory) in the VA folder, it must be moved to the Epic loot config patches folder. `\BepInEx\config\EpicLoot\patches`
+
 Q. The bronze crossbow costs dragon tears?
 - A. Delete the config for the bronze crossbow (or your whole config file).
 
@@ -241,8 +254,7 @@ Q. Why does x weapon look bad?
 ## Currently in-progress
 <details>
   <summary>Potential Spoilers!</summary>
-
-  * Game engine update, script updates
+  
   * Designing Boss Weapons for the mistlands
 
   Boss Weapon Release roadmap
@@ -250,9 +262,6 @@ Q. Why does x weapon look bad?
   * Additional weapon types for all existing bosses
 
   The Boss weapon roadmap will take a number of updates. Feel free to submit ideas to the github.
-
-
-  Help me decide what to work on by [voting](https://linkto.run/p/EY5YFUA2) on new content! 
 </details>
 
 ---
@@ -270,8 +279,6 @@ Q. Why does x weapon look bad?
   * Better VFX for weapons
   * New spear alternatives
   * Eitr using weapons (magic weapons)
-
-   Help me decide what to work on by [voting](https://linkto.run/p/EY5YFUA2) on new content! 
 </details>
 
 ---
@@ -283,6 +290,24 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.5.7**
+```
+- Default configuration for Valheim Enchantment System (VES) and Epic Loot now available in the mod folder
+- Added Elders sword & mace
+- Fixed prefab name for Chitin Atgeir
+```
+
+**1.5.6**
+```
+-Fixes for the Elder Hammer & Skyshatter not having sfx hit sounds
+```
+
+**1.5.5**
+```
+- Fixes for the spanish translation
+- Updates to required version of Jotunn & BepinEx
+```
+
 **1.5.4**
 ```
 - Added Spanish Translation
@@ -399,6 +424,7 @@ Please report any issues you encounter on the [github issue tracker](https://git
 ## Credits
 * German translations provided by SACK3000
 * Chinese translations provided by ZhiTian Wu
+* Valheim Enchantment System config defaults by Aziraphale
 * Some texture resources generated from [withpoly](https://withpoly.com/browse/textures)
 * [Sword Model](https://assetstore.unity.com/packages/3d/props/weapons/free-low-poly-swords-rpg-weapons-198166)
 * Hugo for his advice and help getting skinned meshes running

@@ -1,0 +1,295 @@
+{
+  "TargetFile": "iteminfo.json",
+  "Author": "MidnightsFX",
+  "RequireAll": true,
+  "Patches": [
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Swords')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VAAntler_Sword",
+        "VABonemassGreatsword",
+        "VAbronze_greatsword",
+        "VAiron_greatsword",
+        "VAsilver_greatsword",
+        "VASwordChitin",
+        "VASwordModer",
+        "VAVine_Sword",
+        "VAYagluth_greatsword"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Swords')].ItemsByBoss.defeated_eikthyr",
+      "Action": "AppendAll",
+      "Value": [
+        "VAAntler_Sword"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Swords')].ItemsByBoss.defeated_gdking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAVine_Sword",
+        "VAbronze_greatsword",
+        "VASwordChitin"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Swords')].ItemsByBoss.defeated_bonemass",
+      "Action": "AppendAll",
+      "Value": [
+        "VABonemassGreatsword",
+        "VAiron_greatsword"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Swords')].ItemsByBoss.defeated_dragon",
+      "Action": "AppendAll",
+      "Value": [
+        "VASwordModer",
+        "VAsilver_greatsword"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Swords')].ItemsByBoss.defeated_goblinking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAYagluth_greatsword"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'TwoHandAxes')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VAAntler_greataxe",
+        "VAblackmetal_battleaxe",
+        "VAbronze_battleaxe"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'TwoHandAxes')].ItemsByBoss.defeated_eikthyr",
+      "Action": "AppendAll",
+      "Value": [
+        "VAAntler_greataxe"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'TwoHandAxes')].ItemsByBoss.defeated_gdking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAbronze_battleaxe"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'TwoHandAxes')].ItemsByBoss.defeated_goblinking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAblackmetal_battleaxe"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Knives')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VAAntler_dagger",
+        "VABonemassDagger",
+        "VAdagger_bronze",
+        "VAdagger_bronze_2h",
+        "VAdagger_iron",
+        "VAdagger_iron_2h",
+        "VAdagger_silver",
+        "VAdagger_silver_2h"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Knives')].ItemsByBoss.defeated_eikthyr",
+      "Action": "AppendAll",
+      "Value": [
+        "VAAntler_dagger"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Knives')].ItemsByBoss.defeated_gdking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAdagger_bronze",
+        "VAdagger_bronze_2h"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Knives')].ItemsByBoss.defeated_bonemass",
+      "Action": "AppendAll",
+      "Value": [
+        "VABonemassDagger",
+        "VAdagger_iron",
+        "VAdagger_iron_2h"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Knives')].ItemsByBoss.defeated_dragon",
+      "Action": "AppendAll",
+      "Value": [
+        "VAdagger_silver",
+        "VAdagger_silver_2h"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Clubs')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VAElder_mace"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Clubs')].ItemsByBoss.defeated_gdking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAElder_mace"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Sledges')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VAblackmetal_sledge",
+        "VABonemassWarhammer",
+        "VAElderHammer"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Sledges')].ItemsByBoss.defeated_gdking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAElderHammer"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Sledges')].ItemsByBoss.defeated_bonemass",
+      "Action": "AppendAll",
+      "Value": [
+        "VABonemassWarhammer"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Sledges')].ItemsByBoss.defeated_goblinking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAblackmetal_sledge"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Polearms')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VAatgeir_antler",
+        "VAAtgeirChitin",
+        "VASilverAtgeir",
+        "VAYagluthAtgeir"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Polearms')].ItemsByBoss.defeated_eikthyr",
+      "Action": "AppendAll",
+      "Value": [
+        "VAatgeir_antler"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Polearms')].ItemsByBoss.defeated_dragon",
+      "Action": "AppendAll",
+      "Value": [
+        "VAAtgeirChitin",
+        "VASilverAtgeir"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Polearms')].ItemsByBoss.defeated_goblinking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAYagluthAtgeir"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Spears')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VASpearModer"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Spears')].ItemsByBoss.defeated_dragon",
+      "Action": "AppendAll",
+      "Value": [
+        "VASpearModer"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Bows')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VAAntler_Bow",
+        "VAArbalistBronze",
+        "VACrossbowBronze",
+        "VACrossbowElder",
+        "VACrossbowModer"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Bows')].ItemsByBoss.defeated_eikthyr",
+      "Action": "AppendAll",
+      "Value": [
+        "VAAntler_Bow"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Bows')].ItemsByBoss.defeated_gdking",
+      "Action": "AppendAll",
+      "Value": [
+        "VACrossbowBronze",
+        "VACrossbowElder"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Bows')].ItemsByBoss.defeated_dragon",
+      "Action": "AppendAll",
+      "Value": [
+        "VACrossbowModer"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Bows')].ItemsByBoss.defeated_goblinking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAArbalistBronze"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Bucklers')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VAserpent_buckler"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'Bucklers')].ItemsByBoss.defeated_bonemass",
+      "Action": "AppendAll",
+      "Value": [
+        "VAserpent_buckler"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'RoundShields')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VAElderRoundShield"
+      ]
+    },
+    {
+      "Path": "$.ItemInfo[?(@.Type == 'RoundShields')].ItemsByBoss.defeated_gdking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAElderRoundShield"
+      ]
+    }
+  ]
+}

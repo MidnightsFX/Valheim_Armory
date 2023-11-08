@@ -30,6 +30,7 @@ namespace ValheimArmory
             LoadDaggers(EmbeddedResourceBundle, cfg);
             LoadShields(EmbeddedResourceBundle, cfg);
             LoadSpears(EmbeddedResourceBundle, cfg);
+            LoadMaces(EmbeddedResourceBundle, cfg);
         }
 
         private void LoadArrows(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
@@ -507,6 +508,38 @@ namespace ValheimArmory
                 }
             );
 
+            // Vine Sword
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                cfg,
+                new Dictionary<string, string>() {
+                    { "name", "Elders Balance" },
+                    { "catagory", "Swords" },
+                    { "prefab", "VAVine_Sword" },
+                    { "sprite", "vine_sword" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "slash", new Tuple<float, float, float, bool>(45, 0, 90, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { "spirit", new Tuple<float, float, float, bool>(16, 0, 120, true) },
+                    { "spirit_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(20, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(9, 1, 30, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "Stone", new Tuple<int, int>(40, 25) },
+                    { "Bronze", new Tuple<int, int>(6, 6) },
+                    { "CryptKey", new Tuple<int, int>(1, 1) },
+                    { "TrophyTheElder", new Tuple<int, int>(1, 1) },
+                }
+            );
+
             // Ice Sword
             new ValArmoryItem(
                 EmbeddedResourceBundle,
@@ -937,7 +970,7 @@ namespace ValheimArmory
                 new Dictionary<string, string>() {
                     { "name", "Royal Abyssal Atgeir" },
                     { "catagory", "Atgeirs" },
-                    { "prefab", "VAatgeirchitin" },
+                    { "prefab", "VAAtgeirchitin" },
                     { "sprite", "chitin_heavy_atgeir_small2" },
                     { "craftedAt", "forge" }
                 },
@@ -1390,11 +1423,46 @@ namespace ValheimArmory
                 }
             );
         }
+
+        private void LoadMaces(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
+        {
+            // Elders Mace
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                cfg,
+                new Dictionary<string, string>() {
+                    { "name", "Elders Fist" },
+                    { "catagory", "Maces" },
+                    { "prefab", "VAElder_mace" },
+                    { "sprite", "elder_mace" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "blunt", new Tuple<float, float, float, bool>(45, 0, 90, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { "spirit", new Tuple<float, float, float, bool>(16, 0, 120, true) },
+                    { "spirit_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(20, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(9, 1, 30, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "Stone", new Tuple<int, int>(40, 25) },
+                    { "Bronze", new Tuple<int, int>(6, 6) },
+                    { "CryptKey", new Tuple<int, int>(1, 1) },
+                    { "TrophyTheElder", new Tuple<int, int>(1, 1) },
+                }
+            );
+        }
     }
 
     class ValArmoryItem
     {
-        String[] allowed_catagories = {"Arrows", "Atgeirs", "Axes", "Bows", "Hammers", "Shields", "Swords", "Spears", "Daggers" };
+        String[] allowed_catagories = {"Arrows", "Atgeirs", "Axes", "Bows", "Hammers", "Shields", "Swords", "Spears", "Daggers", "Maces" };
         String[] damage_types = {"blunt", "pierce", "slash", "fire", "spirit", "lightning", "chop" };
         String[] crafting_stations = { "forge", "piece_workbench", "blackforge", "piece_artisanstation" };
         /// <summary>

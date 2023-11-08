@@ -1,0 +1,193 @@
+{
+  "TargetFile": "loottables.json",
+  "Author": "MidnightsFX",
+  "RequireAll": true,
+  "Patches": [
+    {
+      "Path": "$.ItemSets[?(@.Name == 'Tier1Weapons')].Loot",
+      "Action": "AppendAll",
+      "Value": [
+        {
+          "Item": "VAAntler_Bow",
+          "Weight": 1,
+          "Rarity": [ 94, 3, 2, 1 ]
+        },
+        {
+          "Item": "VAAntler_Sword",
+          "Weight": 1,
+          "Rarity": [ 94, 3, 2, 1 ]
+        },
+        {
+          "Item": "VAAntler_greataxe",
+          "Weight": 1,
+          "Rarity": [ 94, 3, 2, 1 ]
+        },
+        {
+          "Item": "VAatgeir_antler",
+          "Weight": 1,
+          "Rarity": [ 94, 3, 2, 1 ]
+        },
+        {
+          "Item": "VAAntler_dagger",
+          "Weight": 1,
+          "Rarity": [ 94, 3, 2, 1 ]
+        }
+      ]
+    },
+    {
+      "Path": "$.ItemSets[?(@.Name == 'Tier2Weapons')].Loot",
+      "Action": "AppendAll",
+      "Value": [
+        {
+          "Item": "VACrossbowBronze",
+          "Weight": 1,
+          "Rarity": [ 80, 14, 4, 2 ]
+        },
+        {
+          "Item": "VACrossbowElder",
+          "Weight": 1,
+          "Rarity": [ 80, 14, 4, 2 ]
+        },
+        {
+          "Item": "VASwordChitin",
+          "Weight": 1,
+          "Rarity": [ 80, 14, 4, 2 ]
+        },
+        {
+          "Item": "VAbronze_greatsword",
+          "Weight": 1,
+          "Rarity": [ 80, 14, 4, 2 ]
+        },
+        {
+          "Item": "VAbronze_battleaxe",
+          "Weight": 1,
+          "Rarity": [ 80, 14, 4, 2 ]
+        },
+        {
+          "Item": "VAElderHammer",
+          "Weight": 1,
+          "Rarity": [ 80, 14, 4, 2 ]
+        },
+        {
+          "Item": "VAdagger_bronze_2h",
+          "Weight": 1,
+          "Rarity": [ 80, 14, 4, 2 ]
+        },
+        {
+          "Item": "VAdagger_bronze",
+          "Weight": 1,
+          "Rarity": [ 80, 14, 4, 2 ]
+        },
+        {
+          "Item": "VAVine_Sword",
+          "Weight": 1,
+          "Rarity": [ 80, 14, 4, 2 ]
+        },
+        {
+          "Item": "VAElder_mace",
+          "Weight": 1,
+          "Rarity": [ 80, 14, 4, 2 ]
+        }
+      ]
+    },
+    {
+      "Path": "$.ItemSets[?(@.Name == 'Tier2Shields')].Loot",
+      "Action": "AppendAll",
+      "Value": [
+        {
+          "Item": "VAElderRoundShield",
+          "Weight": 1,
+          "Rarity": [ 80, 14, 4, 2 ]
+        }
+      ]
+    },
+    {
+      "Path": "$.ItemSets[?(@.Name == 'Tier3Weapons')].Loot",
+      "Action": "AppendAll",
+      "Value": [
+        {
+          "Item": "VACrossbowModer",
+          "Weight": 1,
+          "Rarity": [ 38, 50, 8, 4 ]
+        },
+        {
+          "Item": "VASwordModer",
+          "Weight": 1,
+          "Rarity": [ 38, 50, 8, 4 ]
+        },
+        {
+          "Item": "VAsilver_greatsword",
+          "Weight": 1,
+          "Rarity": [ 38, 50, 8, 4 ]
+        },
+        {
+          "Item": "VASilverAtgeir",
+          "Weight": 1,
+          "Rarity": [ 38, 50, 8, 4 ]
+        },
+        {
+          "Item": "VASpearModer",
+          "Weight": 1,
+          "Rarity": [ 38, 50, 8, 4 ]
+        },
+        {
+          "Item": "VAdagger_silver",
+          "Weight": 1,
+          "Rarity": [ 38, 50, 8, 4 ]
+        },
+        {
+          "Item": "VAdagger_silver_2h",
+          "Weight": 1,
+          "Rarity": [ 38, 50, 8, 4 ]
+        },
+        {
+          "Item": "VAAtgeirchitin",
+          "Weight": 1,
+          "Rarity": [ 38, 50, 8, 4 ]
+        }
+      ]
+    },
+    {
+      "Path": "$.ItemSets[?(@.Name == 'Tier3Shields')].Loot",
+      "Action": "AppendAll",
+      "Value": [
+        {
+          "Item": "VAserpent_buckler",
+          "Weight": 1,
+          "Rarity": [ 38, 50, 8, 4 ]
+        }
+      ]
+    },
+    {
+      "Path": "$.ItemSets[?(@.Name == 'Tier4Weapons')].Loot",
+      "Action": "AppendAll",
+      "Value": [
+        {
+          "Item": "VAArbalistBronze",
+          "Weight": 1,
+          "Rarity": [ 5, 35, 50, 20 ]
+        },
+        {
+          "Item": "VAblackmetal_sledge",
+          "Weight": 1,
+          "Rarity": [ 5, 35, 50, 20 ]
+        },
+        {
+          "Item": "VAYagluthAtgeir",
+          "Weight": 1,
+          "Rarity": [ 5, 35, 50, 20 ]
+        },
+        {
+          "Item": "VAblackmetal_battleaxe",
+          "Weight": 1,
+          "Rarity": [ 5, 35, 50, 20 ]
+        },
+        {
+          "Item": "VAYagluth_greatsword",
+          "Weight": 1,
+          "Rarity": [ 5, 35, 50, 20 ]
+        }
+      ]
+    }
+  ]
+}

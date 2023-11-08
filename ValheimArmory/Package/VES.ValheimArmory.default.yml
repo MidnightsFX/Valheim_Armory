@@ -1,0 +1,69 @@
+#Valhiem Armory VES support 1.1 By Aziraphale
+# Mountain+Plains
+- enchant_prefab: #Weapon A
+    prefab: kg_EnchantScroll_Weapon_A
+    amount: 1
+  blessed_enchant_prefab:
+    prefab: kg_EnchantScroll_Weapon_Blessed_A
+    amount: 1
+  Items:
+  - VACrossbowModer
+  - VASwordModer
+  - VAsilver_greatsword
+  - VAYagluth_greatsword
+  - VAblackmetal_battleaxe
+  - VASilverAtgeir
+  - VASpearModer
+  - VAYagluthAtgeir
+  - VAdagger_silver
+  - VAdagger_silver_2h
+  - VAblackmetal_sledge
+  - VAArbalistBronze
+  - VAAtgeirchitin
+# Swamps
+- enchant_prefab: #Weapon B
+    prefab: kg_EnchantScroll_Weapon_B
+    amount: 1
+  blessed_enchant_prefab:
+    prefab: kg_EnchantScroll_Weapon_Blessed_B
+    amount: 1
+  Items:
+  - VAiron_greatsword
+  - VABonemassWarhammer
+  - VAdagger_iron_2h
+  - VABonemassDagger
+  - VAdagger_iron
+  - VABonemassGreatsword
+# BlackForest
+- enchant_prefab: #Weapon C
+    prefab: kg_EnchantScroll_Weapon_C
+    amount: 1
+  blessed_enchant_prefab:
+    prefab: kg_EnchantScroll_Weapon_Blessed_C
+    amount: 1
+  Items:
+  - VACrossbowBronze
+  - VACrossbowElder
+  - VASwordChitin
+  - VAbronze_greatsword
+  - VAbronze_battleaxe
+  - VAElderHammer
+  - VAserpent_buckler
+  - VAElderRoundShield
+  - VAdagger_bronze_2h
+  - VAdagger_bronze
+  - VAVine_Sword
+  - VAElder_mace
+# Meadows
+- enchant_prefab: #Weapon D
+    prefab: kg_EnchantScroll_Weapon_D
+    amount: 1
+  blessed_enchant_prefab:
+    prefab: kg_EnchantScroll_Weapon_Blessed_D
+    amount: 1
+  Items:
+  - VAAntler_Bow
+  - VAAntler_Sword
+  - VAAntler_greataxe
+  - VAatgeir_antler
+  - VAAntler_dagger
