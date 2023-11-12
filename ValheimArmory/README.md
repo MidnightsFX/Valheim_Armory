@@ -52,7 +52,9 @@ Below is more information on all of the items added, what tier they are in, wher
   | ----------- | ----------- | ----------- | ----------- |
   | Elders Rock | Forge | Post-Blackforest | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
   | Elders Bulwark | Forge | Post-Blackforest | ![Elders roundshield icon](https://i.imgur.com/MaZMD4l.png) |
-  | Elders Vinethrower | Forge | Post-Blackforest | ![Antler Greataxe Icon](https://i.imgur.com/fDaATMs.png) |
+  | Elders Vinethrower | Forge | Post-Blackforest | ![Elders crossbow Icon](https://i.imgur.com/fDaATMs.png) |
+  | Elders Balance | Forge | Post-Blackforest | ![Elders Sword Icon](https://i.imgur.com/621VD59.png) |
+  | Elders Fist | Forge | Post-Blackforest | ![Elders Mace Icon](https://i.imgur.com/SfYdLP7.png) |
 
   ## Bonemass
   | Name | Crafted At | Stage | Icon |
@@ -118,6 +120,7 @@ Below is more information on all of the items added, what tier they are in, wher
   | ----------- | ----------- | ----------- | ----------- |
   | Bronze Lumber Axe | Forge | Blackforest | ![bronze greataxe icon](https://i.imgur.com/1an32hc.png) |
   | Blackmetal Greataxe | Forge | Mistlands | ![blackmetal greataxe icon](https://i.imgur.com/2H94zhh.png) |
+
 </details>
 
 <details>
@@ -234,7 +237,7 @@ Q. Valheim Enchanting System doesn't support these weapons?
 	 The folder you should place this config file in is `BepInEx\config\ValheimEnchantmentSystem\AdditionalEnchantmentReqs`
 
 Q. Epic Loot doesn't automatically drop these weapons, what gives?
-- A. There is a default Epic Loot config folder (EpicLoot_Valheim_Armory) in the VA folder, it must be moved to the Epic loot config patches folder. `\BepInEx\config\EpicLoot\patches`
+- A. There is a default Epic Loot config files (`EpicLoot_Valheim_Armory.loottables.json, EpicLoot_Valheim_Armory.iteminfo.json`) in the VA folder, they must be moved to the Epic loot config patches folder. `\BepInEx\config\EpicLoot\patches`
 
 Q. The bronze crossbow costs dragon tears?
 - A. Delete the config for the bronze crossbow (or your whole config file).
@@ -290,6 +293,13 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.5.9
+```
+- Fixing missing Epic Loot config files on Thunderstore
+- Fixed Elders hammer not having one of its sound effects
+- Fixed Elders balance incorrectly having lightning damage and blunt damage instead of just slash and spirit
+```
+
 **1.5.8**
 ```
 - Fixing arrow text description for arrows including a non-printable control character

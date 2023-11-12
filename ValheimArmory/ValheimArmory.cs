@@ -25,7 +25,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "com.midnightsfx.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.5.8";
+        public const string PluginVersion = "1.5.9";
 
         AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -61,8 +61,9 @@ namespace ValheimArmory
         // https://valheim-modding.github.io/Jotunn/data/localization/language-list.html
         private void AddLocalizations(VAConfig cfg)
         {
-            Localization = new CustomLocalization();
-            LocalizationManager.Instance.AddLocalization(Localization);
+            Localization = LocalizationManager.Instance.GetLocalization();
+            //LocalizationManager.Instance.AddLocalization(Localization);
+            
 
             // ValheimArmory.localizations.English.json,ValheimArmory.localizations.German.json,ValheimArmory.localizations.Russian.json
             // load all localization files within the localizations directory
