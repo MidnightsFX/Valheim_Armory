@@ -50,31 +50,31 @@ Below is more information on all of the items added, what tier they are in, wher
   ## Elder
   | Name | Crafted At | Stage | Icon |
   | ----------- | ----------- | ----------- | ----------- |
-  | Elders Rock | Forge | Post-Blackforest | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
-  | Elders Bulwark | Forge | Post-Blackforest | ![Elders roundshield icon](https://i.imgur.com/MaZMD4l.png) |
-  | Elders Vinethrower | Forge | Post-Blackforest | ![Elders crossbow Icon](https://i.imgur.com/fDaATMs.png) |
-  | Elders Balance | Forge | Post-Blackforest | ![Elders Sword Icon](https://i.imgur.com/621VD59.png) |
-  | Elders Fist | Forge | Post-Blackforest | ![Elders Mace Icon](https://i.imgur.com/SfYdLP7.png) |
+  | Vine hammer | Forge | Post-Blackforest | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
+  | Vine shield | Forge | Post-Blackforest | ![Elders roundshield icon](https://i.imgur.com/MaZMD4l.png) |
+  | Vine crossbow | Forge | Post-Blackforest | ![Elders crossbow Icon](https://i.imgur.com/fDaATMs.png) |
+  | Vine sword | Forge | Post-Blackforest | ![Elders Sword Icon](https://i.imgur.com/621VD59.png) |
+  | Vine mace | Forge | Post-Blackforest | ![Elders Mace Icon](https://i.imgur.com/SfYdLP7.png) |
 
   ## Bonemass
   | Name | Crafted At | Stage | Icon |
   | ----------- | ----------- | ----------- | ----------- |
-  | Bonemasses Rage | Forge | Post-Swamp | ![Bonemass Warhammer icon](https://i.imgur.com/sg9yGYu.png) |
-  | Bonemasses Legacy  | Forge | Post-Swamp | ![bonemass greatsword icon](https://i.imgur.com/OWfG9nK.png) |
-  | Bonemasses Ritual | Forge | Post-Swamp | ![Bonemasses dagger icon](https://i.imgur.com/o9qxcEG.png) |
+  | Skull hammer | Forge | Post-Swamp | ![Bonemass Warhammer icon](https://i.imgur.com/sg9yGYu.png) |
+  | Bone blade | Forge | Post-Swamp | ![bonemass greatsword icon](https://i.imgur.com/OWfG9nK.png) |
+  | Poisoned bone dagger | Forge | Post-Swamp | ![Bonemasses dagger icon](https://i.imgur.com/o9qxcEG.png) |
 
   ## Moder
   | Name | Crafted At | Stage | Icon |
   | ----------- | ----------- | ----------- | ----------- |
-  | Moders Bite | Forge | Post-Mountain | ![Ice sword Icon](https://i.imgur.com/iXVICFY.png) |
-  | Moders Reach | Forge | Post-Mountain | ![Ice Spear Icon](https://i.imgur.com/X4CuFZs.png) |
-  | Moders Dream | Forge | Post-Mountain | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
+  | Dragonfrost sword | Forge | Post-Mountain | ![Ice sword Icon](https://i.imgur.com/iXVICFY.png) |
+  | Dragonfrost spear | Forge | Post-Mountain | ![Ice Spear Icon](https://i.imgur.com/X4CuFZs.png) |
+  | Dragonfrost crossbow | Forge | Post-Mountain | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
 
   ### Yagluth
   | Name | Crafted At | Stage | Icon |
   | ----------- | ----------- | ----------- | ----------- |
-  | Yagluths Reach | Forge | Post-Plains | ![darkmetal atgeir](https://i.imgur.com/LXLNlF0.png) |
-  | Yagluths Hatred | Forge | Post-Plains | ![darkmetal greatsword](https://i.imgur.com/diyEKHx.png) |
+  | Goblin king atgeir | Forge | Post-Plains | ![darkmetal atgeir](https://i.imgur.com/LXLNlF0.png) |
+  | Goblin king greatsword | Forge | Post-Plains | ![darkmetal greatsword](https://i.imgur.com/diyEKHx.png) |
 
 </details>
 
@@ -293,6 +293,16 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.5.11**
+```
+- Fixed auto-pickup for a number of weapons (including dragonfrost spear), it should now work correctly.
+```
+
+**1.5.10**
+```
+- Updated english name localization, improving weapon naming to feel more vanilla
+```
+
 **1.5.9
 ```
 - Fixing missing Epic Loot config files on Thunderstore
