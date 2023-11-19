@@ -293,6 +293,16 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.5.12**
+```
+- !!CHANGED CONFIG LOCATION!! now MidnightsFX.ValheimArmory.cfg
+- Added support for weapons/shields to provide resistances
+- Set the Elders shield to provide a poison resistance (and config options to enable/disable)
+- Fixed autopickup for a few remaining weapons
+- Updated compiled against unity version to 2022.12
+- Increased compression of files (download is 25% smaller now)
+```
+
 **1.5.11**
 ```
 - Fixed auto-pickup for a number of weapons (including dragonfrost spear), it should now work correctly.

@@ -115,6 +115,10 @@ xcopy "$(ProjectDir)\README.md" "$(ProjectDir)\Package\README.md" /q /y /i
 
 </PostBuildEvent>
   </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>xcopy "C:\Users\carls\Documents\projects\Valheim_Stuff\Unity_Valheim_mod_data\JotunnModUnity\AssetBundles\StandaloneWindows\vabundle" "$(ProjectDir)\AssetsEmbedded\vabundle" /q /y /i
+</PreBuildEvent>
+  </PropertyGroup>
   <Target Name="EnsureEnvironmentPropsImport" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project needs a Environment.props file with the path to your Valheim installation. See https://github.com/Valheim-Modding/ValheimAdditions. {0} is missing.</ErrorText>

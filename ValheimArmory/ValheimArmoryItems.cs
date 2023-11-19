@@ -1111,7 +1111,10 @@ namespace ValheimArmory
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                 },
-                new Dictionary<string, bool>() { },
+                new Dictionary<string, bool>() {
+                    { "resistPoison", true },
+                    { "resistSpirit", false },
+                },
                 new Dictionary<string, Tuple<int, int>>()
                 {
                     { "Bronze", new Tuple<int, int>(8, 4) },
@@ -1511,6 +1514,7 @@ namespace ValheimArmory
                 // modify item/recipe
                 if (cfg.EnableDebugMode.Value == true) { Logger.LogDebug($"Modifying itemdata for {metadata["name"]}, applying configured values."); }
                 ModifyItemData(prefab.GetComponent<ItemDrop>()?.m_itemData, itemdata, cfg);
+                ModifyItemFlags(prefab.GetComponent<ItemDrop>().m_itemData, itemtoggles);
 
                 // Add the recipe with helper
                 RequirementConfig[] recipe = new RequirementConfig[recipedata.Count];
@@ -1547,18 +1551,34 @@ namespace ValheimArmory
         /// <param name="itemtoggles"></param>
         private void CreateAndLoadConfigValues(VAConfig Config, Dictionary<String, String> metadata, Dictionary<String, Tuple<float, float, float, bool>> itemdata, Dictionary<String, bool> itemtoggles, Dictionary<String, Tuple<int, int>> recipedata)
         {
-            itemtoggles["enabled"] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-Enable", itemtoggles["enabled"], $"Enable/Disable the {metadata["name"]}.").Value;
-            itemtoggles["craftable"] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-Craftable", itemtoggles["craftable"], $"Enable/Disable the crafting recipe for {metadata["name"]}.").Value;
+            // Populate defaults if they don't exist
+            itemtoggles["enabled"] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-enabled", itemtoggles["enabled"], $"Enable/Disable the {metadata["name"]}.").Value;
+            itemtoggles["craftable"] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-craftable", itemtoggles["craftable"], $"Enable/Disable the crafting recipe for {metadata["name"]}.").Value;
 
             // Set and update the crafted at value
             metadata["craftedAt"] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-CraftedAt", metadata["craftedAt"], $"Where the recipe is crafted at, eg: 'forge', 'piece_workbench', 'blackforge', 'piece_artisanstation'.").Value;
 
             // Item bolean flag configs
+            Dictionary<string, bool> item_toggles_updates = new Dictionary<string, bool> { };
+
             foreach (KeyValuePair<string, bool> entry in itemtoggles)
             {
-                if (entry.Key == "enabled" || entry.Key == "craftable") { continue; }
-                itemtoggles[entry.Key] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-{entry.Key}", entry.Value, $"{entry.Key} enable(true)/disable(false).", true).Value;
+                if (Config.EnableDebugMode.Value) { Logger.LogInfo($"Modifying boolflag {entry.Key}"); }
+                String cfg_description = $"{entry.Key} enable(true)/disable(false).";
+                bool advanced = true;
+                if (entry.Key == "enabled") {
+                    cfg_description = $"Enable/Disable the {metadata["name"]}.";
+                    advanced = false; 
+                }
+                if (entry.Key == "craftable")
+                {
+                    cfg_description = $"Enable/Disable the crafting recipe for {metadata["name"]}.";
+                    advanced = false;
+                }
+                item_toggles_updates.Add(entry.Key, BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-{entry.Key}", entry.Value, cfg_description, advanced).Value);
             }
+            itemtoggles = item_toggles_updates;
+
             // Item float valued configs
             Dictionary<String, Tuple<float, float, float, bool>> replacement_itemdata = new Dictionary<String, Tuple<float, float, float, bool>>();
             foreach (KeyValuePair<string, Tuple<float, float, float, bool>> entry in itemdata)
@@ -1715,6 +1735,44 @@ namespace ValheimArmory
             }
         }
 
+        // Right now these need to not exist to be added
+        // All weapons/armor with these damage modifiers should not have any to begin with
+        private void ModifyItemFlags(ItemDrop.ItemData item, Dictionary<String, bool> itemtoggles)
+        {
+            foreach(KeyValuePair<String, Boolean> entry in itemtoggles)
+            {
+                // Skip toggles which are applied as part of adding the item
+                if(entry.Key == "craftable" || entry.Key == "enabled")
+                {
+                    continue;
+                }
+                if(entry.Value == false) { continue; }
+
+                switch (entry.Key)
+                {
+                    case "resistPoison":
+                        item.m_shared.m_damageModifiers.Add(new HitData.DamageModPair { m_modifier = HitData.DamageModifier.Resistant, m_type = HitData.DamageType.Poison });
+                        break;
+                    case "resistSpirit":
+                        item.m_shared.m_damageModifiers.Add(new HitData.DamageModPair { m_modifier = HitData.DamageModifier.Resistant, m_type = HitData.DamageType.Spirit });
+                        break;
+                    case "resistFire":
+                        item.m_shared.m_damageModifiers.Add(new HitData.DamageModPair { m_modifier = HitData.DamageModifier.Resistant, m_type = HitData.DamageType.Fire });
+                        break;
+                    case "resistElemental":
+                        item.m_shared.m_damageModifiers.Add(new HitData.DamageModPair { m_modifier = HitData.DamageModifier.Resistant, m_type = HitData.DamageType.Elemental });
+                        break;
+                    case "resistFrost":
+                        item.m_shared.m_damageModifiers.Add(new HitData.DamageModPair { m_modifier = HitData.DamageModifier.Resistant, m_type = HitData.DamageType.Frost });
+                        break;
+                    case "resistLightning":
+                        item.m_shared.m_damageModifiers.Add(new HitData.DamageModPair { m_modifier = HitData.DamageModifier.Resistant, m_type = HitData.DamageType.Lightning });
+                        break;
+                }
+
+            }
+        }
+
         private void ModifyItemData(ItemDrop.ItemData item, Dictionary<String, Tuple<float, float, float, bool>> itemdata, VAConfig cfg)
         {
             foreach (KeyValuePair<string, Tuple<float, float, float, bool>> entry in itemdata)
@@ -1823,9 +1881,6 @@ namespace ValheimArmory
                         break;
                     case "durability_per_level":
                         item.m_shared.m_maxDurability = (int)entry.Value.Item1;
-                        break;
-                    case "test":
-                        item.m_shared.m_damagesPerLevel.m_blunt = (int)entry.Value.Item1;
                         break;
                     default:
                     break;

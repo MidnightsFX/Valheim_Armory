@@ -23,9 +23,9 @@ namespace ValheimArmory
     [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Minor)]
     internal class ValheimArmory : BaseUnityPlugin
     {
-        public const string PluginGUID = "com.midnightsfx.ValheimArmory";
+        public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.5.11";
+        public const string PluginVersion = "1.5.12";
 
         AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
