@@ -293,6 +293,12 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.5.13**
+```
+- Fixed autopickup for a few more weapons, really this should be the last time
+- Fixed the antler bow getting a NPE when firing
+```
+
 **1.5.12**
 ```
 - !!CHANGED CONFIG LOCATION!! now MidnightsFX.ValheimArmory.cfg
