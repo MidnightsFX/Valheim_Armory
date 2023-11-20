@@ -293,6 +293,12 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.5.14**
+```
+- Fixed missing weapon trails on a handful of weapons
+- Fixed high levels of metalic rendering used on the elders weapons
+```
+
 **1.5.13**
 ```
 - Fixed autopickup for a few more weapons, really this should be the last time
