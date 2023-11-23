@@ -293,6 +293,11 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
 
 ## Changelog
+**1.5.16**
+```
+- Fixed missing shader compilation for Vulkan
+```
+
 **1.5.15**
 ```
 - Fixed Moders spear missing its trail texture when thrown
