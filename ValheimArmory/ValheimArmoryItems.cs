@@ -14,31 +14,30 @@ namespace ValheimArmory
     class ValheimArmoryItems
     {
         // constructor, add all items on init
-        public ValheimArmoryItems(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
+        public ValheimArmoryItems(AssetBundle EmbeddedResourceBundle)
         {
-            if (cfg.EnableDebugMode.Value == true)
+            if (VAConfig.EnableDebugMode.Value == true)
             {
                 Logger.LogInfo("Loading Items.");
             }
 
-            LoadArrows(EmbeddedResourceBundle, cfg);
-            LoadBows(EmbeddedResourceBundle, cfg);
-            LoadSwords(EmbeddedResourceBundle, cfg);
-            LoadAxes(EmbeddedResourceBundle, cfg);
-            LoadHammers(EmbeddedResourceBundle, cfg);
-            LoadAtgeirs(EmbeddedResourceBundle, cfg);
-            LoadDaggers(EmbeddedResourceBundle, cfg);
-            LoadShields(EmbeddedResourceBundle, cfg);
-            LoadSpears(EmbeddedResourceBundle, cfg);
-            LoadMaces(EmbeddedResourceBundle, cfg);
+            LoadArrows(EmbeddedResourceBundle);
+            LoadBows(EmbeddedResourceBundle);
+            LoadSwords(EmbeddedResourceBundle);
+            LoadAxes(EmbeddedResourceBundle);
+            LoadHammers(EmbeddedResourceBundle);
+            LoadAtgeirs(EmbeddedResourceBundle);
+            LoadDaggers(EmbeddedResourceBundle);
+            LoadShields(EmbeddedResourceBundle);
+            LoadSpears(EmbeddedResourceBundle);
+            LoadMaces(EmbeddedResourceBundle);
         }
 
-        private void LoadArrows(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
+        private void LoadArrows(AssetBundle EmbeddedResourceBundle)
         {
             // Greenmetal Arrows
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Black Metal Arrow" },
                     { "catagory", "Arrows" },
@@ -63,7 +62,6 @@ namespace ValheimArmory
             // Bone Arrows
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Bone Arrow" },
                     { "catagory", "Arrows" },
@@ -86,7 +84,6 @@ namespace ValheimArmory
             // Surtling Fire Arrow
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Surtling Fire Arrow" },
                     { "catagory", "Arrows" },
@@ -112,7 +109,6 @@ namespace ValheimArmory
             // Ancient Wood Arrow
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Ancient Wood Arrow" },
                     { "catagory", "Arrows" },
@@ -135,7 +131,6 @@ namespace ValheimArmory
             // Chitin Arrow
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Chitin Arrow" },
                     { "catagory", "Arrows" },
@@ -160,7 +155,6 @@ namespace ValheimArmory
             // Wood Crossbow Bolt
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Wood Bolt" },
                     { "catagory", "Arrows" },
@@ -182,7 +176,6 @@ namespace ValheimArmory
             // Bronze Bolt
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Bronze Bolt" },
                     { "catagory", "Arrows" },
@@ -206,7 +199,6 @@ namespace ValheimArmory
             // Iron Poison Bolt
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Iron Poison Bolt" },
                     { "catagory", "Arrows" },
@@ -223,7 +215,7 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<int, int>>()
                 {
                     { "Wood", new Tuple<int, int>(8, 0) },
-                    { "Bronze", new Tuple<int, int>(2, 0) },
+                    { "Iron", new Tuple<int, int>(2, 0) },
                     { "Ooze", new Tuple<int, int>(2, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) },
                 }
@@ -232,7 +224,6 @@ namespace ValheimArmory
             // Silver Ice Bolt
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Silver Frost Bolt" },
                     { "catagory", "Arrows" },
@@ -259,7 +250,6 @@ namespace ValheimArmory
             // Blackmetal Surtling bolt
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Blackmetal Surtling Bolt" },
                     { "catagory", "Arrows" },
@@ -283,12 +273,11 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadBows(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
+        private void LoadBows(AssetBundle EmbeddedResourceBundle)
         {
             // Bronze Arbalist
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Bronze Arbelist" },
                     { "catagory", "Bows" },
@@ -318,7 +307,6 @@ namespace ValheimArmory
             // Antler Bow
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Eikthyrs Bow" },
                     { "catagory", "Bows" },
@@ -349,7 +337,6 @@ namespace ValheimArmory
             // Bronze Crossbow
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Bronze Crossbow" },
                     { "catagory", "Bows" },
@@ -379,7 +366,6 @@ namespace ValheimArmory
             // Elder Crossbow
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Elders Reach" },
                     { "catagory", "Bows" },
@@ -411,7 +397,6 @@ namespace ValheimArmory
             // Moder Crossbow
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Moder Crossbow" },
                     { "catagory", "Bows" },
@@ -441,12 +426,11 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadSwords(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
+        private void LoadSwords(AssetBundle EmbeddedResourceBundle)
         {
             // Chitin Sword
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Abyssal Sword" },
                     { "catagory", "Swords" },
@@ -477,7 +461,6 @@ namespace ValheimArmory
             // Antler Sword
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Eikthyrs Sword" },
                     { "catagory", "Swords" },
@@ -511,7 +494,6 @@ namespace ValheimArmory
             // Vine Sword
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Elders Balance" },
                     { "catagory", "Swords" },
@@ -543,7 +525,6 @@ namespace ValheimArmory
             // Ice Sword
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Moders Grasp" },
                     { "catagory", "Swords" },
@@ -577,7 +558,6 @@ namespace ValheimArmory
             // Bronze Greatsword
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Bronze Greatsword" },
                     { "catagory", "Swords" },
@@ -605,7 +585,6 @@ namespace ValheimArmory
             // Iron Greatsword
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Iron Greatsword" },
                     { "catagory", "Swords" },
@@ -633,7 +612,6 @@ namespace ValheimArmory
             // Silver Greatsword
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Silver Greatsword" },
                     { "catagory", "Swords" },
@@ -665,7 +643,6 @@ namespace ValheimArmory
             // Bonemass Greatsword
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Bonemasses Greatsword" },
                     { "catagory", "Swords" },
@@ -697,7 +674,6 @@ namespace ValheimArmory
             // Yagluth Greatsword
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Yagluths Greatsword" },
                     { "catagory", "Swords" },
@@ -725,14 +701,99 @@ namespace ValheimArmory
                     { "YagluthDrop", new Tuple<int, int>(3, 2) },
                 }
             );
+
+            // Flint Sword
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                new Dictionary<string, string>() {
+                    { "name", "Flint Sword" },
+                    { "catagory", "Swords" },
+                    { "prefab", "VAFlint_Sword" },
+                    { "sprite", "flint_sword" },
+                    { "craftedAt", "piece_workbench" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "slash", new Tuple<float, float, float, bool>(24, 0, 90, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(10, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(6, 1, 30, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "LeatherScraps", new Tuple<int, int>(2, 1) },
+                    { "Wood", new Tuple<int, int>(4, 2) },
+                    { "Flint", new Tuple<int, int>(12, 4) },
+                }
+            );
+
+            // Flint Greatsword
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                new Dictionary<string, string>() {
+                    { "name", "Flint Greatsword" },
+                    { "catagory", "Swords" },
+                    { "prefab", "VAFlint_greatsword" },
+                    { "sprite", "flint_greatsword" },
+                    { "craftedAt", "piece_workbench" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "slash", new Tuple<float, float, float, bool>(40, 0, 200, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(42, 0, 160, true) },
+                    { "block", new Tuple<float, float, float, bool>(10, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "LeatherScraps", new Tuple<int, int>(3, 1) },
+                    { "Wood", new Tuple<int, int>(15, 5) },
+                    { "Flint", new Tuple<int, int>(20, 8) },
+                }
+            );
         }
 
-        private void LoadAxes(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
+        private void LoadAxes(AssetBundle EmbeddedResourceBundle)
         {
+            // Flint Battleaxe
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                new Dictionary<string, string>() {
+                    { "name", "Flint greataxe" },
+                    { "catagory", "Axes" },
+                    { "prefab", "VAFlint_greataxe" },
+                    { "sprite", "flint_greataxe" },
+                    { "craftedAt", "piece_workbench" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "slash", new Tuple<float, float, float, bool>(28, 0, 200, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "chop", new Tuple<float, float, float, bool>(30, 0, 200, true) },
+                    { "chop_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(45, 0, 200, true) },
+                    { "block", new Tuple<float, float, float, bool>(10, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(3, 1, 20, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "Wood", new Tuple<int, int>(18, 12) },
+                    { "Flint", new Tuple<int, int>(22, 12) },
+                    { "LeatherScraps", new Tuple<int, int>(4, 2) }
+                }
+            );
+
             // Bronze Battleaxe
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Bronze Lumber Axe" },
                     { "catagory", "Axes" },
@@ -763,7 +824,6 @@ namespace ValheimArmory
             // Antler Battleaxe
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Eikthyrs Greataxe" },
                     { "catagory", "Axes" },
@@ -799,7 +859,6 @@ namespace ValheimArmory
             // Blackmetal Battleaxe
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Blackmetal Battleaxe" },
                     { "catagory", "Axes" },
@@ -830,12 +889,11 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadHammers(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
+        private void LoadHammers(AssetBundle EmbeddedResourceBundle)
         {
             // Blackmetal Sledge
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Blackmetal Sledge" },
                     { "catagory", "Hammers" },
@@ -867,7 +925,6 @@ namespace ValheimArmory
             // Elder Sledge
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Elders Rock" },
                     { "catagory", "Hammers" },
@@ -899,7 +956,6 @@ namespace ValheimArmory
             // Bonemass Warhammer
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Bonemasses Rage" },
                     { "catagory", "Hammers" },
@@ -929,12 +985,39 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadAtgeirs(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
+        private void LoadAtgeirs(AssetBundle EmbeddedResourceBundle)
         {
+            // Flint Atgeir
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                new Dictionary<string, string>() {
+                    { "name", "Flint Atgeir" },
+                    { "catagory", "Atgeirs" },
+                    { "prefab", "VAAtgeir_Flint" },
+                    { "sprite", "flint_atgeir" },
+                    { "craftedAt", "piece_workbench" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "slash", new Tuple<float, float, float, bool>(23, 0, 90, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(25, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(10, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "Wood", new Tuple<int, int>(20, 12) },
+                    { "Flint", new Tuple<int, int>(18, 9) },
+                    { "LeatherScraps", new Tuple<int, int>(3, 2) },
+                }
+            );
+
             // Antler Atgeir
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Eikthyrs Atgeir" },
                     { "catagory", "Atgeirs" },
@@ -966,7 +1049,6 @@ namespace ValheimArmory
             // Royal Abyssal Atgeir
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Royal Abyssal Atgeir" },
                     { "catagory", "Atgeirs" },
@@ -1001,7 +1083,6 @@ namespace ValheimArmory
             // Silver Atgeir
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Silver Atgeir" },
                     { "catagory", "Atgeirs" },
@@ -1032,7 +1113,6 @@ namespace ValheimArmory
             // Yagluth Atgeir
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Yagluths Reach" },
                     { "catagory", "Atgeirs" },
@@ -1062,12 +1142,11 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadShields(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
+        private void LoadShields(AssetBundle EmbeddedResourceBundle)
         {
             // Serpentscale Buckler
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Serpent Scale Buckler" },
                     { "catagory", "Shields" },
@@ -1095,7 +1174,6 @@ namespace ValheimArmory
             // Elder Round Shield
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Elders Bulwark" },
                     { "catagory", "Shields" },
@@ -1125,12 +1203,41 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadDaggers(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
+        private void LoadDaggers(AssetBundle EmbeddedResourceBundle)
         {
+            // Flint 2H Daggers
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                new Dictionary<string, string>() {
+                    { "name", "Flint Daggers" },
+                    { "catagory", "Daggers" },
+                    { "prefab", "VADagger_Flint_2h" },
+                    { "sprite", "flint_2h_dagger" },
+                    { "craftedAt", "piece_workbench" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "block", new Tuple<float, float, float, bool>(12, 0, 48, true) },
+                    { "slash", new Tuple<float, float, float, bool>(11, 0, 99, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(11, 0, 99, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(12, 0, 40, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(5, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "Wood", new Tuple<int, int>(12, 2) },
+                    { "Flint", new Tuple<int, int>(20, 8) },
+                    { "LeatherScraps", new Tuple<int, int>(2, 2) }
+                }
+            );
+
             // Antler 1H Daggers
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Eikthyrs Dagger" },
                     { "catagory", "Daggers" },
@@ -1164,7 +1271,6 @@ namespace ValheimArmory
             // Bronze 2H Daggers
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Rascals Daggers" },
                     { "catagory", "Daggers" },
@@ -1195,7 +1301,6 @@ namespace ValheimArmory
             // Bronze 1H Daggers
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Bronze Dagger" },
                     { "catagory", "Daggers" },
@@ -1226,7 +1331,6 @@ namespace ValheimArmory
             // Iron 2H Daggers
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Rogue Daggers" },
                     { "catagory", "Daggers" },
@@ -1257,7 +1361,6 @@ namespace ValheimArmory
             // Iron 1H Daggers
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Iron Dagger" },
                     { "catagory", "Daggers" },
@@ -1290,7 +1393,6 @@ namespace ValheimArmory
             // Silver 2H Daggers
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Blackguards Runic Daggers" },
                     { "catagory", "Daggers" },
@@ -1323,7 +1425,6 @@ namespace ValheimArmory
             // Silver 1H Daggers
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Silver Dagger" },
                     { "catagory", "Daggers" },
@@ -1358,7 +1459,6 @@ namespace ValheimArmory
             // Bonemass Dagger
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Bonemasses Dagger" },
                     { "catagory", "Daggers" },
@@ -1390,12 +1490,11 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadSpears(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
+        private void LoadSpears(AssetBundle EmbeddedResourceBundle)
         {
             // Moder Spear
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Moders Strike" },
                     { "catagory", "Spears" },
@@ -1427,12 +1526,11 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadMaces(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
+        private void LoadMaces(AssetBundle EmbeddedResourceBundle)
         {
             // Elders Mace
             new ValArmoryItem(
                 EmbeddedResourceBundle,
-                cfg,
                 new Dictionary<string, string>() {
                     { "name", "Elders Fist" },
                     { "catagory", "Maces" },
@@ -1479,7 +1577,6 @@ namespace ValheimArmory
         /// <param name="recipedata">Key(string)-Value(Tuple) dictionary of recipe requirements (limit 4) eg: "SerpentScale" = < 3(creation requirement), 2(levelup requirement)> </param>
         public ValArmoryItem(
             AssetBundle EmbeddedResourceBundle,
-            VAConfig cfg,
             Dictionary<String, String> metadata,
             Dictionary<String, Tuple<float, float, float, bool>> itemdata,
             Dictionary<String, bool> itemtoggles,
@@ -1501,19 +1598,19 @@ namespace ValheimArmory
             metadata["short_item_name"] = string.Join("", metadata["name"].Split(default(string[]), StringSplitOptions.RemoveEmptyEntries));
 
             // create config
-            if (cfg.EnableDebugMode.Value == true) { Logger.LogDebug($"Creating Configuration Values for {metadata["name"]}"); }
-            CreateAndLoadConfigValues(cfg, metadata, itemdata, itemtoggles, recipedata);
+            if (VAConfig.EnableDebugMode.Value == true) { Logger.LogDebug($"Creating Configuration Values for {metadata["name"]}"); }
+            CreateAndLoadConfigValues(metadata, itemdata, itemtoggles, recipedata);
 
             // If the item is not enabled we do not load it
             if (itemtoggles["enabled"] != false)
             {
                 // load assets
-                if (cfg.EnableDebugMode.Value == true) { Logger.LogDebug($"Loading bundled assets for {metadata["name"]}"); }
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogDebug($"Loading bundled assets for {metadata["name"]}"); }
                 GameObject prefab = EmbeddedResourceBundle.LoadAsset<GameObject>($"Assets/Custom/Weapons/{metadata["catagory"]}/{metadata["prefab"]}.prefab");
                 Sprite sprite = EmbeddedResourceBundle.LoadAsset<Sprite>($"Assets/Custom/Icons/{metadata["sprite"]}.png");
                 // modify item/recipe
-                if (cfg.EnableDebugMode.Value == true) { Logger.LogDebug($"Modifying itemdata for {metadata["name"]}, applying configured values."); }
-                ModifyItemData(prefab.GetComponent<ItemDrop>()?.m_itemData, itemdata, cfg);
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogDebug($"Modifying itemdata for {metadata["name"]}, applying configured values."); }
+                ModifyItemData(prefab.GetComponent<ItemDrop>()?.m_itemData, itemdata);
                 ModifyItemFlags(prefab.GetComponent<ItemDrop>().m_itemData, itemtoggles);
 
                 // Add the recipe with helper
@@ -1533,12 +1630,12 @@ namespace ValheimArmory
                     Icons = new[] { sprite },
                     Requirements = recipe
                 };
-                if (cfg.EnableDebugMode.Value == true) { Logger.LogDebug($"Setting Recipe Data: {recipe.ToArray()}"); }
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogDebug($"Setting Recipe Data: {recipe.ToArray()}"); }
                 AddRecipeForAsset($"VA{metadata["short_item_name"]}", prefab, itemcfg);
             }
             else 
             {
-                if (cfg.EnableDebugMode.Value == true) { Logger.LogDebug($"{metadata["name"]} is not enabled, and was not loaded."); }
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogDebug($"{metadata["name"]} is not enabled, and was not loaded."); }
             }
         }
 
@@ -1549,21 +1646,21 @@ namespace ValheimArmory
         /// <param name="metadata"></param>
         /// <param name="itemdata"></param>
         /// <param name="itemtoggles"></param>
-        private void CreateAndLoadConfigValues(VAConfig Config, Dictionary<String, String> metadata, Dictionary<String, Tuple<float, float, float, bool>> itemdata, Dictionary<String, bool> itemtoggles, Dictionary<String, Tuple<int, int>> recipedata)
+        private void CreateAndLoadConfigValues(Dictionary<String, String> metadata, Dictionary<String, Tuple<float, float, float, bool>> itemdata, Dictionary<String, bool> itemtoggles, Dictionary<String, Tuple<int, int>> recipedata)
         {
             // Populate defaults if they don't exist
-            itemtoggles["enabled"] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-enabled", itemtoggles["enabled"], $"Enable/Disable the {metadata["name"]}.").Value;
-            itemtoggles["craftable"] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-craftable", itemtoggles["craftable"], $"Enable/Disable the crafting recipe for {metadata["name"]}.").Value;
+            itemtoggles["enabled"] = VAConfig.BindServerConfig($"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-enabled", itemtoggles["enabled"], $"Enable/Disable the {metadata["name"]}.").Value;
+            itemtoggles["craftable"] = VAConfig.BindServerConfig($"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-craftable", itemtoggles["craftable"], $"Enable/Disable the crafting recipe for {metadata["name"]}.").Value;
 
             // Set and update the crafted at value
-            metadata["craftedAt"] = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-CraftedAt", metadata["craftedAt"], $"Where the recipe is crafted at, eg: 'forge', 'piece_workbench', 'blackforge', 'piece_artisanstation'.").Value;
+            metadata["craftedAt"] = VAConfig.BindServerConfig($"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-CraftedAt", metadata["craftedAt"], $"Where the recipe is crafted at, eg: 'forge', 'piece_workbench', 'blackforge', 'piece_artisanstation'.").Value;
 
             // Item bolean flag configs
             Dictionary<string, bool> item_toggles_updates = new Dictionary<string, bool> { };
 
             foreach (KeyValuePair<string, bool> entry in itemtoggles)
             {
-                if (Config.EnableDebugMode.Value) { Logger.LogInfo($"Modifying boolflag {entry.Key}"); }
+                if (VAConfig.EnableDebugMode.Value) { Logger.LogInfo($"Modifying boolflag {entry.Key}"); }
                 String cfg_description = $"{entry.Key} enable(true)/disable(false).";
                 bool advanced = true;
                 if (entry.Key == "enabled") {
@@ -1575,7 +1672,7 @@ namespace ValheimArmory
                     cfg_description = $"Enable/Disable the crafting recipe for {metadata["name"]}.";
                     advanced = false;
                 }
-                item_toggles_updates.Add(entry.Key, BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-{entry.Key}", entry.Value, cfg_description, advanced).Value);
+                item_toggles_updates.Add(entry.Key, VAConfig.BindServerConfig($"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-{entry.Key}", entry.Value, cfg_description, advanced).Value);
             }
             itemtoggles = item_toggles_updates;
 
@@ -1593,7 +1690,7 @@ namespace ValheimArmory
                 float current_itemdata_value;
                 
                 if (damage_types.Contains(entry.Key)) { description = $"{entry.Key} ({min_value}-{max_value}) Damage Value"; } else { description = $"{entry.Key} ({min_value}-{max_value}) Value"; }
-                current_itemdata_value = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-{entry.Key}", entry.Value.Item1, $"{description}", true, entry.Value.Item2, entry.Value.Item3).Value;
+                current_itemdata_value = VAConfig.BindServerConfig($"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-{entry.Key}", entry.Value.Item1, $"{description}", true, entry.Value.Item2, entry.Value.Item3).Value;
                 Tuple<float, float, float, bool> cfg_update_tuple = new Tuple<float, float, float, bool>(current_itemdata_value, entry.Value.Item2, entry.Value.Item3, true);
                 //itemdata.Remove(entry.Key); // remove the old value tuple
                 replacement_itemdata.Add(entry.Key, cfg_update_tuple);
@@ -1612,13 +1709,13 @@ namespace ValheimArmory
                 recipe_cfg += $"{entry.Key},{entry.Value.Item1},{entry.Value.Item2}";
             }
             String RawRecipe;
-            RawRecipe = BindServerConfig(Config.file, $"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-recipe", recipe_cfg, $"Recipe to craft and upgrade costs. Find item ids: https://valheim.fandom.com/wiki/Item_IDs, at most 4 costs. Format: resouce_id,craft_cost,upgrade_cost eg: Wood,8,2|Iron,12,4|LeatherScraps,4,0", true).Value;
-            if (Config.EnableDebugMode.Value == true) { Logger.LogInfo($"recieved rawrecipe data: '{RawRecipe}'"); }
+            RawRecipe = VAConfig.BindServerConfig($"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-recipe", recipe_cfg, $"Recipe to craft and upgrade costs. Find item ids: https://valheim.fandom.com/wiki/Item_IDs, at most 4 costs. Format: resouce_id,craft_cost,upgrade_cost eg: Wood,8,2|Iron,12,4|LeatherScraps,4,0", true).Value;
+            if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"recieved rawrecipe data: '{RawRecipe}'"); }
             String[] RawRecipeEntries = RawRecipe.Split('|');
             Dictionary<String, Tuple<int, int>> updated_recipe = new Dictionary<String, Tuple<int, int>>();
             // we only clear out the default recipe if there is recipe data provided, otherwise we will continue to use the default recipe
             // TODO: Add a sanity check to ensure that recipe formatting is correct
-            if (Config.EnableDebugMode.Value == true)
+            if (VAConfig.EnableDebugMode.Value == true)
             {
                 Logger.LogInfo($"recipe entries: {RawRecipeEntries.Length} : {RawRecipeEntries}");
             }
@@ -1627,7 +1724,7 @@ namespace ValheimArmory
                 foreach (String recipe_entry in RawRecipeEntries)
                 {
                     String[] recipe_segments = recipe_entry.Split(',');
-                    if (Config.EnableDebugMode.Value == true)
+                    if (VAConfig.EnableDebugMode.Value == true)
                     {
                         String split_segments = "";
                         foreach (String segment in recipe_segments)
@@ -1642,7 +1739,7 @@ namespace ValheimArmory
                 recipedata.Clear();
                 foreach (KeyValuePair<string, Tuple<int, int>> entry in updated_recipe)
                 {
-                    if (Config.EnableDebugMode.Value == true) { Logger.LogInfo($"Updated recipe: resouce: {entry.Key} build: {entry.Value.Item1} upgrade: {entry.Value.Item2}"); }
+                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Updated recipe: resouce: {entry.Key} build: {entry.Value.Item1} upgrade: {entry.Value.Item2}"); }
                     recipedata.Add(entry.Key, entry.Value);
                 }
             }
@@ -1652,62 +1749,7 @@ namespace ValheimArmory
             }
         }
 
-        /// <summary>
-        ///  Helper to bind configs for bool types
-        /// </summary>
-        /// <param name="config_file"></param>
-        /// <param name="catagory"></param>
-        /// <param name="key"></param>
-        /// <param name="value"></param>
-        /// <param name="description"></param>
-        /// <param name="advanced"></param>
-        /// <returns></returns>
-        private ConfigEntry<bool> BindServerConfig(ConfigFile config_file, string catagory, string key, bool value, string description, bool advanced = false)
-        {
-            return config_file.Bind(catagory, key, value,
-                new ConfigDescription(description,
-                null,
-                new ConfigurationManagerAttributes { IsAdminOnly = true, IsAdvanced = advanced })
-                );
-        }
-
-        /// <summary>
-        /// Helper to bind configs for float types
-        /// </summary>
-        /// <param name="config_file"></param>
-        /// <param name="catagory"></param>
-        /// <param name="key"></param>
-        /// <param name="value"></param>
-        /// <param name="description"></param>
-        /// <param name="advanced"></param>
-        /// <param name="valmin"></param>
-        /// <param name="valmax"></param>
-        /// <returns></returns>
-        private ConfigEntry<float> BindServerConfig(ConfigFile config_file, string catagory, string key, float value, string description, bool advanced = false, float valmin = 0, float valmax = 150)
-        {
-            return config_file.Bind(catagory, key, value,
-                new ConfigDescription(description,
-                new AcceptableValueRange<float>(valmin, valmax),
-                new ConfigurationManagerAttributes { IsAdminOnly = true, IsAdvanced = advanced })
-                );
-        }
-        /// <summary>
-        /// Helper to bind configs for strings
-        /// </summary>
-        /// <param name="config_file"></param>
-        /// <param name="catagory"></param>
-        /// <param name="key"></param>
-        /// <param name="value"></param>
-        /// <param name="description"></param>
-        /// <param name="advanced"></param>
-        /// <returns></returns>
-        private ConfigEntry<string> BindServerConfig(ConfigFile config_file, string catagory, string key, string value, string description, bool advanced = false)
-        {
-            return config_file.Bind(catagory, key, value,
-                new ConfigDescription(description, null,
-                new ConfigurationManagerAttributes { IsAdminOnly = true, IsAdvanced = advanced })
-                );
-        }
+        
 
         /// <summary>
         ///  helper to add a recipe
@@ -1727,7 +1769,7 @@ namespace ValheimArmory
                 var customItem = new CustomItem(prefab, fixReference: true, itemcfg);
                 ItemManager.Instance.AddItem(customItem);
 
-                Logger.LogInfo($"{name} Item & Recipe Loaded.");
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{name} Item & Recipe Loaded."); }
             }
             catch (Exception ex)
             {
@@ -1773,11 +1815,11 @@ namespace ValheimArmory
             }
         }
 
-        private void ModifyItemData(ItemDrop.ItemData item, Dictionary<String, Tuple<float, float, float, bool>> itemdata, VAConfig cfg)
+        private void ModifyItemData(ItemDrop.ItemData item, Dictionary<String, Tuple<float, float, float, bool>> itemdata)
         {
             foreach (KeyValuePair<string, Tuple<float, float, float, bool>> entry in itemdata)
             {
-                if (cfg.EnableDebugMode.Value == true)
+                if (VAConfig.EnableDebugMode.Value == true)
                 {
                     Logger.LogInfo($"Modifying type: {entry.Key} to {entry.Value.Item1}");
                 }

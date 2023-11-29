@@ -28,10 +28,14 @@
   // Swords
   "item_sword_chitin": "Abyssal sword",
   "item_sword_chitin_description": "It may not be the sharpest but with enough force it still hurts, a lot.",
+  "item_sword_flint": "Flint sword",
+  "item_sword_flint_description": "Made from the best flint you could find, its still a bit flimsy.",
   // Shields
   "item_serpent_buckler": "Serpent scaled buckler",
   "item_serpent_buckler_description": "A flexible wooden-iron woven shield fronted by an array of shiny scales.",
   // Atgeirs
+  "item_atgeir_flint": "Flint atgeir",
+  "item_atgeir_flint_description": "A simple pole with a large piece of flint clumsily attached.",
   "item_atgeir_chitin_heavy": "Royal abyssal atgeir",
   "item_atgeir_chitin_heavy_description": "A sharpened chitin atgeir with a silvercore, fit for the bravest of vikings.",
   "item_silver_atgeir": "Silver atgeir",
@@ -40,11 +44,15 @@
   "item_sledge_blackmetal": "Sky shatterer",
   "item_sledge_blackmetal_description": "Heavy chunks of blackmetal fused with thunderstones. Causes lightning strikes.",
   // Axes
+  "item_battleaxe_flint": "Flint greataxe",
+  "item_battleaxe_flint_description": "Two haphazardly attached flint blades to a sturdy log.",
   "item_battleaxe_bronze": "Timber greataxe",
   "item_battleaxe_bronze_description": "An especially large bronze axe, great for removing heads and trees.",
   "item_battleaxe_blackmetal": "Herkir's wrath",
   "item_battleaxe_blackmetal_description": "Giant Killer, fire bringer, pain maker.",
   // Greatswords
+  "item_flint_greatsword": "Flint greatsword",
+  "item_flint_greatsword_description": "A massive flint shard reinforced with wood. Its not very sturdy but it is sharp enough.",
   "item_bronze_greatsword": "Bronze greatsword",
   "item_bronze_greatsword_description": "A massive bronze blade handled with corewood, not very durable but quite sharp.",
   "item_iron_greatsword": "Iron greatsword",
@@ -52,6 +60,8 @@
   "item_silver_greatsword": "Silver runic greatsword",
   "item_silver_greatsword_description": "Silver forged with wrought iron, emblazoned with runes to ward off the undead.",
   // Daggers
+  "item_dagger_flint_2h": "Flint daggers",
+  "item_dagger_flint_2h_description": "Two flint knives are deadlier than one.",
   "item_dagger_iron": "Iron dagger",
   "item_dagger_iron_description": "Not as sharp as the abyssal knife, but it cuts nicely.",
   "item_dagger_iron_2h": "Rogue daggers",

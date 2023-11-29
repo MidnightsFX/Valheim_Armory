@@ -25,7 +25,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.5.16";
+        public const string PluginVersion = "1.5.17";
 
         AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -37,13 +37,13 @@ namespace ValheimArmory
             VAConfig cfg = new VAConfig(Config);
 
             // Load assets
-            LoadAssets(cfg);
+            LoadAssets();
 
             // Build the piece & item creation classes, provide configuration for toggles and loaded resources
-            new ValheimArmoryPieces(EmbeddedResourceBundle, cfg); // not used right now
-            new ValheimArmoryItems(EmbeddedResourceBundle, cfg);
+            // new ValheimArmoryPieces(EmbeddedResourceBundle); // not used right now
+            new ValheimArmoryItems(EmbeddedResourceBundle);
 
-            AddLocalizations(cfg);
+            AddLocalizations();
             UnloadAssets();
         }
 
@@ -59,7 +59,7 @@ namespace ValheimArmory
         // "item_sword_description": "sword-description-here",
         // the localization file itself should be a casematched language as defined by one of the "folder" language names from here:
         // https://valheim-modding.github.io/Jotunn/data/localization/language-list.html
-        private void AddLocalizations(VAConfig cfg)
+        private void AddLocalizations()
         {
             Localization = LocalizationManager.Instance.GetLocalization();
             //LocalizationManager.Instance.AddLocalization(Localization);
@@ -71,29 +71,29 @@ namespace ValheimArmory
             {
                 if (!embeddedResouce.Contains("localizations")) { continue; }
                 // Read the localization file
-                if (cfg.EnableDebugMode.Value == true) { Logger.LogInfo($"Reading {embeddedResouce}"); }
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Reading {embeddedResouce}"); }
                 string localization = ReadEmbeddedResourceFile(embeddedResouce);
                 // since I use comments in the localization that are not valid JSON those need to be stripped
                 string cleaned_localization = Regex.Replace(localization, @"\/\/.*", "");
                 // Just the localization name
                 var localization_name = embeddedResouce.Split('.');
-                if (cfg.EnableDebugMode.Value == true) { Logger.LogInfo($"Adding localization: '{localization_name[2]}'"); }
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Adding localization: '{localization_name[2]}'"); }
                 // Logging some characters seem to cause issues sometimes
-                // if (cfg.EnableDebugMode.Value == true) { Logger.LogInfo($"Localization Text: {cleaned_localization}"); }
+                // if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Localization Text: {cleaned_localization}"); }
                 //Localization.AddTranslation(localization_name[2], localization);
                 Localization.AddJsonFile(localization_name[2], cleaned_localization);
             }
         }
 
-        private void LoadAssets(VAConfig cfg)
+        private void LoadAssets()
         {
-            if (cfg.EnableDebugMode.Value == true)
+            if (VAConfig.EnableDebugMode.Value == true)
             {
                 Logger.LogInfo($"Embedded resources: {string.Join(",", typeof(ValheimArmory).Assembly.GetManifestResourceNames())}");
             }
             EmbeddedResourceBundle = AssetUtils.LoadAssetBundleFromResources("ValheimArmory.AssetsEmbedded.vabundle", typeof(ValheimArmory).Assembly);
 
-            if (cfg.EnableDebugMode.Value == true)
+            if (VAConfig.EnableDebugMode.Value == true)
             {
                 Logger.LogInfo($"Asset Names: {string.Join(",", EmbeddedResourceBundle.GetAllAssetNames())}");
             }

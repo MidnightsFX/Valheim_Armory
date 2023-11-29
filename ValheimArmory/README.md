@@ -24,11 +24,19 @@ If you would like to contribute a new translation, or improve an existing one pl
 
 # Features
 
-Below are all of the items added by this mod. The descriptions and information here are provided so you know what you are getting.
+Below are all of the items added by this mod. The descriptions and information here are provided so you know what you are getting. But I encourage you to explore and discover the weapons instead.
 
 Here is a sample gallery of weapons added by this mod.
 
 ![Sample Gallery of added content](https://i.imgur.com/bl5tTcl.png)
+
+<details>
+<summary>I want to see the weapons (spoilers!)</summary>
+
+![Gallery pt1](https://i.imgur.com/zuh6YNT.png)
+![Gallery pt2](https://i.imgur.com/NtyDJfG.png)
+
+</details>
 
 Below is more information on all of the items added, what tier they are in, where they are crafted and at what progression point. All of the sections below are expandable to view the details.
 
@@ -39,42 +47,42 @@ Below is more information on all of the items added, what tier they are in, wher
 
     These weapons are split into two groups, one requiring the workbench and the other the forge. Meaning that some of these weapons will require metals from the black forest.
 
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Antler Bow | Forge | Post-Meadows | ![Antler Bow Icon](https://i.imgur.com/YYavFT6.png) |
-  | Antler Dagger | Workbench | Post-Meadows | ![Antler Dagger Icon](https://i.imgur.com/TImtKNo.png) |
-  | Antler Sword | Forge | Post-Meadows | ![Antler Sword Icon](https://i.imgur.com/uw1ZNgz.png) |
-  | Antler Atgeir | Workbench | Post-Meadows | ![Antler Atgier Icon](https://i.imgur.com/URdXvZc.png) |
-  | Antler Greataxe | Forge | Post-Meadows | ![Antler Greataxe Icon](https://i.imgur.com/jIAHbCD.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Antler Bow | Forge | Post-Meadows | `VAAntler_Bow` | ![Antler Bow Icon](https://i.imgur.com/YYavFT6.png) |
+  | Antler Dagger | Workbench | Post-Meadows | `VAAntler_dagger` | ![Antler Dagger Icon](https://i.imgur.com/TImtKNo.png) |
+  | Antler Sword | Forge | Post-Meadows | `VAAntler_Sword` | ![Antler Sword Icon](https://i.imgur.com/uw1ZNgz.png) |
+  | Antler Atgeir | Workbench | Post-Meadows | `VAatgeir_antler` | ![Antler Atgier Icon](https://i.imgur.com/URdXvZc.png) |
+  | Antler Greataxe | Forge | Post-Meadows | `VAAntler_greataxe` | ![Antler Greataxe Icon](https://i.imgur.com/jIAHbCD.png) |
 
   ## Elder
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Vine hammer | Forge | Post-Blackforest | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
-  | Vine shield | Forge | Post-Blackforest | ![Elders roundshield icon](https://i.imgur.com/MaZMD4l.png) |
-  | Vine crossbow | Forge | Post-Blackforest | ![Elders crossbow Icon](https://i.imgur.com/fDaATMs.png) |
-  | Vine sword | Forge | Post-Blackforest | ![Elders Sword Icon](https://i.imgur.com/621VD59.png) |
-  | Vine mace | Forge | Post-Blackforest | ![Elders Mace Icon](https://i.imgur.com/SfYdLP7.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Vine hammer | Forge | Post-Blackforest | `VAElderHammer` | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
+  | Vine shield | Forge | Post-Blackforest | `VAElderRoundShield` | ![Elders roundshield icon](https://i.imgur.com/MaZMD4l.png) |
+  | Vine crossbow | Forge | Post-Blackforest | `VACrossbowElder` | ![Elders crossbow Icon](https://i.imgur.com/fDaATMs.png) |
+  | Vine sword | Forge | Post-Blackforest | `VAVine_Sword` | ![Elders Sword Icon](https://i.imgur.com/621VD59.png) |
+  | Vine mace | Forge | Post-Blackforest | `VAElder_mace` | ![Elders Mace Icon](https://i.imgur.com/SfYdLP7.png) |
 
   ## Bonemass
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Skull hammer | Forge | Post-Swamp | ![Bonemass Warhammer icon](https://i.imgur.com/sg9yGYu.png) |
-  | Bone blade | Forge | Post-Swamp | ![bonemass greatsword icon](https://i.imgur.com/OWfG9nK.png) |
-  | Poisoned bone dagger | Forge | Post-Swamp | ![Bonemasses dagger icon](https://i.imgur.com/o9qxcEG.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Skull hammer | Forge | Post-Swamp | `VABonemassWarhammer` | ![Bonemass Warhammer icon](https://i.imgur.com/sg9yGYu.png) |
+  | Bone blade | Forge | Post-Swamp | `VABonemassGreatsword` | ![bonemass greatsword icon](https://i.imgur.com/OWfG9nK.png) |
+  | Poisoned bone dagger | Forge | Post-Swamp | `VABonemassDagger` | ![Bonemasses dagger icon](https://i.imgur.com/o9qxcEG.png) |
 
   ## Moder
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Dragonfrost sword | Forge | Post-Mountain | ![Ice sword Icon](https://i.imgur.com/iXVICFY.png) |
-  | Dragonfrost spear | Forge | Post-Mountain | ![Ice Spear Icon](https://i.imgur.com/X4CuFZs.png) |
-  | Dragonfrost crossbow | Forge | Post-Mountain | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Dragonfrost sword | Forge | Post-Mountain | `VASwordModer` | ![Ice sword Icon](https://i.imgur.com/iXVICFY.png) |
+  | Dragonfrost spear | Forge | Post-Mountain | `VASpearModer` | ![Ice Spear Icon](https://i.imgur.com/X4CuFZs.png) |
+  | Dragonfrost crossbow | Forge | Post-Mountain | `VACrossbowModer` | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
 
   ### Yagluth
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Goblin king atgeir | Forge | Post-Plains | ![darkmetal atgeir](https://i.imgur.com/LXLNlF0.png) |
-  | Goblin king greatsword | Forge | Post-Plains | ![darkmetal greatsword](https://i.imgur.com/diyEKHx.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Goblin king atgeir | Forge | Post-Plains | `VAYagluthAtgeir` | ![darkmetal atgeir](https://i.imgur.com/LXLNlF0.png) |
+  | Goblin king greatsword | Forge | Post-Plains | `VAYagluth_greatsword` | ![darkmetal greatsword](https://i.imgur.com/diyEKHx.png) |
 
 </details>
 
@@ -83,18 +91,18 @@ Below is more information on all of the items added, what tier they are in, wher
 
   Arrows Added here fill out a number of additional roles, and importantly add new resource sinks.
 
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Bone arrow | Workbench | Meadows | ![bone arrow icon](https://imgur.com/KUYj0Zp.png) |
-  | Chitin arrow | Workbench | Ocean | ![chitin arrow icon](https://imgur.com/LKNQnEt.png) |
-  | Ancient Wood arrow | Workbench | Swamp | ![ancient wood arrow icon](https://imgur.com/d28tCPw.png) |
-  | Surtling Fire arrow | Forge | Mountain | ![surtling fire arrow icon](https://i.imgur.com/K5Erlwt.png) |
-  | Blackmetal arrow | Forge | Plains | ![blackmetal arrow icon](https://imgur.com/yiJKz6s.png) | 
-  | Wood Bolt | Artisan | Blackforest | ![wood crossbow bolt](https://imgur.com/UTbO8aG.png) |
-  | Bronze Bolt | Artisan | Blackforest | ![bronze bolt](https://i.imgur.com/cUJTlB3.png) |
-  | Iron Poison Bolt | Artisan | Swamp | ![iron poison bolt](https://i.imgur.com/mVLDfm8.png) |
-  | Silver Frost Bolt | Artisan | Mountain | ![Silver Frost bolt](https://i.imgur.com/0FGHrBB.png) |
-  | Blackmetal Surtling Bolt | Artisan | Plains | ![blackmetal surtling bolt](https://i.imgur.com/iZ5fOrF.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Bone arrow | Workbench | Meadows | `VAArrowBone` | ![bone arrow icon](https://imgur.com/KUYj0Zp.png) |
+  | Chitin arrow | Workbench | Ocean | `VAchitinarrow` | ![chitin arrow icon](https://imgur.com/LKNQnEt.png) |
+  | Ancient Wood arrow | Workbench | Swamp | `VAarrowancient` | ![ancient wood arrow icon](https://imgur.com/d28tCPw.png) |
+  | Surtling Fire arrow | Forge | Mountain | `VAarrow_surtling_fire` | ![surtling fire arrow icon](https://i.imgur.com/K5Erlwt.png) |
+  | Blackmetal arrow | Forge | Plains | `VAArrowGreenMetal` | ![blackmetal arrow icon](https://imgur.com/yiJKz6s.png) | 
+  | Wood Bolt | Artisan | Blackforest | `VABoltWood` | ![wood crossbow bolt](https://imgur.com/UTbO8aG.png) |
+  | Bronze Bolt | Artisan | Blackforest | `VAbolt_bronze` | ![bronze bolt](https://i.imgur.com/cUJTlB3.png) |
+  | Iron Poison Bolt | Artisan | Swamp | `VAbolt_poison` | ![iron poison bolt](https://i.imgur.com/mVLDfm8.png) |
+  | Silver Frost Bolt | Artisan | Mountain | `VAbolt_frost` | ![Silver Frost bolt](https://i.imgur.com/0FGHrBB.png) |
+  | Blackmetal Surtling Bolt | Artisan | Plains | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/iZ5fOrF.png) |
 
 </details>
 
@@ -103,10 +111,11 @@ Below is more information on all of the items added, what tier they are in, wher
 
   Added Atgiers help fill in missing tiers.
 
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Royal Abyssal Atgeir | Forge | Mountain | ![royal abyssal atgeir icon](https://i.imgur.com/FCO85Nq.png) |
-  | Silver Atgeir | Forge | Mountain | ![silver atgeir icon](https://i.imgur.com/WLB6PWp.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Atgeir | Workbench | Meadows | `VAAtgeir_Flint` | ![flint atgeir icon](https://i.imgur.com/ASQRVLD.png) |
+  | Royal Abyssal Atgeir | Forge | Mountain | `VAAtgeirchitin` | ![royal abyssal atgeir icon](https://i.imgur.com/FCO85Nq.png) |
+  | Silver Atgeir | Forge | Mountain | `VASilverAtgeir` | ![silver atgeir icon](https://i.imgur.com/WLB6PWp.png) |
 </details>
 
 
@@ -116,10 +125,11 @@ Below is more information on all of the items added, what tier they are in, wher
   ### Greataxes (2H Axes)
   Battleaxes are a fun but very challenging playstyle in valheim. They are slow so you generally need to kill your opponets before they can kill you, which happens fast.
 
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Bronze Lumber Axe | Forge | Blackforest | ![bronze greataxe icon](https://i.imgur.com/1an32hc.png) |
-  | Blackmetal Greataxe | Forge | Mistlands | ![blackmetal greataxe icon](https://i.imgur.com/2H94zhh.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Greataxe | Workbench | Meadows | `VAFlint_greataxe` | ![flint greataxe icon](https://i.imgur.com/dPbaKtX.png) |
+  | Bronze Lumber Axe | Forge | Blackforest | `VAbronze_battleaxe` | ![bronze greataxe icon](https://i.imgur.com/1an32hc.png) |
+  | Blackmetal Greataxe | Forge | Mistlands | `VAblackmetal_battleaxe` | ![blackmetal greataxe icon](https://i.imgur.com/2H94zhh.png) |
 
 </details>
 
@@ -128,21 +138,22 @@ Below is more information on all of the items added, what tier they are in, wher
   
   ### Added Daggers
 
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Bronze Dagger | Forge | Blackforest | ![bronze dagger icon](https://i.imgur.com/AyWevGx.png) |
-  | Iron Dagger | Forge | Swamp | ![iron dagger icon](https://i.imgur.com/9MBSw5X.png) |
-  | Silver Dagger | Forge | Mountain | ![silver dagger icon](https://i.imgur.com/SL2G0Vn.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Bronze Dagger | Forge | Blackforest | `VAdagger_bronze` | ![bronze dagger icon](https://i.imgur.com/AyWevGx.png) |
+  | Iron Dagger | Forge | Swamp | `VAdagger_iron` | ![iron dagger icon](https://i.imgur.com/9MBSw5X.png) |
+  | Silver Dagger | Forge | Mountain | `VAdagger_silver` | ![silver dagger icon](https://i.imgur.com/SL2G0Vn.png) |
 
   ---
 
   ### Added 2H Daggers
 
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Rascal Daggers | Forge | Blackforest | ![rascal daggers icon](https://i.imgur.com/88MEras.png) |
-  | Rogue Daggers | Forge | Swamp | ![rogue daggers icon](https://i.imgur.com/1kyTYjP.png) |
-  | Blackguard Runic Daggers | Forge | Mountain | ![blackguard runic daggers icon](https://i.imgur.com/8HwWqah.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Daggers | Workbench | Meadows | `VADagger_Flint_2h` | ![flint daggers icon](https://i.imgur.com/vdkexcd.png) |
+  | Rascal Daggers | Forge | Blackforest | `VAdagger_bronze_2h` | ![rascal daggers icon](https://i.imgur.com/88MEras.png) |
+  | Rogue Daggers | Forge | Swamp | `VAdagger_iron_2h` | ![rogue daggers icon](https://i.imgur.com/1kyTYjP.png) |
+  | Blackguard Runic Daggers | Forge | Mountain | `VAdagger_silver_2h` | ![blackguard runic daggers icon](https://i.imgur.com/8HwWqah.png) |
 
   * Note: 2H Daggers will float infront of item wall mounts due to their separated attachment style. They display normally on an item stand.
 
@@ -155,10 +166,10 @@ Below is more information on all of the items added, what tier they are in, wher
   
   ### Added Crossbows
 
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Bronze Crossbow | Forge | Blackforest | ![bronze crossbow icon](https://i.imgur.com/GkWbooT.png) |
-  | Bronze Arbalist | Forge | Plains | ![bronze arbalist icon](https://i.imgur.com/iuk67H0.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Bronze Crossbow | Forge | Blackforest | `VACrossbowBronze` | ![bronze crossbow icon](https://i.imgur.com/GkWbooT.png) |
+  | Bronze Arbalist | Forge | Plains | `VAArbalistBronze` | ![bronze arbalist icon](https://i.imgur.com/iuk67H0.png) |
 
 </details>
 
@@ -167,9 +178,9 @@ Below is more information on all of the items added, what tier they are in, wher
   
   ### Added Sledges
 
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Blackmetal Sledge | Forge | Plains | ![blackmetal sledge icon](https://i.imgur.com/GiQJaWe.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Blackmetal Sledge | Forge | Plains | `VAblackmetal_sledge` | ![blackmetal sledge icon](https://i.imgur.com/GiQJaWe.png) |
 
 </details>
 
@@ -178,9 +189,9 @@ Below is more information on all of the items added, what tier they are in, wher
   
   ### Added Shields
 
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Serpent Scale Buckler | Forge | Swamp | ![serpent scale buckler icon](https://i.imgur.com/jtB6efS.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Serpent Scale Buckler | Forge | Swamp | `VAserpent_buckler` | ![serpent scale buckler icon](https://i.imgur.com/jtB6efS.png) |
 
 </details>
 
@@ -189,20 +200,22 @@ Below is more information on all of the items added, what tier they are in, wher
   
   ### Added Greatswords
 
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Bronze Greatsword | Forge | Blackforest | ![bronze greatsword icon](https://i.imgur.com/cjSbYI5.png) |
-  | Iron Greatsword | Forge | Swamp | ![iron greatsword icon](https://i.imgur.com/UmjdC0K.png) |
-  | Silver Greatsword | Forge | Mountain | ![silver greatsword icon](https://i.imgur.com/qBOtNRn.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Greatsword | Workbench | Meadows | `VAFlint_greatsword` | ![flint greatsword icon](https://i.imgur.com/IWwo2x0.png) |
+  | Bronze Greatsword | Forge | Blackforest | `VAbronze_greatsword` | ![bronze greatsword icon](https://i.imgur.com/cjSbYI5.png) |
+  | Iron Greatsword | Forge | Swamp | `VAiron_greatsword` | ![iron greatsword icon](https://i.imgur.com/UmjdC0K.png) |
+  | Silver Greatsword | Forge | Mountain | `VAsilver_greatsword` | ![silver greatsword icon](https://i.imgur.com/qBOtNRn.png) |
 
 
   ---
   
   ### Added Swords
 
-  | Name | Crafted At | Stage | Icon |
-  | ----------- | ----------- | ----------- | ----------- |
-  | Chitin Sword | Forge | Blackforest | ![chitin sword icon](https://i.imgur.com/HtNvGaA.png) |
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Sword | Workbench | Meadows | `VAFlint_Sword` | ![flint sword icon](https://i.imgur.com/8PEvo8I.png) |
+  | Chitin Sword | Forge | Blackforest | `VASwordChitin` | ![chitin sword icon](https://i.imgur.com/HtNvGaA.png) |
 
   * Chitin Sword (Abyssal Sword) is an early game sword sitting between bronze and iron but with the unique difference of inflicting some blunt damage, making it less useless against all of the enemies in the swamp
 </details>
@@ -215,7 +228,7 @@ Everything is optionally configurable through the ingame mod configuration UI pr
   * [Thunderstore link](https://valheim.thunderstore.io/package/TJzilla/BepInEx_ConfigurationManager/)
   * [Nexus Link](https://www.nexusmods.com/valheim/mods/740)
 
-Otherwise a configuration file located at `/BepInEx/config/com.midnightsfx.ValheimArmory.cfg` contains all of the configuration.
+Otherwise a configuration file located at `/BepInEx/config/MidnightsFX.ValheimArmory.cfg` contains all of the configuration.
 
 Please note that basically ALL of the configuration is server sided. Which means that **it requires a restart of your game to take effect**. This allows me to ensure that the server and the client are always in sync with the details of everything- like how much damage you did to that greydwarf.
 
@@ -274,7 +287,7 @@ Q. Why does x weapon look bad?
   <summary>Potential Spoilers!</summary>
   
   * Filling out boss weapons for most/all playstyles (long term)
-  * Filling out the line of fists (maybe wood), Bronze, Iron, Blackmetal
+  * Filling out the line of fists (maybe flint), Bronze, Iron, Blackmetal
   * Chitin Shield
   * Named Mace (blackmetal mace)
   * Silver sledge
@@ -290,9 +303,16 @@ Q. Why does x weapon look bad?
 Just download with your favorite modmanager!
 
 ## Installation (manual)
-Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run.
+Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run. Optionally follow the instructions to setup VES or Epic Loot configs.
 
 ## Changelog
+**1.5.17**
+```
+- Fixed the default recipe for iron poisoned crossbow bolts to use iron
+- Added Flint weapon set (Atgeir, Sword, 2H dagger, Greatsword)
+- Added prefab names to readme
+```
+
 **1.5.16**
 ```
 - Fixed missing shader compilation for Vulkan

@@ -12,7 +12,7 @@ namespace ValheimArmory
     {
         public ValheimArmoryPieces(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
         {
-            if (cfg.EnableDebugMode.Value == true)
+            if (VAConfig.EnableDebugMode.Value == true)
             {
                 // Logger.LogInfo("Loading Pieces.");
             }
@@ -24,8 +24,8 @@ namespace ValheimArmory
         // Adds Upgrade pieces to the artisan table allowing items crafted there to be upgraded
         /** private void AddArtisanTableUpgrades(AssetBundle EmbeddedResourceBundle, VAConfig cfg)
         {
-            if (cfg.ArtisanTableUpgrade1ConfigEnabled.Value == false) {
-                if (cfg.EnableDebugMode.Value == true) { Logger.LogWarning("Artisan Table Upgrade1 not loaded."); }
+            if (VAConfig.ArtisanTableUpgrade1ConfigEnabled.Value == false) {
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogWarning("Artisan Table Upgrade1 not loaded."); }
             } else {
                 try {
                     Sprite sprite = EmbeddedResourceBundle.LoadAsset<Sprite>("Assets/Custom/Icons/artisan_upgrade1_large.png");
