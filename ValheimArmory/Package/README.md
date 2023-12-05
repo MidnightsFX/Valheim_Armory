@@ -9,9 +9,8 @@ This mod is balanced to be mostly lore friendly with a preference for fun and en
 This mod is highly configurable, you can use all of it, parts or tune it as you need.
 
 Got a bug to report or just want to chat about the mod? Drop by the discord or github.
-|||||
-|--|--|--|--|
-| Discord | [![discord logo](https://i.imgur.com/uE6umQE.png)](https://discord.gg/Dmr9PQTy9m) | Github | [![github logo](https://i.imgur.com/lvbP5OF.png)](https://github.com/MidnightsFX/Valheim_Armory) |
+
+[![discord logo](https://i.imgur.com/uE6umQE.png)](https://discord.gg/Dmr9PQTy9m) [![github logo](https://i.imgur.com/lvbP5OF.png)](https://github.com/MidnightsFX/Valheim_Armory)
 
 
 ## Translations
@@ -45,7 +44,7 @@ Below is more information on all of the items added, what tier they are in, wher
   
   ## Eikthyrs
 
-    These weapons are split into two groups, one requiring the workbench and the other the forge. Meaning that some of these weapons will require metals from the black forest.
+    Eikthyrs weapons are split into two groups, one requiring the workbench and the other the forge. Meaning that some of these weapons will require metals from the black forest.
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -59,7 +58,7 @@ Below is more information on all of the items added, what tier they are in, wher
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Vine hammer | Forge | Post-Blackforest | `VAElderHammer` | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
-  | Vine shield | Forge | Post-Blackforest | `VAElderRoundShield` | ![Elders roundshield icon](https://i.imgur.com/MaZMD4l.png) |
+  | Vine shield | Forge | Post-Blackforest | `VAElderRoundShield` | ![Elders roundshield icon](https://i.imgur.com/2eNj45X.png) |
   | Vine crossbow | Forge | Post-Blackforest | `VACrossbowElder` | ![Elders crossbow Icon](https://i.imgur.com/fDaATMs.png) |
   | Vine sword | Forge | Post-Blackforest | `VAVine_Sword` | ![Elders Sword Icon](https://i.imgur.com/621VD59.png) |
   | Vine mace | Forge | Post-Blackforest | `VAElder_mace` | ![Elders Mace Icon](https://i.imgur.com/SfYdLP7.png) |
@@ -77,12 +76,14 @@ Below is more information on all of the items added, what tier they are in, wher
   | Dragonfrost sword | Forge | Post-Mountain | `VASwordModer` | ![Ice sword Icon](https://i.imgur.com/iXVICFY.png) |
   | Dragonfrost spear | Forge | Post-Mountain | `VASpearModer` | ![Ice Spear Icon](https://i.imgur.com/X4CuFZs.png) |
   | Dragonfrost crossbow | Forge | Post-Mountain | `VACrossbowModer` | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
+  | Dragonfrost buckler | Forge | Post-Mountain | `VAModer_RoundShield` | ![Moder roundshield](https://i.imgur.com/kDHDtJT.png) |
 
   ### Yagluth
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Goblin king atgeir | Forge | Post-Plains | `VAYagluthAtgeir` | ![darkmetal atgeir](https://i.imgur.com/LXLNlF0.png) |
   | Goblin king greatsword | Forge | Post-Plains | `VAYagluth_greatsword` | ![darkmetal greatsword](https://i.imgur.com/diyEKHx.png) |
+  | Goblin king knuckles | Forge | Post-Plains | `VAFist_Yagluth` | ![darkmetal knuckles](https://i.imgur.com/yGTlNh1.png) |
 
 </details>
 
@@ -180,7 +181,7 @@ Below is more information on all of the items added, what tier they are in, wher
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Blackmetal Sledge | Forge | Plains | `VAblackmetal_sledge` | ![blackmetal sledge icon](https://i.imgur.com/GiQJaWe.png) |
+  | Blackmetal Sledge | Forge | Plains | `VAblackmetal_sledge` | ![blackmetal sledge icon](https://i.imgur.com/ChVYaYS.png) |
 
 </details>
 
@@ -218,6 +219,35 @@ Below is more information on all of the items added, what tier they are in, wher
   | Chitin Sword | Forge | Blackforest | `VASwordChitin` | ![chitin sword icon](https://i.imgur.com/HtNvGaA.png) |
 
   * Chitin Sword (Abyssal Sword) is an early game sword sitting between bronze and iron but with the unique difference of inflicting some blunt damage, making it less useless against all of the enemies in the swamp
+</details>
+
+<details>
+  <summary>Knuckles</summary>
+  
+  ### Added Hand weapons
+
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint knuckles | Workbench | Meadows | `VAFist_Flint` | ![flint knuckles](https://i.imgur.com/IhPPv7q.png) |
+  | Bronze knuckles | Forge | BlackForest | `VAFist_Bronze` | ![bronze knuckles](https://i.imgur.com/PEYLGow.png) |
+  | Iron knuckles | Forge | Swamp | `VAFist_Iron` | ![iron knuckles](https://i.imgur.com/Y1TkBxk.png) |
+
+</details>
+
+<details>
+  <summary>Magic Weapons</summary>
+  
+  ### Added Magic weapons
+
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Druidic staff of spirit | Workbench | BlackForest | `VAStaff_Druid_Spirit` | ![druidic spirit staff](https://i.imgur.com/4WrNu8i.png) |
+  | Druidic staff of poison | Workbench | Swamp | `VAStaff_Druid_Poison` | ![druidic poison staff](https://i.imgur.com/PXi8ztI.png) |
+  | Druidic staff of ice | Workbench | Mountains | `VAStaff_Druid_Ice` | ![druidic ice staff](https://i.imgur.com/AFtAeV7.png) |
+  | Druidic staff of fire | Workbench | Plains | `VAStaff_Druid_Fire` | ![fire druidic staff](https://i.imgur.com/Xq7o8MW.png) |
+  | Staff of Spirit | Magetable | Mistlands | `VAStaff_Spirit` | ![Staff of spirit](https://i.imgur.com/BuIbWQN.png) |
+  | Staff of Poison | Magetable | Mistlands | `VAStaff_Poison` | ![fire druidic staff](https://i.imgur.com/UKn5TJC.png) |
+
 </details>
 
 ---
@@ -274,7 +304,6 @@ Q. Why does x weapon look bad?
   * Designing Boss Weapons for the mistlands
 
   Boss Weapon Release roadmap
-  * Yagluth Weapons Additions
   * Additional weapon types for all existing bosses
 
   The Boss weapon roadmap will take a number of updates. Feel free to submit ideas to the github.
@@ -287,14 +316,13 @@ Q. Why does x weapon look bad?
   <summary>Potential Spoilers!</summary>
   
   * Filling out boss weapons for most/all playstyles (long term)
-  * Filling out the line of fists (maybe flint), Bronze, Iron, Blackmetal
   * Chitin Shield
   * Named Mace (blackmetal mace)
   * Silver sledge
   * 2H Warhammers (Maces but bigger)
   * Better VFX for weapons
   * New spear alternatives
-  * Eitr using weapons (magic weapons)
+  * More magic (eitr) powered weapons (non-staves)
 </details>
 
 ---
@@ -306,6 +334,25 @@ Just download with your favorite modmanager!
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run. Optionally follow the instructions to setup VES or Epic Loot configs.
 
 ## Changelog
+
+<details>
+  <summary>Changelog (Potential spoilers!)</summary>
+
+**1.6.0**
+```
+- Remodelled the skyshatter, updated its VFX! less foggy more soft electric
+- Redesigned the elders shield
+	- Updated the spirit & poison resistances the shield provides to be major resistances instead of minor ones (holding the shield is now effectively a free poison resist, just don't stash/unequip or you'll have a bad time)
+- Added Moders shield
+- Added Flint fist weapon
+- Added Magic staffs! Poison, Spirit, Fire, Ice 
+	- these new magic staffs are split into two catagories: pre mistlands and mistlands level and they work slightly differently
+	- pre-mistlands staffs have a high stamina cost but no Eitr cost
+	- mistland level staffs are stronger, have a low eitr cost and no stamina cost
+	- this is all completely configurable if you want them to work differently
+- Fixes for some flint weapons not colliding properly with things when dropped
+```
+
 **1.5.17**
 ```
 - Fixed the default recipe for iron poisoned crossbow bolts to use iron
@@ -498,8 +545,10 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 - Release! I'm sure its got bugs somewhere
 ```
 
+</details>
+
 ## Issues
-Please report any issues you encounter on the [github issue tracker](https://github.com/MidnightsFX/Valheim_Armory/issues)
+Please report any issues you encounter on the [github issue tracker](https://github.com/MidnightsFX/Valheim_Armory/issues) or ask for help on the [discord](https://discord.gg/Dmr9PQTy9m)
 
 ## Credits
 * German translations provided by SACK3000

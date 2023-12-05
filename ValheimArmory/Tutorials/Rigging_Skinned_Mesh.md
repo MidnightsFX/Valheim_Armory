@@ -97,3 +97,7 @@ Now proceed to export. You should get an .fbx attach_skin containing the armatur
 Unpack this completely to make changes to it in unity and add it to your item. This can be used in conjunction with standard _attach_ eg: 
 
 ![added_to_game_object](https://i.imgur.com/54ApN9J.png)
+
+Notes:
+* Using Child of and mirroring the size of the parent object will not prevent you from scaling the weapons themselves- and will put the selected object exactly on the attachment point (but likely won't be the right rotation etc), you can still resize the object & rotate/move it etc as needed.
+* If you are adding a particle system in unity to a skinned mesh system, you will need to set the particle system to use the `skinned mesh renderer` under `shape`
