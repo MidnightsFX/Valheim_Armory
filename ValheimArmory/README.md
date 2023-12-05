@@ -344,7 +344,8 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 - Redesigned the elders shield
 	- Updated the spirit & poison resistances the shield provides to be major resistances instead of minor ones (holding the shield is now effectively a free poison resist, just don't stash/unequip or you'll have a bad time)
 - Added Moders shield
-- Added Flint fist weapon
+	- Moders shield now provides frost (major) and fire (minor) resistances
+- Added Fist weapons (knuckles): Flint, Bronze, Iron, and blackmetal (boss weapon)
 - Added Magic staffs! Poison, Spirit, Fire, Ice 
 	- these new magic staffs are split into two catagories: pre mistlands and mistlands level and they work slightly differently
 	- pre-mistlands staffs have a high stamina cost but no Eitr cost
