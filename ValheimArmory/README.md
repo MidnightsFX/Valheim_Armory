@@ -322,7 +322,7 @@ Q. Why does x weapon look bad?
   * 2H Warhammers (Maces but bigger)
   * Better VFX for weapons
   * New spear alternatives
-  * More magic (eitr) powered weapons (non-staves)
+  * More magic (eitr) powered weapons (non-staves, post Ashlands update)
 </details>
 
 ---
@@ -337,6 +337,18 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 
 <details>
   <summary>Changelog (Potential spoilers!)</summary>
+
+**1.6.1**
+```
+- Fixed the antler atgeir & flint atgeir having both slash & pierce
+- Removed minor resistances from the vine shield
+- Added a groundsmash secondary attack for bonemasses warhammer
+- Reduced default stamina cost of the primary attack for bonemasses warhammer, and sped it up slightly
+- Updated Yagluths fists to have a jump secondary attack
+- Remade the abyssal atgiers skin and vfx, now much softer, less shiny
+- Added an obsidian bolt for crossbows
+- Tuned default damage for the abyssal atgeir to be more in line with other atgeirs (and to upgrade linearly)
+```
 
 **1.6.0**
 ```
