@@ -13,29 +13,31 @@ namespace ValheimArmory
 {
     class ValheimArmoryItems
     {
+        AssetBundle EmbeddedResourceBundle = ValheimArmory.EmbeddedResourceBundle;
         // constructor, add all items on init
-        public ValheimArmoryItems(AssetBundle EmbeddedResourceBundle)
+        public ValheimArmoryItems()
         {
             if (VAConfig.EnableDebugMode.Value == true)
             {
                 Logger.LogInfo("Loading Items.");
             }
 
-            LoadArrows(EmbeddedResourceBundle);
-            LoadBows(EmbeddedResourceBundle);
-            LoadSwords(EmbeddedResourceBundle);
-            LoadAxes(EmbeddedResourceBundle);
-            LoadHammers(EmbeddedResourceBundle);
-            LoadAtgeirs(EmbeddedResourceBundle);
-            LoadDaggers(EmbeddedResourceBundle);
-            LoadShields(EmbeddedResourceBundle);
-            LoadSpears(EmbeddedResourceBundle);
-            LoadMaces(EmbeddedResourceBundle);
-            LoadFists(EmbeddedResourceBundle);
-            LoadMagic(EmbeddedResourceBundle);
+            LoadArrows();
+            LoadBows();
+            LoadSwords();
+            LoadAxes();
+            LoadHammers();
+            LoadAtgeirs();
+            LoadDaggers();
+            LoadShields();
+            LoadSpears();
+            LoadMaces();
+            LoadFists();
+            LoadMagic();
+            LoadNonCraftables();
         }
 
-        private void LoadArrows(AssetBundle EmbeddedResourceBundle)
+        private void LoadArrows()
         {
             // Greenmetal Arrows
             new ValArmoryItem(
@@ -243,7 +245,7 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(20, 1, 100, true) },
-                    { "pierce", new Tuple<float, float, float, bool>(78, 0, 200, true) }
+                    { "pierce", new Tuple<float, float, float, bool>(58, 0, 200, true) }
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -309,7 +311,7 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadBows(AssetBundle EmbeddedResourceBundle)
+        private void LoadBows()
         {
             // Bronze Arbalist
             new ValArmoryItem(
@@ -467,7 +469,7 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadSwords(AssetBundle EmbeddedResourceBundle)
+        private void LoadSwords()
         {
             // Chitin Sword
             new ValArmoryItem(
@@ -811,7 +813,7 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadAxes(AssetBundle EmbeddedResourceBundle)
+        private void LoadAxes()
         {
             // Flint Battleaxe
             new ValArmoryItem(
@@ -945,7 +947,7 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadHammers(AssetBundle EmbeddedResourceBundle)
+        private void LoadHammers()
         {
             // Blackmetal Sledge
             new ValArmoryItem(
@@ -963,10 +965,10 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "lightning", new Tuple<float, float, float, bool>(38, 0, 120, true) },
                     { "lightning_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(200, 0, 400, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(120, 0, 400, true) },
                     { "block", new Tuple<float, float, float, bool>(48, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(19, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -995,10 +997,10 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(4, 0, 20, true) },
                     { "spirit", new Tuple<float, float, float, bool>(12, 0, 99, true) },
                     { "spirit_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(150, 0, 400, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(120, 0, 400, true) },
                     { "block", new Tuple<float, float, float, bool>(48, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(11, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -1027,7 +1029,7 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
                     { "poison", new Tuple<float, float, float, bool>(32, 0, 99, true) },
                     { "poison_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(65, 0, 400, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(120, 0, 400, true) },
                     { "block", new Tuple<float, float, float, bool>(48, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
@@ -1044,7 +1046,7 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadAtgeirs(AssetBundle EmbeddedResourceBundle)
+        private void LoadAtgeirs()
         {
             // Flint Atgeir
             new ValArmoryItem(
@@ -1206,7 +1208,7 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadShields(AssetBundle EmbeddedResourceBundle)
+        private void LoadShields()
         {
             // Serpentscale Buckler
             new ValArmoryItem(
@@ -1298,7 +1300,7 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadDaggers(AssetBundle EmbeddedResourceBundle)
+        private void LoadDaggers()
         {
             // Flint 2H Daggers
             new ValArmoryItem(
@@ -1594,7 +1596,7 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadSpears(AssetBundle EmbeddedResourceBundle)
+        private void LoadSpears()
         {
             // Moder Spear
             new ValArmoryItem(
@@ -1631,7 +1633,7 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadFists(AssetBundle EmbeddedResourceBundle)
+        private void LoadFists()
         {
             // Flint Fists
             new ValArmoryItem(
@@ -1755,7 +1757,7 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadMaces(AssetBundle EmbeddedResourceBundle)
+        private void LoadMaces()
         {
             // Elders Mace
             new ValArmoryItem(
@@ -1790,7 +1792,7 @@ namespace ValheimArmory
             );
         }
 
-        private void LoadMagic(AssetBundle EmbeddedResourceBundle)
+        private void LoadMagic()
         {
             // Staff of poison
             new ValArmoryItem(
@@ -1991,6 +1993,30 @@ namespace ValheimArmory
                 {
                 }
             );
+        }
+
+        private void LoadNonCraftables()
+        {
+            // Arrow resources
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_ancient.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_bone.prefab");
+            // Magic projectiles
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_ice_projectile.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_poison_projectile.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_spirit_projectile.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/vfx_poison_explosion.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/vfx_spirit_explosion.prefab");
+        }
+    }
+
+    class NonCraftablePrefab
+    {
+        // full_path like: Assets/Custom/Pieces/VFortress/VF_creature_notify.prefab
+        public NonCraftablePrefab(AssetBundle EmbeddedResourceBundle, String full_path)
+        {
+            GameObject game_obj = EmbeddedResourceBundle.LoadAsset<GameObject>($"{full_path}");
+            CustomPrefab prefab_obj = new CustomPrefab(game_obj, false);
+            PrefabManager.Instance.AddPrefab(prefab_obj);
         }
     }
 

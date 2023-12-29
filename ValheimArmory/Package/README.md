@@ -99,11 +99,12 @@ Below is more information on all of the items added, what tier they are in, wher
   | Ancient Wood arrow | Workbench | Swamp | `VAarrowancient` | ![ancient wood arrow icon](https://imgur.com/d28tCPw.png) |
   | Surtling Fire arrow | Forge | Mountain | `VAarrow_surtling_fire` | ![surtling fire arrow icon](https://i.imgur.com/K5Erlwt.png) |
   | Blackmetal arrow | Forge | Plains | `VAArrowGreenMetal` | ![blackmetal arrow icon](https://imgur.com/yiJKz6s.png) | 
-  | Wood Bolt | Artisan | Blackforest | `VABoltWood` | ![wood crossbow bolt](https://imgur.com/UTbO8aG.png) |
-  | Bronze Bolt | Artisan | Blackforest | `VAbolt_bronze` | ![bronze bolt](https://i.imgur.com/cUJTlB3.png) |
-  | Iron Poison Bolt | Artisan | Swamp | `VAbolt_poison` | ![iron poison bolt](https://i.imgur.com/mVLDfm8.png) |
-  | Silver Frost Bolt | Artisan | Mountain | `VAbolt_frost` | ![Silver Frost bolt](https://i.imgur.com/0FGHrBB.png) |
-  | Blackmetal Surtling Bolt | Artisan | Plains | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/iZ5fOrF.png) |
+  | Wood Bolt | Workbench | Blackforest | `VABoltWood` | ![wood crossbow bolt](https://imgur.com/UTbO8aG.png) |
+  | Bronze Bolt | Forge | Blackforest | `VAbolt_bronze` | ![bronze bolt](https://i.imgur.com/cUJTlB3.png) |
+  | Iron Poison Bolt | Forge | Swamp | `VAbolt_poison` | ![iron poison bolt](https://i.imgur.com/mVLDfm8.png) |
+  | Silver Frost Bolt | Forge | Mountain | `VAbolt_frost` | ![Silver Frost bolt](https://i.imgur.com/0FGHrBB.png) |
+  | Obsidian Bolt | Forge | Plains | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/luqYGzO.png) |
+  | Blackmetal Surtling Bolt | Forge | Plains | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/iZ5fOrF.png) |
 
 </details>
 
@@ -177,11 +178,13 @@ Below is more information on all of the items added, what tier they are in, wher
 <details>
   <summary>Hammers</summary>
   
-  ### Added Sledges
+  ### Added Warhammers
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Blackmetal Sledge | Forge | Plains | `VAblackmetal_sledge` | ![blackmetal sledge icon](https://i.imgur.com/ChVYaYS.png) |
+  | Skyshatter | Forge | Plains | `VAblackmetal_sledge` | ![blackmetal sledge icon](https://i.imgur.com/ChVYaYS.png) |
+
+  Warhammers act like a 2H mace with the secondary attack being similar to a sledge. Finally a high risk high reward blunt weapon.
 
 </details>
 
@@ -337,6 +340,29 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 
 <details>
   <summary>Changelog (Potential spoilers!)</summary>
+
+
+**1.6.5**
+```
+- Tune default damage for the obsidian bolt to be lower than blackmetal
+- Improved network compatability for some magic weapons, crossbow bolts and arrows
+```
+
+**1.6.4**
+```
+- Updated readme for arrows to be a bit more accurate
+- Converted the shkyshatter & elders hammer to warhammers (2H mace + sledge attacks)
+```
+
+**1.6.3**
+```
+- Fixes obsidian bolts not colliding with the ground when dropped
+```
+
+**1.6.2**
+```
+- Fixes bonemass warhammer smash aoe damage not being spread across the whole radius
+```
 
 **1.6.1**
 ```

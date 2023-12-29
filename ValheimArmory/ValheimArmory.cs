@@ -25,9 +25,9 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.6.1";
+        public const string PluginVersion = "1.6.5";
 
-        AssetBundle EmbeddedResourceBundle;
+        internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
 
 
@@ -41,7 +41,7 @@ namespace ValheimArmory
 
             // Build the piece & item creation classes, provide configuration for toggles and loaded resources
             // new ValheimArmoryPieces(EmbeddedResourceBundle); // not used right now
-            new ValheimArmoryItems(EmbeddedResourceBundle);
+            new ValheimArmoryItems();
 
             AddLocalizations();
             UnloadAssets();
