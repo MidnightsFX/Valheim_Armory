@@ -146,5 +146,16 @@
   "item_yagluth_greatsword": "Goblin king greatsword",
   "item_yagluth_greatsword_description": "A giant blade hewn from blackmetal and the remains of Yagluth himself.",
   "item_fist_yagluth": "Goblin kings knuckles",
-  "item_fist_yagluth_description": "Shards of the goblin-kings crown secured and guarded by iron and blackmetal."
+  "item_fist_yagluth_description": "Shards of the goblin-kings crown secured and guarded by iron and blackmetal.",
+  // Boss Weapons | Queen
+  "va_queen_buff": "Queen's presence",
+  "va_queen_buff_desc": "The queens power flows through you, you feel energized and healthy.",
+  "item_bow_pincer": "Pincer greatbow",
+  "item_bow_pincer_description": "A massive bow made from two of the Queens pincers takes a large amount of energy to pull taught, but it packs quite the punch.",
+  "item_sword_queen": "Carapace sword",
+  "item_sword_queen_description": "Sharpened carapace from the queen of bugs herself, it still radiates magical energies.",
+  "item_queen_greatsword": "Pincer greatsword",
+  "item_queen_greatsword_description": "A massive pincer from the sealed queen herself, it seems to twitch a little now and then.",
+  "item_dagger_queen": "Carapace dagger",
+  "item_dagger_queen_description":  "A shard from the queens massive carapace, sharpened it still glistens with her magic."
 }

@@ -78,12 +78,20 @@ Below is more information on all of the items added, what tier they are in, wher
   | Dragonfrost crossbow | Forge | Post-Mountain | `VACrossbowModer` | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
   | Dragonfrost buckler | Forge | Post-Mountain | `VAModer_RoundShield` | ![Moder roundshield](https://i.imgur.com/kDHDtJT.png) |
 
-  ### Yagluth
+  ## Yagluth
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Goblin king atgeir | Forge | Post-Plains | `VAYagluthAtgeir` | ![darkmetal atgeir](https://i.imgur.com/LXLNlF0.png) |
   | Goblin king greatsword | Forge | Post-Plains | `VAYagluth_greatsword` | ![darkmetal greatsword](https://i.imgur.com/diyEKHx.png) |
   | Goblin king knuckles | Forge | Post-Plains | `VAFist_Yagluth` | ![darkmetal knuckles](https://i.imgur.com/yGTlNh1.png) |
+
+  ## Queen
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Carapace sword | Blackforge | Post-Mistlands | `VASwordQueen` | ![carapace sword](https://i.imgur.com/hXZKfvN.png) |
+  | Carapace dagger | Blackforge | Post-Mistlands | `VAdagger_queen` | ![carapace dagger](https://i.imgur.com/zbJagxI.png) |
+  | Pincer greatsword | Blackforge | Post-Mistlands | `VAQueen_greatsword` | ![pincer greatsword](https://i.imgur.com/cR358cp.png) |
+  | Pincer greatbow | Blackforge | Post-Mistlands | `VAQueen_bow` | ![pincer greatbow](https://i.imgur.com/CUFQTOp.png) |
 
 </details>
 
@@ -341,11 +349,18 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 <details>
   <summary>Changelog (Potential spoilers!)</summary>
 
+**1.7.0**
+```
+- Added Initial Mistland Boss Weapons!
+	- Queens Sword, Greatsword, Bow and Dagger
+- Improved some balance for Flint weapons
+- Optimized more textures, vfx and various other resources (reduced download and memory footprint)
+```
 
 **1.6.5**
 ```
 - Tune default damage for the obsidian bolt to be lower than blackmetal
-- Improved network compatability for some magic weapons, crossbow bolts and arrows
+- Improved network compatibility for some magic weapons, crossbow bolts and arrows
 ```
 
 **1.6.4**
@@ -598,3 +613,4 @@ Please report any issues you encounter on the [github issue tracker](https://git
 * Hugo for his advice and help getting skinned meshes running
 * Jotun community for answering some silly questions :)
 * The Valheim team at Irongate which makes all of this possible!
+* Unity Ultimate VFX for some or partial visual effects
