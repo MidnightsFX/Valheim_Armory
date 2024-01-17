@@ -1,5 +1,4 @@
 {
-  // Arrows
   "item_arrow_greenmetal": "Стрела из черного металла",
   "item_arrow_greenmetal_description": "Стрела, пронизывающая тьму, надеюсь твоя цель будет верной.",
   "item_bone_arrow": "Костяная стрела",
@@ -20,37 +19,30 @@
   "item_bolt_silver_frost_description": "Обледеневшие серебряные болты, смертельно опасны для горящих врагов и мертвецов.",
   "item_bolt_surtling": "Болт из ядра Суртлинга",
   "item_bolt_surtling_description": "Болт из черного металла, с сердечником из ядра Суртлинга. Определенно будет горячо.",
-  // Bows
   "item_arbalist_bronze": "Бронзовый тяжелый арбалет",
   "item_arbalist_bronze_description": "Модификация легкого арбалета, более смертоносен, чем его предшественник, но неудобен.",
   "item_crossbow_bronze": "Бронзовый арбалет",
   "item_crossbow_bronze_description": "Простой бронзовый арбалет, смертоносный, но быстро изнашивается.",
-  // Swords
   "item_sword_chitin": "Глубинный меч",
   "item_sword_chitin_description": "Может быть, не самый острый меч, но при должной силе может поранить.",
   "item_sword_flint": "Кремниевый меч",
   "item_sword_flint_description": "Сделанный из лучшего куска кремня, какой только можно найти, но все еще хлипкий.",
-  // Shields
   "item_serpent_buckler": "Баклер из змеиной чешуи",
   "item_serpent_buckler_description": "Гибкий щит, созданный из дерева и железа, украшенный множеством блестящих чешуек.",
-  // Atgeirs
   "item_atgeir_flint": "Кремниевое копье",
   "item_atgeir_flint_description": "Простое копье с неуклюже прикрепленным большим куском кремня.",
   "item_atgeir_chitin_heavy": "Глубинная алебарда",
   "item_atgeir_chitin_heavy_description": "Заостренная хитиновая алебарда с серебряной сердцевиной. Оружие, достойное храбрейших викингов.",
   "item_silver_atgeir": "Серебрянная алебарда",
   "item_silver_atgeir_description": "Огромное серебряное лезвие, окованное обсидианом. Оружие повелителя зверей.",
-  // Hammers
   "item_sledge_blackmetal": "Сотрясатель небес",
   "item_sledge_blackmetal_description": "Тяжелый молот из черного металла, инкрустирован громовыми камнями. Способен вызвать удар молнии.",
-  // Axes
   "item_battleaxe_flint": "Кремниевый тяжелый топор",
   "item_battleaxe_flint_description": "Два небрежно прикрепленных кремневых лезвия к крепкому бревну.",
   "item_battleaxe_bronze": "Бронзовый топор дровосека",
   "item_battleaxe_bronze_description": "Большой бронзовый топор, хорошо подходит для рубки древесины и голов.",
   "item_battleaxe_blackmetal": "Гнев Херкира",
   "item_battleaxe_blackmetal_description": "Гигантский убийца, разжигатель пламени, несущий боль.",
-  // Greatswords
   "item_flint_greatsword": "Кремниевый двуручный меч",
   "item_flint_greatsword_description": "Массивный кремневый осколок, укрепленный деревом. Не очень прочный, но достаточно острый.",
   "item_bronze_greatsword": "Бронзовый двуручный меч",
@@ -59,7 +51,6 @@
   "item_iron_greatsword_description": "Огромный железный меч, с каменным навершием и острейшим клинком.",
   "item_silver_greatsword": "Серебряный двуручный меч",
   "item_silver_greatsword_description": "Посеребренный меч, с нанесенными на клинок рунами. Мертвецы будут в восторге.",
-  // Daggers
   "item_dagger_flint_2h": "Кремниевые кинжалы",
   "item_dagger_flint_2h_description": "Два кремневых ножа смертоноснее, чем один.",
   "item_dagger_iron": "Железный кинжал",
@@ -74,14 +65,12 @@
   "item_dagger_silver_description": "Острый серебряный кинжал с рунами на лезвии.",
   "item_dagger_silver_2h": "Кинжалы Подлеца",
   "item_dagger_silver_2h_description": "И люди, и звери одинаково боятся быть порубленными на кусочки.",
-  // Fist weapons
   "item_fist_flint": "Кремниевые кастеты",
   "item_fist_flint_description": "Кремень, закрепленный в нескольких кусках дерева. Не очень прочные, но от них вреда больше, чем от голых рук.",
   "item_fist_bronze": "Бронзовые кастеты",
   "item_fist_bronze_description": "Бронзовые шипы на подложке из цельной древесины. Не смертельны, но оставят в оппоненте множество дыр.",
   "item_fist_iron": "Железные кастеты",
   "item_fist_iron_description": "Оснащены прочными железными лезвиями. Руби плоть с каждым замахом кулака.",
-  // Magic weapons
   "va_staff_eitr_buff": "Древняя магия",
   "va_staff_eitr_buff_desc": "Этот волшебный инструмент наделит владельца небольшим количеством Эйтра",
   "item_staff_poison": "Посох Отравы",
@@ -96,7 +85,6 @@
   "item_staff_druid_ice_description": "Ледяной на ощупь посох, инкрустированный кристаллами с морозных вершин гор.",
   "item_staff_druid_fire": "Посох Пироманта",
   "item_staff_druid_fire_description": "Пылающий огонь, надежно укрытый в деревянном древке посоха. Достойный конкурент для магии Фулингов-шаманов.",
-  // Boss Weapons | Eikthyrs
   "item_bow_antler": "Рогатый лук",
   "item_bow_antler_description": "Предвестник грома, буря надвигается, все должны это услышать.",
   "item_dagger_antler": "Рогатый кинжал",
@@ -107,7 +95,6 @@
   "item_atgeir_antler_description": "Ветвь с короны Эйктюра. Все так же искрится энергией.",
   "item_battleaxe_antler": "Рогатый тяжелый топор",
   "item_battleaxe_antler_description": "Острые рога, скованные цепями. Они все еще переполнены жизненной силой Эйктюра..",
-  // Boss Weapons | Elder
   "va_vineshield_resistance": "Стойкий как дерево.",
   "va_vineshield_resistance_description": "Ваш щит пропитан кровью Древнего, вы наделены повышенной устойчивостью к отравлению и духовной магии.",
   "item_sledge_elder": "Оплетенная кувалда",
@@ -120,14 +107,12 @@
   "item_elder_mace_description": "Большой камень, увитый живыми лозами. Они все еще взывают к земле.",
   "item_sword_vine": "Оплетенный меч",
   "item_sword_vine_description": "Тщательно сбалансированный каменный клинок, проросший лозами Древнего.",
-  // Boss Weapons | Bonemass
   "item_bonemass_warhammer": "Костяной молот",
   "item_bonemass_warhammer_description": "Пропитанный ненавистью Костомассы, могучий молот, сделанный из черепов. Ведет себя как двуручная дубина.",
   "item_bonemass_greatsword": "Костяной клинок",
   "item_bonemass_greatsword_description": "Массивная заостренная кость с гардой из черепа.",
   "item_bonemass_dagger": "Костяной кинжал",
   "item_bonemass_dagger_description": "Пропитанный ядом, железный клинок. Украшен осколками костей.",
-  // Boss Weapons | Moder
   "va_modershield_resistance": "Силы стихий.",
   "va_modershield_resistance_description": "Ваш щит пропитан кровью и слезами Матери, вы наделены повышенной устойчивостью к холоду и огню.",
   "item_spear_moder": "Промерзшее копье",
@@ -138,11 +123,22 @@
   "item_crossbow_moder_description": "Замерзший серебряный арбалет с частичкой души Матери.",
   "item_moder_buckler": "Промерзший баклер",
   "item_moder_buckler_description": "Заледеневший щит напитаный кровью и болью Матери.",
-  // Boss Weapons | Yagluth
   "item_yagluth_atgeir": "Трезубец короля Фуллингов",
   "item_yagluth_atgeir_description": "Фрагмент короны Яглута, насаженный на шест. Оно все еще пылает неугасаемым гневом падшего Божества.",
   "item_yagluth_greatsword": "Меч короля Фулингов",
-  "item_yagluth_greatsword_description": "Гигантский клинок, вырезанный из черного металла, и украшенный останками падшего короля."
+  "item_yagluth_greatsword_description": "Гигантский клинок, вырезанный из черного металла, и украшенный останками падшего короля.",
   "item_fist_yagluth": "Длань короля Фулингов",
-  "item_fist_yagluth_description": "Острые осколки короны Яглута, укрепленные черным металом и железом. Касание которого хочется избежать. "
+  "item_fist_yagluth_description": "Острые осколки короны Яглута, укрепленные черным металом и железом. Касание которого хочется избежать. ",
+  "item_bolt_obsidian": "Обсидиановый болт",
+  "item_bolt_obsidian_description": "Кусок полного темноты.",
+  "va_queen_buff": "Присутствие королевы",
+  "va_queen_buff_desc": "Сила королевы пронизывает тебя, ты чувствуешь себя полным энергии и здоровым.",
+  "item_bow_pincer": "Пинцер великолук",
+  "item_bow_pincer_description": "Гигантский лук, сделанный из двух клешней королевы, требует большого количества энергии, чтобы натянуть его, но он упаковывает сильный удар.",
+  "item_sword_queen": "Меч в панцире",
+  "item_sword_queen_description": "Острый панцирь от самой королевы жуков, он все еще излучает магическую энергию.",
+  "item_queen_greatsword": "Пинцер-большой меч",
+  "item_queen_greatsword_description": "Массивный щипец от самой запечатанной королевы, кажется, иногда дергается немного.",
+  "item_dagger_queen": "Карапузный кинжал",
+  "item_dagger_queen_description": "Осколок от огромной панциря королевы, заточенный, все еще сверкает ее магией."
 }
