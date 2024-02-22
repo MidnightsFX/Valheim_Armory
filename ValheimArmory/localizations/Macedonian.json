@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Голям меч за стискање",
   "item_queen_greatsword_description": "Еден голем клешта од запечатената кралица се чини дека понекогаш трепка малку.I am a language model AI and I do not have the capability to physically twitch.",
   "item_dagger_queen": "Долга ножница",
-  "item_dagger_queen_description": "Еден дел од големиот панцир на кралицата, оштрен уште блеска со нејзината маги"
+  "item_dagger_queen_description": "Еден дел од големиот панцир на кралицата, оштрен уште блеска со нејзината маги",
+  "item_bow_bone_blood": "Крвава коска лук",
+  "item_bow_bone_blood_description": "Лукот изработен од срцевина и коски има непријатна аура, не му требаат стрели, туку ја исисува крвта на стрелците како замена.",
+  "item_pickaxe_blood": "Крвава коска борбен копач",
+  "item_pickaxe_blood_description": "Оваа кирка изгледа ненормално јака, и гладна за твојата крв.",
+  "va_blood_sucker": "Крвава лудница",
+  "va_blood_sucker_desc": "Твоето оружје е жедно за крв."
 }

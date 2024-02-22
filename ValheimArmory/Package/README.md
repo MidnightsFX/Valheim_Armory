@@ -247,6 +247,7 @@ Below is more information on all of the items added, what tier they are in, wher
 
 <details>
   <summary>Magic Weapons</summary>
+
   
   ### Added Magic weapons
 
@@ -258,6 +259,13 @@ Below is more information on all of the items added, what tier they are in, wher
   | Druidic staff of fire | Workbench | Plains | `VAStaff_Druid_Fire` | ![fire druidic staff](https://i.imgur.com/Xq7o8MW.png) |
   | Staff of Spirit | Magetable | Mistlands | `VAStaff_Spirit` | ![Staff of spirit](https://i.imgur.com/BuIbWQN.png) |
   | Staff of Poison | Magetable | Mistlands | `VAStaff_Poison` | ![fire druidic staff](https://i.imgur.com/UKn5TJC.png) |
+
+  ### Added Blood Magic weapons
+
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Blood bone battlepick | forge | BlackForest | `VABlood_Bones_pickaxe` | ![blood bone battlepick](https://i.imgur.com/W18gjEx.png) |
+  | Blood bone bow | forge | Mountains | `VABlood_bone_bow` | ![blood bone bow](https://i.imgur.com/nBN4Jac.png) |
 
 </details>
 
@@ -288,7 +296,7 @@ Current configuration options:
 
 Q. Valheim Enchanting System doesn't support these weapons?
 - A. There is a default VES config in the VA folder (`VES.ValheimArmory.default.yml`), it must be moved to the VES config folder. This gives you full control of configurations that are actually applied in regards to VES.
-	 The folder you should place this config file in is `BepInEx\config\ValheimEnchantmentSystem\AdditionalEnchantmentReqs`
+     The folder you should place this config file in is `BepInEx\config\ValheimEnchantmentSystem\AdditionalEnchantmentReqs`
 
 Q. Epic Loot doesn't automatically drop these weapons, what gives?
 - A. There is a default Epic Loot config files (`EpicLoot_Valheim_Armory.loottables.json, EpicLoot_Valheim_Armory.iteminfo.json`) in the VA folder, they must be moved to the Epic loot config patches folder. `\BepInEx\config\EpicLoot\patches`
@@ -301,11 +309,11 @@ Q. Why does disabling the recipe do nothing?
 
 Q. Why does x weapon look bad?
 - A.
-	- This is my first Unity, and Valhiem mod
-	- My original goal with modding was to just make a singular new arrow
-	- I'm not a gamedev, I suck at textures, modeling and don't know the unity loaders
-	- I'm learning as I go, and welcome feedback
-	- I do this in my few hours of free time, sometimes I don't have that time
+    - This is my first Unity, and Valhiem mod
+    - My original goal with modding was to just make a singular new arrow
+    - I'm not a gamedev, I suck at textures, modeling and don't know the unity loaders
+    - I'm learning as I go, and welcome feedback
+    - I do this in my few hours of free time, sometimes I don't have that time
 ---
 
 ## Currently in-progress
@@ -349,15 +357,30 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 <details>
   <summary>Changelog (Potential spoilers!)</summary>
 
+**1.7.2**
+```
+- Added configuration options to enable stamina cost for non-druidic spirit and poison staffs
+- Added rough language translations for all 26 localizations (I still welcome translation improvements!)
+- Fixed some shields not being auto-picked up properly
+- Fixed some arrows not being auto-picked up properly
+- Added unique projectiles for all of the bolts/arrows. This improves compatability with Bow Plugin.
+- Added blood magic weapons
+    - Blood bone bow, does not cost arrows uses blood for ammo
+    - Blood battlepick, very low stamina cost, health cost, increases health regen when wielded. Can mine terrain.
+```
+
 **1.7.1**
 ```
 - Removed frost damage from the queens sword
+- Added Language translations for all remaining untranslated items
+    - These translations are generated and are not guarented to be accurate, I still greatly appreciate anyone willing to improve language translations
+- Improved Korean language translation (Thanks! 이종윤)
 ```
 
 **1.7.0**
 ```
 - Added Initial Mistland Boss Weapons!
-	- Queens Sword, Greatsword, Bow and Dagger
+    - Queens Sword, Greatsword, Bow and Dagger
 - Improved some balance for Flint weapons
 - Optimized more textures, vfx and various other resources (reduced download and memory footprint)
 ```
@@ -400,15 +423,15 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 ```
 - Remodelled the skyshatter, updated its VFX! less foggy more soft electric
 - Redesigned the elders shield
-	- Updated the spirit & poison resistances the shield provides to be major resistances instead of minor ones (holding the shield is now effectively a free poison resist, just don't stash/unequip or you'll have a bad time)
+    - Updated the spirit & poison resistances the shield provides to be major resistances instead of minor ones (holding the shield is now effectively a free poison resist, just don't stash/unequip or you'll have a bad time)
 - Added Moders shield
-	- Moders shield now provides frost (major) and fire (minor) resistances
+    - Moders shield now provides frost (major) and fire (minor) resistances
 - Added Fist weapons (knuckles): Flint, Bronze, Iron, and blackmetal (boss weapon)
 - Added Magic staffs! Poison, Spirit, Fire, Ice 
-	- these new magic staffs are split into two catagories: pre mistlands and mistlands level and they work slightly differently
-	- pre-mistlands staffs have a high stamina cost but no Eitr cost
-	- mistland level staffs are stronger, have a low eitr cost and no stamina cost
-	- this is all completely configurable if you want them to work differently
+    - these new magic staffs are split into two catagories: pre mistlands and mistlands level and they work slightly differently
+    - pre-mistlands staffs have a high stamina cost but no Eitr cost
+    - mistland level staffs are stronger, have a low eitr cost and no stamina cost
+    - this is all completely configurable if you want them to work differently
 - Fixes for some flint weapons not colliding properly with things when dropped
 ```
 
@@ -515,7 +538,7 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 - Hildirs Update support validated!
 - Updated to Jotunn 2.12.7
 - Added the option to enable/disable craftable state for all items. This is seperate from enabling the item itself, you can now enable the item to be loaded into the game. 
-	But keep it non-craftable, this might be useful if you only want a specific weapon to drop from Epicloot etc.
+    But keep it non-craftable, this might be useful if you only want a specific weapon to drop from Epicloot etc.
 ```
 
 **1.5.0**
@@ -544,8 +567,8 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 - Fixed wood bolt triggering the invalid recipe warning
 - Fixed a particle mock for arrow feathers not resolving on some versions of valheim
 - Rebalance of most boss weapons, and a few outlier non-boss weapons. Recipes are slightly more expensive overall and damage is generall down across the board.
-	This primarily brings boss weapons in line with the next tier weapon minus a small bit. The balance change is just to the default config values.
-	If you want to keep your weapons more powerful continue using your existing config, defaults will only be applied if you do not have a value set (new or deleted config).
+    This primarily brings boss weapons in line with the next tier weapon minus a small bit. The balance change is just to the default config values.
+    If you want to keep your weapons more powerful continue using your existing config, defaults will only be applied if you do not have a value set (new or deleted config).
 ```
 
 **1.3.2**
@@ -589,9 +612,9 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 - Added 2H Daggers
 
 - Significant updates to the configuration code, more things are now configurable!
-	- Stamina cost for primary and secondary attacks
-	- Crafting costs
-	- Where things are crafted at
+    - Stamina cost for primary and secondary attacks
+    - Crafting costs
+    - Where things are crafted at
 ```
 
 **1.0.1**

@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Pincer greatsword \nピンサー大剣",
   "item_queen_greatsword_description": "「封印された女王自身からの大きなはさみ、時々少し動くようです。」\n\n理解しました。",
   "item_dagger_queen": "カラパスナイフ\nありがとうございます",
-  "item_dagger_queen_description": "女王の巨大な甲羅からの破片、それは彼女の魔法で輝きを増している。"
+  "item_dagger_queen_description": "女王の巨大な甲羅からの破片、それは彼女の魔法で輝きを増している。",
+  "item_bow_bone_blood": "血の骨の弓",
+  "item_bow_bone_blood_description": "「コアウッドと骨から作られた弓は不快な雰囲気を持っており、矢は必要なく、代わりに射手の血を吸い取ります。」",
+  "item_pickaxe_blood": "血の骨のバトルピック",
+  "item_pickaxe_blood_description": "このつるはしは異常に強く、あなたの血を求めています。",
+  "va_blood_sucker": " 血の狂乱",
+  "va_blood_sucker_desc": "あなたの武器は血を求めています。（あなたの武器は血を求めています。）"
 }

@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Μεγάλο σπαθί πείρας",
   "item_queen_greatsword_description": "Ένας μαζικός δαγκώνας από τη σφραγισμένη βασίλισσα ίδια της, φαίνεται να κουνιέται λίγο τώρα και τότε.",
   "item_dagger_queen": "Μαχαίρι καραπάσιου",
-  "item_dagger_queen_description": "Ένα κομμάτι από το μαζικό κέλυφος της βασίλισσας, ακόμη λαμπυρίζει με τη μαγεία της."
+  "item_dagger_queen_description": "Ένα κομμάτι από το μαζικό κέλυφος της βασίλισσας, ακόμη λαμπυρίζει με τη μαγεία της.",
+  "item_bow_bone_blood": "Αίμα, κόκκαλο, τόξο",
+  "item_bow_bone_blood_description": "Το τόξο που φτιάχτηκε από ξύλο πυρήνα και οστά έχει ένα άσχημο αέρα, δεν χρειάζεται βέλη, αλλά αναρροφά το αίμα των τοξότη σαν αντάλλαγμα.",
+  "item_pickaxe_blood": "Αίμα κόκκαλο μάχη επιλογή(I'm sorry, I am not sure what this phrase means. Could you provide more context or explain the meaning?)",
+  "item_pickaxe_blood_description": "Αυτή η μπίλια φαίνεται ανόρθως δυνατή και πεινασμένη για το αίμα σου.",
+  "va_blood_sucker": "Αίματος Έκσταση",
+  "va_blood_sucker_desc": "Το όπλο σου είναι παρόν να διψά για αίμα."
 }

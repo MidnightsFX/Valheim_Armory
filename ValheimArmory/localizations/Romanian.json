@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Mare sabie de clește",
   "item_queen_greatsword_description": "Un clește masiv de la regina sigilată însăși, pare să se miște puțin din când în când.",
   "item_dagger_queen": "Pumnal de carapace",
-  "item_dagger_queen_description": "Un ciob din carapacea masivă a"
+  "item_dagger_queen_description": "Un ciob din carapacea masivă a",
+  "item_bow_bone_blood": "Sânge, os, arc.",
+  "item_bow_bone_blood_description": "Arcul făcut din lemn de bază și oase are un aer neplăcut, nu necesită săgeți, ci suge sângele arcașului în schimb.",
+  "item_pickaxe_blood": "Sânge osoase bătălie",
+  "item_pickaxe_blood_description": "Această cazma pare anormal de puternică și însetată de sângele tău.",
+  "va_blood_sucker": "Frenesia de sânge",
+  "va_blood_sucker_desc": "Arma ta este ávidă de sânge.Arma ta este gata pentru sânge."
 }

@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Pihdit suuri miekka",
   "item_queen_greatsword_description": "Massiivinen pihtipolvi sinetöidyltä kuningattarelta, se tuntuu nytkähtelevän silloin tällöin.",
   "item_dagger_queen": "Panssariterä",
-  "item_dagger_queen_description": "Pala kuningattaren massiivisesta kuoresta, teräväksi hiottuna se vielä kiiltää hänen taikuudestaan."
+  "item_dagger_queen_description": "Pala kuningattaren massiivisesta kuoresta, teräväksi hiottuna se vielä kiiltää hänen taikuudestaan.",
+  "item_bow_bone_blood": "Veri luu jousi",
+  "item_bow_bone_blood_description": "Jousi, joka on tehty sydänpuusta ja luista, on ilkeä, se ei tarvitse nuolia, vaan imee jousimiehen verta vaihdossa.",
+  "item_pickaxe_blood": "Veri luu taisteluhakku",
+  "item_pickaxe_blood_description": "Tämä hakku näyttää luonnottoman vahvalta ja nälkäiseltä verestäsi.",
+  "va_blood_sucker": "Verihurma",
+  "va_blood_sucker_desc": "Aseesi janoo verta."
 }

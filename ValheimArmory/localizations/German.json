@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Scherengroßschwert der Königin",
   "item_queen_greatsword_description": "Eine massive Schere von der versiegelten Königin selbst, sie scheint ab und zu ein wenig zu zucken.",
   "item_dagger_queen": "Carapacedolch der Königin",
-  "item_dagger_queen_description": "Ein Splitter aus dem massiven Panzer der Königin, geschärft, er glänzt immer noch mit ihrer Magie."
+  "item_dagger_queen_description": "Ein Splitter aus dem massiven Panzer der Königin, geschärft, er glänzt immer noch mit ihrer Magie.",
+  "item_bow_bone_blood": "Blut Knochen Bogen",
+  "item_bow_bone_blood_description": "Der Bogen aus Kernholz und Knochen hat eine unheimliche Aura, er benötigt keine Pfeile, sondern saugt das Blut des Bogenschützen im Austausch.",
+  "item_pickaxe_blood": "Blutknochen Kampfspitze",
+  "item_pickaxe_blood_description": "Diese Spitzhacke scheint unnatürlich stark zu sein und nach deinem Blut zu dürsten.",
+  "va_blood_sucker": "Blutrausch",
+  "va_blood_sucker_desc": "Deine Waffe ist begierig nach Blut."
 }

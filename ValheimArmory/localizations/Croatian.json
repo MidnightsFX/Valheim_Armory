@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Veliki mač kraljice",
   "item_queen_greatsword_description": "Masivni kliješt od same zapečaćene kraljice, čini se da malo tresti povremeno.",
   "item_dagger_queen": "Štit kliješta",
-  "item_dagger_queen_description": "Komad izmasivnog oklopa kraljice, oštre oštrice još uvijek sjaje njezinom magijom."
+  "item_dagger_queen_description": "Komad izmasivnog oklopa kraljice, oštre oštrice još uvijek sjaje njezinom magijom.",
+  "item_bow_bone_blood": "Krv kost luk",
+  "item_bow_bone_blood_description": "Štit izrađen od jezgrovine i kostiju ima zlokoban zrak, ne zahtijeva strijele, već crpi krv strijelca zauzvrat.",
+  "item_pickaxe_blood": "Krvava kost ratnički odabir",
+  "item_pickaxe_blood_description": "Ova kramp izgleda nenormalno snažno i gladno za tvojom krvlju.",
+  "va_blood_sucker": "Krvavi bijes",
+  "va_blood_sucker_desc": "Vaše oružje žudi za krvlju."
 }

@@ -140,5 +140,11 @@
   "item_queen_greatsword": "鉗子大劍",
   "item_queen_greatsword_description": "從封印的女王自己來的巨大鉗形器似乎偶爾會抽搐一下。",
   "item_dagger_queen": "甲殼匕首",
-  "item_dagger_queen_description": "從女王龐大的甲殼中取下的碎片，經過磨利後仍然閃耀著她的魔法。"
+  "item_dagger_queen_description": "從女王龐大的甲殼中取下的碎片，經過磨利後仍然閃耀著她的魔法。",
+  "item_bow_bone_blood": "血骨弓",
+  "item_bow_bone_blood_description": "這張由核心木和骨頭製作的弓呈現出一種邪惡的氛圍，它不需要箭，而是以弓手的血為代價。",
+  "item_pickaxe_blood": "鮮血骨戰鎚",
+  "item_pickaxe_blood_description": "這鎬看起來異常堅固，並且渴望你的鮮血。這把鎬似乎異常堅固，並且渴望你的鮮血。",
+  "va_blood_sucker": "血之狂熱",
+  "va_blood_sucker_desc": "你的武器渴望鮮血。"
 }

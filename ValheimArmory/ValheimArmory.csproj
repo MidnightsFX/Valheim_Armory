@@ -71,6 +71,36 @@
     <EmbeddedResource Include="localizations\Chinese_Trad.json" />
     <EmbeddedResource Include="localizations\Chinese.json" />
     <EmbeddedResource Include="localizations\Spanish.json" />
+    <EmbeddedResource Include="localizations\Abenaki.json" />
+    <EmbeddedResource Include="localizations\Bulgarian.json" />
+    <EmbeddedResource Include="localizations\Croatian.json" />
+    <EmbeddedResource Include="localizations\Czech.json" />
+    <EmbeddedResource Include="localizations\Danish.json" />
+    <EmbeddedResource Include="localizations\Dutch.json" />
+    <EmbeddedResource Include="localizations\Finnish.json" />
+    <EmbeddedResource Include="localizations\French.json" />
+    <EmbeddedResource Include="localizations\Georgian.json" />
+    <EmbeddedResource Include="localizations\Greek.json" />
+    <EmbeddedResource Include="localizations\Hindi.json" />
+    <EmbeddedResource Include="localizations\Hungarian.json" />
+    <EmbeddedResource Include="localizations\Icelandic.json" />
+    <EmbeddedResource Include="localizations\Italian.json" />
+    <EmbeddedResource Include="localizations\Japanese.json" />
+    <EmbeddedResource Include="localizations\Korean.json" />
+    <EmbeddedResource Include="localizations\Latvian.json" />
+    <EmbeddedResource Include="localizations\Lithuanian.json" />
+    <EmbeddedResource Include="localizations\Macedonian.json" />
+    <EmbeddedResource Include="localizations\Norwegian.json" />
+    <EmbeddedResource Include="localizations\Polish.json" />
+    <EmbeddedResource Include="localizations\Portuguese_Brazilian.json" />
+    <EmbeddedResource Include="localizations\Portuguese_European.json" />
+    <EmbeddedResource Include="localizations\Romanian.json" />
+    <EmbeddedResource Include="localizations\Serbian.json" />
+    <EmbeddedResource Include="localizations\Slovak.json" />
+    <EmbeddedResource Include="localizations\Swedish.json" />
+    <EmbeddedResource Include="localizations\Thai.json" />
+    <EmbeddedResource Include="localizations\Turkish.json" />
+    <EmbeddedResource Include="localizations\Ukrainian.json" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>

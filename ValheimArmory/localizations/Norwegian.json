@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Tangstor sverd",
   "item_queen_greatsword_description": "En massiv klo fra den forseglede dronningen selv, den virker å rykke litt nå og da.",
   "item_dagger_queen": "Skalldyrkniv",
-  "item_dagger_queen_description": "En skår fra dronningens massive skall, skarp den skinner fortsatt med hennes magi."
+  "item_dagger_queen_description": "En skår fra dronningens massive skall, skarp den skinner fortsatt med hennes magi.",
+  "item_bow_bone_blood": "Blodbeinbue",
+  "item_bow_bone_blood_description": "Buen laget av kjerneved og bein har en ubehagelig stemning, den krever ikke pil, men sugger bueskytterens blod i bytte.",
+  "item_pickaxe_blood": "Blod bein slagvåpen",
+  "item_pickaxe_blood_description": "Denne hakken virker unaturlig sterk, og sulten etter ditt blod.",
+  "va_blood_sucker": "Blodrus",
+  "va_blood_sucker_desc": "Ditt våpen er sulten etter blod."
 }

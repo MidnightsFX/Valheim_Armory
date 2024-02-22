@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Žnyplės didysis kardas",
   "item_queen_greatsword_description": "Didelis spaustukas iš pat uždarytos karalienės, atrodo, kad jis kartais traukia.",
   "item_dagger_queen": "Karapacinis peilis",
-  "item_dagger_queen_description": "Lembutės didelės karapacės luitas, vis dar pralinksėjęs jos magija, vėl blizga."
+  "item_dagger_queen_description": "Lembutės didelės karapacės luitas, vis dar pralinksėjęs jos magija, vėl blizga.",
+  "item_bow_bone_blood": "Kraujo kaulas lankas",
+  "item_bow_bone_blood_description": "Lankas, pagamintas iš branduolinio medžio ir kaulų, turi bjaurų orą, jis nereikalauja strėlių, bet siurpina lanko šaulio kraują mainais.",
+  "item_pickaxe_blood": "Kraujo kaulo kovos kirvis",
+  "item_pickaxe_blood_description": "Šis kirtiklis atrodo nesąmoningai stiprus ir trokšta tavo kraujo.",
+  "va_blood_sucker": "Kraujo šėlsmas",
+  "va_blood_sucker_desc": "Tavo ginklas trokšta kraujo."
 }

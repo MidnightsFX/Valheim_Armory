@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Pincergrootzwaard",
   "item_queen_greatsword_description": "Een massieve schaar van de verzegelde koningin zelf, het lijkt af en toe een beetje te trillen.",
   "item_dagger_queen": "Carapacedolk",
-  "item_dagger_queen_description": "Een scherf van de enorme carapace van de koningin, scherp geslepen glinstert het nog steeds met haar magie."
+  "item_dagger_queen_description": "Een scherf van de enorme carapace van de koningin, scherp geslepen glinstert het nog steeds met haar magie.",
+  "item_bow_bone_blood": "bloed bot boog",
+  "item_bow_bone_blood_description": "De boog gemaakt van kernhout en botten heeft een akelige uitstraling, het heeft geen pijlen nodig, maar zuigt het bloed van de boogschutter in ruil daarvoor.",
+  "item_pickaxe_blood": "bloed bot strijdhaak",
+  "item_pickaxe_blood_description": "Deze pikhouweel lijkt onnatuurlijk sterk en hongerig naar jouw bloed.",
+  "va_blood_sucker": "Bloedrazernij",
+  "va_blood_sucker_desc": "Je wapen is gretig naar bloed."
 }

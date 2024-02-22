@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Kliešťový veľký meč",
   "item_queen_greatsword_description": "Masívna kliešťová hrozba od samotnej zapečatenej kráľovnej, zdá sa, že občas trochu šklbe.",
   "item_dagger_queen": "Dýka s rukoväťou.",
-  "item_dagger_queen_description": "Úlomok z obrovského kruniera kráľovnej, vybrúsený stále žiari s jej magiou."
+  "item_dagger_queen_description": "Úlomok z obrovského kruniera kráľovnej, vybrúsený stále žiari s jej magiou.",
+  "item_bow_bone_blood": "Krv kosti luk",
+  "item_bow_bone_blood_description": "Luč vyrobený z jadrového dreva a kostí má zlý vzhľad, nepotrebuje šípy, ale výmenou sifónuje krv lukostrelcov.",
+  "item_pickaxe_blood": "Krv kost bojový výber",
+  "item_pickaxe_blood_description": "Táto krumpáč sa zdá nezvyčajne silný a hladný po tvojej krvi.",
+  "va_blood_sucker": "Krvavý bes",
+  "va_blood_sucker_desc": "Tvoja zbraň túži po krvi."
 }

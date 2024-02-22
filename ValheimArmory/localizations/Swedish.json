@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Klogreatsword",
   "item_queen_greatsword_description": "En massiv klo från den förseglade drottningen själv, den verkar rycka lite nu och då.",
   "item_dagger_queen": "Sköldpansardolk",
-  "item_dagger_queen_description": "En skärva från drottningens massiva sköldpansar, vässad glänser den fortfarande av hennes magi."
+  "item_dagger_queen_description": "En skärva från drottningens massiva sköldpansar, vässad glänser den fortfarande av hennes magi.",
+  "item_bow_bone_blood": "Blod ben båge",
+  "item_bow_bone_blood_description": "Bågen tillverkad av kärnträ och ben har en otäck känsla, den kräver inte pilar, utan suger bågskyttens blod som ersättning.",
+  "item_pickaxe_blood": "Blod ben stridspicka",
+  "item_pickaxe_blood_description": "Denna hacka verkar onaturligt stark och hungrig efter ditt blod.",
+  "va_blood_sucker": "Blodrus",
+  "va_blood_sucker_desc": "Ditt vapen är ivrigt efter blod."
 }

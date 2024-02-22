@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Pincer mikilsverð drottningarinnar",
   "item_queen_greatsword_description": "Risastór pincer frá forsendu drottningarinnar sjálfri, hann virðist hrökkva smá hér og þar.",
   "item_dagger_queen": "Skjall hnífur",
-  "item_dagger_queen_description": "Eiturhreinn hnífur frá"
+  "item_dagger_queen_description": "Eiturhreinn hnífur frá",
+  "item_bow_bone_blood": "Blóð bein bogi",
+  "item_bow_bone_blood_description": "Örvinn unnin úr kjarna viður og beinum hefur óhreina andrými, hún þarf ekki örvar, heldur sýfir blóð bogaþjófa í staðinn.",
+  "item_pickaxe_blood": "Blóð bein bardagakjöll",
+  "item_pickaxe_blood_description": "Þessi járnspítur virðist óeðlilega sterkur og svangur eftir blóði þínu.",
+  "va_blood_sucker": "Blóð örvænting",
+  "va_blood_sucker_desc": "Vopni þínum vantar blóð."
 }

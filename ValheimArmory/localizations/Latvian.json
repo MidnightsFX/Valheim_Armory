@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Pincēra liels zobens",
   "item_queen_greatsword_description": "Masīva šķēpa no pašas noslēgtās karalienes, šķiet, ka tas laiku pa laikam nedaudz sakustas.",
   "item_dagger_queen": "Dzelzs bruņinais nazis",
-  "item_dagger_queen_description": "Šķiedra no karalienes masīvās čaulas, asināta tā joprojām spīd ar viņas maģiju."
+  "item_dagger_queen_description": "Šķiedra no karalienes masīvās čaulas, asināta tā joprojām spīd ar viņas maģiju.",
+  "item_bow_bone_blood": "Asins kauls loks",
+  "item_bow_bone_blood_description": "Uzgriezts no kodolu koka un kauliem, šis loks izstaro bīstamu gaisu, tas neprasa bultas, bet izsūc loka šāvēja asinis apmaiņā.",
+  "item_pickaxe_blood": "Asins kauls cīņas ierocis",
+  "item_pickaxe_blood_description": "Šķēpa šķiet neparasti stipra un izsalkusi pēc tavas asins.",
+  "va_blood_sucker": "Asins trakums",
+  "va_blood_sucker_desc": "Tava ierocis ir izsalkusi pēc asinīm."
 }

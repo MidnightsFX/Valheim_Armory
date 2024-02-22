@@ -140,5 +140,11 @@
   "item_queen_greatsword": "ดาบคมใหญ่",
   "item_queen_greatsword_description": "คีบมือใหญ่จากตัวราชินีที่ถูกปิดกั้นเอง ดูเหมือนจะสั่นบ้างเล็กน้อยเวลาทีละนิด",
   "item_dagger_queen": "ดาจเกอร์เกราะ",
-  "item_dagger_queen_description": "ชิ้นเศษจานจากเกราะยักษ์ขนาดใหญ่ของราชินี ที่ถูกเลื่อยคมยังส่องแสงด้วยเวทมนตร์ของเธอ"
+  "item_dagger_queen_description": "ชิ้นเศษจานจากเกราะยักษ์ขนาดใหญ่ของราชินี ที่ถูกเลื่อยคมยังส่องแสงด้วยเวทมนตร์ของเธอ",
+  "item_bow_bone_blood": "เลือด กระดูก คันธนู(Note: This phrase does not have a direct translation in Thai, so I have translated it word for word. If you have a specific context or meaning in mind, please provide more information.)",
+  "item_bow_bone_blood_description": "คันธนูที่ทำจากไม้หลักและกระดูกมีอากาศที่เปราะหัว, มันไม่ต้องการลูกธนู แต่ดูดเลือดของนักยิงธนูแทน",
+  "item_pickaxe_blood": "เลือดกระดูกคัมภีร์",
+  "item_pickaxe_blood_description": "ค้อนแกว่งดูแข็งแรงเกินไป และหิวเลือดของคุณ",
+  "va_blood_sucker": "เลือดโกรธ",
+  "va_blood_sucker_desc": "Your weapon is eager for blood in Thai is อาวุธของคุณต้องการเลือด"
 }

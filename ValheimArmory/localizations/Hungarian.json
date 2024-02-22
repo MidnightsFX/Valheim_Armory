@@ -140,5 +140,11 @@
   "item_queen_greatsword": " Pengés nagykard",
   "item_queen_greatsword_description": "Egy hatalmas csipesz a lepecsételt királynőtől, úgy tűnik, néha-néha picit megrándul.",
   "item_dagger_queen": "Páncélkés",
-  "item_dagger_queen_description": "Egy darab a királynő hatalmas páncéljából, élesítve még mindig csillog varázsával."
+  "item_dagger_queen_description": "Egy darab a királynő hatalmas páncéljából, élesítve még mindig csillog varázsával.",
+  "item_bow_bone_blood": "Vér csont íj",
+  "item_bow_bone_blood_description": "A maghéjból és csontokból készült íj kellemetlen légkört áraszt, nem igényel nyilakat, hanem a íjász vért szívja fel cserébe.",
+  "item_pickaxe_blood": "Vér csont csatabárd",
+  "item_pickaxe_blood_description": "Ez a csákány természetfeletti erősnek tűnik, és éhes a véredre.- Ez a csákány természetfeletti erősnek tűnik, és éhes a véredre.",
+  "va_blood_sucker": "Vér őrjöngés",
+  "va_blood_sucker_desc": "A fegyvered véresre vágyik."
 }

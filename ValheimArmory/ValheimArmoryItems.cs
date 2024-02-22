@@ -34,6 +34,7 @@ namespace ValheimArmory
             LoadMaces();
             LoadFists();
             LoadMagic();
+            LoadPickaxes();
             LoadNonCraftables();
         }
 
@@ -313,6 +314,38 @@ namespace ValheimArmory
 
         private void LoadBows()
         {
+            // Blood Bone Bow
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                new Dictionary<string, string>() {
+                    { "name", "Blood Bone Bow" },
+                    { "catagory", "Bows" },
+                    { "prefab", "VABlood_bone_bow" },
+                    { "sprite", "bone_bow" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "pierce", new Tuple<float, float, float, bool>(82, 0, 300, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(8, 0, 25, true) },
+                    { "block", new Tuple<float, float, float, bool>(22, 0, 60, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 300, true) },
+                    { "draw_stamina_drain", new Tuple<float, float, float, bool>(4, 1, 50, true) },
+                    { "primary_attack_flat_health_cost", new Tuple<float, float, float, bool>(8, 0, 25, true) },
+                    { "primary_attack_percent_health_cost", new Tuple<float, float, float, bool>(0, 0, 50, true) },
+                    { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "RoundLog", new Tuple<int, int>(12, 8) },
+                    { "BoneFragments", new Tuple<int, int>(20, 14) },
+                    { "Silver", new Tuple<int, int>(6, 2) },
+                    { "TrophyUlv", new Tuple<int, int>(4, 0) },
+                },
+                new Dictionary<string, bool>() { }
+            );
+
             // Bronze Arbalist
             new ValArmoryItem(
                 EmbeddedResourceBundle,
@@ -1021,11 +1054,11 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(120, 0, 300, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "chop", new Tuple<float, float, float, bool>(120, 0, 300, true) },
-                    { "chop_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "chop_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "fire", new Tuple<float, float, float, bool>(70, 0, 160, true) },
-                    { "fire_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "fire_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(65, 0, 200, true) },
                     { "block", new Tuple<float, float, float, bool>(52, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
@@ -1944,6 +1977,7 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(65, 0, 60, true) },
                     { "primary_attack_eitr", new Tuple<float, float, float, bool>(24, 1, 50, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -1977,6 +2011,7 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(65, 0, 60, true) },
                     { "primary_attack_eitr", new Tuple<float, float, float, bool>(24, 1, 50, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -2126,11 +2161,59 @@ namespace ValheimArmory
             );
         }
 
+        private void LoadPickaxes()
+        {
+            // Bone Blood Pickaxe
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                new Dictionary<string, string>() {
+                    { "name", "Bone Blood Pickaxe" },
+                    { "catagory", "Pickaxes" },
+                    { "prefab", "VABlood_Bones_pickaxe" },
+                    { "sprite", "blood_bone_pickaxe" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "pierce", new Tuple<float, float, float, bool>(32, 0, 200, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
+                    { "pickaxe", new Tuple<float, float, float, bool>(32, 0, 200, true) },
+                    { "pickaxe_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(50, 0, 100, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(6, 0, 50, true) },
+                    { "primary_attack_flat_health_cost", new Tuple<float, float, float, bool>(4, 0, 25, true) },
+                    { "primary_attack_percent_health_cost", new Tuple<float, float, float, bool>(0, 0, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(4, 0, 50, true) },
+                    { "secondary_attack_flat_health_cost", new Tuple<float, float, float, bool>(6, 0, 25, true) },
+                    { "secondary_attack_percent_health_cost", new Tuple<float, float, float, bool>(0, 0, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "RoundLog", new Tuple<int, int>(12, 8) },
+                    { "BoneFragments", new Tuple<int, int>(20, 14) },
+                    { "Bronze", new Tuple<int, int>(4, 2) },
+                    { "TrophySkeleton", new Tuple<int, int>(2, 0) },
+                },
+                new Dictionary<string, bool>()
+                {
+                }
+            );
+        }
+
         private void LoadNonCraftables()
         {
             // Arrow resources
             new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_ancient.prefab");
             new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_bone.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Bows/projectiles/blood_projectile.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_boltBronze.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_boltFrost.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_boltObsidian.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_boltPoison.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_boltSurtling.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_greenmetal.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_surtlingfire.prefab");
             // Magic projectiles
             new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_ice_projectile.prefab");
             new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_poison_projectile.prefab");
@@ -2153,7 +2236,7 @@ namespace ValheimArmory
 
     class ValArmoryItem
     {
-        String[] allowed_catagories = {"Arrows", "Atgeirs", "Axes", "Bows", "Hammers", "Shields", "Swords", "Spears", "Daggers", "Maces", "Fists", "Magics" };
+        String[] allowed_catagories = {"Arrows", "Atgeirs", "Axes", "Bows", "Hammers", "Shields", "Swords", "Spears", "Daggers", "Maces", "Fists", "Pickaxes", "Magics" };
         String[] damage_types = {"blunt", "pierce", "slash", "fire", "spirit", "lightning", "frost", "poison", "chop" };
         String[] crafting_stations = { "forge", "piece_workbench", "blackforge", "piece_artisanstation" };
         /// <summary>
@@ -2522,6 +2605,22 @@ namespace ValheimArmory
                         break;
                     case "secondary_attack_eitr":
                         item.m_shared.m_secondaryAttack.m_attackEitr = entry.Value.Item1;
+                        break;
+                    case "draw_stamina_drain":
+                        item.m_shared.m_attack.m_drawStaminaDrain = entry.Value.Item1;
+                        break;
+                    // Blood costs for attacks / usage
+                    case "primary_attack_flat_health_cost":
+                        item.m_shared.m_attack.m_attackHealth = entry.Value.Item1;
+                        break;
+                    case "primary_attack_percent_health_cost":
+                        item.m_shared.m_attack.m_attackHealthPercentage = entry.Value.Item1;
+                        break;
+                    case "secondary_attack_flat_health_cost":
+                        item.m_shared.m_secondaryAttack.m_attackHealth = entry.Value.Item1;
+                        break;
+                    case "secondary_attack_percent_health_cost":
+                        item.m_shared.m_secondaryAttack.m_attackHealthPercentage = entry.Value.Item1;
                         break;
                     // Item Modifiers
                     case "max_item_level":

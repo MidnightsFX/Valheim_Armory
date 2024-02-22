@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Kıskaç büyük kılıç",
   "item_queen_greatsword_description": "Mühürlü kraliçenin dev bir kıskaçı, hala zaman zaman biraz titriyor gibi görün",
   "item_dagger_queen": "Kara kabuk bıçağı",
-  "item_dagger_queen_description": "Kraliçenin devasa kabuğundan bir parça, onun sihriyle parlıyor."
+  "item_dagger_queen_description": "Kraliçenin devasa kabuğundan bir parça, onun sihriyle parlıyor.",
+  "item_bow_bone_blood": "Kan kemik yay.",
+  "item_bow_bone_blood_description": "Çekirdek odunu ve kemiklerden yapılan yayın kötü bir havası var, oklara ihtiyaç duymuyor, ancak okçunun kanını emiyor.",
+  "item_pickaxe_blood": "Kan kemik savaş baltası",
+  "item_pickaxe_blood_description": "Bu kazma doğal olmayan bir şekilde güçlü görünüyor ve kanınızı istiyor.",
+  "va_blood_sucker": "Kan Çılgınlığı",
+  "va_blood_sucker_desc": "Silahın kan için istekli."
 }

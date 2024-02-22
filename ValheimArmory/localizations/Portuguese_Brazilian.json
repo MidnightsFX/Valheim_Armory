@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Grande espada de pinça",
   "item_queen_greatsword_description": "Uma pinça gigante da rainha selada, parece tremer um pouco de vez em quando.",
   "item_dagger_queen": "Adaga de carapaça",
-  "item_dagger_queen_description": "Um fragmento da gigantesca carapaça da rainha, afiado ainda reluz com sua magia."
+  "item_dagger_queen_description": "Um fragmento da gigantesca carapaça da rainha, afiado ainda reluz com sua magia.",
+  "item_bow_bone_blood": "Arco de osso de sangue",
+  "item_bow_bone_blood_description": "O arco feito de madeira central e ossos tem um ar desagradável, não requer flechas, mas suga o sangue dos arqueiros em troca.",
+  "item_pickaxe_blood": "Escolha de batalha de osso de sangue",
+  "item_pickaxe_blood_description": "Esta picareta parece anormalmente forte e faminta pelo seu sangue.",
+  "va_blood_sucker": "Frenesi de Sangue",
+  "va_blood_sucker_desc": "Sua arma está ansiosa por sangue."
 }

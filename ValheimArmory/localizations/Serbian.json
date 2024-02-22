@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Kliještasti veliki mač",
   "item_queen_greatsword_description": "Masivni kliještasti delovi od same zatvorene kraljice, čini se da malo podrhtava s vremena na vreme.",
   "item_dagger_queen": "Oklopljeni nož",
-  "item_dagger_queen_description": "Komad iz masivnog oklopa kraljice, naoštren i dalje sjaji njenom magijom."
+  "item_dagger_queen_description": "Komad iz masivnog oklopa kraljice, naoštren i dalje sjaji njenom magijom.",
+  "item_bow_bone_blood": "Krv kost luk",
+  "item_bow_bone_blood_description": "Лук израђен од језгровине и кости има непријатан ваздух, не захтева стрелице, већ узима крв стрелца у замену.",
+  "item_pickaxe_blood": "Krv kosti bojna kopačica",
+  "item_pickaxe_blood_description": "Ova krampa deluje nenormalno snažno i gladno za tvojom krvlju.",
+  "va_blood_sucker": "Krvavi delirijum",
+  "va_blood_sucker_desc": "Tvoje oružje žudi za krvlju."
 }

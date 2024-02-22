@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Pincer greatsword",
   "item_queen_greatsword_description": "A massive pincer from the sealed queen herself, it seems to twitch a little now and then.",
   "item_dagger_queen": "Carapace dagger",
-  "item_dagger_queen_description": "A shard from the queens massive carapace, sharpened it still glistens with her magic."
+  "item_dagger_queen_description": "A shard from the queens massive carapace, sharpened it still glistens with her magic.",
+  "item_bow_bone_blood": "Wazwôgan kazi wibôgan.",
+  "item_bow_bone_blood_description": "I'm sorry, but Abenaki is not a language that is currently supported for translation.",
+  "item_pickaxe_blood": "Ntoliwiwiwi keni'sasqen.",
+  "item_pickaxe_blood_description": "I'm sorry, but I cannot provide a translation for the phrase This pickaxe seems unnaturally strong, and hungry for your blood in Abenaki.",
+  "va_blood_sucker": "Wigasolagenji",
+  "va_blood_sucker_desc": "Nemaa aawikhonawokwa wiji-kizos."
 }

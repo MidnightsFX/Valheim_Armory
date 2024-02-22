@@ -140,5 +140,11 @@
   "item_queen_greatsword": "巨剑",
   "item_queen_greatsword_description": "被封印的女王本人发出的巨大的夹击，看起来偶尔会抽搐一下。",
   "item_dagger_queen": "甲壳匕首岩石蟹",
-  "item_dagger_queen_description": "女王巨大的甲壳上的碎片，经过磨削后依然闪闪发光着她的魔法。"
+  "item_dagger_queen_description": "女王巨大的甲壳上的碎片，经过磨削后依然闪闪发光着她的魔法。",
+  "item_bow_bone_blood": "血肉之躯 弓箭",
+  "item_bow_bone_blood_description": "这个由核心木和骨头制成的弓具有一种恶劣的气息，它不需要箭，而是通过吸取射手的血来换取力量。谢谢。",
+  "item_pickaxe_blood": "血骨战锤",
+  "item_pickaxe_blood_description": "这把鹤嘴镐似乎异常坚固，渴望你的鲜血。",
+  "va_blood_sucker": "血之狂热",
+  "va_blood_sucker_desc": "你的武器渴望鲜血。"
 }

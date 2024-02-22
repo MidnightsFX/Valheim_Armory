@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Grande spada di tenaglia",
   "item_queen_greatsword_description": "Una gigantesca tenaglia della regina sigillata stessa, sembra muoversi un po' di tanto in tanto.",
   "item_dagger_queen": "Pugnale di carapace",
-  "item_dagger_queen_description": "Un frammento dalla massiccia carapace della regina, affilato, ancora luccica con la sua magia."
+  "item_dagger_queen_description": "Un frammento dalla massiccia carapace della regina, affilato, ancora luccica con la sua magia.",
+  "item_bow_bone_blood": "Sangue osseo arco",
+  "item_bow_bone_blood_description": "La balestra realizzata con legno centrale e ossa ha un'aria sinistra, non ha bisogno di frecce, ma attinge il sangue degli arcieri in cambio.",
+  "item_pickaxe_blood": "Piccone da battaglia di osso e sangue",
+  "item_pickaxe_blood_description": "Questa piccozza sembra innaturalmente forte e assetata del tuo sangue.",
+  "va_blood_sucker": "Frenesia del sangue",
+  "va_blood_sucker_desc": "La tua arma è desiderosa di sangue."
 }

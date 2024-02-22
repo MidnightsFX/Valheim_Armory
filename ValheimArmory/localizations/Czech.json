@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Pincérský velký meč",
   "item_queen_greatsword_description": "Obrovský klešťovitý úchop od zapečetěné královny sama o sobě se zdá, že se občas trochu pohne.",
   "item_dagger_queen": "Dýka s karapácí",
-  "item_dagger_queen_description": "Střep z královniny masivní krunýře, stále blyští se její magií."
+  "item_dagger_queen_description": "Střep z královniny masivní krunýře, stále blyští se její magií.",
+  "item_bow_bone_blood": "Krev kost luk.",
+  "item_bow_bone_blood_description": "Luk vyrobený z jádra a kostí má nepříjemnou atmosféru, nevyžaduje šípy, ale vyměňuje krev lukostřelce.",
+  "item_pickaxe_blood": "Krevní kostní bojový výběr.",
+  "item_pickaxe_blood_description": "Tato krumpáč se zdá neobvykle silný a hladový po tvé krvi.",
+  "va_blood_sucker": "Krevní šílenství",
+  "va_blood_sucker_desc": "Tvá zbraň touží po krvi."
 }

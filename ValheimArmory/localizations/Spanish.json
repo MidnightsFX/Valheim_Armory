@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Gran espada de tenazas",
   "item_queen_greatsword_description": "Una gran tenaza de la reina sellada, parece que se mueve un poco de vez en cuando.",
   "item_dagger_queen": "Daga de caparazón",
-  "item_dagger_queen_description": "Un fragmento del caparazón masivo de la reina, afilado y aún brillante con su magia."
+  "item_dagger_queen_description": "Un fragmento del caparazón masivo de la reina, afilado y aún brillante con su magia.",
+  "item_bow_bone_blood": "Hueso de sangre arco",
+  "item_bow_bone_blood_description": "El arco hecho de madera central y huesos tiene un aire desagradable, no requiere flechas, sino que succiona la sangre del arquero a cambio.",
+  "item_pickaxe_blood": "Selección de batalla de hueso y sangre",
+  "item_pickaxe_blood_description": "Esta piqueta parece anormalmente fuerte y hambrienta de tu sangre.",
+  "va_blood_sucker": "Frenesí de Sangre",
+  "va_blood_sucker_desc": "Tu arma está ansiosa por sangre."
 }

@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Grande épée de pinces",
   "item_queen_greatsword_description": "Une pince massive de la reine scellée elle-même, elle semble frémir de temps en temps.",
   "item_dagger_queen": "Dague de carapace",
-  "item_dagger_queen_description": "Un éclat de la carapace massive de la reine, aiguisé, il brille toujours de sa magie."
+  "item_dagger_queen_description": "Un éclat de la carapace massive de la reine, aiguisé, il brille toujours de sa magie.",
+  "item_bow_bone_blood": "Os de sang arc",
+  "item_bow_bone_blood_description": "L'arc fabriqué à partir de bois de cœur et d'os a une atmosphère désagréable, il ne nécessite pas de flèches, mais aspire le sang des archers en échange.",
+  "item_pickaxe_blood": "Bâton de combat en os et sang",
+  "item_pickaxe_blood_description": "Ce pic semble anormalement fort et assoiffé de votre sang.",
+  "va_blood_sucker": "Frénésie de sang",
+  "va_blood_sucker_desc": "Votre arme est avide de sang."
 }

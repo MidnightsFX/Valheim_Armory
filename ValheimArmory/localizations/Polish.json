@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Piła wielki miecz",
   "item_queen_greatsword_description": "Potężny klejnot od samej zapieczętowanej królowej, wydaje się drgać od czasu do czasu.",
   "item_dagger_queen": "Nóż pancerza",
-  "item_dagger_queen_description": "Odłamek z olbrzymiego pancerza królowej, naostrzony nadal błyszczy jej magią."
+  "item_dagger_queen_description": "Odłamek z olbrzymiego pancerza królowej, naostrzony nadal błyszczy jej magią.",
+  "item_bow_bone_blood": "Krew kość łuk",
+  "item_bow_bone_blood_description": "Łuk wykonany z rdzawego drewna i kości ma zły wygląd, nie wymaga strzał, ale w zamian wciąga krew łucznika.",
+  "item_pickaxe_blood": "Krew kość bitwapick",
+  "item_pickaxe_blood_description": "Ta kilof wydaje się nienaturalnie silny i głodny twojej krwi.",
+  "va_blood_sucker": "Krwawy szał",
+  "va_blood_sucker_desc": "Twoja broń jest spragniona krwi."
 }

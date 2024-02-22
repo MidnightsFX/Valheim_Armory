@@ -140,5 +140,11 @@
   "item_queen_greatsword": "Pincer storsværd",
   "item_queen_greatsword_description": "En massiv tænge fra den forseglede dronning selv, det ser ud til at rykke lidt nu og da.",
   "item_dagger_queen": "Carapace dolk",
-  "item_dagger_queen_description": "Et skår fra dronningens massive carapace, skarpt glinsende med hendes magi."
+  "item_dagger_queen_description": "Et skår fra dronningens massive carapace, skarpt glinsende med hendes magi.",
+  "item_bow_bone_blood": "Blodbenbue",
+  "item_bow_bone_blood_description": "Buen lavet af kerne træ og knogler har en ubehagelig atmosfære, den kræver ikke pile, men suger skytters blod til gengæld.",
+  "item_pickaxe_blood": "Blodben kampvælger",
+  "item_pickaxe_blood_description": "Denne hakke virker unaturligt stærk og sulten efter dit blod.",
+  "va_blood_sucker": "Blodrus",
+  "va_blood_sucker_desc": "Dit våben er ivrig efter blod."
 }
