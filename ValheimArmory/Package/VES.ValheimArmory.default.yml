@@ -1,5 +1,30 @@
-#Valhiem Armory VES support 1.1 By Aziraphale
-# Mountain+Plains
+#Valhiem Armory VES support 1.1 By Aziraphale + MidnightsFX
+
+# Mistlands
+- enchant_prefab: #Weapon S
+    prefab: kg_EnchantScroll_Weapon_S
+    amount: 1
+  blessed_enchant_prefab:
+    prefab: kg_EnchantScroll_Weapon_Blessed_S
+    amount: 1
+  Items:
+  - VASwordQueen
+  - VAdagger_queen
+  - VAQueen_greatsword
+  - VAQueen_bow
+# Plains
+- enchant_prefab: #Weapon A
+    prefab: kg_EnchantScroll_Weapon_A
+    amount: 1
+  blessed_enchant_prefab:
+    prefab: kg_EnchantScroll_Weapon_Blessed_A
+    amount: 1
+  Items:
+  - VAYagluth_greatsword
+  - VAblackmetal_battleaxe
+  - VAYagluthAtgeir
+  - VAblackmetal_sledge
+# Mountain
 - enchant_prefab: #Weapon A
     prefab: kg_EnchantScroll_Weapon_A
     amount: 1
@@ -10,16 +35,13 @@
   - VACrossbowModer
   - VASwordModer
   - VAsilver_greatsword
-  - VAYagluth_greatsword
-  - VAblackmetal_battleaxe
   - VASilverAtgeir
   - VASpearModer
-  - VAYagluthAtgeir
   - VAdagger_silver
   - VAdagger_silver_2h
-  - VAblackmetal_sledge
   - VAArbalistBronze
   - VAAtgeirchitin
+  - VABlood_bone_bow
 # Swamps
 - enchant_prefab: #Weapon B
     prefab: kg_EnchantScroll_Weapon_B
@@ -34,6 +56,8 @@
   - VABonemassDagger
   - VAdagger_iron
   - VABonemassGreatsword
+  - VAFist_Iron
+  - VABlood_Bones_pickaxe
 # BlackForest
 - enchant_prefab: #Weapon C
     prefab: kg_EnchantScroll_Weapon_C
@@ -54,6 +78,8 @@
   - VAdagger_bronze
   - VAVine_Sword
   - VAElder_mace
+  - VAFist_Bronze
+  - VACrossbowBronze
 # Meadows
 - enchant_prefab: #Weapon D
     prefab: kg_EnchantScroll_Weapon_D
@@ -67,3 +93,8 @@
   - VAAntler_greataxe
   - VAatgeir_antler
   - VAAntler_dagger
+  - VAFist_Flint
+  - VAFlint_greatsword
+  - VADagger_Flint_2h
+  - VAFlint_greataxe
+  - VAAtgeir_Flint

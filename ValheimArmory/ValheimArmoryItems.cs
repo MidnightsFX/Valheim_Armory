@@ -334,6 +334,7 @@ namespace ValheimArmory
                     { "primary_attack_flat_health_cost", new Tuple<float, float, float, bool>(8, 0, 25, true) },
                     { "primary_attack_percent_health_cost", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
+                    { "bow_draw_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -364,6 +365,7 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(14, 0, 60, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(125, 0, 300, true) },
+                    { "crossbow_reload_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -395,6 +397,7 @@ namespace ValheimArmory
                     { "attack_force", new Tuple<float, float, float, bool>(5, 0, 50, true) },
                     { "block", new Tuple<float, float, float, bool>(9, 0, 25, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
+                    { "bow_draw_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -425,6 +428,7 @@ namespace ValheimArmory
                     { "attack_force", new Tuple<float, float, float, bool>(140, 0, 300, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(125, 0, 300, true) },
+                    { "crossbow_reload_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -457,6 +461,7 @@ namespace ValheimArmory
                     { "attack_force", new Tuple<float, float, float, bool>(140, 0, 300, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(125, 0, 300, true) },
+                    { "crossbow_reload_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -489,6 +494,7 @@ namespace ValheimArmory
                     { "attack_force", new Tuple<float, float, float, bool>(140, 0, 300, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(125, 0, 300, true) },
+                    { "crossbow_reload_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -520,6 +526,7 @@ namespace ValheimArmory
                     { "attack_force", new Tuple<float, float, float, bool>(30, 0, 50, true) },
                     { "block", new Tuple<float, float, float, bool>(24, 0, 25, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
+                    { "bow_draw_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -1976,7 +1983,7 @@ namespace ValheimArmory
                     { "blunt", new Tuple<float, float, float, bool>(90, 0, 200, true) },
                     { "blunt_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(65, 0, 60, true) },
-                    { "primary_attack_eitr", new Tuple<float, float, float, bool>(24, 1, 50, true) },
+                    { "primary_attack_eitr", new Tuple<float, float, float, bool>(24, 0, 50, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
@@ -2010,7 +2017,7 @@ namespace ValheimArmory
                     { "blunt", new Tuple<float, float, float, bool>(90, 0, 200, true) },
                     { "blunt_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(65, 0, 60, true) },
-                    { "primary_attack_eitr", new Tuple<float, float, float, bool>(24, 1, 50, true) },
+                    { "primary_attack_eitr", new Tuple<float, float, float, bool>(24, 0, 50, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
@@ -2186,6 +2193,8 @@ namespace ValheimArmory
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(4, 0, 50, true) },
                     { "secondary_attack_flat_health_cost", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "secondary_attack_percent_health_cost", new Tuple<float, float, float, bool>(0, 0, 50, true) },
+                    
+                    { "secondary_attack_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -2631,6 +2640,13 @@ namespace ValheimArmory
                         break;
                     case "durability_per_level":
                         item.m_shared.m_maxDurability = (int)entry.Value.Item1;
+                        break;
+                    // Reload speed
+                    case "bow_draw_speed":
+                        item.m_shared.m_attack.m_drawDurationMin *= (entry.Value.Item1 / 100);
+                        break;
+                    case "crossbow_reload_speed":
+                        item.m_shared.m_attack.m_reloadTime *= (entry.Value.Item1 / 100);
                         break;
                     default:
                     break;

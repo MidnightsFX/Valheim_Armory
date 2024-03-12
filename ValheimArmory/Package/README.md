@@ -357,6 +357,14 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 <details>
   <summary>Changelog (Potential spoilers!)</summary>
 
+  **1.7.3**
+```
+- Weapons now have a 1%-300% configuration option for bow draw duration and crossbow reload duration where applicable
+- Updated VES configuration to include all current weapons
+- Updated German weapon translation | Thanks Sack3000!
+- Reduced the minimum configurable Eitr cost for mistlands level staves to be zero (they can now be used as stamina or no-cost)
+```
+
 **1.7.2**
 ```
 - Added configuration options to enable stamina cost for non-druidic spirit and poison staffs
