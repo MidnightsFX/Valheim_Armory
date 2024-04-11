@@ -25,7 +25,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.7.3";
+        public const string PluginVersion = "1.7.5";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -44,7 +44,7 @@ namespace ValheimArmory
             new ValheimArmoryItems();
 
             AddLocalizations();
-            UnloadAssets();
+            // UnloadAssets();
         }
 
         // Check for other mods here and add compatability functionality

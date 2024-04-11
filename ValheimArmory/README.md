@@ -307,6 +307,11 @@ Q. The bronze crossbow costs dragon tears?
 Q. Why does disabling the recipe do nothing?
 - A. You must have an item enabled, for the recipe disable flag to do anything. When an item is disabled it is completely removed from the game, so its recipe doesn't matter.
 
+Q. I want to edit the text for a weapon, how do I do that?
+- A. You can download a copy of any of the language files [available on github](https://github.com/MidnightsFX/Valheim_Armory/tree/master/ValheimArmory/localizations) and place it at the following location: `Valheim\BepInEx\plugins\ValheimArmory\Assets\Translations\YOUR_LANGUAGE_HERE\ValheimArmory.json` this will override
+     the default localization for VA for the language specified. This is localization sideloading that is supported through [Jotunn](https://valheim-modding.github.io/Jotunn/tutorials/localization.html#side-loading-localizations)
+     I also accept language translation updates, if you want to translate or update an existing translation please reach out on the discord server or open a github ticket.
+
 Q. Why does x weapon look bad?
 - A.
     - This is my first Unity, and Valhiem mod
@@ -356,6 +361,19 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 
 <details>
   <summary>Changelog (Potential spoilers!)</summary>
+
+
+  **1.7.5**
+```
+- Updated Jotunn for compatability with upcoming Ashlands (2.19.1)
+- Updated russian translation
+- Reduced size of VFX for the queens weapons
+```
+
+  **1.7.4**
+```
+- Fixes Obsidian bolts not moving after being shot
+```
 
   **1.7.3**
 ```
