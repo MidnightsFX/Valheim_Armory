@@ -52,8 +52,8 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(20, 1, 100, true) },
-                    { "blunt", new Tuple<float, float, float, bool>(26, 0, 200, true) },
-                    { "pierce", new Tuple<float, float, float, bool>(52, 0, 200, true) }
+                    { "blunt", new Tuple<float, float, float, bool>(52, 0, 200, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(26, 0, 200, true) }
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
