@@ -550,7 +550,7 @@ namespace ValheimArmory
                     { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "poison", new Tuple<float, float, float, bool>(25, 0, 90, true) },
                     { "poison_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
-                    { "lightning", new Tuple<float, float, float, bool>(25, 0, 99, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(30, 0, 99, true) },
                     { "lightning_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(25, 0, 50, true) },
                     { "block", new Tuple<float, float, float, bool>(3, 0, 25, true) },
@@ -919,7 +919,7 @@ namespace ValheimArmory
                     { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "poison", new Tuple<float, float, float, bool>(25, 0, 250, true) },
                     { "poison_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
-                    { "lightning", new Tuple<float, float, float, bool>(25, 0, 99, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(30, 0, 99, true) },
                     { "lightning_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
                     { "block", new Tuple<float, float, float, bool>(62, 0, 60, true) },
@@ -952,7 +952,7 @@ namespace ValheimArmory
                     { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "poison", new Tuple<float, float, float, bool>(25, 0, 250, true) },
                     { "poison_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
-                    { "lightning", new Tuple<float, float, float, bool>(25, 0, 99, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(30, 0, 99, true) },
                     { "lightning_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(40, 0, 160, true) },
                     { "block", new Tuple<float, float, float, bool>(52, 0, 60, true) },
@@ -2622,6 +2622,9 @@ namespace ValheimArmory
                         break;
                     case "durability_per_level":
                         item.m_shared.m_maxDurability = (int)entry.Value.Item1;
+                        break;
+                    case "movement_speed":
+                        item.m_shared.m_movementModifier = (float)entry.Value.Item1 / 100;
                         break;
                     // Reload speed
                     case "bow_draw_speed":
