@@ -52,17 +52,20 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(20, 1, 100, true) },
-                    { "blunt", new Tuple<float, float, float, bool>(26, 0, 200, true) },
-                    { "pierce", new Tuple<float, float, float, bool>(52, 0, 200, true) }
+                    { "blunt", new Tuple<float, float, float, bool>(52, 0, 200, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(26, 0, 200, true) }
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Feathers", new Tuple<int, int>(1, 0) },
-                    { "Wood", new Tuple<int, int>(6, 0) },
-                    { "BlackMetal", new Tuple<int, int>(1, 0) },
+                    { "Wood", new Tuple<int, int>(8, 0) },
+                    { "BlackMetal", new Tuple<int, int>(2, 0) },
+                    { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, bool>() { }
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 3 }
+                }
             );
 
             // Bone Arrows
@@ -77,15 +80,18 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(20, 1, 100, true) },
-                    { "pierce", new Tuple<float, float, float, bool>(28, 0, 200, true) }
+                    { "pierce", new Tuple<float, float, float, bool>(32, 0, 200, true) }
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Feathers", new Tuple<int, int>(1, 0) },
                     { "BoneFragments", new Tuple<int, int>(8, 0) },
+                    { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, bool>() { }
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 3 }
+                }
             );
 
             // Surtling Fire Arrow
@@ -96,7 +102,7 @@ namespace ValheimArmory
                     { "catagory", "Arrows" },
                     { "prefab", "VAarrow_surtling_fire" },
                     { "sprite", "surtlingcore_arrow" },
-                    { "craftedAt", "forge" }
+                    { "craftedAt", "piece_workbench" }
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(20, 1, 100, true) },
@@ -106,12 +112,15 @@ namespace ValheimArmory
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
+                    { "Wood", new Tuple<int, int>(8, 0) },
+                    { "Obsidian", new Tuple<int, int>(4, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) },
-                    { "Wood", new Tuple<int, int>(10, 0) },
-                    { "Obsidian", new Tuple<int, int>(2, 0) },
-                    { "SurtlingCore", new Tuple<int, int>(1, 0) },
+                    { "SurtlingCore", new Tuple<int, int>(1, 0) }
                 },
-                new Dictionary<string, bool>() { }
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 3 }
+                }
             );
 
             // Ancient Wood Arrow
@@ -126,15 +135,18 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(20, 1, 100, true) },
-                    { "pierce", new Tuple<float, float, float, bool>(38, 0, 200, true) }
+                    { "pierce", new Tuple<float, float, float, bool>(37, 0, 200, true) }
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Feathers", new Tuple<int, int>(2, 0) },
-                    { "ElderBark", new Tuple<int, int>(8, 0) }
+                    { "ElderBark", new Tuple<int, int>(8, 0) },
+                    { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, bool>() { }
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 3 }
+                }
             );
 
             // Chitin Arrow
@@ -155,11 +167,14 @@ namespace ValheimArmory
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Feathers", new Tuple<int, int>(2, 0) },
                     { "Wood", new Tuple<int, int>(8, 0) },
-                    { "Chitin", new Tuple<int, int>(3, 0) }
+                    { "Chitin", new Tuple<int, int>(2, 0) },
+                    { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, bool>() { }
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 3 }
+                }
             );
 
             // Wood Crossbow Bolt
@@ -174,14 +189,17 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(20, 1, 100, true) },
-                    { "pierce", new Tuple<float, float, float, bool>(26, 0, 200, true) }
+                    { "pierce", new Tuple<float, float, float, bool>(22, 0, 200, true) }
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "RoundLog", new Tuple<int, int>(8, 0) }
+                    { "Wood", new Tuple<int, int>(8, 0) }
                 },
-                new Dictionary<string, bool>() { }
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
+                }
             );
 
             // Bronze Bolt
@@ -196,16 +214,19 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(20, 1, 100, true) },
-                    { "pierce", new Tuple<float, float, float, bool>(34, 0, 200, true) }
+                    { "pierce", new Tuple<float, float, float, bool>(32, 0, 200, true) }
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
                     { "Wood", new Tuple<int, int>(8, 0) },
-                    { "Bronze", new Tuple<int, int>(2, 0) },
-                    { "Feathers", new Tuple<int, int>(2, 0) },
+                    { "Bronze", new Tuple<int, int>(1, 0) },
+                    { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, bool>() { }
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
+                }
             );
 
             // Iron Poison Bolt
@@ -227,11 +248,14 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<int, int>>()
                 {
                     { "Wood", new Tuple<int, int>(8, 0) },
-                    { "Iron", new Tuple<int, int>(2, 0) },
-                    { "Ooze", new Tuple<int, int>(2, 0) },
+                    { "Iron", new Tuple<int, int>(1, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) },
+                    { "Ooze", new Tuple<int, int>(1, 0) }
                 },
-                new Dictionary<string, bool>() { }
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
+                }
             );
 
             // Obsidian Bolt
@@ -242,20 +266,23 @@ namespace ValheimArmory
                     { "catagory", "Arrows" },
                     { "prefab", "VAObsidianBolt" },
                     { "sprite", "obsidian_bolt" },
-                    { "craftedAt", "forge" }
+                    { "craftedAt", "piece_workbench" }
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(20, 1, 100, true) },
-                    { "pierce", new Tuple<float, float, float, bool>(58, 0, 200, true) }
+                    { "pierce", new Tuple<float, float, float, bool>(52, 0, 200, true) }
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
                     { "Wood", new Tuple<int, int>(8, 0) },
                     { "Obsidian", new Tuple<int, int>(4, 0) },
-                    { "Feathers", new Tuple<int, int>(2, 0) },
+                    { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, bool>() { }
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 3 }
+                }
             );
 
             // Silver Ice Bolt
@@ -278,14 +305,17 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<int, int>>()
                 {
                     { "Wood", new Tuple<int, int>(8, 0) },
-                    { "Silver", new Tuple<int, int>(2, 0) },
-                    { "FreezeGland", new Tuple<int, int>(2, 0) },
+                    { "Silver", new Tuple<int, int>(1, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) },
+                    { "FreezeGland", new Tuple<int, int>(1, 0) }
                 },
-                new Dictionary<string, bool>() { }
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 3 }
+                }
             );
 
-            // Blackmetal Surtling bolt
+            // Iron Surtling bolt
             new ValArmoryItem(
                 EmbeddedResourceBundle,
                 new Dictionary<string, string>() {
@@ -297,18 +327,21 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(20, 1, 100, true) },
-                    { "fire", new Tuple<float, float, float, bool>(54, 0, 200, true) },
-                    { "pierce", new Tuple<float, float, float, bool>(18, 0, 200, true) }
+                    { "fire", new Tuple<float, float, float, bool>(52, 0, 200, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(26, 0, 200, true) }
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
                     { "Wood", new Tuple<int, int>(8, 0) },
-                    { "BlackMetal", new Tuple<int, int>(2, 0) },
-                    { "SurtlingCore", new Tuple<int, int>(2, 0) },
+                    { "Iron", new Tuple<int, int>(1, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) },
+                    { "SurtlingCore", new Tuple<int, int>(1, 0) }
                 },
-                new Dictionary<string, bool>() { }
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
+                }
             );
         }
 
@@ -327,9 +360,9 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "pierce", new Tuple<float, float, float, bool>(72, 0, 300, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(8, 0, 25, true) },
-                    { "block", new Tuple<float, float, float, bool>(22, 0, 60, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 300, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "block", new Tuple<float, float, float, bool>(3, 0, 60, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(20, 0, 300, true) },
                     { "draw_stamina_drain", new Tuple<float, float, float, bool>(4, 1, 50, true) },
                     { "primary_attack_flat_health_cost", new Tuple<float, float, float, bool>(8, 0, 25, true) },
                     { "primary_attack_percent_health_cost", new Tuple<float, float, float, bool>(0, 0, 50, true) },
@@ -339,12 +372,11 @@ namespace ValheimArmory
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "RoundLog", new Tuple<int, int>(12, 8) },
-                    { "BoneFragments", new Tuple<int, int>(20, 14) },
-                    { "Silver", new Tuple<int, int>(6, 2) },
-                    { "TrophyUlv", new Tuple<int, int>(4, 0) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "RoundLog", new Tuple<int, int>(10, 5) },
+                    { "Silver", new Tuple<int, int>(10, 5) },
+                    { "BoneFragments", new Tuple<int, int>(20, 10) },
+                    { "TrophyUlv", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Bronze Arbalist
@@ -359,23 +391,22 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "pierce", new Tuple<float, float, float, bool>(130, 0, 300, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(105, 0, 300, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(140, 0, 300, true) },
-                    { "block", new Tuple<float, float, float, bool>(14, 0, 60, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(200, 0, 300, true) },
+                    { "block", new Tuple<float, float, float, bool>(3, 0, 60, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
-                    { "durability", new Tuple<float, float, float, bool>(125, 0, 300, true) },
+                    { "durability", new Tuple<float, float, float, bool>(100, 0, 300, true) },
                     { "crossbow_reload_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "FineWood", new Tuple<int, int>(16, 8) },
-                    { "Bronze", new Tuple<int, int>(6, 3) },
-                    { "Guck", new Tuple<int, int>(4, 2) },
-                    { "LinenThread", new Tuple<int, int>(8, 4) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "FineWood", new Tuple<int, int>(10, 5) },
+                    { "Bronze", new Tuple<int, int>(20, 10) },
+                    { "Guck", new Tuple<int, int>(10, 2) },
+                    { "TrollHide", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Antler Bow
@@ -386,7 +417,7 @@ namespace ValheimArmory
                     { "catagory", "Bows" },
                     { "prefab", "VAAntler_Bow" },
                     { "sprite", "antler_bow" },
-                    { "craftedAt", "forge" }
+                    { "craftedAt", "piece_workbench" }
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
@@ -395,19 +426,18 @@ namespace ValheimArmory
                     { "lightning", new Tuple<float, float, float, bool>(10, 0, 90, true) },
                     { "lightning_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(5, 0, 50, true) },
-                    { "block", new Tuple<float, float, float, bool>(9, 0, 25, true) },
+                    { "block", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "bow_draw_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "FineWood", new Tuple<int, int>(24, 8) },
-                    { "Bronze", new Tuple<int, int>(12, 4) },
-                    { "HardAntler", new Tuple<int, int>(2, 2) },
-                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "FineWood", new Tuple<int, int>(10, 5) },
+                    { "Resin", new Tuple<int, int>(16, 8) },
+                    { "HardAntler", new Tuple<int, int>(3, 3) },
+                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Bronze Crossbow
@@ -424,21 +454,20 @@ namespace ValheimArmory
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "pierce", new Tuple<float, float, float, bool>(80, 0, 300, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
-                    { "block", new Tuple<float, float, float, bool>(14, 0, 60, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(140, 0, 300, true) },
+                    { "block", new Tuple<float, float, float, bool>(3, 0, 60, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(150, 0, 300, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
-                    { "durability", new Tuple<float, float, float, bool>(125, 0, 300, true) },
+                    { "durability", new Tuple<float, float, float, bool>(100, 0, 300, true) },
                     { "crossbow_reload_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "FineWood", new Tuple<int, int>(8, 8) },
-                    { "Bronze", new Tuple<int, int>(6, 3) },
-                    { "LeatherScraps", new Tuple<int, int>(4, 2) },
-                    { "RoundLog", new Tuple<int, int>(6, 3) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "FineWood", new Tuple<int, int>(10, 5) },
+                    { "RoundLog", new Tuple<int, int>(10, 5) },
+                    { "Bronze", new Tuple<int, int>(4, 2) },
+                    { "DeerHide", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Elder Crossbow
@@ -455,23 +484,22 @@ namespace ValheimArmory
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "pierce", new Tuple<float, float, float, bool>(80, 0, 300, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
-                    { "spirit", new Tuple<float, float, float, bool>(15, 0, 300, true) },
-                    { "spirit_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
-                    { "block", new Tuple<float, float, float, bool>(14, 0, 60, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(140, 0, 300, true) },
+                    { "spirit", new Tuple<float, float, float, bool>(20, 0, 300, true) },
+                    { "spirit_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "block", new Tuple<float, float, float, bool>(3, 0, 60, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(150, 0, 300, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
-                    { "durability", new Tuple<float, float, float, bool>(125, 0, 300, true) },
+                    { "durability", new Tuple<float, float, float, bool>(100, 0, 300, true) },
                     { "crossbow_reload_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "RoundLog", new Tuple<int, int>(16, 8) },
-                    { "Bronze", new Tuple<int, int>(8, 4) },
+                    { "Bronze", new Tuple<int, int>(10, 5) },
+                    { "Stone", new Tuple<int, int>(40, 20) },
                     { "CryptKey", new Tuple<int, int>(1, 1) },
-                    { "TrophyTheElder", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "TrophyTheElder", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Moder Crossbow
@@ -487,24 +515,23 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "pierce", new Tuple<float, float, float, bool>(150, 0, 300, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
-                    { "frost", new Tuple<float, float, float, bool>(10, 0, 300, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "frost", new Tuple<float, float, float, bool>(25, 0, 300, true) },
                     { "frost_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
-                    { "block", new Tuple<float, float, float, bool>(14, 0, 60, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(140, 0, 300, true) },
+                    { "block", new Tuple<float, float, float, bool>(3, 0, 60, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(200, 0, 300, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
-                    { "durability", new Tuple<float, float, float, bool>(125, 0, 300, true) },
+                    { "durability", new Tuple<float, float, float, bool>(100, 0, 300, true) },
                     { "crossbow_reload_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "FineWood", new Tuple<int, int>(8, 8) },
-                    { "Silver", new Tuple<int, int>(6, 3) },
-                    { "DragonTear", new Tuple<int, int>(3, 2) },
-                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "ElderBark", new Tuple<int, int>(10, 5) },
+                    { "Obsidian", new Tuple<int, int>(20, 10) },
+                    { "DragonTear", new Tuple<int, int>(10, 10) },
+                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Queen Bow
@@ -520,29 +547,28 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "pierce", new Tuple<float, float, float, bool>(77, 0, 200, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
-                    { "poison", new Tuple<float, float, float, bool>(20, 0, 90, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "poison", new Tuple<float, float, float, bool>(30, 0, 90, true) },
                     { "poison_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(30, 0, 50, true) },
-                    { "block", new Tuple<float, float, float, bool>(24, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(25, 0, 50, true) },
+                    { "block", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "bow_draw_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "TrophySeekerQueen", new Tuple<int, int>(1, 1) },
-                    { "Iron", new Tuple<int, int>(20, 10) },
-                    { "JuteRed", new Tuple<int, int>(6, 2) },
-                    { "Eitr", new Tuple<int, int>(26, 13) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "YggdrasilWood", new Tuple<int, int>(10, 5) },
+                    { "Eitr", new Tuple<int, int>(20, 10) },
+                    { "JuteBlue", new Tuple<int, int>(2, 0) },
+                    { "TrophySeekerQueen", new Tuple<int, int>(1, 1) }
+                }
             );
         }
 
         private void LoadSwords()
         {
-            // Chitin Sword
+            // Abyssal Sword
             new ValArmoryItem(
                 EmbeddedResourceBundle,
                 new Dictionary<string, string>() {
@@ -550,27 +576,26 @@ namespace ValheimArmory
                     { "catagory", "Swords" },
                     { "prefab", "VASwordChitin" },
                     { "sprite", "chitin_sword" },
-                    { "craftedAt", "forge" }
+                    { "craftedAt", "piece_workbench" }
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "blunt", new Tuple<float, float, float, bool>(20, 0, 90, true) },
-                    { "blunt_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
-                    { "slash", new Tuple<float, float, float, bool>(30, 0, 120, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
+                    { "slash", new Tuple<float, float, float, bool>(25, 0, 120, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
-                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
+                    { "block", new Tuple<float, float, float, bool>(18, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 30, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "LeatherScraps", new Tuple<int, int>(3, 2) },
-                    { "Bronze", new Tuple<int, int>(2, 1) },
-                    { "Chitin", new Tuple<int, int>(8, 4) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "FineWood", new Tuple<int, int>(6, 3) },
+                    { "Chitin", new Tuple<int, int>(20, 10) },
+                    { "DeerHide", new Tuple<int, int>(2, 0) }
+                }
             );
 
             // Antler Sword
@@ -581,30 +606,29 @@ namespace ValheimArmory
                     { "catagory", "Swords" },
                     { "prefab", "VAAntler_Sword" },
                     { "sprite", "antler_sword" },
-                    { "craftedAt", "forge" }
+                    { "craftedAt", "piece_workbench" }
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(20, 0, 90, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
                     { "blunt", new Tuple<float, float, float, bool>(10, 0, 90, true) },
-                    { "blunt_per_level", new Tuple<float, float, float, bool>(1, 0, 20, true) },
-                    { "lightning", new Tuple<float, float, float, bool>(18, 0, 120, true) },
-                    { "lightning_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(10, 0, 120, true) },
+                    { "lightning_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
-                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
+                    { "block", new Tuple<float, float, float, bool>(8, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 30, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(16, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "LeatherScraps", new Tuple<int, int>(2, 2) },
-                    { "Bronze", new Tuple<int, int>(6, 6) },
-                    { "HardAntler", new Tuple<int, int>(2, 2) },
-                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "FineWood", new Tuple<int, int>(6, 3) },
+                    { "Resin", new Tuple<int, int>(16, 8) },
+                    { "HardAntler", new Tuple<int, int>(3, 3) },
+                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Vine Sword
@@ -620,23 +644,22 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(35, 0, 90, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
-                    { "spirit", new Tuple<float, float, float, bool>(16, 0, 120, true) },
-                    { "spirit_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(20, 0, 120, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
+                    { "spirit", new Tuple<float, float, float, bool>(20, 0, 120, true) },
+                    { "spirit_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
                     { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(9, 1, 30, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 30, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(16, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Stone", new Tuple<int, int>(40, 25) },
-                    { "Bronze", new Tuple<int, int>(6, 6) },
+                    { "Bronze", new Tuple<int, int>(6, 3) },
+                    { "Stone", new Tuple<int, int>(40, 20) },
                     { "CryptKey", new Tuple<int, int>(1, 1) },
-                    { "TrophyTheElder", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "TrophyTheElder", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Ice Sword
@@ -651,26 +674,25 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "slash", new Tuple<float, float, float, bool>(45, 0, 90, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
-                    { "blunt", new Tuple<float, float, float, bool>(25, 0, 90, true) },
-                    { "blunt_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
-                    { "frost", new Tuple<float, float, float, bool>(30, 0, 120, true) },
-                    { "frost_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { "slash", new Tuple<float, float, float, bool>(35, 0, 90, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
+                    { "blunt", new Tuple<float, float, float, bool>(30, 0, 90, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
+                    { "frost", new Tuple<float, float, float, bool>(25, 0, 120, true) },
+                    { "frost_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
-                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 30, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
+                    { "block", new Tuple<float, float, float, bool>(30, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 30, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "JuteRed", new Tuple<int, int>(4, 2) },
-                    { "Obsidian", new Tuple<int, int>(6, 6) },
-                    { "DragonTear", new Tuple<int, int>(3, 2) },
-                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "ElderBark", new Tuple<int, int>(6, 3) },
+                    { "Obsidian", new Tuple<int, int>(20, 10) },
+                    { "DragonTear", new Tuple<int, int>(10, 10) },
+                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Bronze Greatsword
@@ -686,19 +708,19 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(50, 0, 200, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
-                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
+                    { "block", new Tuple<float, float, float, bool>(22, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Bronze", new Tuple<int, int>(25, 8) },
-                    { "RoundLog", new Tuple<int, int>(8, 2) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "RoundLog", new Tuple<int, int>(10, 5) },
+                    { "Bronze", new Tuple<int, int>(20, 10) },
+                    { "DeerHide", new Tuple<int, int>(3, 0) }
+                }
             );
 
             // Iron Greatsword
@@ -714,19 +736,19 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(75, 0, 250, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
-                    { "block", new Tuple<float, float, float, bool>(24, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(25, 1, 50, true) },
+                    { "block", new Tuple<float, float, float, bool>(28, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(28, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Iron", new Tuple<int, int>(25, 8) },
-                    { "ElderBark", new Tuple<int, int>(6, 2) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "ElderBark", new Tuple<int, int>(10, 5) },
+                    { "Iron", new Tuple<int, int>(30, 15) },
+                    { "TrollHide", new Tuple<int, int>(3, 0) }
+                }
             );
 
             // Silver Greatsword
@@ -742,22 +764,21 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(100, 0, 300, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "spirit", new Tuple<float, float, float, bool>(30, 0, 120, true) },
                     { "spirit_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
-                    { "block", new Tuple<float, float, float, bool>(38, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(17, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(30, 1, 50, true) },
+                    { "block", new Tuple<float, float, float, bool>(40, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(16, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(32, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Silver", new Tuple<int, int>(25, 8) },
-                    { "ElderBark", new Tuple<int, int>(6, 2) },
-                    { "Iron", new Tuple<int, int>(6, 1) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "ElderBark", new Tuple<int, int>(10, 5) },
+                    { "Silver", new Tuple<int, int>(30, 15) },
+                    { "JuteRed", new Tuple<int, int>(3, 0) }
+                }
 
             );
 
@@ -774,23 +795,22 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(75, 0, 250, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "poison", new Tuple<float, float, float, bool>(20, 0, 250, true) },
                     { "poison_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
-                    { "block", new Tuple<float, float, float, bool>(24, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(25, 1, 50, true) },
+                    { "block", new Tuple<float, float, float, bool>(28, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(28, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Iron", new Tuple<int, int>(12, 8) },
-                    { "WitheredBone", new Tuple<int, int>(18, 12) },
+                    { "WitheredBone", new Tuple<int, int>(10, 5) },
+                    { "Iron", new Tuple<int, int>(30, 15) },
                     { "Wishbone", new Tuple<int, int>(1, 1) },
-                    { "TrophyBonemass", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "TrophyBonemass", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Yagluth Greatsword
@@ -808,21 +828,20 @@ namespace ValheimArmory
                     { "slash", new Tuple<float, float, float, bool>(125, 0, 250, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "fire", new Tuple<float, float, float, bool>(25, 0, 250, true) },
-                    { "fire_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "fire_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
-                    { "block", new Tuple<float, float, float, bool>(30, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(17, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(31, 1, 50, true) },
+                    { "block", new Tuple<float, float, float, bool>(49, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(36, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "BlackMetal", new Tuple<int, int>(16, 12) },
-                    { "Iron", new Tuple<int, int>(6, 6) },
-                    { "TrophyGoblinKing", new Tuple<int, int>(1, 1) },
-                    { "YagluthDrop", new Tuple<int, int>(3, 2) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "BlackMetal", new Tuple<int, int>(10, 5) },
+                    { "Iron", new Tuple<int, int>(4, 2) },
+                    { "YagluthDrop", new Tuple<int, int>(2, 2) },
+                    { "TrophyGoblinKing", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Flint Sword
@@ -838,7 +857,7 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(15, 0, 90, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
                     { "block", new Tuple<float, float, float, bool>(4, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(6, 1, 30, true) },
@@ -847,11 +866,10 @@ namespace ValheimArmory
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "LeatherScraps", new Tuple<int, int>(2, 1) },
-                    { "Wood", new Tuple<int, int>(4, 2) },
-                    { "Flint", new Tuple<int, int>(12, 4) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "Wood", new Tuple<int, int>(6, 3) },
+                    { "Flint", new Tuple<int, int>(10, 5) },
+                    { "LeatherScraps", new Tuple<int, int>(2, 0) }
+                }
             );
 
             // Flint Greatsword
@@ -867,20 +885,19 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(25, 0, 200, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(42, 0, 160, true) },
-                    { "block", new Tuple<float, float, float, bool>(6, 0, 60, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
+                    { "block", new Tuple<float, float, float, bool>(14, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "LeatherScraps", new Tuple<int, int>(3, 1) },
-                    { "Wood", new Tuple<int, int>(15, 5) },
-                    { "Flint", new Tuple<int, int>(20, 8) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "Wood", new Tuple<int, int>(10, 5) },
+                    { "Flint", new Tuple<int, int>(15, 5) },
+                    { "LeatherScraps", new Tuple<int, int>(3, 0) }
+                }
             );
 
             // Queen Greatsword
@@ -897,22 +914,21 @@ namespace ValheimArmory
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(150, 0, 250, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
-                    { "poison", new Tuple<float, float, float, bool>(25, 0, 250, true) },
-                    { "poison_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "poison", new Tuple<float, float, float, bool>(30, 0, 250, true) },
+                    { "poison_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
-                    { "block", new Tuple<float, float, float, bool>(35, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(19, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(33, 1, 50, true) },
+                    { "block", new Tuple<float, float, float, bool>(62, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(40, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "JuteRed", new Tuple<int, int>(12, 4) },
-                    { "Iron", new Tuple<int, int>(24, 12) },
-                    { "TrophySeekerQueen", new Tuple<int, int>(1, 1) },
-                    { "Eitr", new Tuple<int, int>(20, 16) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "YggdrasilWood", new Tuple<int, int>(10, 5) },
+                    { "Eitr", new Tuple<int, int>(20, 10) },
+                    { "JuteBlue", new Tuple<int, int>(3, 0) },
+                    { "TrophySeekerQueen", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Queen sword
@@ -927,24 +943,23 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "slash", new Tuple<float, float, float, bool>(105, 0, 250, true) },
+                    { "slash", new Tuple<float, float, float, bool>(95, 0, 250, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
-                    { "poison", new Tuple<float, float, float, bool>(20, 0, 250, true) },
+                    { "poison", new Tuple<float, float, float, bool>(30, 0, 250, true) },
                     { "poison_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(55, 0, 160, true) },
-                    { "block", new Tuple<float, float, float, bool>(35, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(17, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(34, 1, 50, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(40, 0, 160, true) },
+                    { "block", new Tuple<float, float, float, bool>(52, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(16, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(32, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "JuteRed", new Tuple<int, int>(12, 4) },
-                    { "Iron", new Tuple<int, int>(24, 12) },
-                    { "TrophySeekerQueen", new Tuple<int, int>(1, 1) },
-                    { "Eitr", new Tuple<int, int>(20, 16) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "YggdrasilWood", new Tuple<int, int>(6, 3) },
+                    { "Eitr", new Tuple<int, int>(20, 10) },
+                    { "JuteBlue", new Tuple<int, int>(2, 0) },
+                    { "TrophySeekerQueen", new Tuple<int, int>(1, 1) }
+                }
             );
         }
 
@@ -962,23 +977,22 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "slash", new Tuple<float, float, float, bool>(26, 0, 200, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
-                    { "chop", new Tuple<float, float, float, bool>(30, 0, 200, true) },
-                    { "chop_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(45, 0, 200, true) },
-                    { "block", new Tuple<float, float, float, bool>(6, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(3, 1, 20, true) },
+                    { "slash", new Tuple<float, float, float, bool>(25, 0, 200, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "chop", new Tuple<float, float, float, bool>(45, 0, 200, true) },
+                    { "chop_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(70, 0, 200, true) },
+                    { "block", new Tuple<float, float, float, bool>(14, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 20, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Wood", new Tuple<int, int>(18, 12) },
-                    { "Flint", new Tuple<int, int>(22, 12) },
-                    { "LeatherScraps", new Tuple<int, int>(4, 2) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "Wood", new Tuple<int, int>(10, 5) },
+                    { "Flint", new Tuple<int, int>(12, 6) },
+                    { "LeatherScraps", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Bronze Battleaxe
@@ -993,23 +1007,22 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "slash", new Tuple<float, float, float, bool>(55, 0, 200, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
-                    { "chop", new Tuple<float, float, float, bool>(65, 0, 200, true) },
-                    { "chop_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(65, 0, 200, true) },
-                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(5, 1, 20, true) },
+                    { "slash", new Tuple<float, float, float, bool>(50, 0, 200, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "chop", new Tuple<float, float, float, bool>(60, 0, 200, true) },
+                    { "chop_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(70, 0, 200, true) },
+                    { "block", new Tuple<float, float, float, bool>(18, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(28, 1, 20, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Bronze", new Tuple<int, int>(25, 6) },
-                    { "RoundLog", new Tuple<int, int>(8, 2) },
-                    { "LeatherScraps", new Tuple<int, int>(4, 2) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "RoundLog", new Tuple<int, int>(10, 5) },
+                    { "Bronze", new Tuple<int, int>(16, 8) },
+                    { "DeerHide", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Antler Battleaxe
@@ -1020,32 +1033,31 @@ namespace ValheimArmory
                     { "catagory", "Axes" },
                     { "prefab", "VAAntler_greataxe" },
                     { "sprite", "antler_greataxe" },
-                    { "craftedAt", "forge" }
+                    { "craftedAt", "piece_workbench" }
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "blunt", new Tuple<float, float, float, bool>(15, 0, 200, true) },
-                    { "blunt_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
-                    { "slash", new Tuple<float, float, float, bool>(30, 0, 200, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
-                    { "lightning", new Tuple<float, float, float, bool>(15, 0, 200, true) },
-                    { "lightning_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
-                    { "chop", new Tuple<float, float, float, bool>(40, 0, 200, true) },
-                    { "chop_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(65, 0, 200, true) },
-                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(5, 1, 20, true) },
+                    { "blunt", new Tuple<float, float, float, bool>(10, 0, 200, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "slash", new Tuple<float, float, float, bool>(20, 0, 200, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(10, 0, 200, true) },
+                    { "lightning_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "chop", new Tuple<float, float, float, bool>(60, 0, 200, true) },
+                    { "chop_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(70, 0, 200, true) },
+                    { "block", new Tuple<float, float, float, bool>(18, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(28, 1, 20, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "RoundLog", new Tuple<int, int>(26, 22) },
-                    { "Bronze", new Tuple<int, int>(12, 6) },
-                    { "HardAntler", new Tuple<int, int>(4, 2) },
-                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "FineWood", new Tuple<int, int>(10, 5) },
+                    { "Resin", new Tuple<int, int>(16, 8) },
+                    { "HardAntler", new Tuple<int, int>(3, 3) },
+                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Blackmetal Battleaxe
@@ -1061,24 +1073,24 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "slash", new Tuple<float, float, float, bool>(120, 0, 300, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
-                    { "chop", new Tuple<float, float, float, bool>(120, 0, 300, true) },
-                    { "chop_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
-                    { "fire", new Tuple<float, float, float, bool>(30, 0, 160, true) },
-                    { "fire_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(65, 0, 200, true) },
-                    { "block", new Tuple<float, float, float, bool>(52, 0, 60, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "chop", new Tuple<float, float, float, bool>(90, 0, 300, true) },
+                    { "chop_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "fire", new Tuple<float, float, float, bool>(20, 0, 160, true) },
+                    { "fire_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(70, 0, 200, true) },
+                    { "block", new Tuple<float, float, float, bool>(49, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(40, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "BlackMetal", new Tuple<int, int>(25, 6) },
-                    { "YggdrasilWood", new Tuple<int, int>(8, 6) },
-                    { "SurtlingCore", new Tuple<int, int>(2, 2) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "Iron", new Tuple<int, int>(10, 5) },
+                    { "BlackMetal", new Tuple<int, int>(24, 12) },
+                    { "LinenThread", new Tuple<int, int>(4, 0) },
+                    { "SurtlingCore", new Tuple<int, int>(4, 0) }
+                }
             );
         }
 
@@ -1096,24 +1108,23 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "blunt", new Tuple<float, float, float, bool>(110, 0, 300, true) },
+                    { "blunt", new Tuple<float, float, float, bool>(120, 0, 300, true) },
                     { "blunt_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
-                    { "lightning", new Tuple<float, float, float, bool>(25, 0, 120, true) },
-                    { "lightning_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(120, 0, 400, true) },
-                    { "block", new Tuple<float, float, float, bool>(48, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(19, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(20, 0, 120, true) },
+                    { "lightning_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(100, 0, 400, true) },
+                    { "block", new Tuple<float, float, float, bool>(49, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(40, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "BlackMetal", new Tuple<int, int>(24, 12) },
-                    { "Iron", new Tuple<int, int>(8, 4) },
-                    { "Thunderstone", new Tuple<int, int>(8, 4) },
-                    { "LoxPelt", new Tuple<int, int>(2, 2) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "Iron", new Tuple<int, int>(12, 6) },
+                    { "BlackMetal", new Tuple<int, int>(30, 15) },
+                    { "LinenThread", new Tuple<int, int>(4, 0) },
+                    { "Thunderstone", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Elder Sledge
@@ -1129,23 +1140,22 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "blunt", new Tuple<float, float, float, bool>(50, 0, 300, true) },
-                    { "blunt_per_level", new Tuple<float, float, float, bool>(4, 0, 20, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "spirit", new Tuple<float, float, float, bool>(20, 0, 99, true) },
                     { "spirit_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(120, 0, 400, true) },
-                    { "block", new Tuple<float, float, float, bool>(48, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(11, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(100, 0, 400, true) },
+                    { "block", new Tuple<float, float, float, bool>(22, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Stone", new Tuple<int, int>(48, 24) },
-                    { "RoundLog", new Tuple<int, int>(24, 12) },
+                    { "Bronze", new Tuple<int, int>(12, 6) },
+                    { "Stone", new Tuple<int, int>(60, 30) },
                     { "CryptKey", new Tuple<int, int>(1, 1) },
-                    { "TrophyTheElder", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "TrophyTheElder", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Bonemass Warhammer
@@ -1160,24 +1170,23 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "blunt", new Tuple<float, float, float, bool>(75, 0, 300, true) },
-                    { "blunt_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
-                    { "poison", new Tuple<float, float, float, bool>(15, 0, 99, true) },
+                    { "blunt", new Tuple<float, float, float, bool>(70, 0, 300, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
+                    { "poison", new Tuple<float, float, float, bool>(20, 0, 99, true) },
                     { "poison_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(120, 0, 400, true) },
-                    { "block", new Tuple<float, float, float, bool>(48, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(100, 0, 400, true) },
+                    { "block", new Tuple<float, float, float, bool>(31, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(28, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Iron", new Tuple<int, int>(12, 8) },
-                    { "WitheredBone", new Tuple<int, int>(16, 12) },
+                    { "WitheredBone", new Tuple<int, int>(12, 6) },
+                    { "Iron", new Tuple<int, int>(30, 15) },
                     { "Wishbone", new Tuple<int, int>(1, 1) },
-                    { "TrophyBonemass", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "TrophyBonemass", new Tuple<int, int>(1, 1) }
+                }
             );
         }
 
@@ -1196,20 +1205,19 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "pierce", new Tuple<float, float, float, bool>(25, 0, 90, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(25, 0, 120, true) },
-                    { "block", new Tuple<float, float, float, bool>(10, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(11, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Wood", new Tuple<int, int>(20, 12) },
-                    { "Flint", new Tuple<int, int>(18, 9) },
-                    { "LeatherScraps", new Tuple<int, int>(3, 2) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "Wood", new Tuple<int, int>(12, 6) },
+                    { "Flint", new Tuple<int, int>(10, 5) },
+                    { "LeatherScraps", new Tuple<int, int>(4, 0) },
+                }
             );
 
             // Antler Atgeir
@@ -1225,23 +1233,22 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "pierce", new Tuple<float, float, float, bool>(35, 0, 90, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "lightning", new Tuple<float, float, float, bool>(10, 0, 25, true) },
                     { "lightning_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
-                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(16, 1, 50, true) },
+                    { "block", new Tuple<float, float, float, bool>(14, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Wood", new Tuple<int, int>(24, 20) },
-                    { "Resin", new Tuple<int, int>(32, 26) },
-                    { "HardAntler", new Tuple<int, int>(4, 2) },
-                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "FineWood", new Tuple<int, int>(12, 6) },
+                    { "Resin", new Tuple<int, int>(16, 8) },
+                    { "HardAntler", new Tuple<int, int>(3, 3) },
+                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Abyssal Atgeir
@@ -1252,31 +1259,27 @@ namespace ValheimArmory
                     { "catagory", "Atgeirs" },
                     { "prefab", "VAAtgeirchitin" },
                     { "sprite", "chitin_heavy_atgeir_small2" },
-                    { "craftedAt", "forge" }
+                    { "craftedAt", "piece_workbench" }
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "pierce", new Tuple<float, float, float, bool>(35, 0, 140, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
-                    { "slash", new Tuple<float, float, float, bool>(25, 0, 120, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
-                    { "spirit", new Tuple<float, float, float, bool>(0, 0, 120, true) },
-                    { "spirit_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { "blunt", new Tuple<float, float, float, bool>(20, 0, 120, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
-                    { "block", new Tuple<float, float, float, bool>(28, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(22, 1, 50, true) },
+                    { "block", new Tuple<float, float, float, bool>(21, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(28, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Chitin", new Tuple<int, int>(14, 10) },
-                    { "LeatherScraps", new Tuple<int, int>(8, 2) },
-                    { "FineWood", new Tuple<int, int>(14, 7) },
-                    { "ElderBark", new Tuple<int, int>(8, 6) }
-                    
-                },
-                new Dictionary<string, bool>() { }
+                    { "FineWood", new Tuple<int, int>(12, 6) },
+                    { "Chitin", new Tuple<int, int>(20, 10) },
+                    { "DeerHide", new Tuple<int, int>(4, 0) }
+
+                }
             );
 
             // Silver Atgeir
@@ -1292,22 +1295,21 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "pierce", new Tuple<float, float, float, bool>(75, 0, 250, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "spirit", new Tuple<float, float, float, bool>(30, 0, 120, true) },
                     { "spirit_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
-                    { "block", new Tuple<float, float, float, bool>(28, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(28, 1, 50, true) },
+                    { "block", new Tuple<float, float, float, bool>(39, 0, 60, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(16, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(32, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Silver", new Tuple<int, int>(30, 15) },
-                    { "ElderBark", new Tuple<int, int>(12, 8) },
-                    { "JuteRed", new Tuple<int, int>(4, 2) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "ElderBark", new Tuple<int, int>(12, 6) },
+                    { "Silver", new Tuple<int, int>(20, 10) },
+                    { "JuteRed", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Yagluth Atgeir
@@ -1323,23 +1325,22 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "pierce", new Tuple<float, float, float, bool>(105, 0, 250, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(8, 0, 25, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "fire", new Tuple<float, float, float, bool>(25, 0, 120, true) },
-                    { "fire_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "fire_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
-                    { "block", new Tuple<float, float, float, bool>(58, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(52, 0, 120, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(36, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "BlackMetal", new Tuple<int, int>(8, 8) },
-                    { "Iron", new Tuple<int, int>(20, 20) },
-                    { "TrophyGoblinKing", new Tuple<int, int>(1, 1) },
-                    { "YagluthDrop", new Tuple<int, int>(3, 2) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "BlackMetal", new Tuple<int, int>(12, 6) },
+                    { "Iron", new Tuple<int, int>(4, 2) },
+                    { "YagluthDrop", new Tuple<int, int>(2, 2) },
+                    { "TrophyGoblinKing", new Tuple<int, int>(1, 1) }
+                }
             );
         }
 
@@ -1359,18 +1360,17 @@ namespace ValheimArmory
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "block", new Tuple<float, float, float, bool>(48, 0, 120, true) },
                     { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
-                    { "deflection_force", new Tuple<float, float, float, bool>(25, 0, 120, true) },
+                    { "deflection_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "SerpentScale", new Tuple<int, int>(6, 4) },
-                    { "FineWood", new Tuple<int, int>(3, 1) },
-                    { "Iron", new Tuple<int, int>(3, 2) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "FineWood", new Tuple<int, int>(8, 8) },
+                    { "Iron", new Tuple<int, int>(2, 2) },
+                    { "SerpentScale", new Tuple<int, int>(6, 3) }
+                }
             );
 
             // Elder Round Shield
@@ -1385,24 +1385,23 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(38, 0, 120, true) },
-                    { "block_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
-                    { "deflection_force", new Tuple<float, float, float, bool>(25, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(28, 0, 120, true) },
+                    { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
+                    { "deflection_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                 },
-                new Dictionary<string, bool>() {},
+                new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
+                    { "Wood", new Tuple<int, int>(16, 8) },
                     { "Bronze", new Tuple<int, int>(8, 4) },
-                    { "FineWood", new Tuple<int, int>(16, 8) },
                     { "CryptKey", new Tuple<int, int>(1, 1) },
-                    { "TrophyTheElder", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "TrophyTheElder", new Tuple<int, int>(1, 1) }
+                }
             );
 
-            // Elder Round Shield
+            // Moder Round Shield
             new ValArmoryItem(
                 EmbeddedResourceBundle,
                 new Dictionary<string, string>() {
@@ -1414,9 +1413,9 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(100, 0, 120, true) },
-                    { "block_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
-                    { "deflection_force", new Tuple<float, float, float, bool>(25, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(62, 0, 120, true) },
+                    { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
+                    { "deflection_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                 },
@@ -1426,12 +1425,11 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "FineWood", new Tuple<int, int>(24, 14) },
+                    { "FineWood", new Tuple<int, int>(24, 12) },
                     { "Silver", new Tuple<int, int>(16, 8) },
-                    { "DragonTear", new Tuple<int, int>(2, 2) },
-                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "DragonTear", new Tuple<int, int>(10, 10) },
+                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) }
+                }
             );
         }
 
@@ -1449,23 +1447,22 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(12, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(4, 0, 48, true) },
                     { "slash", new Tuple<float, float, float, bool>(12, 0, 99, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "pierce", new Tuple<float, float, float, bool>(12, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(12, 0, 40, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(5, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 40, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(4, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Wood", new Tuple<int, int>(12, 2) },
-                    { "Flint", new Tuple<int, int>(20, 8) },
-                    { "LeatherScraps", new Tuple<int, int>(2, 2) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "Wood", new Tuple<int, int>(8, 4) },
+                    { "Flint", new Tuple<int, int>(10, 4) },
+                    { "LeatherScraps", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Antler 1H Daggers
@@ -1480,13 +1477,13 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(11, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { "slash", new Tuple<float, float, float, bool>(10, 0, 99, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "pierce", new Tuple<float, float, float, bool>(10, 0, 99, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "lightning", new Tuple<float, float, float, bool>(7, 0, 99, true) },
-                    { "lightning_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "lightning_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(6, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
@@ -1494,12 +1491,11 @@ namespace ValheimArmory
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "RoundLog", new Tuple<int, int>(8, 4) },
-                    { "Resin", new Tuple<int, int>(40, 20) },
-                    { "HardAntler", new Tuple<int, int>(2, 2) },
-                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "FineWood", new Tuple<int, int>(4, 2) },
+                    { "Resin", new Tuple<int, int>(16, 8) },
+                    { "HardAntler", new Tuple<int, int>(3, 3) },
+                    { "TrophyEikthyr", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Bronze 2H Daggers
@@ -1514,23 +1510,22 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(16, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(8, 0, 48, true) },
                     { "slash", new Tuple<float, float, float, bool>(20, 0, 99, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "pierce", new Tuple<float, float, float, bool>(20, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(12, 0, 40, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(7, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 40, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(6, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "RoundLog", new Tuple<int, int>(4, 2) },
-                    { "LeatherScraps", new Tuple<int, int>(2, 0) },
-                    { "Bronze", new Tuple<int, int>(12, 6) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "RoundLog", new Tuple<int, int>(8, 4) },
+                    { "Bronze", new Tuple<int, int>(10, 4) },
+                    { "DeerHide", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Bronze 1H Daggers
@@ -1545,7 +1540,7 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(11, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { "slash", new Tuple<float, float, float, bool>(16, 0, 99, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "pierce", new Tuple<float, float, float, bool>(16, 0, 99, true) },
@@ -1557,11 +1552,10 @@ namespace ValheimArmory
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "RoundLog", new Tuple<int, int>(2, 1) },
-                    { "LeatherScraps", new Tuple<int, int>(2, 1) },
-                    { "Bronze", new Tuple<int, int>(8, 4) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "RoundLog", new Tuple<int, int>(4, 2) },
+                    { "Bronze", new Tuple<int, int>(10, 4) },
+                    { "DeerHide", new Tuple<int, int>(2, 0) }
+                }
             );
 
             // Iron 2H Daggers
@@ -1576,23 +1570,22 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(21, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(12, 0, 48, true) },
                     { "slash", new Tuple<float, float, float, bool>(25, 0, 99, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "pierce", new Tuple<float, float, float, bool>(25, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(12, 0, 40, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 40, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "ElderBark", new Tuple<int, int>(4, 2) },
-                    { "LeatherScraps", new Tuple<int, int>(2, 0) },
-                    { "Iron", new Tuple<int, int>(12, 6) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "ElderBark", new Tuple<int, int>(8, 4) },
+                    { "Iron", new Tuple<int, int>(10, 4) },
+                    { "TrollHide", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Iron 1H Daggers
@@ -1607,25 +1600,24 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(11, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { "slash", new Tuple<float, float, float, bool>(22, 0, 99, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "pierce", new Tuple<float, float, float, bool>(22, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(7, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(22, 1, 50, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() {
                     { "enabled", true }
                 },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "ElderBark", new Tuple<int, int>(2, 1) },
-                    { "LeatherScraps", new Tuple<int, int>(2, 1) },
-                    { "Iron", new Tuple<int, int>(8, 4) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "ElderBark", new Tuple<int, int>(4, 2) },
+                    { "Iron", new Tuple<int, int>(10, 4) },
+                    { "TrollHide", new Tuple<int, int>(2, 0) }
+                }
             );
 
             // Silver 2H Daggers
@@ -1640,7 +1632,7 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(23, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(16, 0, 48, true) },
                     { "slash", new Tuple<float, float, float, bool>(34, 0, 99, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "pierce", new Tuple<float, float, float, bool>(34, 0, 99, true) },
@@ -1649,21 +1641,20 @@ namespace ValheimArmory
                     { "spirit_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
                     { "frost", new Tuple<float, float, float, bool>(0, 0, 99, true) },
                     { "frost_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(12, 0, 40, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 40, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(32, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(30, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "ElderBark", new Tuple<int, int>(4, 2) },
-                    { "JuteRed", new Tuple<int, int>(4, 1) },
-                    { "Silver", new Tuple<int, int>(16, 6) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "ElderBark", new Tuple<int, int>(8, 4) },
+                    { "Silver", new Tuple<int, int>(10, 4) },
+                    { "JuteRed", new Tuple<int, int>(4, 0) }
+                }
             );
 
-            // Silver 1H Daggers
+            // Silver 1H Daggers Moder version
             new ValArmoryItem(
                 EmbeddedResourceBundle,
                 new Dictionary<string, string>() {
@@ -1675,15 +1666,15 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(11, 0, 48, true) },
-                    { "slash", new Tuple<float, float, float, bool>(22, 0, 99, true) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
+                    { "slash", new Tuple<float, float, float, bool>(34, 0, 99, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
-                    { "pierce", new Tuple<float, float, float, bool>(22, 0, 99, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(34, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
-                    { "spirit", new Tuple<float, float, float, bool>(12, 0, 99, true) },
+                    { "spirit", new Tuple<float, float, float, bool>(0, 0, 99, true) },
                     { "spirit_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
-                    { "frost", new Tuple<float, float, float, bool>(5, 0, 99, true) },
-                    { "frost_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { "frost", new Tuple<float, float, float, bool>(18, 0, 99, true) },
+                    { "frost_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(30, 1, 50, true) },
@@ -1693,11 +1684,11 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "ElderBark", new Tuple<int, int>(2, 1) },
-                    { "JuteRed", new Tuple<int, int>(2, 1) },
-                    { "Silver", new Tuple<int, int>(10, 4) }
-                },
-                new Dictionary<string, bool>() { }
+                    { "ElderBark", new Tuple<int, int>(4, 2) },
+                    { "Obsidian", new Tuple<int, int>(10, 4) },
+                    { "DragonTear", new Tuple<int, int>(10, 10) },
+                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Bonemass Dagger
@@ -1712,28 +1703,27 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(11, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { "pierce", new Tuple<float, float, float, bool>(22, 0, 99, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "slash", new Tuple<float, float, float, bool>(22, 0, 99, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
-                    { "poison", new Tuple<float, float, float, bool>(12, 0, 99, true) },
-                    { "poison_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(6, 0, 30, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(7, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(22, 1, 50, true) },
+                    { "poison", new Tuple<float, float, float, bool>(10, 0, 99, true) },
+                    { "poison_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() {
                     { "enabled", true }
                 },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Iron", new Tuple<int, int>(12, 8) },
-                    { "WitheredBone", new Tuple<int, int>(8, 4) },
+                    { "WitheredBone", new Tuple<int, int>(4, 2) },
+                    { "Iron", new Tuple<int, int>(10, 4) },
                     { "Wishbone", new Tuple<int, int>(1, 1) },
-                    { "TrophyBonemass", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "TrophyBonemass", new Tuple<int, int>(1, 1) }
+                }
             );
 
             // Queens Dagger
@@ -1748,15 +1738,15 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(11, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { "pierce", new Tuple<float, float, float, bool>(45, 0, 99, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "slash", new Tuple<float, float, float, bool>(45, 0, 99, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
-                    { "poison", new Tuple<float, float, float, bool>(18, 0, 99, true) },
-                    { "poison_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "poison", new Tuple<float, float, float, bool>(15, 0, 99, true) },
+                    { "poison_per_level", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(13, 1, 20, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(42, 1, 80, true) },
                 },
                 new Dictionary<string, bool>() {
@@ -1764,12 +1754,11 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Iron", new Tuple<int, int>(18, 8) },
-                    { "JuteRed", new Tuple<int, int>(6, 3) },
-                    { "Eitr", new Tuple<int, int>(12, 10) },
-                    { "TrophySeekerQueen", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "YggdrasilWood", new Tuple<int, int>(4, 2) },
+                    { "Eitr", new Tuple<int, int>(20, 10) },
+                    { "JuteBlue", new Tuple<int, int>(2, 0) },
+                    { "TrophySeekerQueen", new Tuple<int, int>(1, 1) }
+                }
             );
         }
 
@@ -1787,12 +1776,12 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(11, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(30, 0, 48, true) },
                     { "pierce", new Tuple<float, float, float, bool>(45, 0, 120, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
                     { "blunt", new Tuple<float, float, float, bool>(30, 0, 99, true) },
-                    { "blunt_per_level", new Tuple<float, float, float, bool>(1, 0, 20, true) },
-                    { "frost", new Tuple<float, float, float, bool>(30, 0, 99, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
+                    { "frost", new Tuple<float, float, float, bool>(25, 0, 99, true) },
                     { "frost_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 20, true) },
@@ -1801,12 +1790,11 @@ namespace ValheimArmory
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "ElderBark", new Tuple<int, int>(20, 14) },
-                    { "Obsidian", new Tuple<int, int>(16, 8) },
-                    { "DragonTear", new Tuple<int, int>(3, 2) },
-                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "ElderBark", new Tuple<int, int>(20, 10) },
+                    { "Obsidian", new Tuple<int, int>(10, 5) },
+                    { "DragonTear", new Tuple<int, int>(10, 10) },
+                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) }
+                }
             );
         }
 
@@ -1824,21 +1812,19 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(6, 0, 48, true) },
-                    { "slash", new Tuple<float, float, float, bool>(7, 0, 120, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 20, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(5, 0, 60, true) },
+                    { "block", new Tuple<float, float, float, bool>(5, 0, 48, true) },
+                    { "slash", new Tuple<float, float, float, bool>(6, 0, 120, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(4, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(4, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Wood", new Tuple<int, int>(8, 6) },
-                    { "Flint", new Tuple<int, int>(4, 4) },
-                    { "LeatherScraps", new Tuple<int, int>(2, 2) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "Wood", new Tuple<int, int>(8, 4) },
+                    { "Flint", new Tuple<int, int>(6, 1) },
+                    { "LeatherScraps", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Bronze Fists
@@ -1853,22 +1839,20 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(6, 0, 48, true) },
-                    { "slash", new Tuple<float, float, float, bool>(26, 0, 120, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(5, 0, 60, true) },
+                    { "block", new Tuple<float, float, float, bool>(5, 0, 48, true) },
+                    { "slash", new Tuple<float, float, float, bool>(20, 0, 120, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(4, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(6, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Wood", new Tuple<int, int>(10, 6) },
-                    { "RoundLog", new Tuple<int, int>(6, 4) },
-                    { "LeatherScraps", new Tuple<int, int>(4, 2) },
-                    { "Bronze", new Tuple<int, int>(8, 6) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "Wood", new Tuple<int, int>(4, 2) },
+                    { "RoundLog", new Tuple<int, int>(4, 2) },
+                    { "Bronze", new Tuple<int, int>(6, 1) },
+                    { "DeerHide", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Iron Fists
@@ -1883,22 +1867,20 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(6, 0, 48, true) },
-                    { "slash", new Tuple<float, float, float, bool>(42, 0, 120, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(5, 0, 60, true) },
+                    { "block", new Tuple<float, float, float, bool>(5, 0, 48, true) },
+                    { "slash", new Tuple<float, float, float, bool>(35, 0, 120, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(4, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(16, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Iron", new Tuple<int, int>(18, 12) },
-                    { "ElderBark", new Tuple<int, int>(8, 4) },
-                    { "TrollHide", new Tuple<int, int>(6, 3) },
-                    { "Bronze", new Tuple<int, int>(4, 0) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "ElderBark", new Tuple<int, int>(4, 2) },
+                    { "Bronze", new Tuple<int, int>(4, 2) },
+                    { "Iron", new Tuple<int, int>(6, 1) },
+                    { "TrollHide", new Tuple<int, int>(4, 0) }
+                }
             );
 
             // Yagluth Fists
@@ -1913,24 +1895,23 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(6, 0, 48, true) },
-                    { "slash", new Tuple<float, float, float, bool>(82, 0, 120, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
-                    { "fire", new Tuple<float, float, float, bool>(20, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(5, 0, 48, true) },
+                    { "slash", new Tuple<float, float, float, bool>(80, 0, 120, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(4, 0, 20, true) },
+                    { "fire", new Tuple<float, float, float, bool>(25, 0, 120, true) },
                     { "fire_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(5, 0, 60, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(36, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "BlackMetal", new Tuple<int, int>(20, 12) },
-                    { "Iron", new Tuple<int, int>(8, 4) },
-                    { "TrophyGoblinKing", new Tuple<int, int>(1, 1) },
-                    { "YagluthDrop", new Tuple<int, int>(3, 2) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "BlackMetal", new Tuple<int, int>(8, 4) },
+                    { "Iron", new Tuple<int, int>(4, 2) },
+                    { "YagluthDrop", new Tuple<int, int>(2, 2) },
+                    { "TrophyGoblinKing", new Tuple<int, int>(1, 1) }
+                }
             );
         }
 
@@ -1949,23 +1930,22 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { "blunt", new Tuple<float, float, float, bool>(35, 0, 90, true) },
-                    { "blunt_per_level", new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "spirit", new Tuple<float, float, float, bool>(20, 0, 120, true) },
-                    { "spirit_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(20, 0, 120, true) },
+                    { "spirit_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(80, 0, 120, true) },
                     { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(9, 1, 30, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 30, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(16, 1, 50, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Stone", new Tuple<int, int>(40, 25) },
-                    { "Bronze", new Tuple<int, int>(6, 6) },
+                    { "Bronze", new Tuple<int, int>(6, 3) },
+                    { "Stone", new Tuple<int, int>(40, 20) },
                     { "CryptKey", new Tuple<int, int>(1, 1) },
-                    { "TrophyTheElder", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>() { }
+                    { "TrophyTheElder", new Tuple<int, int>(1, 1) }
+                }
             );
         }
 
@@ -1999,9 +1979,6 @@ namespace ValheimArmory
                     { "Guck", new Tuple<int, int>(22, 8) },
                     { "JuteBlue", new Tuple<int, int>(14, 7) },
                     { "Eitr", new Tuple<int, int>(12, 6) },
-                },
-                new Dictionary<string, bool>()
-                {
                 }
             );
 
@@ -2033,9 +2010,6 @@ namespace ValheimArmory
                     { "Silver", new Tuple<int, int>(16, 8) },
                     { "JuteBlue", new Tuple<int, int>(14, 7) },
                     { "Eitr", new Tuple<int, int>(12, 6) },
-                },
-                new Dictionary<string, bool>()
-                {
                 }
             );
 
@@ -2067,9 +2041,6 @@ namespace ValheimArmory
                     { "Guck", new Tuple<int, int>(12, 8) },
                     { "LeatherScraps", new Tuple<int, int>(8, 4) },
                     { "TrophyBlob", new Tuple<int, int>(2, 1) },
-                },
-                new Dictionary<string, bool>()
-                {
                 }
             );
 
@@ -2101,9 +2072,6 @@ namespace ValheimArmory
                     { "GreydwarfEye", new Tuple<int, int>(24, 18) },
                     { "LeatherScraps", new Tuple<int, int>(8, 4) },
                     { "TrophyGreydwarfShaman", new Tuple<int, int>(2, 1) },
-                },
-                new Dictionary<string, bool>()
-                {
                 }
             );
 
@@ -2133,9 +2101,6 @@ namespace ValheimArmory
                     { "Crystal", new Tuple<int, int>(18, 12) },
                     { "JuteRed", new Tuple<int, int>(8, 4) },
                     { "TrophyHatchling", new Tuple<int, int>(2, 1) },
-                },
-                new Dictionary<string, bool>()
-                {
                 }
             );
 
@@ -2167,9 +2132,6 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(12, 8) },
                     { "JuteRed", new Tuple<int, int>(8, 4) },
                     { "TrophyGoblinShaman", new Tuple<int, int>(1, 1) },
-                },
-                new Dictionary<string, bool>()
-                {
                 }
             );
         }
@@ -2199,7 +2161,7 @@ namespace ValheimArmory
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(4, 0, 50, true) },
                     { "secondary_attack_flat_health_cost", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "secondary_attack_percent_health_cost", new Tuple<float, float, float, bool>(0, 0, 50, true) },
-                    
+
                     { "secondary_attack_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
                 },
                 new Dictionary<string, bool>() { },
@@ -2209,9 +2171,6 @@ namespace ValheimArmory
                     { "BoneFragments", new Tuple<int, int>(20, 14) },
                     { "Bronze", new Tuple<int, int>(4, 2) },
                     { "TrophySkeleton", new Tuple<int, int>(2, 0) },
-                },
-                new Dictionary<string, bool>()
-                {
                 }
             );
         }
@@ -2251,8 +2210,8 @@ namespace ValheimArmory
 
     class ValArmoryItem
     {
-        String[] allowed_catagories = {"Arrows", "Atgeirs", "Axes", "Bows", "Hammers", "Shields", "Swords", "Spears", "Daggers", "Maces", "Fists", "Pickaxes", "Magics" };
-        String[] damage_types = {"blunt", "pierce", "slash", "fire", "spirit", "lightning", "frost", "poison", "chop" };
+        String[] allowed_catagories = { "Arrows", "Atgeirs", "Axes", "Bows", "Hammers", "Shields", "Swords", "Spears", "Daggers", "Maces", "Fists", "Pickaxes", "Magics" };
+        String[] damage_types = { "blunt", "pierce", "slash", "fire", "spirit", "lightning", "frost", "poison", "chop" };
         String[] crafting_stations = { "forge", "piece_workbench", "blackforge", "piece_artisanstation" };
         /// <summary>
         /// 
@@ -2268,9 +2227,13 @@ namespace ValheimArmory
             Dictionary<String, Tuple<float, float, float, bool>> itemdata,
             Dictionary<String, bool> itemtoggles,
             Dictionary<String, Tuple<int, int>> recipedata,
-            Dictionary<String, bool> scriptdata
+            Dictionary<String, int> itemsettings = null,
+            Dictionary<String, bool> scriptdata = null
             )
         {
+            // Set defaults up
+            if (itemsettings == null) itemsettings = new Dictionary<String, int>();
+            if (scriptdata == null) scriptdata = new Dictionary<String, bool>();
             // Validate inputs are valid
             if (!allowed_catagories.Contains(metadata["catagory"])) { throw new ArgumentException($"Catagory {metadata["catagory"]} must be an allowed catagory: {allowed_catagories}"); }
             if (!metadata.ContainsKey("name")) { throw new ArgumentException($"Item must have a name"); }
@@ -2307,12 +2270,15 @@ namespace ValheimArmory
                 //        prefab.AddComponent<EtirBuff>(); 
                 //    }
                 //}
-                
+
 
                 // modify item/recipe
                 if (VAConfig.EnableDebugMode.Value == true) { Logger.LogDebug($"Modifying itemdata for {metadata["name"]}, applying configured values."); }
                 ModifyItemData(prefab.GetComponent<ItemDrop>()?.m_itemData, itemdata);
                 ModifyItemFlags(prefab.GetComponent<ItemDrop>().m_itemData, itemtoggles);
+
+                // Default the min station level if it is not set
+                if (!itemsettings.ContainsKey("stationRequiredLevel")) { itemsettings["stationRequiredLevel"] = 1; }
 
                 // Add the recipe with helper
                 RequirementConfig[] recipe = new RequirementConfig[recipedata.Count];
@@ -2327,6 +2293,7 @@ namespace ValheimArmory
                 {
                     Amount = (int)itemdata["amount"].Item1,
                     CraftingStation = $"{metadata["craftedAt"]}",
+                    MinStationLevel = itemsettings["stationRequiredLevel"],
                     Enabled = itemtoggles["craftable"],
                     Icons = new[] { sprite },
                     Requirements = recipe
@@ -2334,7 +2301,7 @@ namespace ValheimArmory
                 if (VAConfig.EnableDebugMode.Value == true) { Logger.LogDebug($"Setting Recipe Data: {recipe.ToArray()}"); }
                 AddRecipeForAsset($"VA{metadata["short_item_name"]}", prefab, itemcfg);
             }
-            else 
+            else
             {
                 if (VAConfig.EnableDebugMode.Value == true) { Logger.LogDebug($"{metadata["name"]} is not enabled, and was not loaded."); }
             }
@@ -2364,9 +2331,10 @@ namespace ValheimArmory
                 if (VAConfig.EnableDebugMode.Value) { Logger.LogInfo($"Modifying boolflag {entry.Key}"); }
                 String cfg_description = $"{entry.Key} enable(true)/disable(false).";
                 bool advanced = true;
-                if (entry.Key == "enabled") {
+                if (entry.Key == "enabled")
+                {
                     cfg_description = $"Enable/Disable the {metadata["name"]}.";
-                    advanced = false; 
+                    advanced = false;
                 }
                 if (entry.Key == "craftable")
                 {
@@ -2389,7 +2357,7 @@ namespace ValheimArmory
                 int max_value = 200;
                 int min_value = 0;
                 float current_itemdata_value;
-                
+
                 if (damage_types.Contains(entry.Key)) { description = $"{entry.Key} ({min_value}-{max_value}) Damage Value"; } else { description = $"{entry.Key} ({min_value}-{max_value}) Value"; }
                 current_itemdata_value = VAConfig.BindServerConfig($"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-{entry.Key}", entry.Value.Item1, $"{description}", true, entry.Value.Item2, entry.Value.Item3).Value;
                 Tuple<float, float, float, bool> cfg_update_tuple = new Tuple<float, float, float, bool>(current_itemdata_value, entry.Value.Item2, entry.Value.Item3, true);
@@ -2404,7 +2372,7 @@ namespace ValheimArmory
             }
             // Recipe Configs
             String recipe_cfg = "";
-            foreach (KeyValuePair < string, Tuple <int, int>> entry in recipedata)
+            foreach (KeyValuePair<string, Tuple<int, int>> entry in recipedata)
             {
                 if (recipe_cfg.Length > 0) { recipe_cfg += "|"; }
                 recipe_cfg += $"{entry.Key},{entry.Value.Item1},{entry.Value.Item2}";
@@ -2450,7 +2418,7 @@ namespace ValheimArmory
             }
         }
 
-        
+
 
         /// <summary>
         ///  helper to add a recipe
@@ -2482,14 +2450,14 @@ namespace ValheimArmory
         // All weapons/armor with these damage modifiers should not have any to begin with
         private void ModifyItemFlags(ItemDrop.ItemData item, Dictionary<String, bool> itemtoggles)
         {
-            foreach(KeyValuePair<String, Boolean> entry in itemtoggles)
+            foreach (KeyValuePair<String, Boolean> entry in itemtoggles)
             {
                 // Skip toggles which are applied as part of adding the item
-                if(entry.Key == "craftable" || entry.Key == "enabled")
+                if (entry.Key == "craftable" || entry.Key == "enabled")
                 {
                     continue;
                 }
-                if(entry.Value == false) { continue; }
+                if (entry.Value == false) { continue; }
 
                 switch (entry.Key)
                 {
@@ -2655,7 +2623,7 @@ namespace ValheimArmory
                         item.m_shared.m_attack.m_reloadTime *= (entry.Value.Item1 / 100);
                         break;
                     default:
-                    break;
+                        break;
                 }
             }
         }
