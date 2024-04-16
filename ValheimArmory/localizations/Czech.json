@@ -98,7 +98,6 @@
   "item_sledge_elder": "Kulový kladivo",
   "item_sledge_elder_description": "Obrovský kámen držený živými vinnými rostlinami srostlými s krví staršího samotného.",
   "item_elder_roundshield": "Vinný štít",
-  "item_elder_roundshield_description": "Rostliny srostlé s krví staršího.",
   "item_crossbow_elder": "Vinná kuše",
   "item_crossbow_elder_description": "Živé rostliny napnuté pro kuši, doufejme, že už dál nerostou.",
   "item_elder_mace": "Vinné kyj",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Draková mrazivá kuše",
   "item_crossbow_moder_description": "Dvojitý složený luk poháněný jádrem Moderiných slz.",
   "item_moder_buckler": "Drakový mrazivý štít",
-  "item_moder_buckler_description": "Vyrytý drakům krev tento štít neustále vydává střední teplotu, dělá jeho uživatele velmi odolným proti zmrazování a mírně odolným proti popálení.",
   "item_yagluth_atgeir": "Goblinův královský atgeir",
   "item_yagluth_atgeir_description": "Fragment koruny Yaglutha, namontovaný na kopí. Stále vydává neumírající ohnivý hněv.",
   "item_yagluth_greatsword": "Goblinův královský velký meč",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Ne tak ostrý jako ostatní šípy, ale způsobí nepříjemný řez bez ohledu na to.",
   "item_bolt_silver_frost_description": "Stříbrné šrouby, uzavřené v ledu smrtelné pro ohnivé a mrtvé.",
   "item_silver_atgeir_description": "Obrovská stříbrná čepel opatřená obsidiánem, zbraň lovců bestií.",
-  "item_iron_greatsword_description": "Velké hrubé železné čepel s opracovanou kamennou rukojetí. S dostatečně velkou čepelí zemře cokoli."
+  "item_iron_greatsword_description": "Velké hrubé železné čepel s opracovanou kamennou rukojetí. S dostatečně velkou čepelí zemře cokoli.",
+  "item_elder_roundshield_description": "Vinné révy splynuly s krví staršího. Sníží zablokované tupé zranění.",
+  "item_moder_buckler_description": "Vrypaný dračí krví tento štít snižuje újmu mrazu při blokování."
 }

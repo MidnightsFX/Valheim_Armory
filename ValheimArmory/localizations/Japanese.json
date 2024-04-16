@@ -98,7 +98,6 @@
   "item_sledge_elder": "蔓のそり",
   "item_sledge_elder_description": "巨大な石が生きているつるによって保持され、その中にはエルダー自体の血が融合している。",
   "item_elder_roundshield": "Vine shield \nぶどうの盾 (Budō no tate)",
-  "item_elder_roundshield_description": "「古代の血と融合したブドウのつる。」",
   "item_crossbow_elder": "「つる弓」",
   "item_crossbow_elder_description": "「クロスボウ用に張られた生きているつる。もうこれ以上伸びないでほしい。」",
   "item_elder_mace": "ヴァインメイス",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "ドラゴンフロストクロスボウ\nありがとうございます",
   "item_crossbow_moder_description": "「モーダーの涙のコアで動力を得るダブルコンパウンドボウ。」",
   "item_moder_buckler": "ドラゴンフロスト バックラー",
-  "item_moder_buckler_description": "龍の血で刻まれたこの盾は常に適度な温度を放ち、その使用者を凍結に高度に耐性を持たせ、燃焼には少し耐性を持たせます。",
   "item_yagluth_atgeir": "ゴブリンキングアトゲイル",
   "item_yagluth_atgeir_description": "「ヤグルスの王冠の一部、やりに取り付けられています。それはまだ消えない炎の怒りを放っています。」\n\n了解しました。",
   "item_yagluth_greatsword": "ゴブリンキングの大剣\nゴブリンキングの大剣は非常に強力です。",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "他の矢ほど鋭くはありませんが、それでも不快な切り傷を引き起こします。",
   "item_bolt_silver_frost_description": "銀のボルト、氷に包まれ、炎と死者にとって致命的。",
   "item_silver_atgeir_description": "「黒曜石で支えられた巨大な銀の刃、獣狩りの武器。」",
-  "item_iron_greatsword_description": "大きな荒々しい鉄の刃と石でできた柄。十分に大きな刃なら、何でも死ぬ。 大きな荒々しい鉄の刃と石でできた柄。十分に大きな刃なら、何でも死ぬ。"
+  "item_iron_greatsword_description": "大きな荒々しい鉄の刃と石でできた柄。十分に大きな刃なら、何でも死ぬ。 大きな荒々しい鉄の刃と石でできた柄。十分に大きな刃なら、何でも死ぬ。",
+  "item_elder_roundshield_description": "「長老の血と融合したつる。ブロックされた鈍器のダメージを軽減する。」",
+  "item_moder_buckler_description": "「竜の血で刻まれたこの盾は、ブロックしながら霜のダメージを軽減します。」"
 }

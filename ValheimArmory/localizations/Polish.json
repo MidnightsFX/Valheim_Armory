@@ -98,7 +98,6 @@
   "item_sledge_elder": "Saneczki winogronowe",
   "item_sledge_elder_description": "Olbrzymi kamień trzymany przez żywe pnącza złączone z krwią samego Starszego.",
   "item_elder_roundshield": "Tarcza winorośli",
-  "item_elder_roundshield_description": "Winorośl zroszona krwią Starszego.",
   "item_crossbow_elder": "Krzyżowy kusza",
   "item_crossbow_elder_description": "Żywe winorośle naciągnięte na kuszę, mam nadzieję, że już więcej nie urosną.",
   "item_elder_mace": "Winogronowy maczug",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Kusza smoczych mrozów",
   "item_crossbow_moder_description": "Podwójny łuk złożony napędzany rdzeniem łez Moder.",
   "item_moder_buckler": "Tarcza smoczego mrozu",
-  "item_moder_buckler_description": "Zaklęty krwią smoka ten tarcza wydziela umiarkowaną temperaturę przez cały czas, sprawiając, że jego użytkownik jest bardzo odporny na zamrażanie i w mniejszym stopniu odporny na spalanie.",
   "item_yagluth_atgeir": "Król goblinów Atgeir",
   "item_yagluth_atgeir_description": "Fragment korony Yaglutha, zamocowany na piku. Wciąż wydziela nieustający ognisty gniew.",
   "item_yagluth_greatsword": "Greatsword króla goblinów",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Nie tak ostry jak inne strzały, ale i tak powoduje brzydkie cięcie.",
   "item_bolt_silver_frost_description": "Srebrne śruby, osadzone w lodzie, śmiertelne dla ognistych i zmarłych.",
   "item_silver_atgeir_description": "Olbrzymi srebrny ostrze wzmocnione obsydianem, broń łowców bestii.",
-  "item_iron_greatsword_description": "Duża szorstka żelazna klinga z obrobionym kamieniem rękojeści. Z wystarczająco dużą klingą wszystko umiera."
+  "item_iron_greatsword_description": "Duża szorstka żelazna klinga z obrobionym kamieniem rękojeści. Z wystarczająco dużą klingą wszystko umiera.",
+  "item_elder_roundshield_description": "Winorośli zlewa się z krwią Starszego. Zmniejsza zablokowane obrażenia tępe.",
+  "item_moder_buckler_description": "Wydłubane z krwi smoków, tarcza ta redukuje obrażenia od mrozu podczas blokowania."
 }

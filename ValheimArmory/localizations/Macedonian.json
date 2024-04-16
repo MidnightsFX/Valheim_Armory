@@ -98,7 +98,6 @@
   "item_sledge_elder": "Црвено распоред",
   "item_sledge_elder_description": "Гигантско каме полесно од живи црви споени со крвта на самото старците.",
   "item_elder_roundshield": "Црвен щит",
-  "item_elder_roundshield_description": "Црвите споени со крвта на старците.",
   "item_crossbow_elder": "Црвен арбалет",
   "item_crossbow_elder_description": "Живи црви поврзани за арбалет, надевам се повеќе не растат.",
   "item_elder_mace": "Црвен прут",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Змајски арбалет",
   "item_crossbow_moder_description": "Двој",
   "item_moder_buckler": "Буклер на драконска мраз",
-  "item_moder_buckler_description": "Вграден со крвта на змејовите, овој штит испушта умерена температура секогаш, правејќи го неговиот корисник високо резистентен на замрзнување и малку резистентен на горење.",
   "item_yagluth_atgeir": "Гоблин крал атгеир",
   "item_yagluth_atgeir_description": "Фрагмент од круната на Јаглут, монтиран на шилица. Сè уште испушта безсмртна огнена јарост.",
   "item_yagluth_greatsword": "Гоблински кралски меч",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Не толку остари како другите стрели, но предизвикува непријатна рана во секој случај.",
   "item_bolt_silver_frost_description": "Сребрени затвори, завиткани во лед, смртоносни за ватрените и мртвите.",
   "item_silver_atgeir_description": "Големо сребрено сечиво стегнато со обсидијан, оружје на ловци на ѕверови.",
-  "item_iron_greatsword_description": "Големо грубо железно сечиво со издлабен каменен држач. Со доволно големо сечиво, сè умира.Please let me know if you need anything else."
+  "item_iron_greatsword_description": "Големо грубо железно сечиво со издлабен каменен држач. Со доволно големо сечиво, сè умира.Please let me know if you need anything else.",
+  "item_elder_roundshield_description": "Лозјата се споени со крвта на Старецот. Намалува блокираните оштетувања.",
+  "item_moder_buckler_description": "Изгорен со крвта на змија, овој штит го намалува мразот додека блокира."
 }

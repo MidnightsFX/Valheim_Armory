@@ -64,7 +64,6 @@
   "item_sledge_elder": "古树精华",
   "item_sledge_elder_description": "藤蔓所撑起的巨石，融合了古树长老之血.",
   "item_elder_roundshield": "古树壁垒",
-  "item_elder_roundshield_description": "浸满古树长老的木头.",
   "item_crossbow_elder": "古树藤蔓",
   "item_crossbow_elder_description": "藤蔓缠绕在强弩之上，希望它们别再长了.",
   "item_bonemass_warhammer": "邪骨之恨",
@@ -120,7 +119,6 @@
   "va_modershield_resistance": "这些元素似乎更容易忍受。",
   "va_modershield_resistance_description": "莫德的盾牌让你对寒冷有很大的抵抗力，对火焰有一点抵抗力。",
   "item_moder_buckler": "龙霜圆盾",
-  "item_moder_buckler_description": "用龙血刻上的盾牌一直散发着适度的温度，使其使用者高度抗寒，并且略微抵抗燃烧。",
   "item_yagluth_atgeir": "哥布林国王阿特吉尔",
   "item_yagluth_atgeir_description": "雅格鲁斯王冠的一部分，安装在长矛上。它仍然散发着不灭的愤怒之火。",
   "item_yagluth_greatsword": "鬼王大剑",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "不像其他箭头那么锋利，但它仍然会造成恶劣的伤口。",
   "item_bolt_silver_frost_description": "银箭，被冰封，对火焰和死者致命。",
   "item_silver_atgeir_description": "一把巨大的银刃，镶嵌着黑曜石，是猎兽者的武器。",
-  "item_iron_greatsword_description": "一把粗犷的铁刃，石柄。有了足够大的刀刃，任何东西都会死。Translated response: 有了足够大的刀刃，任何东西都会死。"
+  "item_iron_greatsword_description": "一把粗犷的铁刃，石柄。有了足够大的刀刃，任何东西都会死。Translated response: 有了足够大的刀刃，任何东西都会死。",
+  "item_elder_roundshield_description": "藤蔓融合了长者的血液。减少被阻挡的钝器伤害。",
+  "item_moder_buckler_description": "带有龙血的刻痕，这个盾牌在格挡时减少冰霜伤害。"
 }

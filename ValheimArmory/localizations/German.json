@@ -98,7 +98,6 @@
   "item_sledge_elder": "Rebenhammer",
   "item_sledge_elder_description": "Ein riesiger Stein, gehalten von lebenden Reben, verschmolzen mit dem Blut des Ältesten selbst.",
   "item_elder_roundshield": "Rebenschutzschild",
-  "item_elder_roundshield_description": "Reben, verschmolzen mit dem Blut des Ältesten.",
   "item_crossbow_elder": "Rebenarmbrust",
   "item_crossbow_elder_description": "Lebende Reben für eine Armbrust gespannt, hoffentlich wachsen sie nicht weiter.",
   "item_elder_mace": "Rebenkeule",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Drachenfrostarmbrust",
   "item_crossbow_moder_description": "Ein doppelter Compoundbogen, angetrieben von einem Kern aus Moders Tränen.",
   "item_moder_buckler": "Drachenfrostbuckler",
-  "item_moder_buckler_description": "Mit Drachenblut graviert, strahlt dieser Schild eine moderate Temperatur aus, die seinen Nutzer hochresistent gegen Frost und leicht resistent gegen Verbrennungen macht.",
   "item_yagluth_atgeir": "Goblin-König Atgeir",
   "item_yagluth_atgeir_description": "Ein Fragment von Yagluths Krone, montiert auf einem Piken. Es strahlt immer noch eine unsterbliche feurige Wut aus.",
   "item_yagluth_greatsword": "Großschwert des Goblin-Königs",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Nicht so scharf wie andere Pfeile, aber es verursacht trotzdem einen bösen Schnitt.",
   "item_bolt_silver_frost_description": "Silberne Bolzen, eingehüllt in Eis, tödlich für das Feurige und Tote.",
   "item_silver_atgeir_description": "Ein riesiges silbernes Schwert, verstärkt mit Obsidian, eine Waffe für Tierjäger.",
-  "item_iron_greatsword_description": "Ein grobes Eisenmesser mit einem behauenen Steinheft. Mit einer großen genug Klinge stirbt alles."
+  "item_iron_greatsword_description": "Ein grobes Eisenmesser mit einem behauenen Steinheft. Mit einer großen genug Klinge stirbt alles.",
+  "item_elder_roundshield_description": "Reben verschmolzen mit dem Blut der Ältesten. Reduziert blockierten stumpfen Schaden.",
+  "item_moder_buckler_description": "Graviert mit Drachenblut reduziert dieses Schild den Frostschaden beim Blocken."
 }

@@ -98,7 +98,6 @@
   "item_sledge_elder": "Marreta de vinha",
   "item_sledge_elder_description": "Uma pedra gigante segurada por vinhas vivas fundidas com o sangue do próprio Ancião.",
   "item_elder_roundshield": "Escudo redondo do Ancião",
-  "item_elder_roundshield_description": "Vinhas fundidas com o sangue do Ancião.",
   "item_crossbow_elder": "Besta de vinha",
   "item_crossbow_elder_description": "Vinhas vivas esticadas para uma besta, esperançosamente elas não crescem mais.",
   "item_elder_mace": "Maça do Ancião",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Besta de gelo do dragão",
   "item_crossbow_moder_description": "Um arco composto duplo alimentado por um núcleo das lágrimas de Moder.",
   "item_moder_buckler": "Escudo de gelo do dragão",
-  "item_moder_buckler_description": "Gravado com sangue de dragão, este escudo emite uma temperatura moderada o tempo todo, tornando seu usuário altamente resistente ao congelamento e levemente resistente a queimaduras.",
   "item_yagluth_atgeir": "Atgeir do rei goblin",
   "item_yagluth_atgeir_description": "Um fragmento da coroa de Yagluth, montado em uma lança. Ainda emite uma raiva ardente e imortal.",
   "item_yagluth_greatsword": "Grande espada do rei goblin",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Não tão afiada como outras flechas, mas causa um corte desagradável mesmo assim.",
   "item_bolt_silver_frost_description": "Parafusos de prata, envoltos em gelo mortal para o fogo e os mortos.",
   "item_silver_atgeir_description": "Uma enorme lâmina de prata reforçada com obsidiana, uma arma de caçadores de bestas.",
-  "item_iron_greatsword_description": "Uma grande lâmina áspera de ferro com um punho de pedra talhada. Com uma lâmina grande o suficiente, tudo morre."
+  "item_iron_greatsword_description": "Uma grande lâmina áspera de ferro com um punho de pedra talhada. Com uma lâmina grande o suficiente, tudo morre.",
+  "item_elder_roundshield_description": "Vides fundidas com o sangue do Ancião. Reduz o dano contundente bloqueado.",
+  "item_moder_buckler_description": "Gravado com o sangue de dragão, este escudo reduz o dano de geada ao bloquear."
 }

@@ -98,7 +98,6 @@
   "item_sledge_elder": "Viinivasara",
   "item_sledge_elder_description": "Jättiläismäinen kivi, jota elävät viiniköynnökset ovat yhdistäneet itse Vanhimman veren kanssa.",
   "item_elder_roundshield": "Viinikilpi",
-  "item_elder_roundshield_description": "Viiniköynnökset yhdistettynä Vanhimman vereen.",
   "item_crossbow_elder": "Viiniristipyssy",
   "item_crossbow_elder_description": "Elävät viiniköynnökset ristipyssyksi pujotettuna, toivottavasti ne eivät kasva enempää.",
   "item_elder_mace": "Viinimiekka",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Lohikäärmeenjääristipyssy",
   "item_crossbow_moder_description": "Kaksoisjousi, joka on voimautettu Moderin kyyneleiden ytimellä.",
   "item_moder_buckler": "Lohikäärmeenjääkilpi",
-  "item_moder_buckler_description": "Kaiverrettu lohikäärmeen verellä, tämä kilpi lähettää kohtuullisen lämpötilan koko ajan, tehden sen käyttäjästä erittäin kestävän jäätymiselle ja vähän kestävän palamiselle.",
   "item_yagluth_atgeir": "Kääpiökuninkaan atgeir",
   "item_yagluth_atgeir_description": "Pala Yagluthin kruunusta, kiinnitetty piikkiin. Se yhä säteilee kuolematonta tulista vihaa.",
   "item_yagluth_greatsword": "Kääpiökuninkaan suurmiekka",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Ei niin terävä kuin muut nuolet, mutta se aiheuttaa ikävän haavan silti.",
   "item_bolt_silver_frost_description": "Hopeanuolia, jäällä peitettyinä, tappavia tulisille ja kuolleille.",
   "item_silver_atgeir_description": "Valtava hopeinen terä, joka on tuettu obsidiaanilla, petometsästäjän ase.",
-  "item_iron_greatsword_description": "Suuri karkea rautaterä hiotulla kivikahvalla. Tarpeeksi suurella terällä mikä tahansa kuolee."
+  "item_iron_greatsword_description": "Suuri karkea rautaterä hiotulla kivikahvalla. Tarpeeksi suurella terällä mikä tahansa kuolee.",
+  "item_elder_roundshield_description": "Viiniköynnökset sulautuneet Vanhimman veren kanssa. Vähentää tukittua tylppää vahinkoa.",
+  "item_moder_buckler_description": "Kuvioitu lohikäärmeen verellä tämä kilpi vähentää jäätävää vahinkoa, kun sitä käytetään suojana."
 }

@@ -98,7 +98,6 @@
   "item_sledge_elder": "Masse de vigne",
   "item_sledge_elder_description": "Une pierre géante tenue par des vignes vivantes fusionnées avec le sang du Vieux lui-même.",
   "item_elder_roundshield": "Bouclier rond de vigne",
-  "item_elder_roundshield_description": "Des vignes fusionnées avec le sang du Vieux.",
   "item_crossbow_elder": "Arbalète de vigne",
   "item_crossbow_elder_description": "Des vignes vivantes tendues pour une arbalète, espérons qu'elles ne grandissent plus.",
   "item_elder_mace": "Masse de vigne",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Arbalète de gel de dragon",
   "item_crossbow_moder_description": "Un double arc composite alimenté par un noyau de larmes de Moder.",
   "item_moder_buckler": "Rondache de gel de dragon",
-  "item_moder_buckler_description": "Gravé avec le sang de dragons, ce bouclier émet une température modérée en permanence, rendant son utilisateur hautement résistant au gel et légèrement résistant à la brûlure.",
   "item_yagluth_atgeir": "Atgeir du roi gobelin",
   "item_yagluth_atgeir_description": "Un fragment de la couronne de Yagluth, monté sur une lance. Il émet toujours une colère ardente et indomptable.",
   "item_yagluth_greatsword": "Grande épée du roi gobelin",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Pas aussi tranchante que d'autres flèches mais elle cause quand même une coupure désagréable.",
   "item_bolt_silver_frost_description": "Boulons d'argent, enfermés dans la glace mortelle pour les êtres de feu et les morts.",
   "item_silver_atgeir_description": "Une énorme lame d'argent renforcée d'obsidienne, une arme de chasseur de bêtes.",
-  "item_iron_greatsword_description": "Une grande lame de fer rugueuse avec un manche en pierre taillée. Avec une lame assez grande, tout meurt."
+  "item_iron_greatsword_description": "Une grande lame de fer rugueuse avec un manche en pierre taillée. Avec une lame assez grande, tout meurt.",
+  "item_elder_roundshield_description": "Vignes fusionnées avec le sang de l'Aîné. Réduit les dégâts contondants bloqués.",
+  "item_moder_buckler_description": "Gravé avec du sang de dragon, ce bouclier réduit les dégâts de givre lorsqu'il bloque."
 }

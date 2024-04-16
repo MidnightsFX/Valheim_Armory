@@ -98,7 +98,6 @@
   "item_sledge_elder": "Vinsjeslede",
   "item_sledge_elder_description": "Et gigantisk stein holdt av levende vinstokker smeltet med eldrens eget blod.",
   "item_elder_roundshield": "Vin skjold",
-  "item_elder_roundshield_description": "Vintre fusjonert med eldres blod.",
   "item_crossbow_elder": "Vintre armbrøst",
   "item_crossbow_elder_description": "Levende vinstokker spent for en armbrøst, forhåpentligvis vokser de ikke mer.",
   "item_elder_mace": "Vingekølle",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Dragefrost armbrøst",
   "item_crossbow_moder_description": "En dobbel sammensatt bue drevet av en kjerne av Moderens tårer.",
   "item_moder_buckler": "Dragefrost skjold",
-  "item_moder_buckler_description": "Inngravert med drageblod avgir dette skjoldet en moderat temperatur til enhver tid, noe som gjør brukeren svært motstandsdyktig mot frysing og noe motstandsdyktig mot forbrenning.",
   "item_yagluth_atgeir": "Goblin konge atgeirThank you for your request. How can I assist you further?",
   "item_yagluth_atgeir_description": "Et fragment av Yagluths krone, montert på en pigg. Den avgir fortsatt en evig brennende sinne.",
   "item_yagluth_greatsword": "Goblin konge stor sverd",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Ikke så skarp som andre piler, men den forårsaker likevel et stygt kutt.",
   "item_bolt_silver_frost_description": "Sølvbolter, innkapslet i is dødelig for de brennende og døde.Takk!",
   "item_silver_atgeir_description": "Et stort sølvblad støttet med obsidian, et rovdyrjegers våpen.",
-  "item_iron_greatsword_description": "En stor grov jernsverd med en hugget steinhandtak. Med en stor nok klinge, dør alt."
+  "item_iron_greatsword_description": "En stor grov jernsverd med en hugget steinhandtak. Med en stor nok klinge, dør alt.",
+  "item_elder_roundshield_description": "Vinstokker smeltet sammen med eldres blod. Reduserer blokkert stump skade.",
+  "item_moder_buckler_description": "Skåret med drageblod, dette skjoldet reduserer frostskade mens det blokkerer."
 }

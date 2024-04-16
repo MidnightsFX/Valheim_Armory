@@ -98,7 +98,6 @@
   "item_sledge_elder": "Vinslägga",
   "item_sledge_elder_description": "En jättesten hållen av levande vin fuserad med Älderns blod.",
   "item_elder_roundshield": "Vinrundsköld",
-  "item_elder_roundshield_description": "Viner fuserade med Älderns blod.",
   "item_crossbow_elder": "Vinarmborst",
   "item_crossbow_elder_description": "Levande vin spänt för en armborst, förhoppningsvis växer de inte mer.",
   "item_elder_mace": "Vinmassa",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Drakfrostarmborst",
   "item_crossbow_moder_description": "En dubbelkompositbåge drivs av en kärna av Moders tårar.",
   "item_moder_buckler": "Drakfrosthandske",
-  "item_moder_buckler_description": "Ristad med drakblod avger denna sköld en måttlig temperatur hela tiden, vilket gör dess användare mycket motståndskraftig mot frysning och något motståndskraftig mot bränning.",
   "item_yagluth_atgeir": "Goblin kung atgeir",
   "item_yagluth_atgeir_description": "En fragment av Yagluths krona, monterad på en påle. Den avger fortfarande en outtröttlig eldig ilska.",
   "item_yagluth_greatsword": "Goblin kung storsvärd",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Inte lika vass som andra pilar men den orsakar ändå en otäck skärning.",
   "item_bolt_silver_frost_description": "Silverpilar, inneslutna i is dödliga för de eldiga och döda.",
   "item_silver_atgeir_description": "Ett enormt silverblad förstärkt med obsidian, en jägares vapen.",
-  "item_iron_greatsword_description": "Ett stort grovt järnblad med en huggen stenhilt. Med tillräckligt stort blad dör allting."
+  "item_iron_greatsword_description": "Ett stort grovt järnblad med en huggen stenhilt. Med tillräckligt stort blad dör allting.",
+  "item_elder_roundshield_description": "Växter förenade med de äldstes blod. Minskar blockerad trubbig skada.",
+  "item_moder_buckler_description": "Graverad med drakblod minskar detta sköld frostskador vid blockering."
 }

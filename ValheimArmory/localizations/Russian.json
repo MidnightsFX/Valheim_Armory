@@ -100,7 +100,6 @@
   "item_sledge_elder": "Оплетенная кувалда",
   "item_sledge_elder_description": "Гигантский камень, удерживаемый живыми лозами пропитанными кровью Древнего.",
   "item_elder_roundshield": "Оплетенный щит",
-  "item_elder_roundshield_description": "Кусок дерева, пропитанный кровью Древнего. Сгодится в качестве щита.",
   "item_crossbow_elder": "Оплетенный арбалет",
   "item_crossbow_elder_description": "Лозы Древнего послужили тетивой для этого арбалета, надеюсь, они больше не прорастут.",
   "item_elder_mace": "Оплетенная булава",
@@ -122,7 +121,6 @@
   "item_crossbow_moder": "Промерзший арбалет",
   "item_crossbow_moder_description": "Замерзший серебряный арбалет с частичкой души Матери.",
   "item_moder_buckler": "Промерзший баклер",
-  "item_moder_buckler_description": "Заледеневший щит напитаный кровью и болью Матери.",
   "item_yagluth_atgeir": "Алебарда короля Фуллингов",
   "item_yagluth_atgeir_description": "Фрагмент короны Яглута, насаженный на шест. Оно все еще пылает неугасаемым гневом падшего короля.",
   "item_yagluth_greatsword": "Меч короля Фулингов",
@@ -146,5 +144,7 @@
   "item_pickaxe_blood": "Кровавая костяная кирка",
   "item_pickaxe_blood_description": "Эта кирка кажется неестественно сильной и жаждет твоей крови.",
   "va_blood_sucker": "Кровавое безумие",
-  "va_blood_sucker_desc": "Твое оружие жаждет крови."
+  "va_blood_sucker_desc": "Твое оружие жаждет крови.",
+  "item_elder_roundshield_description": "Лозы слились с кровью Старейшины. Снижает заблокированный тупой урон.",
+  "item_moder_buckler_description": "Сгравированный драконьей кровью, этот щит снижает урон от мороза при блокировании. "
 }

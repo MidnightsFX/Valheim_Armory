@@ -98,7 +98,6 @@
   "item_sledge_elder": "Vinstorslæde",
   "item_sledge_elder_description": "En kæmpe sten holdt af levende vinstokke fusioneret med Elders blod selv.",
   "item_elder_roundshield": "Vinskjold",
-  "item_elder_roundshield_description": "Vinstokke fusioneret med Elders blod.",
   "item_crossbow_elder": "Vingekrydserbue",
   "item_crossbow_elder_description": "Levende vinstokke spændt til en krydserbue, forhåbentlig vokser de ikke mere.",
   "item_elder_mace": "Vinkølle",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Dragonfrost krydserbue",
   "item_crossbow_moder_description": "En dobbelt forstærket bue drevet af en kerne af Moderens tårer.",
   "item_moder_buckler": "Dragonfrost skjold",
-  "item_moder_buckler_description": "Indgraveret med drageblod udsender dette skjold en moderat temperatur til enhver tid og gør dens bruger meget modstandsdygtig over for frysning og mindre modstandsdygtig over for forbrænding.",
   "item_yagluth_atgeir": "Goblin konge atgeir",
   "item_yagluth_atgeir_description": "Et fragment af Yagluths krone, monteret på en pæl. Det udsender stadig en uddødelig ildfuld vrede.",
   "item_yagluth_greatsword": "Goblin konge storsværd",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Ikke så skarp som andre pile, men den forårsager alligevel et ubehageligt snit.",
   "item_bolt_silver_frost_description": "Sølvbolte, indkapslet i is dødeligt for det ildfulde og døde.",
   "item_silver_atgeir_description": "Et kæmpestort sølvblad forstærket med obsidian, et rovdyrjæger-våben.",
-  "item_iron_greatsword_description": "Et stort groft jernblad med en hugget stenhåndtag. Med en stor nok klinge dør alt."
+  "item_iron_greatsword_description": "Et stort groft jernblad med en hugget stenhåndtag. Med en stor nok klinge dør alt.",
+  "item_elder_roundshield_description": "Vinstokke fusioneret med de ældres blod. Reducerer blokeret stump skade.",
+  "item_moder_buckler_description": "Indgraveret med drageblod reducerer dette skjold frostskade mens det blokerer."
 }

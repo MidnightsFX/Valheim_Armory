@@ -98,7 +98,6 @@
   "item_sledge_elder": "덩굴 해머",
   "item_sledge_elder_description": "엘더의 피가 융합된 살아있는 덩굴이 붙잡고 있는 거대한 돌입니다.",
   "item_elder_roundshield": "덩굴 방패",
-  "item_elder_roundshield_description": "장로의 피가 융합된 덩굴입니다.",
   "item_crossbow_elder": "덩굴 석궁",
   "item_crossbow_elder_description": "석궁에 매달린 살아있는 덩굴, 더 이상 자라지 않기를 바랍니다.",
   "item_elder_mace": "덩굴 철퇴",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "드래곤 서리 석궁",
   "item_crossbow_moder_description": "모더의 눈물의 핵심으로 구동되는 이중 복합 활입니다.",
   "item_moder_buckler": "드래곤 서리 버클러",
-  "item_moder_buckler_description": "용의 피가 새겨져 있는 이 방패는 항상 적당한 온도를 방출하여 사용자가 동결에 대한 저항력이 높고 화상에 대한 저항력이 약간 높습니다.",
   "item_yagluth_atgeir": "고블린 왕의 에이트기르",
   "item_yagluth_atgeir_description": "파이크에 장착된 야글루스의 왕관 조각입니다. 여전히 꺼지지 않는 불같은 분노를 뿜어내고 있습니다.",
   "item_yagluth_greatsword": "고블린 왕의 대검",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "다른 화살만큼 날카롭지는 않지만 그래도 나쁜 상처를 남긴다.",
   "item_bolt_silver_frost_description": "은색 볼트, 얼음에 감싸여 불에게 치명적인 것은 죽은 자에게 치명적이다.",
   "item_silver_atgeir_description": "흑요석으로 보강된 거대한 은색 칼, 야수사냥꾼의 무기.",
-  "item_iron_greatsword_description": "깎아 만든 돌 손잡이가 달린 큰 날카로운 철검. 충분히 큰 칼이면 모든 것이 죽는다."
+  "item_iron_greatsword_description": "깎아 만든 돌 손잡이가 달린 큰 날카로운 철검. 충분히 큰 칼이면 모든 것이 죽는다.",
+  "item_elder_roundshield_description": "고인의 피와 융합된 덩굴. 막힌 둔기 피해를 줄입니다.",
+  "item_moder_buckler_description": "용의 피로 새겨진 이 방패는 눈 서릿 대미를 줄여주며 방어할 때 피해를 줄입니다.용의 피로 새겨진 이 방패는 눈 서릿 대미를 줄여주며 방어할 때 피해를 줄입니다."
 }

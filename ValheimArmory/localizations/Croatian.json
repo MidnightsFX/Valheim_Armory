@@ -98,7 +98,6 @@
   "item_sledge_elder": "Vinski čekić",
   "item_sledge_elder_description": "Gigantski kamen drže žive trske spojene s krvlju samog starca.",
   "item_elder_roundshield": "Vinski štit",
-  "item_elder_roundshield_description": "Trske spojene s krvlju starca.",
   "item_crossbow_elder": "Vinski samostrel",
   "item_crossbow_elder_description": "Žive trske nategnute za samostrel, nadamo se da se neće više rastu.",
   "item_elder_mace": "Starčev čekić",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Zmajev ledeni samostrel",
   "item_crossbow_moder_description": "Dvostruki kompozitni luk pokretan jezgrom Modrinih suza.",
   "item_moder_buckler": "Zmajevo oklopno štit",
-  "item_moder_buckler_description": "Ukrašen krvlju zmaja, ovaj štit ispušta umjerenu temperaturu u svakom trenutku, čineći svog korisnika visoko otpornim na smrzavanje i malo otpornim na paljenje.",
   "item_yagluth_atgeir": "Koplje goblina kralja",
   "item_yagluth_atgeir_description": "Komad Yagluthove krune, montiran na koplju. Još uvijek isijava neumornom vatrenom ljutnjom.",
   "item_yagluth_greatsword": "Mač goblina kralja",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Nije tako oštar kao druge strelice, ali ipak uzrokuje gadan rez.",
   "item_bolt_silver_frost_description": "Srebrni vijci, obavijeni ledom, smrtonosni za vatrenog i mrtvog.",
   "item_silver_atgeir_description": "Veliki srebrni mač oslonjen s obsidijanom, oružje lova na zvijeri.",
-  "item_iron_greatsword_description": "Veliki grub željezni oštrac s tesanim kamenim rukohvatom. S dovoljno velikim oštricom, sve umire."
+  "item_iron_greatsword_description": "Veliki grub željezni oštrac s tesanim kamenim rukohvatom. S dovoljno velikim oštricom, sve umire.",
+  "item_elder_roundshield_description": "Loze spojene s krvlju Starijeg. Smanjuje blokiranu tupu štetu.",
+  "item_moder_buckler_description": "Urezan s krvlju zmaja, ovaj štit smanjuje štetu od mraza prilikom blokiranja."
 }

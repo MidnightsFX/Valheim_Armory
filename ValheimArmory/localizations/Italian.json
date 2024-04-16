@@ -98,7 +98,6 @@
   "item_sledge_elder": "Martello di vite",
   "item_sledge_elder_description": "Una gigantesca pietra tenuta da viti viventi fuse con il sangue dell'Anziano stesso.",
   "item_elder_roundshield": "Scudo rotondo dell'anziano",
-  "item_elder_roundshield_description": "Viti fuse con il sangue dell'Anziano.",
   "item_crossbow_elder": "Balestra di vite",
   "item_crossbow_elder_description": "Viti viventi stringono una balestra, sperando che non crescano più.",
   "item_elder_mace": "Mazza di vite",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Balestra di dragogelo",
   "item_crossbow_moder_description": "Un doppio arco composito alimentato da un nucleo di lacrime di Moder.",
   "item_moder_buckler": "Scudo tondo di dragogelo",
-  "item_moder_buckler_description": "Inciso con il sangue dei draghi, questo scudo emette una moderata temperatura in ogni momento, rendendo il suo utilizzatore altamente resistente al congelamento e leggermente resistente alle ustioni.",
   "item_yagluth_atgeir": "Atgeir del re dei goblin",
   "item_yagluth_atgeir_description": "Un frammento della corona di Yagluth, montato su una picca. Emette ancora un'ira infuocata e immortale.",
   "item_yagluth_greatsword": "Grande spada del re dei goblin",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Non così affilata come altre frecce ma causa comunque una brutta ferita.",
   "item_bolt_silver_frost_description": "Bulloni d'argento, racchiusi in ghiaccio mortale per il fuoco e i morti.",
   "item_silver_atgeir_description": "Una enorme lama d'argento rinforzata con ossidiana, un'arma da cacciatore di bestie.",
-  "item_iron_greatsword_description": "Una grande lama di ferro grezzo con un'elsa di pietra tagliata. Con una lama abbastanza grande, qualsiasi cosa muore."
+  "item_iron_greatsword_description": "Una grande lama di ferro grezzo con un'elsa di pietra tagliata. Con una lama abbastanza grande, qualsiasi cosa muore.",
+  "item_elder_roundshield_description": "Viti fuse con il sangue degli Anziani. Riduce il danno contundente bloccato.",
+  "item_moder_buckler_description": "Inciso con il sangue di drago, questo scudo riduce i danni da gelo durante il blocco."
 }

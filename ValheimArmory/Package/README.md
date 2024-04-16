@@ -304,6 +304,10 @@ Q. Epic Loot doesn't automatically drop these weapons, what gives?
 Q. The bronze crossbow costs dragon tears?
 - A. Delete the config for the bronze crossbow (or your whole config file).
 
+Q. Why do some shields have resistances listed twice?
+ A. The first resistance listed is for the shield itself (blocking that damage type), the second resistance listed is an effect applied to the player (you take that type of damage, with the shield equiped).
+    Meaning that both are required if you want to be truly resistant to a particular damage type while having that item equiped.
+
 Q. Why does disabling the recipe do nothing?
 - A. You must have an item enabled, for the recipe disable flag to do anything. When an item is disabled it is completely removed from the game, so its recipe doesn't matter.
 

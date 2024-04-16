@@ -98,7 +98,6 @@
   "item_sledge_elder": "Vínný sánky",
   "item_sledge_elder_description": "Obrovský kameň držaný živými viničmi zlúčenými s krvou samotného Staršieho.",
   "item_elder_roundshield": "Vínný štít",
-  "item_elder_roundshield_description": "Vinič zlúčený s krvou starších.",
   "item_crossbow_elder": "Vinný kuše",
   "item_crossbow_elder_description": "Žijúce viničové reťaze napnuté na kuše, dúfajme, že už nebudú rásť.",
   "item_elder_mace": "Víno mačiek",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Krištáľový kuš Dragonfrost",
   "item_crossbow_moder_description": "Dvojitý kompozitný luk poháňaný jadrom Moderových slz.",
   "item_moder_buckler": "Drakový štít s mrazivým účinkom",
-  "item_moder_buckler_description": "Vyleptaný s krvou drakov, tento štít vždy vydáva miernu teplotu, čo robí jeho používateľa vysoko odolným voči zmrazeniu a mierne odolným voči popáleniu.",
   "item_yagluth_atgeir": "Král skřetů Atgeir",
   "item_yagluth_atgeir_description": "Fragment kráľovskej koruny Yaglutha, namontovaný na kopiji. Stále vysiela neustály, ohnivý hnev.",
   "item_yagluth_greatsword": "Goblinov kráľ veľký meč",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Nie je tak ostrý ako iné šípy, ale spôsobuje nepríjemný rez.",
   "item_bolt_silver_frost_description": "Strieborné skrutky, obalené ľadom smrteľné pre ohnivých a mŕtvych.",
   "item_silver_atgeir_description": "Obrovská strieborná čepeľ s obsidiánom, zbraň lovca príšer.",
-  "item_iron_greatsword_description": "Veľký hrubý železný čepeľ s opracovanou kamennou rukoväťou. S dostatočne veľkou čepeľou zomrie čokoľvek."
+  "item_iron_greatsword_description": "Veľký hrubý železný čepeľ s opracovanou kamennou rukoväťou. S dostatočne veľkou čepeľou zomrie čokoľvek.",
+  "item_elder_roundshield_description": "Vinič zlúčený s krvou Starších. Zníži blokované tupé zranenia.",
+  "item_moder_buckler_description": "Vyleptaný s krvou drakov tento štít znižuje poškodenie mrazom pri blokovaní."
 }

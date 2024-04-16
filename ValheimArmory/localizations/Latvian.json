@@ -98,7 +98,6 @@
   "item_sledge_elder": "Vīna sleja",
   "item_sledge_elder_description": "Milzīga akmens turēta dzīvās vīnogas saplūdušas ar paša Vecākās asinīm.",
   "item_elder_roundshield": "Vīna vairogs",
-  "item_elder_roundshield_description": "Vīnogas saplīsa ar vecākās asinīm.",
   "item_crossbow_elder": "Vīna šautene",
   "item_crossbow_elder_description": "Dzīvo vīnogulāji izstiepti kā šautene, cerams, tie vairs neneaug.",
   "item_elder_mace": "Vīnogulāju vāle",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Drakonu ledus bultmetenis",
   "item_crossbow_moder_description": "Dubultā samta lokš, kas darbināts ar Moderas asarām kodola.",
   "item_moder_buckler": "Drakona ledus vairogs",
-  "item_moder_buckler_description": "Šīs vairogs, izgravēts ar pūķa asinīm, vienmēr izstaro mērenu temperatūru, padarot tā lietotāju ļoti izturīgu pret salu un nedaudz pret dedzināšanu.",
   "item_yagluth_atgeir": "Goblīnu karalis atgeir",
   "item_yagluth_atgeir_description": "Yagluta krona fragments, uzmontēta uz ietvara. Tā joprojām izstaro nesamērīgu dedzīgu dusmu.",
   "item_yagluth_greatsword": "Goblinu karalja lielais zobens",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Nav tik asa kā citi bultas, bet tas izraisa nepatīkamu griezumu, neskatoties uz to.",
   "item_bolt_silver_frost_description": "Zelta skrūves, ieslodzītas ledā, nāvējošas pret ugunīgo un mirušo.",
   "item_silver_atgeir_description": "Milzīgs sudraba asi, nostiprināts ar obsidiānu, medītāju ierocis.",
-  "item_iron_greatsword_description": "Liela rupja dzelzs lama ar pārstrādātu akmeņu rokturi. Ar pietiekami lielu lāmi, viss nomirst."
+  "item_iron_greatsword_description": "Liela rupja dzelzs lama ar pārstrādātu akmeņu rokturi. Ar pietiekami lielu lāmi, viss nomirst.",
+  "item_elder_roundshield_description": "Vīnogas saplūst ar vecākās asinīm. Samazina bloķēto stumšu bojājumu.",
+  "item_moder_buckler_description": "Iegravēts ar pūķa asinīm šis vairogs samazina sala bojājumus, bloķējot."
 }

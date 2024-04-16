@@ -98,7 +98,6 @@
   "item_sledge_elder": "Vínumjöður",
   "item_sledge_elder_description": "Gigantískur steinn haldinn af lifandi vínum sameindaður við blóðið af Eldri sjálfri.",
   "item_elder_roundshield": "Vínuskjöldur",
-  "item_elder_roundshield_description": "Víngir festir við blóðið af Eldri.",
   "item_crossbow_elder": "Vínukrossbogi",
   "item_crossbow_elder_description": "Lifandi víngir spennir fyrir krossboga, vonandi vex þeir ekki meira.",
   "item_elder_mace": "Vínukefli",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Drakagjóska krossbogi",
   "item_crossbow_moder_description": "Tvöföldur samsettur bogi með kjarni af tárum Moderar.",
   "item_moder_buckler": "Drakagjóska skjöldur",
-  "item_moder_buckler_description": "Skreytt með drekablóði, þessi skjöldur flytur hæfilega hitastig á þessum tíma, gerir notanda sinn mjög mótsagnar við frystingu og minna við brennslu.",
   "item_yagluth_atgeir": "Goblin konungur atgeir",
   "item_yagluth_atgeir_description": "Biti af Yagluths kórónu, fest á spjót. Hann sýnir enn ódauða loga.",
   "item_yagluth_greatsword": "Goblin konungur mikilsverð",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Ekki jafn skörp og aðrar örvar en það veldur slæmu skurði þó.",
   "item_bolt_silver_frost_description": "Silfurboltar, huldir ís dauðlegt fyrir eldinga og dauða.",
   "item_silver_atgeir_description": "Eimur stór silfurblað haldið uppi með kísilsteini, vopn veiðimanna á villidýrum.",
-  "item_iron_greatsword_description": "Stór hröð járnsmiðja með höggðum steinhjalti. Með nógu stórum egg, deyr allt."
+  "item_iron_greatsword_description": "Stór hröð járnsmiðja með höggðum steinhjalti. Með nógu stórum egg, deyr allt.",
+  "item_elder_roundshield_description": "Vínir sameinast blóði öldunganna. Mínkar blóðtappaða skaða.",
+  "item_moder_buckler_description": "Grátið með drekablaðið þetta skjöldur minnkar frostáfall þegar hann blokkar."
 }

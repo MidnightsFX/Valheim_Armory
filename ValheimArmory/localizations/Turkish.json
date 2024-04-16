@@ -98,7 +98,6 @@
   "item_sledge_elder": "Sarmaşık çekiç",
   "item_sledge_elder_description": "Elder'ın kendisinin kanıyla birleşmiş canlı sarmaşıklarla birleştirilmiş dev bir taş.",
   "item_elder_roundshield": "Sarmaşık kalkanı",
-  "item_elder_roundshield_description": "Elder'ın kanıyla birleşmiş sarmaşıklar.",
   "item_crossbow_elder": "Sarmaşık crossbow",
   "item_crossbow_elder_description": "Canlı sarmaşıklarla gerilmiş bir crossbow, umarım daha fazla büyümezler.",
   "item_elder_mace": "Sarmaşık mızrağı",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Ejderha buz crossbow",
   "item_crossbow_moder_description": "Moder'ün gözyaşlarının bir çekirdek tarafından güçlendirilmiş çift bileşik yayla çalışan bir crossbow.",
   "item_moder_buckler": "Ejderha buz kalkanı",
-  "item_moder_buckler_description": "Ejderha kanıyla işlenmiş bu kalkan, her zaman ılık bir sıcaklık yayar, kullanıcısını donmaya karşı yüksek dirençli hale getirir.",
   "item_yagluth_atgeir": "Goblin kral atgeiri",
   "item_yagluth_atgeir_description": "Yagluth'un tacından bir parça, bir mızrağa monte edilmiş, hala ölmeyen bir ateş öfkesi yayar.",
   "item_yagluth_greatsword": "Goblin kral büyük kılıcı",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Diğer oklar kadar keskin değil ama yine de kötü bir kesik oluşturuyor.",
   "item_bolt_silver_frost_description": "Gümüş cıvatalar, buzla kaplanmış, ateşli ve ölülere ölümcül.",
   "item_silver_atgeir_description": "Bir yılanavcısı silahı olarak kullanılan devasa bir gümüş bıçak, obsidiyen ile desteklenmiş.",
-  "item_iron_greatsword_description": "Büyük, kaba bir demir bıçak ve yontulmuş taş bir kabza. Yeterince büyük bir bıçakla, her şey ölür."
+  "item_iron_greatsword_description": "Büyük, kaba bir demir bıçak ve yontulmuş taş bir kabza. Yeterince büyük bir bıçakla, her şey ölür.",
+  "item_elder_roundshield_description": "Sarmaşıklar, Yaşlı'nın kanıyla birleşti. Tıkanmış künt hasarı azaltır.",
+  "item_moder_buckler_description": "Ejderha kanı ile oyulmuş bu kalkan buz hasarını bloklarken azaltır.    Anladım, teşekkür ederim."
 }

@@ -98,7 +98,6 @@
   "item_sledge_elder": "Ciocan de vie",
   "item_sledge_elder_description": "O piatră gigant ținută de vițe vii fuzionate cu sângele bătrânului însuși.",
   "item_elder_roundshield": "Scut rotund de vie",
-  "item_elder_roundshield_description": "Vițe fuzionate cu sângele bătrânului.",
   "item_crossbow_elder": "Arbaletă de vie",
   "item_crossbow_elder_description": "Vițe vii întinse pentru o arbaletă, sperăm că nu cresc mai mult.",
   "item_elder_mace": "Buzdugan de vie",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Arbaletă dragonfrost",
   "item_crossbow_moder_description": "Un arc dublu compus alimentat de un nucleu de lacrimi de Moder.",
   "item_moder_buckler": "Scut dragonfrost",
-  "item_moder_buckler_description": "Gravat cu sângele dragonilor, acest scut emite o temperatură moderată în toate momentele, făcându-și utilizatorul foarte rezistent la îngheț și parțial rezistent la arsuri.",
   "item_yagluth_atgeir": "Atgeirul regelui goblin",
   "item_yagluth_atgeir_description": "Un fragment din coroana lui Yagluth, montat pe un par. Încă emite o furie nerăbdătoare.",
   "item_yagluth_greatsword": "Mare sabie a regelui goblin",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Nu atât de ascutită ca alte săgeți, dar provoacă o tăietură urâtă oricum.",
   "item_bolt_silver_frost_description": "Bulane de argint, învelite în gheață, mortale pentru cei fierbinți și morți.",
   "item_silver_atgeir_description": "Un imens cuțit de argint întărit cu obsidian, o armă a vânătorilor de fiare.",
-  "item_iron_greatsword_description": "O lamă mare de fier brut cu un mâner de piatră cioplită. Cu o lamă suficient de mare, orice moare."
+  "item_iron_greatsword_description": "O lamă mare de fier brut cu un mâner de piatră cioplită. Cu o lamă suficient de mare, orice moare.",
+  "item_elder_roundshield_description": "Vinele se fuzionează cu sângele Bătrânului. Reduce daunele contondente blocate.Mulțumesc!",
+  "item_moder_buckler_description": "Gravat cu sânge de dragon, acest scut reduce daunele de îngheț în timp ce blochează."
 }

@@ -98,7 +98,6 @@
   "item_sledge_elder": "Szőlőkalapács",
   "item_sledge_elder_description": "Egy hatalmas kő, melyet élő szőlőtőkékkel kötöttek össze az Ősi vérrel.",
   "item_elder_roundshield": "Szőlőpajzs",
-  "item_elder_roundshield_description": "Szőlőtőkék az Ősi vérrel összekötve.",
   "item_crossbow_elder": "Szőlőkötél kereszthajító",
   "item_crossbow_elder_description": "Élő szőlőtőkék húzva egy kereszthajítóhoz, remélhetőleg nem nőnek tovább.",
   "item_elder_mace": "Szőlőkalapács",
@@ -120,7 +119,6 @@
   "item_crossbow_moder": "Sárkányfagy kereszthajító",
   "item_crossbow_moder_description": "Egy dupla összetett íj, melyet Moder könnyeinek magja hajt.",
   "item_moder_buckler": "Sárkányfagy pajzs",
-  "item_moder_buckler_description": "Sárkányvérrel díszítve ez a pajzs állandó hőmérsékletet sugároz, nagymértékben ellenáll a fagyásnak, és kisebb mértékben a tüzeskedésnek.",
   "item_yagluth_atgeir": "Kobold király atgeir",
   "item_yagluth_atgeir_description": "Egy Yagluth koronájának darabja, egy lándzsára szerelve. Még mindig kibocsát egy örök tűzzel égő dühöt.",
   "item_yagluth_greatsword": "Kobold király nagykard",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "Nem olyan éles, mint a többi nyíl, de így is okoz egy kellemetlen vágást.",
   "item_bolt_silver_frost_description": "Vascsavarok, jéggel borítva halálosak a tűzre és a halottakra.",
   "item_silver_atgeir_description": "Egy hatalmas ezüst penge, melyet obszidiánnal díszítettek, egy vadászfegyver.",
-  "item_iron_greatsword_description": "Egy nagy, durva vaspenge egy faragott kő markolattal. Egy elég nagy pengevel bármi meghal."
+  "item_iron_greatsword_description": "Egy nagy, durva vaspenge egy faragott kő markolattal. Egy elég nagy pengevel bármi meghal.",
+  "item_elder_roundshield_description": "Csodás fürtök az Idősek vérrel összefonva. Csökkenti az elzáródott tompa sérüléseket.",
+  "item_moder_buckler_description": "Vésett sárkánvérrel ez a pajzs csökkenti a fagy károsítását blokkolás közben."
 }

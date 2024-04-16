@@ -64,7 +64,6 @@
   "item_sledge_elder": "古树精华",
   "item_sledge_elder_description": "藤蔓所撑起的巨石，融合了古树长老之血.",
   "item_elder_roundshield": "古树壁垒",
-  "item_elder_roundshield_description": "浸满古树长老的木头.",
   "item_crossbow_elder": "古树藤蔓",
   "item_crossbow_elder_description": "藤蔓缠绕在强弩之上，希望它们别再长了.",
   "item_bonemass_warhammer": "邪骨之恨",
@@ -120,7 +119,6 @@
   "va_modershield_resistance": "元素似乎更容易忍受。",
   "va_modershield_resistance_description": "莫德的盾牌賦予你極高的抗寒能力，以及較低的抗火能力。",
   "item_moder_buckler": "龍霜盾",
-  "item_moder_buckler_description": "用龍血刻上的盾牌一直散發著中等溫度，使使用者高度抗寒並且輕度抗火。",
   "item_yagluth_atgeir": "哥布林王阿特吉爾",
   "item_yagluth_atgeir_description": "Yagluth的王冠碎片，安裝在樁上。它依然散發著不死的烈焰憤怒。",
   "item_yagluth_greatsword": "鬼王巨劍",
@@ -146,5 +144,7 @@
   "item_arrow_chitin_description": "不像其他箭头那样锋利，但无论如何都会造成严重的伤口。",
   "item_bolt_silver_frost_description": "銀色的螺栓，被冰封死對火和死者有致命威脅。",
   "item_silver_atgeir_description": "一把镶有黑曜石的巨大銀刃，是狩獵野獸者的武器。",
-  "item_iron_greatsword_description": "一把大而粗糙的鐵刃，配有鑿石柄。有足夠大的刀片，任何東西都會死。"
+  "item_iron_greatsword_description": "一把大而粗糙的鐵刃，配有鑿石柄。有足夠大的刀片，任何東西都會死。",
+  "item_elder_roundshield_description": "藤蔓融合了長者的血液。減少被阻擋的鈍損傷害。",
+  "item_moder_buckler_description": "浸透龍血的盾牌能降低冰霜傷害並能擋住攻擊。"
 }
