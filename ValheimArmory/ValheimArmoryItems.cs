@@ -2044,6 +2044,7 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { "durability", new Tuple<float, float, float, bool>(50, 0, 500, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(10, 0, 75, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(35, 0, 50, true) },
                     { "primary_attack_eitr", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                 },
@@ -2079,6 +2080,7 @@ namespace ValheimArmory
                     { "blunt_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { "durability", new Tuple<float, float, float, bool>(50, 0, 500, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(10, 0, 75, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(35, 0, 50, true) },
                     { "primary_attack_eitr", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                 },
@@ -2112,6 +2114,7 @@ namespace ValheimArmory
                     { "frost_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { "durability", new Tuple<float, float, float, bool>(50, 0, 500, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(10, 0, 75, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(5, 0, 50, true) },
                     { "primary_attack_eitr", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                 },
@@ -2146,6 +2149,8 @@ namespace ValheimArmory
                     { "blunt", new Tuple<float, float, float, bool>(50, 0, 200, true) },
                     { "blunt_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
+                    { "durability", new Tuple<float, float, float, bool>(50, 0, 500, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(10, 0, 75, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(35, 0, 50, true) },
                     { "primary_attack_eitr", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                 },
@@ -2670,7 +2675,7 @@ namespace ValheimArmory
                         item.m_shared.m_maxDurability = (int)entry.Value.Item1;
                         break;
                     case "durability_per_level":
-                        item.m_shared.m_maxDurability = (int)entry.Value.Item1;
+                        item.m_shared.m_durabilityPerLevel = (int)entry.Value.Item1;
                         break;
                     case "movement_speed":
                         item.m_shared.m_movementModifier = (float)entry.Value.Item1 / 100;
