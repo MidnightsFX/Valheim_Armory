@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Drevna drvena strijela",
   "item_ancient_arrow_description": "Izgleda da se može raspasti u bilo kojem trenutku.",
   "item_arrow_chitin": "Kitin strijela",
-  "item_arrow_chitin_description": "Nije oštar kao druge strijele, ali ipak uzrokuje gadan rez.",
   "item_bolt_wood": "Corewood koplje",
   "item_bolt_wood_description": "Malčice više od oštrog štapa. Ako se snažno ispali, još uvijek boli!",
   "item_bolt_bronze": "Brončano koplje",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Željezno otrovno koplje",
   "item_bolt_iron_poison_description": "Oštra željezna strijela s vrhom otrova, ubrzava smrt.",
   "item_bolt_silver_frost": "Srebrno ledeno koplje",
-  "item_bolt_silver_frost_description": "Srebrne strijele, okovane ledom smrtonosne za vatrene i mrtve.",
   "item_bolt_surtling": "Crna metalna surtling strijela",
   "item_bolt_surtling_description": "Crni metalni jezgra s jezgrom surtling, ovo će 'zapaliti'.",
   "item_bolt_obsidian": "Obsidijansko koplje",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Kraljevski abisalni atgeir",
   "item_atgeir_chitin_heavy_description": "Oštri atgeir od kitina s srebrnom jezgrom, prikladan za najhrabrije vikinge.",
   "item_silver_atgeir": "Srebrni atgeir",
-  "item_silver_atgeir_description": "Ogromni srebrni mač s ojačanim obsidijanom, oružje lovačkog zvijeri.",
   "item_sledge_blackmetal": "Nebo razbijatelj",
   "item_sledge_blackmetal_description": "Teški komadi crnog metala spojeni sa gromovima. Izaziva udare munje. Ratni čekić vrijedan svoje težine",
   "item_battleaxe_flint": "Kremenasta velika sekira",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Brončani veliki mač",
   "item_bronze_greatsword_description": "Masivni brončani mač držan corewoodom, nije vrlo izdržljiv, ali prilično oštar.",
   "item_iron_greatsword": "Željezni veliki mač",
-  "item_iron_greatsword_description": "Veliki grub željezni mač s drvenom drškom. S dovoljno velikim mačem, bilo što umire.",
   "item_silver_greatsword": "Srebrni runički mač",
   "item_silver_greatsword_description": "Srebro kovano s kovanim željezom, ukrašeno runama za odbijanje mrtvih.",
   "item_dagger_flint_2h": "Kremenovi noževi",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Krvava kost ratnički odabir",
   "item_pickaxe_blood_description": "Ova kramp izgleda nenormalno snažno i gladno za tvojom krvlju.",
   "va_blood_sucker": "Krvavi bijes",
-  "va_blood_sucker_desc": "Vaše oružje žudi za krvlju."
+  "va_blood_sucker_desc": "Vaše oružje žudi za krvlju.",
+  "item_arrow_chitin_description": "Nije tako oštar kao druge strelice, ali ipak uzrokuje gadan rez.",
+  "item_bolt_silver_frost_description": "Srebrni vijci, obavijeni ledom, smrtonosni za vatrenog i mrtvog.",
+  "item_silver_atgeir_description": "Veliki srebrni mač oslonjen s obsidijanom, oružje lova na zvijeri.",
+  "item_iron_greatsword_description": "Veliki grub željezni oštrac s tesanim kamenim rukohvatom. S dovoljno velikim oštricom, sve umire."
 }

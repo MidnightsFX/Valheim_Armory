@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Uralter Holzpfeil",
   "item_ancient_arrow_description": "Sieht so aus, als könnte er jederzeit splittern.",
   "item_arrow_chitin": "Chitin-Pfeil",
-  "item_arrow_chitin_description": "Nicht so scharf wie andere Pfeile, aber er verursacht trotzdem eine böse Wunde.",
   "item_bolt_wood": "Kernholzbolzen",
   "item_bolt_wood_description": "Etwas mehr als ein spitzer Stock. Wird hart genug geschossen, tut es auch verdammt weh!",
   "item_bolt_bronze": "Bronzebolzen",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Eisen-Giftbolzen",
   "item_bolt_iron_poison_description": "Ein scharfer eiserner Bolzen, der mit Gift versetzt ist um den Tod zu beschleunigen.",
   "item_bolt_silver_frost": "Silberfrostbolzen",
-  "item_bolt_silver_frost_description": "Silberne Bolzen, umhüllt von Eis, tödlich für die Feurigen und Toten.",
   "item_bolt_surtling": "Schwarzmetallsurtlingbolzen",
   "item_bolt_surtling_description": "Ein Schwarzmetallkern der einen Surtlingkern enthält, das wird verdammt nochmal brennen.",
   "item_bolt_obsidian": "Obsidianbolzen",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Königliches Abyssatgeir",
   "item_atgeir_chitin_heavy_description": "Ein geschärftes Chitinatgeir mit einem Silberkern, geeignet für die mutigsten Wikinger.",
   "item_silver_atgeir": "Silberatgeir",
-  "item_silver_atgeir_description": "Eine riesige Silberklinge, verstärkt mit Obsidian, eine Waffen für Bestienjäger.",
   "item_sledge_blackmetal": "Himmelsspalter",
   "item_sledge_blackmetal_description": "Schwere Stücke aus Schwarzmetall, die mit Donnersteinen verschmolzen sind. Verursacht schwere Blitzeinschläge. Ein wahrer Kriegshammer!",
   "item_battleaxe_flint": "Großaxt aus Feuerstein",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Bronzenes Großschwert",
   "item_bronze_greatsword_description": "Eine massive Bronzeklinge, verstärkt mit Kernholz was nicht sonderlich langlebig aber Scharf ist.",
   "item_iron_greatsword": "Eisernes Großschwert",
-  "item_iron_greatsword_description": "Eine große Klinge aus rohem Eisen mit einem Griff aus behauenem Stein. Wenn die Klinge groß genug ist, stirbt alles.",
   "item_silver_greatsword": "Silbernes Runen-Großschwert",
   "item_silver_greatsword_description": "Mit Schmiedeeisen geschmiedetes Silber, verziert mit Runen zur Abwehr der Untoten.",
   "item_dagger_flint_2h": "Feuersteindolche",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Blutknochen-Kampfspitzhacke",
   "item_pickaxe_blood_description": "Diese Spitzhacke scheint unnatürlich stark zu sein und giert nach Blut.",
   "va_blood_sucker": "Blutrausch",
-  "va_blood_sucker_desc": "Deine Waffe giert nach Blut."
+  "va_blood_sucker_desc": "Deine Waffe giert nach Blut.",
+  "item_arrow_chitin_description": "Nicht so scharf wie andere Pfeile, aber es verursacht trotzdem einen bösen Schnitt.",
+  "item_bolt_silver_frost_description": "Silberne Bolzen, eingehüllt in Eis, tödlich für das Feurige und Tote.",
+  "item_silver_atgeir_description": "Ein riesiges silbernes Schwert, verstärkt mit Obsidian, eine Waffe für Tierjäger.",
+  "item_iron_greatsword_description": "Ein grobes Eisenmesser mit einem behauenen Steinheft. Mit einer großen genug Klinge stirbt alles."
 }

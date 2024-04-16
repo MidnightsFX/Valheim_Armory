@@ -8,7 +8,6 @@
   "item_ancient_arrow": "古代の木の矢",
   "item_ancient_arrow_description": "見たところ、いつでも砕けそうですね。",
   "item_arrow_chitin": "キチン矢",
-  "item_arrow_chitin_description": "他の矢ほど鋭くはないが、それでも不快な傷を負わせる。",
   "item_bolt_wood": "コアウッドボルト",
   "item_bolt_wood_description": "「尖った棒より少し大きい。 十分に強く撃つと、それでも痛い！」",
   "item_bolt_bronze": "銅のボルト\n(どうのボルト)",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "鉄の毒矢",
   "item_bolt_iron_poison_description": "毒で先の鋭い鉄のボルト、速やかな死。",
   "item_bolt_silver_frost": "銀の霜のボルト",
-  "item_bolt_silver_frost_description": "氷に覆われた銀のボルト、炎と死者にとって致命的です。",
   "item_bolt_surtling": "黒メタルのスルトリングボルト\nありがとう",
   "item_bolt_surtling_description": "ブラックメタルコアにサートリングコアを内蔵し、これは燃えるぞ。",
   "item_bolt_obsidian": "黒曜石のボルト\n黒曜石のボルト",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "王室の深海槍",
   "item_atgeir_chitin_heavy_description": "「銀の芯を持つ鋭いキチン製のアトゲイル、最も勇敢なバイキングに相応しい。」",
   "item_silver_atgeir": "銀のアトゲイル",
-  "item_silver_atgeir_description": "巨大な銀の刃が黒曜石で補強された、獣狩りの武器。",
   "item_sledge_blackmetal": "空の破壊者\n空の破壊者",
   "item_sledge_blackmetal_description": "黒い金属の重い塊が雷石と融合しています。雷を引き起こします。その重みに値する戦槌です。",
   "item_battleaxe_flint": "フリント・グレートアックス\nフリント・グレートアックス",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "ブロンズの大剣",
   "item_bronze_greatsword_description": "巨大な青銅の刃は、コアウッドで取り扱われており、非常に丈夫ではありませんがかなり鋭いです。",
   "item_iron_greatsword": "鉄の大剣",
-  "item_iron_greatsword_description": "大きな粗い鉄の刃と切り出された石の柄。 十分大きな刃なら、何でも死ぬ。",
   "item_silver_greatsword": "シルバーのルーン文字の大剣",
   "item_silver_greatsword_description": "鍛造された銀と鍛造鉄、アンデッドを防ぐルーンで飾られたもの。",
   "item_dagger_flint_2h": "燧石の短剣",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "血の骨のバトルピック",
   "item_pickaxe_blood_description": "このつるはしは異常に強く、あなたの血を求めています。",
   "va_blood_sucker": " 血の狂乱",
-  "va_blood_sucker_desc": "あなたの武器は血を求めています。（あなたの武器は血を求めています。）"
+  "va_blood_sucker_desc": "あなたの武器は血を求めています。（あなたの武器は血を求めています。）",
+  "item_arrow_chitin_description": "他の矢ほど鋭くはありませんが、それでも不快な切り傷を引き起こします。",
+  "item_bolt_silver_frost_description": "銀のボルト、氷に包まれ、炎と死者にとって致命的。",
+  "item_silver_atgeir_description": "「黒曜石で支えられた巨大な銀の刃、獣狩りの武器。」",
+  "item_iron_greatsword_description": "大きな荒々しい鉄の刃と石でできた柄。十分に大きな刃なら、何でも死ぬ。 大きな荒々しい鉄の刃と石でできた柄。十分に大きな刃なら、何でも死ぬ。"
 }

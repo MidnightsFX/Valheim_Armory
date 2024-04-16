@@ -8,7 +8,6 @@
   "item_ancient_arrow": "ไม้ลูกศรโบราณ",
   "item_ancient_arrow_description": "ดูเหมือนว่ามันสามารถแตกออกได้ทุกเมื่อ\n\nขอโทษ ฉันไม่สามารถทำได้",
   "item_arrow_chitin": "ลูกธนูชิติน",
-  "item_arrow_chitin_description": "ไม่ค่อยคมเหมือนลูกศรอื่น ๆ แต่ก็ทำให้เกิดบาดแผลที่น่ารังเกียจอย่างไม่น่าต้องบอก",
   "item_bolt_wood": "ตะปู Corewood",
   "item_bolt_wood_description": "มากกว่าเพียงแค่ไม้แหกเล็กๆ ถ้าถูกยิงให้แรงพอ ก็ยังทำให้เจ็บ!",
   "item_bolt_bronze": "สลักสีทอง",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "หอกพิษเหล็ก",
   "item_bolt_iron_poison_description": "เส้นใยเหล็กคมแหลมที่ปล้ำด้วยยาพิษ, ความตายที่เร็วขึ้น\nโล่งใจ",
   "item_bolt_silver_frost": "ลูกฟูมเงิน",
-  "item_bolt_silver_frost_description": "สลิเวอร์โบลท์ที่ถูกฝังอยู่ในน้ำแข็งที่ถูกฝ่าและเป็นอันตรายต่อไฟและความตาย",
   "item_bolt_surtling": "สลัดลำโพงบล็อกเมทัล",
   "item_bolt_surtling_description": "เครื่องหลังเหล็กสีดำที่บรรจุไอคอร์เซิร์ตลิง นี่จะเผาไหม",
   "item_bolt_obsidian": "ลูกธนูโอบซิเดียน",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Royal abyssal atgeir in Thai is รอยัลอะบิสซัลแอทเกียร์",
   "item_atgeir_chitin_heavy_description": "อาวุธชนิดหนึ่งที่ทำจากชิตินแหลมและมีแกนเงิน พร้อมใช้กับนักรบไวกิ้งที่กล้าหาญที่สุด",
   "item_silver_atgeir": "แอทเกียร์เงิน",
-  "item_silver_atgeir_description": "ดาบเงินขนาดใหญ่ที่ถูกเสริมด้วยโมฆะ เป็นอาวุธของนายพรานแห่งสัตว์ป่า",
   "item_sledge_blackmetal": "Sky shatterer = ผู้ทำลายฟ้าหลัง",
   "item_sledge_blackmetal_description": "ชิ้นหนักของโลหะสีดำผสมกับหินฟ้า. ทำให้เกิดการตีฟ้า. ค้อนสงครามที่คุ้มค่า",
   "item_battleaxe_flint": "ฟลินท์กรีเทกซ์",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "กระบองดาบที่ยอดเยี่ยม",
   "item_bronze_greatsword_description": "ดาบทองขนาดใหญ่ที่ใช้ไม้สามัญในการจัดเฉพาะ ไม่ค่อยแข็งแรง แต่มีคม",
   "item_iron_greatsword": "ดาบเหล็ก",
-  "item_iron_greatsword_description": "ดาบเหล็กทรายขรึมขนาดใหญ่พร้อมกับมือประแจหินปั้น ด้วยคมบาดใหญ่พอเหมาะ ทุกสิ่งจะตาย",
   "item_silver_greatsword": "ดาบรูนิคสีเงิน",
   "item_silver_greatsword_description": "เงินเหล็กชุบระเบิดด้วยรูนเพื่อป้องกันศพประสานและไม่มีชีวิตอีกครั้ง\n\nเงินเหล็กชุบระเบิดด้วยรูนเพื่อป้องกันศพประสานและไม่มีชีวิตอีกครั้ง",
   "item_dagger_flint_2h": "มีดแฟลิ้นต์",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "เลือดกระดูกคัมภีร์",
   "item_pickaxe_blood_description": "ค้อนแกว่งดูแข็งแรงเกินไป และหิวเลือดของคุณ",
   "va_blood_sucker": "เลือดโกรธ",
-  "va_blood_sucker_desc": "Your weapon is eager for blood in Thai is อาวุธของคุณต้องการเลือด"
+  "va_blood_sucker_desc": "Your weapon is eager for blood in Thai is อาวุธของคุณต้องการเลือด",
+  "item_arrow_chitin_description": "ไม่ค่อยคมเหมือนลูกธนูอื่น ๆ แต่ก็ทำให้เกิดบาดแผลที่เลวร้ายอย่างไม่น่ายินดี ๆ ไม่ว่าอะไรก็ตาม โดยไม่สนใจว่ามันจะค่อยๆ แค่ไหน",
+  "item_bolt_silver_frost_description": "เกล็ดเงิน ปิดทับด้วยน้ำแข็ง ทำให้เป็นอันตรายต่อไฟและศพเหล่านั้นที่ยามไฟ และศพต้องหันเสียตัว",
+  "item_silver_atgeir_description": "ดาบเงินขนาดใหญ่ที่มีมีดออบซิเดียนเสริม, อาวุธของนักล่าสัตว์ป่า",
+  "item_iron_greatsword_description": "มีดเหล็กที่ใหญ่และหยาบ พร้อมด้วยมือจับที่ทำจากหินขัด. ด้วยคมมีดที่ใหญ่พอสมควร ทุกสิ่งสามารถตายได้"
 }

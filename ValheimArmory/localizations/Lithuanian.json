@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Senovinė medinė strėlė",
   "item_ancient_arrow_description": "Atrodo, kad ji gali bet kuriuo metu suskaidyti.",
   "item_arrow_chitin": "Chitino strėlė",
-  "item_arrow_chitin_description": "Ne taip aštrus kaip kiti strėlės, bet vis tiek sukelia nemalonią žaizdą.",
   "item_bolt_wood": "Branduolinė bulta",
   "item_bolt_wood_description": "Kiek daugiau nei smulkus lazdelė. Jei pakankamai stipriai šauta, tai vis tiek skauda!",
   "item_bolt_bronze": "Bronzos bulta",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Geležies nuodinga bulta",
   "item_bolt_iron_poison_description": "Aštri geležies bulta, užversta nuodais, skubanti mirtis.",
   "item_bolt_silver_frost": "Sidabro šerkšno bulta",
-  "item_bolt_silver_frost_description": "Sidabro bultai, įtraukti į ledo mirtį ugnies ir numirusiems.",
   "item_bolt_surtling": "Juodmetalinė surtling bulta",
   "item_bolt_surtling_description": "Juodmetalinis branduolys, kuriame yra surtlingo branduolys, tai sudegs.",
   "item_bolt_obsidian": "Obsidiano bulta",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Karališkas begalybės atgeiras",
   "item_atgeir_chitin_heavy_description": "Aštrus chitino atgeiras su sidabru, tinkamas drąsiausiems vikingams.",
   "item_silver_atgeir": "Sidabro atgeiras",
-  "item_silver_atgeir_description": "Milžiniškas sidabro peilis, sustiprintas obsidiano, medžiotojų ginklas.",
   "item_sledge_blackmetal": "Dangaus smulkintuvas",
   "item_sledge_blackmetal_description": "Sunkios juodmetalo gabalai, sujungti su perkūnų akmenimis. Sukausto perkūnų smūgiai. Kardu vertas svorio",
   "item_battleaxe_flint": "Kremzlinė didžioji kirvis",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Bronzos didysis kardas",
   "item_bronze_greatsword_description": "Milžiniškas bronzos peilis, su tvirtu branduoliu, nėra labai patvarus, bet gana aštrus.",
   "item_iron_greatsword": "Geležies didysis kardas",
-  "item_iron_greatsword_description": "Didelis rudas geležies peilis su plyteliuotas akmens rankena. Su pakankamai dideliu peiliu, viskas miršta.",
   "item_silver_greatsword": "Sidabro runinis didysis kardas",
   "item_silver_greatsword_description": "Sidabras kovotas su išmušta geležimi, įdėtas runomis, kad atgrasytų numirusiuosius.",
   "item_dagger_flint_2h": "Kremzliniai peiliai",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Kraujo kaulo kovos kirvis",
   "item_pickaxe_blood_description": "Šis kirtiklis atrodo nesąmoningai stiprus ir trokšta tavo kraujo.",
   "va_blood_sucker": "Kraujo šėlsmas",
-  "va_blood_sucker_desc": "Tavo ginklas trokšta kraujo."
+  "va_blood_sucker_desc": "Tavo ginklas trokšta kraujo.",
+  "item_arrow_chitin_description": "Ne tokie aštrūs kaip kiti strėlės, bet vis tiek sukelia nemalonią įpjovą.",
+  "item_bolt_silver_frost_description": "Sidabriniai strypai, įdėti į ledą, mirtini ugniai ir mirusiesiems.(Sidabriniai varžtai, įkapsiuoti į ledą, mirtini ugniai ir mirusiems.)",
+  "item_silver_atgeir_description": "Milžiniškas sidabro peilis, sustiprintas obsidianu, žvėrių medžiotojų ginklas.",
+  "item_iron_greatsword_description": "Didelis šiurkštus geležies peilis su apkalta akmens rankena. Turint pakankamai didelį peilį, viskas miršta."
 }

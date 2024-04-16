@@ -8,7 +8,6 @@
   "item_ancient_arrow": "古木箭",
   "item_ancient_arrow_description": "这东西好像随时会断.",
   "item_arrow_chitin": "甲壳素箭",
-  "item_arrow_chitin_description": "不像其他箭那样锋利，但能让伤口看起来足够恶心.",
   "item_bolt_wood": "圆木螺栓",
   "item_bolt_wood_description": "比尖头的树枝强点，不过用力点射还是挺痛的。",
   "item_bolt_bronze": "青铜螺栓",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "浸毒铁螺栓",
   "item_bolt_iron_poison_description": "一件沾了毒的铁螺栓，能加速死亡",
   "item_bolt_silver_frost": "霜银螺栓",
-  "item_bolt_silver_frost_description": "纯银的螺栓，透骨的霜寒能杀死一切火焰和已死之物.",
   "item_bolt_surtling": "焰灵黑金螺栓",
   "item_bolt_surtling_description": "黑金加上焰灵之核，这肯定能烧起来。",
   "item_arbalist_bronze": "青铜劲弩",
@@ -30,7 +28,6 @@
   "item_atgeir_chitin_heavy": "皇家深渊戟",
   "item_atgeir_chitin_heavy_description": "一件打磨过的甲壳素戟，最英勇的维京战士才配得上它.",
   "item_silver_atgeir": "银戟",
-  "item_silver_atgeir_description": "一把镶有黑曜石的巨大银刃，属于猎兽英雄的武器.",
   "item_sledge_blackmetal": "天空碎裂者",
   "item_sledge_blackmetal_description": "镶有雷石的大块黑金石，尝尝雷霆一击！",
   "item_battleaxe_bronze": "铜战斧",
@@ -40,7 +37,6 @@
   "item_bronze_greatsword": "青铜大剑",
   "item_bronze_greatsword_description": "一把沉手的青铜大剑，手柄是圆木做的，不是很耐用但足够锋利.",
   "item_iron_greatsword": "铁大剑",
-  "item_iron_greatsword_description": "一把巨大的粗糙铁刀，带有凿成的石质刀柄，只要刀锋够大，什么都能砍死.",
   "item_silver_greatsword": "符文银剑",
   "item_silver_greatsword_description": "熔炼的银加上锻造的钢，纹上的符文能驱散阴物.",
   "item_dagger_iron": "铁匕首",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "血骨战锤",
   "item_pickaxe_blood_description": "这把鹤嘴镐似乎异常坚固，渴望你的鲜血。",
   "va_blood_sucker": "血之狂热",
-  "va_blood_sucker_desc": "你的武器渴望鲜血。"
+  "va_blood_sucker_desc": "你的武器渴望鲜血。",
+  "item_arrow_chitin_description": "不像其他箭头那么锋利，但它仍然会造成恶劣的伤口。",
+  "item_bolt_silver_frost_description": "银箭，被冰封，对火焰和死者致命。",
+  "item_silver_atgeir_description": "一把巨大的银刃，镶嵌着黑曜石，是猎兽者的武器。",
+  "item_iron_greatsword_description": "一把粗犷的铁刃，石柄。有了足够大的刀刃，任何东西都会死。Translated response: 有了足够大的刀刃，任何东西都会死。"
 }

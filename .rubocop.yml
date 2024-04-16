@@ -4,3 +4,7 @@ Layout/LineLength:
   Max: 200
 Metrics/BlockLength:
   Max: 70
+Style/RedundantReturn:
+  Enabled: false
+Style/RedundantInterpolation:
+  Enabled: false

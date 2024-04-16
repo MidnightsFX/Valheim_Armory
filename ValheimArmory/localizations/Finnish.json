@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Muinaispuunuoli",
   "item_ancient_arrow_description": "Näyttää siltä, että se voi halkeilla milloin tahansa.",
   "item_arrow_chitin": "Kitiininen nuoli",
-  "item_arrow_chitin_description": "Ei niin terävä kuin muut nuolet, mutta aiheuttaa silti ikävän haavan.",
   "item_bolt_wood": "Ydinpuunuoli",
   "item_bolt_wood_description": "Vähän enemmän kuin terävä keppi. Tarpeeksi kovaa ammuttuna se sattuu silti!",
   "item_bolt_bronze": "Pronssinen nasta",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Rautainen myrkkynasta",
   "item_bolt_iron_poison_description": "Myrkkyä sisältävä terävä rautanasta, nopeuttaen kuolemaa.",
   "item_bolt_silver_frost": "Hopeinen jääpalanasta",
-  "item_bolt_silver_frost_description": "Hopeiset nuolet, jäällä päällystettyinä, ovat tappavia tulisille ja kuolleille.",
   "item_bolt_surtling": "Mustametallinen surtling-nasta",
   "item_bolt_surtling_description": "Mustametalliydin, jossa surtling-ydin, tämä polttaa.",
   "item_bolt_obsidian": "Obsidian-nasta",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Kuninkaallinen abyssin atgeir",
   "item_atgeir_chitin_heavy_description": "Terävä kitiininen atgeir hopeaytimellä, sopii rohkeimmille viikingeille.",
   "item_silver_atgeir": "Hopeinen atgeir",
-  "item_silver_atgeir_description": "Valtava hopeinen terä, tuettuna obsidianilla, petoja metsästävän aseen.",
   "item_sledge_blackmetal": "Taivaanmurskaaja",
   "item_sledge_blackmetal_description": "Painavia mustametallinpaloja, jotka on yhdistetty ukkosenkiviin. Aiheuttaa salamaniskuja. Sodankirves, joka on painonsa arvoinen",
   "item_battleaxe_flint": "Piikivinen suuri kirves",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Pronssinen suuri miekka",
   "item_bronze_greatsword_description": "Massiivinen pronssiterä käsittelyssä ydinpuulla, ei kovin kestävä mutta varsin terävä.",
   "item_iron_greatsword": "Rautainen suuri miekka",
-  "item_iron_greatsword_description": "Suuri karkea rautaterä höylätty kivikahvalla. Tarpeeksi suurella terällä mikä tahansa kuolee.",
   "item_silver_greatsword": "Hopeinen runomiekka",
   "item_silver_greatsword_description": "Hopea takaa rautaa, jossa on loitsuja karkottamaan kuolleita.",
   "item_dagger_flint_2h": "Piikiviset tikarit",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Veri luu taisteluhakku",
   "item_pickaxe_blood_description": "Tämä hakku näyttää luonnottoman vahvalta ja nälkäiseltä verestäsi.",
   "va_blood_sucker": "Verihurma",
-  "va_blood_sucker_desc": "Aseesi janoo verta."
+  "va_blood_sucker_desc": "Aseesi janoo verta.",
+  "item_arrow_chitin_description": "Ei niin terävä kuin muut nuolet, mutta se aiheuttaa ikävän haavan silti.",
+  "item_bolt_silver_frost_description": "Hopeanuolia, jäällä peitettyinä, tappavia tulisille ja kuolleille.",
+  "item_silver_atgeir_description": "Valtava hopeinen terä, joka on tuettu obsidiaanilla, petometsästäjän ase.",
+  "item_iron_greatsword_description": "Suuri karkea rautaterä hiotulla kivikahvalla. Tarpeeksi suurella terällä mikä tahansa kuolee."
 }

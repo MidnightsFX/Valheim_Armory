@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Ősi fa nyíl",
   "item_ancient_arrow_description": "Úgy néz ki, mintha bármikor szétszakadhatna.",
   "item_arrow_chitin": "Kitin nyíl",
-  "item_arrow_chitin_description": "Nem olyan éles, mint más nyilak, de így is okoz egy kellemetlen vágást.",
   "item_bolt_wood": "Magfa szegec",
   "item_bolt_wood_description": "Ez már csak egy hegyes bot. Elég erővel kilőve még mindig fáj!",
   "item_bolt_bronze": "Bronz szegec",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Mérgezett vas szegec",
   "item_bolt_iron_poison_description": "Mérgezett vas szegec, amely gyors halált okoz.",
   "item_bolt_silver_frost": "Ezüst jég szegec",
-  "item_bolt_silver_frost_description": "Ezüst szegec, jéggel borítva, halálos a tűzre és a halottakra.",
   "item_bolt_surtling": "Feketefém surtling szegec",
   "item_bolt_surtling_description": "Egy feketefém mag, amelyben egy surtling mag van, ez égni fog.",
   "item_bolt_obsidian": "Obszidián szegec",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Királyi abyssal atgeir",
   "item_atgeir_chitin_heavy_description": "Egy élesített kitin atgeir ezüstkörmivel, a leghősiesebb vikingeknek való.",
   "item_silver_atgeir": "Ezüst atgeir",
-  "item_silver_atgeir_description": "Egy hatalmas ezüst penge, obszidiánnal megerősítve, egy vadászfegyver.",
   "item_sledge_blackmetal": "Égő égő",
   "item_sledge_blackmetal_description": "Nehéz darabok fekete fém, villámokkal összefonódva. Villámcsapást okoz. Egy háborúkalapács, mely megéri a súlyát.",
   "item_battleaxe_flint": "Flint nagykard",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Bronz nagykard",
   "item_bronze_greatsword_description": "Egy masszív bronz penge, melyet magfaanyaggal kezelték, nem túl tartós, de elég éles.",
   "item_iron_greatsword": "Vas nagykard",
-  "item_iron_greatsword_description": "Egy nagy durva vas penge kővel készített nyelekkel. Egy elég nagy pengevel minden meghal.",
   "item_silver_greatsword": "Ezüst rúnás nagykard",
   "item_silver_greatsword_description": "Ezüst, kovácsolt vas, rúnákkal díszítve, hogy elűzze a holtakat.",
   "item_dagger_flint_2h": "Flint tőrök",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Vér csont csatabárd",
   "item_pickaxe_blood_description": "Ez a csákány természetfeletti erősnek tűnik, és éhes a véredre.- Ez a csákány természetfeletti erősnek tűnik, és éhes a véredre.",
   "va_blood_sucker": "Vér őrjöngés",
-  "va_blood_sucker_desc": "A fegyvered véresre vágyik."
+  "va_blood_sucker_desc": "A fegyvered véresre vágyik.",
+  "item_arrow_chitin_description": "Nem olyan éles, mint a többi nyíl, de így is okoz egy kellemetlen vágást.",
+  "item_bolt_silver_frost_description": "Vascsavarok, jéggel borítva halálosak a tűzre és a halottakra.",
+  "item_silver_atgeir_description": "Egy hatalmas ezüst penge, melyet obszidiánnal díszítettek, egy vadászfegyver.",
+  "item_iron_greatsword_description": "Egy nagy, durva vaspenge egy faragott kő markolattal. Egy elég nagy pengevel bármi meghal."
 }

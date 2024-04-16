@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Αρχαία ξύλινη βέλος",
   "item_ancient_arrow_description": "Φαίνεται ότι μπορεί να σπάσει οποιαδήποτε στιγμή.",
   "item_arrow_chitin": "Βέλος χιτίνης",
-  "item_arrow_chitin_description": "Δεν είναι τόσο αιχμηρή όσο και οι άλλες βέλοι, αλλά προκαλεί ένα άσχημο κόψιμο παρόλα αυτά.",
   "item_bolt_wood": "Βίδα από ξύλο πυρήνα",
   "item_bolt_wood_description": "Λίγο παραπάνω από έναν αιχμηρό ραβδί. Αν το πυροβολήσεις με δύναμη, παραμένει επώδυνο!",
   "item_bolt_bronze": "Χάλκινο βίδωμα\n",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Σιδηρός δηλητήριο βέλος",
   "item_bolt_iron_poison_description": "Ένας αιχμηρός σιδερένιος βέργος με άκρη δηλητήριο, επιταχύνοντας τον θάνατο.",
   "item_bolt_silver_frost": "Ασημένιος παγετός βέργα",
-  "item_bolt_silver_frost_description": "Ασημένια βέλη, εγκλωβισμένα σε πάγο θανατηφόρα για τα φωτεινά και τα νεκρά.",
   "item_bolt_surtling": "Μαύρο μεταλλικό καρφί",
   "item_bolt_surtling_description": "Ένας μαύρος μεταλλικός πυρήνας που φιλοξενεί έναν πυρήνα surtling, αυτό θα καεί.",
   "item_bolt_obsidian": "Οψιανή βίδα",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Βασιλικό αβυσσικό άτγκειρ",
   "item_atgeir_chitin_heavy_description": "Ένα ακονισμένο κερατίνης ατγείρ με ασημένιο πυρήνα, κατάλληλο για τους πιο γενναίους Βίκινγκς.",
   "item_silver_atgeir": "Ασημένιο ατγκείρ",
-  "item_silver_atgeir_description": "Ένα τεράστιο ασημένιο λεπίδι στηριγμένο με όψινο, ένα όπλο κυνηγών θηρίων.",
   "item_sledge_blackmetal": "Καταστροφέας ουρανού",
   "item_sledge_blackmetal_description": "Βαριά κομμάτια μαύρου μετάλλου συγκολλημένα με κεραυνόπετρες. Προκαλεί αστραπές. Ένα πέλεκυς πολέμου αξίζει το βάρος του",
   "item_battleaxe_flint": "Τσεκούρι από πυρίτιδα",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Χάλκινο μεγάλο σπαθί",
   "item_bronze_greatsword_description": "Ένα τεράστιο μπρούντζινο λεπίδι με λαβή από πυρήνα ξύλου, όχι πολύ ανθεκτικό αλλά πολύ αιχμηρό.",
   "item_iron_greatsword": "Σιδερένιο μεγάλο σπαθί\n\nΣιδερένιο μεγάλο σπαθί",
-  "item_iron_greatsword_description": "Ένα μεγάλο χοντρό σίδερο λεπίδα με λαξευμένη λαβή από πέτρα. Με μια αρκετά μεγάλη λεπίδα, τίποτα δεν επιβιώνει.",
   "item_silver_greatsword": "Ασημένιο δρομικό μεγάλο σπαθί",
   "item_silver_greatsword_description": "Ασήμι σφυρηλατημένο με σιδερένια σφυρηλατημένο, εμπλουτισμένο με δρομικά γράμματα για να αποτρέψει τους απέθαντους.",
   "item_dagger_flint_2h": "Πυριτός σπαθιά",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Αίμα κόκκαλο μάχη επιλογή(I'm sorry, I am not sure what this phrase means. Could you provide more context or explain the meaning?)",
   "item_pickaxe_blood_description": "Αυτή η μπίλια φαίνεται ανόρθως δυνατή και πεινασμένη για το αίμα σου.",
   "va_blood_sucker": "Αίματος Έκσταση",
-  "va_blood_sucker_desc": "Το όπλο σου είναι παρόν να διψά για αίμα."
+  "va_blood_sucker_desc": "Το όπλο σου είναι παρόν να διψά για αίμα.",
+  "item_arrow_chitin_description": "Όχι τόσο αιχμηρό όσο άλλες βέλη, αλλά προκαλεί ένα άσχημο κόψιμο, παρόλα αυτά.",
+  "item_bolt_silver_frost_description": "Ασημένια βέλη, εγκλωβισμένα σε πάγο θανηφόρα για το φωτιάρικο και το νεκρό.Translated: Ασημένια βέλη, εγκλωβισμένα σε πάγο θανηφόρα για το φωτιάρικο και το νεκρό.",
+  "item_silver_atgeir_description": "Ένα τεράστιο ασημένιο λεπίδι με επένδυση από οψιανό, ένα όπλο κυνηγών θηριοτητας.",
+  "item_iron_greatsword_description": "Ένα μεγάλο τραχύ σιδερένιο λάμα με λαξευμένη λαβή από πέτρα. Με αρκετά μεγάλη λάμα, τίποτα δεν επιβιώνει."
 }

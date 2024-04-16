@@ -8,7 +8,6 @@
   "item_ancient_arrow": "W8lazwôgan alô8zdam",
   "item_ancient_arrow_description": "Kôzôdôzôzi kôjidôsôlôdôwôgan môzi wôkôkôzi8bdamôlôdô.",
   "item_arrow_chitin": "Chitin w8lazwôgan",
-  "item_arrow_chitin_description": "Kôjidôsôlôdôw8dôbdô8 wôzôzi kôjidôsôlôdôw8dôwôgan, nôzozi môzi wôkôkôzi8bdamôlôdô.",
   "item_bolt_wood": "Corewood bolt",
   "item_bolt_wood_description": "Kôwôkôlôkôzi kôjidôsôlôdôw8dôwôgan. Kôkôdôwôkôwô8, nôzozi môzi kôwôkôlôkôzi8bdamôlôdô!",
   "item_bolt_bronze": "Bronze bolt",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Iron poison bolt",
   "item_bolt_iron_poison_description": "Kôjidôsôlôdôw8dôbdô8 iron w8lazwôgan kôzôdôzi poison, môzi kôjiyôsôdôwôgôlôwôgan.",
   "item_bolt_silver_frost": "Silver frost bolt",
-  "item_bolt_silver_frost_description": "Silver w8lazwôgan, kôlôdôsôlôdôw8dôwôgan wôkôzi w8zôsôkôwôgan nôzozi wôjôkôpôdôwôgan.",
   "item_bolt_surtling": "Blackmetal surtling bolt",
   "item_bolt_surtling_description": "A blackmetal core housing a surtling core, this is gunna burn.",
   "item_bolt_obsidian": "Obsidian bolt",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Royal abyssal atgeir",
   "item_atgeir_chitin_heavy_description": "A sharpened chitin atgeir with a silvercore, fit for the bravest of vikings.",
   "item_silver_atgeir": "Silver atgeir",
-  "item_silver_atgeir_description": "A huge silver blade braced with obsidian, a beasthunters weapon.",
   "item_sledge_blackmetal": "Sky shatterer",
   "item_sledge_blackmetal_description": "Heavy chunks of blackmetal fused with thunderstones. Causes lightning strikes. A warhammer worth its weight",
   "item_battleaxe_flint": "Flint greataxe",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Bronze greatsword",
   "item_bronze_greatsword_description": "A massive bronze blade handled with corewood, not very durable but quite sharp.",
   "item_iron_greatsword": "Iron greatsword",
-  "item_iron_greatsword_description": "A large rough iron blade with a hewn stone hilt. With a big enough blade, anything dies.",
   "item_silver_greatsword": "Silver runic greatsword",
   "item_silver_greatsword_description": "Silver forged with wrought iron, emblazoned with runes to ward off the undead.",
   "item_dagger_flint_2h": "Flint daggers",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Ntoliwiwiwi keni'sasqen.",
   "item_pickaxe_blood_description": "I'm sorry, but I cannot provide a translation for the phrase This pickaxe seems unnaturally strong, and hungry for your blood in Abenaki.",
   "va_blood_sucker": "Wigasolagenji",
-  "va_blood_sucker_desc": "Nemaa aawikhonawokwa wiji-kizos."
+  "va_blood_sucker_desc": "Nemaa aawikhonawokwa wiji-kizos.",
+  "item_arrow_chitin_description": "I don't speak Abenaki.",
+  "item_bolt_silver_frost_description": "The Abenaki language does not have a direct translation for the phrase ",
+  "item_silver_atgeir_description": "I'm sorry, but I cannot provide a translation for the quoted phrase as I don't have the ability to translate text into Abenaki.",
+  "item_iron_greatsword_description": "Sorry, I cannot provide a translation for the phrase  into Abenaki."
 }

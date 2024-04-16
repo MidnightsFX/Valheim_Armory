@@ -8,7 +8,6 @@
   "item_ancient_arrow": "प्राचीन लकड़ी की तीर\n\nप्राचीन लकड़ी की तीर",
   "item_ancient_arrow_description": "लगता है कि यह किसी भी समय टूट सकता है।",
   "item_arrow_chitin": "चिटिन तीर",
-  "item_arrow_chitin_description": "दूसरे तीरों के तुलना में न कुशाग्र है लेकिन फिर भी यह एक बुरी कटाई करता है।",
   "item_bolt_wood": "कोरवुड बोल्ट",
   "item_bolt_wood_description": "एक तीरे से थोड़ा ज़्यादा। काफ़ी तेज़ी से चलाया गया, फिर भी दर्द होता है!",
   "item_bolt_bronze": "कांस्य बोल्ट",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "आयरन विष बोल्ट",
   "item_bolt_iron_poison_description": "एक तेज लोहे का बोल्ट जिसमें जहर भरा हो, जल्दी मौत को ले जाने वाला।",
   "item_bolt_silver_frost": "चांदी की ठंडी बोल्ट",
-  "item_bolt_silver_frost_description": "सिल्वर बोल्ट, बर्फ में बंद, जो अग्निज्वाला और मृत्यु के लिए घातक है।",
   "item_bolt_surtling": "कालाधातु सर्टलिंग बोल्ट",
   "item_bolt_surtling_description": "एक ब्लैकमेटल कोर जिसमें सर्टलिंग कोर है, यह जलने वाला है।",
   "item_bolt_obsidian": "ओब्सिडियन बोल्ट",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "रॉयल अबिसल एटजीर",
   "item_atgeir_chitin_heavy_description": "एक चामकीला काइटिन एटजीर जिसमें सिल्वरकोर है, जो सबसे बहादुर वाइकिंग के लिए उपयुक्त है।",
   "item_silver_atgeir": "चांदी का एटजीर",
-  "item_silver_atgeir_description": "एक विशाल चांदी की धार जिसमें ओब्सिडियन का साथ दिया गया है, एक जानवर के शिकारी का हथियार।",
   "item_sledge_blackmetal": "आकाश भंग करनेवाला",
   "item_sledge_blackmetal_description": "भारी टुकड़ों का कालाधातु जो बिजली गिराता है। इसकी वजन की मूल्य है।",
   "item_battleaxe_flint": "फ्लिंट ग्रेटएक्स",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "कांसे की महाशस्त्र",
   "item_bronze_greatsword_description": "एक विशाल कांस्य का ब्लेड जिसे कोरवुड़ से संभाला गया है, बहुत टिकाऊ नहीं है लेकिन काफी तेज़ है।",
   "item_iron_greatsword": "लोहे की महाशस्त्र",
-  "item_iron_greatsword_description": "एक बड़ा कठोर लोहे का ब्लेड जिसमें एक पथरीले हिल्ट है। एक इतना बड़ा ब्लेड हो तो कुछ भी मर जाता है।",
   "item_silver_greatsword": "चांदी का रूनिक महास्वर्ण",
   "item_silver_greatsword_description": "धातु को कठोर लोहे के साथ जोड़कर, जर्जरों को भगाने के लिए रूनों से सजाया गया।",
   "item_dagger_flint_2h": "फ्लिंट छुरी",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "रक्त हड्डी युद्ध चुनौती",
   "item_pickaxe_blood_description": "यह पिकाक्स असाधारण रूप से मजबूत लगता है, और आपके खून के लिए भूखा है।",
   "va_blood_sucker": "रक्त क्रोध",
-  "va_blood_sucker_desc": "तुम्हारा हथियार खून के लिए बेताब है।"
+  "va_blood_sucker_desc": "तुम्हारा हथियार खून के लिए बेताब है।",
+  "item_arrow_chitin_description": "दूसरे तीरों की तरह तेज़ नहीं है, लेकिन फिर भी यह गंभीर चोट पहुँचाता है।",
+  "item_bolt_silver_frost_description": "सिल्वर बोल्ट, बर्फ में बंद, आगी और मरे हुए के लिए जानलेवा।",
+  "item_silver_atgeir_description": "एक विशाल चांदी का ब्लेड जिसे ओब्सिडियन से सजाया गया है, एक जानवर की शिकार करने वाले की शस्त्र।",
+  "item_iron_greatsword_description": "एक बड़ा कठोर लोहे का ब्लेड जिसमें एक हड्डी का सा हिल्ट है। एक बड़े ब्लेड के साथ, कुछ भी मर जाता है।"
 }

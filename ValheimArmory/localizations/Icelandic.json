@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Forntre ör",
   "item_ancient_arrow_description": "Lítur út fyrir að það geti sprungist hvenær sem er.",
   "item_arrow_chitin": "Kitín ör",
-  "item_arrow_chitin_description": "Ekki eins skörp og aðrar örvar en það valda erfiðu skurði hvað sem er.",
   "item_bolt_wood": "Kjarnviður bolti",
   "item_bolt_wood_description": "Smá meira en skarpa stöng. Skotið hörðum nóg, það sárir enn!",
   "item_bolt_bronze": "Bronsbolti",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Eirn eitur bolti",
   "item_bolt_iron_poison_description": "Skarpur járn bolti toppaður eitri, hraður dauði.",
   "item_bolt_silver_frost": "Silfur frost bolti",
-  "item_bolt_silver_frost_description": "Silfur boltar, umlykt í ís, banvænir fyrir eldra og dauða.",
   "item_bolt_surtling": "Svörtmálmur surtlingur bolti",
   "item_bolt_surtling_description": "Svörtmálmur kjarni sem hýsir surtling kjarna, þetta er að brenna.",
   "item_bolt_obsidian": "Obsidian bolti",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Kóngleg abyssal atgeir",
   "item_atgeir_chitin_heavy_description": "Skarpt kítín atgeir með silfurkjarna, hentugt fyrir djarflegustu víkinga.",
   "item_silver_atgeir": "Silfur atgeir",
-  "item_silver_atgeir_description": "Stórt silfurblað með tveimur mótefnum, búin til til að veiða skrímsli.",
   "item_sledge_blackmetal": "Sky shatterer",
   "item_sledge_blackmetal_description": "Þungir kubbar af svörtumálmi sameindaðir við þrumusteina. Veldur eldingum. Hamar sem er virði þyngd sinnar.",
   "item_battleaxe_flint": "Flint mikilsöx",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Brons mikil sverð",
   "item_bronze_greatsword_description": "Massíft bronsblað með kjarnviðarhöndli, ekki mjög þolinmóður en frekar skarpur.",
   "item_iron_greatsword": "Eirn mikil sverð",
-  "item_iron_greatsword_description": "Stórt rauf jarnblað með huggin steinhjalti. Með nógri hörðu höggum deyr allt.",
   "item_silver_greatsword": "Silfur rúnaljóð mikil sverð",
   "item_silver_greatsword_description": "Silfur smíðað með smíðaða járn, skreytt með rúnur til að verja við dauða.",
   "item_dagger_flint_2h": "Flint hnífur",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Blóð bein bardagakjöll",
   "item_pickaxe_blood_description": "Þessi járnspítur virðist óeðlilega sterkur og svangur eftir blóði þínu.",
   "va_blood_sucker": "Blóð örvænting",
-  "va_blood_sucker_desc": "Vopni þínum vantar blóð."
+  "va_blood_sucker_desc": "Vopni þínum vantar blóð.",
+  "item_arrow_chitin_description": "Ekki jafn skörp og aðrar örvar en það veldur slæmu skurði þó.",
+  "item_bolt_silver_frost_description": "Silfurboltar, huldir ís dauðlegt fyrir eldinga og dauða.",
+  "item_silver_atgeir_description": "Eimur stór silfurblað haldið uppi með kísilsteini, vopn veiðimanna á villidýrum.",
+  "item_iron_greatsword_description": "Stór hröð járnsmiðja með höggðum steinhjalti. Með nógu stórum egg, deyr allt."
 }

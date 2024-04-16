@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Oude houten pijl",
   "item_ancient_arrow_description": "Het lijkt erop dat het elk moment kan splinteren.",
   "item_arrow_chitin": "Chitine pijl",
-  "item_arrow_chitin_description": "Niet zo scherp als andere pijlen, maar het veroorzaakt hoe dan ook een nare snee.",
   "item_bolt_wood": "Kernhoutbout",
   "item_bolt_wood_description": "Meer dan een puntige stok. Als het hard genoeg wordt afgevuurd, doet het nog steeds pijn!",
   "item_bolt_bronze": "Bronzen bout",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "IJzeren vergiftigde bout",
   "item_bolt_iron_poison_description": "Een scherpe ijzeren bout met vergif, versnelt de dood.",
   "item_bolt_silver_frost": "Zilveren vorstbout",
-  "item_bolt_silver_frost_description": "Zilveren bouten, omhuld in ijs, dodelijk voor de vuurige en doden.",
   "item_bolt_surtling": "Zwarte metalen surtlingbout",
   "item_bolt_surtling_description": "Een zwarte metalen kern met een surtlingkern, dit gaat branden.",
   "item_bolt_obsidian": "Obsidiaanbout",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Koninklijke abyssale atgeir",
   "item_atgeir_chitin_heavy_description": "Een scherpe chitine atgeir met een zilveren kern, geschikt voor de dapperste Vikingen.",
   "item_silver_atgeir": "Zilveren atgeir",
-  "item_silver_atgeir_description": "Een enorme zilveren kling gestut met obsidiaan, een wapen voor beestenjagers.",
   "item_sledge_blackmetal": "Luchtsplijter",
   "item_sledge_blackmetal_description": "Zware brokken zwartmetaal versmolten met donderstenen. Veroorzaakt blikseminslagen. Een oorlogshamer die zijn gewicht waard is.",
   "item_battleaxe_flint": "Flint greataxe",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Bronzen grootzwaard",
   "item_bronze_greatsword_description": "Een massief bronzen blad behandeld met kernhout, niet erg duurzaam maar behoorlijk scherp.",
   "item_iron_greatsword": "IJzeren grootzwaard",
-  "item_iron_greatsword_description": "Een groot ruw ijzeren blad met een gehouwen stenen gevest. Met een groot genoeg blad sterft alles.",
   "item_silver_greatsword": "Zilveren runisch grootzwaard",
   "item_silver_greatsword_description": "Zilver gesmeed met smeedijzer, versierd met runen om de ondoden af te weren.",
   "item_dagger_flint_2h": "Vuurstenen dolken",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "bloed bot strijdhaak",
   "item_pickaxe_blood_description": "Deze pikhouweel lijkt onnatuurlijk sterk en hongerig naar jouw bloed.",
   "va_blood_sucker": "Bloedrazernij",
-  "va_blood_sucker_desc": "Je wapen is gretig naar bloed."
+  "va_blood_sucker_desc": "Je wapen is gretig naar bloed.",
+  "item_arrow_chitin_description": "Niet zo scherp als andere pijlen, maar het veroorzaakt hoe dan ook een nare snee.",
+  "item_bolt_silver_frost_description": "Zilveren bouten, omhuld in ijs dodelijk voor de brandende en de doden.",
+  "item_silver_atgeir_description": "Een enorme zilveren kling met obsidiaan, een wapen van een beestenjager.",
+  "item_iron_greatsword_description": "Een grote ruwe ijzeren mes met een gehouwen stenen heft. Met een groot genoeg mes sterft alles."
 }

@@ -8,7 +8,6 @@
   "item_ancient_arrow": "고대 나무 화살",
   "item_ancient_arrow_description": "언제든 무너질 수 있을 것 같습니다.",
   "item_arrow_chitin": "키틴 화살",
-  "item_arrow_chitin_description": "다른 화살만큼 날카롭지는 않지만 그럼에도 불구하고 심한 상처를 입힙니다.",
   "item_bolt_wood": "통나무 화살",
   "item_bolt_wood_description": "뾰족한 막대기보다 조금 더. 충분히 세게 쐈는데도 여전히 아프다!",
   "item_bolt_bronze": "청동 볼트",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "철제 독 볼트",
   "item_bolt_iron_poison_description": "독이 묻어 있는 날카로운 철제 화살로, 죽음을 가속화합니다.",
   "item_bolt_silver_frost": "은빛 볼트",
-  "item_bolt_silver_frost_description": "얼음에 싸인 은빛 볼트는 불타고 죽은 자에게 치명적입니다.",
   "item_bolt_surtling": "소용돌이치는 흑철 볼트",
   "item_bolt_surtling_description": "부글부글 끓어오르는 코어를 담고 있는 검은색 금속 코어, 이건 타버릴 거예요.",
   "item_bolt_obsidian": "흑요석 볼트",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "키틴 에이트기르",
   "item_atgeir_chitin_heavy_description": "가장 용감한 바이킹에게 적합한 은심이 있는 날카로운 키틴 에이트기르입니다.",
   "item_silver_atgeir": "은 에이트기르",
-  "item_silver_atgeir_description": "흑요석으로 보강된 거대한 은검, 야수사냥꾼의 무기.",
   "item_sledge_blackmetal": "하늘 파괴자",
   "item_sledge_blackmetal_description": "천둥석과 융합된 무거운 흑철 덩어리입니다. 번개를 일으킵니다. 무게만큼 가치가 있는 워해머",
   "item_battleaxe_flint": "부싯돌 거대도끼",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "청동 대검",
   "item_bronze_greatsword_description": "통나무로 처리된 거대한 청동 칼날로 내구성은 좋지 않지만 꽤 날카롭습니다.",
   "item_iron_greatsword": "철 대검",
-  "item_iron_greatsword_description": "다듬은 돌 자루가 달린 커다란 거친 철제 칼날입니다. 충분히 큰 칼날을 사용하면 무엇이든 죽습니다.",
   "item_silver_greatsword": "은빛 룬 대검",
   "item_silver_greatsword_description": "단철로 단조한 은에 언데드를 막기 위해 룬 문자를 새겨 넣었습니다.",
   "item_dagger_flint_2h": "부싯돌 단검",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "피의 뼈 전투 도끼",
   "item_pickaxe_blood_description": "이 곡괭이는 이상하게 강하고 당신의 피를 갈망하는 것 같아요.",
   "va_blood_sucker": "피의 광란",
-  "va_blood_sucker_desc": "당신의 무기는 피를 갈망하고 있습니다."
+  "va_blood_sucker_desc": "당신의 무기는 피를 갈망하고 있습니다.",
+  "item_arrow_chitin_description": "다른 화살만큼 날카롭지는 않지만 그래도 나쁜 상처를 남긴다.",
+  "item_bolt_silver_frost_description": "은색 볼트, 얼음에 감싸여 불에게 치명적인 것은 죽은 자에게 치명적이다.",
+  "item_silver_atgeir_description": "흑요석으로 보강된 거대한 은색 칼, 야수사냥꾼의 무기.",
+  "item_iron_greatsword_description": "깎아 만든 돌 손잡이가 달린 큰 날카로운 철검. 충분히 큰 칼이면 모든 것이 죽는다."
 }

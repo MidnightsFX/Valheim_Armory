@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Eldgammel trepil",
   "item_ancient_arrow_description": "Ser ut som om den kan splintres når som helst.",
   "item_arrow_chitin": "Kitinpil",
-  "item_arrow_chitin_description": "Ikke så skarp som andre piler, men det forårsaker likevel et ubehagelig kutt.",
   "item_bolt_wood": "Kjernevedbolt",
   "item_bolt_wood_description": "Litt mer enn en spiss pinne. Skutt hardt nok, gjør det fortsatt vondt!",
   "item_bolt_bronze": "Bronsebolt",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Jerngiftbolt",
   "item_bolt_iron_poison_description": "En skarp jernbolt spisset med gift, som akselererer død.",
   "item_bolt_silver_frost": "Sølvfrostbolt",
-  "item_bolt_silver_frost_description": "Sølvbolter, innkapslet i is, dødelig for de brennende og døde.",
   "item_bolt_surtling": "Sortmetall surtlingbolt",
   "item_bolt_surtling_description": "En sortmetallkjerne som huser en surtlingkjerne, dette kommer til å brenne.",
   "item_bolt_obsidian": "Obsidianbolt",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Kongelig abysmal atgeir",
   "item_atgeir_chitin_heavy_description": "En skarphet kitinatgeir med en sølvkjerne, egnet for de tøffeste vikingene.",
   "item_silver_atgeir": "Sølvatgeir",
-  "item_silver_atgeir_description": "Et gigantisk sølvblad forsterket med obsidian, et uhyrers våpen.",
   "item_sledge_blackmetal": "Himmelsprenger",
   "item_sledge_blackmetal_description": "Tunge biter av sortmetall smeltet med tordensteiner. Forårsaker lynnedslag. En krigshammer verdt sin vekt.",
   "item_battleaxe_flint": "Flint storøks",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Bronse stor sverd",
   "item_bronze_greatsword_description": "Et massivt bronseblad håndtert med kjerneved, ikke veldig holdbart, men ganske skarpt.",
   "item_iron_greatsword": "Jernstor sverd",
-  "item_iron_greatsword_description": "Et stort grovt jernblad med en huggen steinøks. Med et stort nok blad dør alt.",
   "item_silver_greatsword": "Sølv runisk storsverd",
   "item_silver_greatsword_description": "Sølv smidd med smidd jern, prydet med runer for å avverge de udøde.",
   "item_dagger_flint_2h": "Flintdolker",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Blod bein slagvåpen",
   "item_pickaxe_blood_description": "Denne hakken virker unaturlig sterk, og sulten etter ditt blod.",
   "va_blood_sucker": "Blodrus",
-  "va_blood_sucker_desc": "Ditt våpen er sulten etter blod."
+  "va_blood_sucker_desc": "Ditt våpen er sulten etter blod.",
+  "item_arrow_chitin_description": "Ikke så skarp som andre piler, men den forårsaker likevel et stygt kutt.",
+  "item_bolt_silver_frost_description": "Sølvbolter, innkapslet i is dødelig for de brennende og døde.Takk!",
+  "item_silver_atgeir_description": "Et stort sølvblad støttet med obsidian, et rovdyrjegers våpen.",
+  "item_iron_greatsword_description": "En stor grov jernsverd med en hugget steinhandtak. Med en stor nok klinge, dør alt."
 }

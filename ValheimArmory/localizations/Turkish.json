@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Antik ahşap ok",
   "item_ancient_arrow_description": "Her an parçalanabilir gibi görünüyor.",
   "item_arrow_chitin": "Kitin ok",
-  "item_arrow_chitin_description": "Diğer oklar kadar keskin olmasa da yine de kötü bir kesik oluşturuyor.",
   "item_bolt_wood": "Çekirdek tahtası cıvata",
   "item_bolt_wood_description": "Biraz daha sivri bir çubuktan fazlası. Sert bir şekilde atıldığında hala acıtıyor!",
   "item_bolt_bronze": "Bronz cıvata",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Demir zehir cıvatası",
   "item_bolt_iron_poison_description": "Zehirle kaplanmış keskin bir demir cıvata, ölümü hızlandırıyor.",
   "item_bolt_silver_frost": "Gümüş buz cıvatası",
-  "item_bolt_silver_frost_description": "Buzla kaplanmış gümüş cıvatalar, ateşli ve ölülere karşı ölümcül.",
   "item_bolt_surtling": "Blackmetal surtling cıvatası",
   "item_bolt_surtling_description": "Bir surtling çekirdeği barındıran bir blackmetal çekirdek, bu yanacak.",
   "item_bolt_obsidian": "Obsidyen cıvatası",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Kraliyet abyssal atgeir",
   "item_atgeir_chitin_heavy_description": "Gümüş çekirdekli bir keskin kitin atgeir, en cesur vikingler için uygun.",
   "item_silver_atgeir": "Gümüş atgeir",
-  "item_silver_atgeir_description": "Obsidyenle desteklenmiş dev bir gümüş bıçak, bir avcı silahı.",
   "item_sledge_blackmetal": "Gökyüzü çekiç",
   "item_sledge_blackmetal_description": "Göktaşı ile birleştirilmiş ağır parçalar. Yıldırım çarpmalarına neden oluyor. Kıymetini hak eden bir savaş çekici.",
   "item_battleaxe_flint": "Çakmaktaşı savaş baltası",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Bronz büyük kılıç",
   "item_bronze_greatsword_description": "Çekirdek tahtası ile taşınan dev bir bronz bıçak, çok dayanıklı değil ama oldukça keskin.",
   "item_iron_greatsword": "Demir büyük kılıç",
-  "item_iron_greatsword_description": "Kaba bir demir bıçak büyük bir taş sapla. Yeterince büyük bir bıçakla, her şey ölür.",
   "item_silver_greatsword": "Gümüş runik büyük kılıç",
   "item_silver_greatsword_description": "Ölüleri uzak tutmak için runik işaretlerle süslenmiş demirle dövülmüş gümüş.",
   "item_dagger_flint_2h": "Çakmaktaşı hançerler",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Kan kemik savaş baltası",
   "item_pickaxe_blood_description": "Bu kazma doğal olmayan bir şekilde güçlü görünüyor ve kanınızı istiyor.",
   "va_blood_sucker": "Kan Çılgınlığı",
-  "va_blood_sucker_desc": "Silahın kan için istekli."
+  "va_blood_sucker_desc": "Silahın kan için istekli.",
+  "item_arrow_chitin_description": "Diğer oklar kadar keskin değil ama yine de kötü bir kesik oluşturuyor.",
+  "item_bolt_silver_frost_description": "Gümüş cıvatalar, buzla kaplanmış, ateşli ve ölülere ölümcül.",
+  "item_silver_atgeir_description": "Bir yılanavcısı silahı olarak kullanılan devasa bir gümüş bıçak, obsidiyen ile desteklenmiş.",
+  "item_iron_greatsword_description": "Büyük, kaba bir demir bıçak ve yontulmuş taş bir kabza. Yeterince büyük bir bıçakla, her şey ölür."
 }

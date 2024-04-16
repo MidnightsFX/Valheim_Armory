@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Ældgammel træpil",
   "item_ancient_arrow_description": "Ser ud som om det kan splintre når som helst.",
   "item_arrow_chitin": "Kitinpil",
-  "item_arrow_chitin_description": "Ikke så skarp som andre pile, men det forårsager stadig en ubehagelig skæring.",
   "item_bolt_wood": "Kerneværbolt",
   "item_bolt_wood_description": "Lidt mere end en spids pind. Skudt hårdt nok, gør det stadig ondt!",
   "item_bolt_bronze": "Bronzebolt",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Jerngiftbolt",
   "item_bolt_iron_poison_description": "En skarp jernpil toppet med gift, der fremskynder døden.",
   "item_bolt_silver_frost": "Sølvfrostbolt",
-  "item_bolt_silver_frost_description": "Sølvbolte, indkapslet i is, dødelig for dem med ild og døde.",
   "item_bolt_surtling": "Sortmetal surtlingbolt",
   "item_bolt_surtling_description": "En sortmetal kerne, der huser en surtlingkerne, dette kommer til at brænde.",
   "item_bolt_obsidian": "Obsidianbolt",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Kongelig abyssal atgeir",
   "item_atgeir_chitin_heavy_description": "En skarp kitin atgeir med en sølvkerne, egnet til de modigste vikinger.",
   "item_silver_atgeir": "Sølv atgeir",
-  "item_silver_atgeir_description": "Et kæmpe sølvblad forstærket med obsidian, et monsterjægers våben.",
   "item_sledge_blackmetal": "Himmelknuser",
   "item_sledge_blackmetal_description": "Tunge klumper af sortmetal fusioneret med tordensten. Forårsager lynnedslag. En krigshammer værd sin vægt.",
   "item_battleaxe_flint": "Flint greataxe",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Bronzestorsværd",
   "item_bronze_greatsword_description": "Et massivt bronzeblad håndteret med kerneved, ikke særlig holdbart, men ret skarpt.",
   "item_iron_greatsword": "Jernstorsværd",
-  "item_iron_greatsword_description": "Et stort, ru jernblad med en hugget stenhilt. Med en stor nok klinge dør alt.",
   "item_silver_greatsword": "Sølv runestorsværd",
   "item_silver_greatsword_description": "Sølv smedet med smedejern, prydet med runer for at afværge de døde.",
   "item_dagger_flint_2h": "Flintdolke",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Blodben kampvælger",
   "item_pickaxe_blood_description": "Denne hakke virker unaturligt stærk og sulten efter dit blod.",
   "va_blood_sucker": "Blodrus",
-  "va_blood_sucker_desc": "Dit våben er ivrig efter blod."
+  "va_blood_sucker_desc": "Dit våben er ivrig efter blod.",
+  "item_arrow_chitin_description": "Ikke så skarp som andre pile, men den forårsager alligevel et ubehageligt snit.",
+  "item_bolt_silver_frost_description": "Sølvbolte, indkapslet i is dødeligt for det ildfulde og døde.",
+  "item_silver_atgeir_description": "Et kæmpestort sølvblad forstærket med obsidian, et rovdyrjæger-våben.",
+  "item_iron_greatsword_description": "Et stort groft jernblad med en hugget stenhåndtag. Med en stor nok klinge dør alt."
 }

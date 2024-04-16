@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Starożytna drewniana strzała",
   "item_ancient_arrow_description": "Wygląda na to, że może się rozpadnąć w każdej chwili.",
   "item_arrow_chitin": "Strzała z chitiny",
-  "item_arrow_chitin_description": "Nie tak ostry jak inne strzały, ale i tak powoduje niemiłą ranę.",
   "item_bolt_wood": "śruba z drewna litego",
   "item_bolt_wood_description": "Trochę więcej niż ostry kij. Wystarczająco mocno uderzony, wciąż boli!",
   "item_bolt_bronze": "Brązowy śruba",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Żelazny zatruty strzał",
   "item_bolt_iron_poison_description": "Ostry żelazny śrut zakończony trucizną, przyspieszająca śmierć.",
   "item_bolt_silver_frost": "Srebrny mrozny piorun",
-  "item_bolt_silver_frost_description": "Srebrne śruby, zamknięte w lodzie zabójcze dla ognistych i zmarłych.",
   "item_bolt_surtling": "czarna metalowa śruba",
   "item_bolt_surtling_description": "Rdzeń z czarnego metalu z rdzeniem surtlina, to będzie się palić.",
   "item_bolt_obsidian": "Piorun obsydianowy",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Królewski abysalny atgeir",
   "item_atgeir_chitin_heavy_description": "Ostrzyżony atgeir z chityny z rdzeniem srebrnym, odpowiedni dla najdzielniejszych wikingów.",
   "item_silver_atgeir": "Srebrny atgeir",
-  "item_silver_atgeir_description": "Olbrzymi srebrny ostrze wzmocnione obsydianem, broń łowców bestii.",
   "item_sledge_blackmetal": "Roztrzaskujące niebo",
   "item_sledge_blackmetal_description": "Ciężkie kawałki czarnej stali połączone z kamieniami grzmotów. Powoduje uderzenia piorunów. Młot warty swojej wagi",
   "item_battleaxe_flint": "Topór bojowy z krzemienia",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Bronzowy wielki miecz",
   "item_bronze_greatsword_description": "Potężna brązowa ostrzałka z rękojeścią z drewna rdzennego, niezbyt wytrzymała, ale dość ostra.",
   "item_iron_greatsword": "Żelazny miecz wielki",
-  "item_iron_greatsword_description": "Duża szorstka żelazna ostrze z rękojeścią z obrobionego kamienia. Z wystarczająco dużym ostrzem wszystko umiera.",
   "item_silver_greatsword": "Srebrny runiczny wielki miecz",
   "item_silver_greatsword_description": "Srebro wytopione z żelazem kuty, ozdobione runami, aby odstraszyć nieumarłych.",
   "item_dagger_flint_2h": "Szpile krzemienne",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Krew kość bitwapick",
   "item_pickaxe_blood_description": "Ta kilof wydaje się nienaturalnie silny i głodny twojej krwi.",
   "va_blood_sucker": "Krwawy szał",
-  "va_blood_sucker_desc": "Twoja broń jest spragniona krwi."
+  "va_blood_sucker_desc": "Twoja broń jest spragniona krwi.",
+  "item_arrow_chitin_description": "Nie tak ostry jak inne strzały, ale i tak powoduje brzydkie cięcie.",
+  "item_bolt_silver_frost_description": "Srebrne śruby, osadzone w lodzie, śmiertelne dla ognistych i zmarłych.",
+  "item_silver_atgeir_description": "Olbrzymi srebrny ostrze wzmocnione obsydianem, broń łowców bestii.",
+  "item_iron_greatsword_description": "Duża szorstka żelazna klinga z obrobionym kamieniem rękojeści. Z wystarczająco dużą klingą wszystko umiera."
 }

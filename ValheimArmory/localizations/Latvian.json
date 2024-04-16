@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Senie koka bulta",
   "item_ancient_arrow_description": "Izskatās, ka tas var saplēst jebkurā laikā.",
   "item_arrow_chitin": "Hitīna bulta",
-  "item_arrow_chitin_description": "Nav tik asi kā citi bultiņas, bet tas izraisa nepatīkamu iegriezumu jebkurā gadījumā.",
   "item_bolt_wood": "Koksnes sprauga",
   "item_bolt_wood_description": "Vairāk nekā asa nūjiņa. Piespiedi pietiekami cieti, tas joprojām sāp! \n\nVairāk nekā asa nūjiņa. Piespiedi pietiekami cieti, tas joprojām sāp!",
   "item_bolt_bronze": "Bronzes sprauga",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Dzelzs indes bulta",
   "item_bolt_iron_poison_description": "Asā dzelzs bults ar indi galā, nāvējoša nāve.",
   "item_bolt_silver_frost": "Zelta salna sprādziens",
-  "item_bolt_silver_frost_description": "Zilie skrūves, ieslēgtas ledus, nāvējošas pret ugunīgo un mirušo.",
   "item_bolt_surtling": "Melnbetona surtlinga skrūve",
   "item_bolt_surtling_description": "Melna metāla korpusā ir iekšējais surtlinga kodols, tas gāzis sadegs.",
   "item_bolt_obsidian": "Obsidian bulta",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Karaliskais bezdibenis atgeirs",
   "item_atgeir_chitin_heavy_description": "Asināta čitīna atgeira ar sudraba kodolu, piemērota drosmīgākajiem vikingiem.",
   "item_silver_atgeir": "Zilbainais atgeirs",
-  "item_silver_atgeir_description": "Milzīgs sudraba asi, nostiprināts ar obsidiānu, zvēru mednieka ierocis.",
   "item_sledge_blackmetal": "Debess sagrauvejs",
   "item_sledge_blackmetal_description": "Smagi gabali no melnmetāla saplūst ar pērkona akmeņiem. Izraisa zibens negaisus. Kaujas āmurs, kas ir vērts savas svara vērtību.",
   "item_battleaxe_flint": "Flinta lielās cirvja asmeņi",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Bronzas lielais zobens",
   "item_bronze_greatsword_description": "Masīvs bronzas nazis ar kodolu koka rokturi, ne pārāk izturīgs, bet diezgan asas.",
   "item_iron_greatsword": "Dzelzs lielsaplis.",
-  "item_iron_greatsword_description": "Liela rupja dzelzs lāpsta ar apstrādātu akmeņu rokturi. Ar pietiekami lielu lāpstu, viss nomirst.",
   "item_silver_greatsword": "Zilbaltā runu liels zobens",
   "item_silver_greatsword_description": "Zelts kalti ar dzelzs, rotāts ar runām, lai aizsargātu pret nemirstīgajiem.",
   "item_dagger_flint_2h": "Ķieģeļu nazis",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Asins kauls cīņas ierocis",
   "item_pickaxe_blood_description": "Šķēpa šķiet neparasti stipra un izsalkusi pēc tavas asins.",
   "va_blood_sucker": "Asins trakums",
-  "va_blood_sucker_desc": "Tava ierocis ir izsalkusi pēc asinīm."
+  "va_blood_sucker_desc": "Tava ierocis ir izsalkusi pēc asinīm.",
+  "item_arrow_chitin_description": "Nav tik asa kā citi bultas, bet tas izraisa nepatīkamu griezumu, neskatoties uz to.",
+  "item_bolt_silver_frost_description": "Zelta skrūves, ieslodzītas ledā, nāvējošas pret ugunīgo un mirušo.",
+  "item_silver_atgeir_description": "Milzīgs sudraba asi, nostiprināts ar obsidiānu, medītāju ierocis.",
+  "item_iron_greatsword_description": "Liela rupja dzelzs lama ar pārstrādātu akmeņu rokturi. Ar pietiekami lielu lāmi, viss nomirst."
 }

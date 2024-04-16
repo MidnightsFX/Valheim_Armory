@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Seta de madeira antiga",
   "item_ancient_arrow_description": "Parece que pode lascar a qualquer momento.",
   "item_arrow_chitin": "Seta de quitina",
-  "item_arrow_chitin_description": "Não tão afiada quanto outras setas, mas causa um corte desagradável mesmo assim.",
   "item_bolt_wood": "Parafuso de madeira",
   "item_bolt_wood_description": "Um pouco mais do que um pedaço de madeira pontudo. Atirado com força suficiente, ainda machuca!",
   "item_bolt_bronze": "Parafuso de bronze",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Parafuso de veneno de ferro",
   "item_bolt_iron_poison_description": "Um parafuso de ferro afiado pontilhado com veneno, acelerando a morte.",
   "item_bolt_silver_frost": "Parafuso de gelo de prata",
-  "item_bolt_silver_frost_description": "Parafusos de prata, envoltos em gelo mortal para os ardentes e mortos.",
   "item_bolt_surtling": "Parafuso de surtling de metal preto",
   "item_bolt_surtling_description": "Um núcleo de metal preto que abriga um núcleo de surtling, isso vai queimar.",
   "item_bolt_obsidian": "Parafuso de obsidiana",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Atgeir real abissal",
   "item_atgeir_chitin_heavy_description": "Um atgeir de quitina afiado com um núcleo de prata, adequado para os vikings mais corajosos.",
   "item_silver_atgeir": "Atgeir de prata",
-  "item_silver_atgeir_description": "Uma enorme lâmina de prata aparada com obsidiana, uma arma de caçadores de feras.",
   "item_sledge_blackmetal": "Quebra-céus",
   "item_sledge_blackmetal_description": "Grandes pedaços de metal preto fundidos com pedras de trovão. Causa raios. Um martelo de guerra que vale seu peso.",
   "item_battleaxe_flint": "Machado de pedra",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Grande espada de bronze",
   "item_bronze_greatsword_description": "Uma grande lâmina de bronze manuseada com madeira de núcleo, não muito durável, mas bastante afiada.",
   "item_iron_greatsword": "Grande espada de ferro",
-  "item_iron_greatsword_description": "Uma grande lâmina de ferro áspero com uma empunhadura de pedra talhada. Com uma lâmina grande o suficiente, qualquer coisa morre.",
   "item_silver_greatsword": "Grande espada rúnica de prata",
   "item_silver_greatsword_description": "Prata forjada com ferro trabalhado, adornada com runas para afastar os mortos-vivos.",
   "item_dagger_flint_2h": "Adagas de pedra",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Escolha de batalha de osso de sangue",
   "item_pickaxe_blood_description": "Esta picareta parece anormalmente forte e faminta pelo seu sangue.",
   "va_blood_sucker": "Frenesi de Sangue",
-  "va_blood_sucker_desc": "Sua arma está ansiosa por sangue."
+  "va_blood_sucker_desc": "Sua arma está ansiosa por sangue.",
+  "item_arrow_chitin_description": "Não tão afiada quanto outras flechas, mas causa um corte desagradável mesmo assim.",
+  "item_bolt_silver_frost_description": "Parafusos de prata, envoltos em gelo mortal para o fogo e morto.",
+  "item_silver_atgeir_description": "Uma enorme lâmina de prata reforçada com obsidiana, uma arma de caçadores de bestas.",
+  "item_iron_greatsword_description": "Uma grande lâmina de ferro áspera com um cabo de pedra cortada. Com uma lâmina grande o suficiente, qualquer coisa morre."
 }

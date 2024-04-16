@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Flecha de madera antigua",
   "item_ancient_arrow_description": "Parece que puede astillarse en cualquier momento.",
   "item_arrow_chitin": "Flecha de quitina",
-  "item_arrow_chitin_description": "No es tan afilada como otras flechas, pero causa un corte desagradable de todas formas.",
   "item_bolt_wood": "Perno de madera",
   "item_bolt_wood_description": "Un poco más que un palo puntiagudo. ¡Disparado con suficiente fuerza, todavía duele!",
   "item_bolt_bronze": "Perno de bronce",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Perno de veneno de hierro",
   "item_bolt_iron_poison_description": "Un perno de hierro afilado con veneno, acelera la muerte.",
   "item_bolt_silver_frost": "Perno de hielo plateado",
-  "item_bolt_silver_frost_description": "Pernos de plata, recubiertos de hielo mortal para los fuegosos y los muertos.",
   "item_bolt_surtling": "Perno surtling de metal negro",
   "item_bolt_surtling_description": "Un núcleo de metal negro que alberga un núcleo de surtling, esto va a arder.",
   "item_bolt_obsidian": "Perno de obsidiana",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Atgeir real abisal",
   "item_atgeir_chitin_heavy_description": "Un atgeir de quitina afilado con un núcleo de plata, adecuado para los vikingos más valientes.",
   "item_silver_atgeir": "Atgeir de plata",
-  "item_silver_atgeir_description": "Una enorme hoja de plata reforzada con obsidiana, un arma de cazadores de bestias.",
   "item_sledge_blackmetal": "Rompecielos",
   "item_sledge_blackmetal_description": "Pesados trozos de metal negro fusionados con piedras de trueno. Causa rayos. Un martillo de guerra que vale su peso.",
   "item_battleaxe_flint": "Gran hacha de pedernal",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Gran espada de bronce",
   "item_bronze_greatsword_description": "Una gran hoja de bronce manejada con madera de núcleo, no muy duradera pero bastante afilada.",
   "item_iron_greatsword": "Gran espada de hierro",
-  "item_iron_greatsword_description": "Una gran hoja de hierro áspero con un mango de piedra labrada. Con una hoja lo suficientemente grande, todo muere.",
   "item_silver_greatsword": "Gran espada rúnica de plata",
   "item_silver_greatsword_description": "Plata forjada con hierro forjado, adornada con runas para protegerse de los no muertos.",
   "item_dagger_flint_2h": "Dagas de pedernal",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Selección de batalla de hueso y sangre",
   "item_pickaxe_blood_description": "Esta piqueta parece anormalmente fuerte y hambrienta de tu sangre.",
   "va_blood_sucker": "Frenesí de Sangre",
-  "va_blood_sucker_desc": "Tu arma está ansiosa por sangre."
+  "va_blood_sucker_desc": "Tu arma está ansiosa por sangre.",
+  "item_arrow_chitin_description": "No tan afilada como otras flechas pero causa un corte desagradable de todas formas.",
+  "item_bolt_silver_frost_description": "Pernos de plata, encerrados en hielo, mortales para los ardientes y los muertos.",
+  "item_silver_atgeir_description": "Una enorme hoja de plata reforzada con obsidiana, un arma de cazadores de bestias.",
+  "item_iron_greatsword_description": "Una gran hoja de hierro áspero con un mango de piedra labrada. Con una hoja lo suficientemente grande, todo muere."
 }

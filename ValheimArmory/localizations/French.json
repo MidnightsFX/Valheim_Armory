@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Flèche en bois ancien",
   "item_ancient_arrow_description": "On dirait qu'elle peut se briser à tout moment.",
   "item_arrow_chitin": "Flèche en chitine",
-  "item_arrow_chitin_description": "Pas aussi tranchante que les autres flèches mais elle provoque malgré tout une vilaine coupure.",
   "item_bolt_wood": "Boulon en bois",
   "item_bolt_wood_description": "Un peu plus qu'un bâton pointu. Tiré assez fort, ça fait quand même mal!",
   "item_bolt_bronze": "Boulon en bronze",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Boulon empoisonné en fer",
   "item_bolt_iron_poison_description": "Un boulon en fer pointu avec du poison, une mort accélérée.",
   "item_bolt_silver_frost": "Boulon de givre en argent",
-  "item_bolt_silver_frost_description": "Des boulons en argent, enrobés de glace, mortels pour les êtres de feu et les morts.",
   "item_bolt_surtling": "Boulon Surtling en métal noir",
   "item_bolt_surtling_description": "Un noyau en métal noir abritant un noyau Surtling, ça va brûler.",
   "item_bolt_obsidian": "Boulon en obsidienne",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Atgeir royal abyssal",
   "item_atgeir_chitin_heavy_description": "Un atgeir en chitine aiguisé avec un noyau d'argent, adapté aux vikings les plus courageux.",
   "item_silver_atgeir": "Atgeir en argent",
-  "item_silver_atgeir_description": "Une énorme lame en argent renforcée d'obsidienne, une arme de chasse aux bêtes.",
   "item_sledge_blackmetal": "Briseur de ciel",
   "item_sledge_blackmetal_description": "De lourds morceaux de métal noir fusionnés avec des pierres de tonnerre. Provoque des éclairs. Un marteau de guerre qui vaut son pesant d'or.",
   "item_battleaxe_flint": "Grande hache en silex",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Grande épée en bronze",
   "item_bronze_greatsword_description": "Une immense lame en bronze maniée avec du bois de base, pas très durable mais assez tranchante.",
   "item_iron_greatsword": "Grande épée en fer",
-  "item_iron_greatsword_description": "Une grande lame en fer brut avec une poignée en pierre taillée. Avec une lame assez grande, tout meurt.",
   "item_silver_greatsword": "Grande épée runique en argent",
   "item_silver_greatsword_description": "De l'argent forgé avec du fer ouvragé, orné de runes pour repousser les morts-vivants.",
   "item_dagger_flint_2h": "Dagues en silex",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Bâton de combat en os et sang",
   "item_pickaxe_blood_description": "Ce pic semble anormalement fort et assoiffé de votre sang.",
   "va_blood_sucker": "Frénésie de sang",
-  "va_blood_sucker_desc": "Votre arme est avide de sang."
+  "va_blood_sucker_desc": "Votre arme est avide de sang.",
+  "item_arrow_chitin_description": "Pas aussi tranchante que d'autres flèches mais elle cause quand même une coupure désagréable.",
+  "item_bolt_silver_frost_description": "Boulons d'argent, enfermés dans la glace mortelle pour les êtres de feu et les morts.",
+  "item_silver_atgeir_description": "Une énorme lame d'argent renforcée d'obsidienne, une arme de chasseur de bêtes.",
+  "item_iron_greatsword_description": "Une grande lame de fer rugueuse avec un manche en pierre taillée. Avec une lame assez grande, tout meurt."
 }

@@ -8,7 +8,6 @@
   "item_ancient_arrow": "Săgeată de lemn antic",
   "item_ancient_arrow_description": "Pare să poată seceră în orice moment.",
   "item_arrow_chitin": "Săgeată de chitină",
-  "item_arrow_chitin_description": "Nu la fel de ascuțită ca alte săgeți, dar provoacă o tăietură urâtă în orice caz.",
   "item_bolt_wood": "Șurub de lemn",
   "item_bolt_wood_description": "Un pic mai mult decât un băț ascuțit. Tras destul de tare, tot doare!",
   "item_bolt_bronze": "Șurub de bronz",
@@ -16,7 +15,6 @@
   "item_bolt_iron_poison": "Șurub de oțel otrăvit",
   "item_bolt_iron_poison_description": "Un șurub de oțel ascuțit cu otravă, accelerând moartea.",
   "item_bolt_silver_frost": "Șurub de argint înghețat",
-  "item_bolt_silver_frost_description": "Șuruburi de argint, încastrate în gheață mortală pentru cei fierbinți și morți.",
   "item_bolt_surtling": "Șurub surtling de metal negru",
   "item_bolt_surtling_description": "Un nucleu de metal negru care găzduiește un nucleu surtling, asta va arde.",
   "item_bolt_obsidian": "Șurub de obsidian",
@@ -36,7 +34,6 @@
   "item_atgeir_chitin_heavy": "Atgeir regal abisal",
   "item_atgeir_chitin_heavy_description": "Un atgeir ascuțit de chitină cu un nucleu de argint, potrivit pentru cei mai curajoși vikingi.",
   "item_silver_atgeir": "Atgeir de argint",
-  "item_silver_atgeir_description": "O lamă mare de argint întărită cu obsidian, o armă de vânătoare de fiare.",
   "item_sledge_blackmetal": "Spărgător de cer",
   "item_sledge_blackmetal_description": "Bucăți grele de metal negru fuzionat cu pietre de tunet. Cauzează descărcări electrice. Un ciocan de război care își merită greutatea",
   "item_battleaxe_flint": "Topor mare de silex",
@@ -50,7 +47,6 @@
   "item_bronze_greatsword": "Mare sabie de bronz",
   "item_bronze_greatsword_description": "O lamă masivă de bronz manevrată cu lemn de bază, nu foarte durabilă, dar destul de ascuțită.",
   "item_iron_greatsword": "Mare sabie de fier",
-  "item_iron_greatsword_description": "O lamă mare de fier aspru, cu un mâner de piatră tăiată. Cu o lamă suficient de mare, orice moare.",
   "item_silver_greatsword": "Sabie mare runică de argint",
   "item_silver_greatsword_description": "Argint forjat cu fier lucrat, împodobit cu rune pentru a alunga morții vii.",
   "item_dagger_flint_2h": "Pumnale de silex",
@@ -146,5 +142,9 @@
   "item_pickaxe_blood": "Sânge osoase bătălie",
   "item_pickaxe_blood_description": "Această cazma pare anormal de puternică și însetată de sângele tău.",
   "va_blood_sucker": "Frenesia de sânge",
-  "va_blood_sucker_desc": "Arma ta este ávidă de sânge.Arma ta este gata pentru sânge."
+  "va_blood_sucker_desc": "Arma ta este ávidă de sânge.Arma ta este gata pentru sânge.",
+  "item_arrow_chitin_description": "Nu atât de ascutită ca alte săgeți, dar provoacă o tăietură urâtă oricum.",
+  "item_bolt_silver_frost_description": "Bulane de argint, învelite în gheață, mortale pentru cei fierbinți și morți.",
+  "item_silver_atgeir_description": "Un imens cuțit de argint întărit cu obsidian, o armă a vânătorilor de fiare.",
+  "item_iron_greatsword_description": "O lamă mare de fier brut cu un mâner de piatră cioplită. Cu o lamă suficient de mare, orice moare."
 }
