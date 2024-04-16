@@ -2043,6 +2043,7 @@ namespace ValheimArmory
                     { "blunt", new Tuple<float, float, float, bool>(50, 0, 200, true) },
                     { "blunt_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
+                    { "durability", new Tuple<float, float, float, bool>(50, 0, 500, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(35, 0, 50, true) },
                     { "primary_attack_eitr", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                 },
@@ -2052,6 +2053,10 @@ namespace ValheimArmory
                     { "ElderBark", new Tuple<int, int>(20, 10) },
                     { "Guck", new Tuple<int, int>(4, 2) },
                     { "TrophyBlob", new Tuple<int, int>(2, 1) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2073,6 +2078,7 @@ namespace ValheimArmory
                     { "blunt", new Tuple<float, float, float, bool>(50, 0, 200, true) },
                     { "blunt_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
+                    { "durability", new Tuple<float, float, float, bool>(50, 0, 500, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(35, 0, 50, true) },
                     { "primary_attack_eitr", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                 },
@@ -2082,6 +2088,10 @@ namespace ValheimArmory
                     { "ElderBark", new Tuple<int, int>(20, 10) },
                     { "GreydwarfEye", new Tuple<int, int>(4, 2) },
                     { "TrophyGreydwarfShaman", new Tuple<int, int>(2, 1) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2101,6 +2111,7 @@ namespace ValheimArmory
                     { "frost", new Tuple<float, float, float, bool>(12, 0, 120, true) },
                     { "frost_per_level", new Tuple<float, float, float, bool>(2, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
+                    { "durability", new Tuple<float, float, float, bool>(50, 0, 500, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(5, 0, 50, true) },
                     { "primary_attack_eitr", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                 },
@@ -2110,6 +2121,10 @@ namespace ValheimArmory
                     { "ElderBark", new Tuple<int, int>(20, 10) },
                     { "FreezeGland", new Tuple<int, int>(4, 2) },
                     { "TrophyHatchling", new Tuple<int, int>(2, 1) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2140,6 +2155,10 @@ namespace ValheimArmory
                     { "ElderBark", new Tuple<int, int>(20, 10) },
                     { "SurtlingCore", new Tuple<int, int>(4, 2) },
                     { "TrophySurtling", new Tuple<int, int>(2, 1) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
         }
