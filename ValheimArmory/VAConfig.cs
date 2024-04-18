@@ -1,8 +1,4 @@
-﻿
-using Logger = Jotunn.Logger;
-using BepInEx.Configuration;
-using System;
-using BepInEx;
+﻿using BepInEx.Configuration;
 
 namespace ValheimArmory
 {
@@ -44,6 +40,27 @@ namespace ValheimArmory
             return file.Bind(catagory, key, value,
                 new ConfigDescription(description,
                 null,
+                new ConfigurationManagerAttributes { IsAdminOnly = true, IsAdvanced = advanced })
+                );
+        }
+
+        /// <summary>
+        /// Helper to bind configs for float types
+        /// </summary>
+        /// <param name="config_file"></param>
+        /// <param name="catagory"></param>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        /// <param name="description"></param>
+        /// <param name="advanced"></param>
+        /// <param name="valmin"></param>
+        /// <param name="valmax"></param>
+        /// <returns></returns>
+        public static ConfigEntry<int> BindServerConfig(string catagory, string key, int value, string description, bool advanced = false, int valmin = 0, int valmax = 150)
+        {
+            return file.Bind(catagory, key, value,
+                new ConfigDescription(description,
+                new AcceptableValueRange<int>(valmin, valmax),
                 new ConfigurationManagerAttributes { IsAdminOnly = true, IsAdvanced = advanced })
                 );
         }

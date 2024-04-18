@@ -1,13 +1,12 @@
 ﻿
+using Jotunn.Configs;
+using Jotunn.Entities;
 using Jotunn.Managers;
 using System;
-using Logger = Jotunn.Logger;
-using UnityEngine;
-using Jotunn.Entities;
-using Jotunn.Configs;
-using BepInEx.Configuration;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+using Logger = Jotunn.Logger;
 
 namespace ValheimArmory
 {
@@ -1668,7 +1667,7 @@ namespace ValheimArmory
                 }
             );
 
-            // Silver 1H Daggers Moder version
+            // Silver 1H Daggers | not default craftable
             new ValArmoryItem(
                 EmbeddedResourceBundle,
                 new Dictionary<string, string>() {
@@ -1676,6 +1675,41 @@ namespace ValheimArmory
                     { "catagory", "Daggers" },
                     { "prefab", "VAdagger_silver" },
                     { "sprite", "silver_dagger" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
+                    { "slash", new Tuple<float, float, float, bool>(34, 0, 99, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(34, 0, 99, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "spirit", new Tuple<float, float, float, bool>(0, 0, 99, true) },
+                    { "spirit_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(30, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() {
+                    { "enabled", true },
+                    { "craftable", false }
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "ElderBark", new Tuple<int, int>(4, 2) },
+                    { "Obsidian", new Tuple<int, int>(12, 5) },
+                    { "Silver", new Tuple<int, int>(14, 6) },
+                }
+            );
+
+            // Moders Daggers 1H
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                new Dictionary<string, string>() {
+                    { "name", "Moders Dagger" },
+                    { "catagory", "Daggers" },
+                    { "prefab", "VAdagger_moder" },
+                    { "sprite", "moder_dagger" },
                     { "craftedAt", "forge" }
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
@@ -2279,10 +2313,12 @@ namespace ValheimArmory
             if (!itemtoggles.ContainsKey("craftable")) { itemtoggles.Add("craftable", true); }
             // needed metadata - item name without spaces
             metadata["short_item_name"] = string.Join("", metadata["name"].Split(default(string[]), StringSplitOptions.RemoveEmptyEntries));
+            // Default the min station level if it is not set
+            if (!itemsettings.ContainsKey("stationRequiredLevel")) { itemsettings["stationRequiredLevel"] = 1; }
 
-            // create config
+            // create config | update configs
             if (VAConfig.EnableDebugMode.Value == true) { Logger.LogDebug($"Creating Configuration Values for {metadata["name"]}"); }
-            CreateAndLoadConfigValues(metadata, itemdata, itemtoggles, recipedata);
+            CreateAndLoadConfigValues(metadata, itemdata, itemtoggles, recipedata, itemsettings);
 
             // If the item is not enabled we do not load it
             if (itemtoggles["enabled"] != false)
@@ -2309,8 +2345,6 @@ namespace ValheimArmory
                 ModifyItemData(prefab.GetComponent<ItemDrop>()?.m_itemData, itemdata);
                 ModifyItemFlags(prefab.GetComponent<ItemDrop>().m_itemData, itemtoggles);
 
-                // Default the min station level if it is not set
-                if (!itemsettings.ContainsKey("stationRequiredLevel")) { itemsettings["stationRequiredLevel"] = 1; }
 
                 // Add the recipe with helper
                 RequirementConfig[] recipe = new RequirementConfig[recipedata.Count];
@@ -2346,11 +2380,12 @@ namespace ValheimArmory
         /// <param name="metadata"></param>
         /// <param name="itemdata"></param>
         /// <param name="itemtoggles"></param>
-        private void CreateAndLoadConfigValues(Dictionary<String, String> metadata, Dictionary<String, Tuple<float, float, float, bool>> itemdata, Dictionary<String, bool> itemtoggles, Dictionary<String, Tuple<int, int>> recipedata)
+        private void CreateAndLoadConfigValues(Dictionary<String, String> metadata, Dictionary<String, Tuple<float, float, float, bool>> itemdata, Dictionary<String, bool> itemtoggles, Dictionary<String, Tuple<int, int>> recipedata, Dictionary<String, int> itemsettings)
         {
             // Populate defaults if they don't exist
             itemtoggles["enabled"] = VAConfig.BindServerConfig($"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-enabled", itemtoggles["enabled"], $"Enable/Disable the {metadata["name"]}.").Value;
             itemtoggles["craftable"] = VAConfig.BindServerConfig($"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-craftable", itemtoggles["craftable"], $"Enable/Disable the crafting recipe for {metadata["name"]}.").Value;
+            itemsettings["stationRequiredLevel"] = VAConfig.BindServerConfig($"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-stationRequiredLevel", itemsettings["stationRequiredLevel"], $"Sets the required minimum crafting station level to craft {metadata["name"]}", true, 1, 4).Value;
 
             // Set and update the crafted at value
             metadata["craftedAt"] = VAConfig.BindServerConfig($"{metadata["catagory"]} - {metadata["name"]}", $"{metadata["short_item_name"]}-CraftedAt", metadata["craftedAt"], $"Where the recipe is crafted at, eg: 'forge', 'piece_workbench', 'blackforge', 'piece_artisanstation'.").Value;

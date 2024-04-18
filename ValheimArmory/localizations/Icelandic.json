@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Eimur stór silfurblað haldið uppi með kísilsteini, vopn veiðimanna á villidýrum.",
   "item_iron_greatsword_description": "Stór hröð járnsmiðja með höggðum steinhjalti. Með nógu stórum egg, deyr allt.",
   "item_elder_roundshield_description": "Vínir sameinast blóði öldunganna. Mínkar blóðtappaða skaða.",
-  "item_moder_buckler_description": "Grátið með drekablaðið þetta skjöldur minnkar frostáfall þegar hann blokkar."
+  "item_moder_buckler_description": "Grátið með drekablaðið þetta skjöldur minnkar frostáfall þegar hann blokkar.",
+  "item_dagger_moder": "Drakaköld hnífur",
+  "item_dagger_moder_description": "Ískaldur hnífur, frystur af tárum Moder."
 }

@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Bir yılanavcısı silahı olarak kullanılan devasa bir gümüş bıçak, obsidiyen ile desteklenmiş.",
   "item_iron_greatsword_description": "Büyük, kaba bir demir bıçak ve yontulmuş taş bir kabza. Yeterince büyük bir bıçakla, her şey ölür.",
   "item_elder_roundshield_description": "Sarmaşıklar, Yaşlı'nın kanıyla birleşti. Tıkanmış künt hasarı azaltır.",
-  "item_moder_buckler_description": "Ejderha kanı ile oyulmuş bu kalkan buz hasarını bloklarken azaltır.    Anladım, teşekkür ederim."
+  "item_moder_buckler_description": "Ejderha kanı ile oyulmuş bu kalkan buz hasarını bloklarken azaltır.    Anladım, teşekkür ederim.",
+  "item_dagger_moder": "Ejderdondurucu bıçak",
+  "item_dagger_moder_description": "Buz gibi soğuk bir hançer, Moder'ün gözyaşlarıyla donmuş."
 }

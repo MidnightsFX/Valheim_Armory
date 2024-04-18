@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Una enorme hoja de plata reforzada con obsidiana, un arma de cazadores de bestias.",
   "item_iron_greatsword_description": "Una gran hoja de hierro áspero con un mango de piedra labrada. Con una hoja lo suficientemente grande, todo muere.",
   "item_elder_roundshield_description": "Enredaderas fusionadas con la sangre del Anciano. Reduce el daño contundente bloqueado.",
-  "item_moder_buckler_description": "Grabado con sangre de dragón, este escudo reduce el daño por escarcha al bloquear."
+  "item_moder_buckler_description": "Grabado con sangre de dragón, este escudo reduce el daño por escarcha al bloquear.",
+  "item_dagger_moder": "Cuchillo de escarcha de dragón",
+  "item_dagger_moder_description": "Una daga helada, congelada por las lágrimas de Moder."
 }

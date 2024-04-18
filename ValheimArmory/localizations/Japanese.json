@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "「黒曜石で支えられた巨大な銀の刃、獣狩りの武器。」",
   "item_iron_greatsword_description": "大きな荒々しい鉄の刃と石でできた柄。十分に大きな刃なら、何でも死ぬ。 大きな荒々しい鉄の刃と石でできた柄。十分に大きな刃なら、何でも死ぬ。",
   "item_elder_roundshield_description": "「長老の血と融合したつる。ブロックされた鈍器のダメージを軽減する。」",
-  "item_moder_buckler_description": "「竜の血で刻まれたこの盾は、ブロックしながら霜のダメージを軽減します。」"
+  "item_moder_buckler_description": "「竜の血で刻まれたこの盾は、ブロックしながら霜のダメージを軽減します。」",
+  "item_dagger_moder": "ドラゴンフロストナイフドラゴンフロストナイフです。",
+  "item_dagger_moder_description": "氷のように冷たい短剣、モーダーの涙によって凍結された。了解しました。"
 }

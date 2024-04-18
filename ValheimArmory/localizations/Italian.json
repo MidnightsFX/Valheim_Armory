@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Una enorme lama d'argento rinforzata con ossidiana, un'arma da cacciatore di bestie.",
   "item_iron_greatsword_description": "Una grande lama di ferro grezzo con un'elsa di pietra tagliata. Con una lama abbastanza grande, qualsiasi cosa muore.",
   "item_elder_roundshield_description": "Viti fuse con il sangue degli Anziani. Riduce il danno contundente bloccato.",
-  "item_moder_buckler_description": "Inciso con il sangue di drago, questo scudo riduce i danni da gelo durante il blocco."
+  "item_moder_buckler_description": "Inciso con il sangue di drago, questo scudo riduce i danni da gelo durante il blocco.",
+  "item_dagger_moder": "Coltello Dragonfrost",
+  "item_dagger_moder_description": "Un pugnale di ghiaccio freddo, congelato dalle lacrime di Moder."
 }

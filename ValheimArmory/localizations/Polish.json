@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Olbrzymi srebrny ostrze wzmocnione obsydianem, broń łowców bestii.",
   "item_iron_greatsword_description": "Duża szorstka żelazna klinga z obrobionym kamieniem rękojeści. Z wystarczająco dużą klingą wszystko umiera.",
   "item_elder_roundshield_description": "Winorośli zlewa się z krwią Starszego. Zmniejsza zablokowane obrażenia tępe.",
-  "item_moder_buckler_description": "Wydłubane z krwi smoków, tarcza ta redukuje obrażenia od mrozu podczas blokowania."
+  "item_moder_buckler_description": "Wydłubane z krwi smoków, tarcza ta redukuje obrażenia od mrozu podczas blokowania.",
+  "item_dagger_moder": "Nóż Smoczych Zim.",
+  "item_dagger_moder_description": "Zimno lodowy sztylet, zamrożony przez łzy Moder."
 }

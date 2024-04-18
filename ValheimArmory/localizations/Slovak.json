@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Obrovská strieborná čepeľ s obsidiánom, zbraň lovca príšer.",
   "item_iron_greatsword_description": "Veľký hrubý železný čepeľ s opracovanou kamennou rukoväťou. S dostatočne veľkou čepeľou zomrie čokoľvek.",
   "item_elder_roundshield_description": "Vinič zlúčený s krvou Starších. Zníži blokované tupé zranenia.",
-  "item_moder_buckler_description": "Vyleptaný s krvou drakov tento štít znižuje poškodenie mrazom pri blokovaní."
+  "item_moder_buckler_description": "Vyleptaný s krvou drakov tento štít znižuje poškodenie mrazom pri blokovaní.",
+  "item_dagger_moder": "Drakomrazový nôž",
+  "item_dagger_moder_description": "Ľadový chladný dýka, zmrazený slzami Moder."
 }

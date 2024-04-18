@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Големо сребрено сечиво стегнато со обсидијан, оружје на ловци на ѕверови.",
   "item_iron_greatsword_description": "Големо грубо железно сечиво со издлабен каменен држач. Со доволно големо сечиво, сè умира.Please let me know if you need anything else.",
   "item_elder_roundshield_description": "Лозјата се споени со крвта на Старецот. Намалува блокираните оштетувања.",
-  "item_moder_buckler_description": "Изгорен со крвта на змија, овој штит го намалува мразот додека блокира."
+  "item_moder_buckler_description": "Изгорен со крвта на змија, овој штит го намалува мразот додека блокира.",
+  "item_dagger_moder": "Нож со замрзнат дух",
+  "item_dagger_moder_description": "Ледено ладно сечиво, замрзнато од солзите на Модер."
 }

@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Obrovská stříbrná čepel opatřená obsidiánem, zbraň lovců bestií.",
   "item_iron_greatsword_description": "Velké hrubé železné čepel s opracovanou kamennou rukojetí. S dostatečně velkou čepelí zemře cokoli.",
   "item_elder_roundshield_description": "Vinné révy splynuly s krví staršího. Sníží zablokované tupé zranění.",
-  "item_moder_buckler_description": "Vrypaný dračí krví tento štít snižuje újmu mrazu při blokování."
+  "item_moder_buckler_description": "Vrypaný dračí krví tento štít snižuje újmu mrazu při blokování.",
+  "item_dagger_moder": "Drakomrazivý nůž",
+  "item_dagger_moder_description": "Ledově studený dýka, zmražený slzami Moder."
 }

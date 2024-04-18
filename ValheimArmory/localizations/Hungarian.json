@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Egy hatalmas ezüst penge, melyet obszidiánnal díszítettek, egy vadászfegyver.",
   "item_iron_greatsword_description": "Egy nagy, durva vaspenge egy faragott kő markolattal. Egy elég nagy pengevel bármi meghal.",
   "item_elder_roundshield_description": "Csodás fürtök az Idősek vérrel összefonva. Csökkenti az elzáródott tompa sérüléseket.",
-  "item_moder_buckler_description": "Vésett sárkánvérrel ez a pajzs csökkenti a fagy károsítását blokkolás közben."
+  "item_moder_buckler_description": "Vésett sárkánvérrel ez a pajzs csökkenti a fagy károsítását blokkolás közben.",
+  "item_dagger_moder": "Sárkányfagy kése",
+  "item_dagger_moder_description": "Egy jéghideg tőr, Megható könnyei által megfagyva."
 }

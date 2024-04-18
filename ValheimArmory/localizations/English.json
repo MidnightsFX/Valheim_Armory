@@ -146,5 +146,7 @@
   "item_pickaxe_blood": "Blood bone battlepick",
   "item_pickaxe_blood_description": "This pickaxe seems unnaturally strong, and hungry for your blood.",
   "va_blood_sucker": "Blood Frenzy",
-  "va_blood_sucker_desc":  "Your weapon is eager for blood."
+  "va_blood_sucker_desc": "Your weapon is eager for blood.",
+  "item_dagger_moder": "Dragonfrost knife",
+  "item_dagger_moder_description":  "An ice cold dagger, frozen by Moder's tears."
 }

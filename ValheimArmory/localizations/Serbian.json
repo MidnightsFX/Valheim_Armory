@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Veliki srebrni mač ojačan obsidijanom, oružje lova na zveri.",
   "item_iron_greatsword_description": "Veliki grub gvozdeni mač sa tesanim kamenim drškom. Sa dovoljno velikim mačem, sve umire.",
   "item_elder_roundshield_description": "Loze spojene sa krvlju Starijeg. Smanjuje blokiranu tupu štetu.",
-  "item_moder_buckler_description": "Ugraviran zmijinom krvlju, ovaj štit smanjuje štetu od mraza prilikom blokiranja."
+  "item_moder_buckler_description": "Ugraviran zmijinom krvlju, ovaj štit smanjuje štetu od mraza prilikom blokiranja.",
+  "item_dagger_moder": "Mač Zmajeve zime",
+  "item_dagger_moder_description": "Ledeno hladan nož, smrznut Moderinim suzama."
 }

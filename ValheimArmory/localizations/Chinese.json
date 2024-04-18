@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "一把巨大的银刃，镶嵌着黑曜石，是猎兽者的武器。",
   "item_iron_greatsword_description": "一把粗犷的铁刃，石柄。有了足够大的刀刃，任何东西都会死。Translated response: 有了足够大的刀刃，任何东西都会死。",
   "item_elder_roundshield_description": "藤蔓融合了长者的血液。减少被阻挡的钝器伤害。",
-  "item_moder_buckler_description": "带有龙血的刻痕，这个盾牌在格挡时减少冰霜伤害。"
+  "item_moder_buckler_description": "带有龙血的刻痕，这个盾牌在格挡时减少冰霜伤害。",
+  "item_dagger_moder": "龙霜刀",
+  "item_dagger_moder_description": "一把冰冷的匕首，被莫德尔的眼泪冻结。"
 }

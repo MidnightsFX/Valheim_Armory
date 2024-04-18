@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "흑요석으로 보강된 거대한 은색 칼, 야수사냥꾼의 무기.",
   "item_iron_greatsword_description": "깎아 만든 돌 손잡이가 달린 큰 날카로운 철검. 충분히 큰 칼이면 모든 것이 죽는다.",
   "item_elder_roundshield_description": "고인의 피와 융합된 덩굴. 막힌 둔기 피해를 줄입니다.",
-  "item_moder_buckler_description": "용의 피로 새겨진 이 방패는 눈 서릿 대미를 줄여주며 방어할 때 피해를 줄입니다.용의 피로 새겨진 이 방패는 눈 서릿 대미를 줄여주며 방어할 때 피해를 줄입니다."
+  "item_moder_buckler_description": "용의 피로 새겨진 이 방패는 눈 서릿 대미를 줄여주며 방어할 때 피해를 줄입니다.용의 피로 새겨진 이 방패는 눈 서릿 대미를 줄여주며 방어할 때 피해를 줄입니다.",
+  "item_dagger_moder": "용서릿칼",
+  "item_dagger_moder_description": "얼어붙은 얼음 단검, 모더의 눈물에 의해 얼어붙었습니다."
 }

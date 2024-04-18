@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Et kæmpestort sølvblad forstærket med obsidian, et rovdyrjæger-våben.",
   "item_iron_greatsword_description": "Et stort groft jernblad med en hugget stenhåndtag. Med en stor nok klinge dør alt.",
   "item_elder_roundshield_description": "Vinstokke fusioneret med de ældres blod. Reducerer blokeret stump skade.",
-  "item_moder_buckler_description": "Indgraveret med drageblod reducerer dette skjold frostskade mens det blokerer."
+  "item_moder_buckler_description": "Indgraveret med drageblod reducerer dette skjold frostskade mens det blokerer.",
+  "item_dagger_moder": "Dragonfrost kniv",
+  "item_dagger_moder_description": "En iskold dolk, frossen af Moderens tårer."
 }

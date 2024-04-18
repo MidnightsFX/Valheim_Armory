@@ -4,17 +4,13 @@
 // Project: ValheimArmory
 
 using BepInEx;
+using Jotunn.Entities;
 using Jotunn.Managers;
 using Jotunn.Utils;
-using System;
-using Logger = Jotunn.Logger;
-using UnityEngine;
-using Jotunn.Entities;
-using Jotunn.Configs;
-using System.Collections.Generic;
-using BepInEx.Configuration;
 using System.IO;
 using System.Text.RegularExpressions;
+using UnityEngine;
+using Logger = Jotunn.Logger;
 
 namespace ValheimArmory
 {
@@ -25,7 +21,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.7.5";
+        public const string PluginVersion = "1.8.0";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;

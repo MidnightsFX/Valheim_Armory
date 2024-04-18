@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Valtava hopeinen terä, joka on tuettu obsidiaanilla, petometsästäjän ase.",
   "item_iron_greatsword_description": "Suuri karkea rautaterä hiotulla kivikahvalla. Tarpeeksi suurella terällä mikä tahansa kuolee.",
   "item_elder_roundshield_description": "Viiniköynnökset sulautuneet Vanhimman veren kanssa. Vähentää tukittua tylppää vahinkoa.",
-  "item_moder_buckler_description": "Kuvioitu lohikäärmeen verellä tämä kilpi vähentää jäätävää vahinkoa, kun sitä käytetään suojana."
+  "item_moder_buckler_description": "Kuvioitu lohikäärmeen verellä tämä kilpi vähentää jäätävää vahinkoa, kun sitä käytetään suojana.",
+  "item_dagger_moder": "Drakonijääpuukko",
+  "item_dagger_moder_description": "Jääkylmä tikari, jäädytetty Moderin kyynelillä."
 }

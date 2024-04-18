@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Milžiniškas sidabro peilis, sustiprintas obsidianu, žvėrių medžiotojų ginklas.",
   "item_iron_greatsword_description": "Didelis šiurkštus geležies peilis su apkalta akmens rankena. Turint pakankamai didelį peilį, viskas miršta.",
   "item_elder_roundshield_description": "Vynuogių sulietos su Senjorų krauju. Sumažina užblokuotą tiesinį žalos kiekį.",
-  "item_moder_buckler_description": "Įrėžus su drakono krauju, šis skydas mažina šalčio žalą blokuojant."
+  "item_moder_buckler_description": "Įrėžus su drakono krauju, šis skydas mažina šalčio žalą blokuojant.",
+  "item_dagger_moder": "Drakono šerkšno peilis",
+  "item_dagger_moder_description": "Liežuviškas šaltas peilis, užšaldytas Moderio ašaromis."
 }

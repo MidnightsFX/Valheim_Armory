@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Uma enorme lâmina de prata reforçada com obsidiana, uma arma de caçadores de bestas.",
   "item_iron_greatsword_description": "Uma grande lâmina áspera de ferro com um punho de pedra talhada. Com uma lâmina grande o suficiente, tudo morre.",
   "item_elder_roundshield_description": "Vides fundidas com o sangue do Ancião. Reduz o dano contundente bloqueado.",
-  "item_moder_buckler_description": "Gravado com o sangue de dragão, este escudo reduz o dano de geada ao bloquear."
+  "item_moder_buckler_description": "Gravado com o sangue de dragão, este escudo reduz o dano de geada ao bloquear.",
+  "item_dagger_moder": "Faca de gelo de dragão",
+  "item_dagger_moder_description": "Uma adaga gelada, congelada pelas lágrimas de Moder."
 }

@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "一把镶有黑曜石的巨大銀刃，是狩獵野獸者的武器。",
   "item_iron_greatsword_description": "一把大而粗糙的鐵刃，配有鑿石柄。有足夠大的刀片，任何東西都會死。",
   "item_elder_roundshield_description": "藤蔓融合了長者的血液。減少被阻擋的鈍損傷害。",
-  "item_moder_buckler_description": "浸透龍血的盾牌能降低冰霜傷害並能擋住攻擊。"
+  "item_moder_buckler_description": "浸透龍血的盾牌能降低冰霜傷害並能擋住攻擊。",
+  "item_dagger_moder": "龍霜刀",
+  "item_dagger_moder_description": "一把冰冷的匕首，被莫德尔的眼泪冻结了。"
 }

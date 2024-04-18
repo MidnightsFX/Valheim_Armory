@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Une énorme lame d'argent renforcée d'obsidienne, une arme de chasseur de bêtes.",
   "item_iron_greatsword_description": "Une grande lame de fer rugueuse avec un manche en pierre taillée. Avec une lame assez grande, tout meurt.",
   "item_elder_roundshield_description": "Vignes fusionnées avec le sang de l'Aîné. Réduit les dégâts contondants bloqués.",
-  "item_moder_buckler_description": "Gravé avec du sang de dragon, ce bouclier réduit les dégâts de givre lorsqu'il bloque."
+  "item_moder_buckler_description": "Gravé avec du sang de dragon, ce bouclier réduit les dégâts de givre lorsqu'il bloque.",
+  "item_dagger_moder": "Couteau Dragonfrost",
+  "item_dagger_moder_description": "Un poignard glacé, gelé par les larmes de Moder."
 }

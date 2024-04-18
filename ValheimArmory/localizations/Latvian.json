@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Milzīgs sudraba asi, nostiprināts ar obsidiānu, medītāju ierocis.",
   "item_iron_greatsword_description": "Liela rupja dzelzs lama ar pārstrādātu akmeņu rokturi. Ar pietiekami lielu lāmi, viss nomirst.",
   "item_elder_roundshield_description": "Vīnogas saplūst ar vecākās asinīm. Samazina bloķēto stumšu bojājumu.",
-  "item_moder_buckler_description": "Iegravēts ar pūķa asinīm šis vairogs samazina sala bojājumus, bloķējot."
+  "item_moder_buckler_description": "Iegravēts ar pūķa asinīm šis vairogs samazina sala bojājumus, bloķējot.",
+  "item_dagger_moder": "Dzintara ledus nazis",
+  "item_dagger_moder_description": "Ledains nazis, iekarsēts ar Moders asarām."
 }

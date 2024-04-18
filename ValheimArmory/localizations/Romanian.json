@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Un imens cuțit de argint întărit cu obsidian, o armă a vânătorilor de fiare.",
   "item_iron_greatsword_description": "O lamă mare de fier brut cu un mâner de piatră cioplită. Cu o lamă suficient de mare, orice moare.",
   "item_elder_roundshield_description": "Vinele se fuzionează cu sângele Bătrânului. Reduce daunele contondente blocate.Mulțumesc!",
-  "item_moder_buckler_description": "Gravat cu sânge de dragon, acest scut reduce daunele de îngheț în timp ce blochează."
+  "item_moder_buckler_description": "Gravat cu sânge de dragon, acest scut reduce daunele de îngheț în timp ce blochează.",
+  "item_dagger_moder": "Cuțitul Dragonfrost",
+  "item_dagger_moder_description": "Un cuțit de gheață rece, înghețat de lacrimile lui Moder."
 }

@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Ett enormt silverblad förstärkt med obsidian, en jägares vapen.",
   "item_iron_greatsword_description": "Ett stort grovt järnblad med en huggen stenhilt. Med tillräckligt stort blad dör allting.",
   "item_elder_roundshield_description": "Växter förenade med de äldstes blod. Minskar blockerad trubbig skada.",
-  "item_moder_buckler_description": "Graverad med drakblod minskar detta sköld frostskador vid blockering."
+  "item_moder_buckler_description": "Graverad med drakblod minskar detta sköld frostskador vid blockering.",
+  "item_dagger_moder": "Drakfrostkniv",
+  "item_dagger_moder_description": "En iskall dolk, frusen av Moders tårar."
 }

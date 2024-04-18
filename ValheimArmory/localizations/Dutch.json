@@ -146,5 +146,7 @@
   "item_silver_atgeir_description": "Een enorme zilveren kling met obsidiaan, een wapen van een beestenjager.",
   "item_iron_greatsword_description": "Een grote ruwe ijzeren mes met een gehouwen stenen heft. Met een groot genoeg mes sterft alles.",
   "item_elder_roundshield_description": "Ranken versmolten met het bloed van de Oudere. Vermindert geblokkeerde stomp letsel.",
-  "item_moder_buckler_description": "Geëtst met drakenbloed, deze schild vermindert vorstschade tijdens het blokkeren."
+  "item_moder_buckler_description": "Geëtst met drakenbloed, deze schild vermindert vorstschade tijdens het blokkeren.",
+  "item_dagger_moder": "Drakenfrost mes",
+  "item_dagger_moder_description": "Een ijskoude dolk, bevroren door de tranen van Moder."
 }
