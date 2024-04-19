@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Древна дървена стрела",
   "item_ancient_arrow_description": "Изглежда, че може да се разцепи по всяко време.",
   "item_arrow_chitin": "Стрела от хитин",
-  "item_bolt_wood": "Болт от ядрено дърво",
   "item_bolt_wood_description": "Малко повече от остър пръчка. Ако се изстреля достатъчно силно, все още боли!",
   "item_bolt_bronze": "Бронзов болт",
   "item_bolt_bronze_description": "Бронзовите арбалетни стрели са малко по-остри от ядрения дървен материал.",
   "item_bolt_iron_poison": "Желязна отровна стрела",
   "item_bolt_iron_poison_description": "Острят желязен болт с отрова, ускоряващ смъртта.",
   "item_bolt_silver_frost": "Сребърен мразен болт",
-  "item_bolt_surtling": "Черенметален винт за заключване",
   "item_bolt_surtling_description": "Черен метален корпус, който съдържа съртлинг ядро, това ще изгори.",
   "item_bolt_obsidian": "Обсидианов болт",
   "item_bolt_obsidian_description": "Частичка от пълна тъмнина.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Лозя, сливани с кръвта на Стареца. Намалява блокираните тъпи удари.",
   "item_moder_buckler_description": "Гравиран с кръв на дракони, този щит намалява уврежданията от мраз, докато блокира.",
   "item_dagger_moder": "Драконско оледено ножче",
-  "item_dagger_moder_description": "Ледено студено ножче, замразено от сълзите на Модер."
+  "item_dagger_moder_description": "Ледено студено ножче, замразено от сълзите на Модер.",
+  "item_bolt_surtling": " Сюртлинг огнен болт",
+  "item_bolt_corewood": "ядрена дървена болт",
+  "item_bolt_corewood_description": "Един здрав дървен болт.",
+  "item_bolt_wood": "Дървен болт"
 }

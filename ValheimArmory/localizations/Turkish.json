@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Antik ahşap ok",
   "item_ancient_arrow_description": "Her an parçalanabilir gibi görünüyor.",
   "item_arrow_chitin": "Kitin ok",
-  "item_bolt_wood": "Çekirdek tahtası cıvata",
   "item_bolt_wood_description": "Biraz daha sivri bir çubuktan fazlası. Sert bir şekilde atıldığında hala acıtıyor!",
   "item_bolt_bronze": "Bronz cıvata",
   "item_bolt_bronze_description": "Bronz crossbow, corewooddan biraz daha keskin.",
   "item_bolt_iron_poison": "Demir zehir cıvatası",
   "item_bolt_iron_poison_description": "Zehirle kaplanmış keskin bir demir cıvata, ölümü hızlandırıyor.",
   "item_bolt_silver_frost": "Gümüş buz cıvatası",
-  "item_bolt_surtling": "Blackmetal surtling cıvatası",
   "item_bolt_surtling_description": "Bir surtling çekirdeği barındıran bir blackmetal çekirdek, bu yanacak.",
   "item_bolt_obsidian": "Obsidyen cıvatası",
   "item_bolt_obsidian_description": "Tamamen karanlık bir parça.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Sarmaşıklar, Yaşlı'nın kanıyla birleşti. Tıkanmış künt hasarı azaltır.",
   "item_moder_buckler_description": "Ejderha kanı ile oyulmuş bu kalkan buz hasarını bloklarken azaltır.    Anladım, teşekkür ederim.",
   "item_dagger_moder": "Ejderdondurucu bıçak",
-  "item_dagger_moder_description": "Buz gibi soğuk bir hançer, Moder'ün gözyaşlarıyla donmuş."
+  "item_dagger_moder_description": "Buz gibi soğuk bir hançer, Moder'ün gözyaşlarıyla donmuş.",
+  "item_bolt_surtling": "Surtling ateş oku",
+  "item_bolt_corewood": "Çekirdek odunu cıvata",
+  "item_bolt_corewood_description": "Sağlam bir ahşap cıvata.",
+  "item_bolt_wood": "Ahşap cıvata"
 }

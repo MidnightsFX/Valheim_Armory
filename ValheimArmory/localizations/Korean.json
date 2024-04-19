@@ -8,14 +8,12 @@
   "item_ancient_arrow": "고대 나무 화살",
   "item_ancient_arrow_description": "언제든 무너질 수 있을 것 같습니다.",
   "item_arrow_chitin": "키틴 화살",
-  "item_bolt_wood": "통나무 화살",
   "item_bolt_wood_description": "뾰족한 막대기보다 조금 더. 충분히 세게 쐈는데도 여전히 아프다!",
   "item_bolt_bronze": "청동 볼트",
   "item_bolt_bronze_description": "청동 석궁은 통나무보다 약간 더 날카롭습니다.",
   "item_bolt_iron_poison": "철제 독 볼트",
   "item_bolt_iron_poison_description": "독이 묻어 있는 날카로운 철제 화살로, 죽음을 가속화합니다.",
   "item_bolt_silver_frost": "은빛 볼트",
-  "item_bolt_surtling": "소용돌이치는 흑철 볼트",
   "item_bolt_surtling_description": "부글부글 끓어오르는 코어를 담고 있는 검은색 금속 코어, 이건 타버릴 거예요.",
   "item_bolt_obsidian": "흑요석 볼트",
   "item_bolt_obsidian_description": "완전한 어둠의 파편",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "고인의 피와 융합된 덩굴. 막힌 둔기 피해를 줄입니다.",
   "item_moder_buckler_description": "용의 피로 새겨진 이 방패는 눈 서릿 대미를 줄여주며 방어할 때 피해를 줄입니다.용의 피로 새겨진 이 방패는 눈 서릿 대미를 줄여주며 방어할 때 피해를 줄입니다.",
   "item_dagger_moder": "용서릿칼",
-  "item_dagger_moder_description": "얼어붙은 얼음 단검, 모더의 눈물에 의해 얼어붙었습니다."
+  "item_dagger_moder_description": "얼어붙은 얼음 단검, 모더의 눈물에 의해 얼어붙었습니다.",
+  "item_bolt_surtling": " 설잉 화염 볼트",
+  "item_bolt_corewood": "코어우드 볼트",
+  "item_bolt_corewood_description": "튼튼한 나무 볼트.",
+  "item_bolt_wood": "목 나사"
 }

@@ -8,14 +8,12 @@
   "item_ancient_arrow": "प्राचीन लकड़ी की तीर\n\nप्राचीन लकड़ी की तीर",
   "item_ancient_arrow_description": "लगता है कि यह किसी भी समय टूट सकता है।",
   "item_arrow_chitin": "चिटिन तीर",
-  "item_bolt_wood": "कोरवुड बोल्ट",
   "item_bolt_wood_description": "एक तीरे से थोड़ा ज़्यादा। काफ़ी तेज़ी से चलाया गया, फिर भी दर्द होता है!",
   "item_bolt_bronze": "कांस्य बोल्ट",
   "item_bolt_bronze_description": "कांस्य क्रॉसबो बोल्ट कोरवुड से थोड़ा तेज होते हैं।",
   "item_bolt_iron_poison": "आयरन विष बोल्ट",
   "item_bolt_iron_poison_description": "एक तेज लोहे का बोल्ट जिसमें जहर भरा हो, जल्दी मौत को ले जाने वाला।",
   "item_bolt_silver_frost": "चांदी की ठंडी बोल्ट",
-  "item_bolt_surtling": "कालाधातु सर्टलिंग बोल्ट",
   "item_bolt_surtling_description": "एक ब्लैकमेटल कोर जिसमें सर्टलिंग कोर है, यह जलने वाला है।",
   "item_bolt_obsidian": "ओब्सिडियन बोल्ट",
   "item_bolt_obsidian_description": "पूरी अंधकार की एक टुकड़ा।",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "वाइन्स बड़े के रक्त से मिलकर एक हो गए। ब्लॉक किए गए कुंदक हानि को कम करता है।",
   "item_moder_buckler_description": "नाग के रक्त से नक्ष किया गया यह ढाल फ्रॉस्ट क्षति को कम करती है जबकि ब्लॉक करती है।",
   "item_dagger_moder": "ड्रैगनफ्रोस्ट चाकू",
-  "item_dagger_moder_description": "एक बर्फ की ठंडी छुरी, मोड़र की आंसुओं से जमी हुई।"
+  "item_dagger_moder_description": "एक बर्फ की ठंडी छुरी, मोड़र की आंसुओं से जमी हुई।",
+  "item_bolt_surtling": "सर्टलिंग फायर बोल्ट",
+  "item_bolt_corewood": "कोरवुड बोल्ट",
+  "item_bolt_corewood_description": "एक मजबूत लकड़ी का बोल्ट।",
+  "item_bolt_wood": "लकड़ी का बोल्ट"
 }

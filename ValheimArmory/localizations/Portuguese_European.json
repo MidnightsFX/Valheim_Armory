@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Seta de madeira antiga",
   "item_ancient_arrow_description": "Parece que pode se espatifar a qualquer momento.",
   "item_arrow_chitin": "Seta de quitina",
-  "item_bolt_wood": "Parafuso de madeira",
   "item_bolt_wood_description": "Um pouco mais que um pedaço de pau pontiagudo. Se atirado com força suficiente, ainda machuca!",
   "item_bolt_bronze": "Parafuso de bronze",
   "item_bolt_bronze_description": "Parafusos de besta de bronze um pouco mais afiados do que os de madeira.",
   "item_bolt_iron_poison": "Parafuso de veneno de ferro",
   "item_bolt_iron_poison_description": "Um parafuso de ferro afiado pontilhado com veneno, acelerando a morte.",
   "item_bolt_silver_frost": "Parafuso de gelo de prata",
-  "item_bolt_surtling": "Parafuso de surtling de metal negro",
   "item_bolt_surtling_description": "Um núcleo de metal negro alojando um núcleo de surtling, isso vai queimar.",
   "item_bolt_obsidian": "Parafuso de obsidiana",
   "item_bolt_obsidian_description": "Um pedaço de escuridão completa.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Vides fundidas com o sangue do Ancião. Reduz o dano contundente bloqueado.",
   "item_moder_buckler_description": "Gravado com o sangue de dragão, este escudo reduz o dano de geada ao bloquear.",
   "item_dagger_moder": "Faca de gelo de dragão",
-  "item_dagger_moder_description": "Uma adaga gelada, congelada pelas lágrimas de Moder."
+  "item_dagger_moder_description": "Uma adaga gelada, congelada pelas lágrimas de Moder.",
+  "item_bolt_surtling": "Raio de fogo Surtling",
+  "item_bolt_corewood": "Parafuso de madeira maciça",
+  "item_bolt_corewood_description": "Um parafuso de madeira resistente.",
+  "item_bolt_wood": "Parafuso de madeira"
 }

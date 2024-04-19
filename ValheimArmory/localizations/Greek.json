@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Αρχαία ξύλινη βέλος",
   "item_ancient_arrow_description": "Φαίνεται ότι μπορεί να σπάσει οποιαδήποτε στιγμή.",
   "item_arrow_chitin": "Βέλος χιτίνης",
-  "item_bolt_wood": "Βίδα από ξύλο πυρήνα",
   "item_bolt_wood_description": "Λίγο παραπάνω από έναν αιχμηρό ραβδί. Αν το πυροβολήσεις με δύναμη, παραμένει επώδυνο!",
   "item_bolt_bronze": "Χάλκινο βίδωμα\n",
   "item_bolt_bronze_description": "Βροντήσια βέλη κατά λίγο πιο αιχμηρά από τον πυρήνα του ξύλου.",
   "item_bolt_iron_poison": "Σιδηρός δηλητήριο βέλος",
   "item_bolt_iron_poison_description": "Ένας αιχμηρός σιδερένιος βέργος με άκρη δηλητήριο, επιταχύνοντας τον θάνατο.",
   "item_bolt_silver_frost": "Ασημένιος παγετός βέργα",
-  "item_bolt_surtling": "Μαύρο μεταλλικό καρφί",
   "item_bolt_surtling_description": "Ένας μαύρος μεταλλικός πυρήνας που φιλοξενεί έναν πυρήνα surtling, αυτό θα καεί.",
   "item_bolt_obsidian": "Οψιανή βίδα",
   "item_bolt_obsidian_description": "Ένα κομμάτι από απόλυτο σκοτάδι.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Αμπέλια συγχωνευμένα με το αίμα του Πρεσβύτερου. Μειώνει την μπλοκαρισμένη βαρειά ζημιά.",
   "item_moder_buckler_description": "Με χαραγμένο αίμα δράκων αυτό το ασπίδι μειώνει τη ζημιά από πάγο κατά τον αποκλεισμό.",
   "item_dagger_moder": "Μαχαίρι Dragonfrost",
-  "item_dagger_moder_description": "Ένα παγωμένο σπαθί, παγωμένο από τα δάκρυα της Μόντερ."
+  "item_dagger_moder_description": "Ένα παγωμένο σπαθί, παγωμένο από τα δάκρυα της Μόντερ.",
+  "item_bolt_surtling": "Αστραπή φωτιάς",
+  "item_bolt_corewood": "Καρυδόξυλο βίδα",
+  "item_bolt_corewood_description": "Ένας ανθεκτικός ξύλινος κλείστρο.",
+  "item_bolt_wood": "Ξύλινο βίδα"
 }

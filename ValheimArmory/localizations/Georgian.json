@@ -8,14 +8,12 @@
   "item_ancient_arrow": "ძვლის ძალიანი იძლევა",
   "item_ancient_arrow_description": "მოგიწევია, რომ ის შეიძლება ნებისმიერ დროს განახლდეს.",
   "item_arrow_chitin": "ქითინის ინაგი",
-  "item_bolt_wood": "Corewood bolt \n- კორევუდ ბოლტი",
   "item_bolt_wood_description": "მცირე რაიმე მუხლის ზღვის ზევით. სიკვდილის შემძლე ჩრდილებით, ჯერ უსადენოდ ტყუილი უკეთესია!",
   "item_bolt_bronze": "ბრონზის ბოლტი",
   "item_bolt_bronze_description": "ბრონზის გერები ცოტა დახრილი არიან, ვიდრე კორევუდი.",
   "item_bolt_iron_poison": "რკალი შავი მტრის დაკანი",
   "item_bolt_iron_poison_description": "თანა ირინის სინარით გაზეთი გასაფრთხელად, სიკვდილის გასწორება.",
   "item_bolt_silver_frost": "ვერცხლის ყინური ბოლტი",
-  "item_bolt_surtling": "შავი მეტალის სურტლინგ ბოლტი",
   "item_bolt_surtling_description": "შავი მეტალური ძროხა სურთლინგის ძროხას შეიცავს, ეს გაქებად იქნება.",
   "item_bolt_obsidian": "ზვიამანი საწებელი",
   "item_bolt_obsidian_description": "უკანასკნელი სრია.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "ვაზნები უკან ერთიანებენ ძვლით. შემცირება დახურული მუხლური დაზიანება.",
   "item_moder_buckler_description": "დრაკონის სისუსტეში დახურული, ეს ფანჯარა შერცელებს ნისლის დაზრდებას და დაბლოკების დროებში.",
   "item_dagger_moder": "დრაკონის გისური",
-  "item_dagger_moder_description": "სიყვარულის ცისფერი კარდი, რომელიც მოდერის ცხელებით გაყინვა."
+  "item_dagger_moder_description": "სიყვარულის ცისფერი კარდი, რომელიც მოდერის ცხელებით გაყინვა.",
+  "item_bolt_surtling": "ცეცხლის კიდეს წიწილი",
+  "item_bolt_corewood": "კორევუდ ბოლტი",
+  "item_bolt_corewood_description": "ძლიერი ხის ხლო.",
+  "item_bolt_wood": "ხე ბოლტი"
 }

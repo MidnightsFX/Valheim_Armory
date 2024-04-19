@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Freccia di legno antico",
   "item_ancient_arrow_description": "Sembra che possa scheggiarsi in qualsiasi momento.",
   "item_arrow_chitin": "Freccia di chitina",
-  "item_bolt_wood": "Bolide di legno",
   "item_bolt_wood_description": "Un po' più di un bastone appuntito. Sparato abbastanza forte, fa comunque male!",
   "item_bolt_bronze": "Bolide di bronzo",
   "item_bolt_bronze_description": "I bolidi di balestra in bronzo sono un po' più affilati dei bolidi di legno.",
   "item_bolt_iron_poison": "Bolide avvelenato di ferro",
   "item_bolt_iron_poison_description": "Un bolide di ferro affilato con punta avvelenata, morte accelerata.",
   "item_bolt_silver_frost": "Bolide di gelo d'argento",
-  "item_bolt_surtling": "Bolide di surtling in metallo nero",
   "item_bolt_surtling_description": "Un nucleo di metallo nero che ospita un nucleo di surtling, questo brucia.",
   "item_bolt_obsidian": "Bolide di ossidiana",
   "item_bolt_obsidian_description": "Un frammento di completa oscurità.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Viti fuse con il sangue degli Anziani. Riduce il danno contundente bloccato.",
   "item_moder_buckler_description": "Inciso con il sangue di drago, questo scudo riduce i danni da gelo durante il blocco.",
   "item_dagger_moder": "Coltello Dragonfrost",
-  "item_dagger_moder_description": "Un pugnale di ghiaccio freddo, congelato dalle lacrime di Moder."
+  "item_dagger_moder_description": "Un pugnale di ghiaccio freddo, congelato dalle lacrime di Moder.",
+  "item_bolt_surtling": "  Fulmine di fuoco Surtling",
+  "item_bolt_corewood": "bullone in legno massiccio",
+  "item_bolt_corewood_description": "Un robusto bullone di legno.",
+  "item_bolt_wood": "Bullone di legno"
 }

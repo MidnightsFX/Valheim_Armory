@@ -201,6 +201,32 @@ namespace ValheimArmory
                 }
             );
 
+            // Corewood Crossbow Bolt					workbench lvl 3
+            new ValArmoryItem(
+                EmbeddedResourceBundle,
+                new Dictionary<string, string>() {
+                    { "name", "Corewood Bolt" },
+                    { "catagory", "Arrows" },
+                    { "prefab", "VABoltCoreWood" },
+                    { "sprite", "bolt_corewood" },
+                    { "craftedAt", "piece_workbench" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(20, 1, 100, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(37, 0, 200, true) }
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "RoundLog", new Tuple<int, int>(8, 0) },
+                    { "Feathers", new Tuple<int, int>(2, 0) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 3 }
+                }
+            );
+
             // Bronze Bolt							forge lvl 1
             new ValArmoryItem(
                 EmbeddedResourceBundle,

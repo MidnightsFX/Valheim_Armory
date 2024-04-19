@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Flèche en bois ancien",
   "item_ancient_arrow_description": "On dirait qu'elle peut se briser à tout moment.",
   "item_arrow_chitin": "Flèche en chitine",
-  "item_bolt_wood": "Boulon en bois",
   "item_bolt_wood_description": "Un peu plus qu'un bâton pointu. Tiré assez fort, ça fait quand même mal!",
   "item_bolt_bronze": "Boulon en bronze",
   "item_bolt_bronze_description": "Les boulons de l'arbalète en bronze sont un peu plus tranchants que ceux en bois de base.",
   "item_bolt_iron_poison": "Boulon empoisonné en fer",
   "item_bolt_iron_poison_description": "Un boulon en fer pointu avec du poison, une mort accélérée.",
   "item_bolt_silver_frost": "Boulon de givre en argent",
-  "item_bolt_surtling": "Boulon Surtling en métal noir",
   "item_bolt_surtling_description": "Un noyau en métal noir abritant un noyau Surtling, ça va brûler.",
   "item_bolt_obsidian": "Boulon en obsidienne",
   "item_bolt_obsidian_description": "Un éclat de ténèbres complètes.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Vignes fusionnées avec le sang de l'Aîné. Réduit les dégâts contondants bloqués.",
   "item_moder_buckler_description": "Gravé avec du sang de dragon, ce bouclier réduit les dégâts de givre lorsqu'il bloque.",
   "item_dagger_moder": "Couteau Dragonfrost",
-  "item_dagger_moder_description": "Un poignard glacé, gelé par les larmes de Moder."
+  "item_dagger_moder_description": "Un poignard glacé, gelé par les larmes de Moder.",
+  "item_bolt_surtling": "Éclair de feu Surtling",
+  "item_bolt_corewood": "Boulon en bois dur",
+  "item_bolt_corewood_description": "Un boulon en bois solide.",
+  "item_bolt_wood": "Boulon en bois"
 }

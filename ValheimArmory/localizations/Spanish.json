@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Flecha de madera antigua",
   "item_ancient_arrow_description": "Parece que puede astillarse en cualquier momento.",
   "item_arrow_chitin": "Flecha de quitina",
-  "item_bolt_wood": "Perno de madera",
   "item_bolt_wood_description": "Un poco más que un palo puntiagudo. ¡Disparado con suficiente fuerza, todavía duele!",
   "item_bolt_bronze": "Perno de bronce",
   "item_bolt_bronze_description": "Pernos de ballesta de bronce un poco más afilados que los de madera.",
   "item_bolt_iron_poison": "Perno de veneno de hierro",
   "item_bolt_iron_poison_description": "Un perno de hierro afilado con veneno, acelera la muerte.",
   "item_bolt_silver_frost": "Perno de hielo plateado",
-  "item_bolt_surtling": "Perno surtling de metal negro",
   "item_bolt_surtling_description": "Un núcleo de metal negro que alberga un núcleo de surtling, esto va a arder.",
   "item_bolt_obsidian": "Perno de obsidiana",
   "item_bolt_obsidian_description": "Un fragmento de completa oscuridad.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Enredaderas fusionadas con la sangre del Anciano. Reduce el daño contundente bloqueado.",
   "item_moder_buckler_description": "Grabado con sangre de dragón, este escudo reduce el daño por escarcha al bloquear.",
   "item_dagger_moder": "Cuchillo de escarcha de dragón",
-  "item_dagger_moder_description": "Una daga helada, congelada por las lágrimas de Moder."
+  "item_dagger_moder_description": "Una daga helada, congelada por las lágrimas de Moder.",
+  "item_bolt_surtling": "Rayo de fuego surtling",
+  "item_bolt_corewood": "Núcleo de madera",
+  "item_bolt_corewood_description": "Un perno de madera resistente.",
+  "item_bolt_wood": "Perno de madera"
 }

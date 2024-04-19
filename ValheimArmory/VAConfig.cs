@@ -45,7 +45,7 @@ namespace ValheimArmory
         }
 
         /// <summary>
-        /// Helper to bind configs for float types
+        /// Helper to bind configs for int types
         /// </summary>
         /// <param name="config_file"></param>
         /// <param name="catagory"></param>

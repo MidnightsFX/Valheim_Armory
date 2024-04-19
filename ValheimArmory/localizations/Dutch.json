@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Oude houten pijl",
   "item_ancient_arrow_description": "Het lijkt erop dat het elk moment kan splinteren.",
   "item_arrow_chitin": "Chitine pijl",
-  "item_bolt_wood": "Kernhoutbout",
   "item_bolt_wood_description": "Meer dan een puntige stok. Als het hard genoeg wordt afgevuurd, doet het nog steeds pijn!",
   "item_bolt_bronze": "Bronzen bout",
   "item_bolt_bronze_description": "Bronzen kruisboogbouten zijn wat scherper dan kernhout.",
   "item_bolt_iron_poison": "IJzeren vergiftigde bout",
   "item_bolt_iron_poison_description": "Een scherpe ijzeren bout met vergif, versnelt de dood.",
   "item_bolt_silver_frost": "Zilveren vorstbout",
-  "item_bolt_surtling": "Zwarte metalen surtlingbout",
   "item_bolt_surtling_description": "Een zwarte metalen kern met een surtlingkern, dit gaat branden.",
   "item_bolt_obsidian": "Obsidiaanbout",
   "item_bolt_obsidian_description": "Een scherf van complete duisternis.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Ranken versmolten met het bloed van de Oudere. Vermindert geblokkeerde stomp letsel.",
   "item_moder_buckler_description": "Geëtst met drakenbloed, deze schild vermindert vorstschade tijdens het blokkeren.",
   "item_dagger_moder": "Drakenfrost mes",
-  "item_dagger_moder_description": "Een ijskoude dolk, bevroren door de tranen van Moder."
+  "item_dagger_moder_description": "Een ijskoude dolk, bevroren door de tranen van Moder.",
+  "item_bolt_surtling": "Surtling vuurbout",
+  "item_bolt_corewood": "Kernhoutbout",
+  "item_bolt_corewood_description": "Een stevige houten bout.",
+  "item_bolt_wood": "Houtbout"
 }

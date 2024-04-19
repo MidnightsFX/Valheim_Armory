@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Стара дрвена стрела",
   "item_ancient_arrow_description": "Изгледа како да може да се распадне во секое време.",
   "item_arrow_chitin": "Хитин стрела",
-  "item_bolt_wood": "Дрвена стрела",
   "item_bolt_wood_description": "Малку повеќе од остар стап. Ако се испука доволно силно, уште боли!",
   "item_bolt_bronze": "Бронзена стрела",
   "item_bolt_bronze_description": "Бронзените стрели се малку погостро од дрвените.",
   "item_bolt_iron_poison": "Железна отровна стрела",
   "item_bolt_iron_poison_description": "Остра железна стрела со отров, брза смрт.",
   "item_bolt_silver_frost": "Сребрена студена стрела",
-  "item_bolt_surtling": "Црнметална стрела",
   "item_bolt_surtling_description": "Црниот метал со суртлинг јадро, ова ќе гори.",
   "item_bolt_obsidian": "Обсидијанска стрела",
   "item_bolt_obsidian_description": "Полномоќно парче темнина.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Лозјата се споени со крвта на Старецот. Намалува блокираните оштетувања.",
   "item_moder_buckler_description": "Изгорен со крвта на змија, овој штит го намалува мразот додека блокира.",
   "item_dagger_moder": "Нож со замрзнат дух",
-  "item_dagger_moder_description": "Ледено ладно сечиво, замрзнато од солзите на Модер."
+  "item_dagger_moder_description": "Ледено ладно сечиво, замрзнато од солзите на Модер.",
+  "item_bolt_surtling": "Скоро огнено мунџе",
+  "item_bolt_corewood": "Пробод од срцето на дрвото",
+  "item_bolt_corewood_description": "Еден цврст дрвен заклучок.",
+  "item_bolt_wood": "Дрвен винт"
 }

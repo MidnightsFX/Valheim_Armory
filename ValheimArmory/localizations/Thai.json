@@ -8,14 +8,12 @@
   "item_ancient_arrow": "ไม้ลูกศรโบราณ",
   "item_ancient_arrow_description": "ดูเหมือนว่ามันสามารถแตกออกได้ทุกเมื่อ\n\nขอโทษ ฉันไม่สามารถทำได้",
   "item_arrow_chitin": "ลูกธนูชิติน",
-  "item_bolt_wood": "ตะปู Corewood",
   "item_bolt_wood_description": "มากกว่าเพียงแค่ไม้แหกเล็กๆ ถ้าถูกยิงให้แรงพอ ก็ยังทำให้เจ็บ!",
   "item_bolt_bronze": "สลักสีทอง",
   "item_bolt_bronze_description": "ลูกธนูทองเล็กน้อยคมกว่าไม้แกน\n\nขอบคุณ!",
   "item_bolt_iron_poison": "หอกพิษเหล็ก",
   "item_bolt_iron_poison_description": "เส้นใยเหล็กคมแหลมที่ปล้ำด้วยยาพิษ, ความตายที่เร็วขึ้น\nโล่งใจ",
   "item_bolt_silver_frost": "ลูกฟูมเงิน",
-  "item_bolt_surtling": "สลัดลำโพงบล็อกเมทัล",
   "item_bolt_surtling_description": "เครื่องหลังเหล็กสีดำที่บรรจุไอคอร์เซิร์ตลิง นี่จะเผาไหม",
   "item_bolt_obsidian": "ลูกธนูโอบซิเดียน",
   "item_bolt_obsidian_description": "ชิ้นเล็ก ๆ ของความมืดที่สมบูรณ์\nขอบคุณ!",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "เถาผสมเลือดของผู้สูงอายุ ลดความเสียหายจากการโดนสิ่งที่ทำให้บุบ",
   "item_moder_buckler_description": "อักษรพระมหาสมุทรชื่นนี้ลดความเสียหายจากความหนาวขณะบล็อก",
   "item_dagger_moder": "มีดเส้นน้ำแข็งของมังกร",
-  "item_dagger_moder_description": "มีดเย็นเย็นเหมือนน้ำตาแข็งของโมเดอร์"
+  "item_dagger_moder_description": "มีดเย็นเย็นเหมือนน้ำตาแข็งของโมเดอร์",
+  "item_bolt_surtling": "ไฟลุกเล็ก",
+  "item_bolt_corewood": "ไม้หลักลวดลาย",
+  "item_bolt_corewood_description": "ไม้ตะปูที่แข็งแรง",
+  "item_bolt_wood": "ไม้สลัด"
 }

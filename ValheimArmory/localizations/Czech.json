@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Starodávný dřevěný šíp",
   "item_ancient_arrow_description": "Vypadá to, že se může kdykoli rozštípnout.",
   "item_arrow_chitin": "Chitinný šíp",
-  "item_bolt_wood": "Jádrový dřevěný šíp",
   "item_bolt_wood_description": "Trochu víc než ostrá tyč. Pokud se vystřelí dost tvrdě, stále to bolí!",
   "item_bolt_bronze": "Bronzový šíp",
   "item_bolt_bronze_description": "Bronzové kušeňové šípy jsou o něco ostřejší než jádrové.",
   "item_bolt_iron_poison": "Jedový železný šíp",
   "item_bolt_iron_poison_description": "Ostrý železný šíp zakončený jedem, urychlující smrt.",
   "item_bolt_silver_frost": "Stříbrný mrazivý šíp",
-  "item_bolt_surtling": "Černokovový surtling šíp",
   "item_bolt_surtling_description": "Černokovové jádro obývající surtlingovo jádro, tohle bude hořet.",
   "item_bolt_obsidian": "Obsidiánový šíp",
   "item_bolt_obsidian_description": "Kousek úplné temnoty.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Vinné révy splynuly s krví staršího. Sníží zablokované tupé zranění.",
   "item_moder_buckler_description": "Vrypaný dračí krví tento štít snižuje újmu mrazu při blokování.",
   "item_dagger_moder": "Drakomrazivý nůž",
-  "item_dagger_moder_description": "Ledově studený dýka, zmražený slzami Moder."
+  "item_dagger_moder_description": "Ledově studený dýka, zmražený slzami Moder.",
+  "item_bolt_surtling": "Surtling ohnivý šíp",
+  "item_bolt_corewood": "Jádrový šroub",
+  "item_bolt_corewood_description": "Pevný dřevěný zástrčník.",
+  "item_bolt_wood": "Dřevěný šroub"
 }

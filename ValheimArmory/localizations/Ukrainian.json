@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Давня дерев'яна стріла",
   "item_ancient_arrow_description": "Здається, воно може розламатися в будь-який момент.",
   "item_arrow_chitin": "Хітинова стріла",
-  "item_bolt_wood": "Ядряний болт",
   "item_bolt_wood_description": "Трохи більше, ніж гострий палиця. Якщо стріляти достатньо сильно, все ще болить!",
   "item_bolt_bronze": "Бронзовий болт",
   "item_bolt_bronze_description": "Бронзові арбалетні стріли трохи гостріші, ніж ядро деревини.",
   "item_bolt_iron_poison": "Залізний отруйний болт",
   "item_bolt_iron_poison_description": "Гострий залізний болт з отрутою, що приносить смерть.",
   "item_bolt_silver_frost": "Срібний морозний блискучий штиль",
-  "item_bolt_surtling": "Чорний металевий замок",
   "item_bolt_surtling_description": "Чорний металевий корпус, в якому знаходиться серце суртлінга, це буде палити.",
   "item_bolt_obsidian": "Обсидіанова болт",
   "item_bolt_obsidian_description": "Фрагмент повного темряви.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Лози злилися з кров'ю Старшого. Зменшує заблоковане тупе пошкодження.",
   "item_moder_buckler_description": "Витравлений кров'ю дракона, цей щит зменшує заморожування під час блокування.",
   "item_dagger_moder": "Ніж Льодовий дракон",
-  "item_dagger_moder_description": "Лідяний кинджал, замерзлий від сльоз Модера."
+  "item_dagger_moder_description": "Лідяний кинджал, замерзлий від сльоз Модера.",
+  "item_bolt_surtling": "Сертлінг вогняна стріла",
+  "item_bolt_corewood": "Ядряна болт",
+  "item_bolt_corewood_description": "Міцний дерев'яний засув.",
+  "item_bolt_wood": "Деревний болт"
 }

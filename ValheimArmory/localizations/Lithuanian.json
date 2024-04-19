@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Senovinė medinė strėlė",
   "item_ancient_arrow_description": "Atrodo, kad ji gali bet kuriuo metu suskaidyti.",
   "item_arrow_chitin": "Chitino strėlė",
-  "item_bolt_wood": "Branduolinė bulta",
   "item_bolt_wood_description": "Kiek daugiau nei smulkus lazdelė. Jei pakankamai stipriai šauta, tai vis tiek skauda!",
   "item_bolt_bronze": "Bronzos bulta",
   "item_bolt_bronze_description": "Bronzos arbaletų bulta šiek tiek aštresnė nei branduolinė.",
   "item_bolt_iron_poison": "Geležies nuodinga bulta",
   "item_bolt_iron_poison_description": "Aštri geležies bulta, užversta nuodais, skubanti mirtis.",
   "item_bolt_silver_frost": "Sidabro šerkšno bulta",
-  "item_bolt_surtling": "Juodmetalinė surtling bulta",
   "item_bolt_surtling_description": "Juodmetalinis branduolys, kuriame yra surtlingo branduolys, tai sudegs.",
   "item_bolt_obsidian": "Obsidiano bulta",
   "item_bolt_obsidian_description": "Skaidulė visiškai tamsybe.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Vynuogių sulietos su Senjorų krauju. Sumažina užblokuotą tiesinį žalos kiekį.",
   "item_moder_buckler_description": "Įrėžus su drakono krauju, šis skydas mažina šalčio žalą blokuojant.",
   "item_dagger_moder": "Drakono šerkšno peilis",
-  "item_dagger_moder_description": "Liežuviškas šaltas peilis, užšaldytas Moderio ašaromis."
+  "item_dagger_moder_description": "Liežuviškas šaltas peilis, užšaldytas Moderio ašaromis.",
+  "item_bolt_surtling": "Surtling ugnies strėlė",
+  "item_bolt_corewood": "Branduolinis medienos strypas",
+  "item_bolt_corewood_description": "Stiprus medinis strypas.",
+  "item_bolt_wood": "Medinis varžtas"
 }

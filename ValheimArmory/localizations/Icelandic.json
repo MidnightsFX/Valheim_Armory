@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Forntre ör",
   "item_ancient_arrow_description": "Lítur út fyrir að það geti sprungist hvenær sem er.",
   "item_arrow_chitin": "Kitín ör",
-  "item_bolt_wood": "Kjarnviður bolti",
   "item_bolt_wood_description": "Smá meira en skarpa stöng. Skotið hörðum nóg, það sárir enn!",
   "item_bolt_bronze": "Bronsbolti",
   "item_bolt_bronze_description": "Brons krossbolti smá skarpar en kjarnviður.",
   "item_bolt_iron_poison": "Eirn eitur bolti",
   "item_bolt_iron_poison_description": "Skarpur járn bolti toppaður eitri, hraður dauði.",
   "item_bolt_silver_frost": "Silfur frost bolti",
-  "item_bolt_surtling": "Svörtmálmur surtlingur bolti",
   "item_bolt_surtling_description": "Svörtmálmur kjarni sem hýsir surtling kjarna, þetta er að brenna.",
   "item_bolt_obsidian": "Obsidian bolti",
   "item_bolt_obsidian_description": "Skör af algerri myrkur.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Vínir sameinast blóði öldunganna. Mínkar blóðtappaða skaða.",
   "item_moder_buckler_description": "Grátið með drekablaðið þetta skjöldur minnkar frostáfall þegar hann blokkar.",
   "item_dagger_moder": "Drakaköld hnífur",
-  "item_dagger_moder_description": "Ískaldur hnífur, frystur af tárum Moder."
+  "item_dagger_moder_description": "Ískaldur hnífur, frystur af tárum Moder.",
+  "item_bolt_surtling": "Surtling eldspíla",
+  "item_bolt_corewood": "Kjarni viður bolti",
+  "item_bolt_corewood_description": "Stórt viðarorð.",
+  "item_bolt_wood": "Tré sleggja"
 }

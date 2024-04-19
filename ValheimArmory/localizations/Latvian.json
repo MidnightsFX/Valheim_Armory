@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Senie koka bulta",
   "item_ancient_arrow_description": "Izskatās, ka tas var saplēst jebkurā laikā.",
   "item_arrow_chitin": "Hitīna bulta",
-  "item_bolt_wood": "Koksnes sprauga",
   "item_bolt_wood_description": "Vairāk nekā asa nūjiņa. Piespiedi pietiekami cieti, tas joprojām sāp! \n\nVairāk nekā asa nūjiņa. Piespiedi pietiekami cieti, tas joprojām sāp!",
   "item_bolt_bronze": "Bronzes sprauga",
   "item_bolt_bronze_description": "Bronza stieple strēlnieku bultas nedaudz asākas nekā kodolu koksnes.",
   "item_bolt_iron_poison": "Dzelzs indes bulta",
   "item_bolt_iron_poison_description": "Asā dzelzs bults ar indi galā, nāvējoša nāve.",
   "item_bolt_silver_frost": "Zelta salna sprādziens",
-  "item_bolt_surtling": "Melnbetona surtlinga skrūve",
   "item_bolt_surtling_description": "Melna metāla korpusā ir iekšējais surtlinga kodols, tas gāzis sadegs.",
   "item_bolt_obsidian": "Obsidian bulta",
   "item_bolt_obsidian_description": "Gabals pilnīgas tumsas.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Vīnogas saplūst ar vecākās asinīm. Samazina bloķēto stumšu bojājumu.",
   "item_moder_buckler_description": "Iegravēts ar pūķa asinīm šis vairogs samazina sala bojājumus, bloķējot.",
   "item_dagger_moder": "Dzintara ledus nazis",
-  "item_dagger_moder_description": "Ledains nazis, iekarsēts ar Moders asarām."
+  "item_dagger_moder_description": "Ledains nazis, iekarsēts ar Moders asarām.",
+  "item_bolt_surtling": "Uguns strēle.",
+  "item_bolt_corewood": "Koka skrūve",
+  "item_bolt_corewood_description": "Stiprs koka sprādze.",
+  "item_bolt_wood": "Koka sprādze"
 }

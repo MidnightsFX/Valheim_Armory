@@ -8,14 +8,12 @@
   "item_ancient_arrow": "古代の木の矢",
   "item_ancient_arrow_description": "見たところ、いつでも砕けそうですね。",
   "item_arrow_chitin": "キチン矢",
-  "item_bolt_wood": "コアウッドボルト",
   "item_bolt_wood_description": "「尖った棒より少し大きい。 十分に強く撃つと、それでも痛い！」",
   "item_bolt_bronze": "銅のボルト\n(どうのボルト)",
   "item_bolt_bronze_description": "銅のクロスボウの矢はコアウッドより少し鋭い。",
   "item_bolt_iron_poison": "鉄の毒矢",
   "item_bolt_iron_poison_description": "毒で先の鋭い鉄のボルト、速やかな死。",
   "item_bolt_silver_frost": "銀の霜のボルト",
-  "item_bolt_surtling": "黒メタルのスルトリングボルト\nありがとう",
   "item_bolt_surtling_description": "ブラックメタルコアにサートリングコアを内蔵し、これは燃えるぞ。",
   "item_bolt_obsidian": "黒曜石のボルト\n黒曜石のボルト",
   "item_bolt_obsidian_description": "完全な暗闇の破片。",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "「長老の血と融合したつる。ブロックされた鈍器のダメージを軽減する。」",
   "item_moder_buckler_description": "「竜の血で刻まれたこの盾は、ブロックしながら霜のダメージを軽減します。」",
   "item_dagger_moder": "ドラゴンフロストナイフドラゴンフロストナイフです。",
-  "item_dagger_moder_description": "氷のように冷たい短剣、モーダーの涙によって凍結された。了解しました。"
+  "item_dagger_moder_description": "氷のように冷たい短剣、モーダーの涙によって凍結された。了解しました。",
+  "item_bolt_surtling": "サートリングファイアボルト",
+  "item_bolt_corewood": "コアウッドボルトThank you for using our translation service! If you have any other requests, feel free to ask.",
+  "item_bolt_corewood_description": "頑丈な木製のボルト。理想的な選択です。",
+  "item_bolt_wood": "木ボルト (Mokuboruto)"
 }

@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Forntida träpil",
   "item_ancient_arrow_description": "Ser ut som om den kan splittras när som helst.",
   "item_arrow_chitin": "Kitinpil",
-  "item_bolt_wood": "Kärnträbult",
   "item_bolt_wood_description": "Lite mer än en spetsig pinne. Om den skjuts hårt gör det fortfarande ont!",
   "item_bolt_bronze": "Bronsbult",
   "item_bolt_bronze_description": "Brons korsbult lite vassare än kärnträ.",
   "item_bolt_iron_poison": "Järn giftbult",
   "item_bolt_iron_poison_description": "En vass järnbult spetsad med gift, snabbar på döden.",
   "item_bolt_silver_frost": "Silverfrostbult",
-  "item_bolt_surtling": "Svartmetall surtlingbult",
   "item_bolt_surtling_description": "En svartmetallkärna som innehåller en surtlingkärna, det här kommer att bränna.",
   "item_bolt_obsidian": "Obsidianbult",
   "item_bolt_obsidian_description": "En skärva av fullständigt mörker.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Växter förenade med de äldstes blod. Minskar blockerad trubbig skada.",
   "item_moder_buckler_description": "Graverad med drakblod minskar detta sköld frostskador vid blockering.",
   "item_dagger_moder": "Drakfrostkniv",
-  "item_dagger_moder_description": "En iskall dolk, frusen av Moders tårar."
+  "item_dagger_moder_description": "En iskall dolk, frusen av Moders tårar.",
+  "item_bolt_surtling": "Surtling eldblixt",
+  "item_bolt_corewood": "Kärnträ bult",
+  "item_bolt_corewood_description": "En robust träkolv.",
+  "item_bolt_wood": "Träbult"
 }

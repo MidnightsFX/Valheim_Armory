@@ -8,14 +8,12 @@
   "item_ancient_arrow": "Săgeată de lemn antic",
   "item_ancient_arrow_description": "Pare să poată seceră în orice moment.",
   "item_arrow_chitin": "Săgeată de chitină",
-  "item_bolt_wood": "Șurub de lemn",
   "item_bolt_wood_description": "Un pic mai mult decât un băț ascuțit. Tras destul de tare, tot doare!",
   "item_bolt_bronze": "Șurub de bronz",
   "item_bolt_bronze_description": "Șuruburi de bronz puțin mai ascuțite decât cele de lemn.",
   "item_bolt_iron_poison": "Șurub de oțel otrăvit",
   "item_bolt_iron_poison_description": "Un șurub de oțel ascuțit cu otravă, accelerând moartea.",
   "item_bolt_silver_frost": "Șurub de argint înghețat",
-  "item_bolt_surtling": "Șurub surtling de metal negru",
   "item_bolt_surtling_description": "Un nucleu de metal negru care găzduiește un nucleu surtling, asta va arde.",
   "item_bolt_obsidian": "Șurub de obsidian",
   "item_bolt_obsidian_description": "Un ciob de întuneric complet.",
@@ -148,5 +146,9 @@
   "item_elder_roundshield_description": "Vinele se fuzionează cu sângele Bătrânului. Reduce daunele contondente blocate.Mulțumesc!",
   "item_moder_buckler_description": "Gravat cu sânge de dragon, acest scut reduce daunele de îngheț în timp ce blochează.",
   "item_dagger_moder": "Cuțitul Dragonfrost",
-  "item_dagger_moder_description": "Un cuțit de gheață rece, înghețat de lacrimile lui Moder."
+  "item_dagger_moder_description": "Un cuțit de gheață rece, înghețat de lacrimile lui Moder.",
+  "item_bolt_surtling": "Săgeată de foc surâdătoare",
+  "item_bolt_corewood": "Țăpoare din lemn masiv",
+  "item_bolt_corewood_description": "Un bolt de lemn solid.",
+  "item_bolt_wood": "Șurub de lemn"
 }
