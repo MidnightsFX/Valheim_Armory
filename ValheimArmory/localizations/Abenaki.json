@@ -138,7 +138,6 @@
   "va_blood_sucker": "Wigasolagenji",
   "va_blood_sucker_desc": "Nemaa aawikhonawokwa wiji-kizos.",
   "item_pickaxe_blood_description": "Nemamokôzo keskesenawek azkâl, klozhozôksemo wjiwôkôk.",
-  "item_arrow_chitin_description": "Not as sharp as other arrows but it causes a nasty cut regardless.",
   "item_bolt_silver_frost_description": "Silver bolts, encased in ice deadly to the firey and dead.",
   "item_bow_bone_blood_description": "The bow crafted from corewood and bones has a nasty air, it does not require arrows, but siphons the archers blood in exchange.",
   "item_silver_atgeir_description": "A huge silver blade braced with obsidian, a beasthunters weapon.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Surtling fire bolt",
   "item_bolt_corewood": "I'm sorry, but  does not have a direct translation in Abenaki.",
   "item_bolt_corewood_description": "Kwakwani lamasi kokwakasin.",
-  "item_bolt_wood": "Wazogan"
+  "item_bolt_wood": "Wazogan",
+  "item_arrow_chitin_description": "There is no direct translation for the phrase Not as sharp as other arrows, but good against skeletons in Abenaki."
 }

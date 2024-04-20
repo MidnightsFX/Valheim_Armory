@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Denna hacka verkar onaturligt stark och hungrig efter ditt blod.",
   "va_blood_sucker": "Blodrus",
   "va_blood_sucker_desc": "Ditt vapen är ivrigt efter blod.",
-  "item_arrow_chitin_description": "Inte lika vass som andra pilar men den orsakar ändå en otäck skärning.",
   "item_bolt_silver_frost_description": "Silverpilar, inneslutna i is dödliga för de eldiga och döda.",
   "item_silver_atgeir_description": "Ett enormt silverblad förstärkt med obsidian, en jägares vapen.",
   "item_iron_greatsword_description": "Ett stort grovt järnblad med en huggen stenhilt. Med tillräckligt stort blad dör allting.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Surtling eldblixt",
   "item_bolt_corewood": "Kärnträ bult",
   "item_bolt_corewood_description": "En robust träkolv.",
-  "item_bolt_wood": "Träbult"
+  "item_bolt_wood": "Träbult",
+  "item_arrow_chitin_description": "Inte lika vass som andra pilar, men bra mot skelett."
 }

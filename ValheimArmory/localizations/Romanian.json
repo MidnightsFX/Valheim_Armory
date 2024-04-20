@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Această cazma pare anormal de puternică și însetată de sângele tău.",
   "va_blood_sucker": "Frenesia de sânge",
   "va_blood_sucker_desc": "Arma ta este ávidă de sânge.Arma ta este gata pentru sânge.",
-  "item_arrow_chitin_description": "Nu atât de ascutită ca alte săgeți, dar provoacă o tăietură urâtă oricum.",
   "item_bolt_silver_frost_description": "Bulane de argint, învelite în gheață, mortale pentru cei fierbinți și morți.",
   "item_silver_atgeir_description": "Un imens cuțit de argint întărit cu obsidian, o armă a vânătorilor de fiare.",
   "item_iron_greatsword_description": "O lamă mare de fier brut cu un mâner de piatră cioplită. Cu o lamă suficient de mare, orice moare.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Săgeată de foc surâdătoare",
   "item_bolt_corewood": "Țăpoare din lemn masiv",
   "item_bolt_corewood_description": "Un bolt de lemn solid.",
-  "item_bolt_wood": "Șurub de lemn"
+  "item_bolt_wood": "Șurub de lemn",
+  "item_arrow_chitin_description": "Nu la fel de ascuțite ca alte săgeți, dar bune împotriva scheletelor."
 }

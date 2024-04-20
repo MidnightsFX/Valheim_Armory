@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Ez a csákány természetfeletti erősnek tűnik, és éhes a véredre.- Ez a csákány természetfeletti erősnek tűnik, és éhes a véredre.",
   "va_blood_sucker": "Vér őrjöngés",
   "va_blood_sucker_desc": "A fegyvered véresre vágyik.",
-  "item_arrow_chitin_description": "Nem olyan éles, mint a többi nyíl, de így is okoz egy kellemetlen vágást.",
   "item_bolt_silver_frost_description": "Vascsavarok, jéggel borítva halálosak a tűzre és a halottakra.",
   "item_silver_atgeir_description": "Egy hatalmas ezüst penge, melyet obszidiánnal díszítettek, egy vadászfegyver.",
   "item_iron_greatsword_description": "Egy nagy, durva vaspenge egy faragott kő markolattal. Egy elég nagy pengevel bármi meghal.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Surtling tűzcsavar",
   "item_bolt_corewood": "Magyarként nem tudok fordítani.",
   "item_bolt_corewood_description": "Egy erős fa retesz.",
-  "item_bolt_wood": "Fa csavar"
+  "item_bolt_wood": "Fa csavar",
+  "item_arrow_chitin_description": "Nem olyan éles, mint más nyilak, de jó a csontvázak ellen."
 }

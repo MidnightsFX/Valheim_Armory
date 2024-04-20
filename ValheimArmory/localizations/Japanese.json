@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "このつるはしは異常に強く、あなたの血を求めています。",
   "va_blood_sucker": " 血の狂乱",
   "va_blood_sucker_desc": "あなたの武器は血を求めています。（あなたの武器は血を求めています。）",
-  "item_arrow_chitin_description": "他の矢ほど鋭くはありませんが、それでも不快な切り傷を引き起こします。",
   "item_bolt_silver_frost_description": "銀のボルト、氷に包まれ、炎と死者にとって致命的。",
   "item_silver_atgeir_description": "「黒曜石で支えられた巨大な銀の刃、獣狩りの武器。」",
   "item_iron_greatsword_description": "大きな荒々しい鉄の刃と石でできた柄。十分に大きな刃なら、何でも死ぬ。 大きな荒々しい鉄の刃と石でできた柄。十分に大きな刃なら、何でも死ぬ。",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "サートリングファイアボルト",
   "item_bolt_corewood": "コアウッドボルトThank you for using our translation service! If you have any other requests, feel free to ask.",
   "item_bolt_corewood_description": "頑丈な木製のボルト。理想的な選択です。",
-  "item_bolt_wood": "木ボルト (Mokuboruto)"
+  "item_bolt_wood": "木ボルト (Mokuboruto)",
+  "item_arrow_chitin_description": "他の矢ほど鋭くはありませんが、骸骨には効果的です。"
 }

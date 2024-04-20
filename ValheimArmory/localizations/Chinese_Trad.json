@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "這鎬看起來異常堅固，並且渴望你的鮮血。這把鎬似乎異常堅固，並且渴望你的鮮血。",
   "va_blood_sucker": "血之狂熱",
   "va_blood_sucker_desc": "你的武器渴望鮮血。",
-  "item_arrow_chitin_description": "不像其他箭头那样锋利，但无论如何都会造成严重的伤口。",
   "item_bolt_silver_frost_description": "銀色的螺栓，被冰封死對火和死者有致命威脅。",
   "item_silver_atgeir_description": "一把镶有黑曜石的巨大銀刃，是狩獵野獸者的武器。",
   "item_iron_greatsword_description": "一把大而粗糙的鐵刃，配有鑿石柄。有足夠大的刀片，任何東西都會死。",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "熾火箭",
   "item_bolt_corewood": "核心木螺栓",
   "item_bolt_corewood_description": "一根堅固的木閂。",
-  "item_bolt_wood": "木螺栓"
+  "item_bolt_wood": "木螺栓",
+  "item_arrow_chitin_description": "不如其他箭矢锋利，但对抗骷髅很有效。"
 }

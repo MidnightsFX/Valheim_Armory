@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "这把鹤嘴镐似乎异常坚固，渴望你的鲜血。",
   "va_blood_sucker": "血之狂热",
   "va_blood_sucker_desc": "你的武器渴望鲜血。",
-  "item_arrow_chitin_description": "不像其他箭头那么锋利，但它仍然会造成恶劣的伤口。",
   "item_bolt_silver_frost_description": "银箭，被冰封，对火焰和死者致命。",
   "item_silver_atgeir_description": "一把巨大的银刃，镶嵌着黑曜石，是猎兽者的武器。",
   "item_iron_greatsword_description": "一把粗犷的铁刃，石柄。有了足够大的刀刃，任何东西都会死。Translated response: 有了足够大的刀刃，任何东西都会死。",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "火焰箭头",
   "item_bolt_corewood": " 核心木螺栓",
   "item_bolt_corewood_description": "一根坚固的木栓。",
-  "item_bolt_wood": "木螺栓 (Mù luósǔn)"
+  "item_bolt_wood": "木螺栓 (Mù luósǔn)",
+  "item_arrow_chitin_description": "不如其他箭头锋利，但对抗骷髅很有效。"
 }

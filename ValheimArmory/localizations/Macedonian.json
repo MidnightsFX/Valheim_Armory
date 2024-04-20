@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Оваа кирка изгледа ненормално јака, и гладна за твојата крв.",
   "va_blood_sucker": "Крвава лудница",
   "va_blood_sucker_desc": "Твоето оружје е жедно за крв.",
-  "item_arrow_chitin_description": "Не толку остари како другите стрели, но предизвикува непријатна рана во секој случај.",
   "item_bolt_silver_frost_description": "Сребрени затвори, завиткани во лед, смртоносни за ватрените и мртвите.",
   "item_silver_atgeir_description": "Големо сребрено сечиво стегнато со обсидијан, оружје на ловци на ѕверови.",
   "item_iron_greatsword_description": "Големо грубо железно сечиво со издлабен каменен држач. Со доволно големо сечиво, сè умира.Please let me know if you need anything else.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Скоро огнено мунџе",
   "item_bolt_corewood": "Пробод од срцето на дрвото",
   "item_bolt_corewood_description": "Еден цврст дрвен заклучок.",
-  "item_bolt_wood": "Дрвен винт"
+  "item_bolt_wood": "Дрвен винт",
+  "item_arrow_chitin_description": "Не толку остри како другите стрели, но добри против скелети."
 }

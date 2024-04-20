@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "ค้อนแกว่งดูแข็งแรงเกินไป และหิวเลือดของคุณ",
   "va_blood_sucker": "เลือดโกรธ",
   "va_blood_sucker_desc": "Your weapon is eager for blood in Thai is อาวุธของคุณต้องการเลือด",
-  "item_arrow_chitin_description": "ไม่ค่อยคมเหมือนลูกธนูอื่น ๆ แต่ก็ทำให้เกิดบาดแผลที่เลวร้ายอย่างไม่น่ายินดี ๆ ไม่ว่าอะไรก็ตาม โดยไม่สนใจว่ามันจะค่อยๆ แค่ไหน",
   "item_bolt_silver_frost_description": "เกล็ดเงิน ปิดทับด้วยน้ำแข็ง ทำให้เป็นอันตรายต่อไฟและศพเหล่านั้นที่ยามไฟ และศพต้องหันเสียตัว",
   "item_silver_atgeir_description": "ดาบเงินขนาดใหญ่ที่มีมีดออบซิเดียนเสริม, อาวุธของนักล่าสัตว์ป่า",
   "item_iron_greatsword_description": "มีดเหล็กที่ใหญ่และหยาบ พร้อมด้วยมือจับที่ทำจากหินขัด. ด้วยคมมีดที่ใหญ่พอสมควร ทุกสิ่งสามารถตายได้",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "ไฟลุกเล็ก",
   "item_bolt_corewood": "ไม้หลักลวดลาย",
   "item_bolt_corewood_description": "ไม้ตะปูที่แข็งแรง",
-  "item_bolt_wood": "ไม้สลัด"
+  "item_bolt_wood": "ไม้สลัด",
+  "item_arrow_chitin_description": "ไม่ได้แคบเหมือนลูกธนูอื่น ๆ แต่ดีเมื่อต่อต้านโครต"
 }

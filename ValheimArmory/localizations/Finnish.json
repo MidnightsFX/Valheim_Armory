@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Tämä hakku näyttää luonnottoman vahvalta ja nälkäiseltä verestäsi.",
   "va_blood_sucker": "Verihurma",
   "va_blood_sucker_desc": "Aseesi janoo verta.",
-  "item_arrow_chitin_description": "Ei niin terävä kuin muut nuolet, mutta se aiheuttaa ikävän haavan silti.",
   "item_bolt_silver_frost_description": "Hopeanuolia, jäällä peitettyinä, tappavia tulisille ja kuolleille.",
   "item_silver_atgeir_description": "Valtava hopeinen terä, joka on tuettu obsidiaanilla, petometsästäjän ase.",
   "item_iron_greatsword_description": "Suuri karkea rautaterä hiotulla kivikahvalla. Tarpeeksi suurella terällä mikä tahansa kuolee.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Surullinen tulisalama",
   "item_bolt_corewood": "Ydinpuu pultti",
   "item_bolt_corewood_description": "Vahva puinen pultti.",
-  "item_bolt_wood": "Puupultti"
+  "item_bolt_wood": "Puupultti",
+  "item_arrow_chitin_description": "Ei niin terävä kuin muut nuolet, mutta hyvä luurankoja vastaan."
 }

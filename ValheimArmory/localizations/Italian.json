@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Questa piccozza sembra innaturalmente forte e assetata del tuo sangue.",
   "va_blood_sucker": "Frenesia del sangue",
   "va_blood_sucker_desc": "La tua arma è desiderosa di sangue.",
-  "item_arrow_chitin_description": "Non così affilata come altre frecce ma causa comunque una brutta ferita.",
   "item_bolt_silver_frost_description": "Bulloni d'argento, racchiusi in ghiaccio mortale per il fuoco e i morti.",
   "item_silver_atgeir_description": "Una enorme lama d'argento rinforzata con ossidiana, un'arma da cacciatore di bestie.",
   "item_iron_greatsword_description": "Una grande lama di ferro grezzo con un'elsa di pietra tagliata. Con una lama abbastanza grande, qualsiasi cosa muore.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "  Fulmine di fuoco Surtling",
   "item_bolt_corewood": "bullone in legno massiccio",
   "item_bolt_corewood_description": "Un robusto bullone di legno.",
-  "item_bolt_wood": "Bullone di legno"
+  "item_bolt_wood": "Bullone di legno",
+  "item_arrow_chitin_description": "Non così affilata come altre frecce, ma efficace contro gli scheletri."
 }

@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Esta picareta parece anormalmente forte e faminta pelo teu sangue.",
   "va_blood_sucker": "Frenesi de Sangue",
   "va_blood_sucker_desc": "A tua arma está ansiosa por sangue.",
-  "item_arrow_chitin_description": "Não tão afiada como outras flechas, mas causa um corte desagradável mesmo assim.",
   "item_bolt_silver_frost_description": "Parafusos de prata, envoltos em gelo mortal para o fogo e os mortos.",
   "item_silver_atgeir_description": "Uma enorme lâmina de prata reforçada com obsidiana, uma arma de caçadores de bestas.",
   "item_iron_greatsword_description": "Uma grande lâmina áspera de ferro com um punho de pedra talhada. Com uma lâmina grande o suficiente, tudo morre.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Raio de fogo Surtling",
   "item_bolt_corewood": "Parafuso de madeira maciça",
   "item_bolt_corewood_description": "Um parafuso de madeira resistente.",
-  "item_bolt_wood": "Parafuso de madeira"
+  "item_bolt_wood": "Parafuso de madeira",
+  "item_arrow_chitin_description": "Não tão afiada como outras flechas, mas boa contra esqueletos."
 }

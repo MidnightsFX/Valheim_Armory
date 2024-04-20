@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Ova krampa deluje nenormalno snažno i gladno za tvojom krvlju.",
   "va_blood_sucker": "Krvavi delirijum",
   "va_blood_sucker_desc": "Tvoje oružje žudi za krvlju.",
-  "item_arrow_chitin_description": "Nije tako oštar kao druge strelice, ali ipak pravi gadan rez.",
   "item_bolt_silver_frost_description": "Srebrni vijci, obloženi ledom smrtonosni za vatrenog i mrtvog.Hvala na zahtevu. Kako vam mogu još pomoći?",
   "item_silver_atgeir_description": "Veliki srebrni mač ojačan obsidijanom, oružje lova na zveri.",
   "item_iron_greatsword_description": "Veliki grub gvozdeni mač sa tesanim kamenim drškom. Sa dovoljno velikim mačem, sve umire.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Surtilni vatreni grom",
   "item_bolt_corewood": "Jezgroviti šaraf",
   "item_bolt_corewood_description": "Čvrst drveni zasun.",
-  "item_bolt_wood": "Drveni vijak"
+  "item_bolt_wood": "Drveni vijak",
+  "item_arrow_chitin_description": "Nije tako oštar kao druge strelice, ali je dobar protiv kostura."
 }

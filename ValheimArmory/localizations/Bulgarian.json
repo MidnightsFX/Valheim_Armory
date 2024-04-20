@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Тази кирка изглежда изключително силна и жадна за твоята кръв.",
   "va_blood_sucker": "Кървава лудост",
   "va_blood_sucker_desc": "Твоето оръжие е жадно за кръв.",
-  "item_arrow_chitin_description": "Не толкова остри като другите стрели, но въпреки това причинява неприятно рана.",
   "item_bolt_silver_frost_description": "Сребърни болтове, обвити в лед, смъртоносни за огнените и мъртвите.",
   "item_silver_atgeir_description": "Голямо сребърно острие с обков от обсидиан, оръжие на звероловите.",
   "item_iron_greatsword_description": "Голям груб желязен нож с издълбан каменен дръжка. С достатъчно голям нож, всичко умира.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": " Сюртлинг огнен болт",
   "item_bolt_corewood": "ядрена дървена болт",
   "item_bolt_corewood_description": "Един здрав дървен болт.",
-  "item_bolt_wood": "Дървен болт"
+  "item_bolt_wood": "Дървен болт",
+  "item_arrow_chitin_description": "Не толкова остри като другите стрели, но добри срещу скелети."
 }

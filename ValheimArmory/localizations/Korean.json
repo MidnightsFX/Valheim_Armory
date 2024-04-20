@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "이 곡괭이는 이상하게 강하고 당신의 피를 갈망하는 것 같아요.",
   "va_blood_sucker": "피의 광란",
   "va_blood_sucker_desc": "당신의 무기는 피를 갈망하고 있습니다.",
-  "item_arrow_chitin_description": "다른 화살만큼 날카롭지는 않지만 그래도 나쁜 상처를 남긴다.",
   "item_bolt_silver_frost_description": "은색 볼트, 얼음에 감싸여 불에게 치명적인 것은 죽은 자에게 치명적이다.",
   "item_silver_atgeir_description": "흑요석으로 보강된 거대한 은색 칼, 야수사냥꾼의 무기.",
   "item_iron_greatsword_description": "깎아 만든 돌 손잡이가 달린 큰 날카로운 철검. 충분히 큰 칼이면 모든 것이 죽는다.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": " 설잉 화염 볼트",
   "item_bolt_corewood": "코어우드 볼트",
   "item_bolt_corewood_description": "튼튼한 나무 볼트.",
-  "item_bolt_wood": "목 나사"
+  "item_bolt_wood": "목 나사",
+  "item_arrow_chitin_description": "다른 화살만큼 날카롭지는 않지만 해골에 대해서는 효과적이에요."
 }

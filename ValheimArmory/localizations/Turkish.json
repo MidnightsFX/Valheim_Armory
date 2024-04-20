@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Bu kazma doğal olmayan bir şekilde güçlü görünüyor ve kanınızı istiyor.",
   "va_blood_sucker": "Kan Çılgınlığı",
   "va_blood_sucker_desc": "Silahın kan için istekli.",
-  "item_arrow_chitin_description": "Diğer oklar kadar keskin değil ama yine de kötü bir kesik oluşturuyor.",
   "item_bolt_silver_frost_description": "Gümüş cıvatalar, buzla kaplanmış, ateşli ve ölülere ölümcül.",
   "item_silver_atgeir_description": "Bir yılanavcısı silahı olarak kullanılan devasa bir gümüş bıçak, obsidiyen ile desteklenmiş.",
   "item_iron_greatsword_description": "Büyük, kaba bir demir bıçak ve yontulmuş taş bir kabza. Yeterince büyük bir bıçakla, her şey ölür.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Surtling ateş oku",
   "item_bolt_corewood": "Çekirdek odunu cıvata",
   "item_bolt_corewood_description": "Sağlam bir ahşap cıvata.",
-  "item_bolt_wood": "Ahşap cıvata"
+  "item_bolt_wood": "Ahşap cıvata",
+  "item_arrow_chitin_description": "Diğer oklardan keskin değil, ama iskeletlere karşı iyi."
 }

@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Ta kilof wydaje się nienaturalnie silny i głodny twojej krwi.",
   "va_blood_sucker": "Krwawy szał",
   "va_blood_sucker_desc": "Twoja broń jest spragniona krwi.",
-  "item_arrow_chitin_description": "Nie tak ostry jak inne strzały, ale i tak powoduje brzydkie cięcie.",
   "item_bolt_silver_frost_description": "Srebrne śruby, osadzone w lodzie, śmiertelne dla ognistych i zmarłych.",
   "item_silver_atgeir_description": "Olbrzymi srebrny ostrze wzmocnione obsydianem, broń łowców bestii.",
   "item_iron_greatsword_description": "Duża szorstka żelazna klinga z obrobionym kamieniem rękojeści. Z wystarczająco dużą klingą wszystko umiera.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Kula ognia surtlingskiego",
   "item_bolt_corewood": "śruba z drewna jądrowego",
   "item_bolt_corewood_description": "Solidny drewniany zamek.Dziękuję",
-  "item_bolt_wood": "Śruba drewniana"
+  "item_bolt_wood": "Śruba drewniana",
+  "item_arrow_chitin_description": "Nie tak ostry jak inne strzały, ale dobry przeciwko szkieletom."
 }

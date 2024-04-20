@@ -105,13 +105,13 @@ Below is more information on all of the items added, what tier they are in, wher
   | Bone arrow | Workbench | Meadows | `VAArrowBone` | ![bone arrow icon](https://imgur.com/KUYj0Zp.png) |
   | Chitin arrow | Workbench | Ocean | `VAchitinarrow` | ![chitin arrow icon](https://imgur.com/LKNQnEt.png) |
   | Ancient Wood arrow | Workbench | Swamp | `VAarrowancient` | ![ancient wood arrow icon](https://imgur.com/d28tCPw.png) |
-  | Surtling Fire arrow | Forge | Mountain | `VAarrow_surtling_fire` | ![surtling fire arrow icon](https://i.imgur.com/K5Erlwt.png) |
+  | Surtling Fire arrow | Forge | Workbench | `VAarrow_surtling_fire` | ![surtling fire arrow icon](https://i.imgur.com/K5Erlwt.png) |
   | Blackmetal arrow | Forge | Plains | `VAArrowGreenMetal` | ![blackmetal arrow icon](https://imgur.com/yiJKz6s.png) | 
   | Wood Bolt | Workbench | Blackforest | `VABoltWood` | ![wood crossbow bolt](https://imgur.com/UTbO8aG.png) |
   | Bronze Bolt | Forge | Blackforest | `VAbolt_bronze` | ![bronze bolt](https://i.imgur.com/cUJTlB3.png) |
   | Iron Poison Bolt | Forge | Swamp | `VAbolt_poison` | ![iron poison bolt](https://i.imgur.com/mVLDfm8.png) |
   | Silver Frost Bolt | Forge | Mountain | `VAbolt_frost` | ![Silver Frost bolt](https://i.imgur.com/0FGHrBB.png) |
-  | Obsidian Bolt | Forge | Plains | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/luqYGzO.png) |
+  | Obsidian Bolt | Workbench | Plains | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/luqYGzO.png) |
   | Blackmetal Surtling Bolt | Forge | Plains | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/iZ5fOrF.png) |
 
 </details>
@@ -253,10 +253,10 @@ Below is more information on all of the items added, what tier they are in, wher
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Druidic staff of spirit | Workbench | BlackForest | `VAStaff_Druid_Spirit` | ![druidic spirit staff](https://i.imgur.com/4WrNu8i.png) |
+  | Druidic staff of spirit | Workbench | Swamp | `VAStaff_Druid_Spirit` | ![druidic spirit staff](https://i.imgur.com/4WrNu8i.png) |
   | Druidic staff of poison | Workbench | Swamp | `VAStaff_Druid_Poison` | ![druidic poison staff](https://i.imgur.com/PXi8ztI.png) |
+  | Druidic staff of fire | Workbench | Swamp | `VAStaff_Druid_Fire` | ![fire druidic staff](https://i.imgur.com/Xq7o8MW.png) |
   | Druidic staff of ice | Workbench | Mountains | `VAStaff_Druid_Ice` | ![druidic ice staff](https://i.imgur.com/AFtAeV7.png) |
-  | Druidic staff of fire | Workbench | Plains | `VAStaff_Druid_Fire` | ![fire druidic staff](https://i.imgur.com/Xq7o8MW.png) |
   | Staff of Spirit | Magetable | Mistlands | `VAStaff_Spirit` | ![Staff of spirit](https://i.imgur.com/BuIbWQN.png) |
   | Staff of Poison | Magetable | Mistlands | `VAStaff_Poison` | ![fire druidic staff](https://i.imgur.com/UKn5TJC.png) |
 
@@ -365,6 +365,99 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 
 <details>
   <summary>Changelog (Potential spoilers!)</summary>
+
+  **1.8.0**
+```
+New configuration
+- Movement speed penalty (adjustable for 2H hammers)
+- Crafting table level required (adjustable for all)
+
+Adds
+- Corewood crossbow bolt, normal wood crossbow bolt now costs wood.
+- Moders 1H dagger
+Changes
+    Arrows
+    - Blackmetal Arrow: Updated recipe, converted damage to primarily be blunt
+    - Bone Arrow: Increased damage, normalized feather cost, requires crafting station lvl3
+    - Surtling fire Arrow: moved to workbench, reduced damage slightly, reduced crafting costs
+    - Ancient wood Arrow: reduced damage
+    - Chitin Arrow: removed slash damage, added blunt damage, reduced overall cost and damage
+    - Wood bolt: reduced damage, changed recipe to cost wood not corewood
+    - Bronze bolt: small damage reduction, recipe cost reduction
+    - Poison bolt: damage reduction, cost reduction
+    - Obsidian bolt: now made at the workbench, tiny damage reduction
+    - Frost bolt: large cost reduction, tiny damage reduction
+    - Surtling fire bolt: cost reduction, damage reduction
+    Bows
+    - Bone Blood bow: small damage reduction, recipe cost reduction
+    - Antler bow: moved to workbench, significant cost reduction, small increase in damage
+    - bronze crossbow: damage increase, durability decrease, recipe cost adjusted
+    - Elder crossbow: recipe cost reduction, damage increase, durability decrease
+    - Moder crossbow: massive damage increase, slight recipe cost increase, durability decreased
+    - Queen bow: damage spread between lightning and poison, lightning VFX added, recipe adjusted
+    Swords
+    - Chitin sword: moved to workbench, small damage decrease, recipe cost increased
+    - Antler sword: moved to workbench, damage per level increased, recipe cost decreased
+    - Vine sword: recipe cost decreased, damage decreased
+    - Moder sword: recipe cost increased, damage decreased, damage moved to pierce from blunt
+    - Bronze greatsword: recipe cost decreased, damage slightly decreased
+    - Silver greatsword: recipe cost slightly increased, damage increased
+    - Bonemass greatsword: recipe cost increased, slash damage increased, poison decreased
+    - Yagluth greatsword: recipe cost decreased, damage slightly decrease, damage per level increased
+    - Flint sword: damage decreased slightly, increased damage per level, recipe cost significantly reduced
+    - Flint greatsword: damage decreased slightly, massive recipe cost decrease
+    - Queen greatsword: damage spread out between poison and lightning, stamina costs slightly increased, recipe adjusted
+    - Queen sword: damage spread out between poison and lightning, stamina costs lowered, recipe adjusted
+    Axes
+    - Flint greataxe: damage slightly decreased, recipe cost massively decreased, tree damage massively increased, stamina costs increased
+    - Bronze greataxe: damage slightly decreased, tree damage decreased, recipe cost decreased
+    - Antler greataxe: moved to workbench, damage decreased, tree damage increased, recipe costs massively decreased
+    - Blackmetal greataxe: damage decreased, recipe costs increased, tree damage reduced, secondary stamina cost increased
+    Hammers
+    - Blackmetal sledge: damage increased, recipe cost increased, movement speed penalty increased
+    - Elder sledge: damage increased, recipe cost increased, movement speed penalty increased
+    - Bonemass warhammer: damage decreased, recipe cost increased, movement speed penalty increased
+    Atgeirs
+    - Flint atgeir: damage increase, stamina cost increase, recipe cost massively decreased
+    - Antler atgeir: damage increase, recipe cost decrease, stamina cost increase
+    - Chitin atgeir: (renamed from royal to chitin atgeir) spirit damage removed, recipe cost massively reduced, VFX removed, damage reduced
+    - Silver atgeir: damage slightly shifted to spirit, recipe cost reduced, stamina cost increased
+    - Yagluth atgeir: fire damage per level increased, recipe cost massively reduced
+    Shields
+    - serpentscale shield: deflection increased, recipe cost decreased, resists pierce
+    - elder roundshield: cost decreased, block decreased, very resistant to blunt, removed special player resistances
+    - moder roundshield: cost increased, block massively decreased, very resistant to frost, removed special player resistances
+    Daggers/knives
+    - flint 2h daggers: recipe cost massively decreased, damage slightly increased, stamina cost adjusted
+    - antler dagger: recipe cost reduced, damage slightly reduced
+    - bronze 2h dagger: recipe cost reduced, damage increased, stamina cost decreased
+    - bronze 1h dagger: recipe cost reduced, damage increased
+    - iron 2h dagger: recipe cost increased, damage reduced
+    - iron 1h dagger: recipe cost increased, damage increased, stamina cost increased
+    - silver 2H daggers: recipe cost increased, damage massively increased
+    - silver 1h daggers: default uncraftable, damage heavily increased, removed spirit damage, recipe cost increased
+    - moder 1h daggers: added, frost damage
+    - bonemass dagger: damage decrease, crafting cost decrease, stamina cost increase
+    - queens dagger: damage spread between poison and lightning, recipe adjusted
+    Spears
+    - moder spear: damage adjusted, replaced blunt damage with slash, recipe cost decreased
+    Fists
+    - flint fists: damage decrease, recipe cost massively reduced
+    - bronze fists: damage decrease, recipe costs reduced
+    - iron fists: damage decrease, recipe costs reduced
+    - yagluth fists: damage decreased, recipe costs massively reduced
+    Maces
+    - elders mace: damage decreased, weapon costs reduced, stamina costs decreased
+    Magic staves
+    - poison: decreased recipe costs, large damage increase
+    - spirit: decreased recipe costs, large damage increase
+    - druidic poison: damage increase, durability decrease, stamina cost increase
+    - druidic spirit: massive damage increase, durability decrease, stamina cost increase, recipe now swamp level
+    - druidic ice: small damage decrease, durability decrease, recipe cost decrease
+    - druidic fire: recipe changed to swamp level, damage increase, durability reduced
+    Pickaxe
+    - Bone blood pick: no change
+```
 
 
   **1.7.5**

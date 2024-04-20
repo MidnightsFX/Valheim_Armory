@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Šķēpa šķiet neparasti stipra un izsalkusi pēc tavas asins.",
   "va_blood_sucker": "Asins trakums",
   "va_blood_sucker_desc": "Tava ierocis ir izsalkusi pēc asinīm.",
-  "item_arrow_chitin_description": "Nav tik asa kā citi bultas, bet tas izraisa nepatīkamu griezumu, neskatoties uz to.",
   "item_bolt_silver_frost_description": "Zelta skrūves, ieslodzītas ledā, nāvējošas pret ugunīgo un mirušo.",
   "item_silver_atgeir_description": "Milzīgs sudraba asi, nostiprināts ar obsidiānu, medītāju ierocis.",
   "item_iron_greatsword_description": "Liela rupja dzelzs lama ar pārstrādātu akmeņu rokturi. Ar pietiekami lielu lāmi, viss nomirst.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Uguns strēle.",
   "item_bolt_corewood": "Koka skrūve",
   "item_bolt_corewood_description": "Stiprs koka sprādze.",
-  "item_bolt_wood": "Koka sprādze"
+  "item_bolt_wood": "Koka sprādze",
+  "item_arrow_chitin_description": "Nav tik asa kā citi bultas, bet laba pret skeletiem."
 }

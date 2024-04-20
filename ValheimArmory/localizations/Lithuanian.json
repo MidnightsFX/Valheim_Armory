@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Šis kirtiklis atrodo nesąmoningai stiprus ir trokšta tavo kraujo.",
   "va_blood_sucker": "Kraujo šėlsmas",
   "va_blood_sucker_desc": "Tavo ginklas trokšta kraujo.",
-  "item_arrow_chitin_description": "Ne tokie aštrūs kaip kiti strėlės, bet vis tiek sukelia nemalonią įpjovą.",
   "item_bolt_silver_frost_description": "Sidabriniai strypai, įdėti į ledą, mirtini ugniai ir mirusiesiems.(Sidabriniai varžtai, įkapsiuoti į ledą, mirtini ugniai ir mirusiems.)",
   "item_silver_atgeir_description": "Milžiniškas sidabro peilis, sustiprintas obsidianu, žvėrių medžiotojų ginklas.",
   "item_iron_greatsword_description": "Didelis šiurkštus geležies peilis su apkalta akmens rankena. Turint pakankamai didelį peilį, viskas miršta.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Surtling ugnies strėlė",
   "item_bolt_corewood": "Branduolinis medienos strypas",
   "item_bolt_corewood_description": "Stiprus medinis strypas.",
-  "item_bolt_wood": "Medinis varžtas"
+  "item_bolt_wood": "Medinis varžtas",
+  "item_arrow_chitin_description": "Ne tokie aštrūs kaip kiti strėlės, bet geri prieš skeletus."
 }

@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Ця кирка здається надзвичайно сильною і голодною до твоєї крові.",
   "va_blood_sucker": "Кроваве безумство.",
   "va_blood_sucker_desc": "Ваша зброя прагне крові.",
-  "item_arrow_chitin_description": "Не такий гострий, як інші стріли, але все одно завдає неприємного порізу.",
   "item_bolt_silver_frost_description": "Срібні болти, обгорнуті льодом смертельні для вогняних і мертвих.",
   "item_silver_atgeir_description": "Великий сріблястий клинок, зміцнений обсидіаном, знаряддя полювання на звірів.",
   "item_iron_greatsword_description": "Великий грубий залізний клинок з обтесаним кам'яним рукояткою. З великим достатньою клинком все вмирає.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Сертлінг вогняна стріла",
   "item_bolt_corewood": "Ядряна болт",
   "item_bolt_corewood_description": "Міцний дерев'яний засув.",
-  "item_bolt_wood": "Деревний болт"
+  "item_bolt_wood": "Деревний болт",
+  "item_arrow_chitin_description": "Не такі гострі, як інші стріли, але добре проти скелетів."
 }

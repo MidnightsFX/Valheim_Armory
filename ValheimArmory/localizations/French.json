@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Ce pic semble anormalement fort et assoiffé de votre sang.",
   "va_blood_sucker": "Frénésie de sang",
   "va_blood_sucker_desc": "Votre arme est avide de sang.",
-  "item_arrow_chitin_description": "Pas aussi tranchante que d'autres flèches mais elle cause quand même une coupure désagréable.",
   "item_bolt_silver_frost_description": "Boulons d'argent, enfermés dans la glace mortelle pour les êtres de feu et les morts.",
   "item_silver_atgeir_description": "Une énorme lame d'argent renforcée d'obsidienne, une arme de chasseur de bêtes.",
   "item_iron_greatsword_description": "Une grande lame de fer rugueuse avec un manche en pierre taillée. Avec une lame assez grande, tout meurt.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Éclair de feu Surtling",
   "item_bolt_corewood": "Boulon en bois dur",
   "item_bolt_corewood_description": "Un boulon en bois solide.",
-  "item_bolt_wood": "Boulon en bois"
+  "item_bolt_wood": "Boulon en bois",
+  "item_arrow_chitin_description": "Moins tranchant que d'autres flèches, mais efficace contre les squelettes."
 }

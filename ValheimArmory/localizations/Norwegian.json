@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Denne hakken virker unaturlig sterk, og sulten etter ditt blod.",
   "va_blood_sucker": "Blodrus",
   "va_blood_sucker_desc": "Ditt våpen er sulten etter blod.",
-  "item_arrow_chitin_description": "Ikke så skarp som andre piler, men den forårsaker likevel et stygt kutt.",
   "item_bolt_silver_frost_description": "Sølvbolter, innkapslet i is dødelig for de brennende og døde.Takk!",
   "item_silver_atgeir_description": "Et stort sølvblad støttet med obsidian, et rovdyrjegers våpen.",
   "item_iron_greatsword_description": "En stor grov jernsverd med en hugget steinhandtak. Med en stor nok klinge, dør alt.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Sureling ildkule",
   "item_bolt_corewood": "Kjerneved bolt",
   "item_bolt_corewood_description": "En solid trebolt.",
-  "item_bolt_wood": "Tre bolt"
+  "item_bolt_wood": "Tre bolt",
+  "item_arrow_chitin_description": "Ikke så skarp som andre piler, men god mot skjeletter."
 }

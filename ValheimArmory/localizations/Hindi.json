@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "यह पिकाक्स असाधारण रूप से मजबूत लगता है, और आपके खून के लिए भूखा है।",
   "va_blood_sucker": "रक्त क्रोध",
   "va_blood_sucker_desc": "तुम्हारा हथियार खून के लिए बेताब है।",
-  "item_arrow_chitin_description": "दूसरे तीरों की तरह तेज़ नहीं है, लेकिन फिर भी यह गंभीर चोट पहुँचाता है।",
   "item_bolt_silver_frost_description": "सिल्वर बोल्ट, बर्फ में बंद, आगी और मरे हुए के लिए जानलेवा।",
   "item_silver_atgeir_description": "एक विशाल चांदी का ब्लेड जिसे ओब्सिडियन से सजाया गया है, एक जानवर की शिकार करने वाले की शस्त्र।",
   "item_iron_greatsword_description": "एक बड़ा कठोर लोहे का ब्लेड जिसमें एक हड्डी का सा हिल्ट है। एक बड़े ब्लेड के साथ, कुछ भी मर जाता है।",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "सर्टलिंग फायर बोल्ट",
   "item_bolt_corewood": "कोरवुड बोल्ट",
   "item_bolt_corewood_description": "एक मजबूत लकड़ी का बोल्ट।",
-  "item_bolt_wood": "लकड़ी का बोल्ट"
+  "item_bolt_wood": "लकड़ी का बोल्ट",
+  "item_arrow_chitin_description": "दूसरे तीरों की तरह तेज नहीं, लेकिन खोपड़ी वाले के खिलाफ अच्छा है।"
 }

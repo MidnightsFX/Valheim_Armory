@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Esta piqueta parece anormalmente fuerte y hambrienta de tu sangre.",
   "va_blood_sucker": "Frenesí de Sangre",
   "va_blood_sucker_desc": "Tu arma está ansiosa por sangre.",
-  "item_arrow_chitin_description": "No tan afilada como otras flechas pero causa un corte desagradable de todas formas.",
   "item_bolt_silver_frost_description": "Pernos de plata, encerrados en hielo, mortales para los ardientes y los muertos.",
   "item_silver_atgeir_description": "Una enorme hoja de plata reforzada con obsidiana, un arma de cazadores de bestias.",
   "item_iron_greatsword_description": "Una gran hoja de hierro áspero con un mango de piedra labrada. Con una hoja lo suficientemente grande, todo muere.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Rayo de fuego surtling",
   "item_bolt_corewood": "Núcleo de madera",
   "item_bolt_corewood_description": "Un perno de madera resistente.",
-  "item_bolt_wood": "Perno de madera"
+  "item_bolt_wood": "Perno de madera",
+  "item_arrow_chitin_description": "No tan afiladas como otras flechas, pero buenas contra esqueletos."
 }

@@ -139,7 +139,6 @@
   "item_pickaxe_blood_description": "Tato krumpáč se zdá neobvykle silný a hladový po tvé krvi.",
   "va_blood_sucker": "Krevní šílenství",
   "va_blood_sucker_desc": "Tvá zbraň touží po krvi.",
-  "item_arrow_chitin_description": "Ne tak ostrý jako ostatní šípy, ale způsobí nepříjemný řez bez ohledu na to.",
   "item_bolt_silver_frost_description": "Stříbrné šrouby, uzavřené v ledu smrtelné pro ohnivé a mrtvé.",
   "item_silver_atgeir_description": "Obrovská stříbrná čepel opatřená obsidiánem, zbraň lovců bestií.",
   "item_iron_greatsword_description": "Velké hrubé železné čepel s opracovanou kamennou rukojetí. S dostatečně velkou čepelí zemře cokoli.",
@@ -150,5 +149,6 @@
   "item_bolt_surtling": "Surtling ohnivý šíp",
   "item_bolt_corewood": "Jádrový šroub",
   "item_bolt_corewood_description": "Pevný dřevěný zástrčník.",
-  "item_bolt_wood": "Dřevěný šroub"
+  "item_bolt_wood": "Dřevěný šroub",
+  "item_arrow_chitin_description": "Ne tak ostré jako jiné šípy, ale dobré proti kostlivcům."
 }
