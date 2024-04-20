@@ -48,11 +48,11 @@ Below is more information on all of the items added, what tier they are in, wher
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Antler Bow | Forge | Post-Meadows | `VAAntler_Bow` | ![Antler Bow Icon](https://i.imgur.com/YYavFT6.png) |
+  | Antler Bow | Workbench | Post-Meadows | `VAAntler_Bow` | ![Antler Bow Icon](https://i.imgur.com/YYavFT6.png) |
   | Antler Dagger | Workbench | Post-Meadows | `VAAntler_dagger` | ![Antler Dagger Icon](https://i.imgur.com/TImtKNo.png) |
-  | Antler Sword | Forge | Post-Meadows | `VAAntler_Sword` | ![Antler Sword Icon](https://i.imgur.com/uw1ZNgz.png) |
+  | Antler Sword | Workbench | Post-Meadows | `VAAntler_Sword` | ![Antler Sword Icon](https://i.imgur.com/uw1ZNgz.png) |
   | Antler Atgeir | Workbench | Post-Meadows | `VAatgeir_antler` | ![Antler Atgier Icon](https://i.imgur.com/URdXvZc.png) |
-  | Antler Greataxe | Forge | Post-Meadows | `VAAntler_greataxe` | ![Antler Greataxe Icon](https://i.imgur.com/jIAHbCD.png) |
+  | Antler Greataxe | Workbench | Post-Meadows | `VAAntler_greataxe` | ![Antler Greataxe Icon](https://i.imgur.com/jIAHbCD.png) |
 
   ## Elder
   | Name | Crafted At | Stage | prefab | Icon |
@@ -110,8 +110,8 @@ Below is more information on all of the items added, what tier they are in, wher
   | Wood Bolt | Workbench | Blackforest | `VABoltWood` | ![wood crossbow bolt](https://imgur.com/UTbO8aG.png) |
   | Bronze Bolt | Forge | Blackforest | `VAbolt_bronze` | ![bronze bolt](https://i.imgur.com/cUJTlB3.png) |
   | Iron Poison Bolt | Forge | Swamp | `VAbolt_poison` | ![iron poison bolt](https://i.imgur.com/mVLDfm8.png) |
-  | Silver Frost Bolt | Forge | Mountain | `VAbolt_frost` | ![Silver Frost bolt](https://i.imgur.com/0FGHrBB.png) |
-  | Obsidian Bolt | Workbench | Plains | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/luqYGzO.png) |
+  | Frost Bolt | Forge | Mountain | `VAbolt_frost` | ![Silver Frost bolt](https://i.imgur.com/0FGHrBB.png) |
+  | Obsidian Bolt | Workbench | Mountain | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/luqYGzO.png) |
   | Blackmetal Surtling Bolt | Forge | Plains | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/iZ5fOrF.png) |
 
 </details>
@@ -227,7 +227,7 @@ Below is more information on all of the items added, what tier they are in, wher
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Flint Sword | Workbench | Meadows | `VAFlint_Sword` | ![flint sword icon](https://i.imgur.com/8PEvo8I.png) |
-  | Chitin Sword | Forge | Blackforest | `VASwordChitin` | ![chitin sword icon](https://i.imgur.com/HtNvGaA.png) |
+  | Chitin Sword | Workbench | Blackforest | `VASwordChitin` | ![chitin sword icon](https://i.imgur.com/HtNvGaA.png) |
 
   * Chitin Sword (Abyssal Sword) is an early game sword sitting between bronze and iron but with the unique difference of inflicting some blunt damage, making it less useless against all of the enemies in the swamp
 </details>
@@ -368,13 +368,26 @@ Toss the ValheimArmory folder and files into your plugins folder. Technically th
 
   **1.8.0**
 ```
+Adds
+- Corewood crossbow bolt, normal wood crossbow bolt now costs wood.
+- Moders 1H dagger
+
 New configuration
 - Movement speed penalty (adjustable for 2H hammers)
 - Crafting table level required (adjustable for all)
 
-Adds
-- Corewood crossbow bolt, normal wood crossbow bolt now costs wood.
-- Moders 1H dagger
+Fixes
+- Animation grip for Vine sledge
+- Animation grip for Queens 1H sword
+- Animation grip for moders 1H sword
+- Animation grip for 1h silver daggers
+- reduced VFX for blackmetal axe darkness
+- Improved grip of flint fists
+- Improved VFX for queens weapons
+
+BALANCE CONFIGURATION APPLIES TO NEW CONFIG FILES
+existing configurations will not be significantly adjusted
+
 Changes
     Arrows
     - Blackmetal Arrow: Updated recipe, converted damage to primarily be blunt
