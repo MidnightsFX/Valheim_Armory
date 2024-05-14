@@ -65,7 +65,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Dragonfrost sword | Forge | Post-Mountain | `VASwordModer` | ![Ice sword Icon](https://i.imgur.com/iXVICFY.png) |
   | Dragonfrost spear | Forge | Post-Mountain | `VASpearModer` | ![Ice Spear Icon](https://i.imgur.com/X4CuFZs.png) |
   | Dragonfrost crossbow | Forge | Post-Mountain | `VACrossbowModer` | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
-  | Dragonfrost buckler | Forge | Post-Mountain | `VAModer_RoundShield` | ![Moder roundshield](https://i.imgur.com/kDHDtJT.png) |
+  | Dragonfrost shield | Forge | Post-Mountain | `VAModer_shield` | ![Moder shield](https://i.postimg.cc/9FK6FVN6/modershiled-v2.png) |
   | Dragonfrost dagger | Forge | Post-Mountain | `VAdagger_moder` | ![Moder dagger](https://i.imgur.com/9EdsSsE.png) |
 
   ## Yagluth
@@ -328,7 +328,6 @@ Q. Why does x weapon look bad?
   * Filling out boss weapons for most/all playstyles (long term)
   * Chitin Shield
   * Named Mace (blackmetal mace)
-  * Silver sledge
   * Better VFX for weapons
   * New spear alternatives
   * More magic (eitr) powered weapons (non-staves, post Ashlands update)
