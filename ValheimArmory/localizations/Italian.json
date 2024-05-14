@@ -150,5 +150,17 @@
   "item_bolt_corewood": "bullone in legno massiccio",
   "item_bolt_corewood_description": "Un robusto bullone di legno.",
   "item_bolt_wood": "Bullone di legno",
-  "item_arrow_chitin_description": "Non così affilata come altre frecce, ma efficace contro gli scheletri."
+  "item_arrow_chitin_description": "Non così affilata come altre frecce, ma efficace contro gli scheletri.",
+  "item_silver_tower_shield": "Scudo torre d'argento",
+  "item_silver_tower_shield_description": "Uno scudo a torre gigante incorniciato d'argento, un baluardo per cacciatori di mostri.",
+  "item_silver_sledge": "Slitta d'argento",
+  "item_silver_sledge_description": "Un martello d'argento mastodontico, infondi terrore negli non morti.",
+  "item_meteor_atgeir": "There is no direct translation for this phrase as it appears to be a name or a specific term. Can you provide more context or information?",
+  "item_meteor_atgeir_description": "Perché usare una lama quando potresti usarne due?",
+  "item_dagger_meteor": "Pugnale Eird",
+  "item_dagger_meteor_description": "Scuro come la notte, perfettamente equilibrato.",
+  "item_dagger_meteor_2h": "Pugnali assassini",
+  "item_dagger_meteor_2h_description": "Due fette di oscurità si insinuano nella notte, cosa troveranno?",
+  "item_moder_shield": "Scudo di Moders",
+  "item_moder_shield_description": "Uno scudo che tiene ghiaccio congelato, potenziato dalle lacrime moderne."
 }

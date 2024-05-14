@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Ядряна болт",
   "item_bolt_corewood_description": "Міцний дерев'яний засув.",
   "item_bolt_wood": "Деревний болт",
-  "item_arrow_chitin_description": "Не такі гострі, як інші стріли, але добре проти скелетів."
+  "item_arrow_chitin_description": "Не такі гострі, як інші стріли, але добре проти скелетів.",
+  "item_silver_tower_shield": "Срібний баштовий щит",
+  "item_silver_tower_shield_description": "Великий вежевий щит, обрамлений сріблом, булат мисливців на монстрів.",
+  "item_silver_sledge": "Срібний сані.",
+  "item_silver_sledge_description": "Мамонтовий сріблястий молот, викликати страх у нежиті.",
+  "item_meteor_atgeir": "Ейрд атгейр",
+  "item_meteor_atgeir_description": "Чому використовувати одне лезо, коли можна використовувати два?",
+  "item_dagger_meteor": "Ейрд кинджал",
+  "item_dagger_meteor_description": "Темно як ніч, ідеально збалансовано.",
+  "item_dagger_meteor_2h": "Ножі асасина",
+  "item_dagger_meteor_2h_description": "Два шматочки темряви прокрадаються через ніч, що вони знайдуть?",
+  "item_moder_shield": "Модернізований щит",
+  "item_moder_shield_description": "Щит, утримуючий замерзле лід, посилений сльозами матері."
 }

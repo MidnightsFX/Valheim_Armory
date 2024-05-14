@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Jezgroviti vijak",
   "item_bolt_corewood_description": "Čvrsti drveni vijak.",
   "item_bolt_wood": "Drveni vijak",
-  "item_arrow_chitin_description": "Nije tako oštar kao druge strelice, ali dobar protiv kostura."
+  "item_arrow_chitin_description": "Nije tako oštar kao druge strelice, ali dobar protiv kostura.",
+  "item_silver_tower_shield": "Srebrni toranj štit",
+  "item_silver_tower_shield_description": "Veliki tornji štit okviran srebrom, koplja lovac na čudovišta.",
+  "item_silver_sledge": "Srebrni sank",
+  "item_silver_sledge_description": "Veliki srebrni čekić, unesi strah u nemrtve.",
+  "item_meteor_atgeir": " does not have a direct translation in Croatian. Can you provide more context or explain what this phrase means?",
+  "item_meteor_atgeir_description": "Zašto koristiti jednu oštricu, kada možete koristiti dvije?",
+  "item_dagger_meteor": "Eird nožić",
+  "item_dagger_meteor_description": "Mračno kao noć, savršeno uravnoteženo.",
+  "item_dagger_meteor_2h": "Ubilački noževi",
+  "item_dagger_meteor_2h_description": "Dva komadića tame kradu se kroz noć, što će oni pronaći?",
+  "item_moder_shield": "Zaštitnik majki",
+  "item_moder_shield_description": "Štit držeći smrznuti led, pojačan majčinim suzama."
 }

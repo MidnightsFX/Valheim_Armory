@@ -150,5 +150,17 @@
   "item_bolt_corewood": "ядрена дървена болт",
   "item_bolt_corewood_description": "Един здрав дървен болт.",
   "item_bolt_wood": "Дървен болт",
-  "item_arrow_chitin_description": "Не толкова остри като другите стрели, но добри срещу скелети."
+  "item_arrow_chitin_description": "Не толкова остри като другите стрели, но добри срещу скелети.",
+  "item_silver_tower_shield": "Сребърен кулешки щит",
+  "item_silver_tower_shield_description": "Гигантски кула щит, орамен със сребъро, защита на ловците на чудовища.",
+  "item_silver_sledge": "Сребърна санка",
+  "item_silver_sledge_description": "Един гигантски сребърен чук, внушава страх в немъртвите.",
+  "item_meteor_atgeir": "Ейрд атгеир",
+  "item_meteor_atgeir_description": "Защо да използваш един острие, когато можеш да използваш две?",
+  "item_dagger_meteor": "Еиърд нож",
+  "item_dagger_meteor_description": "Тъмен като нощта, балансиран перфектно.",
+  "item_dagger_meteor_2h": "Асасински ножове",
+  "item_dagger_meteor_2h_description": "Две парченца мрак се крият през нощта, какво ще намерят?",
+  "item_moder_shield": "Модерен щит.",
+  "item_moder_shield_description": "Щитът държи замразен лед, засилван от сълзите на модерните."
 }

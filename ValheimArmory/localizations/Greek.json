@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Καρυδόξυλο βίδα",
   "item_bolt_corewood_description": "Ένας ανθεκτικός ξύλινος κλείστρο.",
   "item_bolt_wood": "Ξύλινο βίδα",
-  "item_arrow_chitin_description": "Όχι τόσο αιχμηρό όσο άλλες βέλη, αλλά καλό ενάντια στα σκελετά."
+  "item_arrow_chitin_description": "Όχι τόσο αιχμηρό όσο άλλες βέλη, αλλά καλό ενάντια στα σκελετά.",
+  "item_silver_tower_shield": "Ασημένιο πύργο ασπίδα",
+  "item_silver_tower_shield_description": "Ένας γιγαντιαίος πύργος ασπίδας με ασημένια πλαίσια, ένας προστάτης κυνηγών τεράτων.",
+  "item_silver_sledge": "Ασημένιο αμάξι",
+  "item_silver_sledge_description": "Ένα τεράστιο ασημένιο σφυρί, προκαλεί φόβο στους απέθαντους.",
+  "item_meteor_atgeir": "Είρδ ατγειρ",
+  "item_meteor_atgeir_description": "Γιατί χρησιμοποιήσεις ένα λεπίδι, όταν μπορείς να χρησιμοποιήσεις δύο;",
+  "item_dagger_meteor": "Αιχμηρό μαχαίρι",
+  "item_dagger_meteor_description": "Σκοτεινό όσο η νύχτα, ισορροπημένο με τέλειο τρόπο.",
+  "item_dagger_meteor_2h": "Δολοφόνος μαχαίρια( Μαχαίρια δολοφόνου)",
+  "item_dagger_meteor_2h_description": "Δύο λεπτές σκιές του σκότους ξεφεύγουν από τη νύχτα, τι θα βρουν;",
+  "item_moder_shield": "Ασπίδα μοντέρνα",
+  "item_moder_shield_description": "Ένας ασπίδα κρατώντας παγωμένο πάγο, ενισχυμένος από δάκρυα μητέρας."
 }

@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Branduolinis medienos strypas",
   "item_bolt_corewood_description": "Stiprus medinis strypas.",
   "item_bolt_wood": "Medinis varžtas",
-  "item_arrow_chitin_description": "Ne tokie aštrūs kaip kiti strėlės, bet geri prieš skeletus."
+  "item_arrow_chitin_description": "Ne tokie aštrūs kaip kiti strėlės, bet geri prieš skeletus.",
+  "item_silver_tower_shield": "Sidabrinis bokšto skydas",
+  "item_silver_tower_shield_description": "Milžiniškas bokšto skydas su sidabro rėmu, monstrų medžiotojų gynybinė siena.",
+  "item_silver_sledge": "Sidabrinis rogutė",
+  "item_silver_sledge_description": "Didelis sidabro kūjis, įbaugink nemiručius.",
+  "item_meteor_atgeir": "I'm sorry,  does not appear to be a phrase in any known language. Can you please provide more context or clarify the phrase?",
+  "item_meteor_atgeir_description": "Kodėl naudoti vieną peilį, kai galėtum naudoti du?",
+  "item_dagger_meteor": "Žemės kardu",
+  "item_dagger_meteor_description": "Tamsus kaip naktis, puikiai subalansuotas.",
+  "item_dagger_meteor_2h": "Žudikas peiliai",
+  "item_dagger_meteor_2h_description": "Du tamsos šešėliai slenka per naktį, ką jie ras?",
+  "item_moder_shield": "Modernus skydas",
+  "item_moder_shield_description": "Skydas laikantis sustingo ledo, sustiprintas modernių ašarų."
 }

@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Kjarni viður bolti",
   "item_bolt_corewood_description": "Stórt viðarorð.",
   "item_bolt_wood": "Tré sleggja",
-  "item_arrow_chitin_description": "Ekki jafn skör og aðrar örvar, en góðar gegn beinagrindum."
+  "item_arrow_chitin_description": "Ekki jafn skör og aðrar örvar, en góðar gegn beinagrindum.",
+  "item_silver_tower_shield": "Silfur turn skjöldur",
+  "item_silver_tower_shield_description": "Einvígi skjöldur umlukinn silfri, einvígja vörn.",
+  "item_silver_sledge": "Silfur sleði",
+  "item_silver_sledge_description": "Ein risastór silfurhamar, hræða dauðu.",
+  "item_meteor_atgeir": "Jörðin skjöldur",
+  "item_meteor_atgeir_description": "Af hverju nota eina egg, þegar þú gætir notað tvær?",
+  "item_dagger_meteor": "Jörðarhnífur",
+  "item_dagger_meteor_description": "Dökkt eins og nótt, jafnvægt á fullu.",
+  "item_dagger_meteor_2h": "Leiðangurs daggir",
+  "item_dagger_meteor_2h_description": "Tveir skolli myrkurs sneika í gegnum nóttina, hvað munu þeir finna?",
+  "item_moder_shield": "Móðursvernd.",
+  "item_moder_shield_description": "Skjöldur sem heldur falinni ís, styrktur af móður tár."
 }

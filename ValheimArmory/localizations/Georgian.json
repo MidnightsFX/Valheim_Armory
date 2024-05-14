@@ -150,5 +150,17 @@
   "item_bolt_corewood": "კორევუდ ბოლტი",
   "item_bolt_corewood_description": "ძლიერი ხის ხლო.",
   "item_bolt_wood": "ხე ბოლტი",
-  "item_arrow_chitin_description": "სხვა იარებზე არ არის საკეთები, მაგრამ კოსტანებთან კარგად მუშაობს."
+  "item_arrow_chitin_description": "სხვა იარებზე არ არის საკეთები, მაგრამ კოსტანებთან კარგად მუშაობს.",
+  "item_silver_tower_shield": "ვერცხლის თავისუფლელი კარკასი",
+  "item_silver_tower_shield_description": "ძლიერი საყელი კოშკი, ვერცების მოღვაწების ფარას.",
+  "item_silver_sledge": "ვერცხლის სანკე",
+  "item_silver_sledge_description": "მეგობრობის ველის ვერცხლის შავი ფუჭი, შეშინება მკერდად ირმი.",
+  "item_meteor_atgeir": "ეირდ ათგეირ",
+  "item_meteor_atgeir_description": "რატომ გამოიყენოთ ერთი ბრძენი, როდესაც შეგიძლია გამოიყენო ორი?",
+  "item_dagger_meteor": "Eird მახრჩო",
+  "item_dagger_meteor_description": "წამები, როგორც ღამე, იდინი სადმე გასწორებული.",
+  "item_dagger_meteor_2h": "მკვლე გუნდა",
+  "item_dagger_meteor_2h_description": "ორი წლის წინაშე ბნელის ორი შინ დაიპარსა, რა იპარებენ ისინი?",
+  "item_moder_shield": "დედამოდრის ფარი",
+  "item_moder_shield_description": "გაფართოების საფეხუმი გაყინული ყინულებით გაზეთილის მეგობარი."
 }

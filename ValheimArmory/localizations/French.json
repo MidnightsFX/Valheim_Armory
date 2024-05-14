@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Boulon en bois dur",
   "item_bolt_corewood_description": "Un boulon en bois solide.",
   "item_bolt_wood": "Boulon en bois",
-  "item_arrow_chitin_description": "Moins tranchant que d'autres flèches, mais efficace contre les squelettes."
+  "item_arrow_chitin_description": "Moins tranchant que d'autres flèches, mais efficace contre les squelettes.",
+  "item_silver_tower_shield": "Bouclier de tour en argent",
+  "item_silver_tower_shield_description": "Un énorme bouclier de tour encadré d'argent, un rempart de chasseur de monstres.",
+  "item_silver_sledge": "Traîneau en argent",
+  "item_silver_sledge_description": "Un énorme marteau argenté, inspire la peur aux morts-vivants.",
+  "item_meteor_atgeir": " does not have a clear meaning in English or French. It may be a proper noun or a phrase in a specific language. Can you provide more context or information about the phrase?",
+  "item_meteor_atgeir_description": "Pourquoi utiliser une lame, quand tu pourrais en utiliser deux ?",
+  "item_dagger_meteor": "Dague de terre",
+  "item_dagger_meteor_description": "Sombre comme la nuit, parfaitement équilibré.",
+  "item_dagger_meteor_2h": "Poignards d'assassin",
+  "item_dagger_meteor_2h_description": "Deux lames d'obscurité se faufilent dans la nuit, que vont-elles trouver ?",
+  "item_moder_shield": "bouclier moderne",
+  "item_moder_shield_description": "Un bouclier tenant de la glace gelée, renforcé par les larmes des moders."
 }

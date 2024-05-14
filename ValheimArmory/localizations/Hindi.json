@@ -150,5 +150,17 @@
   "item_bolt_corewood": "कोरवुड बोल्ट",
   "item_bolt_corewood_description": "एक मजबूत लकड़ी का बोल्ट।",
   "item_bolt_wood": "लकड़ी का बोल्ट",
-  "item_arrow_chitin_description": "दूसरे तीरों की तरह तेज नहीं, लेकिन खोपड़ी वाले के खिलाफ अच्छा है।"
+  "item_arrow_chitin_description": "दूसरे तीरों की तरह तेज नहीं, लेकिन खोपड़ी वाले के खिलाफ अच्छा है।",
+  "item_silver_tower_shield": "चांदी की टावर ढाल",
+  "item_silver_tower_shield_description": "एक विशाल टावर ढाल जिसे चांदी से आभूषित किया गया है, एक राक्षस शिकारी का दीवार।",
+  "item_silver_sledge": "सिल्वर स्लेज",
+  "item_silver_sledge_description": "एक विशाल सिल्वर हथौड़ा, मरे हुए को भय दिलाए।",
+  "item_meteor_atgeir": "ईर्ड अटगीर I'm sorry, but  does not have a known meaning in Hindi.",
+  "item_meteor_atgeir_description": "एक ब्लेड क्यों उपयोग करें, जब आप दो ब्लेड का उपयोग कर सकते हैं?",
+  "item_dagger_meteor": "अजीब छुरा",
+  "item_dagger_meteor_description": "रात की तरह गहरा, पूरी तरह संतुलित।",
+  "item_dagger_meteor_2h": "असासिन छुरा",
+  "item_dagger_meteor_2h_description": "रात में दो टुकड़े अंधेरे छुपकर आते हैं, वे क्या खोजेंगे?",
+  "item_moder_shield": "मदर्स शील्ड()",
+  "item_moder_shield_description": "एक ढाल जो जमे हुए बर्फ को लेकर एक नयी चीज की तरह सजीव करती है।"
 }

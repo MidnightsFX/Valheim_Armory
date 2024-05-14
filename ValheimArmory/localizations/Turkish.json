@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Çekirdek odunu cıvata",
   "item_bolt_corewood_description": "Sağlam bir ahşap cıvata.",
   "item_bolt_wood": "Ahşap cıvata",
-  "item_arrow_chitin_description": "Diğer oklardan keskin değil, ama iskeletlere karşı iyi."
+  "item_arrow_chitin_description": "Diğer oklardan keskin değil, ama iskeletlere karşı iyi.",
+  "item_silver_tower_shield": "Gümüş kule kalkanı",
+  "item_silver_tower_shield_description": "Dev bir kule kalkanı gümüşle çerçevelenmiş, bir canavar avcısının siperi.",
+  "item_silver_sledge": "Gümüş kızak",
+  "item_silver_sledge_description": "Bir mamut gümüş çekiç, ölülere korku salar.",
+  "item_meteor_atgeir": " does not appear to be a phrase in English. Can you provide more context or clarify the phrase?",
+  "item_meteor_atgeir_description": "Neden bir bıçak kullanasın ki, iki tane kullanabilirsin?",
+  "item_dagger_meteor": "Eird bıçak",
+  "item_dagger_meteor_description": "Gece kadar karanlık, mükemmel bir denge.",
+  "item_dagger_meteor_2h": "Suikastçı hançerleri",
+  "item_dagger_meteor_2h_description": "Iki karanlık dilim geceyi sızıp geçer, ne bulacaklar?",
+  "item_moder_shield": "Moders kalkanı",
+  "item_moder_shield_description": "Bir kalkan donmuş buz taşıyan, annelerin gözyaşlarıyla güçlendirilmiş."
 }

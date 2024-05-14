@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Núcleo de madera",
   "item_bolt_corewood_description": "Un perno de madera resistente.",
   "item_bolt_wood": "Perno de madera",
-  "item_arrow_chitin_description": "No tan afiladas como otras flechas, pero buenas contra esqueletos."
+  "item_arrow_chitin_description": "No tan afiladas como otras flechas, pero buenas contra esqueletos.",
+  "item_silver_tower_shield": "Escudo de torre de plata",
+  "item_silver_tower_shield_description": "Un escudo de torre gigante enmarcado con plata, un baluarte de cazadores de monstruos.",
+  "item_silver_sledge": "Trineo de plata",
+  "item_silver_sledge_description": "Un martillo de plata gigantesco, infunde miedo en los no muertos.",
+  "item_meteor_atgeir": " doesn't have a direct translation in Spanish.",
+  "item_meteor_atgeir_description": "¿Por qué usar una cuchilla cuando podrías usar dos?",
+  "item_dagger_meteor": "Daga de Eird",
+  "item_dagger_meteor_description": "Oscura como la noche, perfectamente equilibrada.",
+  "item_dagger_meteor_2h": "Dagas asesinas",
+  "item_dagger_meteor_2h_description": "¿Dos fragmentos de oscuridad se cuelan por la noche, qué encontrarán?",
+  "item_moder_shield": "Escudo de madres",
+  "item_moder_shield_description": "Un escudo sosteniendo hielo congelado, realzado por lágrimas de madre."
 }

@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Țăpoare din lemn masiv",
   "item_bolt_corewood_description": "Un bolt de lemn solid.",
   "item_bolt_wood": "Șurub de lemn",
-  "item_arrow_chitin_description": "Nu la fel de ascuțite ca alte săgeți, dar bune împotriva scheletelor."
+  "item_arrow_chitin_description": "Nu la fel de ascuțite ca alte săgeți, dar bune împotriva scheletelor.",
+  "item_silver_tower_shield": "Scut de turn de argint",
+  "item_silver_tower_shield_description": "Un scut turnat uriaș, încadrat cu argint, un zid al vânătorilor de monștri.",
+  "item_silver_sledge": "Sanie de argint",
+  "item_silver_sledge_description": "Un ciocan de argint mamut, să bage spaima în ne-morți.",
+  "item_meteor_atgeir": "  ",
+  "item_meteor_atgeir_description": "De ce să folosești o lamă, când ai putea folosi două?",
+  "item_dagger_meteor": "Pumnal ciudat",
+  "item_dagger_meteor_description": "Întunecat ca noaptea, echilibrat perfect.",
+  "item_dagger_meteor_2h": "Cuțite asasinului",
+  "item_dagger_meteor_2h_description": "Două fâșii de întuneric se strecoară prin noapte, ce vor găsi?",
+  "item_moder_shield": "Scut modern",
+  "item_moder_shield_description": "Un scut care ține gheață înghețată, îmbogățită de lacrimile moderne."
 }

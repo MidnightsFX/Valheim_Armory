@@ -150,5 +150,17 @@
   "item_bolt_corewood": " 核心木螺栓",
   "item_bolt_corewood_description": "一根坚固的木栓。",
   "item_bolt_wood": "木螺栓 (Mù luósǔn)",
-  "item_arrow_chitin_description": "不如其他箭头锋利，但对抗骷髅很有效。"
+  "item_arrow_chitin_description": "不如其他箭头锋利，但对抗骷髅很有效。",
+  "item_silver_tower_shield": "银色塔盾",
+  "item_silver_tower_shield_description": "一把银边巨塔盾，猎怪人的壁垒。",
+  "item_silver_sledge": "银橇",
+  "item_silver_sledge_description": "一把庞大的银锤，让不死者心生畏惧。",
+  "item_meteor_atgeir": "怪异的长矛",
+  "item_meteor_atgeir_description": "为什么用一把刀，当你可以用两把？",
+  "item_dagger_meteor": "奇怪的匕首",
+  "item_dagger_meteor_description": "夜色黑暗，平衡完美。",
+  "item_dagger_meteor_2h": "刺客匕首刺客匕首",
+  "item_dagger_meteor_2h_description": "黑暗中穿行的两片阴影，它们会找到什么？",
+  "item_moder_shield": "现代护盾",
+  "item_moder_shield_description": "一个持有冰冻冰块的盾牌，被现代的眼泪加强。"
 }

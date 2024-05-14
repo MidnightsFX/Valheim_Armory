@@ -150,5 +150,17 @@
   "item_bolt_corewood": "核心木螺栓",
   "item_bolt_corewood_description": "一根堅固的木閂。",
   "item_bolt_wood": "木螺栓",
-  "item_arrow_chitin_description": "不如其他箭矢锋利，但对抗骷髅很有效。"
+  "item_arrow_chitin_description": "不如其他箭矢锋利，但对抗骷髅很有效。",
+  "item_silver_tower_shield": "銀色塔盾",
+  "item_silver_tower_shield_description": "一個用銀色框架打造的巨大塔盾，獵怪者的壁壘。",
+  "item_silver_sledge": "銀色雪橇",
+  "item_silver_sledge_description": "一把巨大的銀錘，讓不死族感到恐懼。",
+  "item_meteor_atgeir": "奇異的戰戟",
+  "item_meteor_atgeir_description": "為什麼用一把刀，當你可以用兩把？",
+  "item_dagger_meteor": "奇怪的匕首",
+  "item_dagger_meteor_description": "暗如夜色，完美平衡。",
+  "item_dagger_meteor_2h": "刺客匕首刺客匕首",
+  "item_dagger_meteor_2h_description": "兩道黑暗從夜晚悄悄地潛入，它們將會找到什麼？",
+  "item_moder_shield": "現代盾牌现代盾牌",
+  "item_moder_shield_description": "一個擁有冰凍冰塊的盾牌，由現代的淚水增強。"
 }

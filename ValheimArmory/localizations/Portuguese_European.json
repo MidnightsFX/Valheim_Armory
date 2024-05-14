@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Parafuso de madeira maciça",
   "item_bolt_corewood_description": "Um parafuso de madeira resistente.",
   "item_bolt_wood": "Parafuso de madeira",
-  "item_arrow_chitin_description": "Não tão afiada como outras flechas, mas boa contra esqueletos."
+  "item_arrow_chitin_description": "Não tão afiada como outras flechas, mas boa contra esqueletos.",
+  "item_silver_tower_shield": "Escudo de torre de prata",
+  "item_silver_tower_shield_description": "Um escudo de torre gigante emoldurado com prata, um baluarte de caçadores de monstros.",
+  "item_silver_sledge": "Trenó de prata",
+  "item_silver_sledge_description": "Um martelo de prata gigantesco, inspira medo nos mortos-vivos.",
+  "item_meteor_atgeir": "atgeir de Eird",
+  "item_meteor_atgeir_description": "Porque usar uma lâmina, quando você poderia usar duas?",
+  "item_dagger_meteor": "Faca de atirador",
+  "item_dagger_meteor_description": "Escuro como a noite, equilibrado perfeitamente.",
+  "item_dagger_meteor_2h": "Adagas de assassino",
+  "item_dagger_meteor_2h_description": "Duas fendas de escuridão esgueiram-se pela noite, o que encontrarão?",
+  "item_moder_shield": "Escudo moderno",
+  "item_moder_shield_description": "Um escudo segurando gelo congelado, realçado pelas lágrimas modernas."
 }

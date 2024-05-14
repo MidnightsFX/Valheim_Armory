@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Jadrivý špendlík",
   "item_bolt_corewood_description": "Pevný drevený záver.",
   "item_bolt_wood": "Drevený skrut",
-  "item_arrow_chitin_description": "Nie tak ostrá ako iné šípy, ale dobrá proti kostrám."
+  "item_arrow_chitin_description": "Nie tak ostrá ako iné šípy, ale dobrá proti kostrám.",
+  "item_silver_tower_shield": "Strieborný vežový štít",
+  "item_silver_tower_shield_description": "Obrovský vežový štít v ráme z striebra, ochrana lovca príšer.",
+  "item_silver_sledge": "strieborná sanca",
+  "item_silver_sledge_description": "Mamutí strieborný kladivo, vlož strach do neživých.",
+  "item_meteor_atgeir": " does not have a direct translation in Slovak.",
+  "item_meteor_atgeir_description": "Prečo používať jeden čepel, keď môžete použiť dve?",
+  "item_dagger_meteor": "Divný dýka",
+  "item_dagger_meteor_description": "Temné ako noc, dokonale vyvážené.",
+  "item_dagger_meteor_2h": "Vražedné dýky",
+  "item_dagger_meteor_2h_description": "Dve šliapky temnoty sa plížia cez noc, čo nájdu?",
+  "item_moder_shield": "Moderný štít",
+  "item_moder_shield_description": "Štít držiaci zamrznutý ľad, zosilnený slzami matky."
 }

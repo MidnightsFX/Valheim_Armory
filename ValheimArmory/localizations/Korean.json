@@ -150,5 +150,17 @@
   "item_bolt_corewood": "코어우드 볼트",
   "item_bolt_corewood_description": "튼튼한 나무 볼트.",
   "item_bolt_wood": "목 나사",
-  "item_arrow_chitin_description": "다른 화살만큼 날카롭지는 않지만 해골에 대해서는 효과적이에요."
+  "item_arrow_chitin_description": "다른 화살만큼 날카롭지는 않지만 해골에 대해서는 효과적이에요.",
+  "item_silver_tower_shield": "은 타워 방패",
+  "item_silver_tower_shield_description": "은빛으로 장식된 거대한 탑 방패, 몬스터 사냥꾼의 보루.",
+  "item_silver_sledge": "은빛 썰매",
+  "item_silver_sledge_description": "거대한 은망치, 언데드에게 두려움을 주다.",
+  "item_meteor_atgeir": "이르드 아트게이르",
+  "item_meteor_atgeir_description": "하나의 칼을 사용할 때 두 개를 사용할 수 있는데 왜 그러죠?",
+  "item_dagger_meteor": "이상한 단검",
+  "item_dagger_meteor_description": "밤처럼 어둡고 완벽하게 균형잡혔다.",
+  "item_dagger_meteor_2h": "암살자 단검",
+  "item_dagger_meteor_2h_description": "어둠의 두 조각이 밤을 헤치고 들어옵니다, 그들은 무엇을 찾을까요?",
+  "item_moder_shield": "모더스 실드",
+  "item_moder_shield_description": "얼어붙은 얼음을 지닌 방패, 모던의 눈물로 더욱 강화되었다."
 }

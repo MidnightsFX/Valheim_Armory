@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Ydinpuu pultti",
   "item_bolt_corewood_description": "Vahva puinen pultti.",
   "item_bolt_wood": "Puupultti",
-  "item_arrow_chitin_description": "Ei niin terävä kuin muut nuolet, mutta hyvä luurankoja vastaan."
+  "item_arrow_chitin_description": "Ei niin terävä kuin muut nuolet, mutta hyvä luurankoja vastaan.",
+  "item_silver_tower_shield": "Hopeatorninen kilpi",
+  "item_silver_tower_shield_description": "Valtava tornikilpi hopeakehyksellä, hirviöiden metsästäjien varustusmuuri.",
+  "item_silver_sledge": "Hopealyhty",
+  "item_silver_sledge_description": "Jättimäinen hopeinen vasara, iske pelkoa kuolleisiin.",
+  "item_meteor_atgeir": "I'm sorry, but  does not have a direct translation in Finnish. Can you provide more context or clarify the meaning?",
+  "item_meteor_atgeir_description": "Miksi käyttää yhtä terää, kun voisi käyttää kahta?",
+  "item_dagger_meteor": "Eird veitsi",
+  "item_dagger_meteor_description": "Pimeä kuin yö, tasapainossa täydellisesti.",
+  "item_dagger_meteor_2h": "Assassinin tikarit",
+  "item_dagger_meteor_2h_description": "Kaksi pientä pimeyden viiltoa hiipii läpi yön, mitä he löytävät?",
+  "item_moder_shield": "Äidin kilpi",
+  "item_moder_shield_description": "Kilpi pitämässä jäätynyttä jäätä, vahvistettuna äitien kyynelillä."
 }

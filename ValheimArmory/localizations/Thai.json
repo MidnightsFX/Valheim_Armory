@@ -150,5 +150,17 @@
   "item_bolt_corewood": "ไม้หลักลวดลาย",
   "item_bolt_corewood_description": "ไม้ตะปูที่แข็งแรง",
   "item_bolt_wood": "ไม้สลัด",
-  "item_arrow_chitin_description": "ไม่ได้แคบเหมือนลูกธนูอื่น ๆ แต่ดีเมื่อต่อต้านโครต"
+  "item_arrow_chitin_description": "ไม่ได้แคบเหมือนลูกธนูอื่น ๆ แต่ดีเมื่อต่อต้านโครต",
+  "item_silver_tower_shield": "เกราะป้องกันที่สีเงิน",
+  "item_silver_tower_shield_description": "โล่คันชนใหญ่โดยเฉพาะด้วยเงิน, ป้อมปราการของนักล่ามอนสเตอร์",
+  "item_silver_sledge": " in Thai is สเลจเจสี",
+  "item_silver_sledge_description": "ไม้ค้อนเงินขนาดใหญ่ที่ทำให้ศักดิ์สิทธิ์กลัวล้นผีดิบไม้ค้อนเงินขนาดใหญ่ที่ทำให้ศักดิ์สิทธิ์กลัวล้นผีดิบ",
+  "item_meteor_atgeir": " in Thai is เอียด อัทเกียร์",
+  "item_meteor_atgeir_description": "ทำไมต้องใช้มีดหนึ่งเมื่อคุณสามารถใช้สองใบได้?เพราะมันทำให้ง่ายและเร็วขึ้น และสามารถทำให้งานดูดีกว่าได้ ค่ะ",
+  "item_dagger_meteor": "ดาบอิริด",
+  "item_dagger_meteor_description": "มืดเหมือนคืน สมดุลอย่างที่พอดี",
+  "item_dagger_meteor_2h": "ดาบฆ่า",
+  "item_dagger_meteor_2h_description": "  สองชิ้นเล็ก ๆ ของความมืดคลุ้มคลึงผ่านคืน พวกเขาจะพบอะไร?",
+  "item_moder_shield": "โล่ของม็อดเดิร์น",
+  "item_moder_shield_description": "ป้องกันด้วยน้ำแข็งที่ถูกโดยน้ำตาของแม่"
 }

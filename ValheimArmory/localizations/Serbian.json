@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Jezgroviti šaraf",
   "item_bolt_corewood_description": "Čvrst drveni zasun.",
   "item_bolt_wood": "Drveni vijak",
-  "item_arrow_chitin_description": "Nije tako oštar kao druge strelice, ali je dobar protiv kostura."
+  "item_arrow_chitin_description": "Nije tako oštar kao druge strelice, ali je dobar protiv kostura.",
+  "item_silver_tower_shield": "Srebrni kula štit",
+  "item_silver_tower_shield_description": "Veliki kula štit obložen srebrom, branik lovaca na čudovišta.",
+  "item_silver_sledge": "Srebrni sank",
+  "item_silver_sledge_description": "Ogroman srebrni čekić, ulij strah u mrtve.",
+  "item_meteor_atgeir": "",
+  "item_meteor_atgeir_description": "Zašto koristiti jednu oštricu, kad možete koristiti dve?",
+  "item_dagger_meteor": "Eird nož",
+  "item_dagger_meteor_description": "Tamno kao noć, savršeno uravnoteženo.",
+  "item_dagger_meteor_2h": "Ubilački noževi",
+  "item_dagger_meteor_2h_description": "Dve tanka dela tame provlače se kroz noć, šta će oni pronaći?",
+  "item_moder_shield": "Заштитник модерне",
+  "item_moder_shield_description": "Štit koji drži smrznuti led, obogaćen suzama majki."
 }

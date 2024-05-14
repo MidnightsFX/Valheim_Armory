@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Kärnträ bult",
   "item_bolt_corewood_description": "En robust träkolv.",
   "item_bolt_wood": "Träbult",
-  "item_arrow_chitin_description": "Inte lika vass som andra pilar, men bra mot skelett."
+  "item_arrow_chitin_description": "Inte lika vass som andra pilar, men bra mot skelett.",
+  "item_silver_tower_shield": "Silver tornsköld",
+  "item_silver_tower_shield_description": "Ett gigantiskt tornsköld inramad med silver, en monsterjägares värn.",
+  "item_silver_sledge": "Silver släde",
+  "item_silver_sledge_description": "Ett mammut silverhammare, slå skräck i de odöda.",
+  "item_meteor_atgeir": "",
+  "item_meteor_atgeir_description": "Varför använda en klinga, när du kan använda två?",
+  "item_dagger_meteor": "Eird kniv",
+  "item_dagger_meteor_description": "Mörk som natten, balanserad perfekt.",
+  "item_dagger_meteor_2h": "Assassindolkar",
+  "item_dagger_meteor_2h_description": "Två skärvor av mörker smyger genom natten, vad kommer de att hitta?",
+  "item_moder_shield": "Mödrars sköld",
+  "item_moder_shield_description": "Ett sköld som håller fruset is, förstärkt av moderns tårar."
 }

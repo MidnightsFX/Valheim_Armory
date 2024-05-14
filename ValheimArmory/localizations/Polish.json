@@ -150,5 +150,17 @@
   "item_bolt_corewood": "śruba z drewna jądrowego",
   "item_bolt_corewood_description": "Solidny drewniany zamek.Dziękuję",
   "item_bolt_wood": "Śruba drewniana",
-  "item_arrow_chitin_description": "Nie tak ostry jak inne strzały, ale dobry przeciwko szkieletom."
+  "item_arrow_chitin_description": "Nie tak ostry jak inne strzały, ale dobry przeciwko szkieletom.",
+  "item_silver_tower_shield": "Srebrna wieża tarcza",
+  "item_silver_tower_shield_description": "Tarcza wieżowa olbrzymia, obramowana srebrem, osłona łowców potworów.",
+  "item_silver_sledge": "Srebrna sanki",
+  "item_silver_sledge_description": "Mamuci srebrny młot, wzbudź strach w zmartwychwstałych.",
+  "item_meteor_atgeir": "",
+  "item_meteor_atgeir_description": "Dlaczego używać jednego ostrza, skoro można użyć dwóch?",
+  "item_dagger_meteor": "Ostry sztylet",
+  "item_dagger_meteor_description": "Ciemne jak noc, doskonale zrównoważone.",
+  "item_dagger_meteor_2h": "Nożyce zabójcy",
+  "item_dagger_meteor_2h_description": "Dwie plamki ciemności wkradają się przez noc, co znajdą?",
+  "item_moder_shield": "Tarcza moderska",
+  "item_moder_shield_description": "Tarcza trzymająca zamrożony lód, wzmocniona łzami matki."
 }

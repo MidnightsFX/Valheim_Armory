@@ -82,7 +82,7 @@
   "item_staff_poison": "Посох яда",
   "item_staff_poison_description": "Волшебный посох, созданный из природной эссенции, собранной на болотах, без должной концентрации способен отравить ядом все вокруг.",
   "item_staff_druid_poison": "Друидский посох яда",
-  "item_staff_druid_poison_description":  "Крепкий посох, созданный из древней коры. Источает зловонный запах яда, которым он пропитывался веками.",
+  "item_staff_druid_poison_description": "Крепкий посох, созданный из древней коры. Источает зловонный запах яда, которым он пропитывался веками.",
   "item_staff_spirit": "Посох духов",
   "item_staff_spirit_description": "Могущественный посох из древесины иггдрассиля, пропитанный энергией духов леса. Нежить в ужасе от этой вещи.",
   "item_staff_druid_spirit": "Друидский посох духов",
@@ -150,5 +150,17 @@
   "va_blood_sucker": "Кровавое безумие",
   "va_blood_sucker_desc": "Твое оружие жаждет крови.",
   "item_dagger_moder": "Промерзший кинжал",
-  "item_dagger_moder_description":  "Ледяной кинжал, пропитанный слезами Матери."
+  "item_dagger_moder_description": "Ледяной кинжал, пропитанный слезами Матери.",
+  "item_silver_tower_shield": "Серебряный башенный щит",
+  "item_silver_tower_shield_description": "Гигантский башенный щит в серебряной оправе, укрепление охотника на монстров.",
+  "item_silver_sledge": "Серебряный сани",
+  "item_silver_sledge_description": "Мамонтовый серебряный молот, внушай ужас нежити.",
+  "item_meteor_atgeir": "Странное оружие",
+  "item_meteor_atgeir_description": "Зачем использовать одно лезвие, когда можно использовать два?",
+  "item_dagger_meteor": "Эйрд кинжал",
+  "item_dagger_meteor_description": "Темный как ночь, идеально сбалансированный.",
+  "item_dagger_meteor_2h": "Кинжалы убийцы",
+  "item_dagger_meteor_2h_description": "Два куска тьмы прокрадываются сквозь ночь, что они найдут?",
+  "item_moder_shield": "Модерн щит",
+  "item_moder_shield_description": "Щит, удерживающий замерзший лед, усиленный слезами матерей."
 }

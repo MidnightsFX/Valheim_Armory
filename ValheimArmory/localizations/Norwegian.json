@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Kjerneved bolt",
   "item_bolt_corewood_description": "En solid trebolt.",
   "item_bolt_wood": "Tre bolt",
-  "item_arrow_chitin_description": "Ikke så skarp som andre piler, men god mot skjeletter."
+  "item_arrow_chitin_description": "Ikke så skarp som andre piler, men god mot skjeletter.",
+  "item_silver_tower_shield": "Sølv tårnskjold",
+  "item_silver_tower_shield_description": "Et gigantisk tårn-skjold innrammet med sølv, en monsterjegers vern.",
+  "item_silver_sledge": "Sølv akebrett",
+  "item_silver_sledge_description": "En mammut sølvhammer, slå frykt inn i de udøde.",
+  "item_meteor_atgeir": " does not have a direct translation in Norwegian. Can you provide more context or clarify the meaning of the phrase?",
+  "item_meteor_atgeir_description": "Hvorfor bruke én blad, når du kunne bruke to?",
+  "item_dagger_meteor": "Jernkniv",
+  "item_dagger_meteor_description": "Mørk som natten, balansert perfekt.",
+  "item_dagger_meteor_2h": "Assassin dolker",
+  "item_dagger_meteor_2h_description": "To skiver av mørke sniker seg gjennom natten, hva vil de finne?",
+  "item_moder_shield": "Mors skjold",
+  "item_moder_shield_description": "Et skjold som holder på frossen is, forsterket av mors tårer."
 }

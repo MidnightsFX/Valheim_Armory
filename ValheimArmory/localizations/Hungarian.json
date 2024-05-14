@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Magyarként nem tudok fordítani.",
   "item_bolt_corewood_description": "Egy erős fa retesz.",
   "item_bolt_wood": "Fa csavar",
-  "item_arrow_chitin_description": "Nem olyan éles, mint más nyilak, de jó a csontvázak ellen."
+  "item_arrow_chitin_description": "Nem olyan éles, mint más nyilak, de jó a csontvázak ellen.",
+  "item_silver_tower_shield": "Ezüst torony pajzs",
+  "item_silver_tower_shield_description": "Egy hatalmas torony pajzs ezüst kerettel, egy szörnyvadász védelme.",
+  "item_silver_sledge": "ezüst szánkó",
+  "item_silver_sledge_description": "Egy mamut ezüst kalapács, rémületet kelt a holtakban.",
+  "item_meteor_atgeir": "",
+  "item_meteor_atgeir_description": "Miért használnál egy pengét, amikor használhatsz kettőt?",
+  "item_dagger_meteor": "Éles pengék",
+  "item_dagger_meteor_description": "Sötét, mint az éjszaka, tökéletesen kiegyensúlyozott.",
+  "item_dagger_meteor_2h": "Merénylő tőrök",
+  "item_dagger_meteor_2h_description": "Két sötétség szelet surran át az éjszakán, mit fognak találni?",
+  "item_moder_shield": "Modern pajzs",
+  "item_moder_shield_description": "Egy pajzs tartja a megfagyott jeget, fokozva a modern könnyek által."
 }

@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Jádrový šroub",
   "item_bolt_corewood_description": "Pevný dřevěný zástrčník.",
   "item_bolt_wood": "Dřevěný šroub",
-  "item_arrow_chitin_description": "Ne tak ostré jako jiné šípy, ale dobré proti kostlivcům."
+  "item_arrow_chitin_description": "Ne tak ostré jako jiné šípy, ale dobré proti kostlivcům.",
+  "item_silver_tower_shield": "Stříbrný věžový štít",
+  "item_silver_tower_shield_description": "Obrovský věžový štít rámovaný stříbrem, opevnění lovce monster.",
+  "item_silver_sledge": "Stříbrný sáně",
+  "item_silver_sledge_description": "Mamutí stříbrný kladivo, vštěpuj strach nemrtvým.",
+  "item_meteor_atgeir": "",
+  "item_meteor_atgeir_description": "Proč používat jeden čepel, když můžete použít dva?",
+  "item_dagger_meteor": "Podivný dýka",
+  "item_dagger_meteor_description": "Temný jako noc, dokonale vyvážený.",
+  "item_dagger_meteor_2h": "Vražedné dýky",
+  "item_dagger_meteor_2h_description": "Dvě střípky temnoty se plíží skrz noc, co asi najdou?",
+  "item_moder_shield": "Moders štít",
+  "item_moder_shield_description": "Štít držící zmrzlý led, zdokonalený slzami matek."
 }

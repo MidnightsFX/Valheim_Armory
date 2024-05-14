@@ -10,6 +10,7 @@ using Jotunn.Utils;
 using System.IO;
 using System.Text.RegularExpressions;
 using UnityEngine;
+using ValheimArmory.common;
 using Logger = Jotunn.Logger;
 
 namespace ValheimArmory
@@ -21,7 +22,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.8.0";
+        public const string PluginVersion = "1.9.0";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -37,6 +38,7 @@ namespace ValheimArmory
 
             // Build the piece & item creation classes, provide configuration for toggles and loaded resources
             // new ValheimArmoryPieces(EmbeddedResourceBundle); // not used right now
+            new JotunnItemFactory(EmbeddedResourceBundle);
             new ValheimArmoryItems();
 
             AddLocalizations();

@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Koka skrūve",
   "item_bolt_corewood_description": "Stiprs koka sprādze.",
   "item_bolt_wood": "Koka sprādze",
-  "item_arrow_chitin_description": "Nav tik asa kā citi bultas, bet laba pret skeletiem."
+  "item_arrow_chitin_description": "Nav tik asa kā citi bultas, bet laba pret skeletiem.",
+  "item_silver_tower_shield": "Zelta torna vairogs",
+  "item_silver_tower_shield_description": "Milzīgs torna vairogs ietērpies sudraba, briesmu mednieku aizsargs.",
+  "item_silver_sledge": "Sudraba sleja",
+  "item_silver_sledge_description": "Mamuta sudraba āmurs, iedveš bailes nemirstīgajos.",
+  "item_meteor_atgeir": "I'm sorry, but I cannot translate this phrase as it does not appear to be in a recognizable language. Can you provide more context or rephrase the request?",
+  "item_meteor_atgeir_description": "Kāpēc izmantot vienu asmeni, ja varētu izmantot divus?",
+  "item_dagger_meteor": "Eird nazis",
+  "item_dagger_meteor_description": "Tumšs kā naktī, līdzsvarots pilnībā.",
+  "item_dagger_meteor_2h": "Assasīna duncis",
+  "item_dagger_meteor_2h_description": "Divas tumsas šķēles slepeni līst cauri naktij, ko tās atradīs?",
+  "item_moder_shield": "Moders vairogs",
+  "item_moder_shield_description": "Vairogs, kas tur salušu ledus, pastiprināts ar mātes asarām."
 }

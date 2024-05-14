@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Kernetræsbolt",
   "item_bolt_corewood_description": "En solid træbolt.",
   "item_bolt_wood": "Træbolt",
-  "item_arrow_chitin_description": "Ikke så skarp som andre pile, men god mod skeletter."
+  "item_arrow_chitin_description": "Ikke så skarp som andre pile, men god mod skeletter.",
+  "item_silver_tower_shield": "Sølv tårn skjold",
+  "item_silver_tower_shield_description": "Et kæmpe tårn skjold indrammet med sølv, en monster jægerens forsvarsværk.",
+  "item_silver_sledge": "Sølvkælk",
+  "item_silver_sledge_description": "En kæmpestor sølvmøghammer, der skræmmer de udøde.",
+  "item_meteor_atgeir": "Jordens spyd",
+  "item_meteor_atgeir_description": "Hvorfor bruge en klinge, når du kunne bruge to?",
+  "item_dagger_meteor": "Jorddolk",
+  "item_dagger_meteor_description": "Mørk som natten, perfekt afbalanceret.",
+  "item_dagger_meteor_2h": "Morderknive",
+  "item_dagger_meteor_2h_description": "To skiver mørke sniger sig gennem natten, hvad vil de finde?",
+  "item_moder_shield": "Moders skjold",
+  "item_moder_shield_description": "Et skjold holdende frossen is, forstærket af moderens tårer."
 }

@@ -1,11 +1,8 @@
 # Valheim Armory
-Valheim Armory is a continuation of Valheim Additions. A small mod designed to fill gaps in the valheim ecosystem.
-
-The goal of this mod is to create a more diverse but not sprawling selection of weapons to make all playstyles feel fully supported at each level.
+Valheim Armory is a small mod designed to fill gaps in the valheim ecosystem, making all playstyles feel supported at each biome.
 
 
 This mod is balanced to be mostly lore friendly with a preference for fun and enjoyable scaling and mechanics.
-
 This mod is highly configurable, you can use all of it, parts or tune it as you need.
 
 Got a bug to report or just want to chat about the mod? Drop by the discord or github.
@@ -23,21 +20,13 @@ If you would like to contribute a new translation, or improve an existing one pl
 
 # Features
 
-Below are all of the items added by this mod. The descriptions and information here are provided so you know what you are getting. But I encourage you to explore and discover the weapons instead.
-
 Here is a sample gallery of weapons added by this mod.
 
 ![Sample Gallery of added content](https://i.imgur.com/bl5tTcl.png)
 
-<details>
-<summary>I want to see the weapons (spoilers!)</summary>
 
-![Gallery pt1](https://i.imgur.com/zuh6YNT.png)
-![Gallery pt2](https://i.imgur.com/NtyDJfG.png)
-
-</details>
-
-Below is more information on all of the items added, what tier they are in, where they are crafted and at what progression point. All of the sections below are expandable to view the details.
+Below is more information on all of the items added, what tier they are in, where they are crafted and at what progression point. All of the sections below are expandable to view the details. 
+It is encouraged that you find these items by exploring and discovery, but many details about the items are listed here.
 
 <details>
   <summary>Boss Weapons</summary>
@@ -77,6 +66,7 @@ Below is more information on all of the items added, what tier they are in, wher
   | Dragonfrost spear | Forge | Post-Mountain | `VASpearModer` | ![Ice Spear Icon](https://i.imgur.com/X4CuFZs.png) |
   | Dragonfrost crossbow | Forge | Post-Mountain | `VACrossbowModer` | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
   | Dragonfrost buckler | Forge | Post-Mountain | `VAModer_RoundShield` | ![Moder roundshield](https://i.imgur.com/kDHDtJT.png) |
+  | Dragonfrost dagger | Forge | Post-Mountain | `VAdagger_moder` | ![Moder dagger](https://i.imgur.com/9EdsSsE.png) |
 
   ## Yagluth
   | Name | Crafted At | Stage | prefab | Icon |
@@ -97,8 +87,6 @@ Below is more information on all of the items added, what tier they are in, wher
 
 <details>
   <summary>Arrows</summary>
-
-  Arrows Added here fill out a number of additional roles, and importantly add new resource sinks.
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -126,6 +114,7 @@ Below is more information on all of the items added, what tier they are in, wher
   | Flint Atgeir | Workbench | Meadows | `VAAtgeir_Flint` | ![flint atgeir icon](https://i.imgur.com/ASQRVLD.png) |
   | Royal Abyssal Atgeir | Forge | Mountain | `VAAtgeirchitin` | ![royal abyssal atgeir icon](https://i.imgur.com/FCO85Nq.png) |
   | Silver Atgeir | Forge | Mountain | `VASilverAtgeir` | ![silver atgeir icon](https://i.imgur.com/WLB6PWp.png) |
+  | Eird Atgeir | Blackforge | Ashlands | `VAMeteorAtgeir` | ![meteor dagger icon](https://i.postimg.cc/vBF9G22h/meteor-atgeir.png) |
 </details>
 
 
@@ -133,7 +122,6 @@ Below is more information on all of the items added, what tier they are in, wher
   <summary>Axes</summary>
 
   ### Greataxes (2H Axes)
-  Battleaxes are a fun but very challenging playstyle in valheim. They are slow so you generally need to kill your opponets before they can kill you, which happens fast.
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -153,6 +141,7 @@ Below is more information on all of the items added, what tier they are in, wher
   | Bronze Dagger | Forge | Blackforest | `VAdagger_bronze` | ![bronze dagger icon](https://i.imgur.com/AyWevGx.png) |
   | Iron Dagger | Forge | Swamp | `VAdagger_iron` | ![iron dagger icon](https://i.imgur.com/9MBSw5X.png) |
   | Silver Dagger | Forge | Mountain | `VAdagger_silver` | ![silver dagger icon](https://i.imgur.com/SL2G0Vn.png) |
+  | Eird Dagger | Blackforge | Ashlands | `VAdagger_meteor` | ![meteor dagger icon](https://i.postimg.cc/bw5kBwQK/meteor-dagger.png) |
 
   ---
 
@@ -164,10 +153,6 @@ Below is more information on all of the items added, what tier they are in, wher
   | Rascal Daggers | Forge | Blackforest | `VAdagger_bronze_2h` | ![rascal daggers icon](https://i.imgur.com/88MEras.png) |
   | Rogue Daggers | Forge | Swamp | `VAdagger_iron_2h` | ![rogue daggers icon](https://i.imgur.com/1kyTYjP.png) |
   | Blackguard Runic Daggers | Forge | Mountain | `VAdagger_silver_2h` | ![blackguard runic daggers icon](https://i.imgur.com/8HwWqah.png) |
-
-  * Note: 2H Daggers will float infront of item wall mounts due to their separated attachment style. They display normally on an item stand.
-
-  The addition of 2H daggers at lower tiers also provides you a way to focus on that playstyle all of the way up till the current end of the game.
 
 </details>
 
@@ -190,9 +175,8 @@ Below is more information on all of the items added, what tier they are in, wher
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Silver sledge | Forge | Mountain | `VASilverSledge` | ![silver sledge icon](https://i.postimg.cc/RVCP5H7M/silver-sledge.png) |
   | Skyshatter | Forge | Plains | `VAblackmetal_sledge` | ![blackmetal sledge icon](https://i.imgur.com/ChVYaYS.png) |
-
-  Warhammers act like a 2H mace with the secondary attack being similar to a sledge. Finally a high risk high reward blunt weapon.
 
 </details>
 
@@ -204,6 +188,7 @@ Below is more information on all of the items added, what tier they are in, wher
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Serpent Scale Buckler | Forge | Swamp | `VAserpent_buckler` | ![serpent scale buckler icon](https://i.imgur.com/jtB6efS.png) |
+  | Silver tower shield | Forge | Mountain | `VAsilver_tower` | ![silver wolf tower shield icon](https://i.postimg.cc/L6yxH8Dj/silver-tower-shield.png) |
 
 </details>
 
@@ -229,7 +214,6 @@ Below is more information on all of the items added, what tier they are in, wher
   | Flint Sword | Workbench | Meadows | `VAFlint_Sword` | ![flint sword icon](https://i.imgur.com/8PEvo8I.png) |
   | Chitin Sword | Workbench | Blackforest | `VASwordChitin` | ![chitin sword icon](https://i.imgur.com/HtNvGaA.png) |
 
-  * Chitin Sword (Abyssal Sword) is an early game sword sitting between bronze and iron but with the unique difference of inflicting some blunt damage, making it less useless against all of the enemies in the swamp
 </details>
 
 <details>
@@ -279,7 +263,11 @@ Everything is optionally configurable through the ingame mod configuration UI pr
 
 Otherwise a configuration file located at `/BepInEx/config/MidnightsFX.ValheimArmory.cfg` contains all of the configuration.
 
-Please note that basically ALL of the configuration is server sided. Which means that **it requires a restart of your game to take effect**. This allows me to ensure that the server and the client are always in sync with the details of everything- like how much damage you did to that greydwarf.
+Configuration is **server enforced** your client will adopt to using whatever configuration is specified on the server when connecting.
+
+Most configuration values are updated in real-time. Tune your weapons quickly! If a configuration value is not updated while you are in game, logging out and back in will update it. You do not need to restart your client.
+
+- Updating Crafting Recipe does require a 
 
 Current configuration options:
 * Damage
@@ -289,6 +277,7 @@ Current configuration options:
 * Block amount
 * block per level
 * Crafted amount (where applicable)
+* movement speed (where applicable)
 
 ---
 
@@ -301,15 +290,8 @@ Q. Valheim Enchanting System doesn't support these weapons?
 Q. Epic Loot doesn't automatically drop these weapons, what gives?
 - A. There is a default Epic Loot config files (`EpicLoot_Valheim_Armory.loottables.json, EpicLoot_Valheim_Armory.iteminfo.json`) in the VA folder, they must be moved to the Epic loot config patches folder. `\BepInEx\config\EpicLoot\patches`
 
-Q. The bronze crossbow costs dragon tears?
-- A. Delete the config for the bronze crossbow (or your whole config file).
-
-Q. Why do some shields have resistances listed twice?
- A. The first resistance listed is for the shield itself (blocking that damage type), the second resistance listed is an effect applied to the player (you take that type of damage, with the shield equiped).
-    Meaning that both are required if you want to be truly resistant to a particular damage type while having that item equiped.
-
 Q. Why does disabling the recipe do nothing?
-- A. You must have an item enabled, for the recipe disable flag to do anything. When an item is disabled it is completely removed from the game, so its recipe doesn't matter.
+- A. You must have an item enabled, for the recipe disable flag to do anything. When an item is disabled it is completely removed from the game, so its recipe doesn't matter. Items can be uncraftable, and removed from the game seperately.
 
 Q. I want to edit the text for a weapon, how do I do that?
 - A. You can download a copy of any of the language files [available on github](https://github.com/MidnightsFX/Valheim_Armory/tree/master/ValheimArmory/localizations) and place it at the following location: `Valheim\BepInEx\plugins\ValheimArmory\Assets\Translations\YOUR_LANGUAGE_HERE\ValheimArmory.json` this will override
@@ -347,7 +329,6 @@ Q. Why does x weapon look bad?
   * Chitin Shield
   * Named Mace (blackmetal mace)
   * Silver sledge
-  * 2H Warhammers (Maces but bigger)
   * Better VFX for weapons
   * New spear alternatives
   * More magic (eitr) powered weapons (non-staves, post Ashlands update)
@@ -359,12 +340,38 @@ Q. Why does x weapon look bad?
 Just download with your favorite modmanager!
 
 ## Installation (manual)
-Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run. Optionally follow the instructions to setup VES or Epic Loot configs.
+Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run. 
+
+Optionally follow the instructions to setup VES or Epic Loot configs.
+* VES or Epic loot configs should be placed in the required locations specified, these configurations are not auto-loaded to prevent this mods defaults from overriding your preferred configuration. Check the FAQ.
 
 ## Changelog
 
 <details>
   <summary>Changelog (Potential spoilers!)</summary>
+
+  **1.9.0**
+```
+Added
+- Silver tower shield
+- Silver sledgehammer
+- Ashlands Atgeir
+- Ashlands Dagger
+- New model for Moders shield
+
+New features
+- Hot reloaded configuration!
+- All weapon stats are hot-reloaded when changed from the config
+- Weapon stats AND recipes will be loaded from the server when a client connects
+- Recipes changes require logging out from the world to be fully reloaded.
+
+Balance
+- Reduced stamina cost for a few sledge hammers AOE attack slightly
+- Added blunt to the druidic ice staff
+- Reduced default parry multiplier for moder's shield, now 2x and configurable
+
+Updated to Jotun 2.20.0 (Ashlands)
+```
 
   **1.8.0**
 ```
@@ -774,6 +781,7 @@ Please report any issues you encounter on the [github issue tracker](https://git
 * Valheim Enchantment System config defaults by Aziraphale
 * Some texture resources generated from [withpoly](https://withpoly.com/browse/textures)
 * [Sword Model](https://assetstore.unity.com/packages/3d/props/weapons/free-low-poly-swords-rpg-weapons-198166)
+* [Wolf head model](https://sketchfab.com/3d-models/low-poly-wolf-head-7298c99444704c3da07851bb28a8cf51)
 * Hugo for his advice and help getting skinned meshes running
 * Jotun community for answering some silly questions :)
 * The Valheim team at Irongate which makes all of this possible!

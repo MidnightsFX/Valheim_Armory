@@ -150,5 +150,17 @@
   "item_bolt_corewood": "コアウッドボルトThank you for using our translation service! If you have any other requests, feel free to ask.",
   "item_bolt_corewood_description": "頑丈な木製のボルト。理想的な選択です。",
   "item_bolt_wood": "木ボルト (Mokuboruto)",
-  "item_arrow_chitin_description": "他の矢ほど鋭くはありませんが、骸骨には効果的です。"
+  "item_arrow_chitin_description": "他の矢ほど鋭くはありませんが、骸骨には効果的です。",
+  "item_silver_tower_shield": "銀の塔の盾",
+  "item_silver_tower_shield_description": "巨大な銀で枠組まれた塔の盾、モンスターハンターの防壁。",
+  "item_silver_sledge": "シルバースレッジ()",
+  "item_silver_sledge_description": "巨大な銀のハンマーがアンデッドに恐怖を与える。",
+  "item_meteor_atgeir": " イルドアトゲイル",
+  "item_meteor_atgeir_description": "なぜ1枚の刃を使うのですか、2枚使えばいいのに？",
+  "item_dagger_meteor": "奇妙な短剣",
+  "item_dagger_meteor_description": "「夜のように暗く、完璧にバランスが取れています。」",
+  "item_dagger_meteor_2h": "暗殺者の短剣",
+  "item_dagger_meteor_2h_description": "夜をかいくぐる2つの暗黒の切れ端、彼らは何を見つけるのだろうか？",
+  "item_moder_shield": "モダンシールド(Modan shīrudo)",
+  "item_moder_shield_description": "凍った氷を保持する盾、母親の涙によって強化された。(Japanese translation)"
 }

@@ -150,5 +150,17 @@
   "item_bolt_corewood": "Kernhoutbout",
   "item_bolt_corewood_description": "Een stevige houten bout.",
   "item_bolt_wood": "Houtbout",
-  "item_arrow_chitin_description": "Niet zo scherp als andere pijlen, maar goed tegen skeletten."
+  "item_arrow_chitin_description": "Niet zo scherp als andere pijlen, maar goed tegen skeletten.",
+  "item_silver_tower_shield": "Zilveren torenschild",
+  "item_silver_tower_shield_description": "Een reusachtig toren schild omlijst met zilver, een bolwerk van monsterjagers.",
+  "item_silver_sledge": "Zilveren slee",
+  "item_silver_sledge_description": "Een mammoet zilveren hamer, zaai angst onder de ondoden.",
+  "item_meteor_atgeir": " does not have a direct translation in Dutch as it appears to be a name or a phrase from a specific context. Can you provide more context or information about the phrase?",
+  "item_meteor_atgeir_description": "Waarom één mes gebruiken, als je er twee kunt gebruiken?",
+  "item_dagger_meteor": "Eird dolk",
+  "item_dagger_meteor_description": "Donker als de nacht, perfect in balans.",
+  "item_dagger_meteor_2h": "Moordenaarsdolken",
+  "item_dagger_meteor_2h_description": "Twee spleten van duisternis sluipen door de nacht, wat zullen ze vinden?",
+  "item_moder_shield": "Moederschild",
+  "item_moder_shield_description": "Een schild dat bevroren ijs vasthoudt, versterkt door moedertranen."
 }

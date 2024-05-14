@@ -150,5 +150,17 @@
   "item_dagger_moder": "Dragonfrost knife",
   "item_dagger_moder_description": "An ice cold dagger, frozen by Moder's tears.",
   "item_bolt_corewood": "Corewood bolt",
-  "item_bolt_corewood_description": "A sturdy wooden bolt."
+  "item_bolt_corewood_description": "A sturdy wooden bolt.",
+  "item_silver_tower_shield": "Silver tower shield",
+  "item_silver_tower_shield_description": "A giant tower shield framed with silver, a monster hunters bulwark.",
+  "item_silver_sledge": "Silver sledge",
+  "item_silver_sledge_description": "A mammoth silver hammer, strike fear into the undead.",
+  "item_meteor_atgeir": "Eird atgeir",
+  "item_meteor_atgeir_description": "Why use one blade, when you could use two?",
+  "item_dagger_meteor": "Eird dagger",
+  "item_dagger_meteor_description": "Dark as the night, balanced perfectly.",
+  "item_dagger_meteor_2h": "Assassin daggers",
+  "item_dagger_meteor_2h_description": "Two slivers of darkness sneak through the night, what will they find?",
+  "item_moder_shield": "Moders shield",
+  "item_moder_shield_description":  "A shield holding frozen ice, enhanced by moders tears."
 }
