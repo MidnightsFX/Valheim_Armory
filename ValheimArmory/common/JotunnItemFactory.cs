@@ -172,6 +172,7 @@ namespace ValheimArmory.common
                 ItemManager.Instance.AddItem(new CustomItem(ItemPrefab, fixReference: true, itemcfg));
                 ItemRecipeName = itemcfg.GetRecipe().name;
                 ItemCI = ItemManager.Instance.GetItem(ItemPrefab.gameObject.name);
+
                 foreach (KeyValuePair<string, ConfigEntry<float>> idc_entry in ItemDataConfigs)
                 {
                     // Run an attribute update once we have a config value bound & the item exists
@@ -183,7 +184,10 @@ namespace ValheimArmory.common
             {
                 ConfigEntry<float> sendEntry = (ConfigEntry<float>)sender;
                 String target_attribute = sendEntry.Definition.Key.Split('-')[1];
-                Logger.LogInfo($"ItemConfigUpdate triggered: {target_attribute}");
+                if (VAConfig.EnableDebugMode.Value == true)
+                {
+                    Logger.LogInfo($"ItemConfigUpdate triggered: {target_attribute}");
+                }
                 // Update the parent gameobject
                 ItemConfigModifier(target_attribute, sendEntry.Value, ItemCI.ItemDrop);
 
@@ -191,7 +195,10 @@ namespace ValheimArmory.common
                 var objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name == ItemMetadata["prefab"]);
                 foreach( GameObject go in objects)
                 {
-                    Logger.LogInfo($"Found {go.name}");
+                    if (VAConfig.EnableDebugMode.Value == true)
+                    {
+                        Logger.LogInfo($"Found {go.name}");
+                    }
                     ItemConfigModifier(target_attribute, sendEntry.Value, go.GetComponent<ItemDrop>());
                 }
 
@@ -210,10 +217,16 @@ namespace ValheimArmory.common
             {
                 RequirementConfig[] recipe = new RequirementConfig[UpdatedRecipeData.Count];
                 int recipe_index = 0;
-                Logger.LogInfo("Validating and building requirementsConfig");
+                if (VAConfig.EnableDebugMode.Value == true)
+                {
+                    Logger.LogInfo("Validating and building requirementsConfig");
+                }
                 foreach (KeyValuePair<string, Tuple<int, int>> entry in UpdatedRecipeData)
                 {
-                Logger.LogInfo($"Checking entry {entry.Key}");
+                    if (VAConfig.EnableDebugMode.Value == true)
+                    {
+                        Logger.LogInfo($"Checking entry {entry.Key}");
+                    }
                     if (PrefabManager.Instance.GetPrefab(entry.Key) == null) {
                         Logger.LogInfo($"{entry.Key} is not a valid prefab, skipping recipe update.");
                         return;
@@ -221,7 +234,10 @@ namespace ValheimArmory.common
                     recipe[recipe_index] = new RequirementConfig { Item = entry.Key, Amount = entry.Value.Item1, AmountPerLevel = entry.Value.Item2 };
                     recipe_index++;
                 }
-                Logger.LogInfo("Creating custom recipe");
+                if (VAConfig.EnableDebugMode.Value == true)
+                {
+                    Logger.LogInfo("Creating custom recipe");
+                }
                 CustomRecipe updatedCustomRecipe = new CustomRecipe(new RecipeConfig()
                 {
                     Name = $"{ItemPrefab.gameObject.name}_recipe",
@@ -232,11 +248,17 @@ namespace ValheimArmory.common
                     Requirements = recipe
                 });
 
-                Logger.LogInfo("Checking craftable toggle.");
+                if (VAConfig.EnableDebugMode.Value == true)
+                {
+                    Logger.LogInfo("Checking craftable toggle.");
+                }
                 // Enable/disable recipe
                 if (ItemToggles["craftable"])
                 {
-                    Logger.LogInfo("Updating Recipe.");
+                    if (VAConfig.EnableDebugMode.Value == true)
+                    {
+                        Logger.LogInfo("Updating Recipe.");
+                    }
                     // Add the recipe
                     ItemCI.Recipe = updatedCustomRecipe;
 
@@ -245,7 +267,10 @@ namespace ValheimArmory.common
                     CustomRecipe curCrecipe = ItemManager.Instance.GetRecipe(ItemRecipeName);
                     if (curCrecipe != null && curCrecipe.Recipe != updatedCustomRecipe.Recipe)
                     {
-                        Logger.LogInfo("Updating Registered Recipe");
+                        if (VAConfig.EnableDebugMode.Value == true)
+                        {
+                            Logger.LogInfo("Updating Registered Recipe");
+                        }
                         // This can be replaced once ItemManger supports simply removing the recipe and/or updating the recipe in the objectDB
                         HashSet<CustomRecipe> hashsetRecipes = AccessTools.Field(typeof(ItemManager), "Recipes").GetValue(ItemManager.Instance) as HashSet<CustomRecipe>;
                         // We dont use the removeRecipe here because it removes the recipe from the DB also, which we want to avoid, at least until the Add recipe adds to DB outside of awake
@@ -258,7 +283,10 @@ namespace ValheimArmory.common
                             CustomRecipe targetRecipe = updatedCustomRecipe;
                             if (targetRecipe != null)
                             {
-                                Logger.LogInfo("Recipe found in the ObjectDB, updating...");
+                                if (VAConfig.EnableDebugMode.Value == true)
+                                {
+                                    Logger.LogInfo("Recipe found in the ObjectDB, updating...");
+                                }
                                 // Update the DB
                                 //activeRecipe.m_resources = updatedCustomRecipe.Recipe.m_resources;
 
@@ -283,7 +311,10 @@ namespace ValheimArmory.common
 
                         if (hashsetRecipes != null && hashsetRecipes.Contains(curCrecipe))
                         {
-                            Logger.LogInfo("Replacing old recipe from ItemManager");
+                            if (VAConfig.EnableDebugMode.Value == true)
+                            {
+                                Logger.LogInfo("Replacing old recipe from ItemManager");
+                            }
                             hashsetRecipes.Remove(curCrecipe);
                             hashsetRecipes.Add(new CustomRecipe(updatedCustomRecipe.Recipe, false, false));
                         }
@@ -297,7 +328,10 @@ namespace ValheimArmory.common
                     // Remove the recipe if this is not craftable
                     ItemManager.Instance.RemoveRecipe(updatedCustomRecipe);
                 }
-                Logger.LogInfo("Finished Recipe updates.");
+                if (VAConfig.EnableDebugMode.Value == true)
+                {
+                    Logger.LogInfo("Finished Recipe updates.");
+                }
             }
 
             // Adapted from Probablykory - for retrieval of a recipe from the live objectDB
@@ -335,7 +369,7 @@ namespace ValheimArmory.common
 
             private void ItemDataConfigModifier(String target_attribute, float updatedValue, ItemDrop.ItemData itemData)
             {
-
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Updating {target_attribute} to {updatedValue}"); }
                 switch (target_attribute)
                 {
                     // Standard Dmg types
@@ -447,16 +481,16 @@ namespace ValheimArmory.common
                         break;
                     // Speed Modifiers
                     case "movement_speed":
-                        itemData.m_shared.m_movementModifier = (float)updatedValue / 100f;
+                        itemData.m_shared.m_movementModifier = updatedValue;
                         break;
                     case "bow_draw_speed":
-                        itemData.m_shared.m_attack.m_drawDurationMin = ItemData["bow_draw_speed"].Item1 * (updatedValue / 100);
+                        itemData.m_shared.m_attack.m_drawDurationMin = updatedValue;
                         break;
                     case "crossbow_reload_speed":
-                        itemData.m_shared.m_attack.m_reloadTime = ItemData["crossbow_reload_speed"].Item1 * (updatedValue / 100);
+                        itemData.m_shared.m_attack.m_reloadTime = updatedValue;
                         break;
                     case "draw_stamina_drain":
-                        itemData.m_shared.m_attack.m_drawStaminaDrain = updatedValue;
+                        itemData.m_shared.m_attack.m_drawStaminaDrain = updatedValue;  
                         break;
                     // Item Modifiers
                     case "durability":

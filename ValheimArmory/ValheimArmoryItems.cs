@@ -379,7 +379,7 @@ namespace ValheimArmory
                     { "primary_attack_flat_health_cost", new Tuple<float, float, float, bool>(8, 0, 25, true) },
                     { "primary_attack_percent_health_cost", new Tuple<float, float, float, bool>(0, 0, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
-                    { "bow_draw_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
+                    { "bow_draw_speed", new Tuple<float, float, float, bool>(2, 0.01f, 2, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -408,7 +408,7 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(3, 0, 60, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(100, 0, 300, true) },
-                    { "crossbow_reload_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
+                    { "crossbow_reload_speed", new Tuple<float, float, float, bool>(3.5f, 0.01f, 3.5f, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -438,7 +438,7 @@ namespace ValheimArmory
                     { "attack_force", new Tuple<float, float, float, bool>(5, 0, 50, true) },
                     { "block", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
-                    { "bow_draw_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
+                    { "bow_draw_speed", new Tuple<float, float, float, bool>(2.5f, 0.01f, 2.5f, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -467,7 +467,7 @@ namespace ValheimArmory
                     { "attack_force", new Tuple<float, float, float, bool>(150, 0, 300, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(100, 0, 300, true) },
-                    { "crossbow_reload_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
+                    { "crossbow_reload_speed", new Tuple<float, float, float, bool>(3.5f, 0.01f, 3.5f, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -498,7 +498,7 @@ namespace ValheimArmory
                     { "attack_force", new Tuple<float, float, float, bool>(150, 0, 300, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(100, 0, 300, true) },
-                    { "crossbow_reload_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
+                    { "crossbow_reload_speed", new Tuple<float, float, float, bool>(3.5f, 0.01f, 3.5f, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -529,7 +529,7 @@ namespace ValheimArmory
                     { "attack_force", new Tuple<float, float, float, bool>(200, 0, 300, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(100, 0, 300, true) },
-                    { "crossbow_reload_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
+                    { "crossbow_reload_speed", new Tuple<float, float, float, bool>(3.5f, 0.01f, 3.5f, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -561,7 +561,7 @@ namespace ValheimArmory
                     { "attack_force", new Tuple<float, float, float, bool>(25, 0, 50, true) },
                     { "block", new Tuple<float, float, float, bool>(3, 0, 25, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
-                    { "bow_draw_speed", new Tuple<float, float, float, bool>(100, 1, 300, true) },
+                    { "bow_draw_speed", new Tuple<float, float, float, bool>(3f, 0.01f, 3f, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -1111,7 +1111,7 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(49, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(20, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(40, 1, 50, true) },
-                    { "movement_speed", new Tuple<float, float, float, bool>(-20, -30, 0, true) },
+                    { "movement_speed", new Tuple<float, float, float, bool>(-0.20f, -0.20f, 0, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -1142,7 +1142,7 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(22, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(22, 1, 50, true) },
-                    { "movement_speed", new Tuple<float, float, float, bool>(-20, -30, 0, true) },
+                    { "movement_speed", new Tuple<float, float, float, bool>(-0.20f, -0.20f, 0, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -1173,7 +1173,7 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(31, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
-                    { "movement_speed", new Tuple<float, float, float, bool>(-20, -30, 0, true) },
+                    { "movement_speed", new Tuple<float, float, float, bool>(-0.20f, -0.20f, 0, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -1204,7 +1204,7 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(31, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 50, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(24, 1, 50, true) },
-                    { "movement_speed", new Tuple<float, float, float, bool>(-20, -30, 0, true) },
+                    { "movement_speed", new Tuple<float, float, float, bool>(-0.20f, -0.20f, 0, true) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
@@ -1386,7 +1386,7 @@ namespace ValheimArmory
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Flametal", new Tuple<int, int>(15, 10) },
+                    { "FlametalNew", new Tuple<int, int>(15, 10) },
                     { "Iron", new Tuple<int, int>(4, 2) },
                     { "Blackwood", new Tuple<int, int>(10, 0) },
                     { "MorgenSinew", new Tuple<int, int>(2, 2) }
@@ -1915,7 +1915,7 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Flametal", new Tuple<int, int>(10, 4) },
+                    { "FlametalNew", new Tuple<int, int>(10, 4) },
                     { "Iron", new Tuple<int, int>(2, 1) },
                     { "Blackwood", new Tuple<int, int>(4, 0) },
                     { "MorgenSinew", new Tuple<int, int>(4, 2) }
@@ -1947,7 +1947,7 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "Flametal", new Tuple<int, int>(14, 6) },
+                    { "FlametalNew", new Tuple<int, int>(14, 6) },
                     { "Iron", new Tuple<int, int>(2, 1) },
                     { "Blackwood", new Tuple<int, int>(6, 0) },
                     { "MorgenSinew", new Tuple<int, int>(4, 2) }

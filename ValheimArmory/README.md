@@ -349,6 +349,19 @@ Optionally follow the instructions to setup VES or Epic Loot configs.
 <details>
   <summary>Changelog (Potential spoilers!)</summary>
 
+  **1.9.1**
+```
+- Fixed the default recipe for Ashlands weapons to use FlametalNew not Flametal
+```
+
+  **1.9.1**
+```
+- Bugfix bow draw speed configuration not being applied correctly
+- Changed how speed modifiers, drawspeed, and reloadtime are applied
+- Updated boxed configuration value ranges for these values to represent the change
+- Reduced excess logging, extra logging can be enabled with the client side debug logging config
+```
+
   **1.9.0**
 ```
 Added
