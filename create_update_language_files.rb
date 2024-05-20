@@ -120,7 +120,7 @@ languages.each do |lang|
     language_json = JSON.parse(sanitized)
     File.write("#{localizations_dir}/#{lang}.json", JSON.pretty_generate(language_json))
     file_completed = true
-  rescue
+  rescue StandardError # rubocop:disable Lint/SuppressedException
   end
   next if file_completed
 
