@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Trochę więcej niż ostry kij. Wystarczająco mocno uderzony, wciąż boli!",
   "item_bolt_bronze": "Brązowy śruba",
   "item_bolt_bronze_description": "Brązowe bełty kuszy trochę ostrzejsze od rdzeniowego drewna.",
-  "item_bolt_iron_poison": "Żelazny zatruty strzał",
-  "item_bolt_iron_poison_description": "Ostry żelazny śrut zakończony trucizną, przyspieszająca śmierć.",
   "item_bolt_silver_frost": "Srebrny mrozny piorun",
-  "item_bolt_surtling_description": "Rdzeń z czarnego metalu z rdzeniem surtlina, to będzie się palić.",
   "item_bolt_obsidian": "Piorun obsydianowy",
   "item_bolt_obsidian_description": "Odłamek kompletnego mroku.",
   "item_arbalist_bronze": "Bronzowy kusznik",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Nożyce zabójcy",
   "item_dagger_meteor_2h_description": "Dwie plamki ciemności wkradają się przez noc, co znajdą?",
   "item_moder_shield": "Tarcza moderska",
-  "item_moder_shield_description": "Tarcza trzymająca zamrożony lód, wzmocniona łzami matki."
+  "item_moder_shield_description": "Tarcza trzymająca zamrożony lód, wzmocniona łzami matki.",
+  "item_bolt_iron_poison": "Jedwabna strzała",
+  "item_bolt_iron_poison_description": "Ostry śrubka zakończona trucizną, przyspieszająca śmierć.",
+  "item_bolt_surtling_description": "Wkute ostrze z rdzeniem surtlingu, to będzie palić."
 }

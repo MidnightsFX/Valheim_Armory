@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Malo više od oštre šipke. Ako se puca dovoljno jako, i dalje boli!",
   "item_bolt_bronze": "Bronzani bolt",
   "item_bolt_bronze_description": "Bronzani samostrelni bolt malo oštriji od corewooda.",
-  "item_bolt_iron_poison": "Gvozdeni otrovni bolt",
-  "item_bolt_iron_poison_description": "Oštar gvozdeni bolt sa vrhom otrova, ubrzava smrt.",
   "item_bolt_silver_frost": "Srebrni mračni bolt",
-  "item_bolt_surtling_description": "Crna metalna jezgra koja sadrži surtling jezgru, ovo će da gori.",
   "item_bolt_obsidian": "Obsidian koplje",
   "item_bolt_obsidian_description": "Komad potpune tame.",
   "item_arbalist_bronze": "Bronzani arbalist",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Ubilački noževi",
   "item_dagger_meteor_2h_description": "Dve tanka dela tame provlače se kroz noć, šta će oni pronaći?",
   "item_moder_shield": "Заштитник модерне",
-  "item_moder_shield_description": "Štit koji drži smrznuti led, obogaćen suzama majki."
+  "item_moder_shield_description": "Štit koji drži smrznuti led, obogaćen suzama majki.",
+  "item_bolt_iron_poison": "Zatrovani šaržer",
+  "item_bolt_iron_poison_description": "Oštar šiljak natopljen otrovom, donosi smrt.",
+  "item_bolt_surtling_description": "Oštar šiljak naoružan sa surtling jezgrom, ovo će peći."
 }

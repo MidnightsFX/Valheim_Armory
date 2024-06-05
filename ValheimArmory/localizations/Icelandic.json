@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Smá meira en skarpa stöng. Skotið hörðum nóg, það sárir enn!",
   "item_bolt_bronze": "Bronsbolti",
   "item_bolt_bronze_description": "Brons krossbolti smá skarpar en kjarnviður.",
-  "item_bolt_iron_poison": "Eirn eitur bolti",
-  "item_bolt_iron_poison_description": "Skarpur járn bolti toppaður eitri, hraður dauði.",
   "item_bolt_silver_frost": "Silfur frost bolti",
-  "item_bolt_surtling_description": "Svörtmálmur kjarni sem hýsir surtling kjarna, þetta er að brenna.",
   "item_bolt_obsidian": "Obsidian bolti",
   "item_bolt_obsidian_description": "Skör af algerri myrkur.",
   "item_arbalist_bronze": "Brons arbelist",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Leiðangurs daggir",
   "item_dagger_meteor_2h_description": "Tveir skolli myrkurs sneika í gegnum nóttina, hvað munu þeir finna?",
   "item_moder_shield": "Móðursvernd.",
-  "item_moder_shield_description": "Skjöldur sem heldur falinni ís, styrktur af móður tár."
+  "item_moder_shield_description": "Skjöldur sem heldur falinni ís, styrktur af móður tár.",
+  "item_bolt_iron_poison": "Eitur ör",
+  "item_bolt_iron_poison_description": "Einhver skörp bútur toppaður með eitri, hraður dauði.Takk fyrir beiðnina.",
+  "item_bolt_surtling_description": "Ekki erindi fyrir þig"
 }

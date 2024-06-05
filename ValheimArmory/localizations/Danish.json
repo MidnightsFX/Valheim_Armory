@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Lidt mere end en spids pind. Skudt hårdt nok, gør det stadig ondt!",
   "item_bolt_bronze": "Bronzebolt",
   "item_bolt_bronze_description": "Bronzekrydsbolte er lidt skarpere end kerneved.",
-  "item_bolt_iron_poison": "Jerngiftbolt",
-  "item_bolt_iron_poison_description": "En skarp jernpil toppet med gift, der fremskynder døden.",
   "item_bolt_silver_frost": "Sølvfrostbolt",
-  "item_bolt_surtling_description": "En sortmetal kerne, der huser en surtlingkerne, dette kommer til at brænde.",
   "item_bolt_obsidian": "Obsidianbolt",
   "item_bolt_obsidian_description": "Et stykke komplet mørke.",
   "item_arbalist_bronze": "Bronzearbelist",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Morderknive",
   "item_dagger_meteor_2h_description": "To skiver mørke sniger sig gennem natten, hvad vil de finde?",
   "item_moder_shield": "Moders skjold",
-  "item_moder_shield_description": "Et skjold holdende frossen is, forstærket af moderens tårer."
+  "item_moder_shield_description": "Et skjold holdende frossen is, forstærket af moderens tårer.",
+  "item_bolt_iron_poison": "Gift pil",
+  "item_bolt_iron_poison_description": "En skarp bolt spidset med gift, der bringer døden hurtigt.",
+  "item_bolt_surtling_description": "En spids spike bevæbnet med en surtling kerne, dette kommer til at brænde."
 }

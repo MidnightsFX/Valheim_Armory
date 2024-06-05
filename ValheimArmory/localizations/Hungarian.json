@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Ez már csak egy hegyes bot. Elég erővel kilőve még mindig fáj!",
   "item_bolt_bronze": "Bronz szegec",
   "item_bolt_bronze_description": "A bronz kereszthajító szegec kicsit élesebb, mint a magfa.",
-  "item_bolt_iron_poison": "Mérgezett vas szegec",
-  "item_bolt_iron_poison_description": "Mérgezett vas szegec, amely gyors halált okoz.",
   "item_bolt_silver_frost": "Ezüst jég szegec",
-  "item_bolt_surtling_description": "Egy feketefém mag, amelyben egy surtling mag van, ez égni fog.",
   "item_bolt_obsidian": "Obszidián szegec",
   "item_bolt_obsidian_description": "Egy teljes sötétség darabja.",
   "item_arbalist_bronze": "Bronz arbalest",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Merénylő tőrök",
   "item_dagger_meteor_2h_description": "Két sötétség szelet surran át az éjszakán, mit fognak találni?",
   "item_moder_shield": "Modern pajzs",
-  "item_moder_shield_description": "Egy pajzs tartja a megfagyott jeget, fokozva a modern könnyek által."
+  "item_moder_shield_description": "Egy pajzs tartja a megfagyott jeget, fokozva a modern könnyek által.",
+  "item_bolt_iron_poison": "Mérgező nyíl",
+  "item_bolt_iron_poison_description": "Egy mérgezett hegyű éles nyíl, halált hoz.",
+  "item_bolt_surtling_description": "Egy hegyes tüske felfegyverezve egy súrló maggal, ez égni fog."
 }

@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Meer dan een puntige stok. Als het hard genoeg wordt afgevuurd, doet het nog steeds pijn!",
   "item_bolt_bronze": "Bronzen bout",
   "item_bolt_bronze_description": "Bronzen kruisboogbouten zijn wat scherper dan kernhout.",
-  "item_bolt_iron_poison": "IJzeren vergiftigde bout",
-  "item_bolt_iron_poison_description": "Een scherpe ijzeren bout met vergif, versnelt de dood.",
   "item_bolt_silver_frost": "Zilveren vorstbout",
-  "item_bolt_surtling_description": "Een zwarte metalen kern met een surtlingkern, dit gaat branden.",
   "item_bolt_obsidian": "Obsidiaanbout",
   "item_bolt_obsidian_description": "Een scherf van complete duisternis.",
   "item_arbalist_bronze": "Bronzen arbalist",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Moordenaarsdolken",
   "item_dagger_meteor_2h_description": "Twee spleten van duisternis sluipen door de nacht, wat zullen ze vinden?",
   "item_moder_shield": "Moederschild",
-  "item_moder_shield_description": "Een schild dat bevroren ijs vasthoudt, versterkt door moedertranen."
+  "item_moder_shield_description": "Een schild dat bevroren ijs vasthoudt, versterkt door moedertranen.",
+  "item_bolt_iron_poison": "Vergiftigde pijl",
+  "item_bolt_iron_poison_description": "Een scherpe bout met vergif, snelle dood.",
+  "item_bolt_surtling_description": "Een puntige spike bewapend met een surtling kern, dit gaat branden."
 }

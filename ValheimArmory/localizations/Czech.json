@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Trochu víc než ostrá tyč. Pokud se vystřelí dost tvrdě, stále to bolí!",
   "item_bolt_bronze": "Bronzový šíp",
   "item_bolt_bronze_description": "Bronzové kušeňové šípy jsou o něco ostřejší než jádrové.",
-  "item_bolt_iron_poison": "Jedový železný šíp",
-  "item_bolt_iron_poison_description": "Ostrý železný šíp zakončený jedem, urychlující smrt.",
   "item_bolt_silver_frost": "Stříbrný mrazivý šíp",
-  "item_bolt_surtling_description": "Černokovové jádro obývající surtlingovo jádro, tohle bude hořet.",
   "item_bolt_obsidian": "Obsidiánový šíp",
   "item_bolt_obsidian_description": "Kousek úplné temnoty.",
   "item_arbalist_bronze": "Bronzový arbalista",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Vražedné dýky",
   "item_dagger_meteor_2h_description": "Dvě střípky temnoty se plíží skrz noc, co asi najdou?",
   "item_moder_shield": "Moders štít",
-  "item_moder_shield_description": "Štít držící zmrzlý led, zdokonalený slzami matek."
+  "item_moder_shield_description": "Štít držící zmrzlý led, zdokonalený slzami matek.",
+  "item_bolt_iron_poison": "Jedovatý šíp",
+  "item_bolt_iron_poison_description": "Ostře nabroušený šroub zakončený jedem, urychlující smrt.",
+  "item_bolt_surtling_description": "Ostřejší hrot ozbrojený surtlingovým jádrem, tohle pálí."
 }

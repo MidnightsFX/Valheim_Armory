@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Малку повеќе од остар стап. Ако се испука доволно силно, уште боли!",
   "item_bolt_bronze": "Бронзена стрела",
   "item_bolt_bronze_description": "Бронзените стрели се малку погостро од дрвените.",
-  "item_bolt_iron_poison": "Железна отровна стрела",
-  "item_bolt_iron_poison_description": "Остра железна стрела со отров, брза смрт.",
   "item_bolt_silver_frost": "Сребрена студена стрела",
-  "item_bolt_surtling_description": "Црниот метал со суртлинг јадро, ова ќе гори.",
   "item_bolt_obsidian": "Обсидијанска стрела",
   "item_bolt_obsidian_description": "Полномоќно парче темнина.",
   "item_arbalist_bronze": "Бронзен арбалист",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Дагери на убиецот",
   "item_dagger_meteor_2h_description": "Два парчиња темнина криејќи се низ ноќта, што ќе најдат?",
   "item_moder_shield": "Мајчин щит.",
-  "item_moder_shield_description": "Един штит држејќи замрзнат лед, зголемен со солзите на мајките. Един штит држејќи замрзнат лед, зголемен со солзите на мајките."
+  "item_moder_shield_description": "Един штит држејќи замрзнат лед, зголемен со солзите на мајките. Един штит држејќи замрзнат лед, зголемен со солзите на мајките.",
+  "item_bolt_iron_poison": "Отровна стрела",
+  "item_bolt_iron_poison_description": "Остар копче со отров, брза смрт.",
+  "item_bolt_surtling_description": "Еден изострен шилок опремен со суртлинг јадро, ова ќе гори."
 }

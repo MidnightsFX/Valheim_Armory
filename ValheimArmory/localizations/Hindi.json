@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "एक तीरे से थोड़ा ज़्यादा। काफ़ी तेज़ी से चलाया गया, फिर भी दर्द होता है!",
   "item_bolt_bronze": "कांस्य बोल्ट",
   "item_bolt_bronze_description": "कांस्य क्रॉसबो बोल्ट कोरवुड से थोड़ा तेज होते हैं।",
-  "item_bolt_iron_poison": "आयरन विष बोल्ट",
-  "item_bolt_iron_poison_description": "एक तेज लोहे का बोल्ट जिसमें जहर भरा हो, जल्दी मौत को ले जाने वाला।",
   "item_bolt_silver_frost": "चांदी की ठंडी बोल्ट",
-  "item_bolt_surtling_description": "एक ब्लैकमेटल कोर जिसमें सर्टलिंग कोर है, यह जलने वाला है।",
   "item_bolt_obsidian": "ओब्सिडियन बोल्ट",
   "item_bolt_obsidian_description": "पूरी अंधकार की एक टुकड़ा।",
   "item_arbalist_bronze": "कांस्य अर्बलेस्ट",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "असासिन छुरा",
   "item_dagger_meteor_2h_description": "रात में दो टुकड़े अंधेरे छुपकर आते हैं, वे क्या खोजेंगे?",
   "item_moder_shield": "मदर्स शील्ड()",
-  "item_moder_shield_description": "एक ढाल जो जमे हुए बर्फ को लेकर एक नयी चीज की तरह सजीव करती है।"
+  "item_moder_shield_description": "एक ढाल जो जमे हुए बर्फ को लेकर एक नयी चीज की तरह सजीव करती है।",
+  "item_bolt_iron_poison": "जहरीला बोल्ट",
+  "item_bolt_iron_poison_description": "जहर से भरी तेज बोल्ट, जल्दी मौत।()",
+  "item_bolt_surtling_description": "एक नुकीली कील जो सर्टलिंग कोर के साथ लदा है, यह जलने वाला है।"
 }

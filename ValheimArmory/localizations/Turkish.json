@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Biraz daha sivri bir çubuktan fazlası. Sert bir şekilde atıldığında hala acıtıyor!",
   "item_bolt_bronze": "Bronz cıvata",
   "item_bolt_bronze_description": "Bronz crossbow, corewooddan biraz daha keskin.",
-  "item_bolt_iron_poison": "Demir zehir cıvatası",
-  "item_bolt_iron_poison_description": "Zehirle kaplanmış keskin bir demir cıvata, ölümü hızlandırıyor.",
   "item_bolt_silver_frost": "Gümüş buz cıvatası",
-  "item_bolt_surtling_description": "Bir surtling çekirdeği barındıran bir blackmetal çekirdek, bu yanacak.",
   "item_bolt_obsidian": "Obsidyen cıvatası",
   "item_bolt_obsidian_description": "Tamamen karanlık bir parça.",
   "item_arbalist_bronze": "Bronz arbelist",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Suikastçı hançerleri",
   "item_dagger_meteor_2h_description": "Iki karanlık dilim geceyi sızıp geçer, ne bulacaklar?",
   "item_moder_shield": "Moders kalkanı",
-  "item_moder_shield_description": "Bir kalkan donmuş buz taşıyan, annelerin gözyaşlarıyla güçlendirilmiş."
+  "item_moder_shield_description": "Bir kalkan donmuş buz taşıyan, annelerin gözyaşlarıyla güçlendirilmiş.",
+  "item_bolt_iron_poison": "Zehirli ok",
+  "item_bolt_iron_poison_description": "Zehirli ucunda sivri bir cıvata, ölümü hızlandırıyor.",
+  "item_bolt_surtling_description": "Keskin ucu olan bir mızrak, surtling çekirdeği ile donatılmış, bu yanacak."
 }

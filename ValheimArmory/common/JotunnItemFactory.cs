@@ -61,6 +61,7 @@ namespace ValheimArmory.common
             Dictionary<String, int> ItemSettings;
             GameObject ItemPrefab;
             Sprite ItemSprite;
+            ZNetView nview;
 
             Dictionary<String, ConfigEntry<float>> ItemDataConfigs = new Dictionary<String, ConfigEntry<float>>() { };
             Dictionary<String, Tuple<int, int>> UpdatedRecipeData = new Dictionary<string, Tuple<int, int>>() { };
@@ -71,7 +72,7 @@ namespace ValheimArmory.common
             ConfigEntry<String> RecipeConfig;
 
             CustomItem ItemCI;
-            static String ItemRecipeName;
+            String ItemRecipeName;
 
             public JotunnItem(
             Dictionary<String, String> metadata,
@@ -103,7 +104,12 @@ namespace ValheimArmory.common
                 InitItemConfigs();
 
                 // Skip this item if the configuration is set to disable it (only checked on startup)
-                if (ItemToggles["enabled"] == false) { return; }
+                if (ItemToggles["enabled"] == false) {
+                    // Remove items that are not known
+                    // This case is generally hit when there is a disconnect between what the client knows and the server knows as added items
+                    ItemManager.Instance.RemoveItem(ItemMetadata["prefab"]);
+                    return;
+                }
 
                 // Set asset references
                 ItemPrefab = Assets.LoadAsset<GameObject>($"Assets/Custom/Weapons/{ItemMetadata["catagory"]}/{ItemMetadata["prefab"]}.prefab");
@@ -172,7 +178,7 @@ namespace ValheimArmory.common
                 ItemManager.Instance.AddItem(new CustomItem(ItemPrefab, fixReference: true, itemcfg));
                 ItemRecipeName = itemcfg.GetRecipe().name;
                 ItemCI = ItemManager.Instance.GetItem(ItemPrefab.gameObject.name);
-
+                nview = ItemPrefab.gameObject.GetComponent<ZNetView>();
                 foreach (KeyValuePair<string, ConfigEntry<float>> idc_entry in ItemDataConfigs)
                 {
                     // Run an attribute update once we have a config value bound & the item exists
@@ -182,6 +188,7 @@ namespace ValheimArmory.common
 
             private void ItemConfig_SettingChanged(object sender, EventArgs e)
             {
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"ItemConfigChange Triggered."); }
                 ConfigEntry<float> sendEntry = (ConfigEntry<float>)sender;
                 String target_attribute = sendEntry.Definition.Key.Split('-')[1];
                 if (VAConfig.EnableDebugMode.Value == true)
@@ -192,136 +199,143 @@ namespace ValheimArmory.common
                 ItemConfigModifier(target_attribute, sendEntry.Value, ItemCI.ItemDrop);
 
                 // Get and update all of the in-scene game objects
-                var objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name == ItemMetadata["prefab"]);
-                foreach( GameObject go in objects)
+                IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name == ItemMetadata["prefab"]);
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Found in scene objects: {objects.Count()}"); }
+                foreach ( GameObject go in objects)
                 {
-                    if (VAConfig.EnableDebugMode.Value == true)
+                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Found {go.name}"); }
+                    ItemDrop id = null;
+                    if (go.TryGetComponent<ItemDrop>(out id))
                     {
-                        Logger.LogInfo($"Found {go.name}");
+                        if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{go.name} updating attribute {target_attribute}"); }
+                        ItemDataConfigModifier(target_attribute, sendEntry.Value, id.m_itemData);
+                    } else
+                    {
+                        if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{go.name} does not have an itemdrop and will not be updated in-place"); }
                     }
-                    ItemConfigModifier(target_attribute, sendEntry.Value, go.GetComponent<ItemDrop>());
+                    
                 }
-
-                // Update all instances that are in the backpack
-                foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Checking for the local player."); }
+                // we don't update the backpack items if the znet isn't valid, because they will get updated from the parent item
+                if ((bool)nview && Player.m_localPlayer != null)
                 {
-                    if(user_item.m_dropPrefab.name != ItemMetadata["prefab"]) { continue; }
+                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Modifying items within the players inventory."); }
+                    // Update all instances that are in the backpack
+                    foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
+                    {
+                        if (user_item == null) { continue; }
+                        if (user_item.m_dropPrefab.name != ItemMetadata["prefab"]) { continue; }
 
-                    ItemDataConfigModifier(target_attribute, sendEntry.Value, user_item);
+                        if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{user_item.m_shared.m_name} found in the players backpack, updating."); }
+                        ItemDataConfigModifier(target_attribute, sendEntry.Value, user_item);
+                    }
                 }
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Finished modifying ItemConfig setting."); }
+
             }
 
 
 
             private void RecipeConfig_SettingChanged(object sender, EventArgs e)
             {
+                // Only update the recipe items themselves if we are sent a recipe item update, otherwise this is a station or amount update
+                if (sender.GetType() == typeof(ConfigEntry<string>)) 
+                {
+                    ConfigEntry<string> sendEntry = (ConfigEntry<string>)sender;
+                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Recieved new recipe config {sendEntry.Value}"); }
+                    // Nothing to do if the recipe is invalid, its just going to be reset to its current recipe
+                    if (RecipeConfigUpdater(sendEntry.Value) == false) { return; }
+                }
+
                 RequirementConfig[] recipe = new RequirementConfig[UpdatedRecipeData.Count];
                 int recipe_index = 0;
-                if (VAConfig.EnableDebugMode.Value == true)
-                {
-                    Logger.LogInfo("Validating and building requirementsConfig");
-                }
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo("Validating and building requirementsConfig"); }
                 foreach (KeyValuePair<string, Tuple<int, int>> entry in UpdatedRecipeData)
                 {
-                    if (VAConfig.EnableDebugMode.Value == true)
-                    {
-                        Logger.LogInfo($"Checking entry {entry.Key}");
-                    }
                     if (PrefabManager.Instance.GetPrefab(entry.Key) == null) {
-                        Logger.LogInfo($"{entry.Key} is not a valid prefab, skipping recipe update.");
+                        if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{entry.Key} is not a valid prefab, skipping recipe update."); }
                         return;
                     }
+                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Checking entry {entry.Key} c:{entry.Value.Item1} u:{entry.Value.Item2}"); }
                     recipe[recipe_index] = new RequirementConfig { Item = entry.Key, Amount = entry.Value.Item1, AmountPerLevel = entry.Value.Item2 };
                     recipe_index++;
                 }
-                if (VAConfig.EnableDebugMode.Value == true)
-                {
-                    Logger.LogInfo("Creating custom recipe");
-                }
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo("Creating custom recipe"); }
                 CustomRecipe updatedCustomRecipe = new CustomRecipe(new RecipeConfig()
                 {
-                    Name = $"{ItemPrefab.gameObject.name}_recipe",
+                    Name = $"Recipe_{ItemPrefab.gameObject.name}",
                     Amount = (int)ItemData["amount"].Item1,
                     CraftingStation = CraftedAt.Value,
                     MinStationLevel = StationRequiredLevel.Value,
                     Enabled = CraftableConfig.Value,
                     Requirements = recipe
                 });
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Looking for existing recipe with name: {ItemRecipeName}"); }
+                CustomRecipe curCrecipe = ItemManager.Instance.GetRecipe(ItemRecipeName);
 
-                if (VAConfig.EnableDebugMode.Value == true)
-                {
-                    Logger.LogInfo("Checking craftable toggle.");
-                }
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo("Checking craftable toggle."); }
                 // Enable/disable recipe
                 if (ItemToggles["craftable"])
                 {
-                    if (VAConfig.EnableDebugMode.Value == true)
-                    {
-                        Logger.LogInfo("Updating Recipe.");
-                    }
+                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo("Updating Recipe."); }
                     // Add the recipe
                     ItemCI.Recipe = updatedCustomRecipe;
 
                     
-                    // Update the recipe if it does not exist
-                    CustomRecipe curCrecipe = ItemManager.Instance.GetRecipe(ItemRecipeName);
-                    if (curCrecipe != null && curCrecipe.Recipe != updatedCustomRecipe.Recipe)
+                    // Update the recipe
+                    if (VAConfig.EnableDebugMode.Value == true && curCrecipe != null) 
                     {
-                        if (VAConfig.EnableDebugMode.Value == true)
+                        Logger.LogInfo($"Current recipe found: \nname:{curCrecipe.Recipe.name}\namount:{curCrecipe.Recipe.m_amount}\ncraftedAt:{curCrecipe.Recipe.m_craftingStation.name}\nminStationLevel:{curCrecipe.Recipe.m_minStationLevel}\nrecipeFor:{curCrecipe.Recipe.m_item}\nrepairStation:{curCrecipe.Recipe.m_repairStation}\n");
+                        foreach (var res in curCrecipe.Recipe.m_resources)
                         {
-                            Logger.LogInfo("Updating Registered Recipe");
-                        }
-                        // This can be replaced once ItemManger supports simply removing the recipe and/or updating the recipe in the objectDB
-                        HashSet<CustomRecipe> hashsetRecipes = AccessTools.Field(typeof(ItemManager), "Recipes").GetValue(ItemManager.Instance) as HashSet<CustomRecipe>;
-                        // We dont use the removeRecipe here because it removes the recipe from the DB also, which we want to avoid, at least until the Add recipe adds to DB outside of awake
-                        // ItemManager.Instance.RemoveRecipe(ItemRecipeName);
-                        // ItemManager.Instance.AddRecipe(updatedCustomRecipe);
-                        // Logger.LogInfo("Updating Recipe in Object DB");
-
-                        int arindex = ObjectDB.instance.m_recipes.IndexOf(curCrecipe.Recipe);
-                        if (arindex > -1) {
-                            CustomRecipe targetRecipe = updatedCustomRecipe;
-                            if (targetRecipe != null)
-                            {
-                                if (VAConfig.EnableDebugMode.Value == true)
-                                {
-                                    Logger.LogInfo("Recipe found in the ObjectDB, updating...");
-                                }
-                                // Update the DB
-                                //activeRecipe.m_resources = updatedCustomRecipe.Recipe.m_resources;
-
-                                // Resolve the recipe to ingame items.
-                                foreach (var res in targetRecipe.Recipe.m_resources)
-                                {
-                                    var prefab = ObjectDB.instance.GetItemPrefab(res.m_resItem.name.Replace("JVLmock_", ""));
-                                    if (prefab != null)
-                                    {
-                                        res.m_resItem = prefab.GetComponent<ItemDrop>();
-                                    }
-                                }
-                                //Logger.LogInfo($"Recipe set: {targetRecipe}");
-
-                                ObjectDB.instance.m_recipes[arindex].m_resources = targetRecipe.Recipe.m_resources;
-                            }
-                            else
-                            {
-                                Logger.LogWarning("Recipe not found in the ObjectDB.");
-                            }
-                        }
-
-                        if (hashsetRecipes != null && hashsetRecipes.Contains(curCrecipe))
-                        {
-                            if (VAConfig.EnableDebugMode.Value == true)
-                            {
-                                Logger.LogInfo("Replacing old recipe from ItemManager");
-                            }
-                            hashsetRecipes.Remove(curCrecipe);
-                            hashsetRecipes.Add(new CustomRecipe(updatedCustomRecipe.Recipe, false, false));
+                            Logger.LogInfo($"{res.m_resItem.name} req:{res.m_amount} u:{res.m_amountPerLevel}");
                         }
                     }
-                    // Update the tracked recipe name incase it changed
-                    ItemRecipeName = updatedCustomRecipe.Recipe.name;
-                    ItemManager.Instance.AddRecipe(updatedCustomRecipe);
+                    if (curCrecipe != null && curCrecipe.Recipe != updatedCustomRecipe.Recipe)
+                    {
+                        HashSet<CustomRecipe> hashsetRecipes = AccessTools.Field(typeof(ItemManager), "Recipes").GetValue(ItemManager.Instance) as HashSet<CustomRecipe>;
+                        if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo("Updating Registered Recipe"); }
+
+                        //ItemManager.Instance.RemoveRecipe(curCrecipe);
+                        //ItemManager.Instance.AddRecipe(updatedCustomRecipe);
+                        // hashsetRecipes.Add(updatedCustomRecipe);
+                        if (hashsetRecipes != null)
+                        {
+                            hashsetRecipes.Remove(curCrecipe);
+                            hashsetRecipes.Add(updatedCustomRecipe);
+                        }
+
+                        // int current_recipe_i = ObjectDB.instance.m_recipes.IndexOf(curCrecipe.Recipe);
+                        ObjectDB.instance.m_recipes.Remove(curCrecipe.Recipe);
+                        ObjectDB.instance.m_recipes.Add(updatedCustomRecipe.Recipe);
+                        int current_recipe_i = ObjectDB.instance.m_recipes.IndexOf(updatedCustomRecipe.Recipe);
+                        //if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo("Updating station level required"); }
+                        //ObjectDB.instance.m_recipes[current_recipe_i].m_minStationLevel = updatedCustomRecipe.Recipe.m_minStationLevel;
+                        if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo("Updating required resources"); }
+                        ObjectDB.instance.m_recipes[current_recipe_i].m_resources = updatedCustomRecipe.Recipe.m_resources;
+                        //ObjectDB.instance.m_recipes[current_recipe_i].m_amount = updatedCustomRecipe.Recipe.m_amount;
+                        foreach (var res in ObjectDB.instance.m_recipes[current_recipe_i].m_resources)
+                        {
+                            if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Recipe resource {res.m_resItem.name} {res.m_amount} updating.."); }
+                            var prefab = ObjectDB.instance.GetItemPrefab(res.m_resItem.name.Replace("JVLmock_", ""));
+                            if (prefab != null)
+                            {
+                                res.m_resItem = prefab.GetComponent<ItemDrop>();
+                                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{res.m_resItem.name} itemdrop set"); }
+                            }
+                        }
+                        try
+                        {
+                            if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo("Attaching existing item references to recipe"); }
+                            CraftingStation craftable_at = PrefabManager.Instance.GetPrefab(updatedCustomRecipe.Recipe.m_craftingStation.name.Replace("JVLmock_", ""))?.GetComponent<CraftingStation>();
+                            ObjectDB.instance.m_recipes[current_recipe_i].m_craftingStation = craftable_at;
+                            ObjectDB.instance.m_recipes[current_recipe_i].m_repairStation = craftable_at;
+                            ObjectDB.instance.m_recipes[current_recipe_i].m_item = PrefabManager.Instance.GetPrefab(ItemPrefab.gameObject.name)?.GetComponent<ItemDrop>();
+                        } catch { }
+                    } else
+                    {
+                        ItemManager.Instance.AddRecipe(updatedCustomRecipe);
+                    }
                 }
                 else
                 {
@@ -331,21 +345,36 @@ namespace ValheimArmory.common
                 if (VAConfig.EnableDebugMode.Value == true)
                 {
                     Logger.LogInfo("Finished Recipe updates.");
+                    int new_recipe_index = ObjectDB.instance.m_recipes.IndexOf(updatedCustomRecipe.Recipe);
+                    if (new_recipe_index == -1)
+                    {
+                        Logger.LogInfo("Updated recipe not found in the object DB.");
+                    }
+                    int old_recipe_index = ObjectDB.instance.m_recipes.IndexOf(curCrecipe.Recipe);
+                    if (old_recipe_index > -1 )
+                    {
+                        Logger.LogInfo("Old recipe still found in the object DB, removing.");
+                        Recipe oldRecipe = ObjectDB.instance.m_recipes[old_recipe_index];
+                        Logger.LogInfo($"Old recipe found: \nname:{oldRecipe.name}\namount:{oldRecipe.m_amount}\ncraftedAt:{oldRecipe.m_craftingStation.name}\nminStationLevel:{oldRecipe.m_minStationLevel}");
+                        foreach (var res in oldRecipe.m_resources)
+                        {
+                            Logger.LogInfo($"{res.m_resItem.name} req:{res.m_amount} u:{res.m_amountPerLevel}");
+                        }
+
+                    }
+                    if (new_recipe_index != -1)
+                    {
+                        Recipe currentRecipe = ObjectDB.instance.m_recipes[new_recipe_index];
+                        Logger.LogInfo($"Current recipe found: \nname:{currentRecipe.name}\namount:{currentRecipe.m_amount}\ncraftedAt:{currentRecipe.m_craftingStation.name}\nminStationLevel:{currentRecipe.m_minStationLevel}\nrecipeFor:{currentRecipe.m_item}\nrepairStation:{currentRecipe.m_repairStation.name}\n");
+                        foreach (var res in currentRecipe.m_resources)
+                        {
+                            Logger.LogInfo($"{res.m_resItem.name} req:{res.m_amount} u:{res.m_amountPerLevel}");
+                        }
+                    }
                 }
             }
 
-            // Adapted from Probablykory - for retrieval of a recipe from the live objectDB
-            // https://github.com/probablykory/valheim-mods/blob/main/MoreCrossbows/Extensions.cs#L40
-            static private Recipe GetRecipeFromDB(Recipe recipe)
-            {
-                int index = ObjectDB.instance.m_recipes.IndexOf(recipe);
-                if (index > -1)
-                {
-                    return ObjectDB.instance.m_recipes[index];
-                }
-                string name = recipe.ToString();
-                return ObjectDB.instance.m_recipes.FirstOrDefault(r => name.Equals(r.ToString()));
-            }
+
 
 
             private void CreateAndUpdateRecipe()
@@ -358,7 +387,11 @@ namespace ValheimArmory.common
                     recipe_cfg_default += $"{entry.Key},{entry.Value.Item1},{entry.Value.Item2}";
                 }
                 RecipeConfig = VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-recipe", recipe_cfg_default, $"Recipe to craft and upgrade costs. Find item ids: https://valheim.fandom.com/wiki/Item_IDs, at most 4 costs. Format: resouce_id,craft_cost,upgrade_cost eg: Wood,8,2|Iron,12,4|LeatherScraps,4,0", true);
-                RecipeConfigUpdater(RecipeConfig.Value);
+                if (RecipeConfigUpdater(RecipeConfig.Value, true) == false)
+                {
+                    Logger.LogWarning($"{ItemMetadata["name"]} has an invalid recipe. The default will be used instead.");
+                    RecipeConfigUpdater(recipe_cfg_default, true);
+                }
                 RecipeConfig.SettingChanged += RecipeConfig_SettingChanged;
             }
 
@@ -369,6 +402,7 @@ namespace ValheimArmory.common
 
             private void ItemDataConfigModifier(String target_attribute, float updatedValue, ItemDrop.ItemData itemData)
             {
+                if (itemData == null) { return; }
                 if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Updating {target_attribute} to {updatedValue}"); }
                 switch (target_attribute)
                 {
@@ -505,14 +539,17 @@ namespace ValheimArmory.common
                     case "amount":
                         // we don't modify the amount as an item attribute, its for recipes.
                         break;
-
+                    case "tool_level":
+                        itemData.m_shared.m_toolTier = (int)updatedValue;
+                        break;
                     default:
                         Logger.LogWarning($"{target_attribute} was not modified, ensure the pattern is correct.");
                         break;
                 }
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Updated {target_attribute} to {updatedValue}"); }
             }
 
-            private void RecipeConfigUpdater(String rawrecipe)
+            private bool RecipeConfigUpdater(String rawrecipe, bool startup = false)
             {
                 String[] RawRecipeEntries = rawrecipe.Split('|');
                 // Logger.LogInfo($"{RawRecipeEntries.Length} {string.Join(", ", RawRecipeEntries)}");
@@ -535,6 +572,15 @@ namespace ValheimArmory.common
                             //Logger.LogInfo($"recipe segments: {split_segments} from {recipe_entry}");
                         }
                         // Add a sanity check to ensure the prefab we are trying to use exists
+                        if (startup == false)
+                        {
+                            if (PrefabManager.Instance.GetPrefab(recipe_segments[0]) == null)
+                            {
+                                Logger.LogWarning($"{recipe_segments[0]} is an invalid prefab and does not exist.");
+                                return false;
+                            }
+                        }
+
                         if (VAConfig.EnableDebugMode.Value == true)
                         {
                             Logger.LogInfo($"prefab: {recipe_segments[0]} c:{recipe_segments[1]} u:{recipe_segments[2]}");
@@ -542,6 +588,7 @@ namespace ValheimArmory.common
                         updated_recipe.Add(recipe_segments[0], new Tuple<int, int>(Int32.Parse(recipe_segments[1]), Int32.Parse((recipe_segments[2]))));
                     }
                     //Logger.LogInfo("Done parsing recipe");
+                    UpdatedRecipeData.Clear();
                     foreach (KeyValuePair<string, Tuple<int, int>> entry in updated_recipe)
                     {
                         UpdatedRecipeData.Add(entry.Key, entry.Value);
@@ -553,14 +600,17 @@ namespace ValheimArmory.common
                         {
                             recipe_string += $" {entry.Key} c:{entry.Value.Item1} u:{entry.Value.Item2}";
                         }
-                        Logger.LogInfo($"Updated recipe:{recipe_string}"); 
+                        Logger.LogInfo($"Updated recipe:{recipe_string}");
                     }
+                    return true;
                 }
                 else
                 {
                     Logger.LogWarning($"Invalid recipe: {rawrecipe}. defaults will be used. Check your prefab names.");
                     UpdatedRecipeData = RecipeData;
+                    
                 }
+                return false;
             }
         }
 

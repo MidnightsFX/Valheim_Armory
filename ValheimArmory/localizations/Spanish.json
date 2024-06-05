@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Un poco más que un palo puntiagudo. ¡Disparado con suficiente fuerza, todavía duele!",
   "item_bolt_bronze": "Perno de bronce",
   "item_bolt_bronze_description": "Pernos de ballesta de bronce un poco más afilados que los de madera.",
-  "item_bolt_iron_poison": "Perno de veneno de hierro",
-  "item_bolt_iron_poison_description": "Un perno de hierro afilado con veneno, acelera la muerte.",
   "item_bolt_silver_frost": "Perno de hielo plateado",
-  "item_bolt_surtling_description": "Un núcleo de metal negro que alberga un núcleo de surtling, esto va a arder.",
   "item_bolt_obsidian": "Perno de obsidiana",
   "item_bolt_obsidian_description": "Un fragmento de completa oscuridad.",
   "item_arbalist_bronze": "Arbalista de bronce",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Dagas asesinas",
   "item_dagger_meteor_2h_description": "¿Dos fragmentos de oscuridad se cuelan por la noche, qué encontrarán?",
   "item_moder_shield": "Escudo de madres",
-  "item_moder_shield_description": "Un escudo sosteniendo hielo congelado, realzado por lágrimas de madre."
+  "item_moder_shield_description": "Un escudo sosteniendo hielo congelado, realzado por lágrimas de madre.",
+  "item_bolt_iron_poison": "Veneno flecha",
+  "item_bolt_iron_poison_description": "Un perno afilado con punta envenenada, velocidad de la muerte.",
+  "item_bolt_surtling_description": "Una punta afilada armada con un núcleo ardiente, esto va a quemar."
 }

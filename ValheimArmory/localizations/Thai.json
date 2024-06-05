@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "มากกว่าเพียงแค่ไม้แหกเล็กๆ ถ้าถูกยิงให้แรงพอ ก็ยังทำให้เจ็บ!",
   "item_bolt_bronze": "สลักสีทอง",
   "item_bolt_bronze_description": "ลูกธนูทองเล็กน้อยคมกว่าไม้แกน\n\nขอบคุณ!",
-  "item_bolt_iron_poison": "หอกพิษเหล็ก",
-  "item_bolt_iron_poison_description": "เส้นใยเหล็กคมแหลมที่ปล้ำด้วยยาพิษ, ความตายที่เร็วขึ้น\nโล่งใจ",
   "item_bolt_silver_frost": "ลูกฟูมเงิน",
-  "item_bolt_surtling_description": "เครื่องหลังเหล็กสีดำที่บรรจุไอคอร์เซิร์ตลิง นี่จะเผาไหม",
   "item_bolt_obsidian": "ลูกธนูโอบซิเดียน",
   "item_bolt_obsidian_description": "ชิ้นเล็ก ๆ ของความมืดที่สมบูรณ์\nขอบคุณ!",
   "item_arbalist_bronze": "Bronze arbelist in Thai is คีบอลทองแดง",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "ดาบฆ่า",
   "item_dagger_meteor_2h_description": "  สองชิ้นเล็ก ๆ ของความมืดคลุ้มคลึงผ่านคืน พวกเขาจะพบอะไร?",
   "item_moder_shield": "โล่ของม็อดเดิร์น",
-  "item_moder_shield_description": "ป้องกันด้วยน้ำแข็งที่ถูกโดยน้ำตาของแม่"
+  "item_moder_shield_description": "ป้องกันด้วยน้ำแข็งที่ถูกโดยน้ำตาของแม่",
+  "item_bolt_iron_poison": "ลูกธนูพิษ",
+  "item_bolt_iron_poison_description": "ประกายคมและเติมพิษ จากการเร่งความตาย",
+  "item_bolt_surtling_description": "ถูกปลุกด้วยแกนเหล็กคมชี้, นี่คือการเผาไหม้"
 }

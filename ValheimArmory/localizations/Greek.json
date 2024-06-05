@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Λίγο παραπάνω από έναν αιχμηρό ραβδί. Αν το πυροβολήσεις με δύναμη, παραμένει επώδυνο!",
   "item_bolt_bronze": "Χάλκινο βίδωμα\n",
   "item_bolt_bronze_description": "Βροντήσια βέλη κατά λίγο πιο αιχμηρά από τον πυρήνα του ξύλου.",
-  "item_bolt_iron_poison": "Σιδηρός δηλητήριο βέλος",
-  "item_bolt_iron_poison_description": "Ένας αιχμηρός σιδερένιος βέργος με άκρη δηλητήριο, επιταχύνοντας τον θάνατο.",
   "item_bolt_silver_frost": "Ασημένιος παγετός βέργα",
-  "item_bolt_surtling_description": "Ένας μαύρος μεταλλικός πυρήνας που φιλοξενεί έναν πυρήνα surtling, αυτό θα καεί.",
   "item_bolt_obsidian": "Οψιανή βίδα",
   "item_bolt_obsidian_description": "Ένα κομμάτι από απόλυτο σκοτάδι.",
   "item_arbalist_bronze": "Χάλκινος αρβαλιστής",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Δολοφόνος μαχαίρια( Μαχαίρια δολοφόνου)",
   "item_dagger_meteor_2h_description": "Δύο λεπτές σκιές του σκότους ξεφεύγουν από τη νύχτα, τι θα βρουν;",
   "item_moder_shield": "Ασπίδα μοντέρνα",
-  "item_moder_shield_description": "Ένας ασπίδα κρατώντας παγωμένο πάγο, ενισχυμένος από δάκρυα μητέρας."
+  "item_moder_shield_description": "Ένας ασπίδα κρατώντας παγωμένο πάγο, ενισχυμένος από δάκρυα μητέρας.",
+  "item_bolt_iron_poison": "Τοξική βολή",
+  "item_bolt_iron_poison_description": "Ένας αιχμηρός βέλος με τοξικό άκρο, που επιταχύνει το θάνατο.",
+  "item_bolt_surtling_description": "Ένας κοφτερός κορυφαίος εξοπλισμένος με πυρήνα surtling, αυτό θα κάψει."
 }

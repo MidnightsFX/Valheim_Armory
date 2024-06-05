@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Un po' più di un bastone appuntito. Sparato abbastanza forte, fa comunque male!",
   "item_bolt_bronze": "Bolide di bronzo",
   "item_bolt_bronze_description": "I bolidi di balestra in bronzo sono un po' più affilati dei bolidi di legno.",
-  "item_bolt_iron_poison": "Bolide avvelenato di ferro",
-  "item_bolt_iron_poison_description": "Un bolide di ferro affilato con punta avvelenata, morte accelerata.",
   "item_bolt_silver_frost": "Bolide di gelo d'argento",
-  "item_bolt_surtling_description": "Un nucleo di metallo nero che ospita un nucleo di surtling, questo brucia.",
   "item_bolt_obsidian": "Bolide di ossidiana",
   "item_bolt_obsidian_description": "Un frammento di completa oscurità.",
   "item_arbalist_bronze": "Arbalist di bronzo",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Pugnali assassini",
   "item_dagger_meteor_2h_description": "Due fette di oscurità si insinuano nella notte, cosa troveranno?",
   "item_moder_shield": "Scudo di Moders",
-  "item_moder_shield_description": "Uno scudo che tiene ghiaccio congelato, potenziato dalle lacrime moderne."
+  "item_moder_shield_description": "Uno scudo che tiene ghiaccio congelato, potenziato dalle lacrime moderne.",
+  "item_bolt_iron_poison": "Dardo avvelenato",
+  "item_bolt_iron_poison_description": "Un bullone affilato punteggiato di veleno, morte in corsa.",
+  "item_bolt_surtling_description": "Un pungente picco armato con un nucleo infuocato, questo brucerà."
 }

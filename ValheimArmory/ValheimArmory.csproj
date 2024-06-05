@@ -102,6 +102,7 @@
     <EmbeddedResource Include="localizations\Thai.json" />
     <EmbeddedResource Include="localizations\Turkish.json" />
     <EmbeddedResource Include="localizations\Ukrainian.json" />
+    <None Include="Package\CHANGELOG.md" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>

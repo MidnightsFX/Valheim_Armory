@@ -7,6 +7,8 @@
       "Path": "$.ItemInfo[?(@.Type == 'Swords')].Items",
       "Action": "AppendAll",
       "Value": [
+		"VAFlint_greatsword",
+		"VAFlint_Sword",
         "VAAntler_Sword",
         "VABonemassGreatsword",
         "VAbronze_greatsword",
@@ -15,7 +17,9 @@
         "VASwordChitin",
         "VASwordModer",
         "VAVine_Sword",
-        "VAYagluth_greatsword"
+        "VAYagluth_greatsword",
+		"VASwordQueen",
+		"VAQueen_greatsword"
       ]
     },
     {
@@ -57,10 +61,19 @@
         "VAYagluth_greatsword"
       ]
     },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Swords')].ItemsByBoss.defeated_queen",
+      "Action": "AppendAll",
+      "Value": [
+        "VASwordQueen",
+		"VAQueen_greatsword"
+      ]
+    },
     {
       "Path": "$.ItemInfo[?(@.Type == 'TwoHandAxes')].Items",
       "Action": "AppendAll",
       "Value": [
+		"VAFlint_greataxe",
         "VAAntler_greataxe",
         "VAblackmetal_battleaxe",
         "VAbronze_battleaxe"
@@ -98,7 +111,11 @@
         "VAdagger_iron",
         "VAdagger_iron_2h",
         "VAdagger_silver",
-        "VAdagger_silver_2h"
+        "VAdagger_silver_2h",
+		"VAdagger_meteor",
+		"VAdagger_meteor_2h",
+		"VAdagger_queen",
+		"VAdagger_moder"
       ]
     },
     {
@@ -130,7 +147,17 @@
       "Action": "AppendAll",
       "Value": [
         "VAdagger_silver",
-        "VAdagger_silver_2h"
+        "VAdagger_silver_2h",
+		"VAdagger_moder"
+      ]
+    },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Knives')].ItemsByBoss.defeated_queen",
+      "Action": "AppendAll",
+      "Value": [
+		"VAdagger_queen",
+        "VAdagger_meteor",
+        "VAdagger_meteor_2h"
       ]
     },
     {
@@ -153,7 +180,8 @@
       "Value": [
         "VAblackmetal_sledge",
         "VABonemassWarhammer",
-        "VAElderHammer"
+        "VAElderHammer",
+		"VASilverSledge"
       ]
     },
     {
@@ -161,6 +189,13 @@
       "Action": "AppendAll",
       "Value": [
         "VAElderHammer"
+      ]
+    },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Sledges')].ItemsByBoss.defeated_dragon",
+      "Action": "AppendAll",
+      "Value": [
+        "VASilverSledge"
       ]
     },
     {
@@ -181,10 +216,12 @@
       "Path": "$.ItemInfo[?(@.Type == 'Polearms')].Items",
       "Action": "AppendAll",
       "Value": [
+		"VAAtgeir_Flint",
         "VAatgeir_antler",
         "VAAtgeirChitin",
         "VASilverAtgeir",
-        "VAYagluthAtgeir"
+        "VAYagluthAtgeir",
+		"VAMeteorAtgeir"
       ]
     },
     {
@@ -209,6 +246,13 @@
         "VAYagluthAtgeir"
       ]
     },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Polearms')].ItemsByBoss.defeated_queen",
+      "Action": "AppendAll",
+      "Value": [
+        "VAMeteorAtgeir"
+      ]
+    },
     {
       "Path": "$.ItemInfo[?(@.Type == 'Spears')].Items",
       "Action": "AppendAll",
@@ -231,7 +275,8 @@
         "VAArbalistBronze",
         "VACrossbowBronze",
         "VACrossbowElder",
-        "VACrossbowModer"
+        "VACrossbowModer",
+		"VAQueen_bow"
       ]
     },
     {
@@ -263,6 +308,29 @@
         "VAArbalistBronze"
       ]
     },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Bows')].ItemsByBoss.defeated_queen",
+      "Action": "AppendAll",
+      "Value": [
+        "VAQueen_bow"
+      ]
+    },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'TowerShields')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VAsilver_tower",
+		"VAModer_shield"
+      ]
+    },
+	    {
+      "Path": "$.ItemInfo[?(@.Type == 'TowerShields')].ItemsByBoss.defeated_dragon",
+      "Action": "AppendAll",
+      "Value": [
+        "VAsilver_tower",
+		"VAModer_shield"
+      ]
+    },
     {
       "Path": "$.ItemInfo[?(@.Type == 'Bucklers')].Items",
       "Action": "AppendAll",
@@ -290,6 +358,83 @@
       "Value": [
         "VAElderRoundShield"
       ]
-    }
+    },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Fists')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VAFist_Flint",
+		"VAFist_Bronze",
+		"VAFist_Iron",
+		"VAFist_Yagluth"
+      ]
+    },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Fists')].ItemsByBoss.defeated_gdking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAFist_Bronze"
+      ]
+    },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Fists')].ItemsByBoss.defeated_bonemass",
+      "Action": "AppendAll",
+      "Value": [
+        "VAFist_Iron"
+      ]
+    },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Fists')].ItemsByBoss.defeated_goblinking",
+      "Action": "AppendAll",
+      "Value": [
+        "VAFist_Yagluth"
+      ]
+    },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Staffs')].Items",
+      "Action": "AppendAll",
+      "Value": [
+        "VAStaff_Druid_Spirit",
+		"VAStaff_Druid_Poison",
+		"VAStaff_Druid_Fire",
+		"VAStaff_Druid_Ice",
+		"VAStaff_Spirit",
+		"VAStaff_Poison",
+		"VABlood_Bones_pickaxe",
+		"VABlood_bone_bow"
+      ]
+    },
+		{
+      "Path": "$.ItemInfo[?(@.Type == 'Staffs')].ItemsByBoss.defeated_gdking",
+      "Action": "AppendAll",
+      "Value": [
+        "VABlood_Bones_pickaxe"
+      ]
+    },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Staffs')].ItemsByBoss.defeated_bonemass",
+      "Action": "AppendAll",
+      "Value": [
+        "VAStaff_Druid_Spirit",
+		"VAStaff_Druid_Poison",
+		"VAStaff_Druid_Fire"
+      ]
+    },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Staffs')].ItemsByBoss.defeated_dragon",
+      "Action": "AppendAll",
+      "Value": [
+        "VAStaff_Druid_Ice",
+		"VABlood_bone_bow"
+      ]
+    },
+	{
+      "Path": "$.ItemInfo[?(@.Type == 'Staffs')].ItemsByBoss.defeated_queen",
+      "Action": "AppendAll",
+      "Value": [
+        "VAStaff_Spirit",
+		"VAStaff_Poison"
+      ]
+    },
   ]
 }

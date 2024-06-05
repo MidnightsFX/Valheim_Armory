@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "比尖头的树枝强点，不过用力点射还是挺痛的。",
   "item_bolt_bronze": "青铜螺栓",
   "item_bolt_bronze_description": "比圆木螺栓更锋利.",
-  "item_bolt_iron_poison": "浸毒铁螺栓",
-  "item_bolt_iron_poison_description": "一件沾了毒的铁螺栓，能加速死亡",
   "item_bolt_silver_frost": "霜银螺栓",
-  "item_bolt_surtling_description": "黑金加上焰灵之核，这肯定能烧起来。",
   "item_arbalist_bronze": "青铜劲弩",
   "item_arbalist_bronze_description": "相比普通弩威力更强，不过要更笨重一些.",
   "item_crossbow_bronze": "青铜弩",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "刺客匕首刺客匕首",
   "item_dagger_meteor_2h_description": "兩道黑暗從夜晚悄悄地潛入，它們將會找到什麼？",
   "item_moder_shield": "現代盾牌现代盾牌",
-  "item_moder_shield_description": "一個擁有冰凍冰塊的盾牌，由現代的淚水增強。"
+  "item_moder_shield_description": "一個擁有冰凍冰塊的盾牌，由現代的淚水增強。",
+  "item_bolt_iron_poison": "毒箭毒箭",
+  "item_bolt_iron_poison_description": "一根尖锐的螺栓尖端涂上毒药，速度致命。",
+  "item_bolt_surtling_description": "一根尖銳的尖刺裝載著一個火花核心，這會燃燒起來。"
 }

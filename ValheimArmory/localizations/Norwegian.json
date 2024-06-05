@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Litt mer enn en spiss pinne. Skutt hardt nok, gjør det fortsatt vondt!",
   "item_bolt_bronze": "Bronsebolt",
   "item_bolt_bronze_description": "Bronsearmbrøstbolter er litt skarpere enn kjerneved.",
-  "item_bolt_iron_poison": "Jerngiftbolt",
-  "item_bolt_iron_poison_description": "En skarp jernbolt spisset med gift, som akselererer død.",
   "item_bolt_silver_frost": "Sølvfrostbolt",
-  "item_bolt_surtling_description": "En sortmetallkjerne som huser en surtlingkjerne, dette kommer til å brenne.",
   "item_bolt_obsidian": "Obsidianbolt",
   "item_bolt_obsidian_description": "Et stykke fullstendig mørke.",
   "item_arbalist_bronze": "Bronsearbelist",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Assassin dolker",
   "item_dagger_meteor_2h_description": "To skiver av mørke sniker seg gjennom natten, hva vil de finne?",
   "item_moder_shield": "Mors skjold",
-  "item_moder_shield_description": "Et skjold som holder på frossen is, forsterket av mors tårer."
+  "item_moder_shield_description": "Et skjold som holder på frossen is, forsterket av mors tårer.",
+  "item_bolt_iron_poison": "Giftig pil",
+  "item_bolt_iron_poison_description": "Et skarpt bolt spisset med gift, fartende død.",
+  "item_bolt_surtling_description": "Et spiss spyd væpnet med en surtling-kjerne, dette kommer til å brenne."
 }

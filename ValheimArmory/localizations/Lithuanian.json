@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Kiek daugiau nei smulkus lazdelė. Jei pakankamai stipriai šauta, tai vis tiek skauda!",
   "item_bolt_bronze": "Bronzos bulta",
   "item_bolt_bronze_description": "Bronzos arbaletų bulta šiek tiek aštresnė nei branduolinė.",
-  "item_bolt_iron_poison": "Geležies nuodinga bulta",
-  "item_bolt_iron_poison_description": "Aštri geležies bulta, užversta nuodais, skubanti mirtis.",
   "item_bolt_silver_frost": "Sidabro šerkšno bulta",
-  "item_bolt_surtling_description": "Juodmetalinis branduolys, kuriame yra surtlingo branduolys, tai sudegs.",
   "item_bolt_obsidian": "Obsidiano bulta",
   "item_bolt_obsidian_description": "Skaidulė visiškai tamsybe.",
   "item_arbalist_bronze": "Bronzos arbelistas",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Žudikas peiliai",
   "item_dagger_meteor_2h_description": "Du tamsos šešėliai slenka per naktį, ką jie ras?",
   "item_moder_shield": "Modernus skydas",
-  "item_moder_shield_description": "Skydas laikantis sustingo ledo, sustiprintas modernių ašarų."
+  "item_moder_shield_description": "Skydas laikantis sustingo ledo, sustiprintas modernių ašarų.",
+  "item_bolt_iron_poison": "Nuodingas strėlė",
+  "item_bolt_iron_poison_description": "Aštrus strėlė užnuodyta nuodais, skubantis mirtis.",
+  "item_bolt_surtling_description": "Aštri ašmenimi ginkluotas su surtling branduoliu, tai tikrai sudegs."
 }

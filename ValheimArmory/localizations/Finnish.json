@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Vähän enemmän kuin terävä keppi. Tarpeeksi kovaa ammuttuna se sattuu silti!",
   "item_bolt_bronze": "Pronssinen nasta",
   "item_bolt_bronze_description": "Pronssiset ristipaalut ovat hieman terävämpiä kuin ydinpuu.",
-  "item_bolt_iron_poison": "Rautainen myrkkynasta",
-  "item_bolt_iron_poison_description": "Myrkkyä sisältävä terävä rautanasta, nopeuttaen kuolemaa.",
   "item_bolt_silver_frost": "Hopeinen jääpalanasta",
-  "item_bolt_surtling_description": "Mustametalliydin, jossa surtling-ydin, tämä polttaa.",
   "item_bolt_obsidian": "Obsidian-nasta",
   "item_bolt_obsidian_description": "Pala täydellistä pimeyttä.",
   "item_arbalist_bronze": "Pronssinen arbalisti",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Assassinin tikarit",
   "item_dagger_meteor_2h_description": "Kaksi pientä pimeyden viiltoa hiipii läpi yön, mitä he löytävät?",
   "item_moder_shield": "Äidin kilpi",
-  "item_moder_shield_description": "Kilpi pitämässä jäätynyttä jäätä, vahvistettuna äitien kyynelillä."
+  "item_moder_shield_description": "Kilpi pitämässä jäätynyttä jäätä, vahvistettuna äitien kyynelillä.",
+  "item_bolt_iron_poison": "Myrkyllinen nuoli",
+  "item_bolt_iron_poison_description": "Terävä myrkyllä terästetty pultti, nopea kuolema.",
+  "item_bolt_surtling_description": "Pistävä piikki varustettuna suhisevalla ytimestä, tämä tulee polttamaan."
 }

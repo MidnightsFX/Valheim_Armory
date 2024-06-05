@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "뾰족한 막대기보다 조금 더. 충분히 세게 쐈는데도 여전히 아프다!",
   "item_bolt_bronze": "청동 볼트",
   "item_bolt_bronze_description": "청동 석궁은 통나무보다 약간 더 날카롭습니다.",
-  "item_bolt_iron_poison": "철제 독 볼트",
-  "item_bolt_iron_poison_description": "독이 묻어 있는 날카로운 철제 화살로, 죽음을 가속화합니다.",
   "item_bolt_silver_frost": "은빛 볼트",
-  "item_bolt_surtling_description": "부글부글 끓어오르는 코어를 담고 있는 검은색 금속 코어, 이건 타버릴 거예요.",
   "item_bolt_obsidian": "흑요석 볼트",
   "item_bolt_obsidian_description": "완전한 어둠의 파편",
   "item_arbalist_bronze": "청동 석궁술사",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "암살자 단검",
   "item_dagger_meteor_2h_description": "어둠의 두 조각이 밤을 헤치고 들어옵니다, 그들은 무엇을 찾을까요?",
   "item_moder_shield": "모더스 실드",
-  "item_moder_shield_description": "얼어붙은 얼음을 지닌 방패, 모던의 눈물로 더욱 강화되었다."
+  "item_moder_shield_description": "얼어붙은 얼음을 지닌 방패, 모던의 눈물로 더욱 강화되었다.",
+  "item_bolt_iron_poison": "독 화살",
+  "item_bolt_iron_poison_description": "마독으로 뒤덮인 날카로운 나사, 죽음을 가속시키는 것.",
+  "item_bolt_surtling_description": "날카로운 스파이크에 무장한 서틀링 코어, 이건 불타오를 거야."
 }

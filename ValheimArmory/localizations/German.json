@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Etwas mehr als ein spitzer Stock. Wird hart genug geschossen, tut es auch verdammt weh!",
   "item_bolt_bronze": "Bronzebolzen",
   "item_bolt_bronze_description": "Armbrustbolzen aus Bronze, etwas schärfer als Kernholzbolzen.",
-  "item_bolt_iron_poison": "Eisen-Giftbolzen",
-  "item_bolt_iron_poison_description": "Ein scharfer eiserner Bolzen, der mit Gift versetzt ist um den Tod zu beschleunigen.",
   "item_bolt_silver_frost": "Silberfrostbolzen",
-  "item_bolt_surtling_description": "Ein Schwarzmetallkern der einen Surtlingkern enthält, das wird verdammt nochmal brennen.",
   "item_bolt_obsidian": "Obsidianbolzen",
   "item_bolt_obsidian_description": "Ein Splitter völliger Dunkelheit.",
   "item_arbalist_bronze": "Bronzearbalist",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Attentäter Dolche",
   "item_dagger_meteor_2h_description": "Zwei Schattenstreifen schleichen durch die Nacht, was werden sie finden?",
   "item_moder_shield": "Moders SchildI'm not sure what  refers to. Can you provide more context or clarify the meaning?",
-  "item_moder_shield_description": "Ein Schild, der gefrorenes Eis hält, verstärkt durch Muttertränen."
+  "item_moder_shield_description": "Ein Schild, der gefrorenes Eis hält, verstärkt durch Muttertränen.",
+  "item_bolt_iron_poison": "Giftbolzen",
+  "item_bolt_iron_poison_description": "Eine scharfe Bolzen, gespickt mit Gift, die den Tod beschleunigt.",
+  "item_bolt_surtling_description": "Ein spitzer Stachel bewaffnet mit einem Surtling-Kern, das wird brennen."
 }

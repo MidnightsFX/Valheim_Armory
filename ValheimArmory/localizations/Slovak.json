@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Trochu viac ako špicatá palica. Ak je vystrelená dostatočne tvrdo, stále to bolí!",
   "item_bolt_bronze": "Bronzový šrób",
   "item_bolt_bronze_description": "Bronzové kuše šípy sú trochu ostrejšie ako jadrovec.",
-  "item_bolt_iron_poison": "Otravný železný šíp",
-  "item_bolt_iron_poison_description": "Ostrý železný šroub s jedovatou špičkou, urychlujúca smrť.",
   "item_bolt_silver_frost": "strieborný mrazový blesk",
-  "item_bolt_surtling_description": "Jadro čierneho kovu obsahujúce jadro surtlingu, to bude horieť.",
   "item_bolt_obsidian": "Obsidiánový šíp",
   "item_bolt_obsidian_description": "Úlomok úplnej tmy.",
   "item_arbalist_bronze": "Bronzový kušík",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Vražedné dýky",
   "item_dagger_meteor_2h_description": "Dve šliapky temnoty sa plížia cez noc, čo nájdu?",
   "item_moder_shield": "Moderný štít",
-  "item_moder_shield_description": "Štít držiaci zamrznutý ľad, zosilnený slzami matky."
+  "item_moder_shield_description": "Štít držiaci zamrznutý ľad, zosilnený slzami matky.",
+  "item_bolt_iron_poison": "Jedovatý šíp",
+  "item_bolt_iron_poison_description": "Ostrý šroub s jedom, rýchly smrť.",
+  "item_bolt_surtling_description": "Ostro naozajúci špičiak ozbrojený surtlingovým jadrom, toto bude horieť."
 }

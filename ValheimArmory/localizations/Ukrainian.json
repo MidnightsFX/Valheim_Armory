@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Трохи більше, ніж гострий палиця. Якщо стріляти достатньо сильно, все ще болить!",
   "item_bolt_bronze": "Бронзовий болт",
   "item_bolt_bronze_description": "Бронзові арбалетні стріли трохи гостріші, ніж ядро деревини.",
-  "item_bolt_iron_poison": "Залізний отруйний болт",
-  "item_bolt_iron_poison_description": "Гострий залізний болт з отрутою, що приносить смерть.",
   "item_bolt_silver_frost": "Срібний морозний блискучий штиль",
-  "item_bolt_surtling_description": "Чорний металевий корпус, в якому знаходиться серце суртлінга, це буде палити.",
   "item_bolt_obsidian": "Обсидіанова болт",
   "item_bolt_obsidian_description": "Фрагмент повного темряви.",
   "item_arbalist_bronze": "Бронзовий арбалет",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Ножі асасина",
   "item_dagger_meteor_2h_description": "Два шматочки темряви прокрадаються через ніч, що вони знайдуть?",
   "item_moder_shield": "Модернізований щит",
-  "item_moder_shield_description": "Щит, утримуючий замерзле лід, посилений сльозами матері."
+  "item_moder_shield_description": "Щит, утримуючий замерзле лід, посилений сльозами матері.",
+  "item_bolt_iron_poison": "Отруйна стріла",
+  "item_bolt_iron_poison_description": "Гострий болт з отрутою, що несе смерть у спіху.",
+  "item_bolt_surtling_description": "Заокруглений шип, зброєний серцевиною суртлінгу, це спалиться."
 }

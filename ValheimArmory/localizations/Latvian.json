@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Vairāk nekā asa nūjiņa. Piespiedi pietiekami cieti, tas joprojām sāp! \n\nVairāk nekā asa nūjiņa. Piespiedi pietiekami cieti, tas joprojām sāp!",
   "item_bolt_bronze": "Bronzes sprauga",
   "item_bolt_bronze_description": "Bronza stieple strēlnieku bultas nedaudz asākas nekā kodolu koksnes.",
-  "item_bolt_iron_poison": "Dzelzs indes bulta",
-  "item_bolt_iron_poison_description": "Asā dzelzs bults ar indi galā, nāvējoša nāve.",
   "item_bolt_silver_frost": "Zelta salna sprādziens",
-  "item_bolt_surtling_description": "Melna metāla korpusā ir iekšējais surtlinga kodols, tas gāzis sadegs.",
   "item_bolt_obsidian": "Obsidian bulta",
   "item_bolt_obsidian_description": "Gabals pilnīgas tumsas.",
   "item_arbalist_bronze": "Bronze arbelist \nBronzas arbalests",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Assasīna duncis",
   "item_dagger_meteor_2h_description": "Divas tumsas šķēles slepeni līst cauri naktij, ko tās atradīs?",
   "item_moder_shield": "Moders vairogs",
-  "item_moder_shield_description": "Vairogs, kas tur salušu ledus, pastiprināts ar mātes asarām."
+  "item_moder_shield_description": "Vairogs, kas tur salušu ledus, pastiprināts ar mātes asarām.",
+  "item_bolt_iron_poison": "Indu bulta",
+  "item_bolt_iron_poison_description": "Asas skrūves galva ar indi, nāvīgs ātrums.",
+  "item_bolt_surtling_description": "As pointed spike armed with a surtling core, this is gunna burn. Kā asa sprādze, apbruņota ar surtling kodolu, tas noteikti sadedzinās."
 }

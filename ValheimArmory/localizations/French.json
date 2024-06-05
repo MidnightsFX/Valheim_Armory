@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "Un peu plus qu'un bâton pointu. Tiré assez fort, ça fait quand même mal!",
   "item_bolt_bronze": "Boulon en bronze",
   "item_bolt_bronze_description": "Les boulons de l'arbalète en bronze sont un peu plus tranchants que ceux en bois de base.",
-  "item_bolt_iron_poison": "Boulon empoisonné en fer",
-  "item_bolt_iron_poison_description": "Un boulon en fer pointu avec du poison, une mort accélérée.",
   "item_bolt_silver_frost": "Boulon de givre en argent",
-  "item_bolt_surtling_description": "Un noyau en métal noir abritant un noyau Surtling, ça va brûler.",
   "item_bolt_obsidian": "Boulon en obsidienne",
   "item_bolt_obsidian_description": "Un éclat de ténèbres complètes.",
   "item_arbalist_bronze": "Arbalète en bronze",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "Poignards d'assassin",
   "item_dagger_meteor_2h_description": "Deux lames d'obscurité se faufilent dans la nuit, que vont-elles trouver ?",
   "item_moder_shield": "bouclier moderne",
-  "item_moder_shield_description": "Un bouclier tenant de la glace gelée, renforcé par les larmes des moders."
+  "item_moder_shield_description": "Un bouclier tenant de la glace gelée, renforcé par les larmes des moders.",
+  "item_bolt_iron_poison": "Flèche empoisonnée",
+  "item_bolt_iron_poison_description": "Un boulon pointu trempé dans du poison, la mort rapide.",
+  "item_bolt_surtling_description": "Un pic pointu armé d'un noyau de surtling, ça va brûler."
 }

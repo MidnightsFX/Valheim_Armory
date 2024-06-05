@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "მცირე რაიმე მუხლის ზღვის ზევით. სიკვდილის შემძლე ჩრდილებით, ჯერ უსადენოდ ტყუილი უკეთესია!",
   "item_bolt_bronze": "ბრონზის ბოლტი",
   "item_bolt_bronze_description": "ბრონზის გერები ცოტა დახრილი არიან, ვიდრე კორევუდი.",
-  "item_bolt_iron_poison": "რკალი შავი მტრის დაკანი",
-  "item_bolt_iron_poison_description": "თანა ირინის სინარით გაზეთი გასაფრთხელად, სიკვდილის გასწორება.",
   "item_bolt_silver_frost": "ვერცხლის ყინური ბოლტი",
-  "item_bolt_surtling_description": "შავი მეტალური ძროხა სურთლინგის ძროხას შეიცავს, ეს გაქებად იქნება.",
   "item_bolt_obsidian": "ზვიამანი საწებელი",
   "item_bolt_obsidian_description": "უკანასკნელი სრია.",
   "item_arbalist_bronze": "ბრონზის არბელისტი",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "მკვლე გუნდა",
   "item_dagger_meteor_2h_description": "ორი წლის წინაშე ბნელის ორი შინ დაიპარსა, რა იპარებენ ისინი?",
   "item_moder_shield": "დედამოდრის ფარი",
-  "item_moder_shield_description": "გაფართოების საფეხუმი გაყინული ყინულებით გაზეთილის მეგობარი."
+  "item_moder_shield_description": "გაფართოების საფეხუმი გაყინული ყინულებით გაზეთილის მეგობარი.",
+  "item_bolt_iron_poison": "შიმთა კული",
+  "item_bolt_iron_poison_description": "მრუდი სასწავლი დანართი, სიკვდილის სწავლით გაქრობა.",
+  "item_bolt_surtling_description": "წემი სართო კორეით დაშინებული წინდათი, ეს გაიქებს."
 }

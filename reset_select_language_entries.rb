@@ -3,7 +3,7 @@
 require "json"
 
 language_files = Dir["ValheimArmory/localizations/*"]
-keys_to_remove = %w[item_arrow_chitin_description]
+keys_to_remove = %w[item_bolt_iron_poison item_bolt_iron_poison_description item_bolt_surtling_description]
 
 language_files.each do |lang_file|
   next if lang_file == "ValheimArmory/localizations/English.json"

@@ -11,10 +11,7 @@
   "item_bolt_wood_description": "「尖った棒より少し大きい。 十分に強く撃つと、それでも痛い！」",
   "item_bolt_bronze": "銅のボルト\n(どうのボルト)",
   "item_bolt_bronze_description": "銅のクロスボウの矢はコアウッドより少し鋭い。",
-  "item_bolt_iron_poison": "鉄の毒矢",
-  "item_bolt_iron_poison_description": "毒で先の鋭い鉄のボルト、速やかな死。",
   "item_bolt_silver_frost": "銀の霜のボルト",
-  "item_bolt_surtling_description": "ブラックメタルコアにサートリングコアを内蔵し、これは燃えるぞ。",
   "item_bolt_obsidian": "黒曜石のボルト\n黒曜石のボルト",
   "item_bolt_obsidian_description": "完全な暗闇の破片。",
   "item_arbalist_bronze": "ブロンズアルバリスト",
@@ -162,5 +159,8 @@
   "item_dagger_meteor_2h": "暗殺者の短剣",
   "item_dagger_meteor_2h_description": "夜をかいくぐる2つの暗黒の切れ端、彼らは何を見つけるのだろうか？",
   "item_moder_shield": "モダンシールド(Modan shīrudo)",
-  "item_moder_shield_description": "凍った氷を保持する盾、母親の涙によって強化された。(Japanese translation)"
+  "item_moder_shield_description": "凍った氷を保持する盾、母親の涙によって強化された。(Japanese translation)",
+  "item_bolt_iron_poison": "毒の矢毒の矢",
+  "item_bolt_iron_poison_description": "毒を含んだ鋭いボルトが速やかに死をもたらす。",
+  "item_bolt_surtling_description": "サートリングコアで武装した尖ったスパイク、これは燃えるぞ。"
 }

@@ -505,8 +505,9 @@ namespace ValheimArmory
                 {
                     { "Bronze", new Tuple<int, int>(4, 2) },
                     { "Stone", new Tuple<int, int>(20, 10) },
-                    { "CryptKey", new Tuple<int, int>(1, 1) },
-                    { "TrophyTheElder", new Tuple<int, int>(1, 1) }
+                    { "CryptKey", new Tuple<int, int>(1, 0) },
+                    { "TrophyTheElder", new Tuple<int, int>(1, 0) },
+                    { "RoundLog", new Tuple<int, int>(1, 0) }
                 }
             );
 
@@ -536,8 +537,9 @@ namespace ValheimArmory
                 {
                     { "ElderBark", new Tuple<int, int>(10, 5) },
                     { "Obsidian", new Tuple<int, int>(20, 10) },
-                    { "DragonTear", new Tuple<int, int>(10, 10) },
-                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) }
+                    { "DragonTear", new Tuple<int, int>(10, 0) },
+                    { "TrophyDragonQueen", new Tuple<int, int>(1, 0) },
+                    { "Silver", new Tuple<int, int>(0, 6) },
                 }
             );
 
@@ -569,7 +571,8 @@ namespace ValheimArmory
                     { "YggdrasilWood", new Tuple<int, int>(10, 5) },
                     { "Eitr", new Tuple<int, int>(20, 10) },
                     { "JuteBlue", new Tuple<int, int>(4, 0) },
-                    { "TrophySeekerQueen", new Tuple<int, int>(1, 1) }
+                    { "TrophySeekerQueen", new Tuple<int, int>(1, 0) },
+                    { "Carapace", new Tuple<int, int>(0, 4) },
                 }
             );
         }
@@ -662,8 +665,9 @@ namespace ValheimArmory
                 {
                     { "Bronze", new Tuple<int, int>(2, 1) },
                     { "Stone", new Tuple<int, int>(16, 8) },
-                    { "CryptKey", new Tuple<int, int>(1, 1) },
-                    { "TrophyTheElder", new Tuple<int, int>(1, 1) }
+                    { "CryptKey", new Tuple<int, int>(1, 0) },
+                    { "TrophyTheElder", new Tuple<int, int>(1, 0) },
+                    { "RoundLog", new Tuple<int, int>(0, 4) }
                 }
             );
 
@@ -694,8 +698,10 @@ namespace ValheimArmory
                 {
                     { "ElderBark", new Tuple<int, int>(4, 2) },
                     { "Obsidian", new Tuple<int, int>(30, 15) },
-                    { "DragonTear", new Tuple<int, int>(10, 10) },
-                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) }
+                    { "DragonTear", new Tuple<int, int>(10, 0) },
+                    { "TrophyDragonQueen", new Tuple<int, int>(1, 0) },
+                    { "Silver", new Tuple<int, int>(0, 2) },
+                    { "JuteRed", new Tuple<int, int>(0, 2) }
                 }
             );
 
@@ -809,8 +815,10 @@ namespace ValheimArmory
                 {
                     { "WitheredBone", new Tuple<int, int>(15, 5) },
                     { "Iron", new Tuple<int, int>(30, 15) },
-                    { "Wishbone", new Tuple<int, int>(1, 1) },
-                    { "TrophyBonemass", new Tuple<int, int>(1, 1) }
+                    { "Wishbone", new Tuple<int, int>(1, 0) },
+                    { "TrophyBonemass", new Tuple<int, int>(1, 0) },
+                    { "ElderBark", new Tuple<int, int>(0, 2) },
+                    { "LeatherScraps", new Tuple<int, int>(0, 2) }
                 }
             );
 
@@ -839,8 +847,10 @@ namespace ValheimArmory
                 {
                     { "BlackMetal", new Tuple<int, int>(10, 5) },
                     { "Iron", new Tuple<int, int>(4, 2) },
-                    { "YagluthDrop", new Tuple<int, int>(2, 2) },
-                    { "TrophyGoblinKing", new Tuple<int, int>(1, 1) }
+                    { "YagluthDrop", new Tuple<int, int>(2, 0) },
+                    { "TrophyGoblinKing", new Tuple<int, int>(1, 0) },
+                    { "Tar", new Tuple<int, int>(0, 3) },
+                    { "LinenThread", new Tuple<int, int>(0, 2) }
                 }
             );
 
@@ -926,7 +936,8 @@ namespace ValheimArmory
                     { "YggdrasilWood", new Tuple<int, int>(10, 5) },
                     { "Eitr", new Tuple<int, int>(20, 10) },
                     { "JuteBlue", new Tuple<int, int>(4, 2) },
-                    { "TrophySeekerQueen", new Tuple<int, int>(1, 1) }
+                    { "TrophySeekerQueen", new Tuple<int, int>(1, 0) },
+                    { "Carapace", new Tuple<int, int>(0, 8) },
                 }
             );
 
@@ -958,7 +969,8 @@ namespace ValheimArmory
                     { "YggdrasilWood", new Tuple<int, int>(3, 1) },
                     { "Eitr", new Tuple<int, int>(10, 5) },
                     { "JuteBlue", new Tuple<int, int>(3, 1) },
-                    { "TrophySeekerQueen", new Tuple<int, int>(1, 1) }
+                    { "TrophySeekerQueen", new Tuple<int, int>(1, 0) },
+                    { "Carapace", new Tuple<int, int>(0, 6) },
                 }
             );
         }
@@ -1149,8 +1161,9 @@ namespace ValheimArmory
                 {
                     { "Bronze", new Tuple<int, int>(4, 2) },
                     { "Stone", new Tuple<int, int>(30, 15) },
-                    { "CryptKey", new Tuple<int, int>(1, 1) },
-                    { "TrophyTheElder", new Tuple<int, int>(1, 1) }
+                    { "CryptKey", new Tuple<int, int>(1, 0) },
+                    { "TrophyTheElder", new Tuple<int, int>(1, 0) },
+                    { "RoundLog", new Tuple<int, int>(0, 8) }
                 }
             );
 
@@ -1180,8 +1193,11 @@ namespace ValheimArmory
                 {
                     { "WitheredBone", new Tuple<int, int>(10, 5) },
                     { "Iron", new Tuple<int, int>(30, 10) },
-                    { "Wishbone", new Tuple<int, int>(1, 1) },
-                    { "TrophyBonemass", new Tuple<int, int>(1, 1) }
+                    { "Wishbone", new Tuple<int, int>(1, 0) },
+                    { "TrophyBonemass", new Tuple<int, int>(1, 0) },
+                    { "ElderBark", new Tuple<int, int>(0, 2) },
+                    { "LeatherScraps", new Tuple<int, int>(0, 2) }
+
                 }
             );
 
@@ -1209,10 +1225,10 @@ namespace ValheimArmory
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "WitheredBone", new Tuple<int, int>(10, 5) },
+                    { "RoundLog", new Tuple<int, int>(10, 5) },
                     { "Silver", new Tuple<int, int>(30, 15) },
                     { "YmirRemains", new Tuple<int, int>(4, 2) },
-                    { "TrophyBonemass", new Tuple<int, int>(1, 1) }
+                    { "TrophyFenring", new Tuple<int, int>(1, 1) }
                 }
             );
         }
@@ -1360,8 +1376,10 @@ namespace ValheimArmory
                 {
                     { "BlackMetal", new Tuple<int, int>(10, 0) },
                     { "Iron", new Tuple<int, int>(4, 2) },
-                    { "YagluthDrop", new Tuple<int, int>(2, 2) },
-                    { "TrophyGoblinKing", new Tuple<int, int>(1, 1) }
+                    { "YagluthDrop", new Tuple<int, int>(2, 0) },
+                    { "TrophyGoblinKing", new Tuple<int, int>(1, 0) },
+                    { "Tar", new Tuple<int, int>(0, 3) },
+                    { "LinenThread", new Tuple<int, int>(0, 2) }
                 }
             );
 
@@ -1410,6 +1428,7 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(48, 0, 120, true) },
                     { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "block_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
+                    { "parry", new Tuple<float, float, float, bool>(1.5f, 0, 3, true) },
                 },
                 new Dictionary<string, bool>() {
                     { "resistPierce", true },
@@ -1436,6 +1455,7 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(28, 0, 120, true) },
                     { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "block_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
+                    { "parry", new Tuple<float, float, float, bool>(1.5f, 0, 3, true) },
                 },
                 new Dictionary<string, bool>() {
                     { "veryResistBlunt", true },
@@ -1463,7 +1483,7 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(62, 0, 120, true) },
                     { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "block_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
-                    { "parry", new Tuple<float, float, float, bool>(1, 0, 3, true) },
+                    { "parry", new Tuple<float, float, float, bool>(1.5f, 0, 3, true) },
                     
                 },
                 new Dictionary<string, bool>() {
@@ -1475,12 +1495,14 @@ namespace ValheimArmory
                 {
                     { "FineWood", new Tuple<int, int>(24, 12) },
                     { "Silver", new Tuple<int, int>(16, 8) },
-                    { "DragonTear", new Tuple<int, int>(10, 10) },
-                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) }
+                    { "DragonTear", new Tuple<int, int>(10, 0) },
+                    { "TrophyDragonQueen", new Tuple<int, int>(1, 0) },
+                    { "Obsidian", new Tuple<int, int>(0, 2) },
+                    { "JuteRed", new Tuple<int, int>(0, 2) }
                 }
             );
 
-            // Moder Shield
+            // Moder Tower Shield
             new JotunnItem(
                 new Dictionary<string, string>() {
                     { "name", "Moders Shield" },
@@ -1491,7 +1513,7 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(62, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(100, 0, 180, true) },
                     { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "block_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
                     { "parry", new Tuple<float, float, float, bool>(1, 0, 3, true) },
@@ -1504,8 +1526,10 @@ namespace ValheimArmory
                 {
                     { "FineWood", new Tuple<int, int>(24, 12) },
                     { "Silver", new Tuple<int, int>(16, 8) },
-                    { "DragonTear", new Tuple<int, int>(10, 10) },
-                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) }
+                    { "DragonTear", new Tuple<int, int>(10, 0) },
+                    { "TrophyDragonQueen", new Tuple<int, int>(1, 0) },
+                    { "Obsidian", new Tuple<int, int>(0, 2) },
+                    { "JuteRed", new Tuple<int, int>(0, 2) }
                 }
             );
 
@@ -1523,7 +1547,7 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(78, 0, 120, true) },
                     { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "block_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
-                    { "movement_speed", new Tuple<float, float, float, bool>(-20, -30, 0, true) },
+                    { "movement_speed", new Tuple<float, float, float, bool>(-0.20f, -0.30f, 0, true) },
                 },
                 new Dictionary<string, bool>() {},
                 new Dictionary<string, Tuple<int, int>>()
@@ -1815,8 +1839,10 @@ namespace ValheimArmory
                 {
                     { "ElderBark", new Tuple<int, int>(4, 2) },
                     { "Obsidian", new Tuple<int, int>(15, 5) },
-                    { "DragonTear", new Tuple<int, int>(10, 10) },
-                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) }
+                    { "DragonTear", new Tuple<int, int>(10, 0) },
+                    { "TrophyDragonQueen", new Tuple<int, int>(1, 0) },
+                    { "Silver", new Tuple<int, int>(0, 2) },
+                    { "JuteRed", new Tuple<int, int>(0, 2) }
                 }
             );
 
@@ -1849,8 +1875,10 @@ namespace ValheimArmory
                 {
                     { "WitheredBone", new Tuple<int, int>(2, 1) },
                     { "Iron", new Tuple<int, int>(12, 6) },
-                    { "Wishbone", new Tuple<int, int>(1, 1) },
-                    { "TrophyBonemass", new Tuple<int, int>(1, 1) }
+                    { "Wishbone", new Tuple<int, int>(1, 0) },
+                    { "TrophyBonemass", new Tuple<int, int>(1, 0) },
+                    { "ElderBark", new Tuple<int, int>(0, 2) },
+                    { "LeatherScraps", new Tuple<int, int>(0, 2) }
                 }
             );
 
@@ -1883,10 +1911,11 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<int, int>>()
                 {
-                    { "YggdrasilWood", new Tuple<int, int>(2, 1) },
+                    { "YggdrasilWood", new Tuple<int, int>(2, 2) },
                     { "Eitr", new Tuple<int, int>(10, 5) },
-                    { "JuteBlue", new Tuple<int, int>(2, 0) },
-                    { "TrophySeekerQueen", new Tuple<int, int>(1, 1) }
+                    { "JuteBlue", new Tuple<int, int>(2, 1) },
+                    { "TrophySeekerQueen", new Tuple<int, int>(1, 0) },
+                    { "Carapace", new Tuple<int, int>(0, 4) },
                 }
             );
 
@@ -1984,8 +2013,10 @@ namespace ValheimArmory
                 {
                     { "ElderBark", new Tuple<int, int>(15, 10) },
                     { "Obsidian", new Tuple<int, int>(8, 4) },
-                    { "DragonTear", new Tuple<int, int>(10, 10) },
-                    { "TrophyDragonQueen", new Tuple<int, int>(1, 1) }
+                    { "DragonTear", new Tuple<int, int>(10, 0) },
+                    { "TrophyDragonQueen", new Tuple<int, int>(1, 0) },
+                    { "Silver", new Tuple<int, int>(0, 2) },
+                    { "JuteRed", new Tuple<int, int>(0, 2) }
                 }
             );
         }
@@ -2006,6 +2037,8 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(5, 0, 48, true) },
                     { "slash", new Tuple<float, float, float, bool>(6, 0, 120, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(4, 0, 20, true) },
+                    { "blunt", new Tuple<float, float, float, bool>(0, 0, 120, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(4, 1, 20, true) },
                 },
@@ -2032,6 +2065,8 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(5, 0, 48, true) },
                     { "slash", new Tuple<float, float, float, bool>(20, 0, 120, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(4, 0, 20, true) },
+                    { "blunt", new Tuple<float, float, float, bool>(0, 0, 120, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(6, 1, 20, true) },
                 },
@@ -2058,6 +2093,8 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(5, 0, 48, true) },
                     { "slash", new Tuple<float, float, float, bool>(35, 0, 120, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(4, 0, 20, true) },
+                    { "blunt", new Tuple<float, float, float, bool>(0, 0, 120, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 20, true) },
                 },
@@ -2084,6 +2121,8 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(5, 0, 48, true) },
                     { "slash", new Tuple<float, float, float, bool>(80, 0, 120, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(4, 0, 20, true) },
+                    { "blunt", new Tuple<float, float, float, bool>(0, 0, 120, true) },
+                    { "blunt_per_level", new Tuple<float, float, float, bool>(0, 0, 20, true) },
                     { "fire", new Tuple<float, float, float, bool>(25, 0, 120, true) },
                     { "fire_per_level", new Tuple<float, float, float, bool>(5, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(20, 0, 60, true) },
@@ -2095,8 +2134,10 @@ namespace ValheimArmory
                 {
                     { "BlackMetal", new Tuple<int, int>(4, 2) },
                     { "Iron", new Tuple<int, int>(6, 3) },
-                    { "YagluthDrop", new Tuple<int, int>(2, 2) },
-                    { "TrophyGoblinKing", new Tuple<int, int>(1, 1) }
+                    { "YagluthDrop", new Tuple<int, int>(2, 0) },
+                    { "TrophyGoblinKing", new Tuple<int, int>(1, 0) },
+                    { "Tar", new Tuple<int, int>(0, 3) },
+                    { "LinenThread", new Tuple<int, int>(0, 2) }
                 }
             );
         }
@@ -2128,8 +2169,9 @@ namespace ValheimArmory
                 {
                     { "Bronze", new Tuple<int, int>(2, 1) },
                     { "Stone", new Tuple<int, int>(16, 8) },
-                    { "CryptKey", new Tuple<int, int>(1, 1) },
-                    { "TrophyTheElder", new Tuple<int, int>(1, 1) }
+                    { "CryptKey", new Tuple<int, int>(1, 0) },
+                    { "TrophyTheElder", new Tuple<int, int>(1, 0) },
+                    { "RoundLog", new Tuple<int, int>(0, 6) },
                 }
             );
         }
@@ -2359,6 +2401,7 @@ namespace ValheimArmory
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(4, 0, 50, true) },
                     { "secondary_attack_flat_health_cost", new Tuple<float, float, float, bool>(6, 0, 25, true) },
                     { "secondary_attack_percent_health_cost", new Tuple<float, float, float, bool>(0, 0, 50, true) },
+                    { "tool_level", new Tuple<float, float, float, bool>(1, 0, 5, false) },
                 },
                 new Dictionary<string, bool>() { },
                 new Dictionary<string, Tuple<int, int>>()

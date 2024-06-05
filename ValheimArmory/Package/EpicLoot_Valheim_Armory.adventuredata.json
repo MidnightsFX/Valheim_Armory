@@ -1,0 +1,93 @@
+{
+	"TargetFile": "adventuredata.json",
+	"Author": "MidnightsFX",
+	"RequireAll": true, 
+	"Patches": 
+		[
+			{
+				"Path": "$.Gamble.GambleCosts", 
+				"Action": "AppendAll",
+				"Value": 
+					[
+						{ "Item": "VAAntler_Bow",     "CoinsCost": 400  },
+						{ "Item": "VAAntler_dagger",         "CoinsCost": 300  },
+						{ "Item": "VAAntler_Sword",         "CoinsCost": 350  },
+						{ "Item": "VAatgeir_antler",         "CoinsCost": 400  },
+						{ "Item": "VAAntler_greataxe",         "CoinsCost": 350  },
+						
+						{ "Item": "VAElderHammer",     "CoinsCost": 450  },
+						{ "Item": "VAElderRoundShield",     "CoinsCost": 400  },
+						{ "Item": "VACrossbowElder",     "CoinsCost": 400  },
+						{ "Item": "VAVine_Sword",     "CoinsCost": 400  },
+						{ "Item": "VAElder_mace",     "CoinsCost": 500  },
+						
+						{ "Item": "VABonemassWarhammer",     "CoinsCost": 700  },
+						{ "Item": "VABonemassGreatsword",     "CoinsCost": 650  },
+						{ "Item": "VABonemassDagger",     "CoinsCost": 600  },
+						
+						{ "Item": "VASwordModer",     "CoinsCost": 900  },
+						{ "Item": "VASpearModer",     "CoinsCost": 950  },
+						{ "Item": "VACrossbowModer",     "CoinsCost": 900  },
+						{ "Item": "VAModer_shield",     "CoinsCost": 1000  },
+						{ "Item": "VAdagger_moder",     "CoinsCost": 850  },
+						
+						{ "Item": "VAYagluthAtgeir",     "CoinsCost": 1700  },
+						{ "Item": "VAYagluth_greatsword",     "CoinsCost": 1600  },
+						{ "Item": "VAFist_Yagluth",     "CoinsCost": 1500  },
+						
+						
+						{ "Item": "VASwordQueen",     "CoinsCost": 6000  },
+						{ "Item": "VAdagger_queen",     "CoinsCost": 6000  },
+						{ "Item": "VAQueen_greatsword",     "CoinsCost": 6000  },
+						{ "Item": "VAQueen_bow",     "CoinsCost": 6000  },
+						
+						{ "Item": "VAAtgeir_Flint",     "CoinsCost": 200  },
+						{ "Item": "VAAtgeirchitin",     "CoinsCost": 450  },
+						{ "Item": "VASilverAtgeir",     "CoinsCost": 800  },
+						{ "Item": "VAMeteorAtgeir",     "CoinsCost": 6500  },
+						
+						{ "Item": "VAFlint_greataxe",     "CoinsCost": 200  },
+						{ "Item": "VAbronze_battleaxe",     "CoinsCost": 350  },
+						{ "Item": "VAblackmetal_battleaxe",     "CoinsCost": 1500  },
+						
+						{ "Item": "VAdagger_bronze",     "CoinsCost": 350  },
+						{ "Item": "VAdagger_iron",     "CoinsCost": 500  },
+						{ "Item": "VAdagger_meteor",     "CoinsCost": 6000  },
+						{ "Item": "VADagger_Flint_2h",     "CoinsCost": 300  },
+						{ "Item": "VAdagger_bronze_2h",     "CoinsCost": 400  },
+						{ "Item": "VAdagger_iron_2h",     "CoinsCost": 550  },
+						{ "Item": "VAdagger_silver_2h",     "CoinsCost": 850  },
+						
+						{ "Item": "VACrossbowBronze",     "CoinsCost": 400  },
+						{ "Item": "VAArbalistBronze",     "CoinsCost": 1500  },
+						
+						{ "Item": "VASilverSledge",     "CoinsCost": 800  },
+						{ "Item": "VAblackmetal_sledge",     "CoinsCost": 1500  },
+						
+						{ "Item": "VAserpent_buckler",     "CoinsCost": 500  },
+						{ "Item": "VAsilver_tower",     "CoinsCost": 800  },
+						
+						{ "Item": "VAFlint_greatsword",     "CoinsCost": 200  },
+						{ "Item": "VAbronze_greatsword",     "CoinsCost": 350  },
+						{ "Item": "VAiron_greatsword",     "CoinsCost": 550  },
+						{ "Item": "VAsilver_greatsword",     "CoinsCost": 850  },
+						{ "Item": "VAFlint_Sword",     "CoinsCost": 250  },
+						{ "Item": "VASwordChitin",     "CoinsCost": 450  },
+						
+						{ "Item": "VAFist_Flint",     "CoinsCost": 150  },
+						{ "Item": "VAFist_Bronze",     "CoinsCost": 300  },
+						{ "Item": "VAFist_Iron",     "CoinsCost": 450  },
+						
+						{ "Item": "VAStaff_Druid_Spirit",     "CoinsCost": 700  },
+						{ "Item": "VAStaff_Druid_Poison",     "CoinsCost": 700  },
+						{ "Item": "VAStaff_Druid_Fire",     "CoinsCost": 800  },
+						{ "Item": "VAStaff_Druid_Ice",     "CoinsCost": 800  },
+						{ "Item": "VAStaff_Spirit",     "CoinsCost": 5000  },
+						{ "Item": "VAStaff_Poison",     "CoinsCost": 5000  },
+						
+						{ "Item": "VABlood_Bones_pickaxe",     "CoinsCost": 350  },
+						{ "Item": "VABlood_bone_bow",     "CoinsCost": 650  },
+					]  
+			}
+		]
+}
