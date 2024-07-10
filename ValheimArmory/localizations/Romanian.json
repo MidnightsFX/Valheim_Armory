@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Un scut care ține gheață înghețată, îmbogățită de lacrimile moderne.",
   "item_bolt_iron_poison": "Fulg veninos",
   "item_bolt_iron_poison_description": "Un șurub ascuțit în vârf, înmuiat în otravă, aducând moarte rapidă.",
-  "item_bolt_surtling_description": "Un vârf ascuțit înarmat cu un miez înfocat, asta o să ardă."
+  "item_bolt_surtling_description": "Un vârf ascuțit înarmat cu un miez înfocat, asta o să ardă.",
+  "item_needle_bolt": "Ață de ac",
+  "item_needle_bolt_description": "Un ochi de ac în timp.",
+  "item_bow_heavy_bone_blood": "Arc de sânge al carapacei",
+  "item_bow_heavy_bone_blood_description": "Acest arc pare absolut rapid pentru sânge și periculos de rău.",
+  "item_bolt_fire": "Șurub de foc",
+  "item_bolt_fire_description": "Acest șurub arde tot ce străpunge.",
+  "item_blackmetal_greatsword": "Spadă mare din metal negru",
+  "item_blackmetal_greatsword_description": "Un mare sabie masivă forjată din metal negru strălucitor."
 }

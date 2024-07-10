@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Vairogs, kas tur salušu ledus, pastiprināts ar mātes asarām.",
   "item_bolt_iron_poison": "Indu bulta",
   "item_bolt_iron_poison_description": "Asas skrūves galva ar indi, nāvīgs ātrums.",
-  "item_bolt_surtling_description": "As pointed spike armed with a surtling core, this is gunna burn. Kā asa sprādze, apbruņota ar surtling kodolu, tas noteikti sadedzinās."
+  "item_bolt_surtling_description": "As pointed spike armed with a surtling core, this is gunna burn. Kā asa sprādze, apbruņota ar surtling kodolu, tas noteikti sadedzinās.",
+  "item_needle_bolt": "Austes skrūve",
+  "item_needle_bolt_description": "Šuva laikā.",
+  "item_bow_heavy_bone_blood": "Carapace asinis lācis",
+  "item_bow_heavy_bone_blood_description": "Šis loks šķiet absolūti ātrs asinīm, un bīstami ļauns.",
+  "item_bolt_fire": "Uguns bulta",
+  "item_bolt_fire_description": "Šis bulta sadedzina visu, ko cauršauj.",
+  "item_blackmetal_greatsword": "Melnais metāls lielais zobens",
+  "item_blackmetal_greatsword_description": "Masīvs lielā zobena kaltas spožās melnmetāla."
 }

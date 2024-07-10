@@ -14,6 +14,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <LangVersion>10</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,7 +41,7 @@
   <PropertyGroup>
   </PropertyGroup>
   <PropertyGroup>
-    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -54,12 +55,12 @@
   <ItemGroup>
     <Compile Include="common\JotunnItemFactory.cs" />
     <Compile Include="ItemEffects.cs" />
+    <Compile Include="patches\HybridBloodWeapon.cs" />
     <Compile Include="ValheimArmoryItems.cs" />
     <Compile Include="Properties\IgnoreAccessModifiers.cs" />
     <Compile Include="ValheimArmory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VAConfig.cs" />
-    <Compile Include="ValheimArmoryPieces.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -123,7 +124,7 @@
       <Version>2.10.2</Version>
     </PackageReference>
     <PackageReference Include="JotunnLib">
-      <Version>2.20.0</Version>
+      <Version>2.20.1</Version>
     </PackageReference>
     <PackageReference Include="Mono.Cecil">
       <Version>0.11.5</Version>

@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Štit koji drži smrznuti led, obogaćen suzama majki.",
   "item_bolt_iron_poison": "Zatrovani šaržer",
   "item_bolt_iron_poison_description": "Oštar šiljak natopljen otrovom, donosi smrt.",
-  "item_bolt_surtling_description": "Oštar šiljak naoružan sa surtling jezgrom, ovo će peći."
+  "item_bolt_surtling_description": "Oštar šiljak naoružan sa surtling jezgrom, ovo će peći.",
+  "item_needle_bolt": "Игла Болт",
+  "item_needle_bolt_description": "Šivenje na vreme.",
+  "item_bow_heavy_bone_blood": "Oklop krvni luk",
+  "item_bow_heavy_bone_blood_description": "Ovaj luk izgleda apsolutno brz za krv, i opasno zao.",
+  "item_bolt_fire": "Vatreni grom",
+  "item_bolt_fire_description": "Ova zasun sagoreva sve što probode.",
+  "item_blackmetal_greatsword": "Crni metalni veliki mač",
+  "item_blackmetal_greatsword_description": "Masivni veliki mač kovan sjajnim crnim metalom."
 }

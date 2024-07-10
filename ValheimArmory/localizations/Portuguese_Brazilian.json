@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Um escudo segurando gelo congelado, aprimorado pelas lágrimas modernas.Thank you for the translation text.",
   "item_bolt_iron_poison": "Seta envenenada",
   "item_bolt_iron_poison_description": "Um parafuso afiado ponta com veneno, morte em alta velocidade.",
-  "item_bolt_surtling_description": "Uma ponta afiada armada com um núcleo incandescente, isso vai queimar."
+  "item_bolt_surtling_description": "Uma ponta afiada armada com um núcleo incandescente, isso vai queimar.",
+  "item_needle_bolt": "Pino agulha",
+  "item_needle_bolt_description": "Um ponto a tempo.",
+  "item_bow_heavy_bone_blood": "Arco de sangue de carapaça",
+  "item_bow_heavy_bone_blood_description": "Este arco parece absolutamente rápido para sangue, e perigosamente maléfico.",
+  "item_bolt_fire": "Raio de fogo",
+  "item_bolt_fire_description": "Este parafuso queima tudo que ele perfura.",
+  "item_blackmetal_greatsword": "Espada grande de metal negro",
+  "item_blackmetal_greatsword_description": "Uma grande espada enorme forjada com metal preto brilhante."
 }

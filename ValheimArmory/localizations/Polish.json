@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Tarcza trzymająca zamrożony lód, wzmocniona łzami matki.",
   "item_bolt_iron_poison": "Jedwabna strzała",
   "item_bolt_iron_poison_description": "Ostry śrubka zakończona trucizną, przyspieszająca śmierć.",
-  "item_bolt_surtling_description": "Wkute ostrze z rdzeniem surtlingu, to będzie palić."
+  "item_bolt_surtling_description": "Wkute ostrze z rdzeniem surtlingu, to będzie palić.",
+  "item_needle_bolt": "Śruba igiełkowa",
+  "item_needle_bolt_description": "Szyć czasem.",
+  "item_bow_heavy_bone_blood": "Pancerz krwi łuk",
+  "item_bow_heavy_bone_blood_description": "To łuk wydaje się absolutnie szybki dla krwi, i niebezpiecznie zły.",
+  "item_bolt_fire": "Piorun ognia",
+  "item_bolt_fire_description": "Ten śruba spala wszystko, co przeszywa.",
+  "item_blackmetal_greatsword": "czarna metalowa wielka szabla",
+  "item_blackmetal_greatsword_description": "Wielki miecz dwuręczny kuty z błyszczącej czarnej stali."
 }

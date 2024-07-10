@@ -4,25 +4,27 @@ namespace ValheimArmory
 {
     class VAConfig
     {
-        public static ConfigFile file;
+        public static ConfigFile cfg;
         public static ConfigEntry<bool> EnableDebugMode;
+        public static ConfigEntry<float> HybridWeaponBloodMagicSkillIncrease;
         public VAConfig(ConfigFile Config)
         {
             // ensure all the config values are created
+            cfg = Config;
+            cfg.SaveOnConfigSet = true;
             CreateConfigValues(Config);
-            file = Config;
+            
         }
 
         // Create Configuration and load it.
         private void CreateConfigValues(ConfigFile Config)
         {
-            Config.SaveOnConfigSet = true;
-
             // Debugmode
             EnableDebugMode = Config.Bind("Client config", "EnableDebugMode", false,
                 new ConfigDescription("Enables Debug logging for Valheim Armory.",
                 null,
                 new ConfigurationManagerAttributes { IsAdvanced = true }));
+            HybridWeaponBloodMagicSkillIncrease = BindServerConfig("Blood Magic Hybrid Weapons", "HybridWeaponBloodMagicSkillIncrease", 1f, "How much experiance should one usage of a blood magic hybrid weapon provide?", true, 0f, 4f);
         }
 
         /// <summary>
@@ -37,7 +39,7 @@ namespace ValheimArmory
         /// <returns></returns>
         public static ConfigEntry<bool> BindServerConfig(string catagory, string key, bool value, string description, bool advanced = false)
         {
-            return file.Bind(catagory, key, value,
+            return cfg.Bind(catagory, key, value,
                 new ConfigDescription(description,
                 null,
                 new ConfigurationManagerAttributes { IsAdminOnly = true, IsAdvanced = advanced })
@@ -58,7 +60,7 @@ namespace ValheimArmory
         /// <returns></returns>
         public static ConfigEntry<int> BindServerConfig(string catagory, string key, int value, string description, bool advanced = false, int valmin = 0, int valmax = 150)
         {
-            return file.Bind(catagory, key, value,
+            return cfg.Bind(catagory, key, value,
                 new ConfigDescription(description,
                 new AcceptableValueRange<int>(valmin, valmax),
                 new ConfigurationManagerAttributes { IsAdminOnly = true, IsAdvanced = advanced })
@@ -79,7 +81,7 @@ namespace ValheimArmory
         /// <returns></returns>
         public static ConfigEntry<float> BindServerConfig(string catagory, string key, float value, string description, bool advanced = false, float valmin = 0, float valmax = 150)
         {
-            return file.Bind(catagory, key, value,
+            return cfg.Bind(catagory, key, value,
                 new ConfigDescription(description,
                 new AcceptableValueRange<float>(valmin, valmax),
                 new ConfigurationManagerAttributes { IsAdminOnly = true, IsAdvanced = advanced })
@@ -97,7 +99,7 @@ namespace ValheimArmory
         /// <returns></returns>
         public static ConfigEntry<string> BindServerConfig(string catagory, string key, string value, string description, bool advanced = false)
         {
-            return file.Bind(catagory, key, value,
+            return cfg.Bind(catagory, key, value,
                 new ConfigDescription(description, null,
                 new ConfigurationManagerAttributes { IsAdminOnly = true, IsAdvanced = advanced })
                 );

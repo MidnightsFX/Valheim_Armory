@@ -162,5 +162,13 @@
   "item_moder_shield_description": "얼어붙은 얼음을 지닌 방패, 모던의 눈물로 더욱 강화되었다.",
   "item_bolt_iron_poison": "독 화살",
   "item_bolt_iron_poison_description": "마독으로 뒤덮인 날카로운 나사, 죽음을 가속시키는 것.",
-  "item_bolt_surtling_description": "날카로운 스파이크에 무장한 서틀링 코어, 이건 불타오를 거야."
+  "item_bolt_surtling_description": "날카로운 스파이크에 무장한 서틀링 코어, 이건 불타오를 거야.",
+  "item_needle_bolt": "바늘 볼트",
+  "item_needle_bolt_description": "시간에 맞춰서 바늘질.시간에 맞춰서 바늘질을 하는 것이 중요하다고 생각합니다.",
+  "item_bow_heavy_bone_blood": "갑옷 피 활",
+  "item_bow_heavy_bone_blood_description": "이 활은 피에 대해 절대적으로 빠르고 위험하게 악마 같아 보입니다.",
+  "item_bolt_fire": "화염 번개",
+  "item_bolt_fire_description": "이 볼트는 그것이 관통하는 모든 것을 태우고 있습니다.",
+  "item_blackmetal_greatsword": "흑철 greatsword",
+  "item_blackmetal_greatsword_description": "빛나는 검은 금속으로 단련된 거대한 대검."
 }

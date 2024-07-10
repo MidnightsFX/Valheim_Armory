@@ -562,6 +562,11 @@ namespace ValheimArmory.common
                     {
                         //Logger.LogInfo($"{recipe_entry}");
                         String[] recipe_segments = recipe_entry.Split(',');
+                        if (recipe_segments.Length != 3)
+                        {
+                            Logger.LogWarning($"{recipe_entry} is invalid, it does not have enough segments. Proper format is: PREFABNAME,CRAFT_COST,UPGRADE_COST eg: Wood,8,1");
+                            return false;
+                        }
                         if (VAConfig.EnableDebugMode.Value == true)
                         {
                             String split_segments = "";
@@ -579,6 +584,11 @@ namespace ValheimArmory.common
                                 Logger.LogWarning($"{recipe_segments[0]} is an invalid prefab and does not exist.");
                                 return false;
                             }
+                        }
+                        if (recipe_segments[0].Length == 0 || recipe_segments[1].Length == 0 || recipe_segments[2].Length == 0)
+                        {
+                            Logger.LogWarning($"{recipe_entry} is invalid, one segment does not have enough data. Proper format is: PREFABNAME,CRAFT_COST,UPGRADE_COST eg: Wood,8,1");
+                            return false;
                         }
 
                         if (VAConfig.EnableDebugMode.Value == true)

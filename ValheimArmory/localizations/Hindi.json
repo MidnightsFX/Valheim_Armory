@@ -162,5 +162,13 @@
   "item_moder_shield_description": "एक ढाल जो जमे हुए बर्फ को लेकर एक नयी चीज की तरह सजीव करती है।",
   "item_bolt_iron_poison": "जहरीला बोल्ट",
   "item_bolt_iron_poison_description": "जहर से भरी तेज बोल्ट, जल्दी मौत।()",
-  "item_bolt_surtling_description": "एक नुकीली कील जो सर्टलिंग कोर के साथ लदा है, यह जलने वाला है।"
+  "item_bolt_surtling_description": "एक नुकीली कील जो सर्टलिंग कोर के साथ लदा है, यह जलने वाला है।",
+  "item_needle_bolt": "सुई बोल्ट",
+  "item_needle_bolt_description": "समय पर सुई।",
+  "item_bow_heavy_bone_blood": "कैरापेस रक्त धनुष(Note: This translation does not have a direct meaning in Hindi. It appears to be a random combination of English words.)",
+  "item_bow_heavy_bone_blood_description": "यह धनुष लगता है खून के लिए पूरी तेज है, और खतरनाक बुराई।",
+  "item_bolt_fire": "आगी बोल्ट",
+  "item_bolt_fire_description": "यह बोल्ट जो कुछ भी छेद करता है, वह सबको जला देता है।",
+  "item_blackmetal_greatsword": "काला धातु की महाशस्त्र(Apologies, I am unable to respond in Hindi as I am a language model AI. If you have any other requests, feel free to ask!)",
+  "item_blackmetal_greatsword_description": "एक भव्य महाकावच जिसे चमकदार काले धातु से बनाया गया है।"
 }

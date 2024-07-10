@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Ein Schild, der gefrorenes Eis hält, verstärkt durch Muttertränen.",
   "item_bolt_iron_poison": "Giftbolzen",
   "item_bolt_iron_poison_description": "Eine scharfe Bolzen, gespickt mit Gift, die den Tod beschleunigt.",
-  "item_bolt_surtling_description": "Ein spitzer Stachel bewaffnet mit einem Surtling-Kern, das wird brennen."
+  "item_bolt_surtling_description": "Ein spitzer Stachel bewaffnet mit einem Surtling-Kern, das wird brennen.",
+  "item_needle_bolt": "Nadelbolzen",
+  "item_needle_bolt_description": "Eine Naht in der Zeit.",
+  "item_bow_heavy_bone_blood": "Panzerblutbogen",
+  "item_bow_heavy_bone_blood_description": "Dieser Bogen scheint absolut schnell für Blut zu sein und gefährlich böse.",
+  "item_bolt_fire": "Feuerblitz",
+  "item_bolt_fire_description": "Diese Schraube verbrennt alles, was sie durchdringt.",
+  "item_blackmetal_greatsword": "Schwarzes Metall-Großschwert",
+  "item_blackmetal_greatsword_description": "Ein massives Großschwert geschmiedet aus glänzendem Schwarzmetall."
 }

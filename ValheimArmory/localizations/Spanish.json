@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Un escudo sosteniendo hielo congelado, realzado por lágrimas de madre.",
   "item_bolt_iron_poison": "Veneno flecha",
   "item_bolt_iron_poison_description": "Un perno afilado con punta envenenada, velocidad de la muerte.",
-  "item_bolt_surtling_description": "Una punta afilada armada con un núcleo ardiente, esto va a quemar."
+  "item_bolt_surtling_description": "Una punta afilada armada con un núcleo ardiente, esto va a quemar.",
+  "item_needle_bolt": "Aguja de perno",
+  "item_needle_bolt_description": "Un punto a tiempo.",
+  "item_bow_heavy_bone_blood": "Arco de sangre de caparazón",
+  "item_bow_heavy_bone_blood_description": "Este arco parece absolutamente rápido para la sangre, y peligrosamente malvado.",
+  "item_bolt_fire": "Rayo de fuego",
+  "item_bolt_fire_description": "Este perno quema lo que sea que atraviese.",
+  "item_blackmetal_greatsword": "Gran espada de metal negro",
+  "item_blackmetal_greatsword_description": "Una gran espada forjada con un metal negro brillante."
 }

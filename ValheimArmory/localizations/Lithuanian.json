@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Skydas laikantis sustingo ledo, sustiprintas modernių ašarų.",
   "item_bolt_iron_poison": "Nuodingas strėlė",
   "item_bolt_iron_poison_description": "Aštrus strėlė užnuodyta nuodais, skubantis mirtis.",
-  "item_bolt_surtling_description": "Aštri ašmenimi ginkluotas su surtling branduoliu, tai tikrai sudegs."
+  "item_bolt_surtling_description": "Aštri ašmenimi ginkluotas su surtling branduoliu, tai tikrai sudegs.",
+  "item_needle_bolt": "Adata spyruoklė",
+  "item_needle_bolt_description": "Siūlas laiku.",
+  "item_bow_heavy_bone_blood": "Karapacis kraujo lankas",
+  "item_bow_heavy_bone_blood_description": "Šis lankas atrodo visiškai greitas kraujui ir pavojingai piktybinis.",
+  "item_bolt_fire": "Ugnies strėlė",
+  "item_bolt_fire_description": "Išdegina viską, ką peršoka šis bėgių.",
+  "item_blackmetal_greatsword": "Juodojo metalo didysis kalavijas",
+  "item_blackmetal_greatsword_description": "Masinis didžiulis kardu iškalintas blizgančiu juoduoju metalu."
 }

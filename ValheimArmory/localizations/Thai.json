@@ -162,5 +162,13 @@
   "item_moder_shield_description": "ป้องกันด้วยน้ำแข็งที่ถูกโดยน้ำตาของแม่",
   "item_bolt_iron_poison": "ลูกธนูพิษ",
   "item_bolt_iron_poison_description": "ประกายคมและเติมพิษ จากการเร่งความตาย",
-  "item_bolt_surtling_description": "ถูกปลุกด้วยแกนเหล็กคมชี้, นี่คือการเผาไหม้"
+  "item_bolt_surtling_description": "ถูกปลุกด้วยแกนเหล็กคมชี้, นี่คือการเผาไหม้",
+  "item_needle_bolt": "เข็มโบลต์",
+  "item_needle_bolt_description": "เข็มเย็บตรงเวลา",
+  "item_bow_heavy_bone_blood": "เกราะเลือดความเค็ม",
+  "item_bow_heavy_bone_blood_description": "คันธพองนี้ดูเร็วมากสำหรับเลือด และอันตรายอย่างชัดเจน",
+  "item_bolt_fire": "ไฟหล่น",
+  "item_bolt_fire_description": "ปืนไม้นี้จะทำให้สิ่งที่มันเจาะไหม้",
+  "item_blackmetal_greatsword": "ดาบโลหะสีดำ",
+  "item_blackmetal_greatsword_description": "ดาบยักษ์ที่ถูกเปิดเท้าด้วยโลหะสีดำที่สว่าง"
 }

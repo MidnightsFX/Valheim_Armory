@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Et skjold holdende frossen is, forstærket af moderens tårer.",
   "item_bolt_iron_poison": "Gift pil",
   "item_bolt_iron_poison_description": "En skarp bolt spidset med gift, der bringer døden hurtigt.",
-  "item_bolt_surtling_description": "En spids spike bevæbnet med en surtling kerne, dette kommer til at brænde."
+  "item_bolt_surtling_description": "En spids spike bevæbnet med en surtling kerne, dette kommer til at brænde.",
+  "item_needle_bolt": "Nål bolt",
+  "item_needle_bolt_description": "Et sting i tide.",
+  "item_bow_heavy_bone_blood": "Pansret blodbue",
+  "item_bow_heavy_bone_blood_description": "Denne bue virker helt utroligt hurtig for blod, og farligt ond.",
+  "item_bolt_fire": "ildkugle",
+  "item_bolt_fire_description": "Denne bolt brænder alt, hvad den gennemborer.",
+  "item_blackmetal_greatsword": "Sort metalsværd",
+  "item_blackmetal_greatsword_description": "Et massivt stort sværd smedet med glimrende sort metal."
 }

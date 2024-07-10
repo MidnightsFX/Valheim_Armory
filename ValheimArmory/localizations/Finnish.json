@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Kilpi pitämässä jäätynyttä jäätä, vahvistettuna äitien kyynelillä.",
   "item_bolt_iron_poison": "Myrkyllinen nuoli",
   "item_bolt_iron_poison_description": "Terävä myrkyllä terästetty pultti, nopea kuolema.",
-  "item_bolt_surtling_description": "Pistävä piikki varustettuna suhisevalla ytimestä, tämä tulee polttamaan."
+  "item_bolt_surtling_description": "Pistävä piikki varustettuna suhisevalla ytimestä, tämä tulee polttamaan.",
+  "item_needle_bolt": "Neulapultti",
+  "item_needle_bolt_description": "Aika löytää.",
+  "item_bow_heavy_bone_blood": "Suoja veri jousi",
+  "item_bow_heavy_bone_blood_description": "Tämä jousi vaikuttaa täysin nopealta verelle ja vaarallisesti pahalta.",
+  "item_bolt_fire": "Tulikeihäs",
+  "item_bolt_fire_description": "Tämä pultti polttaa kaiken mihin se osuu.",
+  "item_blackmetal_greatsword": "Musta metallinen suursoturi",
+  "item_blackmetal_greatsword_description": "Valtava suuri miekka takoi kimaltelevasta mustametallista."
 }

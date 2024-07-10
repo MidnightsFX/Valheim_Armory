@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Egy pajzs tartja a megfagyott jeget, fokozva a modern könnyek által.",
   "item_bolt_iron_poison": "Mérgező nyíl",
   "item_bolt_iron_poison_description": "Egy mérgezett hegyű éles nyíl, halált hoz.",
-  "item_bolt_surtling_description": "Egy hegyes tüske felfegyverezve egy súrló maggal, ez égni fog."
+  "item_bolt_surtling_description": "Egy hegyes tüske felfegyverezve egy súrló maggal, ez égni fog.",
+  "item_needle_bolt": "Tű csavar",
+  "item_needle_bolt_description": "Egy időben varrott öltés.",
+  "item_bow_heavy_bone_blood": "Páncél vér íj.",
+  "item_bow_heavy_bone_blood_description": "Ez a íj abszolút gyorsnak tűnik a vérre, és veszélyesen gonosznak.",
+  "item_bolt_fire": "Tűzcsap",
+  "item_bolt_fire_description": "Ez a csavar mindent eléget, amit átszúr.Thank you for the translation.",
+  "item_blackmetal_greatsword": "Fekete fém nagykard",
+  "item_blackmetal_greatsword_description": "Egy hatalmas kard, amely csillogó fekete fémből kovácsolva."
 }

@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Štít držiaci zamrznutý ľad, zosilnený slzami matky.",
   "item_bolt_iron_poison": "Jedovatý šíp",
   "item_bolt_iron_poison_description": "Ostrý šroub s jedom, rýchly smrť.",
-  "item_bolt_surtling_description": "Ostro naozajúci špičiak ozbrojený surtlingovým jadrom, toto bude horieť."
+  "item_bolt_surtling_description": "Ostro naozajúci špičiak ozbrojený surtlingovým jadrom, toto bude horieť.",
+  "item_needle_bolt": "Ihlový šroub",
+  "item_needle_bolt_description": "Šijeme včas.",
+  "item_bow_heavy_bone_blood": "Krov krunýr luk",
+  "item_bow_heavy_bone_blood_description": "Tento luk sa zdá byť absolútne rýchly pre krv a nebezpečne zlý.",
+  "item_bolt_fire": "Oheň blesk",
+  "item_bolt_fire_description": "Tento šrób spáli všetko, čo prenikne.",
+  "item_blackmetal_greatsword": "Veľký meč z čierneho kovu",
+  "item_blackmetal_greatsword_description": "Mohutný obrovský meč kovaný z žiarivej čiernej koviny."
 }

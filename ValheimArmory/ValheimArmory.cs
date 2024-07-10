@@ -4,10 +4,12 @@
 // Project: ValheimArmory
 
 using BepInEx;
+using HarmonyLib;
 using Jotunn.Entities;
 using Jotunn.Managers;
 using Jotunn.Utils;
 using System.IO;
+using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using ValheimArmory.common;
@@ -17,12 +19,12 @@ namespace ValheimArmory
 {
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
     [BepInDependency(Jotunn.Main.ModGuid)]
-    [NetworkCompatibility(CompatibilityLevel.EveryoneMustHaveMod, VersionStrictness.Minor)]
+    [NetworkCompatibility(CompatibilityLevel.ClientMustHaveMod, VersionStrictness.Minor)]
     internal class ValheimArmory : BaseUnityPlugin
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.10.0";
+        public const string PluginVersion = "1.12.0";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -43,6 +45,10 @@ namespace ValheimArmory
 
             AddLocalizations();
             // UnloadAssets();
+
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            Harmony harmony = new(PluginGUID);
+            harmony.PatchAll(assembly);
         }
 
         // Check for other mods here and add compatability functionality

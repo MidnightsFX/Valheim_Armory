@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Един штит држејќи замрзнат лед, зголемен со солзите на мајките. Един штит држејќи замрзнат лед, зголемен со солзите на мајките.",
   "item_bolt_iron_poison": "Отровна стрела",
   "item_bolt_iron_poison_description": "Остар копче со отров, брза смрт.",
-  "item_bolt_surtling_description": "Еден изострен шилок опремен со суртлинг јадро, ова ќе гори."
+  "item_bolt_surtling_description": "Еден изострен шилок опремен со суртлинг јадро, ова ќе гори.",
+  "item_needle_bolt": "Игла Болт",
+  "item_needle_bolt_description": "Шев во време.",
+  "item_bow_heavy_bone_blood": "Карага крваво лук",
+  "item_bow_heavy_bone_blood_description": "Ова лак за стрела изгледа апсолутно брз за крв, и опасно зл.",
+  "item_bolt_fire": "Пламен удар",
+  "item_bolt_fire_description": "Оваа шраф гори сè што го прободува.Пораката е преведена.",
+  "item_blackmetal_greatsword": "Голем меч од црен метал",
+  "item_blackmetal_greatsword_description": "Голем меч изкован со блеснење црнометал."
 }

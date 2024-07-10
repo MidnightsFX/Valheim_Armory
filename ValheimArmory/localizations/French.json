@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Un bouclier tenant de la glace gelée, renforcé par les larmes des moders.",
   "item_bolt_iron_poison": "Flèche empoisonnée",
   "item_bolt_iron_poison_description": "Un boulon pointu trempé dans du poison, la mort rapide.",
-  "item_bolt_surtling_description": "Un pic pointu armé d'un noyau de surtling, ça va brûler."
+  "item_bolt_surtling_description": "Un pic pointu armé d'un noyau de surtling, ça va brûler.",
+  "item_needle_bolt": "Aiguille Boulon",
+  "item_needle_bolt_description": "Un point à temps.",
+  "item_bow_heavy_bone_blood": "Carapace sang nœud",
+  "item_bow_heavy_bone_blood_description": "Ce arc semble absolument rapide pour le sang, et dangereusement maléfique.",
+  "item_bolt_fire": "Éclair de feu",
+  "item_bolt_fire_description": "Ce boulon brûle tout ce qu'il perce.",
+  "item_blackmetal_greatsword": "Épée longue en métal noir",
+  "item_blackmetal_greatsword_description": "Une énorme épée forgée avec un métal noir étincelant."
 }

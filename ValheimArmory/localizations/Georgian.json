@@ -162,5 +162,13 @@
   "item_moder_shield_description": "გაფართოების საფეხუმი გაყინული ყინულებით გაზეთილის მეგობარი.",
   "item_bolt_iron_poison": "შიმთა კული",
   "item_bolt_iron_poison_description": "მრუდი სასწავლი დანართი, სიკვდილის სწავლით გაქრობა.",
-  "item_bolt_surtling_description": "წემი სართო კორეით დაშინებული წინდათი, ეს გაიქებს."
+  "item_bolt_surtling_description": "წემი სართო კორეით დაშინებული წინდათი, ეს გაიქებს.",
+  "item_needle_bolt": "საგაქები ბოლტი",
+  "item_needle_bolt_description": "დროს დანარჩენი წინაშე.",
+  "item_bow_heavy_bone_blood": "ქათამის სისხლის მარახე ქათამის სისხლის მარახე",
+  "item_bow_heavy_bone_blood_description": "Iს დარეს გინდა სრულად სწორი სისხლისთვის, და საფეხური მზადავს შენი.",
+  "item_bolt_fire": "ცეცხლის ჭიქი",
+  "item_bolt_fire_description": "ეს საბოლოოდ დამწყვეტილებს ყვითელს, რისი გადაკეთვაც ამის გადახედვაა.",
+  "item_blackmetal_greatsword": "შავი მეტალური დიდი ხუხული",
+  "item_blackmetal_greatsword_description": "დიდი დიდი საშუალო დარბაზი, რომელიც გათვლილია შავი მეტალით."
 }

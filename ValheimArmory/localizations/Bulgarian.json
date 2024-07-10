@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Щитът държи замразен лед, засилван от сълзите на модерните.",
   "item_bolt_iron_poison": "Отровна стрела",
   "item_bolt_iron_poison_description": "Остър болт с отрова, ускоряващ смъртта.",
-  "item_bolt_surtling_description": "Остро конусообразно бодило въоръжено със съртлинг ядро, това ще изгори."
+  "item_bolt_surtling_description": "Остро конусообразно бодило въоръжено със съртлинг ядро, това ще изгори.",
+  "item_needle_bolt": "Иглена болт",
+  "item_needle_bolt_description": "Една шев в правилно време.",
+  "item_bow_heavy_bone_blood": "Кърваво покровно лъко",
+  "item_bow_heavy_bone_blood_description": "Този лък изглежда напълно бърз за кръвта и опасно зъл.",
+  "item_bolt_fire": "Огнена стрела",
+  "item_bolt_fire_description": "Тази болт изгаря всичко, което пробожда.",
+  "item_blackmetal_greatsword": "Черен метален голям меч",
+  "item_blackmetal_greatsword_description": "Голям меч, кован с блестящ черен метал."
 }

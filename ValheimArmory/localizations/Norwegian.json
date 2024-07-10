@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Et skjold som holder på frossen is, forsterket av mors tårer.",
   "item_bolt_iron_poison": "Giftig pil",
   "item_bolt_iron_poison_description": "Et skarpt bolt spisset med gift, fartende død.",
-  "item_bolt_surtling_description": "Et spiss spyd væpnet med en surtling-kjerne, dette kommer til å brenne."
+  "item_bolt_surtling_description": "Et spiss spyd væpnet med en surtling-kjerne, dette kommer til å brenne.",
+  "item_needle_bolt": "Nål bolt",
+  "item_needle_bolt_description": "Et sting i tide.",
+  "item_bow_heavy_bone_blood": "Skall blod bue",
+  "item_bow_heavy_bone_blood_description": "Denne buen virker helt rask for blod, og farlig ond.",
+  "item_bolt_fire": "ildkule",
+  "item_bolt_fire_description": "Denne bolten brenner hva enn den treffer.",
+  "item_blackmetal_greatsword": "Svartmetall stor sverd",
+  "item_blackmetal_greatsword_description": "Et massivt stort sverd smidd med skinnende svartmetall."
 }

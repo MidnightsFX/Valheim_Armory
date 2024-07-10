@@ -162,5 +162,13 @@
   "item_dagger_meteor_2h": "Assassin daggers",
   "item_dagger_meteor_2h_description": "Two slivers of darkness sneak through the night, what will they find?",
   "item_moder_shield": "Moders shield",
-  "item_moder_shield_description":  "A shield holding frozen ice, enhanced by moders tears."
+  "item_moder_shield_description": "A shield holding frozen ice, enhanced by moders tears.",
+  "item_needle_bolt": "Needle Bolt",
+  "item_needle_bolt_description": "A stitch in time.",
+  "item_bow_heavy_bone_blood": "Carapace blood bow",
+  "item_bow_heavy_bone_blood_description": "This bow seems absolutely rapid for blood, and dangerously evil.",
+  "item_bolt_fire": "Fire bolt",
+  "item_bolt_fire_description": "This bolt burns whatever it pierces.",
+  "item_blackmetal_greatsword": "Black metal greatsword",
+  "item_blackmetal_greatsword_description":  "A massive greatsword forged with glimmering blackmetal."
 }

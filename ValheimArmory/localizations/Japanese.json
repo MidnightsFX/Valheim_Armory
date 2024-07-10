@@ -162,5 +162,13 @@
   "item_moder_shield_description": "凍った氷を保持する盾、母親の涙によって強化された。(Japanese translation)",
   "item_bolt_iron_poison": "毒の矢毒の矢",
   "item_bolt_iron_poison_description": "毒を含んだ鋭いボルトが速やかに死をもたらす。",
-  "item_bolt_surtling_description": "サートリングコアで武装した尖ったスパイク、これは燃えるぞ。"
+  "item_bolt_surtling_description": "サートリングコアで武装した尖ったスパイク、これは燃えるぞ。",
+  "item_needle_bolt": "針ボルト",
+  "item_needle_bolt_description": "時には一針。",
+  "item_bow_heavy_bone_blood": "カラパスの血の弓(I'm not sure what you mean by , can you provide more context or clarify your request?)",
+  "item_bow_heavy_bone_blood_description": "この弓は、血に対して絶対的に速く、危険なほど邪悪です。",
+  "item_bolt_fire": "ファイアボルト",
+  "item_bolt_fire_description": "このボルトは貫通したものを焼き尽くす。",
+  "item_blackmetal_greatsword": "ブラックメタルの大剣ありがとうございます",
+  "item_blackmetal_greatsword_description": "光る黒い金属で鍛造された巨大な大剣。"
 }

@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Skjöldur sem heldur falinni ís, styrktur af móður tár.",
   "item_bolt_iron_poison": "Eitur ör",
   "item_bolt_iron_poison_description": "Einhver skörp bútur toppaður með eitri, hraður dauði.Takk fyrir beiðnina.",
-  "item_bolt_surtling_description": "Ekki erindi fyrir þig"
+  "item_bolt_surtling_description": "Ekki erindi fyrir þig",
+  "item_needle_bolt": "Nálaskrúfa",
+  "item_needle_bolt_description": "Saumur á réttum tíma.",
+  "item_bow_heavy_bone_blood": "Skel blóð bogi",
+  "item_bow_heavy_bone_blood_description": "Þessi bogi virðist alveg fljótur fyrir blóð, og hættulega illur.",
+  "item_bolt_fire": "Eldabolt",
+  "item_bolt_fire_description": "Þessi skrúfa brennur allt það sem hún stingur í.Takk fyrir beiðnina.",
+  "item_blackmetal_greatsword": "Svört meðal-stórsverð",
+  "item_blackmetal_greatsword_description": "Stórt sverð smíðað úr skínandi svörtum eirjárn."
 }

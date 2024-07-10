@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Een schild dat bevroren ijs vasthoudt, versterkt door moedertranen.",
   "item_bolt_iron_poison": "Vergiftigde pijl",
   "item_bolt_iron_poison_description": "Een scherpe bout met vergif, snelle dood.",
-  "item_bolt_surtling_description": "Een puntige spike bewapend met een surtling kern, dit gaat branden."
+  "item_bolt_surtling_description": "Een puntige spike bewapend met een surtling kern, dit gaat branden.",
+  "item_needle_bolt": "Naaldbout",
+  "item_needle_bolt_description": "Een steek op tijd.",
+  "item_bow_heavy_bone_blood": "Schild bloed boog",
+  "item_bow_heavy_bone_blood_description": "Deze boog lijkt absoluut snel voor bloed, en gevaarlijk kwaadaardig.",
+  "item_bolt_fire": "Vuurpijl",
+  "item_bolt_fire_description": "Deze bout verbrandt alles wat het doorboort.",
+  "item_blackmetal_greatsword": "Zwarte metalen grootzwaard",
+  "item_blackmetal_greatsword_description": "Een massief groot zwaard gesmeed met glinsterend zwart metaal."
 }

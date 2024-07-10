@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Bir kalkan donmuş buz taşıyan, annelerin gözyaşlarıyla güçlendirilmiş.",
   "item_bolt_iron_poison": "Zehirli ok",
   "item_bolt_iron_poison_description": "Zehirli ucunda sivri bir cıvata, ölümü hızlandırıyor.",
-  "item_bolt_surtling_description": "Keskin ucu olan bir mızrak, surtling çekirdeği ile donatılmış, bu yanacak."
+  "item_bolt_surtling_description": "Keskin ucu olan bir mızrak, surtling çekirdeği ile donatılmış, bu yanacak.",
+  "item_needle_bolt": "İğne Civata",
+  "item_needle_bolt_description": "Zamanında atılan bir dikiş.",
+  "item_bow_heavy_bone_blood": "Kabuk kan yayı",
+  "item_bow_heavy_bone_blood_description": "Bu yay kan için kesinlikle hızlı görünüyor ve tehlikeli kötü.",
+  "item_bolt_fire": "Ateş oku",
+  "item_bolt_fire_description": "Bu cıvata, delerse neyi olursa olsun yakar.",
+  "item_blackmetal_greatsword": "Kara metal büyük kılıç",
+  "item_blackmetal_greatsword_description": "Büyük parıldayan siyah metal ile dövülmüş devasa bir kılıç."
 }

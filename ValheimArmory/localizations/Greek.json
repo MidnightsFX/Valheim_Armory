@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Ένας ασπίδα κρατώντας παγωμένο πάγο, ενισχυμένος από δάκρυα μητέρας.",
   "item_bolt_iron_poison": "Τοξική βολή",
   "item_bolt_iron_poison_description": "Ένας αιχμηρός βέλος με τοξικό άκρο, που επιταχύνει το θάνατο.",
-  "item_bolt_surtling_description": "Ένας κοφτερός κορυφαίος εξοπλισμένος με πυρήνα surtling, αυτό θα κάψει."
+  "item_bolt_surtling_description": "Ένας κοφτερός κορυφαίος εξοπλισμένος με πυρήνα surtling, αυτό θα κάψει.",
+  "item_needle_bolt": "Βελόνι βίδα",
+  "item_needle_bolt_description": "Μια ραφή στην ώρα.",
+  "item_bow_heavy_bone_blood": "Αίμα κέλυφου της αλεπού.",
+  "item_bow_heavy_bone_blood_description": "Αυτό το τόξο φαίνεται απόλυτα γρήγορο για αίμα, και επικίνδυνα κακό.",
+  "item_bolt_fire": "Πυροβολικό",
+  "item_bolt_fire_description": "Αυτό το καρφί καίει ο,τιδήποτε διαπερνά.",
+  "item_blackmetal_greatsword": "Μαύρο μαχαίρι μεγάλης μεταλλικής λεπίδας",
+  "item_blackmetal_greatsword_description": "Ένα τεράστιο μεγάλο σπαθί σφυρηλατημένο με λαμπερό μαύρο μέταλλο."
 }

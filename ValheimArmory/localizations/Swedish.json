@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Ett sköld som håller fruset is, förstärkt av moderns tårar.",
   "item_bolt_iron_poison": "Giftig pil",
   "item_bolt_iron_poison_description": "En vass bult spetsad med gift, snabb död.",
-  "item_bolt_surtling_description": "En spetsig spik beväpnad med en surtlingkärna, det här kommer att bränna."
+  "item_bolt_surtling_description": "En spetsig spik beväpnad med en surtlingkärna, det här kommer att bränna.",
+  "item_needle_bolt": "Nål bult",
+  "item_needle_bolt_description": "En söm i tid.",
+  "item_bow_heavy_bone_blood": "Skal blod båge",
+  "item_bow_heavy_bone_blood_description": "Denna båge verkar absolut snabb för blod, och farligt ond.",
+  "item_bolt_fire": "Eldpil",
+  "item_bolt_fire_description": "Denna bult bränner allt den träffar.",
+  "item_blackmetal_greatsword": "Svart metall storsvärd",
+  "item_blackmetal_greatsword_description": "Ett massivt storsvärd smitt i glittrande svartmetall."
 }

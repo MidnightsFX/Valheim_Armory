@@ -20,9 +20,13 @@ If you would like to contribute a new translation, or improve an existing one pl
 
 # Features
 
-Here is a sample gallery of weapons added by this mod.
+Here is a sample gallery of weapons added by this mod. 
 
-![Sample Gallery of added content](https://i.imgur.com/bl5tTcl.png)
+![Sample of weapons added](https://i.postimg.cc/Xvz79KRH/image.png)
+
+Completed greatsword (2H) lineup from Meadows to Ashlands.
+
+![Sample Gallery of added content](https://i.postimg.cc/MHK0v9tX/image.png)
 
 
 Below is more information on all of the items added, what tier they are in, where they are crafted and at what progression point. All of the sections below are expandable to view the details. 
@@ -86,21 +90,33 @@ It is encouraged that you find these items by exploring and discovery, but many 
 </details>
 
 <details>
-  <summary>Arrows</summary>
+  <summary>Arrows & Bolts</summary>
+
+  ### Arrows
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Bone arrow | Workbench | Meadows | `VAArrowBone` | ![bone arrow icon](https://imgur.com/KUYj0Zp.png) |
   | Chitin arrow | Workbench | Ocean | `VAchitinarrow` | ![chitin arrow icon](https://imgur.com/LKNQnEt.png) |
   | Ancient Wood arrow | Workbench | Swamp | `VAarrowancient` | ![ancient wood arrow icon](https://imgur.com/d28tCPw.png) |
-  | Surtling Fire arrow | Forge | Workbench | `VAarrow_surtling_fire` | ![surtling fire arrow icon](https://i.imgur.com/K5Erlwt.png) |
+  | Surtling Fire arrow | Forge | Mountain | `VAarrow_surtling_fire` | ![surtling fire arrow icon](https://i.imgur.com/K5Erlwt.png) |
   | Blackmetal arrow | Forge | Plains | `VAArrowGreenMetal` | ![blackmetal arrow icon](https://imgur.com/yiJKz6s.png) | 
-  | Wood Bolt | Workbench | Blackforest | `VABoltWood` | ![wood crossbow bolt](https://imgur.com/UTbO8aG.png) |
+
+  ---
+  ### Bolts
+
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Wood Bolt | Workbench | Blackforest | `VABoltWood` | ![wood crossbow bolt](https://i.postimg.cc/gkc96zKV/bolt-wood.png) |
+  | Corewood Bolt | Workbench | Blackforest | `VABoltWood` | ![corewood crossbow bolt](https://i.postimg.cc/RFJy4q4m/bolt-corewood.png) |
   | Bronze Bolt | Forge | Blackforest | `VAbolt_bronze` | ![bronze bolt](https://i.imgur.com/cUJTlB3.png) |
-  | Iron Poison Bolt | Forge | Swamp | `VAbolt_poison` | ![iron poison bolt](https://i.imgur.com/mVLDfm8.png) |
+  | Fire Bolt | Workbench | Blackforest | `VAFireBolt` | ![fire bolt](https://i.imgur.com/iZ5fOrF.png) |
+  | Poison Bolt | Forge | Swamp | `VAbolt_poison` | ![iron poison bolt](https://i.imgur.com/mVLDfm8.png) |
+  | Surtling Bolt | Forge | Swamp | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/iZ5fOrF.png) |
   | Frost Bolt | Forge | Mountain | `VAbolt_frost` | ![Silver Frost bolt](https://i.imgur.com/0FGHrBB.png) |
-  | Obsidian Bolt | Workbench | Mountain | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/luqYGzO.png) |
-  | Blackmetal Surtling Bolt | Forge | Plains | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/iZ5fOrF.png) |
+  | Obsidian Bolt | Workbench | Mountain | `VASurtlingBolt` | ![obsidian bolt](https://i.imgur.com/luqYGzO.png) |
+  | Needle Bolt | Workbench | Plains | `VASurtlingBolt` | ![needle bolt](https://i.postimg.cc/t4VwknJ4/needle-bolt.png) |
+
 
 </details>
 
@@ -126,7 +142,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Flint Greataxe | Workbench | Meadows | `VAFlint_greataxe` | ![flint greataxe icon](https://i.imgur.com/dPbaKtX.png) |
-  | Bronze Lumber Axe | Forge | Blackforest | `VAbronze_battleaxe` | ![bronze greataxe icon](https://i.imgur.com/1an32hc.png) |
+  | Bronze Lumber Axe | Forge | Blackforest | `VAbronze_battleaxe` | ![bronze greataxe icon](https://i.postimg.cc/v839g0k3/bronze-axe-rebuild.png) |
   | Blackmetal Greataxe | Forge | Mistlands | `VAblackmetal_battleaxe` | ![blackmetal greataxe icon](https://i.imgur.com/2H94zhh.png) |
 
 </details>
@@ -201,10 +217,10 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Flint Greatsword | Workbench | Meadows | `VAFlint_greatsword` | ![flint greatsword icon](https://i.imgur.com/IWwo2x0.png) |
-  | Bronze Greatsword | Forge | Blackforest | `VAbronze_greatsword` | ![bronze greatsword icon](https://i.imgur.com/cjSbYI5.png) |
-  | Iron Greatsword | Forge | Swamp | `VAiron_greatsword` | ![iron greatsword icon](https://i.imgur.com/UmjdC0K.png) |
-  | Silver Greatsword | Forge | Mountain | `VAsilver_greatsword` | ![silver greatsword icon](https://i.imgur.com/qBOtNRn.png) |
-
+  | Bronze Greatsword | Forge | Blackforest | `VAbronze_greatsword` | ![bronze greatsword icon](https://i.postimg.cc/bYmChnN3/bronze-greatsword-reforged.png) |
+  | Iron Greatsword | Forge | Swamp | `VAiron_greatsword` | ![iron greatsword icon](https://i.postimg.cc/tTySXtxm/iron-greatsword-reforged.png) |
+  | Silver Greatsword | Forge | Mountain | `VAsilver_greatsword` | ![silver greatsword icon](https://i.postimg.cc/cJGTmMX4/silver-greatsword-reforged.png) |
+  | Blackmetal Greatsword | Forge | Plains | `VABlackmetal_greatsword` | ![blackmetal greatsword icon](https://i.postimg.cc/VkrH4Nw4/blackmetal-greatsword.png) |
 
   ---
   
@@ -251,6 +267,8 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Blood bone battlepick | forge | BlackForest | `VABlood_Bones_pickaxe` | ![blood bone battlepick](https://i.imgur.com/W18gjEx.png) |
   | Blood bone bow | forge | Mountains | `VABlood_bone_bow` | ![blood bone bow](https://i.imgur.com/nBN4Jac.png) |
+  | Carapace bone bow | Magetable | Mistlands | `VAHeavy_Blood_Bone_Bow` | ![carapace bone bow](https://i.postimg.cc/SKF5vQY7/blood-bone-bow-heavy.png) |
+  
 
 </details>
 
@@ -266,9 +284,7 @@ Otherwise a configuration file located at `/BepInEx/config/MidnightsFX.ValheimAr
 
 Configuration is **server enforced** your client will adopt to using whatever configuration is specified on the server when connecting.
 
-Most configuration values are updated in real-time. Tune your weapons quickly! If a configuration value is not updated while you are in game, logging out and back in will update it. You do not need to restart your client.
-
-- Updating Crafting Recipe does require a 
+Most configuration values are updated in real-time. Tune your weapons quickly!
 
 Current configuration options:
 * Damage
@@ -279,6 +295,13 @@ Current configuration options:
 * block per level
 * Crafted amount (where applicable)
 * movement speed (where applicable)
+* parry bonus (where applicable)
+* bow draw/crossbow reload time
+* crafting recipe
+* crafting station used
+* min level required to craft
+* recipe enabled
+* item enabled
 
 ---
 

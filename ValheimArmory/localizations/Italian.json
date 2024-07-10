@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Uno scudo che tiene ghiaccio congelato, potenziato dalle lacrime moderne.",
   "item_bolt_iron_poison": "Dardo avvelenato",
   "item_bolt_iron_poison_description": "Un bullone affilato punteggiato di veleno, morte in corsa.",
-  "item_bolt_surtling_description": "Un pungente picco armato con un nucleo infuocato, questo brucerà."
+  "item_bolt_surtling_description": "Un pungente picco armato con un nucleo infuocato, questo brucerà.",
+  "item_needle_bolt": "Vite a ago",
+  "item_needle_bolt_description": "Punto a tempo.",
+  "item_bow_heavy_bone_blood": "Arco di sangue del carapace",
+  "item_bow_heavy_bone_blood_description": "Questo arco sembra assolutamente veloce per il sangue, e pericolosamente malvagio.",
+  "item_bolt_fire": "Fuoco baluardo",
+  "item_bolt_fire_description": "Questo bullone brucia tutto ciò che perfora.",
+  "item_blackmetal_greatsword": "Spadone nero in metallo",
+  "item_blackmetal_greatsword_description": "Una massiccia spada lunga forgiata con luccicante metallo nero."
 }

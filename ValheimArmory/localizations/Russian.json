@@ -162,5 +162,13 @@
   "item_bolt_iron_poison_description": "Острый болт с ядом, ускоряющий смерть.",
   "item_bolt_surtling_description": "Острый шип вооруженный сердцем суртлинга, это сожжет.",
   "item_bolt_corewood": "Ядреный болт",
-  "item_bolt_corewood_description": "Прочный деревянный засов."
+  "item_bolt_corewood_description": "Прочный деревянный засов.",
+  "item_needle_bolt": "Игольчатый болт",
+  "item_needle_bolt_description": "Шов во времени.",
+  "item_bow_heavy_bone_blood": "Панцирь кровавый поклон",
+  "item_bow_heavy_bone_blood_description": "Этот лук кажется абсолютно быстрым для крови и опасно злым.",
+  "item_bolt_fire": "Огненная стрела",
+  "item_bolt_fire_description": "Этот болт сжигает все, что пронзает.",
+  "item_blackmetal_greatsword": "Черный металлический меч",
+  "item_blackmetal_greatsword_description": "Массивный меч, выкованный из сверкающего черного металла."
 }

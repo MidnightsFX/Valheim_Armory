@@ -162,5 +162,13 @@
   "item_moder_shield_description": "Щит, утримуючий замерзле лід, посилений сльозами матері.",
   "item_bolt_iron_poison": "Отруйна стріла",
   "item_bolt_iron_poison_description": "Гострий болт з отрутою, що несе смерть у спіху.",
-  "item_bolt_surtling_description": "Заокруглений шип, зброєний серцевиною суртлінгу, це спалиться."
+  "item_bolt_surtling_description": "Заокруглений шип, зброєний серцевиною суртлінгу, це спалиться.",
+  "item_needle_bolt": "Голка болт",
+  "item_needle_bolt_description": "Шов вчасно.",
+  "item_bow_heavy_bone_blood": "Карапас крові лук",
+  "item_bow_heavy_bone_blood_description": "Цей лук здається абсолютно швидким для крові, і небезпечно зловісним.",
+  "item_bolt_fire": "Вогняний промінь",
+  "item_bolt_fire_description": "Цей болт згоряє все, що він проколює.",
+  "item_blackmetal_greatsword": "Чорний металевий мечеть",
+  "item_blackmetal_greatsword_description": "Величезний меч, викований з блискучого чорного металу."
 }

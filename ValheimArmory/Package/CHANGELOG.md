@@ -1,3 +1,72 @@
+ **1.12.0**
+---
+```
+- Added the carapace blood bow
+- Retextured the bronze greatsword
+- Retextured the iron greatsword
+- Retextured the silver greatsword
+- Added the blackmetal greatsword
+- Updated druidic ice staff sfx
+- Increased animation speed most of the staff animations
+- Updated the default spirit staff recipe to require Dverger trophies as an initial crafting cost
+- Added a basic fire bolt for the crossbow
+- Improved mounting and grip for Yagluths greatsword
+- Improved mounting for silver tower shield
+```
+
+ **1.11.4**
+---
+```
+- Fixed default recipe for Elder crossbow to require corewood not stone
+- Fixed auto-pickup not enabled for queens weapons
+- Retextured Bronze Axe
+- Changed poison staff projectile explosion vfx
+```
+
+ **1.11.3**
+---
+```
+- Converted the blood bone bow to use bowskill for damage calc
+- Converted the bloond bone pickaxe to use pickaxe for damage calc
+- Added a patch to increase skills for blood hybrid weapons outside of their primary skill
+- Reduced visual dust from skyshatter by 50%
+- Fixed the default recipe for the bronze arbalest to be plains level
+```
+
+ **1.11.2**
+---
+```
+- Fixed Eikythrs sword & skyshatter not auto-picking up
+- Added Spirit damage to the blood bone bow
+- Added Spirit damage to the bloody pickaxe
+- Reduced strictness of version checking for players of un-modded servers
+- Fixed needle bolt default recipe
+```
+
+ **1.11.1**
+---
+```
+- Exposed durability and durability per level for all weapons/shields
+- Fixed internal version to match
+```
+
+ **1.11.0**
+---
+```
+- Added the needle bolt
+- Reduced size of a number of icons to better match vanilla (more will be done in the future)
+- Fixed the grip location on Moders spear
+```
+
+
+ **1.10.1**
+---
+```
+- Fixed autopickup for the flint sword
+- Fixed crash related to setting an invalid recipe
+- Added more safety checks to recipe parsing
+```
+
  **1.10.0**
 ---
 ```
