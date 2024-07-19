@@ -3,7 +3,6 @@ using Jotunn.Entities;
 using Jotunn.Managers;
 using System;
 using System.Collections.Generic;
-using System.IO.Ports;
 using UnityEngine;
 using static ValheimArmory.common.JotunnItemFactory;
 using Logger = Jotunn.Logger;
@@ -1563,7 +1562,7 @@ namespace ValheimArmory
             // Meteor atgeir
             new JotunnItem(
                 new Dictionary<string, string>() {
-                    { "name", "Eird Atgeir" },
+                    { "name", "Flametal Atgeir" },
                     { "catagory", "Atgeirs" },
                     { "prefab", "VAMeteorAtgeir" },
                     { "sprite", "meteor_atgeir" },
@@ -1587,6 +1586,134 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(4, 2) },
                     { "Blackwood", new Tuple<int, int>(10, 0) },
                     { "MorgenSinew", new Tuple<int, int>(2, 2) }
+                }
+            );
+
+            // Meteor primal atgeir
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Flametal primal Atgeir" },
+                    { "catagory", "Atgeirs" },
+                    { "prefab", "VAMeteorAtgeir_nature" },
+                    { "sprite", "meteor_atgeir_nature" },
+                    { "craftedAt", "blackforge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "pierce", new Tuple<float, float, float, bool>(150, 0, 300, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
+                    { "poison", new Tuple<float, float, float, bool>(15, 0, 300, true) },
+                    { "poison_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(52, 0, 120, true) },
+                    { "durability", new Tuple<float, float, float, bool>(175, 0, 400, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(22, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(42, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAMeteorAtgeir", new Tuple<int, int>(1, 0) },
+                    { "FlametalNew", new Tuple<int, int>(8, 8) },
+                    { "Blackwood", new Tuple<int, int>(5, 0) },
+                    { "GemstoneGreen", new Tuple<int, int>(1, 1) }
+                }
+            );
+
+            // Meteor lightning atgeir
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Flametal lightning Atgeir" },
+                    { "catagory", "Atgeirs" },
+                    { "prefab", "VAMeteorAtgeir_lightning" },
+                    { "sprite", "meteor_atgeir_lightning" },
+                    { "craftedAt", "blackforge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "pierce", new Tuple<float, float, float, bool>(150, 0, 300, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(10, 0, 300, true) },
+                    { "lightning_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(52, 0, 120, true) },
+                    { "durability", new Tuple<float, float, float, bool>(175, 0, 400, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(22, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(42, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAMeteorAtgeir", new Tuple<int, int>(1, 0) },
+                    { "FlametalNew", new Tuple<int, int>(8, 8) },
+                    { "Blackwood", new Tuple<int, int>(5, 0) },
+                    { "GemstoneBlue", new Tuple<int, int>(1, 1) }
+                }
+            );
+
+            // Meteor lightning atgeir
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Flametal lightning Atgeir" },
+                    { "catagory", "Atgeirs" },
+                    { "prefab", "VAMeteorAtgeir_lightning" },
+                    { "sprite", "meteor_atgeir_lightning" },
+                    { "craftedAt", "blackforge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "pierce", new Tuple<float, float, float, bool>(150, 0, 300, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(10, 0, 300, true) },
+                    { "lightning_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(52, 0, 120, true) },
+                    { "durability", new Tuple<float, float, float, bool>(175, 0, 400, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(22, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(42, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAMeteorAtgeir", new Tuple<int, int>(1, 0) },
+                    { "FlametalNew", new Tuple<int, int>(8, 8) },
+                    { "Blackwood", new Tuple<int, int>(5, 0) },
+                    { "GemstoneBlue", new Tuple<int, int>(1, 1) }
+                }
+            );
+
+            // Meteor blood atgeir
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Flametal blood Atgeir" },
+                    { "catagory", "Atgeirs" },
+                    { "prefab", "VAMeteorAtgeir_blood" },
+                    { "sprite", "meteor_atgeir_blood" },
+                    { "craftedAt", "blackforge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "pierce", new Tuple<float, float, float, bool>(150, 0, 300, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(10, 0, 300, true) },
+                    { "lightning_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
+                    { "block", new Tuple<float, float, float, bool>(52, 0, 120, true) },
+                    { "durability", new Tuple<float, float, float, bool>(175, 0, 400, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(22, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(42, 1, 50, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAMeteorAtgeir", new Tuple<int, int>(1, 0) },
+                    { "FlametalNew", new Tuple<int, int>(8, 8) },
+                    { "Blackwood", new Tuple<int, int>(5, 0) },
+                    { "GemstoneRed", new Tuple<int, int>(1, 1) }
                 }
             );
         }
@@ -1750,13 +1877,75 @@ namespace ValheimArmory
 
         private void LoadDaggers()
         {
+            // Blackmetal (mistlands) 1H Daggers
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Hati Knife" },
+                    { "catagory", "Knives" },
+                    { "prefab", "VAdagger_blackmetal_mistlands" },
+                    { "sprite", "hatti_knife" },
+                    { "craftedAt", "blackforge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "block", new Tuple<float, float, float, bool>(4, 0, 48, true) },
+                    { "slash", new Tuple<float, float, float, bool>(39, 0, 99, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(39, 0, 99, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 40, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(38, 1, 50, true) },
+                    { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "FineWood", new Tuple<int, int>(4, 4) },
+                    { "BlackMetal", new Tuple<int, int>(8, 4) },
+                    { "Iron", new Tuple<int, int>(2, 2) }
+                }
+            );
+
+            // Blackmetal 2H Daggers
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Blackmetal knives" },
+                    { "catagory", "Knives" },
+                    { "prefab", "VAknife_blackmetal" },
+                    { "sprite", "2h_blackmetal_knives" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "block", new Tuple<float, float, float, bool>(4, 0, 48, true) },
+                    { "slash", new Tuple<float, float, float, bool>(39, 0, 99, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(39, 0, 99, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 40, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(4, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
+                    { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "FineWood", new Tuple<int, int>(8, 4) },
+                    { "BlackMetal", new Tuple<int, int>(20, 10) },
+                    { "LinenThread", new Tuple<int, int>(10, 5) }
+                }
+            );
+
             // Flint 2H Daggers
             new JotunnItem(
                 new Dictionary<string, string>() {
-                    { "name", "Flint Daggers" },
-                    { "catagory", "Daggers" },
+                    { "name", "Flint knives" },
+                    { "catagory", "Knives" },
                     { "prefab", "VADagger_Flint_2h" },
-                    { "sprite", "flint_2h_dagger" },
+                    { "sprite", "2h_flint_knives" },
                     { "craftedAt", "piece_workbench" }
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
@@ -1784,8 +1973,8 @@ namespace ValheimArmory
             // Antler 1H Daggers
             new JotunnItem(
                 new Dictionary<string, string>() {
-                    { "name", "Eikthyrs Dagger" },
-                    { "catagory", "Daggers" },
+                    { "name", "Eikthyrs knife" },
+                    { "catagory", "Knives" },
                     { "prefab", "VAAntler_dagger" },
                     { "sprite", "antler_dagger" },
                     { "craftedAt", "piece_workbench" }
@@ -1815,13 +2004,13 @@ namespace ValheimArmory
                 }
             );
 
-            // Bronze 2H Daggers
+            // Copper 2H Daggers
             new JotunnItem(
                 new Dictionary<string, string>() {
-                    { "name", "Rascals Daggers" },
-                    { "catagory", "Daggers" },
-                    { "prefab", "VAdagger_bronze_2h" },
-                    { "sprite", "bronze_dagger_2h" },
+                    { "name", "Rascals knives" },
+                    { "catagory", "Knives" },
+                    { "prefab", "VAdagger_copper_2h" },
+                    { "sprite", "copper_knives_2h" },
                     { "craftedAt", "forge" }
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
@@ -1841,47 +2030,16 @@ namespace ValheimArmory
                 new Dictionary<string, Tuple<int, int>>()
                 {
                     { "RoundLog", new Tuple<int, int>(4, 0) },
-                    { "Bronze", new Tuple<int, int>(8, 4) },
+                    { "Copper", new Tuple<int, int>(16, 4) },
                     { "LeatherScraps", new Tuple<int, int>(4, 2) }
-                }
-            );
-
-            // Bronze 1H Daggers
-            new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bronze Dagger" },
-                    { "catagory", "Daggers" },
-                    { "prefab", "VAdagger_bronze" },
-                    { "sprite", "bronze_dagger" },
-                    { "craftedAt", "forge" }
-                },
-                new Dictionary<string, Tuple<float, float, float, bool>>() {
-                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
-                    { "slash", new Tuple<float, float, float, bool>(16, 0, 99, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
-                    { "pierce", new Tuple<float, float, float, bool>(16, 0, 99, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(6, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 50, true) },
-                    { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
-                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
-                },
-                new Dictionary<string, bool>() { },
-                new Dictionary<string, Tuple<int, int>>()
-                {
-                    { "RoundLog", new Tuple<int, int>(2, 0) },
-                    { "Bronze", new Tuple<int, int>(6, 3) },
-                    { "LeatherScraps", new Tuple<int, int>(3, 1) }
                 }
             );
 
             // Iron 2H Daggers
             new JotunnItem(
                 new Dictionary<string, string>() {
-                    { "name", "Rogue Daggers" },
-                    { "catagory", "Daggers" },
+                    { "name", "Rogue knives" },
+                    { "catagory", "Knives" },
                     { "prefab", "VAdagger_iron_2h" },
                     { "sprite", "iron_dagger_2h" },
                     { "craftedAt", "forge" }
@@ -1911,8 +2069,8 @@ namespace ValheimArmory
             // Iron 1H Daggers
             new JotunnItem(
                 new Dictionary<string, string>() {
-                    { "name", "Iron Dagger" },
-                    { "catagory", "Daggers" },
+                    { "name", "Iron knives" },
+                    { "catagory", "Knives" },
                     { "prefab", "VAdagger_iron" },
                     { "sprite", "iron_dagger" },
                     { "craftedAt", "forge" }
@@ -1944,8 +2102,8 @@ namespace ValheimArmory
             // Silver 2H Daggers
             new JotunnItem(
                 new Dictionary<string, string>() {
-                    { "name", "Blackguards Runic Daggers" },
-                    { "catagory", "Daggers" },
+                    { "name", "Silver knives" },
+                    { "catagory", "Knives" },
                     { "prefab", "VAdagger_silver_2h" },
                     { "sprite", "silver_dagger_2h" },
                     { "craftedAt", "forge" }
@@ -1977,47 +2135,11 @@ namespace ValheimArmory
                 }
             );
 
-            // Silver 1H Daggers | not default craftable
-            new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Silver Dagger" },
-                    { "catagory", "Daggers" },
-                    { "prefab", "VAdagger_silver" },
-                    { "sprite", "silver_dagger" },
-                    { "craftedAt", "forge" }
-                },
-                new Dictionary<string, Tuple<float, float, float, bool>>() {
-                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
-                    { "slash", new Tuple<float, float, float, bool>(34, 0, 99, true) },
-                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
-                    { "pierce", new Tuple<float, float, float, bool>(34, 0, 99, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
-                    { "spirit", new Tuple<float, float, float, bool>(0, 0, 99, true) },
-                    { "spirit_per_level", new Tuple<float, float, float, bool>(0, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(10, 1, 20, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(30, 1, 50, true) },
-                    { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
-                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
-                },
-                new Dictionary<string, bool>() {
-                    { "enabled", true },
-                    { "craftable", false }
-                },
-                new Dictionary<string, Tuple<int, int>>()
-                {
-                    { "ElderBark", new Tuple<int, int>(4, 2) },
-                    { "Obsidian", new Tuple<int, int>(12, 5) },
-                    { "Silver", new Tuple<int, int>(14, 6) },
-                }
-            );
-
             // Moders Daggers 1H
             new JotunnItem(
                 new Dictionary<string, string>() {
-                    { "name", "Moders Dagger" },
-                    { "catagory", "Daggers" },
+                    { "name", "Moders knife" },
+                    { "catagory", "Knives" },
                     { "prefab", "VAdagger_moder" },
                     { "sprite", "moder_dagger" },
                     { "craftedAt", "forge" }
@@ -2056,8 +2178,8 @@ namespace ValheimArmory
             // Bonemass Dagger
             new JotunnItem(
                 new Dictionary<string, string>() {
-                    { "name", "Bonemasses Dagger" },
-                    { "catagory", "Daggers" },
+                    { "name", "Bonemasses knife" },
+                    { "catagory", "Knives" },
                     { "prefab", "VABonemassDagger" },
                     { "sprite", "bonemass_dagger" },
                     { "craftedAt", "forge" }
@@ -2094,8 +2216,8 @@ namespace ValheimArmory
             // Queens Dagger
             new JotunnItem(
                 new Dictionary<string, string>() {
-                    { "name", "Queens Dagger" },
-                    { "catagory", "Daggers" },
+                    { "name", "Queens knife" },
+                    { "catagory", "Knives" },
                     { "prefab", "VAdagger_queen" },
                     { "sprite", "dagger_queen" },
                     { "craftedAt", "blackforge" }
@@ -2133,8 +2255,8 @@ namespace ValheimArmory
             // Meteor dagger
             new JotunnItem(
                 new Dictionary<string, string>() {
-                    { "name", "Eird dagger" },
-                    { "catagory", "Daggers" },
+                    { "name", "Flametal knife" },
+                    { "catagory", "Knives" },
                     { "prefab", "VAdagger_meteor" },
                     { "sprite", "meteor_dagger" },
                     { "craftedAt", "blackforge" }
@@ -2164,11 +2286,114 @@ namespace ValheimArmory
                 }
             );
 
+            // Meteor primal dagger
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Flametal primal knife" },
+                    { "catagory", "Knives" },
+                    { "prefab", "VAdagger_meteor_nature" },
+                    { "sprite", "meteor_dagger_primal" },
+                    { "craftedAt", "blackforge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(45, 0, 99, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "slash", new Tuple<float, float, float, bool>(45, 0, 99, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "poison", new Tuple<float, float, float, bool>(10, 0, 99, true) },
+                    { "poison_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(42, 1, 80, true) },
+                    { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                },
+                new Dictionary<string, bool>() {
+                    { "enabled", true }
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAdagger_meteor", new Tuple<int, int>(1, 0) },
+                    { "FlametalNew", new Tuple<int, int>(4, 4) },
+                    { "GemstoneGreen", new Tuple<int, int>(1, 1) }
+                }
+            );
+
+            // Meteor lightning dagger
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Flametal lightning knife" },
+                    { "catagory", "Knives" },
+                    { "prefab", "VAdagger_meteor_lightning" },
+                    { "sprite", "meteor_dagger_lightning" },
+                    { "craftedAt", "blackforge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(45, 0, 99, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "slash", new Tuple<float, float, float, bool>(45, 0, 99, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(10, 0, 99, true) },
+                    { "lightning_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(42, 1, 80, true) },
+                    { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                },
+                new Dictionary<string, bool>() {
+                    { "enabled", true }
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAdagger_meteor", new Tuple<int, int>(1, 0) },
+                    { "FlametalNew", new Tuple<int, int>(4, 4) },
+                    { "GemstoneBlue", new Tuple<int, int>(1, 1) }
+                }
+            );
+
+            // Meteor blood dagger
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Flametal blood knife" },
+                    { "catagory", "Knives" },
+                    { "prefab", "VAdagger_meteor_blood" },
+                    { "sprite", "meteor_dagger_blood" },
+                    { "craftedAt", "blackforge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(45, 0, 99, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "slash", new Tuple<float, float, float, bool>(45, 0, 99, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(42, 1, 80, true) },
+                    { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                },
+                new Dictionary<string, bool>() {
+                    { "enabled", true }
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAdagger_meteor", new Tuple<int, int>(1, 0) },
+                    { "FlametalNew", new Tuple<int, int>(4, 4) },
+                    { "GemstoneRed", new Tuple<int, int>(1, 1) }
+                }
+            );
+
             // Meteor dagger 2h
             new JotunnItem(
                 new Dictionary<string, string>() {
-                    { "name", "Assassins dagger" },
-                    { "catagory", "Daggers" },
+                    { "name", "Assassins knives" },
+                    { "catagory", "Knives" },
                     { "prefab", "VAdagger_meteor_2h" },
                     { "sprite", "2h_meteor_daggers" },
                     { "craftedAt", "blackforge" }
@@ -2195,6 +2420,109 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(2, 1) },
                     { "Blackwood", new Tuple<int, int>(6, 0) },
                     { "MorgenSinew", new Tuple<int, int>(4, 2) }
+                }
+            );
+
+            // Meteor dagger 2h nature
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Assassins primal knives" },
+                    { "catagory", "Knives" },
+                    { "prefab", "VAdagger_meteor_2h_nature" },
+                    { "sprite", "meteor_dagger_primal_2h" },
+                    { "craftedAt", "blackforge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(52, 0, 99, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "slash", new Tuple<float, float, float, bool>(52, 0, 99, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "poison", new Tuple<float, float, float, bool>(14, 0, 99, true) },
+                    { "poison_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(45, 1, 80, true) },
+                    { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                },
+                new Dictionary<string, bool>() {
+                    { "enabled", true }
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAdagger_meteor_2h", new Tuple<int, int>(1, 0) },
+                    { "FlametalNew", new Tuple<int, int>(8, 8) },
+                    { "GemstoneGreen", new Tuple<int, int>(1, 1) }
+                }
+            );
+
+            // Meteor dagger 2h lightning
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Assassins lightning knives" },
+                    { "catagory", "Knives" },
+                    { "prefab", "VAdagger_meteor_2h_lightning" },
+                    { "sprite", "meteor_dagger_lightning_2h" },
+                    { "craftedAt", "blackforge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(52, 0, 99, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "slash", new Tuple<float, float, float, bool>(52, 0, 99, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "lightning", new Tuple<float, float, float, bool>(14, 0, 99, true) },
+                    { "lightning_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(45, 1, 80, true) },
+                    { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                },
+                new Dictionary<string, bool>() {
+                    { "enabled", true }
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAdagger_meteor_2h", new Tuple<int, int>(1, 0) },
+                    { "FlametalNew", new Tuple<int, int>(8, 8) },
+                    { "GemstoneBlue", new Tuple<int, int>(1, 1) }
+                }
+            );
+
+            // Meteor dagger 2h Blood
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Assassins blood knives" },
+                    { "catagory", "Knives" },
+                    { "prefab", "VAdagger_meteor_2h_blood" },
+                    { "sprite", "meteor_dagger_blood_2h" },
+                    { "craftedAt", "blackforge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
+                    { "pierce", new Tuple<float, float, float, bool>(52, 0, 99, true) },
+                    { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "slash", new Tuple<float, float, float, bool>(52, 0, 99, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(10, 0, 30, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(15, 1, 20, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(45, 1, 80, true) },
+                    { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                },
+                new Dictionary<string, bool>() {
+                    { "enabled", true }
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAdagger_meteor_2h", new Tuple<int, int>(1, 0) },
+                    { "FlametalNew", new Tuple<int, int>(8, 8) },
+                    { "GemstoneRed", new Tuple<int, int>(1, 1) }
                 }
             );
         }

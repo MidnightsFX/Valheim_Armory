@@ -73,7 +73,6 @@
     <EmbeddedResource Include="localizations\Chinese_Trad.json" />
     <EmbeddedResource Include="localizations\Chinese.json" />
     <EmbeddedResource Include="localizations\Spanish.json" />
-    <EmbeddedResource Include="localizations\Abenaki.json" />
     <EmbeddedResource Include="localizations\Bulgarian.json" />
     <EmbeddedResource Include="localizations\Croatian.json" />
     <EmbeddedResource Include="localizations\Czech.json" />

@@ -58,7 +58,6 @@ languages = %w[
   Korean
   Hindi
   Thai
-  Abenaki
   Croatian
   Georgian
   Greek

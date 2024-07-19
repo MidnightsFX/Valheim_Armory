@@ -1,3 +1,35 @@
+ **1.14.0**
+---
+```
+- Updated model and texture for Ashlands atgeir
+- Added variants for Ashlands atgeir
+- Fixed character holding location for copper knives
+- Fixed flint knives reading the blackmetal knives config
+- Removed nature effects from lightning knives
+```
+
+ **1.13.0**
+---
+```
+- All daggers have been renamed to knives. Daggers were originally implemented when vanilla game knives had one damage type
+  over time vanilla daggers have been upgraded to have two damage types and that made the various daggers redundant
+- Updated model and textures for iron knives
+- Added a mistlands level 1H knife
+- Updated model and textures for the Ashlands flametal knife 1H
+- Added elemental variants for the Ashlands flametal knife 1H
+- Updated the model and textures for flint 2h knives
+- Added Copper 2H knives
+- Removed the bronze knives
+- Removed the bronze 2H knives
+- Updated model and texture of the Iron 2H knives
+- Updated the model and texture and of Silver 2H knives
+- Added blackmetal 2H knives
+- Updated flametal 2h knives model and texture
+- Added elemental variants for the Ashlands flametal 2H knife
+- Removed Abenaki translation
+- Fixed autopickup for the flint greatsword
+```
+
  **1.12.0**
 ---
 ```

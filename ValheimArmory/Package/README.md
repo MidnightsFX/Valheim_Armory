@@ -20,9 +20,13 @@ If you would like to contribute a new translation, or improve an existing one pl
 
 # Features
 
-Here is a sample gallery of weapons added by this mod. Completed greatsword (2H) lineup from Meadows to Ashlands.
+Here is a sample gallery of weapons added by this mod. 
 
-![Sample Gallery of added content](https://i.postimg.cc/MHK0v9tX/image.png)
+![Sample of weapons added](https://i.postimg.cc/Xvz79KRH/image.png)
+
+Completed Knives lineup (1H & 2H) lineup from Meadows to Ashlands.
+
+![Sample Gallery of added content](https://i.postimg.cc/LsZFXVtF/image.png)
 
 
 Below is more information on all of the items added, what tier they are in, where they are crafted and at what progression point. All of the sections below are expandable to view the details. 
@@ -126,7 +130,10 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Flint Atgeir | Workbench | Meadows | `VAAtgeir_Flint` | ![flint atgeir icon](https://i.imgur.com/ASQRVLD.png) |
   | Royal Abyssal Atgeir | Forge | Mountain | `VAAtgeirchitin` | ![royal abyssal atgeir icon](https://i.imgur.com/FCO85Nq.png) |
   | Silver Atgeir | Forge | Mountain | `VASilverAtgeir` | ![silver atgeir icon](https://i.imgur.com/WLB6PWp.png) |
-  | Eird Atgeir | Blackforge | Ashlands | `VAMeteorAtgeir` | ![meteor dagger icon](https://i.postimg.cc/vBF9G22h/meteor-atgeir.png) |
+  | Flametal Atgeir | Blackforge | Ashlands | `VAMeteorAtgeir` | ![meteor atgeir icon](https://i.postimg.cc/kGvHd2Mh/meteor-atgeir.png) |
+  | Flametal primal Atgeir | Blackforge | Ashlands | `VAMeteorAtgeir_nature` | ![meteor atgeir icon](https://i.postimg.cc/sgNNydyy/meteor-atgeir-nature.png) |
+  | Flametal lightning Atgeir | Blackforge | Ashlands | `VAMeteorAtgeir_lightning` | ![meteor atgeir icon](https://i.postimg.cc/P5xRBfg2/meteor-atgeir-lightning.png) |
+  | Flametal blood Atgeir | Blackforge | Ashlands | `VAMeteorAtgeir_blood` | ![meteor atgeir icon](https://i.postimg.cc/4NXMQQBC/meteor-atgeir-blood.png) |
 </details>
 
 
@@ -146,26 +153,33 @@ It is encouraged that you find these items by exploring and discovery, but many 
 <details>
   <summary>Knives</summary>
   
-  ### Added Daggers
+
+  ### Added Knives
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Bronze Dagger | Forge | Blackforest | `VAdagger_bronze` | ![bronze dagger icon](https://i.imgur.com/AyWevGx.png) |
-  | Iron Dagger | Forge | Swamp | `VAdagger_iron` | ![iron dagger icon](https://i.imgur.com/9MBSw5X.png) |
-  | Silver Dagger | Forge | Mountain | `VAdagger_silver` | ![silver dagger icon](https://i.imgur.com/SL2G0Vn.png) |
-  | Eird Dagger | Blackforge | Ashlands | `VAdagger_meteor` | ![meteor dagger icon](https://i.postimg.cc/bw5kBwQK/meteor-dagger.png) |
+  | Iron knife | Forge | Swamp | `VAdagger_iron` | ![iron dagger icon](https://i.postimg.cc/CxfC5ZQf/iron-dagger.png) |
+  | Hati knife | Forge | Mistlands | `VAdagger_blackmetal_mistlands` | ![hati knife icon](https://i.postimg.cc/5yBdfNMc/hatti-knife.png) |
+  | Flametal knife | Blackforge | Ashlands | `VAdagger_meteor` | ![meteor dagger icon](https://i.postimg.cc/Xq8H2Zbv/meteor-dagger.png) |
+  | Flametal primal knife | Blackforge | Ashlands | `VAdagger_meteor_nature` | ![meteor nature dagger icon](https://i.postimg.cc/1X9MN9q1/meteor-dagger-primal.png) |
+  | Flametal lightning knife | Blackforge | Ashlands | `VAdagger_meteor_lightning` | ![meteor lightning dagger icon](https://i.postimg.cc/Kjvr8J6Z/meteor-dagger-lightning.png) |
+  | Flametal blood knife | Blackforge | Ashlands | `VAdagger_meteor_blood` | ![meteor blood dagger icon](https://i.postimg.cc/y6vybCRW/meteor-dagger-blood.png) |
 
   ---
 
-  ### Added 2H Daggers
+  ### Added 2H Knives
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Flint Daggers | Workbench | Meadows | `VADagger_Flint_2h` | ![flint daggers icon](https://i.imgur.com/vdkexcd.png) |
-  | Rascal Daggers | Forge | Blackforest | `VAdagger_bronze_2h` | ![rascal daggers icon](https://i.imgur.com/88MEras.png) |
-  | Rogue Daggers | Forge | Swamp | `VAdagger_iron_2h` | ![rogue daggers icon](https://i.imgur.com/1kyTYjP.png) |
-  | Blackguard Runic Daggers | Forge | Mountain | `VAdagger_silver_2h` | ![blackguard runic daggers icon](https://i.imgur.com/8HwWqah.png) |
-  | Assassins daggers | Blackforge | Ashlands | `VAdagger_meteor_2h` | ![meteor dagger icon 2h](https://i.postimg.cc/NGKGJJdQ/2h-meteor-daggers.png) |
+  | Flint knives | Workbench | Meadows | `VADagger_Flint_2h` | ![flint daggers icon](https://i.postimg.cc/ryj3qHBt/2h-flint-knives.png) |
+  | Copper knives | Forge | Blackforest | `VAdagger_copper_2h` | ![rascal daggers icon](https://i.postimg.cc/yYN5xPKp/copper-knives-2h.png) |
+  | Iron knives | Forge | Swamp | `VAdagger_iron_2h` | ![rogue daggers icon](https://i.postimg.cc/yN4mZVMp/iron-dagger-2h.png) |
+  | Silver knives | Forge | Mountain | `VAdagger_silver_2h` | ![blackguard runic daggers icon](https://i.postimg.cc/7L3g1FDH/silver-dagger-2h.png) |
+  | Blackmetal knives | Forge | Plains | `VAknife_blackmetal` | ![blackmetal icon 2h](https://i.postimg.cc/ZY9GTHLb/2h-blackmetal-knives.png) |
+  | Assassins knives | Blackforge | Ashlands | `VAdagger_meteor_2h` | ![meteor dagger icon 2h](https://i.postimg.cc/pTWNZtNR/2h-meteor-daggers.png) |
+  | Assassins primal knives | Blackforge | Ashlands | `VAdagger_meteor_2h_nature` | ![meteor nature dagger icon 2h](https://i.postimg.cc/05VWTwSY/meteor-dagger-primal-2h.png) |
+  | Assassins lightning knives | Blackforge | Ashlands | `VAdagger_meteor_2h_lightning` | ![meteor lightning dagger icon 2h](https://i.postimg.cc/pTZGX96t/meteor-dagger-lightning-2h.png) |
+  | Assassins blood knives | Blackforge | Ashlands | `VAdagger_meteor_2h_blood` | ![meteor blood dagger icon 2h](https://i.postimg.cc/brw6Gz7S/meteor-dagger-blood-2h.png) |
 
 </details>
 
@@ -273,7 +287,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
 ## Configuration
 
 Everything is optionally configurable through the ingame mod configuration UI provided by BepinEx.
-  * [Thunderstore link](https://valheim.thunderstore.io/package/TJzilla/BepInEx_ConfigurationManager/)
+  * [Thunderstore link](https://thunderstore.io/c/valheim/p/Azumatt/Official_BepInEx_ConfigurationManager/)
   * [Nexus Link](https://www.nexusmods.com/valheim/mods/740)
 
 Otherwise a configuration file located at `/BepInEx/config/MidnightsFX.ValheimArmory.cfg` contains all of the configuration.
