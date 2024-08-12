@@ -1653,38 +1653,6 @@ namespace ValheimArmory
                 }
             );
 
-            // Meteor lightning atgeir
-            new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal lightning Atgeir" },
-                    { "catagory", "Atgeirs" },
-                    { "prefab", "VAMeteorAtgeir_lightning" },
-                    { "sprite", "meteor_atgeir_lightning" },
-                    { "craftedAt", "blackforge" }
-                },
-                new Dictionary<string, Tuple<float, float, float, bool>>() {
-                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "pierce", new Tuple<float, float, float, bool>(150, 0, 300, true) },
-                    { "pierce_per_level", new Tuple<float, float, float, bool>(6, 0, 25, true) },
-                    { "lightning", new Tuple<float, float, float, bool>(10, 0, 300, true) },
-                    { "lightning_per_level", new Tuple<float, float, float, bool>(2, 0, 25, true) },
-                    { "attack_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
-                    { "block", new Tuple<float, float, float, bool>(52, 0, 120, true) },
-                    { "durability", new Tuple<float, float, float, bool>(175, 0, 400, true) },
-                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(22, 1, 50, true) },
-                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(42, 1, 50, true) },
-                },
-                new Dictionary<string, bool>() { },
-                new Dictionary<string, Tuple<int, int>>()
-                {
-                    { "VAMeteorAtgeir", new Tuple<int, int>(1, 0) },
-                    { "FlametalNew", new Tuple<int, int>(8, 8) },
-                    { "Blackwood", new Tuple<int, int>(5, 0) },
-                    { "GemstoneBlue", new Tuple<int, int>(1, 1) }
-                }
-            );
-
             // Meteor blood atgeir
             new JotunnItem(
                 new Dictionary<string, string>() {

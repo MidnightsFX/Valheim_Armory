@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
+using System.Xml.Linq;
 using UnityEngine;
 using static ItemDrop;
 using static UnityEngine.EventSystems.EventTrigger;
@@ -69,6 +70,7 @@ namespace ValheimArmory.common
             ConfigEntry<Boolean> CraftableConfig;
             ConfigEntry<int> StationRequiredLevel;
             ConfigEntry<String> CraftedAt;
+            ConfigEntry<float> CraftAmount;
             ConfigEntry<String> RecipeConfig;
 
             CustomItem ItemCI;
@@ -143,7 +145,15 @@ namespace ValheimArmory.common
                 {
                     // Skip this entry if the flag is set for it to be disabled, it is not configurable
                     if (entry.Value.Item4 == false) { continue; }
-                    ItemDataConfigs.Add(entry.Key, VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-{entry.Key}", entry.Value.Item1, $"{entry.Key} ({entry.Value.Item2}-{entry.Value.Item3}) Value", true, entry.Value.Item2, entry.Value.Item3));
+                    if (entry.Key == "amount")
+                    {
+                        CraftAmount = VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-{entry.Key}", entry.Value.Item1, $"{entry.Key} ({entry.Value.Item2}-{entry.Value.Item3}) Value", true, entry.Value.Item2, entry.Value.Item3);
+                        CraftAmount.SettingChanged += RecipeConfig_SettingChanged;
+                    } else
+                    {
+                        ItemDataConfigs.Add(entry.Key, VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-{entry.Key}", entry.Value.Item1, $"{entry.Key} ({entry.Value.Item2}-{entry.Value.Item3}) Value", true, entry.Value.Item2, entry.Value.Item3));
+                    }
+                    
                     
                 }
                 // Wire up the event watch
@@ -164,10 +174,15 @@ namespace ValheimArmory.common
                     recipe[recipe_index] = new RequirementConfig { Item = entry.Key, Amount = entry.Value.Item1, AmountPerLevel = entry.Value.Item2 };
                     recipe_index++;
                 }
-
+                int craftedAmountDefault = (int)ItemData["amount"].Item1;
+                if (ItemData["amount"].Item4 == true)
+                {
+                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Updating configurable crafting amount {CraftAmount.Value}"); }
+                    craftedAmountDefault = (int)CraftAmount.Value;
+                }
                 ItemConfig itemcfg = new ItemConfig()
                 {
-                    Amount = (int)ItemData["amount"].Item1,
+                    Amount = craftedAmountDefault,
                     CraftingStation = $"{ItemMetadata["craftedAt"]}",
                     MinStationLevel = ItemSettings["stationRequiredLevel"],
                     Enabled = ItemToggles["craftable"],
@@ -199,7 +214,7 @@ namespace ValheimArmory.common
                 ItemConfigModifier(target_attribute, sendEntry.Value, ItemCI.ItemDrop);
 
                 // Get and update all of the in-scene game objects
-                IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name == ItemMetadata["prefab"]);
+                IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(ItemMetadata["prefab"]));
                 if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Found in scene objects: {objects.Count()}"); }
                 foreach ( GameObject go in objects)
                 {
@@ -239,12 +254,24 @@ namespace ValheimArmory.common
             private void RecipeConfig_SettingChanged(object sender, EventArgs e)
             {
                 // Only update the recipe items themselves if we are sent a recipe item update, otherwise this is a station or amount update
-                if (sender.GetType() == typeof(ConfigEntry<string>)) 
+                if (sender.GetType() == typeof(ConfigEntry<string>))
                 {
                     ConfigEntry<string> sendEntry = (ConfigEntry<string>)sender;
-                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Recieved new recipe config {sendEntry.Value}"); }
-                    // Nothing to do if the recipe is invalid, its just going to be reset to its current recipe
-                    if (RecipeConfigUpdater(sendEntry.Value) == false) { return; }
+                    String target_attribute = sendEntry.Definition.Key.Split('-')[1];
+                    if (target_attribute == "CraftedAt")
+                    {
+                       GameObject craftedAtCheck = PrefabManager.Instance.GetPrefab(sendEntry.Value);
+                        if (craftedAtCheck == null)
+                        {
+                            Logger.LogWarning($"CraftedAt prefab ({sendEntry.Value}) is not valid, recipe will not update.");
+                            return;
+                        }
+                    } else {
+                        if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Recieved new recipe config {sendEntry.Value}"); }
+                        // Nothing to do if the recipe is invalid, its just going to be reset to its current recipe
+                        if (RecipeConfigUpdater(sendEntry.Value) == false) { return; }
+                    }
+
                 }
 
                 RequirementConfig[] recipe = new RequirementConfig[UpdatedRecipeData.Count];
@@ -264,7 +291,7 @@ namespace ValheimArmory.common
                 CustomRecipe updatedCustomRecipe = new CustomRecipe(new RecipeConfig()
                 {
                     Name = $"Recipe_{ItemPrefab.gameObject.name}",
-                    Amount = (int)ItemData["amount"].Item1,
+                    Amount = (int)CraftAmount.Value,
                     CraftingStation = CraftedAt.Value,
                     MinStationLevel = StationRequiredLevel.Value,
                     Enabled = CraftableConfig.Value,

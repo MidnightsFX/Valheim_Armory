@@ -1,3 +1,30 @@
+ **1.14.3**
+---
+```
+- ~24% asset size reduction
+    - Reduces high rez textures
+    - Some model compression and optimizations
+    - vfx optimizations
+- Fixes blackmetal knives not orienting the right way when unequipped
+```
+
+ **1.14.2**
+---
+```
+- Fixes live updates to items that are not currently spawned
+- Fixes live updates for some cloned cases that were not covered
+- Fixes live updates for items amount
+- Fixes live updates for Crafting station validation
+```
+
+ **1.14.1**
+---
+```
+- Fixed duplicate lightning atgeir warning
+- Updated texture for the bronze crossbow
+- Updated texture for Moders crossbow
+```
+
  **1.14.0**
 ---
 ```
