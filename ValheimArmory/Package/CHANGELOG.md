@@ -1,3 +1,18 @@
+ **1.15.1**
+---
+```
+- Updated Japanese translation
+- Updated Russian translation
+- Reduced the default lightning damage of Eikythrs bow (per level & base)
+```
+
+ **1.15.0**
+---
+```
+- Adds additional sfx to staffs to provide more feedback on cast
+- Reduce initial and scaling lightning dmg for eikythrs bow
+```
+
  **1.14.3**
 ---
 ```
