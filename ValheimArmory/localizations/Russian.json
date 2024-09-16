@@ -167,7 +167,7 @@
   "item_needle_bolt_description": "Стежок во времени.",
   "item_bow_heavy_bone_blood": "Кровавый панцирный лук",
   "item_bow_heavy_bone_blood_description": "Этот лук кажется абсолютно кровожадным и пугающе зловещим.",
-  "item_bolt_fire": "Онгенный болт",
+  "item_bolt_fire": "Огненный болт",
   "item_bolt_fire_description": "Этот болт прожигает все, во что он вонзается.",
   "item_blackmetal_greatsword": "Двуручный меч из черного металла",
   "item_blackmetal_greatsword_description": "Массивный двуручный меч, выкованный из блестящего черного металла.",
@@ -196,5 +196,5 @@
   "item_meteor_atgeir_lightning": "Штормовая огнеметаллическая алебарда",
   "item_meteor_atgeir_lightning_description": "Эти грозные лезвия потрескивают от энергии, достаточно одного прикосновения, и полетят искры.",
   "item_meteor_atgeir_nature": "Первобытная огнеметаллическая алебарда",
-  "item_meteor_atgeir_nature_description":  "Клинки, источающие энергию природы, ваши враги никуда не денутся от вас."
+  "item_meteor_atgeir_nature_description": "Клинки, источающие энергию природы, ваши враги никуда не денутся от вас."
 }

@@ -1,3 +1,11 @@
+ **1.15.2**
+---
+```
+- Updated Japanese translation
+- Updated Russian translation
+- Fixed shader corruption on legacy arrow textures
+```
+
  **1.15.1**
 ---
 ```
