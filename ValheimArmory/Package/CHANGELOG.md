@@ -1,3 +1,27 @@
+ **1.16.1**
+ ---
+ ```
+ - Fixed the package icon -_-
+ ```
+
+
+ **1.16.0**
+---
+```
+- Added Moders greatsword
+- Added Bronze sledge
+- Reduced dust on the blackmetal sledge
+- Add optional configuration which enables a primary attack for vanilla sledge hammers and moves the slam to a secondary attack
+- Fixes a visual bug with the blood-bone pickaxe
+- Asset compression optimizations
+- Fixed Flametal atgeirs almost all having extra fire damage
+- Added lightning damage to the electric Flametal atgeir
+- Enables configuring bow & crossbow stamina drain
+- Enables configuring crossbow & bow projectile velocity
+- Retexture & remesh Skyshatter
+- Added Flametal hammers
+```
+
  **1.15.2**
 ---
 ```

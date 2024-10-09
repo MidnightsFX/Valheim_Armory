@@ -24,9 +24,9 @@ Here is a sample gallery of weapons added by this mod.
 
 ![Sample of weapons added](https://i.postimg.cc/Xvz79KRH/image.png)
 
-Completed Knives lineup (1H & 2H) lineup from Meadows to Ashlands.
+Completed Sledge update (The blunt update)
 
-![Sample Gallery of added content](https://i.postimg.cc/LsZFXVtF/image.png)
+![Sample Gallery of added content](https://i.postimg.cc/BQVVRdNp/image.png)
 
 
 Below is more information on all of the items added, what tier they are in, where they are crafted and at what progression point. All of the sections below are expandable to view the details. 
@@ -35,9 +35,8 @@ It is encouraged that you find these items by exploring and discovery, but many 
 <details>
   <summary>Boss Weapons</summary>
   
-  ## Eikthyrs
 
-    Eikthyrs weapons are split into two groups, one requiring the workbench and the other the forge. Meaning that some of these weapons will require metals from the black forest.
+  ## Eikthyrs
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
@@ -71,6 +70,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Dragonfrost crossbow | Forge | Post-Mountain | `VACrossbowModer` | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
   | Dragonfrost shield | Forge | Post-Mountain | `VAModer_shield` | ![Moder shield](https://i.postimg.cc/9FK6FVN6/modershiled-v2.png) |
   | Dragonfrost dagger | Forge | Post-Mountain | `VAdagger_moder` | ![Moder dagger](https://i.imgur.com/9EdsSsE.png) |
+  | Dragonfrost greatsword | Forge | Post-Mountain | `VAModer_greatsword` | ![Moder greatsword](https://i.postimg.cc/g24qfRYW/moder-greatsword.png) |
 
   ## Yagluth
   | Name | Crafted At | Stage | prefab | Icon |
@@ -197,13 +197,26 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
 <details>
   <summary>Hammers</summary>
-  
-  ### Added Warhammers
+
+  ### Added Warhammers (2H)
+
+  *Note: Vanilla sledge hammers are modified to have the same attack sequence as warhammers by default (this can be turned off)*
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Bronze sledge | Forge | Blackforest | `VABronzeSledge` | ![Bronze sledge icon](https://i.postimg.cc/4yMhXkZK/bronze-sledge.png) |
   | Silver sledge | Forge | Mountain | `VASilverSledge` | ![silver sledge icon](https://i.postimg.cc/RVCP5H7M/silver-sledge.png) |
   | Skyshatter | Forge | Plains | `VAblackmetal_sledge` | ![blackmetal sledge icon](https://i.imgur.com/ChVYaYS.png) |
+  | Flametal Sledge | Blackforge | Ashlands | `VAflametal_sledge` | ![Flametal Sledge icon](https://i.postimg.cc/tJ1h6mPR/flametal-sledge.png) |
+  | Thundermaker | Blackforge | Ashlands | `VAflametal_sledge_lightning` | ![Flametal Sledge lightning icon](https://i.postimg.cc/Wbg5fhFN/flametal-sledge-lightning.png) |
+  | Earthshaker | Blackforge | Ashlands | `VAflametal_sledge_nature` | ![Flametal Sledge nature icon](https://i.postimg.cc/HLs3xzSn/flametal-sledge-nature.png) |
+  | Deathblow | Blackforge | Ashlands | `VAflametal_sledge_blood` | ![Flametal Sledge blood icon](https://i.postimg.cc/7hT2hJ8f/flametal-sledge-blood.png) |
+
+  ### Added Maces
+
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Blackmarble mace | Blackforge | Mistlands | `VAmistland_mace` | ![mistlands mace icon](https://i.postimg.cc/MTnD0TJ8/mist-mace.png) |
 
 </details>
 

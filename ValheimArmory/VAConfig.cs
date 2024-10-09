@@ -7,6 +7,7 @@ namespace ValheimArmory
         public static ConfigFile cfg;
         public static ConfigEntry<bool> EnableDebugMode;
         public static ConfigEntry<float> HybridWeaponBloodMagicSkillIncrease;
+        public static ConfigEntry<bool> VanillaHammersHavePrimaryAttack;
         public VAConfig(ConfigFile Config)
         {
             // ensure all the config values are created
@@ -25,6 +26,7 @@ namespace ValheimArmory
                 null,
                 new ConfigurationManagerAttributes { IsAdvanced = true }));
             HybridWeaponBloodMagicSkillIncrease = BindServerConfig("Blood Magic Hybrid Weapons", "HybridWeaponBloodMagicSkillIncrease", 1f, "How much experiance should one usage of a blood magic hybrid weapon provide?", true, 0f, 4f);
+            VanillaHammersHavePrimaryAttack = BindServerConfig("Vanilla Weapons", "VanillaHammersHavePrimaryAttack", true, "Enables a primary swing for vanilla sledges. Moves the slam to a secondary attack.");
         }
 
         /// <summary>

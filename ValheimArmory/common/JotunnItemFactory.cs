@@ -5,13 +5,9 @@ using Jotunn.Entities;
 using Jotunn.Managers;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
-using System.Reflection;
-using System.Xml.Linq;
 using UnityEngine;
 using static ItemDrop;
-using static UnityEngine.EventSystems.EventTrigger;
 using Logger = Jotunn.Logger;
 
 namespace ValheimArmory.common
@@ -550,8 +546,14 @@ namespace ValheimArmory.common
                     case "crossbow_reload_speed":
                         itemData.m_shared.m_attack.m_reloadTime = updatedValue;
                         break;
+                    case "crossbow_reload_stamina_drain":
+                        itemData.m_shared.m_attack.m_reloadStaminaDrain = updatedValue;
+                        break;
                     case "draw_stamina_drain":
                         itemData.m_shared.m_attack.m_drawStaminaDrain = updatedValue;  
+                        break;
+                    case "projectile_velocity":
+                        itemData.m_shared.m_attack.m_projectileVel = updatedValue;
                         break;
                     // Item Modifiers
                     case "durability":

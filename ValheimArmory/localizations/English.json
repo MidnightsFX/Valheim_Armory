@@ -196,5 +196,20 @@
   "item_meteor_atgeir_lightning": "Flametal lightning atgeir",
   "item_meteor_atgeir_lightning_description": "Its blades crackle with energy, just one touch and sparks fly.",
   "item_meteor_atgeir_nature": "Flametal primal atgeir",
-  "item_meteor_atgeir_nature_description":  "Primal energy flows through these blades, binding your foes."
+  "item_meteor_atgeir_nature_description": "Primal energy flows through these blades, binding your foes.",
+  "item_moder_greatsword": "Dragonfrost greatsword",
+  "item_moder_greatsword_description": "A greatsword forged by eternal ice strengthend with moders tears.",
+  "item_bronze_sledge": "Bronze sledge",
+  "item_bronze_sledge_description": "A massive stone held in place by bronze and trollhide straps.",
+  "item_mistland_mace": "Blackmarble mace",
+  "item_mistland_mace_description": "What better way to squash bugs?",
+  "item_sledge_flametal": "Flametal sledge",
+  "item_sledge_flametal_description": "A massive sledge carefully carefully balanced, powerful and heavy in equal.",
+  "item_sledge_flametal_lightning": "Thundermaker",
+  "item_sledge_flametal_description_lightning": "A massive sledge, twin storms, shocking to the touch.",
+  "item_sledge_flametal_nature": "Earthshaker",
+  "item_sledge_flametal_description_nature": "A massive sledge, dripping with natures energy, with this you could stop an army.",
+  "item_sledge_flametal_blood": "Deathblow",
+  "item_sledge_flametal_description_blood": "A massive sledge, its rage seems to grow the more dire the fight."
+
 }

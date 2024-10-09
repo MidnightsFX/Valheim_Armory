@@ -24,7 +24,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.15.2";
+        public const string PluginVersion = "1.16.0";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -45,6 +45,10 @@ namespace ValheimArmory
 
             AddLocalizations();
             // UnloadAssets();
+
+            // Modify vanilla weapons
+            PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaHammersToWarhammers;
+            VAConfig.VanillaHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyHammers;
 
             Assembly assembly = Assembly.GetExecutingAssembly();
             Harmony harmony = new(PluginGUID);

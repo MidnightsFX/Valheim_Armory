@@ -196,5 +196,9 @@
   "item_meteor_atgeir_lightning": "Штормовая огнеметаллическая алебарда",
   "item_meteor_atgeir_lightning_description": "Эти грозные лезвия потрескивают от энергии, достаточно одного прикосновения, и полетят искры.",
   "item_meteor_atgeir_nature": "Первобытная огнеметаллическая алебарда",
-  "item_meteor_atgeir_nature_description": "Клинки, источающие энергию природы, ваши враги никуда не денутся от вас."
+  "item_meteor_atgeir_nature_description": "Клинки, источающие энергию природы, ваши враги никуда не денутся от вас.",
+  "item_bronze_sledge": "Бронзовая кувалда",
+  "item_bronze_sledge_description": "Внушительный камень, закрепленный бронзовыми вставками и ремнями из шкур троллей.",
+  "item_moder_greatsword": "Промерзший клеймор",
+  "item_moder_greatsword_description": "Огромный меч, выкованный в вечных льдах и усиленный скорбью Матери."
 }
