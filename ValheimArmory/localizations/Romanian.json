@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Fulgerul de metal al atgeirului",
   "item_meteor_atgeir_lightning_description": "Cuțitele sale plescăiesc de energie, doar o atingere și scântei zboară.",
   "item_meteor_atgeir_nature": "Atgeirul primitiv de flametal",
-  "item_meteor_atgeir_nature_description": "Energia primală curge prin aceste lame, legându-ți dușmanii.Mulțumesc!"
+  "item_meteor_atgeir_nature_description": "Energia primală curge prin aceste lame, legându-ți dușmanii.Mulțumesc!",
+  "item_moder_greatsword": "Spada mare Dragonfrost",
+  "item_moder_greatsword_description": "Un greatsword forjat de puterea eternă a gheții întărit cu lacrimile modernității.",
+  "item_bronze_sledge": "Sanie de bronz",
+  "item_bronze_sledge_description": "Un bolovan masiv ținut în loc de curele de bronz și piele de troll.",
+  "item_mistland_mace": "Maciul de marmură neagră",
+  "item_mistland_mace_description": "Care ar fi cea mai bună modalitate de a elimina insectele?",
+  "item_sledge_flametal": "Flacără sledge",
+  "item_sledge_flametal_description": "Un sanie masiv atent echilibrat, puternic și greu în același timp.",
+  "item_sledge_flametal_lightning": "Făcător de tunete",
+  "item_sledge_flametal_description_lightning": "Un sania masivă, două furtuni gemene, șocantă la atingere.",
+  "item_sledge_flametal_nature": "Agitatul Pământului",
+  "item_sledge_flametal_description_nature": "Un săniu masiv, picurând cu energia naturii, cu asta ai putea opri o armată.",
+  "item_sledge_flametal_blood": "lovitură mortală",
+  "item_sledge_flametal_description_blood": "Un săniu masiv, furia sa pare să crească cu cât mai disperată este lupta."
 }

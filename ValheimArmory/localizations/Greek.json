@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Φλογισμένο αστραπιαίο ατγείρ",
   "item_meteor_atgeir_lightning_description": "Οι λεπίδες του τρίζουν με ενέργεια, απλά με μία αγγίξουν και οι σπίθες πετάνε.",
   "item_meteor_atgeir_nature": "Πρωτεύων ατγείρ φλαμέταλ",
-  "item_meteor_atgeir_nature_description": "Η πρωτογενής ενέργεια ρέει μέσα από αυτές τις λεπίδες, δένοντας τους εχθρούς σας."
+  "item_meteor_atgeir_nature_description": "Η πρωτογενής ενέργεια ρέει μέσα από αυτές τις λεπίδες, δένοντας τους εχθρούς σας.",
+  "item_moder_greatsword": "Σπαθί Δράκου του πάγου",
+  "item_moder_greatsword_description": "Ένα μεγάλο σπαθί σφυρηλατημένο από αιώνιο πάγο ενισχυμένο με δάκρυα μητέρας.",
+  "item_bronze_sledge": "Χαλκός σφυρί",
+  "item_bronze_sledge_description": "Ένα τεράστιο πέτρινο κομμάτι κρατούμενο στη θέση του από χάλκινες και δέρματος τρολ ζώνες.",
+  "item_mistland_mace": "Μαύρο μάρμαρο μπουρλότο",
+  "item_mistland_mace_description": "Ποιος καλύτερος τρόπος για να σκουπίσεις τα έντομα;",
+  "item_sledge_flametal": "Φλέιμεταλ σφυρί",
+  "item_sledge_flametal_description": "Ένα τεράστιο έλκηθρο προσεκτικά ισορροπημένο, ισχυρό και βαρύ εξίσου.",
+  "item_sledge_flametal_lightning": "Κεραυνοποιός",
+  "item_sledge_flametal_description_lightning": "Ένα τεράστιο έλκηθρο, δίδυμες καταιγίδες, σοκαριστικό στην αφή.",
+  "item_sledge_flametal_nature": "Ταραχοποιός",
+  "item_sledge_flametal_description_nature": "Ένα τεράστιο έλκηθρο, σταγόνες με την ενέργεια της φύσης, με αυτό θα μπορούσες να σταματήσεις ένα στρατό.",
+  "item_sledge_flametal_blood": "Θανατηφόρο",
+  "item_sledge_flametal_description_blood": "Ένα τεράστιο σφυρί, η οργή του φαίνεται να μεγαλώνει όσο πιο σκληρή είναι η μάχη."
 }

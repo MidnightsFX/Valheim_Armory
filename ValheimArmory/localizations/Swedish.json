@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Flametal blixt atgeir",
   "item_meteor_atgeir_lightning_description": "Des bladen sprakar av energi, bara en beroring och gnistor flyger.Jag ar inte saker vad du refererar till.",
   "item_meteor_atgeir_nature": "Flammetallisk urtidsatgeir",
-  "item_meteor_atgeir_nature_description": "Uråldrig energi flödar genom dessa blad, binder dina fiender."
+  "item_meteor_atgeir_nature_description": "Uråldrig energi flödar genom dessa blad, binder dina fiender.",
+  "item_moder_greatsword": "Dvärgfrost storsvärd",
+  "item_moder_greatsword_description": "Ett stor svärd smitt av evig is stärkt med moderns tårar.",
+  "item_bronze_sledge": "Bronssläde",
+  "item_bronze_sledge_description": "En massiv sten som hålls på plats av brons och trollskinn remmar.",
+  "item_mistland_mace": "svartmarmormace",
+  "item_mistland_mace_description": "Vad bättre sätt att krossa buggar?",
+  "item_sledge_flametal": "Flametal slägga",
+  "item_sledge_flametal_description": "En massiv släde noggrant balanserad, kraftfull och tung i lika mått.",
+  "item_sledge_flametal_lightning": "Åskgörare",
+  "item_sledge_flametal_description_lightning": "En massiv släde, två stormar, chockerande att röra vid.",
+  "item_sledge_flametal_nature": "Jordbävare",
+  "item_sledge_flametal_description_nature": "En massiv släde, droppande av naturens energi, med den här skulle du kunna stoppa en armé.",
+  "item_sledge_flametal_blood": "Dödlig attack",
+  "item_sledge_flametal_description_blood": "En massiv släde, dess ilska verkar växa ju mer förfärlig striden blir."
 }

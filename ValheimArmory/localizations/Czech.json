@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Blesk flametalového oštěpu",
   "item_meteor_atgeir_lightning_description": "Jeho čepele praskají energií, stačí jediný dotek a jiskry létají.",
   "item_meteor_atgeir_nature": "Plamenný primitivní atgeir",
-  "item_meteor_atgeir_nature_description": "Prvotní energie proudí skrze tyto čepele, váže vaše nepřátele."
+  "item_meteor_atgeir_nature_description": "Prvotní energie proudí skrze tyto čepele, váže vaše nepřátele.",
+  "item_moder_greatsword": "Meč Dragonfrost",
+  "item_moder_greatsword_description": "Mohutný meč kovaný z věčného ledu posílený slzami matek.",
+  "item_bronze_sledge": "Bronzový saně",
+  "item_bronze_sledge_description": "Obrovský kámen držený na místě bronzovými a trollovými popruhy.",
+  "item_mistland_mace": "Cerný mramorový kyj",
+  "item_mistland_mace_description": "Jaký lepší způsob, jak se zbavit chyb?",
+  "item_sledge_flametal": "Flametal kladivo",
+  "item_sledge_flametal_description": "Obrovský saně pečlivě vyvážený, silný a těžký stejně.",
+  "item_sledge_flametal_lightning": "Hromotvůrce",
+  "item_sledge_flametal_description_lightning": "Obrovský saně, dvojité bouře, šokující na dotek.",
+  "item_sledge_flametal_nature": "Zatřásání Země",
+  "item_sledge_flametal_description_nature": "Obrovský saně, kapající přírodní energií, s tím byste mohli zastavit armádu.",
+  "item_sledge_flametal_blood": "Smrtící úder",
+  "item_sledge_flametal_description_blood": "Obrovský saně, jeho vztek se zdá růst čím zoufalejší je boj."
 }

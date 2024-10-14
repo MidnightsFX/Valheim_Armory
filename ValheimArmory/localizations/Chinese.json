@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "火焰闪电戈耳",
   "item_meteor_atgeir_lightning_description": "它的刀刃充满能量，一触即发，火花四溅。",
   "item_meteor_atgeir_nature": "焰金属原始战戟",
-  "item_meteor_atgeir_nature_description": "原始能量流经这些刀刃，束缚你的敌人。"
+  "item_meteor_atgeir_nature_description": "原始能量流经这些刀刃，束缚你的敌人。",
+  "item_moder_greatsword": "龙霜巨剑",
+  "item_moder_greatsword_description": "一把由永恒冰雪锻造，用现代眼泪强化的巨剑。",
+  "item_bronze_sledge": "青铜雪橇",
+  "item_bronze_sledge_description": "一块巨大的石头由青铜和巨魔皮带固定在原地。",
+  "item_mistland_mace": "黑色大理石权杖",
+  "item_mistland_mace_description": "有什么比这更好的方式来消灭虫子呢？",
+  "item_sledge_flametal": "铁火金属铸锤",
+  "item_sledge_flametal_description": "一把巨大的雪橇小心平衡，强大而沉重。",
+  "item_sledge_flametal_lightning": "雷神",
+  "item_sledge_flametal_description_lightning": "一把巨大的雪橇，双重风暴，触摸令人震惊。",
+  "item_sledge_flametal_nature": "地震者",
+  "item_sledge_flametal_description_nature": "一个巨大的雪橇，滴滴着大自然的能量，有了它，你可以阻止一支军队。",
+  "item_sledge_flametal_blood": "死亡一击",
+  "item_sledge_flametal_description_blood": "一把巨大的雪橇，它的愤怒似乎随着战斗的激烈而增长。"
 }

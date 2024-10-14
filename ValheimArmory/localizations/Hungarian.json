@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Flametal villám atgeir",
   "item_meteor_atgeir_lightning_description": "A pengék energiával roppannak, csak egy érintés és szikrák repülnek.",
   "item_meteor_atgeir_nature": "Flametal ős atgeir",
-  "item_meteor_atgeir_nature_description": "Ősi energia áramlik ezeken a pengeken keresztül, ellenségeidet kötve."
+  "item_meteor_atgeir_nature_description": "Ősi energia áramlik ezeken a pengeken keresztül, ellenségeidet kötve.",
+  "item_moder_greatsword": "Sárkányfagy nagykard",
+  "item_moder_greatsword_description": "Egy hatalmas kard, amit örök jégben kovácsoltak, modern könnyekkel erősítve.",
+  "item_bronze_sledge": "Bronz szán",
+  "item_bronze_sledge_description": "Egy hatalmas kő, amelyet bronz és trollok bőréből készült pántok tartanak.",
+  "item_mistland_mace": "Feketemárványpajzs",
+  "item_mistland_mace_description": "Milyen jobb módja lenne a bogarak elpusztításának?",
+  "item_sledge_flametal": "Flametal kalapács",
+  "item_sledge_flametal_description": "Egy masszív szán gondosan kiegyensúlyozott, erős és nehéz egyenlő arányban.",
+  "item_sledge_flametal_lightning": "Villámkészítő",
+  "item_sledge_flametal_description_lightning": "Egy hatalmas szán, iker vihar, megdöbbentő érintésre.",
+  "item_sledge_flametal_nature": "Földrengető",
+  "item_sledge_flametal_description_nature": "Egy hatalmas szán, amely természet energiájával csöpög, ezzel megállíthatnád egy hadsereget.",
+  "item_sledge_flametal_blood": "Halálos csapás",
+  "item_sledge_flametal_description_blood": "Egy hatalmas szán, haragja úgy tűnik, minél kétségbeejtőbb a harc, annál jobban nő."
 }

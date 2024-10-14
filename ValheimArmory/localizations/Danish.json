@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Flametal lyn atgeir",
   "item_meteor_atgeir_lightning_description": "Dens klinger knitren af energi, bare en berøring og gnister flyver.",
   "item_meteor_atgeir_nature": " translates to Flametal urtidsatgeir in Danish.",
-  "item_meteor_atgeir_nature_description": "Urtidens energi strømmer gennem disse klinger, der binder dine fjender."
+  "item_meteor_atgeir_nature_description": "Urtidens energi strømmer gennem disse klinger, der binder dine fjender.",
+  "item_moder_greatsword": "Dragefrost storsværd",
+  "item_moder_greatsword_description": "Et storsværd smedet af evig is forstærket med moderens tårer.",
+  "item_bronze_sledge": "Bronzeslæde",
+  "item_bronze_sledge_description": "En massiv sten holdt på plads af bronze- og trolleskindremme.",
+  "item_mistland_mace": "Sort marmor kølle",
+  "item_mistland_mace_description": "Hvad bedre måde at knuse insekter på?",
+  "item_sledge_flametal": "Flametal slæde",
+  "item_sledge_flametal_description": "Et massivt slæde omhyggeligt afbalanceret, kraftfuldt og tungt i lige store dele.",
+  "item_sledge_flametal_lightning": "Tordenmager",
+  "item_sledge_flametal_description_lightning": "Et massivt slæde, tvillinge-storme, chokerende at røre ved.",
+  "item_sledge_flametal_nature": "Jordskælver",
+  "item_sledge_flametal_description_nature": "En massiv slæde, der drypper med naturens energi, med denne kunne du stoppe en hær.",
+  "item_sledge_flametal_blood": "Dødsknald",
+  "item_sledge_flametal_description_blood": "Et massivt slæde, dens vrede synes at vokse jo mere fortvivlet kampen bliver."
 }

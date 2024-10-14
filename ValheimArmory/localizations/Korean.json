@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "번개처럼 번쩍이는 불길한 무기",
   "item_meteor_atgeir_lightning_description": "그것의 칼날은 에너지로 서글서글하며, 단 한 번의 만짐으로도 불꽃이 튀어나온다.",
   "item_meteor_atgeir_nature": "플레임탈 프라이멀 애티지르",
-  "item_meteor_atgeir_nature_description": "태고의 에너지가 이 칼을 흐르며, 당신의 적들을 묶어 놓습니다."
+  "item_meteor_atgeir_nature_description": "태고의 에너지가 이 칼을 흐르며, 당신의 적들을 묶어 놓습니다.",
+  "item_moder_greatsword": "드래곤프로스트 대검",
+  "item_moder_greatsword_description": "영원한 얼음으로 단련된 거대한 대검, 현대의 눈물로 강화된.",
+  "item_bronze_sledge": "청동 썰매",
+  "item_bronze_sledge_description": "청동과 트롤헤드로 고정된 거대한 돌.",
+  "item_mistland_mace": "블랙마블 메이스",
+  "item_mistland_mace_description": "벌레를 짓뭉갤 더 나은 방법이 뭐가 있겠어요?",
+  "item_sledge_flametal": "플레임탈 슬레지",
+  "item_sledge_flametal_description": "거대한 썰매가 조심스럽게 균형을 잡고 강력하고 무거운 것이다.",
+  "item_sledge_flametal_lightning": "번개를 만드는 사람",
+  "item_sledge_flametal_description_lightning": "거대한 썰매, 쌍둥이 폭풍, 만족스러운 만진 느낌.",
+  "item_sledge_flametal_nature": "대지를 진동시키는자",
+  "item_sledge_flametal_description_nature": "자연의 에너지로 물들인 거대한 썰매, 이걸로는 군대를 막을 수 있을 거야.",
+  "item_sledge_flametal_blood": "죽음의 일격",
+  "item_sledge_flametal_description_blood": "거대한 썰매, 그 분노는 싸움이 더욱 절박해질수록 더욱 성장하는 것으로 보입니다."
 }

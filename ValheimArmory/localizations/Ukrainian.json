@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Flametal блискавка atgeir",
   "item_meteor_atgeir_lightning_description": "Його леза тріщать від енергії, лише одне дотик і летять іскри.",
   "item_meteor_atgeir_nature": "Фламетальний первісний атґейр",
-  "item_meteor_atgeir_nature_description": "Первісна енергія протікає через ці клинки, зв'язуючи ваших ворогів."
+  "item_meteor_atgeir_nature_description": "Первісна енергія протікає через ці клинки, зв'язуючи ваших ворогів.",
+  "item_moder_greatsword": "Драконів меч льоду",
+  "item_moder_greatsword_description": "Великий меч, виготовлений вічним льодом, зміцнений сльозами матері.",
+  "item_bronze_sledge": "Бронзовий сані",
+  "item_bronze_sledge_description": "Величезний камінь, утримуваний на місці бронзовими і троллськими ремінцями.",
+  "item_mistland_mace": "Чорний мармуровий булава",
+  "item_mistland_mace_description": "Як краще придушити помилок?",
+  "item_sledge_flametal": "Фламетальний молоток",
+  "item_sledge_flametal_description": "Важкий сани ретельно збалансований, потужний і важкий однаково.",
+  "item_sledge_flametal_lightning": "Громовик",
+  "item_sledge_flametal_description_lightning": "Величезний сани, подвійні бурі, шокуючі на дотик.",
+  "item_sledge_flametal_nature": "Землетрус",
+  "item_sledge_flametal_description_nature": "Величезний сани, що капають від природної енергії, з цими ви могли б зупинити армію.",
+  "item_sledge_flametal_blood": "Смертельний удар",
+  "item_sledge_flametal_description_blood": "Величезний сані, його гнів здається зростає тим більше, що страшніша битва."
 }

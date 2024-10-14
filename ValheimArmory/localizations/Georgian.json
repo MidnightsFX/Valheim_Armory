@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "ფლამეტალი ელექტროს ათგეირ",
   "item_meteor_atgeir_lightning_description": "მის ჩაიჭებები ენერგიის ტრემოლებით შემკრავებენ, მხოლოდ ერთი შეძლებით დახურება და ცნობილებები გამოაკლდებს.",
   "item_meteor_atgeir_nature": "ფლამეტალი პრიმალ ატგეირ",
-  "item_meteor_atgeir_nature_description": "საუამყო ენერგია გადადგმული სინათლეების გარდა, შემთხვევის შებრუნება."
+  "item_meteor_atgeir_nature_description": "საუამყო ენერგია გადადგმული სინათლეების გარდა, შემთხვევის შებრუნება.",
+  "item_moder_greatsword": "დრაკონის გრეითსორდი თბილი მაჭარი.",
+  "item_moder_greatsword_description": "სადიდი მახასი, რომლის შექმნაც სამუდამო ცისის ძლიერი დაგებული არის დედის ცხელებით.",
+  "item_bronze_sledge": "ბრინჯეს მხარეSure, here is the translation: ბრინჯეს მხარე",
+  "item_bronze_sledge_description": "ბრინჯის და ტროლის დარღვნით მსხვილი ქვა დიდი ზომის.",
+  "item_mistland_mace": "შავი სანდოს ბარდი",
+  "item_mistland_mace_description": "რა საუკეთესო გზა არის მელანჯის დადუმვა?",
+  "item_sledge_flametal": "ფლამეტალის მორბი",
+  "item_sledge_flametal_description": "ძლიერი და მძიმე ბრილი ყოვლილი ყოველთვის სამჭადი და მძიმე.",
+  "item_sledge_flametal_lightning": "ქრისტალის შემცირებელი",
+  "item_sledge_flametal_description_lightning": "დიდი კარი, ორი ქარი, შემისაგება ხელთავი.",
+  "item_sledge_flametal_nature": "დედა მიწა",
+  "item_sledge_flametal_description_nature": "დიდი ძმა, ბუნების ენერგიით ნარსი წამლი, დამილემ თქვენ შეგიძლია გააჩეროთ ჯარი.",
+  "item_sledge_flametal_blood": "სიკვდილი.",
+  "item_sledge_flametal_description_blood": "დიდი სამყარო, მისი რიგი როგორც რთული ბრძოლას მიეცემა."
 }

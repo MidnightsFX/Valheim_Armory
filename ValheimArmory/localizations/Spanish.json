@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Flecha de relámpago flametal",
   "item_meteor_atgeir_lightning_description": "Las cuchillas crepitan con energía, con solo un toque chisporrotean las chispas.",
   "item_meteor_atgeir_nature": "Lanza primordial de flametal",
-  "item_meteor_atgeir_nature_description": "Energía primordial fluye a través de estas hojas, atando a tus enemigos."
+  "item_meteor_atgeir_nature_description": "Energía primordial fluye a través de estas hojas, atando a tus enemigos.",
+  "item_moder_greatsword": "Espada larga de escarcha de dragón",
+  "item_moder_greatsword_description": "Una gran espada forjada por el hielo eterno fortalecida con lágrimas de madre.",
+  "item_bronze_sledge": "Mazo de bronce",
+  "item_bronze_sledge_description": "Una piedra masiva sostenida en su lugar por correas de bronce y piel de troll.",
+  "item_mistland_mace": "Maza de mármol negro",
+  "item_mistland_mace_description": "¿Qué mejor manera de aplastar insectos?",
+  "item_sledge_flametal": "Mazo de flametal",
+  "item_sledge_flametal_description": "Un trineo masivo cuidadosamente equilibrado, poderoso y pesado en igual medida.(Spanish)",
+  "item_sledge_flametal_lightning": "Fabricante de truenos",
+  "item_sledge_flametal_description_lightning": "Un trineo masivo, gemelos tormentas, impactante al tacto.",
+  "item_sledge_flametal_nature": "Terremoto",
+  "item_sledge_flametal_description_nature": "Un trineo masivo, goteando con la energía de la naturaleza, con esto podrías detener un ejército.",
+  "item_sledge_flametal_blood": "Golpe mortal",
+  "item_sledge_flametal_description_blood": "Un trineo masivo, su furia parece crecer cuanto más desesperada es la lucha."
 }

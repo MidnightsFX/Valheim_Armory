@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Flametal lyn atgeirTakk!",
   "item_meteor_atgeir_lightning_description": "Dens blader spraker av energi, bare én berøring og gnister flyr.",
   "item_meteor_atgeir_nature": "Flammende urtid atgeir",
-  "item_meteor_atgeir_nature_description": "Primal energi strømmer gjennom disse bladene, binder dine fiender."
+  "item_meteor_atgeir_nature_description": "Primal energi strømmer gjennom disse bladene, binder dine fiender.",
+  "item_moder_greatsword": "Dragefrost storsverd",
+  "item_moder_greatsword_description": "Et stort sverd smidd av evig is styrket med mors tårer.",
+  "item_bronze_sledge": "Bronseslede",
+  "item_bronze_sledge_description": "En massiv stein som holdes på plass av bronse- og trollskinnremmer.",
+  "item_mistland_mace": "Svartmarmor kølle",
+  "item_mistland_mace_description": "Hva bedre måte å knuse insekter på?",
+  "item_sledge_flametal": "Flametal slegge",
+  "item_sledge_flametal_description": "Et massivt kjelke nøye balansert, kraftig og tung i like stor grad.",
+  "item_sledge_flametal_lightning": "Tordenmaker",
+  "item_sledge_flametal_description_lightning": "En massiv slede, tvillinger stormer, sjokkerende å ta på.",
+  "item_sledge_flametal_nature": "Jordrysteren",
+  "item_sledge_flametal_description_nature": "Et massivt slede, dryppende med naturens energi, med dette kunne du stoppe en hær.",
+  "item_sledge_flametal_blood": "Dødsstøt",
+  "item_sledge_flametal_description_blood": "En massiv slede, sin raseri ser ut til å vokse jo mer alvorlig kampen blir."
 }

@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Flammetal zibens atgeir",
   "item_meteor_atgeir_lightning_description": "Tās asmeņi šņāk ar enerģiju, vienai pieskārienai lido izspīdumi.",
   "item_meteor_atgeir_nature": "Flamentālais primālais atgeirs",
-  "item_meteor_atgeir_nature_description": "Pirmsākumu enerģija plūst caur šīm asmenīm, savienojot jūsu pretiniekus."
+  "item_meteor_atgeir_nature_description": "Pirmsākumu enerģija plūst caur šīm asmenīm, savienojot jūsu pretiniekus.",
+  "item_moder_greatsword": "Drakonledus lielā zobena",
+  "item_moder_greatsword_description": "Lielmēģenes smaidu izturēts liels zobens.",
+  "item_bronze_sledge": "Bronze sleja",
+  "item_bronze_sledge_description": "Milzīgs akmens, kas turēts uz vietas ar bronzu un troļu ādas jostām.",
+  "item_mistland_mace": "Melnmarmora cūka",
+  "item_mistland_mace_description": "Kā labāk novākt kļūdas?",
+  "item_sledge_flametal": "There is no direct translation for the phrase  in Latvian.",
+  "item_sledge_flametal_description": "Masīvā kamanu rati uzmanīgi līdzsvarots, spēcīgs un smags vienādā mērā.",
+  "item_sledge_flametal_lightning": "Pērkona veidotājs",
+  "item_sledge_flametal_description_lightning": "Masīvs ragavas, divi vēji, šokējoši pieskarties.",
+  "item_sledge_flametal_nature": "Zemes trīsotājs",
+  "item_sledge_flametal_description_nature": "Masīva ragana, kas pilēta ar dabas enerģiju, ar to tu varētu apturēt armiju.",
+  "item_sledge_flametal_blood": "Nāvessitiena",
+  "item_sledge_flametal_description_blood": "Masīvs ragana, tās dusmas šķiet pieaug jo briesmīgāka kauja."
 }

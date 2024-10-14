@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Flametal salama atgeir",
   "item_meteor_atgeir_lightning_description": "Sen terät rätisevät energiasta, vain yksi kosketus ja kipinät lentävät.",
   "item_meteor_atgeir_nature": "Flametalin alkuperäinen atgeir",
-  "item_meteor_atgeir_nature_description": "Alkukantainen energia virtaa näiden terien läpi, sitoen vihollisesi."
+  "item_meteor_atgeir_nature_description": "Alkukantainen energia virtaa näiden terien läpi, sitoen vihollisesi.",
+  "item_moder_greatsword": "Lohikäärmeenjäinen suuri miekka",
+  "item_moder_greatsword_description": "Ikuista jäätä vahvistettu suuri miekka äitien kyynelillä.",
+  "item_bronze_sledge": "Vaskisänkiauto",
+  "item_bronze_sledge_description": "Valtava kivi pidetään paikoillaan pronssi- ja trolinnahkaisilla remmeillä.",
+  "item_mistland_mace": "Mustamarmori-keihäs",
+  "item_mistland_mace_description": "Mikä parempi tapa litistää ötököitä?",
+  "item_sledge_flametal": "Flametal vasara",
+  "item_sledge_flametal_description": "Valtava kelkka tarkasti tasapainotettuna, voimakas ja painava yhtä aikaa.",
+  "item_sledge_flametal_lightning": "Ukkosen tekijä",
+  "item_sledge_flametal_description_lightning": "Valtava kelkka, kaksi myrskyä, kosketus on järkyttävä.",
+  "item_sledge_flametal_nature": "Maanjäristäjä",
+  "item_sledge_flametal_description_nature": "Valtava kelkka, joka tihkuu luonnon energiaa, tällä voisi pysäyttää armeijan.",
+  "item_sledge_flametal_blood": "Kuolinisku",
+  "item_sledge_flametal_description_blood": "Massiivinen kelkka, sen raivo tuntuu kasvavan mitä hankalammaksi taistelu muuttuu."
 }

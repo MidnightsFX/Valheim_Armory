@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Flametal şimşek atgeirBenim için ne anlama geliyor?",
   "item_meteor_atgeir_lightning_description": "Kılıçları enerjiyle çıtırdar, sadece bir dokunuşta kıvılcımlar uçar.Anlamak kolay ama dikkatli olmalısın.",
   "item_meteor_atgeir_nature": "Flametal ilkel atgeir",
-  "item_meteor_atgeir_nature_description": "İlkel enerji bu kılıçlardan akar, düşmanlarınızı bağlar."
+  "item_meteor_atgeir_nature_description": "İlkel enerji bu kılıçlardan akar, düşmanlarınızı bağlar.",
+  "item_moder_greatsword": "Ejderha buz kılıcı",
+  "item_moder_greatsword_description": "Büyük bir kılıç, sonsuz buzla dövülmüş, modern gözyaşlarıyla güçlendirilmiştir.",
+  "item_bronze_sledge": "Bakır kızak",
+  "item_bronze_sledge_description": "Bir tunç ve trol derisi kayışlarıyla tutulan devasa bir taş.",
+  "item_mistland_mace": "Siyahtaş mızrak",
+  "item_mistland_mace_description": "Daha iyi bir yol ne olabilir böcekleri ezmek için?",
+  "item_sledge_flametal": "Flametal çekiç",
+  "item_sledge_flametal_description": "Büyük bir kızak dikkatlice dengeli, güçlü ve ağır eşit.",
+  "item_sledge_flametal_lightning": "Gök gürültüsü yapan",
+  "item_sledge_flametal_description_lightning": "Büyük bir kızak, ikiz fırtınalar, dokunmaya şaşırtıcı.",
+  "item_sledge_flametal_nature": "Yerküre sarsıcı",
+  "item_sledge_flametal_description_nature": "Büyük bir kızak, doğanın enerjisiyle damlayan, bununla bir orduyu durdurabilirsin.",
+  "item_sledge_flametal_blood": "Ölüm darbesi",
+  "item_sledge_flametal_description_blood": "Büyük bir kızak, öfkesi savaş ne kadar kötüleşirse o kadar büyüyor gibi görünüyor."
 }

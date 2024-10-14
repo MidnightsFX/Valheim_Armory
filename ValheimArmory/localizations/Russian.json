@@ -200,5 +200,15 @@
   "item_bronze_sledge": "Бронзовая кувалда",
   "item_bronze_sledge_description": "Внушительный камень, закрепленный бронзовыми вставками и ремнями из шкур троллей.",
   "item_moder_greatsword": "Промерзший клеймор",
-  "item_moder_greatsword_description": "Огромный меч, выкованный в вечных льдах и усиленный скорбью Матери."
+  "item_moder_greatsword_description": "Огромный меч, выкованный в вечных льдах и усиленный скорбью Матери.",
+  "item_mistland_mace": "Булава из черного мрамора",
+  "item_mistland_mace_description": "Идеальное орудие, чтобы давить назойливых тараканов.",
+  "item_sledge_flametal": "Огнеметаллическая кувалда",
+  "item_sledge_flametal_description": "Громадная кувалда, идеально сбалансированная. Одновременно неподъемная и ужасающая мощь.",
+  "item_sledge_flametal_lightning": "Раскат грома",
+  "item_sledge_flametal_description_lightning": "Громадная кувалда, с каждым взмахом будто рвет небеса оглушительными раскатами грома.",
+  "item_sledge_flametal_nature": "Дрожь земли",
+  "item_sledge_flametal_description_nature": "Громадная кувалда, наполненная природной энергией. С таким оружием можно остановить целую армию недругов.",
+  "item_sledge_flametal_blood": "Смертельный удар",
+  "item_sledge_flametal_description_blood": "Громадная кувалда, пульсирующая зловещей энергией. Чем ожесточеннее бой, тем яростнее её удары."
 }

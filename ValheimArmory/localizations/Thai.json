@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "เฟลมีทัล ไลท์นิ่ง แอทเกอีร์",
   "item_meteor_atgeir_lightning_description": "พวกมีดของมันแตกเป็นเสียงกระพือพิง แค่สัมผัสเดียวก็จะมีประกายกระพือพิงลอยออกมา",
   "item_meteor_atgeir_nature": " ไม่สามารถแปลเป็นภาษาไทยได้ เนื่องจากเป็นคำที่ไม่มีความหมายที่ชัดเจน",
-  "item_meteor_atgeir_nature_description": "พลังพื้นฐานไหลผ่านด้วยดาบเหล่านี้ ผูกมัดศัตรูของคุณ พลังพื้นฐานไหลผ่านด้ยดาบเหล่านี้ ผูกมัดศัตรูของคุณ"
+  "item_meteor_atgeir_nature_description": "พลังพื้นฐานไหลผ่านด้วยดาบเหล่านี้ ผูกมัดศัตรูของคุณ พลังพื้นฐานไหลผ่านด้ยดาบเหล่านี้ ผูกมัดศัตรูของคุณ",
+  "item_moder_greatsword": "ดรากอนฟรอสท์เกรทซอร์ด",
+  "item_moder_greatsword_description": "ดาบยักษ์ที่ถูกหล่อด้วยพลังของน้ำแข็งที่ไม่สิ้นสุด แข็งแรงด้วยน้ำตาของมาดเตอร์",
+  "item_bronze_sledge": "ไม้ค้อนสีทองThank you!",
+  "item_bronze_sledge_description": "หินขนาดใหญ่ถูกค้างไว้ด้วยสายโลหะทองและหนังตรอลค่ะ หินขนาดใหญ่ถูกค้างไว้ด้วยสายโลหะทองและหนังตรอลค่ะ",
+  "item_mistland_mace": "ไม้ค้อนทรายดำ",
+  "item_mistland_mace_description": "วิธีที่ดีกว่าในการทำลายแมลงบินคืออะไร?",
+  "item_sledge_flametal": "ค้อนเหล็กล้ำ",
+  "item_sledge_flametal_description": "คันเลื่อยขนาดใหญ่ที่มีความสมดุลและมีพลังและน้ำหนักมาก",
+  "item_sledge_flametal_lightning": "ผู้ทำเสียงฟ้าคะนอง",
+  "item_sledge_flametal_description_lightning": "ค้อนขนาดใหญ่ พายุซิ่งคู่ น่าตกใจถึงการสัมผัส",
+  "item_sledge_flametal_nature": " in Thai is ผู้สั่นสะท้านโลก",
+  "item_sledge_flametal_description_nature": "ครั้งใหญ่ที่หกล้มหล่น ที่หยดหยุดกับพลังงานของธรรมชาติ ด้วยสิ่งนี้คุณสามารถหยุดทหารได้",
+  "item_sledge_flametal_blood": "คำโต้แย้ง",
+  "item_sledge_flametal_description_blood": "คร่ำครวญมาก ความโกรธของมันดูเหมือนจะเพิ่มมากขึ้นเรื่อยๆเมื่อการต่อสู้กลายเป็นที่สุด"
 }

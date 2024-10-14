@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Фламетален мълниен атгеир",
   "item_meteor_atgeir_lightning_description": "Неговите остриета трескат от енергия, само един допир и искри летят.",
   "item_meteor_atgeir_nature": "Фламетален първобитен атгейр",
-  "item_meteor_atgeir_nature_description": "Първичната енергия протича през тези остриета, връзвайки враговете ти."
+  "item_meteor_atgeir_nature_description": "Първичната енергия протича през тези остриета, връзвайки враговете ти.",
+  "item_moder_greatsword": "Драконов меч за замръзване",
+  "item_moder_greatsword_description": "Голям меч кован от вечна ледена сила, затвърден със сълзите на модър.",
+  "item_bronze_sledge": "Бронзова санка",
+  "item_bronze_sledge_description": "Голям камък, държан на място от бронз и ремъци от кожа на трол.",
+  "item_mistland_mace": "Черен мраморен бездар",
+  "item_mistland_mace_description": "Какъв по-добър начин да унищожим бъгове?",
+  "item_sledge_flametal": " Фламетален чук",
+  "item_sledge_flametal_description": "Голяма санка внимателно балансирана, мощна и тежка еднакво.",
+  "item_sledge_flametal_lightning": "Гръмотворец.",
+  "item_sledge_flametal_description_lightning": "Голям боб, два бури, шокиращо на допир.",
+  "item_sledge_flametal_nature": "Земетресение",
+  "item_sledge_flametal_description_nature": "Голям бузък, капещ с енергията на природата, с него можеш да спреш армия.",
+  "item_sledge_flametal_blood": "Смъртен удар",
+  "item_sledge_flametal_description_blood": "Голям бесен батут, гневът му изглежда да расте още повече, колкото по-тежка е битката."
 }

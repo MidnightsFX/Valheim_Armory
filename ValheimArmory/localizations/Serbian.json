@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Flametal munja atgeir",
   "item_meteor_atgeir_lightning_description": "Njegove oštrice pucketaju energijom, jedan dodir i varnice lete.",
   "item_meteor_atgeir_nature": "Plameni primitivni atgeir",
-  "item_meteor_atgeir_nature_description": "Primalna energija teče kroz ove oštrice, vezujući tvoje neprijatelje."
+  "item_meteor_atgeir_nature_description": "Primalna energija teče kroz ove oštrice, vezujući tvoje neprijatelje.",
+  "item_moder_greatsword": "Veliki mač od zmajeve ledene oštrice",
+  "item_moder_greatsword_description": "Veliki mač kovao večnom ledom, ojačan suzama majki.",
+  "item_bronze_sledge": "Bronzani sanke",
+  "item_bronze_sledge_description": "Veliki kamen koji se drži na mestu bakarnim i trakama od trola.",
+  "item_mistland_mace": "Crni mramorni topuz",
+  "item_mistland_mace_description": "Koji bolji način da se reše bagovi?",
+  "item_sledge_flametal": "Flametal kovačnica",
+  "item_sledge_flametal_description": "Masivna sanke pažljivo uravnotežena, moćna i teška podjednako.",
+  "item_sledge_flametal_lightning": "Gromovnik",
+  "item_sledge_flametal_description_lightning": "Veliki sanke, dve oluje, šokantno na dodir.",
+  "item_sledge_flametal_nature": "Trešnjača",
+  "item_sledge_flametal_description_nature": "Masivno sankanje, natopljeno prirodnom energijom, sa ovim biste mogli zaustaviti vojsku.",
+  "item_sledge_flametal_blood": "Smrtonosni udarac",
+  "item_sledge_flametal_description_blood": "Masivan sanke, njegov bes se čini da raste što je borba ozbiljnija."
 }

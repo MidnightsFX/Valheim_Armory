@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": " 火金屬閃電戟",
   "item_meteor_atgeir_lightning_description": "它的刀刃充滿能量，一觸即發出火花。",
   "item_meteor_atgeir_nature": "Flametal原始戰戟",
-  "item_meteor_atgeir_nature_description": "原始能量流經這些刀刃，束縛你的敵人。"
+  "item_meteor_atgeir_nature_description": "原始能量流經這些刀刃，束縛你的敵人。",
+  "item_moder_greatsword": "龍霜巨劍",
+  "item_moder_greatsword_description": "由永恆冰雪鍛造，加強了現代眼淚的巨劍。",
+  "item_bronze_sledge": "青銅雪橇",
+  "item_bronze_sledge_description": "一塊巨大的石頭由青銅和巨魔皮帶固定在原地。",
+  "item_mistland_mace": "黑色大理石狼牙棍",
+  "item_mistland_mace_description": "有什麼比這更好的方法來消滅蟲蟲呢？",
+  "item_sledge_flametal": "火焰金屬錘",
+  "item_sledge_flametal_description": "一個巨大的雪橇小心平衡，同樣強大和沉重。Thank you for the translation.",
+  "item_sledge_flametal_lightning": "雷製造者",
+  "item_sledge_flametal_description_lightning": "一把巨大的雪橇，雙重風暴，觸感震撼。",
+  "item_sledge_flametal_nature": "地震者",
+  "item_sledge_flametal_description_nature": "一把巨大的雪橇，滴著大自然的能量，有了這個你就能阻止一支軍隊。",
+  "item_sledge_flametal_blood": "死亡一擊",
+  "item_sledge_flametal_description_blood": "一把巨大的雪橇，它的愤怒似乎随着战斗的激烈程度而增长。"
 }

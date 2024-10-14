@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Raio de flametal atgeir",
   "item_meteor_atgeir_lightning_description": "Suas lâminas estalam com energia, basta um toque e faíscas voam.",
   "item_meteor_atgeir_nature": "Flametal primitivo atgeir",
-  "item_meteor_atgeir_nature_description": "A energia primordial flui através destas lâminas, prendendo seus inimigos."
+  "item_meteor_atgeir_nature_description": "A energia primordial flui através destas lâminas, prendendo seus inimigos.",
+  "item_moder_greatsword": "Espada grande Dragonfrost",
+  "item_moder_greatsword_description": "Uma grande espada forjada pela força do gelo eterno fortalecida com lágrimas de mãe.",
+  "item_bronze_sledge": "Trineo de bronze",
+  "item_bronze_sledge_description": "Uma pedra maciça segura por correias de bronze e pele de troll.",
+  "item_mistland_mace": "Maça de mármore preto",
+  "item_mistland_mace_description": "Que melhor maneira de esmagar insetos?",
+  "item_sledge_flametal": "Marreta de flametal",
+  "item_sledge_flametal_description": "Um trenó maciço cuidadosamente equilibrado, poderoso e pesado em igual medida.",
+  "item_sledge_flametal_lightning": "Fabricante de trovões",
+  "item_sledge_flametal_description_lightning": "Um trenó maciço, tempestades gêmeas, chocante ao toque.",
+  "item_sledge_flametal_nature": "Abalador da Terra",
+  "item_sledge_flametal_description_nature": "Um trenó maciço, pingando com a energia da natureza, com isso você poderia parar um exército.",
+  "item_sledge_flametal_blood": "Golpe de morte",
+  "item_sledge_flametal_description_blood": "Um trenó maciço, a sua fúria parece crescer quanto mais terrível for a luta."
 }

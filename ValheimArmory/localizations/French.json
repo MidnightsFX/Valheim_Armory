@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Foudre flamme métallique atgeir",
   "item_meteor_atgeir_lightning_description": "Ses lames crépitent d'énergie, un simple contact et les étincelles volent.",
   "item_meteor_atgeir_nature": "Flametal primitif atgeir",
-  "item_meteor_atgeir_nature_description": "L'énergie primordiale coule à travers ces lames, liant vos ennemis."
+  "item_meteor_atgeir_nature_description": "L'énergie primordiale coule à travers ces lames, liant vos ennemis.",
+  "item_moder_greatsword": "Épée géante Dragonfrost",
+  "item_moder_greatsword_description": "Une grande épée forgée par la force de la glace éternelle renforcée avec les larmes des moders.",
+  "item_bronze_sledge": "Traîneau en bronze",
+  "item_bronze_sledge_description": "Une énorme pierre maintenue en place par des sangles en bronze et en peau de troll.",
+  "item_mistland_mace": "Massue en marbre noir",
+  "item_mistland_mace_description": "Quelle meilleure façon d'écraser les insectes ?",
+  "item_sledge_flametal": "Marteau de métal en fusion",
+  "item_sledge_flametal_description": "Un traîneau massif soigneusement équilibré, puissant et lourd en égalité.",
+  "item_sledge_flametal_lightning": "Fabricant de tonnerre",
+  "item_sledge_flametal_description_lightning": "Un traîneau massif, deux tempêtes jumelles, choquant au toucher.",
+  "item_sledge_flametal_nature": "Le briseur de terre",
+  "item_sledge_flametal_description_nature": "Un traîneau massif, dégoulinant de l'énergie de la nature, avec cela, vous pourriez arrêter une armée.",
+  "item_sledge_flametal_blood": "Coup fatal",
+  "item_sledge_flametal_description_blood": "Un traîneau massif, sa colère semble grandir plus le combat devient désespéré."
 }

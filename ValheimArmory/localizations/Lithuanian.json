@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Flametalinis žaibas atgeir",
   "item_meteor_atgeir_lightning_description": "Jo ašmenys trakščioja energijos, vos vienas prisilietimas ir krenta kibirkštys.",
   "item_meteor_atgeir_nature": "Flametalinis pirminis atgeiras",
-  "item_meteor_atgeir_nature_description": "Primityvus energija teka per šiuos peilius, sujungianti tavo priešus."
+  "item_meteor_atgeir_nature_description": "Primityvus energija teka per šiuos peilius, sujungianti tavo priešus.",
+  "item_moder_greatsword": "Drakono šerkšnas didysis kardas",
+  "item_moder_greatsword_description": "Didžiulis kalavijas iškovotas iš amžino ledo, sustiprintas motinos ašaromis.",
+  "item_bronze_sledge": "Bronzinis kėbulas",
+  "item_bronze_sledge_description": "Milžiniškas akmuo, laikomas vietos bronzu ir trollų odos juostomis.",
+  "item_mistland_mace": "Juodmarmurinis kalcas",
+  "item_mistland_mace_description": "Kokia geresnė būdas sutriuškinti klaidas?",
+  "item_sledge_flametal": "Flametal kūjis",
+  "item_sledge_flametal_description": "Didelis kėbulas atidžiai subalansuotas, galingas ir sunkus vienodai.",
+  "item_sledge_flametal_lightning": "Griaustinio kūrėjas",
+  "item_sledge_flametal_description_lightning": "Didelis rogutis, dvyni audros, šokiruojantis prisilietimas.",
+  "item_sledge_flametal_nature": "Žemės drebėtojas",
+  "item_sledge_flametal_description_nature": "Didžiulis sleksčio, kruvinantis gamtos energija, su juo galėtum sustabdyti kariuomenę.",
+  "item_sledge_flametal_blood": "Žūtbūtis",
+  "item_sledge_flametal_description_blood": "Didelis rogutis, jo rūstybė atrodo auganti kuo siauresnė kova."
 }

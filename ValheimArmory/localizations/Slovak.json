@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Svietivý blesk Flametal atgeir",
   "item_meteor_atgeir_lightning_description": "Jeho čepele praskajú energiou, stačí jeden dotyk a jiskry lietajú.",
   "item_meteor_atgeir_nature": "Flametal prvotný atgeir",
-  "item_meteor_atgeir_nature_description": "Prvotná energia prechádza týmito čepeľami, viažuc vašich nepriateľov."
+  "item_meteor_atgeir_nature_description": "Prvotná energia prechádza týmito čepeľami, viažuc vašich nepriateľov.",
+  "item_moder_greatsword": "Veľký meč Dragonfrost",
+  "item_moder_greatsword_description": "Meč veľkého bojovníka kovaný večným ľadom posilnený slzami matky.",
+  "item_bronze_sledge": "Bronzový san",
+  "item_bronze_sledge_description": "Obrovský kameň držaný na mieste bronzovými a pásikmi z kože trola.",
+  "item_mistland_mace": "Čierna mramorová palica",
+  "item_mistland_mace_description": "Aký lepší spôsob na zbavenie sa chýb?",
+  "item_sledge_flametal": "Flametal kladivo",
+  "item_sledge_flametal_description": "Obrovský sanie starostlivo vyvážený, silný a ťažký rovnako.",
+  "item_sledge_flametal_lightning": "Búrkač",
+  "item_sledge_flametal_description_lightning": "Masívna sanca, dvojitá búrky, šokujúca na dotyk.",
+  "item_sledge_flametal_nature": "Zemotrasca",
+  "item_sledge_flametal_description_nature": "Obrovský sánky, ktorý odkvapkáva prírodnú energiu, s týmto by ste mohli zastaviť armádu.",
+  "item_sledge_flametal_blood": "Úder smrti",
+  "item_sledge_flametal_description_blood": "Obrovský sán, jeho hnev sa zdá rásť čím vážnejší je boj."
 }

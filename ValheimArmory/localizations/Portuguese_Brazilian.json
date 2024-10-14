@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Relâmpago flametal atgeir",
   "item_meteor_atgeir_lightning_description": "Suas lâminas estalam com energia, apenas um toque e faíscas voam.",
   "item_meteor_atgeir_nature": " Flametal primitivo atgeir",
-  "item_meteor_atgeir_nature_description": "Energia primordial flui através destas lâminas, prendendo seus inimigos."
+  "item_meteor_atgeir_nature_description": "Energia primordial flui através destas lâminas, prendendo seus inimigos.",
+  "item_moder_greatsword": "Espada grande Dragonfrost",
+  "item_moder_greatsword_description": "Uma grande espada forjada pela força do gelo eterno fortalecida com lágrimas modernas.",
+  "item_bronze_sledge": "Marreta de bronze",
+  "item_bronze_sledge_description": "Uma pedra maciça mantida no lugar por tiras de bronze e pele de troll.",
+  "item_mistland_mace": "maça de mármore preto",
+  "item_mistland_mace_description": "Qual a melhor maneira de esmagar insetos?",
+  "item_sledge_flametal": "Martelo flametal",
+  "item_sledge_flametal_description": "Um grande martelo cuidadosamente equilibrado, poderoso e pesado igualmente.",
+  "item_sledge_flametal_lightning": "Fabricante de trovões",
+  "item_sledge_flametal_description_lightning": "Um trenó maciço, tempestades gêmeas, chocante ao toque.",
+  "item_sledge_flametal_nature": "Tremor da Terra",
+  "item_sledge_flametal_description_nature": "Um grande martelo, pingando com a energia da natureza, com isso você poderia parar um exército.",
+  "item_sledge_flametal_blood": "Golpe mortal",
+  "item_sledge_flametal_description_blood": "Um martelo maciço, sua raiva parece crescer quanto mais desesperada a luta."
 }

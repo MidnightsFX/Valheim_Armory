@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Błyskawica flametalowa atgeir",
   "item_meteor_atgeir_lightning_description": "Jego ostrza trzaskają energią, wystarczy jedno dotknięcie, a iskry lecą.",
   "item_meteor_atgeir_nature": "Flametal pierwotny atgeirDziękuję!",
-  "item_meteor_atgeir_nature_description": "Pierwotna energia płynie przez te ostrza, wiążąc twoich wrogów."
+  "item_meteor_atgeir_nature_description": "Pierwotna energia płynie przez te ostrza, wiążąc twoich wrogów.",
+  "item_moder_greatsword": "Miecz lodowego smoka",
+  "item_moder_greatsword_description": "Wielki miecz wykuty przez wieczny lód wzmocniony łzami matki.",
+  "item_bronze_sledge": "Brązowa sanie",
+  "item_bronze_sledge_description": "Olbrzymi kamień trzymany na miejscu przez brązowe paski i skórzane paski trolla.",
+  "item_mistland_mace": "Maczuga z czarnego marmuru",
+  "item_mistland_mace_description": "Jaki lepszy sposób na zgniecenie robaków?",
+  "item_sledge_flametal": "Młotek flametalowy",
+  "item_sledge_flametal_description": "Potężny sanie ostrożnie wyważony, potężny i ciężki w równym stopniu.",
+  "item_sledge_flametal_lightning": "Gromowładca",
+  "item_sledge_flametal_description_lightning": "Potężny sanki, podwójne burze, szokujące w dotyku.",
+  "item_sledge_flametal_nature": "Trzęsawisko",
+  "item_sledge_flametal_description_nature": "Olbrzymi sanki ociekające energią natury, z nimi można zatrzymać armię.",
+  "item_sledge_flametal_blood": "Uderzenie śmiertelne",
+  "item_sledge_flametal_description_blood": "Potężna sanie, jego wściekłość wydaje się rosnąć im bardziej zacięta jest walka."
 }

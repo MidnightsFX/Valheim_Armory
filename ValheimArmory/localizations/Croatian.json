@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Plameni munjeviti atgeir",
   "item_meteor_atgeir_lightning_description": "Njegove oštrice pršte energijom, samo jedan dodir i iskre lete.",
   "item_meteor_atgeir_nature": "Flametalni prapovijesni atgeir",
-  "item_meteor_atgeir_nature_description": "Primalna energija teče kroz ove oštrice, povezujući tvoje neprijatelje."
+  "item_meteor_atgeir_nature_description": "Primalna energija teče kroz ove oštrice, povezujući tvoje neprijatelje.",
+  "item_moder_greatsword": "Mač ledenog zmaja(Note:  is a proper noun and does not have a direct translation in Croatian)",
+  "item_moder_greatsword_description": "Veliki mač kovan od vječnog leda ojačan suzama majke.",
+  "item_bronze_sledge": "Brončana sanjka",
+  "item_bronze_sledge_description": "Masivni kamen držan na mjestu brončanim i vrpcama od kože trola.",
+  "item_mistland_mace": "Crna mramorna palica",
+  "item_mistland_mace_description": "Kakav bolji način da zgnječimo kukce?",
+  "item_sledge_flametal": "Flametal čekić",
+  "item_sledge_flametal_description": "Masivan sanj pažljivo uravnotežen, moćan i težak jednako.",
+  "item_sledge_flametal_lightning": "Gromovnik",
+  "item_sledge_flametal_description_lightning": "Masivna sanjka, dvostruke oluje, šokantna na dodir.",
+  "item_sledge_flametal_nature": "Zemljotres",
+  "item_sledge_flametal_description_nature": "Masivna sanjka, natopljena prirodnom energijom, s ovim bi mogli zaustaviti vojsku.",
+  "item_sledge_flametal_blood": "Smrtonosni udarac",
+  "item_sledge_flametal_description_blood": "Masivni sanjkaš, njegov bijes čini se raste što je borba očajnija."
 }

@@ -1,6 +1,16 @@
+ **1.16.2**
+ ---
+ ```
+ - Fixes for Vanilla hammer modification
+ - Configuration for how much stamina vanilla hammers will use on the primary attack
+ - Enabled hot-reloading for vanilla stamina weapon cost changes
+ ```
+
  **1.16.1**
  ---
  ```
+ - Fixed the flint greataxe acquiring lightning damage on levelup
+ - Added translations for all of the recently added weapons
  - Fixed the package icon -_-
  ```
 

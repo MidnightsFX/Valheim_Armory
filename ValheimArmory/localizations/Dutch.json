@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "Flametal bliksemspeer",
   "item_meteor_atgeir_lightning_description": "Zijn messen knetteren van energie, slechts één aanraking en de vonken vliegen.",
   "item_meteor_atgeir_nature": "Vlammetalen oeratgeir",
-  "item_meteor_atgeir_nature_description": "Primitieve energie stroomt door deze messen, waardoor je vijanden worden gebonden."
+  "item_meteor_atgeir_nature_description": "Primitieve energie stroomt door deze messen, waardoor je vijanden worden gebonden.",
+  "item_moder_greatsword": "Drakenvorst grootzwaard",
+  "item_moder_greatsword_description": "Een groot zwaard gesmeed door eeuwig ijs versterkt met moeders tranen.",
+  "item_bronze_sledge": "Bronzen slee",
+  "item_bronze_sledge_description": "Een massieve steen die op zijn plaats wordt gehouden door bronzen en trollenhuid riemen.",
+  "item_mistland_mace": "Zwarte marmeren knots",
+  "item_mistland_mace_description": "Wat is een betere manier om bugs te verpletteren?",
+  "item_sledge_flametal": " Flametal hamer",
+  "item_sledge_flametal_description": "Een massieve slee zorgvuldig in balans, krachtig en zwaar in gelijke mate.",
+  "item_sledge_flametal_lightning": "Dondervogel",
+  "item_sledge_flametal_description_lightning": "Een massieve slee, twee stormen, schokkend bij aanraking.",
+  "item_sledge_flametal_nature": "Aardbever",
+  "item_sledge_flametal_description_nature": "Een massieve slede, druipend van de energie van de natuur, hiermee zou je een leger kunnen stoppen.",
+  "item_sledge_flametal_blood": "Doodsteek",
+  "item_sledge_flametal_description_blood": "Een massieve slee, zijn woede lijkt toe te nemen naarmate de strijd ernstiger wordt."
 }

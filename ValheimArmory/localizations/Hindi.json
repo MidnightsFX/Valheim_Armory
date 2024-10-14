@@ -196,5 +196,19 @@
   "item_meteor_atgeir_lightning": "फ्लेमेटल बिजली अटगीर",
   "item_meteor_atgeir_lightning_description": "इसकी ब्लेड्स ऊर्जा से चिल्लाती हैं, बस एक छूने से ही बिजली की चमक फूटती है।",
   "item_meteor_atgeir_nature": "फ्लैमेटल प्राइमल अटगेर",
-  "item_meteor_atgeir_nature_description": "मौलिक ऊर्जा इन ब्लेड्स के माध्यम से बहती है, जो आपके दुश्मनों को बांधती है।"
+  "item_meteor_atgeir_nature_description": "मौलिक ऊर्जा इन ब्लेड्स के माध्यम से बहती है, जो आपके दुश्मनों को बांधती है।",
+  "item_moder_greatsword": "ड्रैगनफ्रॉस्ट ग्रेटस्वर्ड",
+  "item_moder_greatsword_description": "एक महान तलवार जो शाश्वत बर्फ से बनी है और माँ की आँसुओं से मजबूत है।",
+  "item_bronze_sledge": "कांसी की बर्फी",
+  "item_bronze_sledge_description": "कांस्य और ट्रोलहाइड स्ट्रैप्स द्वारा स्थिर किया गया एक विशाल पत्थर।",
+  "item_mistland_mace": "काली संगमरमर की गदा",
+  "item_mistland_mace_description": "कीड़ों को मारने का बेहतरीन तरीका क्या हो सकता है?",
+  "item_sledge_flametal": "फ्लेमेटल हथौड़ा",
+  "item_sledge_flametal_description": "एक विशाल स्लेज सावधानीपूर्वक संतुलित है, शक्तिशाली और भारी बराबर।",
+  "item_sledge_flametal_lightning": "गरजनेवाला",
+  "item_sledge_flametal_description_lightning": "एक विशाल स्लेज, जुड़वां तूफान, स्पर्श के लिए चौंकाने वाला।",
+  "item_sledge_flametal_nature": "भूकंपक",
+  "item_sledge_flametal_description_nature": "एक विशाल स्लेज, प्राकृतिक ऊर्जा से टपकते हुए, इसके साथ आप एक सेना को रोक सकते हैं।",
+  "item_sledge_flametal_blood": "मौत की चोट",
+  "item_sledge_flametal_description_blood": "एक बड़ी स्लेज, उसका क्रोध लड़ाई जितनी भी गंभीर होती है, उतना ही बढ़ता जाता है।"
 }
