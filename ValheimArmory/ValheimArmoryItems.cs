@@ -2118,13 +2118,13 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(4, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(20, 0, 48, true) },
                     { "slash", new Tuple<float, float, float, bool>(39, 0, 99, true) },
                     { "slash_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "pierce", new Tuple<float, float, float, bool>(39, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(10, 0, 40, true) },
-                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(4, 1, 20, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 20, true) },
                     { "secondary_attack_stamina", new Tuple<float, float, float, bool>(12, 1, 50, true) },
                     { "durability", new Tuple<float, float, float, bool>(200, 0, 500, true) },
                     { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
@@ -2599,7 +2599,7 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(28, 0, 48, true) },
                     { "pierce", new Tuple<float, float, float, bool>(52, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "slash", new Tuple<float, float, float, bool>(52, 0, 99, true) },
@@ -2633,7 +2633,7 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(28, 0, 48, true) },
                     { "pierce", new Tuple<float, float, float, bool>(52, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "slash", new Tuple<float, float, float, bool>(52, 0, 99, true) },
@@ -2668,7 +2668,7 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(28, 0, 48, true) },
                     { "pierce", new Tuple<float, float, float, bool>(52, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "slash", new Tuple<float, float, float, bool>(52, 0, 99, true) },
@@ -2703,7 +2703,7 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "block", new Tuple<float, float, float, bool>(2, 0, 48, true) },
+                    { "block", new Tuple<float, float, float, bool>(28, 0, 48, true) },
                     { "pierce", new Tuple<float, float, float, bool>(52, 0, 99, true) },
                     { "pierce_per_level", new Tuple<float, float, float, bool>(1, 0, 25, true) },
                     { "slash", new Tuple<float, float, float, bool>(52, 0, 99, true) },

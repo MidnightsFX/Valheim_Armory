@@ -1,3 +1,17 @@
+ **1.16.4**
+ ---
+ ```
+ - Asset bundle update
+ ```
+
+ **1.16.3**
+ ---
+ ```
+ - Updated default stamina and block values for 2H knives that had inconsistent values (blackmetal and meteor)
+ - Updated some weapons tool tiers to better match their biomes
+ - Updated Japanese translation
+ ```
+
  **1.16.2**
  ---
  ```
