@@ -182,7 +182,6 @@
   "item_dagger_copper_description_2h": "Kaksi kimaltelevaa veistä, mitä ne tulevat viiltämään?",
   "item_knife_blackmetal_2h": "Mustametalliveitset",
   "item_knife_blackmetal_2h_description": "Pimeät terät, kiiltävät ja uhkaavat.",
-  "item_dagger_blackmetal_mistlands": "",
   "item_dagger_blackmetal_mistlands_description": "Hati etsii kuuta ja vihollistesi sydämiä.",
   "item_dagger_meteor_2h_blood": "Mestarin veri veitset",
   "item_dagger_meteor_2h_blood_description": "Nämä terät ovat janonnut lisää verta.",
@@ -190,7 +189,6 @@
   "item_dagger_meteor_2h_lightning_description": "Iskee kuin ukkonen, nopea kuin salama.",
   "item_dagger_meteor_2h_nature": "Assassinin alkuperäiset veitset",
   "item_dagger_meteor_2h_nature_description": "Viiniköynnökset sitovat kohteesi, mikään ei pääse näiden terien ulottumattomiin.",
-  "item_meteor_atgeir": "",
   "item_meteor_atgeir_blood": "Finnish: Flametal-verinen atgeirResponse: Kiitos!",
   "item_meteor_atgeir_blood_description": "Kaksiteräiset miekat janovat verta.",
   "item_meteor_atgeir_lightning": "Flametal salama atgeir",
@@ -210,5 +208,7 @@
   "item_sledge_flametal_nature": "Maanjäristäjä",
   "item_sledge_flametal_description_nature": "Valtava kelkka, joka tihkuu luonnon energiaa, tällä voisi pysäyttää armeijan.",
   "item_sledge_flametal_blood": "Kuolinisku",
-  "item_sledge_flametal_description_blood": "Massiivinen kelkka, sen raivo tuntuu kasvavan mitä hankalammaksi taistelu muuttuu."
+  "item_sledge_flametal_description_blood": "Massiivinen kelkka, sen raivo tuntuu kasvavan mitä hankalammaksi taistelu muuttuu.",
+  "item_meteor_atgeir": " translates to  in Finnish.",
+  "item_dagger_blackmetal_mistlands": "Kiire"
 }

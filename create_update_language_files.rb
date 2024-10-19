@@ -86,14 +86,21 @@ languages.each do |lang|
     next if need_translation_updates == false
 
     keys_needed.each do |key|
-      response = client.chat(
-        parameters: {
-          model: "gpt-3.5-turbo-1106", # Required.
-          messages: [{ role: "user", content: "Please translate the quoted phrase to #{lang} and respond only the translation text: \"#{master_json[key]}\"" }],
-          temperature: 0.7
-        }
-      )
-      translation = sanitize_response(response["choices"][0]["message"]["content"], master_json[key])
+      result = false
+      translation = ""
+      loop do
+        response = client.chat(
+          parameters: {
+            model: "gpt-3.5-turbo-1106", # Required.
+            messages: [{ role: "user", content: "Please translate the quoted phrase to #{lang} and respond only the translation text: \"#{master_json[key]}\"" }],
+            temperature: 0.7
+          }
+        )
+        translation = sanitize_response(response["choices"][0]["message"]["content"], master_json[key])
+        result = true unless translation.empty?
+
+        break if result == true
+      end
       puts "Translated: #{master_json[key]} -> | #{translation} |"
       current_language_translation[key] = translation
     end

@@ -182,7 +182,6 @@
   "item_dagger_copper_description_2h": "¿Qué cortarán dos cuchillos brillantes?",
   "item_knife_blackmetal_2h": "Cuchillos de metal negro",
   "item_knife_blackmetal_2h_description": "Cuchillas oscuras, brillantes y amenazadoras.",
-  "item_dagger_blackmetal_mistlands": "",
   "item_dagger_blackmetal_mistlands_description": "Hati busca la luna y los corazones de tus enemigos.",
   "item_dagger_meteor_2h_blood": "Cuchillos de sangre de asesino",
   "item_dagger_meteor_2h_blood_description": "Estas cuchillas están ansiosas por más sangre.",
@@ -190,8 +189,7 @@
   "item_dagger_meteor_2h_lightning_description": "Rayos como truenos, rápido como el relámpago.",
   "item_dagger_meteor_2h_nature": "Cuchillos primarios asesinos",
   "item_dagger_meteor_2h_nature_description": "Las enredaderas atan a tu objetivo, nada escapa a estas cuchillas.",
-  "item_meteor_atgeir": "",
-  "item_meteor_atgeir_blood": "Sangre flametal atgeir(No translation available for )",
+  "item_meteor_atgeir_blood": "Sangre flametal atgeir",
   "item_meteor_atgeir_blood_description": "Las cuchillas gemelas ansían sangre.",
   "item_meteor_atgeir_lightning": "Flecha de relámpago flametal",
   "item_meteor_atgeir_lightning_description": "Las cuchillas crepitan con energía, con solo un toque chisporrotean las chispas.",
@@ -210,5 +208,7 @@
   "item_sledge_flametal_nature": "Terremoto",
   "item_sledge_flametal_description_nature": "Un trineo masivo, goteando con la energía de la naturaleza, con esto podrías detener un ejército.",
   "item_sledge_flametal_blood": "Golpe mortal",
-  "item_sledge_flametal_description_blood": "Un trineo masivo, su furia parece crecer cuanto más desesperada es la lucha."
+  "item_sledge_flametal_description_blood": "Un trineo masivo, su furia parece crecer cuanto más desesperada es la lucha.",
+  "item_meteor_atgeir": "Flametal atgeir",
+  "item_dagger_blackmetal_mistlands": "Cuchillos de metal negro"
 }

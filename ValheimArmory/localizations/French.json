@@ -190,7 +190,6 @@
   "item_dagger_meteor_2h_lightning_description": "Frappe comme le tonnerre, rapide comme l'éclair.",
   "item_dagger_meteor_2h_nature": "Assassin couteaux primitifs",
   "item_dagger_meteor_2h_nature_description": "Les vignes lient votre cible, rien n'échappe à ces lames.",
-  "item_meteor_atgeir": "",
   "item_meteor_atgeir_blood": "Sang flamétal atgeir",
   "item_meteor_atgeir_blood_description": "Les lames jumelles ont soif de sang.",
   "item_meteor_atgeir_lightning": "Foudre flamme métallique atgeir",
@@ -210,5 +209,6 @@
   "item_sledge_flametal_nature": "Le briseur de terre",
   "item_sledge_flametal_description_nature": "Un traîneau massif, dégoulinant de l'énergie de la nature, avec cela, vous pourriez arrêter une armée.",
   "item_sledge_flametal_blood": "Coup fatal",
-  "item_sledge_flametal_description_blood": "Un traîneau massif, sa colère semble grandir plus le combat devient désespéré."
+  "item_sledge_flametal_description_blood": "Un traîneau massif, sa colère semble grandir plus le combat devient désespéré.",
+  "item_meteor_atgeir": " "
 }

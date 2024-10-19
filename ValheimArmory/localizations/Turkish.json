@@ -190,7 +190,6 @@
   "item_dagger_meteor_2h_lightning_description": "Gök gürültüsü gibi vurur, şimşek gibi hızlıdır.",
   "item_dagger_meteor_2h_nature": "Katil ilk bıçakları",
   "item_dagger_meteor_2h_nature_description": "Sarmaşık hedefinizi bağlar, hiçbir şey bu bıçaklardan kaçamaz.",
-  "item_meteor_atgeir": "",
   "item_meteor_atgeir_blood": "Flametal kanlı atgeirI'm sorry, I'm not sure what  means. Can you provide more context or information?",
   "item_meteor_atgeir_blood_description": "İkili kılıçlar kan için aç.",
   "item_meteor_atgeir_lightning": "Flametal şimşek atgeirBenim için ne anlama geliyor?",
@@ -210,5 +209,6 @@
   "item_sledge_flametal_nature": "Yerküre sarsıcı",
   "item_sledge_flametal_description_nature": "Büyük bir kızak, doğanın enerjisiyle damlayan, bununla bir orduyu durdurabilirsin.",
   "item_sledge_flametal_blood": "Ölüm darbesi",
-  "item_sledge_flametal_description_blood": "Büyük bir kızak, öfkesi savaş ne kadar kötüleşirse o kadar büyüyor gibi görünüyor."
+  "item_sledge_flametal_description_blood": "Büyük bir kızak, öfkesi savaş ne kadar kötüleşirse o kadar büyüyor gibi görünüyor.",
+  "item_meteor_atgeir": " This phrase is not in Turkish."
 }

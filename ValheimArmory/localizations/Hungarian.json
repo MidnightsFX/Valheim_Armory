@@ -190,7 +190,6 @@
   "item_dagger_meteor_2h_lightning_description": "Üt, mint a mennydörgés, gyors, mint a villám.",
   "item_dagger_meteor_2h_nature": "Assassin ősi kések",
   "item_dagger_meteor_2h_nature_description": "Csavarok kötik a célpontodat, semmi sem menekül ezek elől a pengék elől.Köszönöm!",
-  "item_meteor_atgeir": "",
   "item_meteor_atgeir_blood": "Flametal vér atgeir",
   "item_meteor_atgeir_blood_description": "A kétélű pengék éhesek a vérre.",
   "item_meteor_atgeir_lightning": "Flametal villám atgeir",
@@ -210,5 +209,6 @@
   "item_sledge_flametal_nature": "Földrengető",
   "item_sledge_flametal_description_nature": "Egy hatalmas szán, amely természet energiájával csöpög, ezzel megállíthatnád egy hadsereget.",
   "item_sledge_flametal_blood": "Halálos csapás",
-  "item_sledge_flametal_description_blood": "Egy hatalmas szán, haragja úgy tűnik, minél kétségbeejtőbb a harc, annál jobban nő."
+  "item_sledge_flametal_description_blood": "Egy hatalmas szán, haragja úgy tűnik, minél kétségbeejtőbb a harc, annál jobban nő.",
+  "item_meteor_atgeir": "Lángfém atgeir"
 }

@@ -190,7 +190,6 @@
   "item_dagger_meteor_2h_lightning_description": "Štrajkovi poput groma, brzi kao munja.",
   "item_dagger_meteor_2h_nature": "Ubica primalnih noževa",
   "item_dagger_meteor_2h_nature_description": "Loze vežu tvoj cilj, ništa ne izmiče ovim oštricama.",
-  "item_meteor_atgeir": "",
   "item_meteor_atgeir_blood": "Plameni krvavi atgeir",
   "item_meteor_atgeir_blood_description": "Dvostruke oštrice žude za krvlju.Hunenje dvostrukih oštrica za krvlju.",
   "item_meteor_atgeir_lightning": "Flametal munja atgeir",
@@ -210,5 +209,6 @@
   "item_sledge_flametal_nature": "Trešnjača",
   "item_sledge_flametal_description_nature": "Masivno sankanje, natopljeno prirodnom energijom, sa ovim biste mogli zaustaviti vojsku.",
   "item_sledge_flametal_blood": "Smrtonosni udarac",
-  "item_sledge_flametal_description_blood": "Masivan sanke, njegov bes se čini da raste što je borba ozbiljnija."
+  "item_sledge_flametal_description_blood": "Masivan sanke, njegov bes se čini da raste što je borba ozbiljnija.",
+  "item_meteor_atgeir": "Plameni atgeir"
 }

@@ -190,7 +190,6 @@
   "item_dagger_meteor_2h_lightning_description": "Golpes como trovão, rápidos como relâmpago.",
   "item_dagger_meteor_2h_nature": "Facas primais assassinas",
   "item_dagger_meteor_2h_nature_description": "Vides prendem seu alvo, nada escapa dessas lâminas.",
-  "item_meteor_atgeir": "",
   "item_meteor_atgeir_blood": "Sangue de Flametal atgeir",
   "item_meteor_atgeir_blood_description": "As lâminas gêmeas têm fome de sangue.",
   "item_meteor_atgeir_lightning": "Relâmpago flametal atgeir",
@@ -210,5 +209,6 @@
   "item_sledge_flametal_nature": "Tremor da Terra",
   "item_sledge_flametal_description_nature": "Um grande martelo, pingando com a energia da natureza, com isso você poderia parar um exército.",
   "item_sledge_flametal_blood": "Golpe mortal",
-  "item_sledge_flametal_description_blood": "Um martelo maciço, sua raiva parece crescer quanto mais desesperada a luta."
+  "item_sledge_flametal_description_blood": "Um martelo maciço, sua raiva parece crescer quanto mais desesperada a luta.",
+  "item_meteor_atgeir": " "
 }

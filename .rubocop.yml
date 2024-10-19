@@ -3,7 +3,7 @@ Style/StringLiterals:
 Layout/LineLength:
   Max: 200
 Metrics/BlockLength:
-  Max: 70
+  Max: 90
 Style/RedundantReturn:
   Enabled: false
 Style/RedundantInterpolation:

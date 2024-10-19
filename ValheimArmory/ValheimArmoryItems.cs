@@ -1542,7 +1542,7 @@ namespace ValheimArmory
                 },
                 new Dictionary<string, Tuple<float, float, float, bool>>() {
                     { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
-                    { "blunt", new Tuple<float, float, float, bool>(60, 0, 300, true) },
+                    { "blunt", new Tuple<float, float, float, bool>(35, 0, 300, true) },
                     { "blunt_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "attack_force", new Tuple<float, float, float, bool>(100, 0, 400, true) },
                     { "block", new Tuple<float, float, float, bool>(22, 0, 60, true) },

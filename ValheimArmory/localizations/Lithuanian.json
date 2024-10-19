@@ -190,7 +190,6 @@
   "item_dagger_meteor_2h_lightning_description": "Staigiai kaip griaustinis, greitai kaip žaibas.",
   "item_dagger_meteor_2h_nature": "Assassinų pirminiai peiliai",
   "item_dagger_meteor_2h_nature_description": "Vynuogės susižiebia tavo taikinį, niekas neišvengia šių peilių.",
-  "item_meteor_atgeir": "",
   "item_meteor_atgeir_blood": "Kraujo atgeir Flametal",
   "item_meteor_atgeir_blood_description": "Dvigubosios peilės trokšta kraujo.",
   "item_meteor_atgeir_lightning": "Flametalinis žaibas atgeir",
@@ -210,5 +209,6 @@
   "item_sledge_flametal_nature": "Žemės drebėtojas",
   "item_sledge_flametal_description_nature": "Didžiulis sleksčio, kruvinantis gamtos energija, su juo galėtum sustabdyti kariuomenę.",
   "item_sledge_flametal_blood": "Žūtbūtis",
-  "item_sledge_flametal_description_blood": "Didelis rogutis, jo rūstybė atrodo auganti kuo siauresnė kova."
+  "item_sledge_flametal_description_blood": "Didelis rogutis, jo rūstybė atrodo auganti kuo siauresnė kova.",
+  "item_meteor_atgeir": " --> "
 }

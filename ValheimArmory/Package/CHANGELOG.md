@@ -1,3 +1,12 @@
+ **1.16.5**
+ ---
+ ```
+ - Updated default damage for the bronze sledge
+ - Removed spirit damage from the flametal dual knives
+ - Removed incorrect fire damage from the flametal atgeir base
+ - Updates a few missing translations for spanish, and german
+ ```
+
  **1.16.4**
  ---
  ```

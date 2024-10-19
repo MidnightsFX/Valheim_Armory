@@ -182,7 +182,6 @@
   "item_dagger_copper_description_2h": "Tveir skírandi hnífarnir, hvað munu þeir skera?",
   "item_knife_blackmetal_2h": "Blackmetal hnífur",
   "item_knife_blackmetal_2h_description": "Dimmar sverð, skær og ógnvekjandi.",
-  "item_dagger_blackmetal_mistlands": "",
   "item_dagger_blackmetal_mistlands_description": "Hati leitar að tunglinu og hjörtum óvinanna þinna.",
   "item_dagger_meteor_2h_blood": "Leiðangur blóðs hnífana",
   "item_dagger_meteor_2h_blood_description": "Þessi eggjar eru þráir eftir meira blóði.",
@@ -210,5 +209,6 @@
   "item_sledge_flametal_nature": "Jörðarskjálfti",
   "item_sledge_flametal_description_nature": "Einkennilegur sleði, sem dryppir af náttúrulegri orku, með þessum gætir þú stoppað her.",
   "item_sledge_flametal_blood": "Banahögg",
-  "item_sledge_flametal_description_blood": "Kjölfar hraustur, reiðin hans virðist að aukast því hraðar sem bardagan er alvarlegri.Please let me know if there is anything else I can help you with."
+  "item_sledge_flametal_description_blood": "Kjölfar hraustur, reiðin hans virðist að aukast því hraðar sem bardagan er alvarlegri.Please let me know if there is anything else I can help you with.",
+  "item_dagger_blackmetal_mistlands": "- "
 }
