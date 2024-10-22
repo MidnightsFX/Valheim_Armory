@@ -302,5 +302,104 @@ namespace ValheimArmory.common
                 ModifyStamina("SledgeDemolisher", VAConfig.DemolisherPrimaryAttackStamina.Value);
             }
         }
+
+        public static void ModifyVanillaKnife()
+        {
+            if (VAConfig.VanillaAbyssalKnifeBluntDamageConvert.Value)
+            {
+                KnifeToAbyssal("KnifeChitin");
+            }
+        }
+
+        public static void OnConfigChangeModifyVanillaKnife(object sender, EventArgs e)
+        {
+            if (VAConfig.VanillaAbyssalKnifeBluntDamageConvert.Value)
+            {
+                KnifeToAbyssal("KnifeChitin");
+            }
+            else
+            {
+                KnifeToVanilla("KnifeChitin");
+            }
+        }
+
+        public static void OnConfigAbyssalKnifeValueChanged(object sender, EventArgs e)
+        {
+            if (VAConfig.VanillaHammersHavePrimaryAttack.Value)
+            {
+                KnifeToAbyssal("KnifeChitin");
+            }
+        }
+
+        public static void KnifeToAbyssal(string weapon_prefab)
+        {
+            // This ensures modifications of clones also
+            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
+
+            foreach (GameObject obj in objects)
+            {
+                ItemDrop id = null;
+                if (obj.TryGetComponent<ItemDrop>(out id))
+                {
+                    id.m_itemData.m_shared.m_damages.m_slash = 0;
+                    id.m_itemData.m_shared.m_damages.m_blunt = VAConfig.AbyssalKnifeBlunt.Value;
+                    id.m_itemData.m_shared.m_damagesPerLevel.m_slash = 0;
+                    id.m_itemData.m_shared.m_damagesPerLevel.m_blunt = VAConfig.AbyssalKnifeBluntPerLevel.Value;
+                }
+            }
+
+            if (Player.m_localPlayer != null)
+            {
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Modifying items within the players inventory."); }
+                // Update all instances that are in the backpack
+                foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
+                {
+                    if (user_item == null) { continue; }
+                    if (user_item.m_dropPrefab.name != weapon_prefab) { continue; }
+
+                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{user_item.m_shared.m_name} found in the players backpack, updating."); }
+                    user_item.m_shared.m_damages.m_slash = 0;
+                    user_item.m_shared.m_damages.m_blunt = VAConfig.AbyssalKnifeBlunt.Value;
+                    user_item.m_shared.m_damagesPerLevel.m_slash = 0;
+                    user_item.m_shared.m_damagesPerLevel.m_blunt = VAConfig.AbyssalKnifeBluntPerLevel.Value;
+                }
+            }
+        }
+
+        public static void KnifeToVanilla(string weapon_prefab)
+        {
+            // This ensures modifications of clones also
+            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
+
+            foreach (GameObject obj in objects)
+            {
+                ItemDrop id = null;
+                if (obj.TryGetComponent<ItemDrop>(out id))
+                {
+                    id.m_itemData.m_shared.m_damages.m_blunt = 0;
+                    id.m_itemData.m_shared.m_damages.m_slash = 20;
+                    id.m_itemData.m_shared.m_damagesPerLevel.m_blunt = 0;
+                    id.m_itemData.m_shared.m_damagesPerLevel.m_slash = 1f;
+                }
+            }
+
+            if (Player.m_localPlayer != null)
+            {
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Modifying items within the players inventory."); }
+                // Update all instances that are in the backpack
+                foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
+                {
+                    if (user_item == null) { continue; }
+                    if (user_item.m_dropPrefab.name != weapon_prefab) { continue; }
+
+                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{user_item.m_shared.m_name} found in the players backpack, updating."); }
+                    user_item.m_shared.m_damages.m_blunt = 0;
+                    user_item.m_shared.m_damages.m_slash = 20;
+                    user_item.m_shared.m_damagesPerLevel.m_blunt = 0;
+                    user_item.m_shared.m_damagesPerLevel.m_slash = 1f;
+                }
+            }
+        }
+
     }
 }

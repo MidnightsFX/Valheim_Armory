@@ -51,7 +51,11 @@ namespace ValheimArmory
             if (VAConfig.VanillaHammersHavePrimaryAttack.Value) {
                 PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaHammersToWarhammers;
             }
+            if (VAConfig.VanillaAbyssalKnifeBluntDamageConvert.Value) {
+                PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaKnife;
+            }
             VAConfig.VanillaHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyHammers;
+            VAConfig.VanillaAbyssalKnifeBluntDamageConvert.SettingChanged += WeaponModifier.OnConfigChangeModifyVanillaKnife;
 
             Assembly assembly = Assembly.GetExecutingAssembly();
             Harmony harmony = new(PluginGUID);

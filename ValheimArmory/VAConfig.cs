@@ -12,6 +12,9 @@ namespace ValheimArmory
         public static ConfigEntry<float> StagbreakerPrimaryAttackStamina;
         public static ConfigEntry<float> IronSledgePrimaryAttackStamina;
         public static ConfigEntry<float> DemolisherPrimaryAttackStamina;
+        public static ConfigEntry<bool> VanillaAbyssalKnifeBluntDamageConvert;
+        public static ConfigEntry<float> AbyssalKnifeBlunt;
+        public static ConfigEntry<float> AbyssalKnifeBluntPerLevel;
         public VAConfig(ConfigFile Config)
         {
             // ensure all the config values are created
@@ -37,6 +40,11 @@ namespace ValheimArmory
             IronSledgePrimaryAttackStamina.SettingChanged += WeaponModifier.OnConfigIronSledgeValueChanged;
             DemolisherPrimaryAttackStamina = BindServerConfig("Vanilla Weapons", "DemolisherPrimaryAttackStamina", 14f, "Stamina cost of the basic attack when enabled for the demolisher.", true, 1, 30);
             DemolisherPrimaryAttackStamina.SettingChanged += WeaponModifier.OnConfigDemolisherValueChanged;
+            VanillaAbyssalKnifeBluntDamageConvert = BindServerConfig("Vanilla Weapons", "VanillaAbyssalKnifeBluntDamageConvert", true, "Removes slash damage from the abyssal knife and adds blunt damage instead.");
+            AbyssalKnifeBlunt = BindServerConfig("Vanilla Weapons", "AbyssalKnifeBlunt", 20f, "Blunt damage for the abyssal knife", true, 0, 40);
+            AbyssalKnifeBluntPerLevel = BindServerConfig("Vanilla Weapons", "AbyssalKnifeBluntPerLevel", 1f, "Blunt damage per level for the abyssal knife", true, 0, 10);
+            AbyssalKnifeBlunt.SettingChanged += WeaponModifier.OnConfigAbyssalKnifeValueChanged;
+            AbyssalKnifeBluntPerLevel.SettingChanged += WeaponModifier.OnConfigAbyssalKnifeValueChanged;
         }
 
         /// <summary>
