@@ -24,7 +24,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.16.5";
+        public const string PluginVersion = "1.17.0";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -48,12 +48,8 @@ namespace ValheimArmory
 
             // Modify vanilla weapons
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.SetupEffects;
-            if (VAConfig.VanillaHammersHavePrimaryAttack.Value) {
-                PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaHammersToWarhammers;
-            }
-            if (VAConfig.VanillaAbyssalKnifeBluntDamageConvert.Value) {
-                PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaKnife;
-            }
+            PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaHammersToWarhammers;
+            PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaKnife;
             VAConfig.VanillaHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyHammers;
             VAConfig.VanillaAbyssalKnifeBluntDamageConvert.SettingChanged += WeaponModifier.OnConfigChangeModifyVanillaKnife;
 

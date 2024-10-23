@@ -444,6 +444,10 @@ namespace ValheimArmory
                     { "Carapace", new Tuple<int, int>(24, 10) },
                     { "TrophyTick", new Tuple<int, int>(2, 0) },
                     { "Eitr", new Tuple<int, int>(0, 10) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -479,6 +483,10 @@ namespace ValheimArmory
                     { "Silver", new Tuple<int, int>(10, 5) },
                     { "BoneFragments", new Tuple<int, int>(20, 10) },
                     { "TrophyUlv", new Tuple<int, int>(2, 0) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 3 }
                 }
             );
 
@@ -510,6 +518,10 @@ namespace ValheimArmory
                     { "Bronze", new Tuple<int, int>(20, 10) },
                     { "Tar", new Tuple<int, int>(10, 2) },
                     { "LinenThread", new Tuple<int, int>(2, 2) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 4 }
                 }
             );
 
@@ -578,6 +590,10 @@ namespace ValheimArmory
                     { "RoundLog", new Tuple<int, int>(10, 5) },
                     { "Bronze", new Tuple<int, int>(4, 0) },
                     { "DeerHide", new Tuple<int, int>(2, 2) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -611,6 +627,10 @@ namespace ValheimArmory
                     { "RoundLog", new Tuple<int, int>(20, 10) },
                     { "CryptKey", new Tuple<int, int>(1, 0) },
                     { "TrophyTheElder", new Tuple<int, int>(1, 0) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -645,6 +665,10 @@ namespace ValheimArmory
                     { "DragonTear", new Tuple<int, int>(10, 0) },
                     { "TrophyDragonQueen", new Tuple<int, int>(1, 0) },
                     { "Silver", new Tuple<int, int>(0, 6) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 4 }
                 }
             );
 
@@ -681,6 +705,10 @@ namespace ValheimArmory
                     { "JuteBlue", new Tuple<int, int>(4, 0) },
                     { "TrophySeekerQueen", new Tuple<int, int>(1, 0) },
                     { "Carapace", new Tuple<int, int>(0, 4) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
         }
@@ -785,6 +813,10 @@ namespace ValheimArmory
                     { "Resin", new Tuple<int, int>(16, 8) },
                     { "HardAntler", new Tuple<int, int>(3, 3) },
                     { "TrophyEikthyr", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -930,6 +962,10 @@ namespace ValheimArmory
                     { "RoundLog", new Tuple<int, int>(4, 0) },
                     { "Bronze", new Tuple<int, int>(20, 10) },
                     { "DeerHide", new Tuple<int, int>(3, 0) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -1105,6 +1141,10 @@ namespace ValheimArmory
                     { "Wood", new Tuple<int, int>(2, 0) },
                     { "Flint", new Tuple<int, int>(6, 3) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -1134,6 +1174,10 @@ namespace ValheimArmory
                     { "Wood", new Tuple<int, int>(4, 0) },
                     { "Flint", new Tuple<int, int>(9, 5) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -1169,6 +1213,10 @@ namespace ValheimArmory
                     { "JuteBlue", new Tuple<int, int>(4, 2) },
                     { "TrophySeekerQueen", new Tuple<int, int>(1, 0) },
                     { "Carapace", new Tuple<int, int>(0, 8) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -1204,6 +1252,10 @@ namespace ValheimArmory
                     { "JuteBlue", new Tuple<int, int>(3, 1) },
                     { "TrophySeekerQueen", new Tuple<int, int>(1, 0) },
                     { "Carapace", new Tuple<int, int>(0, 6) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
         }
@@ -1238,6 +1290,10 @@ namespace ValheimArmory
                     { "Wood", new Tuple<int, int>(8, 0) },
                     { "Flint", new Tuple<int, int>(9, 5) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -1269,6 +1325,10 @@ namespace ValheimArmory
                     { "RoundLog", new Tuple<int, int>(20, 5) },
                     { "Bronze", new Tuple<int, int>(10, 5) },
                     { "DeerHide", new Tuple<int, int>(2, 0) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -1343,6 +1403,10 @@ namespace ValheimArmory
                     { "BlackMetal", new Tuple<int, int>(35, 15) },
                     { "LinenThread", new Tuple<int, int>(5, 0) },
                     { "SurtlingCore", new Tuple<int, int>(4, 0) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 4 }
                 }
             );
         }
@@ -1379,6 +1443,10 @@ namespace ValheimArmory
                     { "FlametalNew", new Tuple<int, int>(8, 8) },
                     { "Blackwood", new Tuple<int, int>(5, 0) },
                     { "GemstoneGreen", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -1412,6 +1480,10 @@ namespace ValheimArmory
                     { "FlametalNew", new Tuple<int, int>(8, 8) },
                     { "Blackwood", new Tuple<int, int>(5, 0) },
                     { "GemstoneBlue", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -1443,6 +1515,10 @@ namespace ValheimArmory
                     { "FlametalNew", new Tuple<int, int>(8, 8) },
                     { "Blackwood", new Tuple<int, int>(5, 0) },
                     { "GemstoneRed", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -1474,6 +1550,10 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(4, 0) },
                     { "Eitr", new Tuple<int, int>(6, 3) },
                     { "Blackwood", new Tuple<int, int>(12, 6) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -1505,6 +1585,10 @@ namespace ValheimArmory
                     { "Bronze", new Tuple<int, int>(10, 5) },
                     { "Eitr", new Tuple<int, int>(8, 2) },
                     { "BlackMarble", new Tuple<int, int>(20, 10) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -1538,6 +1622,10 @@ namespace ValheimArmory
                     { "BlackMetal", new Tuple<int, int>(30, 10) },
                     { "LinenThread", new Tuple<int, int>(5, 0) },
                     { "Thunderstone", new Tuple<int, int>(4, 0) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 4 }
                 }
             );
 
@@ -1572,6 +1660,10 @@ namespace ValheimArmory
                     { "CryptKey", new Tuple<int, int>(1, 0) },
                     { "TrophyTheElder", new Tuple<int, int>(1, 0) },
                     { "RoundLog", new Tuple<int, int>(0, 8) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -1603,6 +1695,10 @@ namespace ValheimArmory
                     { "Stone", new Tuple<int, int>(25, 15) },
                     { "TrollHide", new Tuple<int, int>(6, 3) },
                     { "RoundLog", new Tuple<int, int>(4, 4) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -1638,7 +1734,10 @@ namespace ValheimArmory
                     { "TrophyBonemass", new Tuple<int, int>(1, 0) },
                     { "ElderBark", new Tuple<int, int>(0, 2) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) }
-
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -1672,6 +1771,10 @@ namespace ValheimArmory
                     { "Silver", new Tuple<int, int>(30, 15) },
                     { "YmirRemains", new Tuple<int, int>(4, 2) },
                     { "TrophyFenring", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 3 }
                 }
             );
         }
@@ -1704,6 +1807,10 @@ namespace ValheimArmory
                     { "Wood", new Tuple<int, int>(10, 0) },
                     { "Flint", new Tuple<int, int>(6, 3) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -1736,6 +1843,10 @@ namespace ValheimArmory
                     { "Resin", new Tuple<int, int>(30, 15) },
                     { "HardAntler", new Tuple<int, int>(3, 3) },
                     { "TrophyEikthyr", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -1875,6 +1986,10 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(4, 2) },
                     { "Blackwood", new Tuple<int, int>(10, 0) },
                     { "MorgenSinew", new Tuple<int, int>(2, 2) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -1907,6 +2022,10 @@ namespace ValheimArmory
                     { "FlametalNew", new Tuple<int, int>(8, 8) },
                     { "Blackwood", new Tuple<int, int>(5, 0) },
                     { "GemstoneGreen", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -1939,6 +2058,10 @@ namespace ValheimArmory
                     { "FlametalNew", new Tuple<int, int>(8, 8) },
                     { "Blackwood", new Tuple<int, int>(5, 0) },
                     { "GemstoneBlue", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -1969,6 +2092,10 @@ namespace ValheimArmory
                     { "FlametalNew", new Tuple<int, int>(8, 8) },
                     { "Blackwood", new Tuple<int, int>(5, 0) },
                     { "GemstoneRed", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
         }
@@ -2180,6 +2307,10 @@ namespace ValheimArmory
                     { "FineWood", new Tuple<int, int>(4, 4) },
                     { "BlackMetal", new Tuple<int, int>(8, 4) },
                     { "Iron", new Tuple<int, int>(2, 2) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2246,6 +2377,10 @@ namespace ValheimArmory
                     { "Wood", new Tuple<int, int>(4, 0) },
                     { "Flint", new Tuple<int, int>(6, 3) },
                     { "LeatherScraps", new Tuple<int, int>(2, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -2315,6 +2450,10 @@ namespace ValheimArmory
                     { "RoundLog", new Tuple<int, int>(4, 0) },
                     { "Copper", new Tuple<int, int>(16, 4) },
                     { "LeatherScraps", new Tuple<int, int>(4, 2) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -2552,6 +2691,10 @@ namespace ValheimArmory
                     { "JuteBlue", new Tuple<int, int>(2, 1) },
                     { "TrophySeekerQueen", new Tuple<int, int>(1, 0) },
                     { "Carapace", new Tuple<int, int>(0, 4) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2586,6 +2729,10 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(2, 1) },
                     { "Blackwood", new Tuple<int, int>(4, 0) },
                     { "MorgenSinew", new Tuple<int, int>(4, 2) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2621,6 +2768,10 @@ namespace ValheimArmory
                     { "VAdagger_meteor", new Tuple<int, int>(1, 0) },
                     { "FlametalNew", new Tuple<int, int>(4, 4) },
                     { "GemstoneGreen", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2656,6 +2807,10 @@ namespace ValheimArmory
                     { "VAdagger_meteor", new Tuple<int, int>(1, 0) },
                     { "FlametalNew", new Tuple<int, int>(4, 4) },
                     { "GemstoneBlue", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2689,6 +2844,10 @@ namespace ValheimArmory
                     { "VAdagger_meteor", new Tuple<int, int>(1, 0) },
                     { "FlametalNew", new Tuple<int, int>(4, 4) },
                     { "GemstoneRed", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2723,6 +2882,10 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(2, 1) },
                     { "Blackwood", new Tuple<int, int>(6, 0) },
                     { "MorgenSinew", new Tuple<int, int>(4, 2) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2758,6 +2921,10 @@ namespace ValheimArmory
                     { "VAdagger_meteor_2h", new Tuple<int, int>(1, 0) },
                     { "FlametalNew", new Tuple<int, int>(8, 8) },
                     { "GemstoneGreen", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2793,6 +2960,10 @@ namespace ValheimArmory
                     { "VAdagger_meteor_2h", new Tuple<int, int>(1, 0) },
                     { "FlametalNew", new Tuple<int, int>(8, 8) },
                     { "GemstoneBlue", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2826,6 +2997,10 @@ namespace ValheimArmory
                     { "VAdagger_meteor_2h", new Tuple<int, int>(1, 0) },
                     { "FlametalNew", new Tuple<int, int>(8, 8) },
                     { "GemstoneRed", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
         }
@@ -2902,6 +3077,10 @@ namespace ValheimArmory
                     { "Wood", new Tuple<int, int>(4, 0) },
                     { "Flint", new Tuple<int, int>(4, 2) },
                     { "LeatherScraps", new Tuple<int, int>(2, 2) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -2932,6 +3111,10 @@ namespace ValheimArmory
                     { "RoundLog", new Tuple<int, int>(4, 0) },
                     { "Bronze", new Tuple<int, int>(6, 3) },
                     { "LeatherScraps", new Tuple<int, int>(4, 4) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -3080,6 +3263,10 @@ namespace ValheimArmory
                     { "YggdrasilWood", new Tuple<int, int>(20, 10) },
                     { "Guck", new Tuple<int, int>(4, 2) },
                     { "Eitr", new Tuple<int, int>(16, 8) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
 
@@ -3112,6 +3299,10 @@ namespace ValheimArmory
                     { "GreydwarfEye", new Tuple<int, int>(8, 8) },
                     { "Eitr", new Tuple<int, int>(16, 8) },
                     { "TrophyDvergr", new Tuple<int, int>(2, 0) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 4 }
                 }
             );
 
@@ -3293,6 +3484,10 @@ namespace ValheimArmory
                     { "BoneFragments", new Tuple<int, int>(20, 14) },
                     { "Bronze", new Tuple<int, int>(4, 2) },
                     { "TrophySkeleton", new Tuple<int, int>(2, 0) },
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
                 }
             );
         }
