@@ -1,6 +1,7 @@
  **1.17.0**
  ---
  ```
+ - Bog witch update! Jotunn 2.21.2 is required and enforced.
  - Adds an optional conversion for the Abyssal knife which replaces its slash damage with blunt damage
  - Adds configuration to allow tuning the damage provided by the Abyssal knife blunt conversion
  - Removed incorrect spirit damage on moders greatsword

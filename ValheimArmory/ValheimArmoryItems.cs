@@ -1297,6 +1297,41 @@ namespace ValheimArmory
                 }
             );
 
+            // Flint Dualaxes
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Flint dualaxes" },
+                    { "catagory", "Axes" },
+                    { "prefab", "VAFlint_dualaxes" },
+                    { "sprite", "flint_dualaxes" },
+                    { "craftedAt", "piece_workbench" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "slash", new Tuple<float, float, float, bool>(20, 0, 200, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "chop", new Tuple<float, float, float, bool>(30, 0, 200, true) },
+                    { "chop_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(70, 0, 200, true) },
+                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
+                    { "durability", new Tuple<float, float, float, bool>(175, 0, 400, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(6, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(14, 1, 20, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "Wood", new Tuple<int, int>(10, 6) },
+                    { "Flint", new Tuple<int, int>(9, 5) },
+                    { "LeatherScraps", new Tuple<int, int>(2, 2) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
+                }
+            );
+
             // Bronze Battleaxe
             new JotunnItem(
                 new Dictionary<string, string>() {
@@ -1329,6 +1364,76 @@ namespace ValheimArmory
                 new Dictionary<string, int>
                 {
                     { "stationRequiredLevel", 1 }
+                }
+            );
+
+            // Bronze Dualaxes
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Bronze dualaxes" },
+                    { "catagory", "Axes" },
+                    { "prefab", "VABronze_dualaxes" },
+                    { "sprite", "bronze_dualaxes" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "slash", new Tuple<float, float, float, bool>(45, 0, 200, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "chop", new Tuple<float, float, float, bool>(35, 0, 200, true) },
+                    { "chop_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(70, 0, 200, true) },
+                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
+                    { "durability", new Tuple<float, float, float, bool>(175, 0, 400, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(8, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(16, 1, 20, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "RoundLog", new Tuple<int, int>(10, 4) },
+                    { "Bronze", new Tuple<int, int>(20, 8) },
+                    { "DeerHide", new Tuple<int, int>(2, 1) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 1 }
+                }
+            );
+
+            // Iron Dualaxes
+            new JotunnItem(
+                new Dictionary<string, string>() {
+                    { "name", "Iron dualaxes" },
+                    { "catagory", "Axes" },
+                    { "prefab", "VAIron_dualaxes" },
+                    { "sprite", "iron_dualaxes" },
+                    { "craftedAt", "forge" }
+                },
+                new Dictionary<string, Tuple<float, float, float, bool>>() {
+                    { "amount", new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { "slash", new Tuple<float, float, float, bool>(65, 0, 200, true) },
+                    { "slash_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "chop", new Tuple<float, float, float, bool>(55, 0, 200, true) },
+                    { "chop_per_level", new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { "attack_force", new Tuple<float, float, float, bool>(70, 0, 200, true) },
+                    { "block", new Tuple<float, float, float, bool>(12, 0, 60, true) },
+                    { "durability", new Tuple<float, float, float, bool>(175, 0, 400, true) },
+                    { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { "primary_attack_stamina", new Tuple<float, float, float, bool>(9, 1, 50, true) },
+                    { "secondary_attack_stamina", new Tuple<float, float, float, bool>(18, 1, 20, true) },
+                },
+                new Dictionary<string, bool>() { },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "ElderBark", new Tuple<int, int>(25, 8) },
+                    { "Iron", new Tuple<int, int>(30, 15) },
+                    { "DeerHide", new Tuple<int, int>(6, 0) }
+                },
+                new Dictionary<string, int>
+                {
+                    { "stationRequiredLevel", 2 }
                 }
             );
 
@@ -2119,6 +2224,7 @@ namespace ValheimArmory
                     { "parry", new Tuple<float, float, float, bool>(1.5f, 0, 3, true) },
                     { "durability", new Tuple<float, float, float, bool>(250, 0, 500, true) },
                     { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { "movement_speed", new Tuple<float, float, float, bool>(-0.05f, -0.30f, 0, true) },
                 },
                 new Dictionary<string, bool>() {
                     { "resistPierce", true },
@@ -2149,9 +2255,11 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(28, 0, 120, true) },
                     { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "block_force", new Tuple<float, float, float, bool>(30, 0, 120, true) },
+                    { "block_force_per_level", new Tuple<float, float, float, bool>(5, 0, 30, true) },
                     { "parry", new Tuple<float, float, float, bool>(1.5f, 0, 3, true) },
                     { "durability", new Tuple<float, float, float, bool>(250, 0, 500, true) },
                     { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { "movement_speed", new Tuple<float, float, float, bool>(-0.05f, -0.30f, 0, true) },
                 },
                 new Dictionary<string, bool>() {
                     { "veryResistBlunt", true },
@@ -2183,9 +2291,11 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(62, 0, 120, true) },
                     { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "block_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
+                    { "block_force_per_level", new Tuple<float, float, float, bool>(5, 0, 30, true) },
                     { "parry", new Tuple<float, float, float, bool>(1.5f, 0, 3, true) },
                     { "durability", new Tuple<float, float, float, bool>(250, 0, 500, true) },
                     { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { "movement_speed", new Tuple<float, float, float, bool>(-0.05f, -0.30f, 0, true) },
 
                 },
                 new Dictionary<string, bool>() {
@@ -2222,9 +2332,10 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(100, 0, 180, true) },
                     { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "block_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
-                    { "parry", new Tuple<float, float, float, bool>(1, 0, 3, true) },
+                    { "block_force_per_level", new Tuple<float, float, float, bool>(5, 0, 30, true) },
                     { "durability", new Tuple<float, float, float, bool>(250, 0, 500, true) },
                     { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { "movement_speed", new Tuple<float, float, float, bool>(-0.20f, -0.30f, 0, true) },
 
                 },
                 new Dictionary<string, bool>() {
@@ -2259,6 +2370,7 @@ namespace ValheimArmory
                     { "block", new Tuple<float, float, float, bool>(78, 0, 120, true) },
                     { "block_per_level", new Tuple<float, float, float, bool>(6, 0, 20, true) },
                     { "block_force", new Tuple<float, float, float, bool>(40, 0, 120, true) },
+                    { "block_force_per_level", new Tuple<float, float, float, bool>(5, 0, 30, true) },
                     { "movement_speed", new Tuple<float, float, float, bool>(-0.20f, -0.30f, 0, true) },
                     { "durability", new Tuple<float, float, float, bool>(250, 0, 500, true) },
                     { "durability_per_level", new Tuple<float, float, float, bool>(50, 0, 75, true) },

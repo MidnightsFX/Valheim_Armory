@@ -210,6 +210,11 @@
   "item_sledge_flametal_nature": "Earthshaker",
   "item_sledge_flametal_description_nature": "A massive sledge, dripping with natures energy, with this you could stop an army.",
   "item_sledge_flametal_blood": "Deathblow",
-  "item_sledge_flametal_description_blood": "A massive sledge, its rage seems to grow the more dire the fight."
-
+  "item_sledge_flametal_description_blood": "A massive sledge, its rage seems to grow the more dire the fight.",
+  "item_dual_axes_flint": "Flint doubleaxes",
+  "item_dual_axes_flint_description": "Two axes hurt more than one! Who needs to block anyways.",
+  "item_dual_axes_bronze": "Bronze doubleaxes",
+  "item_dual_axes_bronze_description": "Two blades, twice the fun, and trees fear you.",
+  "item_dual_axes_iron": "Iron doubleaxes",
+  "item_dual_axes_iron_description": "Little can stand in the way of an enraged viking with an axe in each hand."
 }
