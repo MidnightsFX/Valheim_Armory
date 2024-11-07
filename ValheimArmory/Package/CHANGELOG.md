@@ -1,3 +1,18 @@
+**1.17.1**
+ ---
+ ```
+ - Updated flint axe default slash to 25->30
+ - Updated default movespeed penalty for the dualaxes -20% -> -5%
+ - Reduced dmg of iron dual axes 65->60
+ - Reduced dmg of bronze dual axes 45->40
+ - Increased recipe cost for all dual axes
+ - Fixed collider for the bronze sledge
+ - Added readme docs for current dualaxes
+ - Slightly optimized item startup modifications, faster load speeds
+ - Updated Polish translation
+ ```
+
+
  **1.17.0**
  ---
  ```
