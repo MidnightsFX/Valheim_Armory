@@ -1,3 +1,64 @@
+**1.17.1**
+ ---
+ ```
+ - Updated flint axe default slash to 25->30
+ - Updated default movespeed penalty for the dualaxes -20% -> -5%
+ - Reduced dmg of iron dual axes 65->60
+ - Reduced dmg of bronze dual axes 45->40
+ - Increased recipe cost for all dual axes
+ - Fixed collider for the bronze sledge
+ - Added readme docs for current dualaxes
+ - Slightly optimized item startup modifications, faster load speeds
+ - Updated Polish translation
+ ```
+
+
+ **1.17.0**
+ ---
+ ```
+ - Bog witch update! Jotunn 2.21.2 is required and enforced.
+ - Adds an optional conversion for the Abyssal knife which replaces its slash damage with blunt damage
+ - Adds configuration to allow tuning the damage provided by the Abyssal knife blunt conversion
+ - Removed incorrect spirit damage on moders greatsword
+ --- Many configuration defaults were adjusted, they are all adjustable and will not override existing configuration! ---
+ - Antler bow: reduced base pierce damage to 26, reduced per level lightning to +1, per level pierce to +2
+ - Blackmetal Greatsword: Reduced knockback to 55, increased block to 52, increased stamina cost to 18(+1)/36(+2), added forge level 4 as a requirement
+ - Abyssal Sword: Workbench lvl 2 as a requirement
+ - Antler sword: base slash reduced to 16, base blunt reduced to 8, base lightning reduced to 6, crafting station lvl 2 as a requirement
+ - Vine sword: workbench lvl 2 as a requirment
+ - Ice sword: forge lvl 4 requirement, frost per level reduced to +1
+ - Moders greatsword: frost per level reduced to +1, attack force increased to 55, block increased to 48, forge lvl 4 requirement
+ - Bronze greatsword: block reduced to 16, recipe requires corewood instead of wood
+ - Iron greatsword: forge level 2 requirement
+ - Silver greatsword: forge level 3 requirement
+ - Bonemass greatsword: block increased to 36, attack stamina costs increased to 15 & 30, require lvl 3 forge
+ - Yagluth greatsword: fire per level reduced to +1, requires lvl 4 forge
+ - Bronze battleaxe: reduced chop to 30, reduced chop per level to 2.5, increased slash per level to 6
+ - Antler battleaxe: slash increased to 25, reduced blunt per level to 2, chop reduced to 30, chop per level reduced to 2.5, crafting station lvl 2 required
+ - Blackmetal battleaxe: chop decreased to 60, chop per level decreased to 2.5, block increased to 52
+ - Flint atgeir: base durability decreased to 125
+ - Antler atgeir: pierce per level reduced to 5, lightning per level reduced to +1
+ - Abyssal atgeir: requires crafting bench lvl 2
+ - Silver atgeir: increased base pierce by 10, increased block to 40, requires forge lvl 3
+ - Yagluth atgeir: pierce per level reduced to +3, fire per level reduced to +3, require forge lvl 4
+ - Serpent scaled buckler: require forge lvl 3
+ - Elder roundshield: require forge lvl 2
+ - Moders roundshield: requires forge lvl 4
+ - Moders towershield: requires forge lvl 4
+ - Wolf silver towershield: requires forge lvl 3
+ - 2H blackmetal daggers: requires forge lvl 4
+ - Antler 1H dagger: slash reduced to 8, pierce reduced to 8, lighting reduced to 4, lighting per level reduced to +1, requires workbench lvl 2
+ - Iron 2H daggers: requires forge lvl 2
+ - Iron 1H dagger: requires forge lvl 2
+ - Silver 2H daggers: requires forge lvl 3
+ - Moders Dagger: requires forge lvl 4
+ - Bonemass dagger: requires forge lvl 3
+ - Moders spear: requires forge lvl 4
+ - Iron fists: requires forge lvl 2
+ - Yagluth fists: requires forge lvl 4
+ - Elders mace: requires forge lvl 2
+ ```
+
  **1.16.5**
  ---
  ```

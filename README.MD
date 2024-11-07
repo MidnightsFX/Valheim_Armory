@@ -1,1 +1,1 @@
-ValheimArmory/README.md
+ValheimArmory/Package/README.md

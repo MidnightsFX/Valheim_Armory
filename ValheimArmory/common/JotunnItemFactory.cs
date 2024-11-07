@@ -12,6 +12,55 @@ using Logger = Jotunn.Logger;
 
 namespace ValheimArmory.common
 {
+    enum ItemStat
+    {
+        slash,
+        slash_per_level,
+        blunt,
+        blunt_per_level,
+        pierce,
+        pierce_per_level,
+        pickaxe,
+        pickaxe_per_level,
+        chop,
+        chop_per_level,
+        attack_force,
+        fire,
+        fire_per_level,
+        lightning,
+        lightning_per_level,
+        frost,
+        frost_per_level,
+        poison,
+        poison_per_level,
+        spirit,
+        spirit_per_level,
+        block_armor,
+        block_armor_per_level,
+        parry,
+        block_force,
+        block_force_per_level,
+        primary_attack_stamina,
+        primary_attack_eitr,
+        primary_attack_flat_health_cost,
+        primary_attack_percent_health_cost,
+        secondary_attack_stamina,
+        secondary_attack_eitr,
+        secondary_attack_flat_health_cost,
+        secondary_attack_percent_health_cost,
+        movement_speed,
+        bow_draw_speed,
+        crossbow_reload_speed,
+        crossbow_reload_stamina_drain,
+        draw_stamina_drain,
+        projectile_velocity,
+        durability,
+        durability_per_level,
+        max_item_level,
+        amount,
+        tool_level
+    }
+
     class JotunnItemFactory
     {
         enum Catagories
@@ -52,7 +101,7 @@ namespace ValheimArmory.common
         public class JotunnItem
         {
             Dictionary<String, String> ItemMetadata;
-            Dictionary<String, Tuple<float, float, float, bool>> ItemData;
+            Dictionary<ItemStat, Tuple<float, float, float, bool>> ItemData;
             Dictionary<String, bool> ItemToggles;
             Dictionary<String, Tuple<int, int>> RecipeData;
             Dictionary<String, int> ItemSettings;
@@ -74,7 +123,7 @@ namespace ValheimArmory.common
 
             public JotunnItem(
             Dictionary<String, String> metadata,
-            Dictionary<String, Tuple<float, float, float, bool>> itemdata,
+            Dictionary<ItemStat, Tuple<float, float, float, bool>> itemdata,
             Dictionary<String, bool> itemtoggles,
             Dictionary<String, Tuple<int, int>> recipedata,
             Dictionary<String, int> itemsettings = null
@@ -137,17 +186,17 @@ namespace ValheimArmory.common
                 CraftedAt.SettingChanged += RecipeConfig_SettingChanged;
 
                 // Setup Item config modifiers
-                foreach (KeyValuePair<string, Tuple<float, float, float, bool>> entry in ItemData)
+                foreach (KeyValuePair<ItemStat, Tuple<float, float, float, bool>> entry in ItemData)
                 {
                     // Skip this entry if the flag is set for it to be disabled, it is not configurable
                     if (entry.Value.Item4 == false) { continue; }
-                    if (entry.Key == "amount")
+                    if (entry.Key == ItemStat.amount)
                     {
                         CraftAmount = VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-{entry.Key}", entry.Value.Item1, $"{entry.Key} ({entry.Value.Item2}-{entry.Value.Item3}) Value", true, entry.Value.Item2, entry.Value.Item3);
                         CraftAmount.SettingChanged += RecipeConfig_SettingChanged;
                     } else
                     {
-                        ItemDataConfigs.Add(entry.Key, VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-{entry.Key}", entry.Value.Item1, $"{entry.Key} ({entry.Value.Item2}-{entry.Value.Item3}) Value", true, entry.Value.Item2, entry.Value.Item3));
+                        ItemDataConfigs.Add(entry.Key.ToString(), VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-{entry.Key}", entry.Value.Item1, $"{entry.Key} ({entry.Value.Item2}-{entry.Value.Item3}) Value", true, entry.Value.Item2, entry.Value.Item3));
                     }
                     
                     
@@ -170,8 +219,8 @@ namespace ValheimArmory.common
                     recipe[recipe_index] = new RequirementConfig { Item = entry.Key, Amount = entry.Value.Item1, AmountPerLevel = entry.Value.Item2 };
                     recipe_index++;
                 }
-                int craftedAmountDefault = (int)ItemData["amount"].Item1;
-                if (ItemData["amount"].Item4 == true)
+                int craftedAmountDefault = (int)ItemData[ItemStat.amount].Item1;
+                if (ItemData[ItemStat.amount].Item4 == true)
                 {
                     if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Updating configurable crafting amount {CraftAmount.Value}"); }
                     craftedAmountDefault = (int)CraftAmount.Value;
@@ -193,7 +242,7 @@ namespace ValheimArmory.common
                 foreach (KeyValuePair<string, ConfigEntry<float>> idc_entry in ItemDataConfigs)
                 {
                     // Run an attribute update once we have a config value bound & the item exists
-                    ItemConfigModifier(idc_entry.Key, ItemDataConfigs[idc_entry.Key].Value, ItemCI.ItemDrop);
+                    ItemConfigModifier((ItemStat)Enum.Parse(typeof(ItemStat), idc_entry.Key), ItemDataConfigs[idc_entry.Key].Value, ItemCI.ItemDrop);
                 }
             }
 
@@ -202,12 +251,13 @@ namespace ValheimArmory.common
                 if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"ItemConfigChange Triggered."); }
                 ConfigEntry<float> sendEntry = (ConfigEntry<float>)sender;
                 String target_attribute = sendEntry.Definition.Key.Split('-')[1];
+                ItemStat t_attribute = (ItemStat)Enum.Parse(typeof(ItemStat), target_attribute);
                 if (VAConfig.EnableDebugMode.Value == true)
                 {
                     Logger.LogInfo($"ItemConfigUpdate triggered: {target_attribute}");
                 }
                 // Update the parent gameobject
-                ItemConfigModifier(target_attribute, sendEntry.Value, ItemCI.ItemDrop);
+                ItemConfigModifier(t_attribute, sendEntry.Value, ItemCI.ItemDrop);
 
                 // Get and update all of the in-scene game objects
                 IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(ItemMetadata["prefab"]));
@@ -219,7 +269,7 @@ namespace ValheimArmory.common
                     if (go.TryGetComponent<ItemDrop>(out id))
                     {
                         if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{go.name} updating attribute {target_attribute}"); }
-                        ItemDataConfigModifier(target_attribute, sendEntry.Value, id.m_itemData);
+                        ItemDataConfigModifier(t_attribute, sendEntry.Value, id.m_itemData);
                     } else
                     {
                         if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{go.name} does not have an itemdrop and will not be updated in-place"); }
@@ -238,7 +288,7 @@ namespace ValheimArmory.common
                         if (user_item.m_dropPrefab.name != ItemMetadata["prefab"]) { continue; }
 
                         if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{user_item.m_shared.m_name} found in the players backpack, updating."); }
-                        ItemDataConfigModifier(target_attribute, sendEntry.Value, user_item);
+                        ItemDataConfigModifier(t_attribute, sendEntry.Value, user_item);
                     }
                 }
                 if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Finished modifying ItemConfig setting."); }
@@ -418,157 +468,157 @@ namespace ValheimArmory.common
                 RecipeConfig.SettingChanged += RecipeConfig_SettingChanged;
             }
 
-            private void ItemConfigModifier(String target_attribute, float updatedValue, ItemDrop itemDropScript)
+            private void ItemConfigModifier(ItemStat target_attribute, float updatedValue, ItemDrop itemDropScript)
             {
                 ItemDataConfigModifier(target_attribute, updatedValue, itemDropScript.m_itemData);
             }
 
-            private void ItemDataConfigModifier(String target_attribute, float updatedValue, ItemDrop.ItemData itemData)
+            private void ItemDataConfigModifier(ItemStat target_attribute, float updatedValue, ItemDrop.ItemData itemData)
             {
                 if (itemData == null) { return; }
                 if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Updating {target_attribute} to {updatedValue}"); }
                 switch (target_attribute)
                 {
                     // Standard Dmg types
-                    case "slash":
+                    case ItemStat.slash:
                         itemData.m_shared.m_damages.m_slash = updatedValue;
                         break;
-                    case "slash_per_level":
+                    case ItemStat.slash_per_level:
                         itemData.m_shared.m_damagesPerLevel.m_slash = updatedValue;
                         break;
-                    case "blunt":
+                    case ItemStat.blunt:
                         itemData.m_shared.m_damages.m_blunt = updatedValue;
                         break;
-                    case "blunt_per_level":
+                    case ItemStat.blunt_per_level:
                         itemData.m_shared.m_damagesPerLevel.m_blunt = updatedValue;
                         break;
-                    case "pierce":
+                    case ItemStat.pierce:
                         itemData.m_shared.m_damages.m_pierce = updatedValue;
                         break;
-                    case "pierce_per_level":
+                    case ItemStat.pierce_per_level:
                         itemData.m_shared.m_damagesPerLevel.m_pierce = updatedValue;
                         break;
                     // Special Damage Types
-                    case "pickaxe":
+                    case ItemStat.pickaxe:
                         itemData.m_shared.m_damages.m_pickaxe = updatedValue;
                         break;
-                    case "pickaxe_per_level":
+                    case ItemStat.pickaxe_per_level:
                         itemData.m_shared.m_damagesPerLevel.m_pickaxe = updatedValue;
                         break;
-                    case "chop":
+                    case ItemStat.chop:
                         itemData.m_shared.m_damages.m_chop = updatedValue;
                         break;
-                    case "chop_per_level":
+                    case ItemStat.chop_per_level:
                         itemData.m_shared.m_damagesPerLevel.m_chop = updatedValue;
                         break;
-                    case "attack_force":
+                    case ItemStat.attack_force:
                         itemData.m_shared.m_attackForce = updatedValue;
                         break;
                     // Elemental Damage Types
-                    case "fire":
+                    case ItemStat.fire:
                         itemData.m_shared.m_damages.m_fire = updatedValue;
                         break;
-                    case "fire_per_level":
+                    case ItemStat.fire_per_level:
                         itemData.m_shared.m_damagesPerLevel.m_fire = updatedValue;
                         break;
-                    case "lightning":
+                    case ItemStat.lightning:
                         itemData.m_shared.m_damages.m_lightning = updatedValue;
                         break;
-                    case "lightning_per_level":
+                    case ItemStat.lightning_per_level:
                         itemData.m_shared.m_damagesPerLevel.m_lightning = updatedValue;
                         break;
-                    case "frost":
+                    case ItemStat.frost:
                         itemData.m_shared.m_damages.m_frost = updatedValue;
                         break;
-                    case "frost_per_level":
+                    case ItemStat.frost_per_level:
                         itemData.m_shared.m_damagesPerLevel.m_frost = updatedValue;
                         break;
-                    case "poison":
+                    case ItemStat.poison:
                         itemData.m_shared.m_damages.m_poison = updatedValue;
                         break;
-                    case "poison_per_level":
+                    case ItemStat.poison_per_level:
                         itemData.m_shared.m_damagesPerLevel.m_poison = updatedValue;
                         break;
-                    case "spirit":
+                    case ItemStat.spirit:
                         itemData.m_shared.m_damages.m_spirit = updatedValue;
                         break;
-                    case "spirit_per_level":
+                    case ItemStat.spirit_per_level:
                         itemData.m_shared.m_damagesPerLevel.m_spirit = updatedValue;
                         break;
                     // Block and parry
-                    case "block":
+                    case ItemStat.block_armor:
                         itemData.m_shared.m_blockPower = updatedValue;
                         break;
-                    case "block_per_level":
+                    case ItemStat.block_armor_per_level:
                         itemData.m_shared.m_blockPowerPerLevel = updatedValue;
                         break;
-                    case "parry":
+                    case ItemStat.parry:
                         itemData.m_shared.m_timedBlockBonus = updatedValue;
                         break;
-                    case "block_force":
+                    case ItemStat.block_force:
                         itemData.m_shared.m_deflectionForce = updatedValue;
                         break;
-                    case "block_force_per_level":
+                    case ItemStat.block_force_per_level:
                         itemData.m_shared.m_deflectionForcePerLevel = updatedValue;
                         break;
                     // Costs for attack types
-                    case "primary_attack_stamina":
+                    case ItemStat.primary_attack_stamina:
                         itemData.m_shared.m_attack.m_attackStamina = updatedValue;
                         break;
-                    case "primary_attack_eitr":
+                    case ItemStat.primary_attack_eitr:
                         itemData.m_shared.m_attack.m_attackEitr = updatedValue;
                         break;
-                    case "primary_attack_flat_health_cost":
+                    case ItemStat.primary_attack_flat_health_cost:
                         itemData.m_shared.m_attack.m_attackHealth = updatedValue;
                         break;
-                    case "primary_attack_percent_health_cost":
+                    case ItemStat.primary_attack_percent_health_cost:
                         itemData.m_shared.m_attack.m_attackHealthPercentage = updatedValue;
                         break;
-                    case "secondary_attack_stamina":
+                    case ItemStat.secondary_attack_stamina:
                         itemData.m_shared.m_secondaryAttack.m_attackStamina = updatedValue;
                         break;
-                    case "secondary_attack_eitr":
+                    case ItemStat.secondary_attack_eitr:
                         itemData.m_shared.m_secondaryAttack.m_attackEitr = updatedValue;
                         break;
-                    case "secondary_attack_flat_health_cost":
+                    case ItemStat.secondary_attack_flat_health_cost:
                         itemData.m_shared.m_secondaryAttack.m_attackHealth = updatedValue;
                         break;
-                    case "secondary_attack_percent_health_cost":
+                    case ItemStat.secondary_attack_percent_health_cost:
                         itemData.m_shared.m_secondaryAttack.m_attackHealthPercentage = updatedValue;
                         break;
                     // Speed Modifiers
-                    case "movement_speed":
+                    case ItemStat.movement_speed:
                         itemData.m_shared.m_movementModifier = updatedValue;
                         break;
-                    case "bow_draw_speed":
+                    case ItemStat.bow_draw_speed:
                         itemData.m_shared.m_attack.m_drawDurationMin = updatedValue;
                         break;
-                    case "crossbow_reload_speed":
+                    case ItemStat.crossbow_reload_speed:
                         itemData.m_shared.m_attack.m_reloadTime = updatedValue;
                         break;
-                    case "crossbow_reload_stamina_drain":
+                    case ItemStat.crossbow_reload_stamina_drain:
                         itemData.m_shared.m_attack.m_reloadStaminaDrain = updatedValue;
                         break;
-                    case "draw_stamina_drain":
+                    case ItemStat.draw_stamina_drain:
                         itemData.m_shared.m_attack.m_drawStaminaDrain = updatedValue;  
                         break;
-                    case "projectile_velocity":
+                    case ItemStat.projectile_velocity:
                         itemData.m_shared.m_attack.m_projectileVel = updatedValue;
                         break;
                     // Item Modifiers
-                    case "durability":
+                    case ItemStat.durability:
                         itemData.m_shared.m_maxDurability = updatedValue;
                         break;
-                    case "durability_per_level":
+                    case ItemStat.durability_per_level:
                         itemData.m_shared.m_durabilityPerLevel = updatedValue;
                         break;
-                    case "max_item_level":
+                    case ItemStat.max_item_level:
                         itemData.m_shared.m_maxQuality = (int)updatedValue;
                         break;
-                    case "amount":
+                    case ItemStat.amount:
                         // we don't modify the amount as an item attribute, its for recipes.
                         break;
-                    case "tool_level":
+                    case ItemStat.tool_level:
                         itemData.m_shared.m_toolTier = (int)updatedValue;
                         break;
                     default:
