@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Jordrysteren",
   "item_sledge_flametal_description_nature": "Et massivt slede, dryppende med naturens energi, med dette kunne du stoppe en hær.",
   "item_sledge_flametal_blood": "Dødsstøt",
-  "item_sledge_flametal_description_blood": "En massiv slede, sin raseri ser ut til å vokse jo mer alvorlig kampen blir."
+  "item_sledge_flametal_description_blood": "En massiv slede, sin raseri ser ut til å vokse jo mer alvorlig kampen blir.",
+  "item_dual_axes_flint": "Flint dobbeløkser",
+  "item_dual_axes_flint_description": "To økser sårer mer enn en! Hvem trenger å blokkere uansett.",
+  "item_dual_axes_bronze": "Bronse dobbeløkser",
+  "item_dual_axes_bronze_description": "To blad, dobbelt så moro, og trær frykter deg.",
+  "item_dual_axes_iron": "Jern dobbeltøkser",
+  "item_dual_axes_iron_description": "Liten kan stå i veien for en rasende viking med en øks i hver hånd.Takk for oversettelsen!"
 }

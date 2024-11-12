@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Agitatul Pământului",
   "item_sledge_flametal_description_nature": "Un săniu masiv, picurând cu energia naturii, cu asta ai putea opri o armată.",
   "item_sledge_flametal_blood": "lovitură mortală",
-  "item_sledge_flametal_description_blood": "Un săniu masiv, furia sa pare să crească cu cât mai disperată este lupta."
+  "item_sledge_flametal_description_blood": "Un săniu masiv, furia sa pare să crească cu cât mai disperată este lupta.",
+  "item_dual_axes_flint": "Topoare duble de silex",
+  "item_dual_axes_flint_description": "Două săgeți dor mai mult decât una! Cine are nevoie să blocheze oricum.",
+  "item_dual_axes_bronze": "Duble topoare de bronz",
+  "item_dual_axes_bronze_description": "Două lame, de două ori distracție, iar copacii te tem.",
+  "item_dual_axes_iron": "Topoare duble de fier",
+  "item_dual_axes_iron_description": "Puține lucruri pot sta în calea unui viking furios cu o secure în fiecare mână."
 }

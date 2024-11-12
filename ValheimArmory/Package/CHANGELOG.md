@@ -1,3 +1,14 @@
+**1.17.2**
+ ---
+ ```
+ - Fixes recipe modification failures for non-modifiable field values
+ - Increased block armor for flametal weapons added by this mod
+ - Increased attack force for Ashlands sledges
+ - Reduced block force and made it configurable for dual axes
+ - Updated transaltions for dualaxes
+ - Updated some Russian and German translations
+ ```
+
 **1.17.1**
  ---
  ```

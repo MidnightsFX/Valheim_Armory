@@ -210,5 +210,11 @@
   "item_sledge_flametal_description_nature": "Masivno sankanje, natopljeno prirodnom energijom, sa ovim biste mogli zaustaviti vojsku.",
   "item_sledge_flametal_blood": "Smrtonosni udarac",
   "item_sledge_flametal_description_blood": "Masivan sanke, njegov bes se čini da raste što je borba ozbiljnija.",
-  "item_meteor_atgeir": "Plameni atgeir"
+  "item_meteor_atgeir": "Plameni atgeir",
+  "item_dual_axes_flint": "Čekići sa dvostrukim oštricama od krivog kremena",
+  "item_dual_axes_flint_description": "Dve sekire bole više nego jedna! Ko uopšte treba da blokira.",
+  "item_dual_axes_bronze": "Bronzane dvostruke sekire",
+  "item_dual_axes_bronze_description": "Dve oštrice, dva puta više zabave, i drveće te se plaši.",
+  "item_dual_axes_iron": "Željezne dvostruke sekire",
+  "item_dual_axes_iron_description": "Malo toga može stati na put besnom Vikingu sa po jednim sekirama u svakoj ruci."
 }

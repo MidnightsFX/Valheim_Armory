@@ -210,5 +210,11 @@
   "item_sledge_flametal_description_nature": "Einkennilegur sleði, sem dryppir af náttúrulegri orku, með þessum gætir þú stoppað her.",
   "item_sledge_flametal_blood": "Banahögg",
   "item_sledge_flametal_description_blood": "Kjölfar hraustur, reiðin hans virðist að aukast því hraðar sem bardagan er alvarlegri.Please let me know if there is anything else I can help you with.",
-  "item_dagger_blackmetal_mistlands": "- "
+  "item_dagger_blackmetal_mistlands": "- ",
+  "item_dual_axes_flint": "Tvöföldar flintu-axar",
+  "item_dual_axes_flint_description": "Tveir öxi sára meira en einn! Hver þarf að bíða þó.",
+  "item_dual_axes_bronze": "Brons tvöfaldarar",
+  "item_dual_axes_bronze_description": "Tveir eggjar, tvöföld gaman, og tré hræðast þig.",
+  "item_dual_axes_iron": "Járn tvöfaldar öxi",
+  "item_dual_axes_iron_description": "Lítið getur staðist reiði víkinga með öxi í hvorri hendi.Tak."
 }

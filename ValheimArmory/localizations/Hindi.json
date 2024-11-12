@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "भूकंपक",
   "item_sledge_flametal_description_nature": "एक विशाल स्लेज, प्राकृतिक ऊर्जा से टपकते हुए, इसके साथ आप एक सेना को रोक सकते हैं।",
   "item_sledge_flametal_blood": "मौत की चोट",
-  "item_sledge_flametal_description_blood": "एक बड़ी स्लेज, उसका क्रोध लड़ाई जितनी भी गंभीर होती है, उतना ही बढ़ता जाता है।"
+  "item_sledge_flametal_description_blood": "एक बड़ी स्लेज, उसका क्रोध लड़ाई जितनी भी गंभीर होती है, उतना ही बढ़ता जाता है।",
+  "item_dual_axes_flint": "फ्लिंट डबल एक्स",
+  "item_dual_axes_flint_description": "एक से ज़्यादा आक्रोश होता है! किसे ब्लॉक करने की ज़रूरत है।",
+  "item_dual_axes_bronze": "कांस्य दोहरे कुल्हाड़",
+  "item_dual_axes_bronze_description": "दो ब्लेड, दोगुना मजा, और पेड़ तुमसे डरते हैं।",
+  "item_dual_axes_iron": "लोहे की डबल एक्स",
+  "item_dual_axes_iron_description": "एक उत्तेजित वाइकिंग के रास्ते में कुछ भी नहीं आ सकता है, हर हाथ में कुल्हाड़ी लिए हुए।"
 }

@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Trzęsienie ziemi",
   "item_sledge_flametal_description_nature": "Olbrzymi młot ociekający energią natury, z nim można zatrzymać armię.",
   "item_sledge_flametal_blood": "Śmiertelny cios",
-  "item_sledge_flametal_description_blood": "Potężny młot, jego wściekłość wydaje się rosnąć im bardziej zacięta jest walka."
+  "item_sledge_flametal_description_blood": "Potężny młot, jego wściekłość wydaje się rosnąć im bardziej zacięta jest walka.",
+  "item_dual_axes_flint": "Płomienne topory dwugłowe",
+  "item_dual_axes_flint_description": "Dwa topory bolą bardziej niż jeden! Po co komu blokować w ogóle.",
+  "item_dual_axes_bronze": "Bronzowe podwójne topory",
+  "item_dual_axes_bronze_description": "Dwa ostrza, dwa razy więcej zabawy, a drzewa się ciebie boją.",
+  "item_dual_axes_iron": "Podwójne topory żelazne",
+  "item_dual_axes_iron_description": "Niewiele może stać na drodze wściekłego wikinga z toporem w każdej dłoni."
 }

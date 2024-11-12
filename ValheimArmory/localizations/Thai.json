@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": " in Thai is ผู้สั่นสะท้านโลก",
   "item_sledge_flametal_description_nature": "ครั้งใหญ่ที่หกล้มหล่น ที่หยดหยุดกับพลังงานของธรรมชาติ ด้วยสิ่งนี้คุณสามารถหยุดทหารได้",
   "item_sledge_flametal_blood": "คำโต้แย้ง",
-  "item_sledge_flametal_description_blood": "คร่ำครวญมาก ความโกรธของมันดูเหมือนจะเพิ่มมากขึ้นเรื่อยๆเมื่อการต่อสู้กลายเป็นที่สุด"
+  "item_sledge_flametal_description_blood": "คร่ำครวญมาก ความโกรธของมันดูเหมือนจะเพิ่มมากขึ้นเรื่อยๆเมื่อการต่อสู้กลายเป็นที่สุด",
+  "item_dual_axes_flint": "เครื่องมือตัดไม้แบบดับเบิ้ลแอ๊กซ์",
+  "item_dual_axes_flint_description": "สองขั้วทำให้เจ็บมากกว่าหนึ่ง! ใครจำเป็นต้องบล็อกอย่างไร",
+  "item_dual_axes_bronze": "ขวานทองแดง",
+  "item_dual_axes_bronze_description": "สองใบมีความสนุกสองเท่า และต้นไม้กลัวคุณ",
+  "item_dual_axes_iron": "ขวานเหล็กคู่",
+  "item_dual_axes_iron_description": "ไม่มีอะไรสามารถหยุดนักฝ่าฝืนไวกิ้งที่โกรธมากพร้อมมีขวานในแต่ละมือได้เลยครับ "
 }

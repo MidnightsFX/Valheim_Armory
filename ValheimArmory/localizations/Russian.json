@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Дрожь земли",
   "item_sledge_flametal_description_nature": "Громадная кувалда, наполненная природной энергией. С таким оружием можно остановить целую армию недругов.",
   "item_sledge_flametal_blood": "Смертельный удар",
-  "item_sledge_flametal_description_blood": "Громадная кувалда, пульсирующая зловещей энергией. Чем ожесточеннее бой, тем яростнее её удары."
+  "item_sledge_flametal_description_blood": "Громадная кувалда, пульсирующая зловещей энергией. Чем ожесточеннее бой, тем яростнее её удары.",
+  "item_dual_axes_flint": "Кремневые топоры",
+  "item_dual_axes_flint_description": "Два топора лучше, чем один! Да и кому вообще нужно блокировать удары?",
+  "item_dual_axes_bronze": "Бронзовые топоры",
+  "item_dual_axes_bronze_description": "Два лезвия - вдвойне веселее! Деревья трепещут в ужасе.",
+  "item_dual_axes_iron": "Железные топоры",
+  "item_dual_axes_iron_description": "Мало кто выстоит против разъяренного викинга с топором в каждой руке."
 }

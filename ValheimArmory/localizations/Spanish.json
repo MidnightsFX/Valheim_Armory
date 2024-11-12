@@ -210,5 +210,11 @@
   "item_sledge_flametal_blood": "Golpe mortal",
   "item_sledge_flametal_description_blood": "Un trineo masivo, su furia parece crecer cuanto más desesperada es la lucha.",
   "item_meteor_atgeir": "Flametal atgeir",
-  "item_dagger_blackmetal_mistlands": "Cuchillos de metal negro"
+  "item_dagger_blackmetal_mistlands": "Cuchillos de metal negro",
+  "item_dual_axes_flint": "Dobles hachas de pedernal",
+  "item_dual_axes_flint_description": "¡Dos hachas duelen más que una! De todos modos, ¿quién necesita bloquear?",
+  "item_dual_axes_bronze": "Hachas dobles de bronce",
+  "item_dual_axes_bronze_description": "Dos cuchillas, el doble de diversión, y los árboles te temen.",
+  "item_dual_axes_iron": "Dobles hachas de hierro",
+  "item_dual_axes_iron_description": "Poco puede interponerse en el camino de un vikingo enfurecido con un hacha en cada mano."
 }

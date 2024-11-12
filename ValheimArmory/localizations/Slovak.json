@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Zemotrasca",
   "item_sledge_flametal_description_nature": "Obrovský sánky, ktorý odkvapkáva prírodnú energiu, s týmto by ste mohli zastaviť armádu.",
   "item_sledge_flametal_blood": "Úder smrti",
-  "item_sledge_flametal_description_blood": "Obrovský sán, jeho hnev sa zdá rásť čím vážnejší je boj."
+  "item_sledge_flametal_description_blood": "Obrovský sán, jeho hnev sa zdá rásť čím vážnejší je boj.",
+  "item_dual_axes_flint": "Dvojitá sekera z kremene",
+  "item_dual_axes_flint_description": "Dve seky zraňujú viac ako jedna! Kto vlastne potrebuje blokovať.",
+  "item_dual_axes_bronze": "Bronzové dvojseky",
+  "item_dual_axes_bronze_description": "Dve čepele, dvojnásobná zábava, a stromy sa ťa boja.",
+  "item_dual_axes_iron": "Železné dvojseky",
+  "item_dual_axes_iron_description": "Málo vecí môže stáť v ceste rozzúrenému vikingovi so sekerou v každej ruke."
 }

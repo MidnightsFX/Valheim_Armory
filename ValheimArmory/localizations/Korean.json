@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "대지를 진동시키는자",
   "item_sledge_flametal_description_nature": "자연의 에너지로 물들인 거대한 썰매, 이걸로는 군대를 막을 수 있을 거야.",
   "item_sledge_flametal_blood": "죽음의 일격",
-  "item_sledge_flametal_description_blood": "거대한 썰매, 그 분노는 싸움이 더욱 절박해질수록 더욱 성장하는 것으로 보입니다."
+  "item_sledge_flametal_description_blood": "거대한 썰매, 그 분노는 싸움이 더욱 절박해질수록 더욱 성장하는 것으로 보입니다.",
+  "item_dual_axes_flint": "플린트 이중 도끼",
+  "item_dual_axes_flint_description": "두 개의 도끼가 하나보다 더 아프다! 누가 막아야 할까.",
+  "item_dual_axes_bronze": "청동 이중도끼Thank you!",
+  "item_dual_axes_bronze_description": "두 개의 칼, 두 배의 재미, 그리고 나무들이 너를 두려워해요.",
+  "item_dual_axes_iron": "철 이중 도끼",
+  "item_dual_axes_iron_description": "양손에 도끼를 든 분노한 바이킹 앞에는 거의 아무것도 막을 수 없다."
 }

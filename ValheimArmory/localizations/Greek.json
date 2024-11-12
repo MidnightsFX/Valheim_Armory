@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Ταραχοποιός",
   "item_sledge_flametal_description_nature": "Ένα τεράστιο έλκηθρο, σταγόνες με την ενέργεια της φύσης, με αυτό θα μπορούσες να σταματήσεις ένα στρατό.",
   "item_sledge_flametal_blood": "Θανατηφόρο",
-  "item_sledge_flametal_description_blood": "Ένα τεράστιο σφυρί, η οργή του φαίνεται να μεγαλώνει όσο πιο σκληρή είναι η μάχη."
+  "item_sledge_flametal_description_blood": "Ένα τεράστιο σφυρί, η οργή του φαίνεται να μεγαλώνει όσο πιο σκληρή είναι η μάχη.",
+  "item_dual_axes_flint": "Διπλές αξίνες από πυρίτιδα",
+  "item_dual_axes_flint_description": "Δύο άξονες πονάνε περισσότερο από έναν! Ποιος χρειάζεται να αποκλείει άλλωστε.",
+  "item_dual_axes_bronze": "Χάλκινες διπλές τσεκούρια",
+  "item_dual_axes_bronze_description": "Δύο λεπίδες, διπλάσια διασκέδαση, και οι δέντρα σε φοβούνται.",
+  "item_dual_axes_iron": "Σιδερές διπλές τσεκούρια",
+  "item_dual_axes_iron_description": "Λίγα μπορούν να σταθούν στον δρόμο ενός οργισμένου Βίκινγκ με ένα τσεκούρι σε κάθε χέρι."
 }

@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Zatřásání Země",
   "item_sledge_flametal_description_nature": "Obrovský saně, kapající přírodní energií, s tím byste mohli zastavit armádu.",
   "item_sledge_flametal_blood": "Smrtící úder",
-  "item_sledge_flametal_description_blood": "Obrovský saně, jeho vztek se zdá růst čím zoufalejší je boj."
+  "item_sledge_flametal_description_blood": "Obrovský saně, jeho vztek se zdá růst čím zoufalejší je boj.",
+  "item_dual_axes_flint": "Křemenné dvojseky",
+  "item_dual_axes_flint_description": "Dvě seky bolí víc než jedna! Kdo vlastně potřebuje blokovat.",
+  "item_dual_axes_bronze": "Bronzové dvojité sekyry",
+  "item_dual_axes_bronze_description": "Dvě čepele, dvojnásobná zábava a stromy se tě bojí.",
+  "item_dual_axes_iron": "Železné dvojitý sekery",
+  "item_dual_axes_iron_description": "Málo může stát v cestě rozzuřenému Vikingovi s sekerou v každé ruce.Dobře, děkuji."
 }

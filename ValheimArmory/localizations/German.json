@@ -151,7 +151,6 @@
   "item_meteor_atgeir_description": "Warum nur ein Messer verwenden, wenn du auch zwei verwenden könntest?",
   "item_dagger_meteor_description": "Dunkel wie die Nacht, perfekt ausgewogen.",
   "item_dagger_meteor_2h_description": "Zwei Schattenstreifen schleichen durch die Nacht, was werden sie finden?",
-  "item_moder_shield": "Moders SchildI'm not sure what  refers to. Can you provide more context or clarify the meaning?",
   "item_moder_shield_description": "Ein Schild, der gefrorenes Eis hält, verstärkt durch Muttertränen.",
   "item_bolt_iron_poison": "Giftbolzen",
   "item_bolt_iron_poison_description": "Eine scharfe Bolzen, gespickt mit Gift, die den Tod beschleunigt.",
@@ -210,5 +209,12 @@
   "item_sledge_flametal_nature": "Erdbebenmacher",
   "item_sledge_flametal_description_nature": "Ein massiver Schlitten, triefend vor natürlicher Energie, damit könntest du eine Armee stoppen.",
   "item_sledge_flametal_blood": "Todesstoß",
-  "item_sledge_flametal_description_blood": "Ein massiver Schlitten, sein Zorn scheint mit zunehmender Verzweiflung des Kampfes zu wachsen.Bitte geben Sie eine Aufforderung zum Übersetzen in die angeforderte Sprache ein."
+  "item_sledge_flametal_description_blood": "Ein massiver Schlitten, sein Zorn scheint mit zunehmender Verzweiflung des Kampfes zu wachsen.Bitte geben Sie eine Aufforderung zum Übersetzen in die angeforderte Sprache ein.",
+  "item_dual_axes_bronze": "Bronzene Doppeläxte",
+  "item_dual_axes_bronze_description": "Verdoppelte Klingen, doppelter Spass und die Bäume fürchten dich.",
+  "item_dual_axes_flint": "Feuerstein Doppeläxte",
+  "item_dual_axes_flint_description": "Zwei Äxte sind tödlicher als eine! Wer braucht schon Block.",
+  "item_dual_axes_iron": "Eiserne Doppeläxte",
+  "item_dual_axes_iron_description": "Wenig steht im Weg eines aufgebrachten Wikingers mit einer Axt in jeder Hand.",
+  "item_moder_shield": "Moders Schild"
 }

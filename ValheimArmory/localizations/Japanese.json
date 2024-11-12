@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "原初の大ハンマー",
   "item_sledge_flametal_description_nature": "自然のエネルギーが満ち溢れている。",
   "item_sledge_flametal_blood": "血濡れの大ハンマー",
-  "item_sledge_flametal_description_blood": "戦いが過激になればなるほど怒りが増すようだ。"
+  "item_sledge_flametal_description_blood": "戦いが過激になればなるほど怒りが増すようだ。",
+  "item_dual_axes_flint": "フリントの両刃斧フリントの両刃斧",
+  "item_dual_axes_flint_description": "二つの斧は一つよりも痛い！だれがブロックする必要があるんだ。",
+  "item_dual_axes_bronze": "青銅の双斧",
+  "item_dual_axes_bronze_description": "2本の刃、2倍の楽しみ、そして木々はあなたを恐れる。",
+  "item_dual_axes_iron": "鉄のダブルアックスありがとうございます",
+  "item_dual_axes_iron_description": "怒り狂ったバイキングが両手に斧を持って立ちはだかるものはほとんどない。"
 }

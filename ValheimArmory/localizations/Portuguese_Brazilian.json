@@ -210,5 +210,11 @@
   "item_sledge_flametal_description_nature": "Um grande martelo, pingando com a energia da natureza, com isso você poderia parar um exército.",
   "item_sledge_flametal_blood": "Golpe mortal",
   "item_sledge_flametal_description_blood": "Um martelo maciço, sua raiva parece crescer quanto mais desesperada a luta.",
-  "item_meteor_atgeir": " "
+  "item_meteor_atgeir": " ",
+  "item_dual_axes_flint": "machados duplos de sílex",
+  "item_dual_axes_flint_description": "Dois eixos doem mais do que um! Quem precisa bloquear de qualquer maneira.",
+  "item_dual_axes_bronze": "machados duplos de bronze",
+  "item_dual_axes_bronze_description": "Duas lâminas, o dobro da diversão, e as árvores têm medo de você.",
+  "item_dual_axes_iron": "machados de ferro duplos",
+  "item_dual_axes_iron_description": "Pequeno pode impedir um viking enfurecido com um machado em cada mão."
 }

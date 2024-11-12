@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Землетрус",
   "item_sledge_flametal_description_nature": "Величезний сани, що капають від природної енергії, з цими ви могли б зупинити армію.",
   "item_sledge_flametal_blood": "Смертельний удар",
-  "item_sledge_flametal_description_blood": "Величезний сані, його гнів здається зростає тим більше, що страшніша битва."
+  "item_sledge_flametal_description_blood": "Величезний сані, його гнів здається зростає тим більше, що страшніша битва.",
+  "item_dual_axes_flint": "Двосторонній кремінь",
+  "item_dual_axes_flint_description": "Два топори болять більше, ніж один! Хто взагалі потребує блокувати.",
+  "item_dual_axes_bronze": "Бронзові подвійні сокири",
+  "item_dual_axes_bronze_description": "Два клинки, удвічі більше задоволення, і дерева бояться тебе.",
+  "item_dual_axes_iron": "Залізні подвійні топори",
+  "item_dual_axes_iron_description": "Мало що може встояти на шляху розлюченого вікінга з сокирами в кожній руці."
 }

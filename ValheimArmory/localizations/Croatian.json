@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Zemljotres",
   "item_sledge_flametal_description_nature": "Masivna sanjka, natopljena prirodnom energijom, s ovim bi mogli zaustaviti vojsku.",
   "item_sledge_flametal_blood": "Smrtonosni udarac",
-  "item_sledge_flametal_description_blood": "Masivni sanjkaš, njegov bijes čini se raste što je borba očajnija."
+  "item_sledge_flametal_description_blood": "Masivni sanjkaš, njegov bijes čini se raste što je borba očajnija.",
+  "item_dual_axes_flint": "Dvostruke sjekire od kremenja",
+  "item_dual_axes_flint_description": "Dvije sjekire više bole nego jedna! Tko uopće treba blokirati.",
+  "item_dual_axes_bronze": "Brončani dvostruki sjekire",
+  "item_dual_axes_bronze_description": "Dvije oštrice, dvostruko više zabave, i drveće te se boji.",
+  "item_dual_axes_iron": "Dvostruki željezni sjekiri",
+  "item_dual_axes_iron_description": "Malo toga može stati na put razjarenom vikingu s bijesnim u svakoj ruci."
 }

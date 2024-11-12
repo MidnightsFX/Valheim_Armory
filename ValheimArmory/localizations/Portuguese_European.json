@@ -210,5 +210,11 @@
   "item_sledge_flametal_description_nature": "Um trenó maciço, pingando com a energia da natureza, com isso você poderia parar um exército.",
   "item_sledge_flametal_blood": "Golpe de morte",
   "item_sledge_flametal_description_blood": "Um trenó maciço, a sua fúria parece crescer quanto mais terrível for a luta.",
-  "item_meteor_atgeir": " "
+  "item_meteor_atgeir": " ",
+  "item_dual_axes_flint": "machados de pedra",
+  "item_dual_axes_flint_description": "Duas machados doem mais do que um! Quem precisa bloquear de qualquer maneira.",
+  "item_dual_axes_bronze": "Duplos machados de bronze",
+  "item_dual_axes_bronze_description": "Duas lâminas, o dobro da diversão, e as árvores temem-te.",
+  "item_dual_axes_iron": "machados duplos de ferro",
+  "item_dual_axes_iron_description": "Quase nada pode resistir a um viking enfurecido com um machado em cada mão."
 }

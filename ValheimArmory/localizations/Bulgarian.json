@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Земетресение",
   "item_sledge_flametal_description_nature": "Голям бузък, капещ с енергията на природата, с него можеш да спреш армия.",
   "item_sledge_flametal_blood": "Смъртен удар",
-  "item_sledge_flametal_description_blood": "Голям бесен батут, гневът му изглежда да расте още повече, колкото по-тежка е битката."
+  "item_sledge_flametal_description_blood": "Голям бесен батут, гневът му изглежда да расте още повече, колкото по-тежка е битката.",
+  "item_dual_axes_flint": "Флинтови двойни топори.",
+  "item_dual_axes_flint_description": "Две остриета повреждат повече от едно! Кой има нужда да блокира все пак.",
+  "item_dual_axes_bronze": "Бронзови двойни топори",
+  "item_dual_axes_bronze_description": "Две остриета, два пъти повече забавление, и дърветата се страхуват от теб.",
+  "item_dual_axes_iron": "Желязни двойни топчета",
+  "item_dual_axes_iron_description": "Малко неща могат да спрат разярения викинг с брадва във всяка ръка.Малко неща могат да спрат разярения викинг с брадва във всяка ръка."
 }

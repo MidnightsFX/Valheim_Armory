@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "დედა მიწა",
   "item_sledge_flametal_description_nature": "დიდი ძმა, ბუნების ენერგიით ნარსი წამლი, დამილემ თქვენ შეგიძლია გააჩეროთ ჯარი.",
   "item_sledge_flametal_blood": "სიკვდილი.",
-  "item_sledge_flametal_description_blood": "დიდი სამყარო, მისი რიგი როგორც რთული ბრძოლას მიეცემა."
+  "item_sledge_flametal_description_blood": "დიდი სამყარო, მისი რიგი როგორც რთული ბრძოლას მიეცემა.",
+  "item_dual_axes_flint": "ფლინტის ორმხრიანი ტარდები",
+  "item_dual_axes_flint_description": "ორი სამი უფლება უკეთესია, ვინ ჯერ გაამთხრებს დაბლოკს.",
+  "item_dual_axes_bronze": "ბრონზის ორმხრიანი ტერი",
+  "item_dual_axes_bronze_description": "ორი მახე, ორჯერ სითხე, და ხეები შენს შიშის მახეს ამბობენ. ორი მახე, ორჯერ სითხე, და ხეები შენს შიშის მახეს ამბობენ.",
+  "item_dual_axes_iron": "რკალის ორმხრია",
+  "item_dual_axes_iron_description": "მცირე რამი შეიძლება დედამიწაზე დაეცდეს დაღრენინებულ ვიკინგს, რომელმაც ორი საფინჯა ხელში არის."
 }

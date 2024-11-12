@@ -210,5 +210,11 @@
   "item_sledge_flametal_description_nature": "Didžiulis sleksčio, kruvinantis gamtos energija, su juo galėtum sustabdyti kariuomenę.",
   "item_sledge_flametal_blood": "Žūtbūtis",
   "item_sledge_flametal_description_blood": "Didelis rogutis, jo rūstybė atrodo auganti kuo siauresnė kova.",
-  "item_meteor_atgeir": " --> "
+  "item_meteor_atgeir": " --> ",
+  "item_dual_axes_flint": " Akmens šiurkščiavilniai",
+  "item_dual_axes_flint_description": "Dvi kirviai skaudina daugiau nei vienas! Kam gi vis tiek reikia blokuoti.",
+  "item_dual_axes_bronze": "Bronzinių dvigubų kirvių",
+  "item_dual_axes_bronze_description": "Dvi ašmenys, dvigubai daug linksmųjų, ir medžiai jūsų bijo.",
+  "item_dual_axes_iron": "Geležinės dviterpes",
+  "item_dual_axes_iron_description": "Nedaug kas gali stovėti prieš įniršusį vikingą su kirviu kiekvienoje rankoje."
 }

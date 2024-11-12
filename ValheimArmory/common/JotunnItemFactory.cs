@@ -333,15 +333,16 @@ namespace ValheimArmory.common
                     recipe[recipe_index] = new RequirementConfig { Item = entry.Key, Amount = entry.Value.Item1, AmountPerLevel = entry.Value.Item2 };
                     recipe_index++;
                 }
-                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo("Creating custom recipe"); }
+                int craftAmount = (int)ItemData[ItemStat.amount].Item1;
+                if (CraftAmount != null) { craftAmount = (int)CraftAmount.Value; }
                 CustomRecipe updatedCustomRecipe = new CustomRecipe(new RecipeConfig()
                 {
                     Name = $"Recipe_{ItemPrefab.gameObject.name}",
-                    Amount = (int)CraftAmount.Value,
+                    Amount = craftAmount,
                     CraftingStation = CraftedAt.Value,
                     MinStationLevel = StationRequiredLevel.Value,
                     Enabled = CraftableConfig.Value,
-                    Requirements = recipe
+                    Requirements = recipe,
                 });
                 if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Looking for existing recipe with name: {ItemRecipeName}"); }
                 CustomRecipe curCrecipe = ItemManager.Instance.GetRecipe(ItemRecipeName);

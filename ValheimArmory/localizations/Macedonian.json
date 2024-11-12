@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Земетресач",
   "item_sledge_flametal_description_nature": "Голем боб, капење со енергијата на природата, со ова можеш да го зауставиш армијата.Интересно звучи.",
   "item_sledge_flametal_blood": "Смртоносен удар",
-  "item_sledge_flametal_description_blood": "Голем сан, неговиот гнев изгледа дека расте уште повеќе кога борбата е посериозна."
+  "item_sledge_flametal_description_blood": "Голем сан, неговиот гнев изгледа дека расте уште повеќе кога борбата е посериозна.",
+  "item_dual_axes_flint": "Флинт двојни секири",
+  "item_dual_axes_flint_description": "Dvete sekiri povredi poveke od edna! Koj i treba da blokira voopsto.",
+  "item_dual_axes_bronze": "Бронзени двојни секири",
+  "item_dual_axes_bronze_description": "Dvete sekiri, dvojno zabava, i drvetata se plašat od tebe.",
+  "item_dual_axes_iron": "„Железни двојни секири",
+  "item_dual_axes_iron_description": "Малку може да стои на патот на разјарениот викинг со секира во секоја рака.Малку може да стои на патот на разјарениот викинг со секира во секоја рака."
 }

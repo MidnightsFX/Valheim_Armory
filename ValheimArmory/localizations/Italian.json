@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Scuotitore di terra",
   "item_sledge_flametal_description_nature": "Un'enorme slitta, gocciolante dell'energia della natura, con questa potresti fermare un esercito.",
   "item_sledge_flametal_blood": "Colpo mortale",
-  "item_sledge_flametal_description_blood": "Un'enorme slitta, la sua furia sembra crescere quanto più disperata è la lotta."
+  "item_sledge_flametal_description_blood": "Un'enorme slitta, la sua furia sembra crescere quanto più disperata è la lotta.",
+  "item_dual_axes_flint": "Asce bipenne di selce",
+  "item_dual_axes_flint_description": "Due assi fanno più male di uno! Chi ha bisogno di bloccare comunque.",
+  "item_dual_axes_bronze": "Asce doppie di bronzo",
+  "item_dual_axes_bronze_description": "Due lame, il doppio del divertimento, e gli alberi ti temono.",
+  "item_dual_axes_iron": "Asce doppie in ferro",
+  "item_dual_axes_iron_description": "Poco può fermare un vichingo infuriato con un'ascia in ogni mano."
 }

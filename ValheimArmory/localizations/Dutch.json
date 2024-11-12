@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Aardbever",
   "item_sledge_flametal_description_nature": "Een massieve slede, druipend van de energie van de natuur, hiermee zou je een leger kunnen stoppen.",
   "item_sledge_flametal_blood": "Doodsteek",
-  "item_sledge_flametal_description_blood": "Een massieve slee, zijn woede lijkt toe te nemen naarmate de strijd ernstiger wordt."
+  "item_sledge_flametal_description_blood": "Een massieve slee, zijn woede lijkt toe te nemen naarmate de strijd ernstiger wordt.",
+  "item_dual_axes_flint": "Dubbele bijlen van vuursteen",
+  "item_dual_axes_flint_description": "Twee assen doen meer pijn dan één! Wie heeft er sowieso blokkering nodig.",
+  "item_dual_axes_bronze": "Bronzen dubbele bijlen",
+  "item_dual_axes_bronze_description": "Twee messen, twee keer plezier, en bomen vrezen jou.",
+  "item_dual_axes_iron": "ijzeren dubbele bijlen",
+  "item_dual_axes_iron_description": "Weinig kan een woedende Viking met een bijl in elke hand tegenhouden."
 }

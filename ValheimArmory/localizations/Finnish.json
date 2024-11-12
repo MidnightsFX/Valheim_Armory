@@ -210,5 +210,11 @@
   "item_sledge_flametal_blood": "Kuolinisku",
   "item_sledge_flametal_description_blood": "Massiivinen kelkka, sen raivo tuntuu kasvavan mitä hankalammaksi taistelu muuttuu.",
   "item_meteor_atgeir": " translates to  in Finnish.",
-  "item_dagger_blackmetal_mistlands": "Kiire"
+  "item_dagger_blackmetal_mistlands": "Kiire",
+  "item_dual_axes_flint": "Piikkinen kaksiteräiset kirveet",
+  "item_dual_axes_flint_description": "Kaksi akselia sattuu enemmän kuin yksi! Kukaan ei tarvitsekaan estää.",
+  "item_dual_axes_bronze": "Pronssiset kaksoisakselit",
+  "item_dual_axes_bronze_description": "Kaksi terää, kaksinkertainen hauskuus, ja puut pelkäävät sinua.",
+  "item_dual_axes_iron": "Rautaiset kaksiteräiset kirveet",
+  "item_dual_axes_iron_description": "Vähän voi estää raivoisaa viikinkiä, jolla on kirves kummassakin kädessä."
 }

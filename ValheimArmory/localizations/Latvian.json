@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "Zemes trīsotājs",
   "item_sledge_flametal_description_nature": "Masīva ragana, kas pilēta ar dabas enerģiju, ar to tu varētu apturēt armiju.",
   "item_sledge_flametal_blood": "Nāvessitiena",
-  "item_sledge_flametal_description_blood": "Masīvs ragana, tās dusmas šķiet pieaug jo briesmīgāka kauja."
+  "item_sledge_flametal_description_blood": "Masīvs ragana, tās dusmas šķiet pieaug jo briesmīgāka kauja.",
+  "item_dual_axes_flint": "Dubultas cietās lāpstiņas",
+  "item_dual_axes_flint_description": "Divas cirvja sāp vairāk nekā viena! Kam jābloķē jebkurā gadījumā.",
+  "item_dual_axes_bronze": "Bronzas dubultasēķes",
+  "item_dual_axes_bronze_description": "Divas asmenis, divreiz vairāk jautrības, un koki tevi baidās.",
+  "item_dual_axes_iron": "Dzelzs dubultasmeņi",
+  "item_dual_axes_iron_description": "Maz var stāvēt ceļā dusmīgam vīkingam ar cirvi katrā rokā."
 }

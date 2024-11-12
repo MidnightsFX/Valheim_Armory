@@ -210,5 +210,11 @@
   "item_sledge_flametal_nature": "地震者",
   "item_sledge_flametal_description_nature": "一个巨大的雪橇，滴滴着大自然的能量，有了它，你可以阻止一支军队。",
   "item_sledge_flametal_blood": "死亡一击",
-  "item_sledge_flametal_description_blood": "一把巨大的雪橇，它的愤怒似乎随着战斗的激烈而增长。"
+  "item_sledge_flametal_description_blood": "一把巨大的雪橇，它的愤怒似乎随着战斗的激烈而增长。",
+  "item_dual_axes_flint": "打火石双斧",
+  "item_dual_axes_flint_description": "两把斧头比一把更伤人！反正谁需要防御呢。",
+  "item_dual_axes_bronze": "青铜双斧",
+  "item_dual_axes_bronze_description": "两把刀，两倍的乐趣，树木害怕你。",
+  "item_dual_axes_iron": "铁双斧",
+  "item_dual_axes_iron_description": "愤怒的维京人手持两把斧头时，几乎没有什么能阻挡他。"
 }

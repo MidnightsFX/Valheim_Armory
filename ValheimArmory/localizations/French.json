@@ -210,5 +210,11 @@
   "item_sledge_flametal_description_nature": "Un traîneau massif, dégoulinant de l'énergie de la nature, avec cela, vous pourriez arrêter une armée.",
   "item_sledge_flametal_blood": "Coup fatal",
   "item_sledge_flametal_description_blood": "Un traîneau massif, sa colère semble grandir plus le combat devient désespéré.",
-  "item_meteor_atgeir": " "
+  "item_meteor_atgeir": " ",
+  "item_dual_axes_flint": "Les haches doubles en silex",
+  "item_dual_axes_flint_description": "Deux axes font plus mal qu'un ! De toute façon, qui a besoin de bloquer.",
+  "item_dual_axes_bronze": "Double haches en bronze",
+  "item_dual_axes_bronze_description": "Deux lames, deux fois plus de plaisir, et les arbres te craignent.",
+  "item_dual_axes_iron": "Double-haches en fer",
+  "item_dual_axes_iron_description": "Peu de choses peuvent se mettre en travers du chemin d'un Viking enragé avec une hache dans chaque main."
 }

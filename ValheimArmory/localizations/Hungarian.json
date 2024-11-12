@@ -210,5 +210,11 @@
   "item_sledge_flametal_description_nature": "Egy hatalmas szán, amely természet energiájával csöpög, ezzel megállíthatnád egy hadsereget.",
   "item_sledge_flametal_blood": "Halálos csapás",
   "item_sledge_flametal_description_blood": "Egy hatalmas szán, haragja úgy tűnik, minél kétségbeejtőbb a harc, annál jobban nő.",
-  "item_meteor_atgeir": "Lángfém atgeir"
+  "item_meteor_atgeir": "Lángfém atgeir",
+  "item_dual_axes_flint": "Kovakő duplahasák",
+  "item_dual_axes_flint_description": "Két tengely jobban fáj, mint egy! Ki is kell blokkolnia valakit. Kinek kell blokkolni egyáltalán.",
+  "item_dual_axes_bronze": "Bronz kettősfejes fejsze",
+  "item_dual_axes_bronze_description": "Két pengével, kétszer annyi móka, és a fák félnek tőled.",
+  "item_dual_axes_iron": "Vas kettősököl",
+  "item_dual_axes_iron_description": "Kevesen állhatnak az útjába egy dühöngő vikingnek, akinek mindkét kezében egy-egy fejsze van."
 }
