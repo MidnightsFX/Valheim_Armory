@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "कांस्य दोहरे कुल्हाड़",
   "item_dual_axes_bronze_description": "दो ब्लेड, दोगुना मजा, और पेड़ तुमसे डरते हैं।",
   "item_dual_axes_iron": "लोहे की डबल एक्स",
-  "item_dual_axes_iron_description": "एक उत्तेजित वाइकिंग के रास्ते में कुछ भी नहीं आ सकता है, हर हाथ में कुल्हाड़ी लिए हुए।"
+  "item_dual_axes_iron_description": "एक उत्तेजित वाइकिंग के रास्ते में कुछ भी नहीं आ सकता है, हर हाथ में कुल्हाड़ी लिए हुए।",
+  "item_crystal_axe": "क्रिस्टल कुल्हाड़क्रिस्टल कुल्हाड़",
+  "item_crystal_axe_description": "क्रिस्टालीन मौत।",
+  "item_dual_axes_crystal": "क्रिस्टल ड्यूअल एक्सेस",
+  "item_dual_axes_crystal_description": "क्रिस्टल की जोड़ी तेज़, चमकती, चमकती, मौत।",
+  "item_dual_axes_blackmetal": "कालाधातु द्विशूल",
+  "item_dual_axes_blackmetal_description": "चमकदार और अंधेरा, स्थायी रात की तरह।",
+  "item_blackmetal_2h_axe": "कालाधातु विशालकुल्हाड़ी",
+  "item_blackmetal_2h_axe_description": "ज्यादा तेज़ चमकते हैं, अंधकार का एक चक्रवात।",
+  "item_dual_axes_jotun": "जोटुन्स द्विगुम्बज",
+  "item_dual_axes_jotun_description": "दोगुना जहर, दोगुना दर्द!",
+  "item_jotun_2h_axe": "जोटुन कुल्हाड़ी युद्ध",
+  "item_jotun_2h_axe_description": "एक सच्चा विशालकाय की शिकार करने वाला, इसकी काट से कुछ भी बच नहीं सकता।"
 }

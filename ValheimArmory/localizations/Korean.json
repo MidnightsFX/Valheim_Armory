@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "청동 이중도끼Thank you!",
   "item_dual_axes_bronze_description": "두 개의 칼, 두 배의 재미, 그리고 나무들이 너를 두려워해요.",
   "item_dual_axes_iron": "철 이중 도끼",
-  "item_dual_axes_iron_description": "양손에 도끼를 든 분노한 바이킹 앞에는 거의 아무것도 막을 수 없다."
+  "item_dual_axes_iron_description": "양손에 도끼를 든 분노한 바이킹 앞에는 거의 아무것도 막을 수 없다.",
+  "item_crystal_axe": "크리스탈 도끼",
+  "item_crystal_axe_description": "결정적인 죽음.",
+  "item_dual_axes_crystal": "크리스탈 듀얼액스",
+  "item_dual_axes_crystal_description": "수정으로 된 쌍검, 빛나며 반짝거리며 죽음.",
+  "item_dual_axes_blackmetal": "블랙메탈 듀얼액스",
+  "item_dual_axes_blackmetal_description": "번쩍이고 어둡고, 영원한 밤처럼.",
+  "item_blackmetal_2h_axe": "블랙메탈 그레이트액스",
+  "item_blackmetal_2h_axe_description": "빛 속에서 반짝이는 쌍날날이, 어둠의 소용돌이.",
+  "item_dual_axes_jotun": "좋툰스 듀얼액스",
+  "item_dual_axes_jotun_description": "두 배의 독, 두 배의 고통!",
+  "item_jotun_2h_axe": "요툰 배틀액스",
+  "item_jotun_2h_axe_description": "진정한 거인 사냥꾼, 그 물림을 견디는 것은 없다."
 }

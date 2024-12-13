@@ -1,3 +1,15 @@
+**1.18.0**
+ ---
+ ```
+ - Added Silver tier axe and dualaxe
+ - Added blackmetal dual axes and a new 2H blackmetal axe
+ - Added dual mistlands axes and a new 2H axe
+ - Added configuration to remove the primary attack from all mod-added hammers
+ - Fixed damage modifiers not being applied
+ - Updated all applied damage modifiers to support immunity,veryweak,weak,normal,resistant,veryresistant and runtime configuration
+ - Defaulted Herkirs wrath to disabled crafting
+ ```
+
 **1.17.2**
  ---
  ```

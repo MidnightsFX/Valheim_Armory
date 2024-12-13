@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Hachas dobles de bronce",
   "item_dual_axes_bronze_description": "Dos cuchillas, el doble de diversión, y los árboles te temen.",
   "item_dual_axes_iron": "Dobles hachas de hierro",
-  "item_dual_axes_iron_description": "Poco puede interponerse en el camino de un vikingo enfurecido con un hacha en cada mano."
+  "item_dual_axes_iron_description": "Poco puede interponerse en el camino de un vikingo enfurecido con un hacha en cada mano.",
+  "item_crystal_axe": "Hacha de cristal",
+  "item_crystal_axe_description": "Muerte cristalina.",
+  "item_dual_axes_crystal": "Duales de cristal",
+  "item_dual_axes_crystal_description": "Espadas gemelas de cristal, brillantes, relucientes, muerte.",
+  "item_dual_axes_blackmetal": "Duales de hacha de blackmetal",
+  "item_dual_axes_blackmetal_description": "Brillante y oscuro, como la noche eterna.",
+  "item_blackmetal_2h_axe": "Gran hacha de guerra de blackmetal",
+  "item_blackmetal_2h_axe_description": "Los bordes gemelos brillan a la luz, un torbellino de oscuridad.",
+  "item_dual_axes_jotun": "Jotuns hachas duales",
+  "item_dual_axes_jotun_description": "Doble veneno, doble dolor!",
+  "item_jotun_2h_axe": "Hacha de batalla Jotun",
+  "item_jotun_2h_axe_description": "Un verdadero matagigantes, nada sobrevive a su mordida."
 }

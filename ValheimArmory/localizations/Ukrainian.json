@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Бронзові подвійні сокири",
   "item_dual_axes_bronze_description": "Два клинки, удвічі більше задоволення, і дерева бояться тебе.",
   "item_dual_axes_iron": "Залізні подвійні топори",
-  "item_dual_axes_iron_description": "Мало що може встояти на шляху розлюченого вікінга з сокирами в кожній руці."
+  "item_dual_axes_iron_description": "Мало що може встояти на шляху розлюченого вікінга з сокирами в кожній руці.",
+  "item_crystal_axe": "Кришталева сокира",
+  "item_crystal_axe_description": "Кристалічна смерть.",
+  "item_dual_axes_crystal": "Кришталеві подвійні топори",
+  "item_dual_axes_crystal_description": "Подвійні леза кришталю, сяючі, мерехтливі, смерть.",
+  "item_dual_axes_blackmetal": "Чорний металевий подвійний топор",
+  "item_dual_axes_blackmetal_description": "Блискучий і темний, як вічна ніч.",
+  "item_blackmetal_2h_axe": "Чорний металевий великий топір.",
+  "item_blackmetal_2h_axe_description": "Подвійні краї блищать у світлі, вихор темряви.",
+  "item_dual_axes_jotun": "Дві вісі йотунів",
+  "item_dual_axes_jotun_description": "Двічі отрута, двічі біль!",
+  "item_jotun_2h_axe": "Боевий топір йотунів",
+  "item_jotun_2h_axe_description": "Справжній убивця велетнів, ніщо не виживає після його укусу."
 }

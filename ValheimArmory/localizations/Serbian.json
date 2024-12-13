@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Bronzane dvostruke sekire",
   "item_dual_axes_bronze_description": "Dve oštrice, dva puta više zabave, i drveće te se plaši.",
   "item_dual_axes_iron": "Željezne dvostruke sekire",
-  "item_dual_axes_iron_description": "Malo toga može stati na put besnom Vikingu sa po jednim sekirama u svakoj ruci."
+  "item_dual_axes_iron_description": "Malo toga može stati na put besnom Vikingu sa po jednim sekirama u svakoj ruci.",
+  "item_crystal_axe": "Kristalna sekira",
+  "item_crystal_axe_description": "Kristalna smrt.",
+  "item_dual_axes_crystal": "Kristalne dvojne sekire",
+  "item_dual_axes_crystal_description": "Blizanac oštrica kristala, sjajnih, blistavih, smrti.",
+  "item_dual_axes_blackmetal": "Crni metal dvostruke sekireHvala!",
+  "item_dual_axes_blackmetal_description": "Bljeskavo i tamno, kao večna noć.",
+  "item_blackmetal_2h_axe": "Velika crna metalna sekira",
+  "item_blackmetal_2h_axe_description": "Dvostruki rubovi sjaje u svetlu, vihor tame.",
+  "item_dual_axes_jotun": "Dvostruki sekire Jotuna",
+  "item_dual_axes_jotun_description": "Dvostruko otrov, dvostruki bol!",
+  "item_jotun_2h_axe": "Jotunski bojni sekir",
+  "item_jotun_2h_axe_description": "Pravi ubica divova, ništa ne preživljava njegov ujed."
 }

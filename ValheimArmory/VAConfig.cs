@@ -1,4 +1,5 @@
 ﻿using BepInEx.Configuration;
+using System.Collections.Generic;
 using ValheimArmory.common;
 
 namespace ValheimArmory
@@ -9,6 +10,7 @@ namespace ValheimArmory
         public static ConfigEntry<bool> EnableDebugMode;
         public static ConfigEntry<float> HybridWeaponBloodMagicSkillIncrease;
         public static ConfigEntry<bool> VanillaHammersHavePrimaryAttack;
+        public static ConfigEntry<bool> ModHammersHavePrimaryAttack;
         public static ConfigEntry<float> StagbreakerPrimaryAttackStamina;
         public static ConfigEntry<float> IronSledgePrimaryAttackStamina;
         public static ConfigEntry<float> DemolisherPrimaryAttackStamina;
@@ -34,6 +36,7 @@ namespace ValheimArmory
                 new ConfigurationManagerAttributes { IsAdvanced = true }));
             HybridWeaponBloodMagicSkillIncrease = BindServerConfig("Blood Magic Hybrid Weapons", "HybridWeaponBloodMagicSkillIncrease", 1f, "How much experiance should one usage of a blood magic hybrid weapon provide?", true, 0f, 4f);
             VanillaHammersHavePrimaryAttack = BindServerConfig("Vanilla Weapons", "VanillaHammersHavePrimaryAttack", true, "Enables a primary swing for vanilla sledges. Moves the slam to a secondary attack.");
+            ModHammersHavePrimaryAttack = BindServerConfig("Vanilla Weapons", "ModHammersHavePrimaryAttack", true, "Enables a primary swing for mod weapons, disabling makes mod added hammers like vanilla sledges.");
             StagbreakerPrimaryAttackStamina = BindServerConfig("Vanilla Weapons", "StagbreakerPrimaryAttackStamina", 6f, "Stamina cost of the basic attack when enabled for the stagbreaker.", true, 1, 30);
             StagbreakerPrimaryAttackStamina.SettingChanged += WeaponModifier.OnConfigStagbreakerValueChanged;
             IronSledgePrimaryAttackStamina = BindServerConfig("Vanilla Weapons", "IronSledgePrimaryAttackStamina", 10f, "Stamina cost of the basic attack when enabled for the iron sledge.", true, 1, 30);
@@ -117,10 +120,11 @@ namespace ValheimArmory
         /// <param name="description"></param>
         /// <param name="advanced"></param>
         /// <returns></returns>
-        public static ConfigEntry<string> BindServerConfig(string catagory, string key, string value, string description, bool advanced = false)
+        public static ConfigEntry<string> BindServerConfig(string catagory, string key, string value, string description, bool advanced = false, AcceptableValueList<string> allowed_values = null)
         {
+            AcceptableValueList<string> allowed = allowed_values;
             return cfg.Bind(catagory, key, value,
-                new ConfigDescription(description, null,
+                new ConfigDescription(description, allowed,
                 new ConfigurationManagerAttributes { IsAdminOnly = true, IsAdvanced = advanced })
                 );
         }

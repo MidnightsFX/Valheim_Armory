@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Bronzinių dvigubų kirvių",
   "item_dual_axes_bronze_description": "Dvi ašmenys, dvigubai daug linksmųjų, ir medžiai jūsų bijo.",
   "item_dual_axes_iron": "Geležinės dviterpes",
-  "item_dual_axes_iron_description": "Nedaug kas gali stovėti prieš įniršusį vikingą su kirviu kiekvienoje rankoje."
+  "item_dual_axes_iron_description": "Nedaug kas gali stovėti prieš įniršusį vikingą su kirviu kiekvienoje rankoje.",
+  "item_crystal_axe": "Kristalinis kirvis",
+  "item_crystal_axe_description": "Krištolinis mirtis.",
+  "item_dual_axes_crystal": "Kristalinės dvigubos ašys",
+  "item_dual_axes_crystal_description": "Dvigubos kristalinės ašmenys, švytintys, blizgantys, mirtis.",
+  "item_dual_axes_blackmetal": "Juodosios metalo dvivietės kirvės",
+  "item_dual_axes_blackmetal_description": "Švytintis ir tamsus, lyg amžina naktis.",
+  "item_blackmetal_2h_axe": "Juodo metalo didžioji kirvis",
+  "item_blackmetal_2h_axe_description": "Dvigubi kraštai spindi šviesoje, tamsos viesulas.Aštuoniolika.",
+  "item_dual_axes_jotun": "Jotūnų dvigubos ašmenys",
+  "item_dual_axes_jotun_description": "Du kartus nuodai, du kartus skausmas!",
+  "item_jotun_2h_axe": "Jotun kovos kirvis",
+  "item_jotun_2h_axe_description": "Tikras milžino žudikas, niekas neišgyvena jo įgriuvo."
 }

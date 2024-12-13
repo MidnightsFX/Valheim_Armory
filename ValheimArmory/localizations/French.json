@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Double haches en bronze",
   "item_dual_axes_bronze_description": "Deux lames, deux fois plus de plaisir, et les arbres te craignent.",
   "item_dual_axes_iron": "Double-haches en fer",
-  "item_dual_axes_iron_description": "Peu de choses peuvent se mettre en travers du chemin d'un Viking enragé avec une hache dans chaque main."
+  "item_dual_axes_iron_description": "Peu de choses peuvent se mettre en travers du chemin d'un Viking enragé avec une hache dans chaque main.",
+  "item_crystal_axe": "Hache en cristal",
+  "item_crystal_axe_description": "La mort cristalline.",
+  "item_dual_axes_crystal": "Les haches doubles en cristal",
+  "item_dual_axes_crystal_description": "Deux lames de cristal, brillantes, scintillantes, mortelles.",
+  "item_dual_axes_blackmetal": "Double haches de blackmetal",
+  "item_dual_axes_blackmetal_description": "Chatoyant et sombre, comme la nuit éternelle.",
+  "item_blackmetal_2h_axe": "Grand hache de guerre en métal noir",
+  "item_blackmetal_2h_axe_description": "Les bords jumeaux brillent dans la lumière, un tourbillon d'obscurité.",
+  "item_dual_axes_jotun": "Jotuns double haches",
+  "item_dual_axes_jotun_description": "Deux fois le poison, deux fois la douleur!",
+  "item_jotun_2h_axe": "hache de combat Jotun",
+  "item_jotun_2h_axe_description": "Un véritable tueur de géants, rien ne survit à sa morsure."
 }

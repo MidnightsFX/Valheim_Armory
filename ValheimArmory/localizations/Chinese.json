@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "青铜双斧",
   "item_dual_axes_bronze_description": "两把刀，两倍的乐趣，树木害怕你。",
   "item_dual_axes_iron": "铁双斧",
-  "item_dual_axes_iron_description": "愤怒的维京人手持两把斧头时，几乎没有什么能阻挡他。"
+  "item_dual_axes_iron_description": "愤怒的维京人手持两把斧头时，几乎没有什么能阻挡他。",
+  "item_crystal_axe": "水晶斧",
+  "item_crystal_axe_description": "晶莹的死亡。",
+  "item_dual_axes_crystal": "水晶双轴。",
+  "item_dual_axes_crystal_description": "双刃水晶，闪耀，闪烁，死亡。",
+  "item_dual_axes_blackmetal": "黑金属双斧",
+  "item_dual_axes_blackmetal_description": "闪烁而黑暗，像永恒的夜晚。",
+  "item_blackmetal_2h_axe": "黑金属巨斧",
+  "item_blackmetal_2h_axe_description": "双刃在光线中闪闪发亮，黑暗的旋风。",
+  "item_dual_axes_jotun": "巨人的双斧",
+  "item_dual_axes_jotun_description": "两次的毒药，两倍的痛苦！",
+  "item_jotun_2h_axe": "乔坦战斧",
+  "item_jotun_2h_axe_description": "真正的巨人杀手，没有什么能在它的咬击下存活。"
 }

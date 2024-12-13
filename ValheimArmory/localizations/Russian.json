@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Бронзовые топоры",
   "item_dual_axes_bronze_description": "Два лезвия - вдвойне веселее! Деревья трепещут в ужасе.",
   "item_dual_axes_iron": "Железные топоры",
-  "item_dual_axes_iron_description": "Мало кто выстоит против разъяренного викинга с топором в каждой руке."
+  "item_dual_axes_iron_description": "Мало кто выстоит против разъяренного викинга с топором в каждой руке.",
+  "item_crystal_axe": "Кристальный топор",
+  "item_crystal_axe_description": "Кристальная смерть.",
+  "item_dual_axes_crystal": "Кристальные двухручные топоры",
+  "item_dual_axes_crystal_description": "Двойные лезвия из кристалла, сияющие, мерцающие, смертельные.",
+  "item_dual_axes_blackmetal": "Двойные топоры в стиле блэкметал",
+  "item_dual_axes_blackmetal_description": "Мерцающий и темный, как вечная ночь.",
+  "item_blackmetal_2h_axe": "Черный металлический боевой топор",
+  "item_blackmetal_2h_axe_description": "Близнецы кромок сверкают в свете, вихрь тьмы.",
+  "item_dual_axes_jotun": "Двойные топоры йотунов",
+  "item_dual_axes_jotun_description": "Дважды яд, дважды боль!",
+  "item_jotun_2h_axe": "Боевой топор Йотун",
+  "item_jotun_2h_axe_description": "Настоящий убийца гигантов, ничто не выживает после его укуса."
 }

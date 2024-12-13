@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Bronzas dubultasēķes",
   "item_dual_axes_bronze_description": "Divas asmenis, divreiz vairāk jautrības, un koki tevi baidās.",
   "item_dual_axes_iron": "Dzelzs dubultasmeņi",
-  "item_dual_axes_iron_description": "Maz var stāvēt ceļā dusmīgam vīkingam ar cirvi katrā rokā."
+  "item_dual_axes_iron_description": "Maz var stāvēt ceļā dusmīgam vīkingam ar cirvi katrā rokā.",
+  "item_crystal_axe": "Kristāla cirvis",
+  "item_crystal_axe_description": "Kristāliskā nāve.",
+  "item_dual_axes_crystal": "Kristāla dubultās asiņas",
+  "item_dual_axes_crystal_description": "Dvīņu kristāla asiņi, spīd, mirdz, nāve.",
+  "item_dual_axes_blackmetal": "Melnbetona divas āmuri",
+  "item_dual_axes_blackmetal_description": "Spīdīgs un tumšs, tāpat kā mūžīgā nakts.",
+  "item_blackmetal_2h_axe": "Melnametāla lielcirvis",
+  "item_blackmetal_2h_axe_description": "Dvīņu malas spīd gaismā, tumsas vētra.Dvīņu malas spīd gaismā, tumsas vētra.",
+  "item_dual_axes_jotun": "Jotunu dubļu asmeņi",
+  "item_dual_axes_jotun_description": "Dubulti indes, dubulti sāpes!",
+  "item_jotun_2h_axe": "Jotun cīņas cirvis",
+  "item_jotun_2h_axe_description": "Patiesi milzīgs slepkavnieks, nekas nepārdzīvos tā kodu."
 }

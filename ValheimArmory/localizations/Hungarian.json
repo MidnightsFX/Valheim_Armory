@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Bronz kettősfejes fejsze",
   "item_dual_axes_bronze_description": "Két pengével, kétszer annyi móka, és a fák félnek tőled.",
   "item_dual_axes_iron": "Vas kettősököl",
-  "item_dual_axes_iron_description": "Kevesen állhatnak az útjába egy dühöngő vikingnek, akinek mindkét kezében egy-egy fejsze van."
+  "item_dual_axes_iron_description": "Kevesen állhatnak az útjába egy dühöngő vikingnek, akinek mindkét kezében egy-egy fejsze van.",
+  "item_crystal_axe": "Kristályfejsze",
+  "item_crystal_axe_description": "Krisztályos halál.",
+  "item_dual_axes_crystal": "Kristály kettős tengely",
+  "item_dual_axes_crystal_description": "Kristály ikervágás, ragyogó, csillogó, halál.",
+  "item_dual_axes_blackmetal": "Fekete fém kétbörönd",
+  "item_dual_axes_blackmetal_description": "Ragacsos és sötét, mint az örök éjszaka.",
+  "item_blackmetal_2h_axe": "Blackmetal nagykardBlackmetal nagykard",
+  "item_blackmetal_2h_axe_description": "A két él csillog a fényben, a sötétség örvénye.",
+  "item_dual_axes_jotun": "Jotun kettős fejszéi",
+  "item_dual_axes_jotun_description": "Kétszer annyi méreg, kétszer annyi fájdalom!Kétszer annyi szenvedés...",
+  "item_jotun_2h_axe": "Jotun harci fejsze",
+  "item_jotun_2h_axe_description": "Egy igazi óriásgyilkos, semmi sem marad életben a harapásától."
 }

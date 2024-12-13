@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Bronzové dvojseky",
   "item_dual_axes_bronze_description": "Dve čepele, dvojnásobná zábava, a stromy sa ťa boja.",
   "item_dual_axes_iron": "Železné dvojseky",
-  "item_dual_axes_iron_description": "Málo vecí môže stáť v ceste rozzúrenému vikingovi so sekerou v každej ruke."
+  "item_dual_axes_iron_description": "Málo vecí môže stáť v ceste rozzúrenému vikingovi so sekerou v každej ruke.",
+  "item_crystal_axe": "Krištálová sekera",
+  "item_crystal_axe_description": "Kryštálová smrť.",
+  "item_dual_axes_crystal": "Kryštálové duálne osy",
+  "item_dual_axes_crystal_description": "Dvojité čepele z krištáľu, žiariace, iskrivé, smrteľné.",
+  "item_dual_axes_blackmetal": "Čierna metalová dvojsečná sekera",
+  "item_dual_axes_blackmetal_description": "Lesklé a tmavé, ako večná noc.",
+  "item_blackmetal_2h_axe": "Veľká sekera čierneho kovu",
+  "item_blackmetal_2h_axe_description": "Dvojité hrany žiaria vo svetle, závan temnoty.",
+  "item_dual_axes_jotun": "Dvojité seky Jotunov",
+  "item_dual_axes_jotun_description": "Dvakrát jed, dvakrát bolesť!",
+  "item_jotun_2h_axe": "Jotun bojová sekera",
+  "item_jotun_2h_axe_description": "Skutočný zabijak obrov, nič neprežije jeho útok."
 }

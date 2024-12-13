@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Бронзови двойни топори",
   "item_dual_axes_bronze_description": "Две остриета, два пъти повече забавление, и дърветата се страхуват от теб.",
   "item_dual_axes_iron": "Желязни двойни топчета",
-  "item_dual_axes_iron_description": "Малко неща могат да спрат разярения викинг с брадва във всяка ръка.Малко неща могат да спрат разярения викинг с брадва във всяка ръка."
+  "item_dual_axes_iron_description": "Малко неща могат да спрат разярения викинг с брадва във всяка ръка.Малко неща могат да спрат разярения викинг с брадва във всяка ръка.",
+  "item_crystal_axe": "Кристална секира",
+  "item_crystal_axe_description": "Кристална смърт.",
+  "item_dual_axes_crystal": "Кристални двойни секири",
+  "item_dual_axes_crystal_description": "Двойни остриета от кристал, светещи, мерцайки, смърт.",
+  "item_dual_axes_blackmetal": "Двойни чернометални топори",
+  "item_dual_axes_blackmetal_description": "Бляскаво и тъмно, като вечната нощ.",
+  "item_blackmetal_2h_axe": "Черен метален брадва",
+  "item_blackmetal_2h_axe_description": "Двойните ръбове светят в светлината, вихрушка от тъмнина.",
+  "item_dual_axes_jotun": "Двойните топори на Йотуните",
+  "item_dual_axes_jotun_description": "Двоеното отрова, двоената болка!",
+  "item_jotun_2h_axe": "Боен топор на Йотун",
+  "item_jotun_2h_axe_description": "Истински убиец на гиганти, нищо не оцелява след удара му."
 }

@@ -61,6 +61,34 @@ namespace ValheimArmory.common
         tool_level
     }
 
+    enum ItemToggles
+    {
+        enabled,
+        craftable,
+    }
+
+    enum ItemModifiers
+    {
+        VeryWeak,
+        Weak,
+        Normal,
+        Resistant,
+        VeryResistant
+    }
+
+    enum DamageTypes
+    {
+        blunt,
+        pierce,
+        slash,
+        fire,
+        spirit,
+        lightning,
+        frost,
+        poison,
+        chop
+    }
+
     class JotunnItemFactory
     {
         enum Catagories
@@ -78,20 +106,18 @@ namespace ValheimArmory.common
             Pickaxes,
             Magics
         }
-        enum DamageTypes
-        {
-            blunt,
-            pierce,
-            slash,
-            fire,
-            spirit,
-            lightning,
-            frost,
-            poison,
-            chop
-        }
 
         public static AssetBundle Assets;
+        internal static readonly AcceptableValueList<string> allowedModifiers = new AcceptableValueList<string>(new string[] 
+            { 
+                HitData.DamageModifier.Normal.ToString(), 
+                HitData.DamageModifier.VeryWeak.ToString(), 
+                HitData.DamageModifier.Weak.ToString(), 
+                HitData.DamageModifier.VeryWeak.ToString(), 
+                HitData.DamageModifier.Resistant.ToString(), 
+                HitData.DamageModifier.VeryResistant.ToString(), 
+                HitData.DamageModifier.Immune.ToString() 
+            });
 
         public JotunnItemFactory(AssetBundle EmbeddedResourceBundle)
         {
@@ -102,15 +128,17 @@ namespace ValheimArmory.common
         {
             Dictionary<String, String> ItemMetadata;
             Dictionary<ItemStat, Tuple<float, float, float, bool>> ItemData;
-            Dictionary<String, bool> ItemToggles;
+            Dictionary<ItemToggles, bool> ItemToggles;
             Dictionary<String, Tuple<int, int>> RecipeData;
             Dictionary<String, int> ItemSettings;
+            Dictionary<HitData.DamageType, HitData.DamageModifier> ItemModifiers;
             GameObject ItemPrefab;
             Sprite ItemSprite;
             ZNetView nview;
 
             Dictionary<String, ConfigEntry<float>> ItemDataConfigs = new Dictionary<String, ConfigEntry<float>>() { };
             Dictionary<String, Tuple<int, int>> UpdatedRecipeData = new Dictionary<string, Tuple<int, int>>() { };
+            Dictionary<HitData.DamageType, ConfigEntry<string>> ItemModifiersConfigs = new Dictionary<HitData.DamageType, ConfigEntry<string>>() { };
 
             ConfigEntry<Boolean> CraftableConfig;
             ConfigEntry<int> StationRequiredLevel;
@@ -124,13 +152,16 @@ namespace ValheimArmory.common
             public JotunnItem(
             Dictionary<String, String> metadata,
             Dictionary<ItemStat, Tuple<float, float, float, bool>> itemdata,
-            Dictionary<String, bool> itemtoggles,
             Dictionary<String, Tuple<int, int>> recipedata,
-            Dictionary<String, int> itemsettings = null
+            Dictionary<String, int> itemsettings = null,
+            Dictionary<ItemToggles, bool> itemtoggles = null,
+            Dictionary<HitData.DamageType, HitData.DamageModifier> itemModifiers = null
             )
             {
                 // Set defaults up
                 if (itemsettings == null) itemsettings = new Dictionary<String, int>();
+                if (itemModifiers == null) itemModifiers = new Dictionary<HitData.DamageType, HitData.DamageModifier>();
+                if (itemtoggles == null) itemtoggles = new Dictionary<ItemToggles, bool>();
 
                 // class object attribute assignment
                 ItemMetadata = metadata;
@@ -138,20 +169,21 @@ namespace ValheimArmory.common
                 ItemToggles = itemtoggles;
                 RecipeData = recipedata;
                 ItemSettings = itemsettings;
+                ItemModifiers = itemModifiers;
 
                 // Add the internal short name
                 ItemMetadata["short_item_name"] = string.Join("", metadata["name"].Split(default(string[]), StringSplitOptions.RemoveEmptyEntries));
 
                 // Add universal defaults
-                if (!ItemToggles.ContainsKey("enabled")) { ItemToggles.Add("enabled", true); }
-                if (!ItemToggles.ContainsKey("craftable")) { ItemToggles.Add("craftable", true); }
+                if (!ItemToggles.ContainsKey(common.ItemToggles.enabled)) { ItemToggles.Add(common.ItemToggles.enabled, true); }
+                if (!ItemToggles.ContainsKey(common.ItemToggles.craftable)) { ItemToggles.Add(common.ItemToggles.craftable, true); }
                 if (!ItemSettings.ContainsKey("stationRequiredLevel")) { ItemSettings.Add("stationRequiredLevel", 1); }
 
                 // Init and load configuration values
                 InitItemConfigs();
 
                 // Skip this item if the configuration is set to disable it (only checked on startup)
-                if (ItemToggles["enabled"] == false) {
+                if (ItemToggles[common.ItemToggles.enabled] == false) {
                     // Remove items that are not known
                     // This case is generally hit when there is a disconnect between what the client knows and the server knows as added items
                     ItemManager.Instance.RemoveItem(ItemMetadata["prefab"]);
@@ -170,10 +202,10 @@ namespace ValheimArmory.common
             {
                 // Populate defaults if they don't exist
                 // Enabling/Disabling the item is ONLY done at startup, not on the fly
-                ItemToggles["enabled"] = VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-enabled", ItemToggles["enabled"], $"Enable/Disable the {ItemMetadata["name"]}.").Value;
+                ItemToggles[common.ItemToggles.enabled] = VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-enabled", ItemToggles[common.ItemToggles.enabled], $"Enable/Disable the {ItemMetadata["name"]}.").Value;
                 // Set the item to be craftable or not.
-                CraftableConfig = VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-craftable", ItemToggles["craftable"], $"Enable/Disable the crafting recipe for {ItemMetadata["name"]}.");
-                ItemToggles["craftable"] = CraftableConfig.Value;
+                CraftableConfig = VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-craftable", ItemToggles[common.ItemToggles.craftable], $"Enable/Disable the crafting recipe for {ItemMetadata["name"]}.");
+                ItemToggles[common.ItemToggles.craftable] = CraftableConfig.Value;
                 CraftableConfig.SettingChanged += RecipeConfig_SettingChanged;
                 // Set crafting station level required
                 StationRequiredLevel = VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-stationRequiredLevel", ItemSettings["stationRequiredLevel"], $"Sets the required minimum crafting station level to craft {ItemMetadata["name"]}", true, 1, 4);
@@ -184,6 +216,17 @@ namespace ValheimArmory.common
                 CraftedAt = VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-CraftedAt", ItemMetadata["craftedAt"], $"Where the recipe is crafted at, eg: 'forge', 'piece_workbench', 'blackforge', 'piece_artisanstation'.");
                 ItemMetadata["craftedAt"] = CraftedAt.Value;
                 CraftedAt.SettingChanged += RecipeConfig_SettingChanged;
+
+                foreach (KeyValuePair<HitData.DamageType, HitData.DamageModifier> entry in ItemModifiers)
+                {
+                    // Skip this entry if the flag is set for it to be disabled, it is not configurable
+                    ItemModifiersConfigs.Add(entry.Key, VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-{entry.Key}-DamageModifier", entry.Value.ToString(), $"Sets a damage modifer for {ItemMetadata["short_item_name"]} to the damage type {entry.Key.ToString()}", true, allowedModifiers));
+                }
+                // Wire up the event watch
+                foreach (KeyValuePair<HitData.DamageType, ConfigEntry<string>> itc_entry in ItemModifiersConfigs)
+                {
+                    itc_entry.Value.SettingChanged += ItemModifierConfig_SettingChanged;
+                }
 
                 // Setup Item config modifiers
                 foreach (KeyValuePair<ItemStat, Tuple<float, float, float, bool>> entry in ItemData)
@@ -198,8 +241,6 @@ namespace ValheimArmory.common
                     {
                         ItemDataConfigs.Add(entry.Key.ToString(), VAConfig.BindServerConfig($"{ItemMetadata["catagory"]} - {ItemMetadata["name"]}", $"{ItemMetadata["short_item_name"]}-{entry.Key}", entry.Value.Item1, $"{entry.Key} ({entry.Value.Item2}-{entry.Value.Item3}) Value", true, entry.Value.Item2, entry.Value.Item3));
                     }
-                    
-                    
                 }
                 // Wire up the event watch
                 foreach (KeyValuePair<string, ConfigEntry<float>> idc_entry in ItemDataConfigs)
@@ -230,7 +271,7 @@ namespace ValheimArmory.common
                     Amount = craftedAmountDefault,
                     CraftingStation = $"{ItemMetadata["craftedAt"]}",
                     MinStationLevel = ItemSettings["stationRequiredLevel"],
-                    Enabled = ItemToggles["craftable"],
+                    Enabled = ItemToggles[common.ItemToggles.craftable],
                     Icons = new[] { ItemSprite },
                     Requirements = recipe
                 };
@@ -239,10 +280,16 @@ namespace ValheimArmory.common
                 ItemRecipeName = itemcfg.GetRecipe().name;
                 ItemCI = ItemManager.Instance.GetItem(ItemPrefab.gameObject.name);
                 nview = ItemPrefab.gameObject.GetComponent<ZNetView>();
+                // Apply all item stat changes and damage modifiers
                 foreach (KeyValuePair<string, ConfigEntry<float>> idc_entry in ItemDataConfigs)
                 {
                     // Run an attribute update once we have a config value bound & the item exists
                     ItemConfigModifier((ItemStat)Enum.Parse(typeof(ItemStat), idc_entry.Key), ItemDataConfigs[idc_entry.Key].Value, ItemCI.ItemDrop);
+                }
+                foreach (KeyValuePair<HitData.DamageType, ConfigEntry<string>> tmc_entry in ItemModifiersConfigs)
+                {
+                    HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), tmc_entry.Value.Value);
+                    SetItemDamageModifier(modifier, tmc_entry.Key, ItemCI.ItemDrop.m_itemData);
                 }
             }
 
@@ -292,7 +339,6 @@ namespace ValheimArmory.common
                     }
                 }
                 if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Finished modifying ItemConfig setting."); }
-
             }
 
 
@@ -349,7 +395,7 @@ namespace ValheimArmory.common
 
                 if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo("Checking craftable toggle."); }
                 // Enable/disable recipe
-                if (ItemToggles["craftable"])
+                if (ItemToggles[common.ItemToggles.craftable])
                 {
                     if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo("Updating Recipe."); }
                     // Add the recipe
@@ -448,9 +494,6 @@ namespace ValheimArmory.common
                 }
             }
 
-
-
-
             private void CreateAndUpdateRecipe()
             {
                 // default recipe config
@@ -472,6 +515,63 @@ namespace ValheimArmory.common
             private void ItemConfigModifier(ItemStat target_attribute, float updatedValue, ItemDrop itemDropScript)
             {
                 ItemDataConfigModifier(target_attribute, updatedValue, itemDropScript.m_itemData);
+            }
+
+            private void ItemModifierConfig_SettingChanged(object sender, EventArgs e)
+            {
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"ItemModifierConfig Triggered."); }
+                ConfigEntry<string> sendEntry = (ConfigEntry<string>)sender;
+                String target_attribute = sendEntry.Definition.Key.Split('-')[1];
+                HitData.DamageType type = (HitData.DamageType)Enum.Parse(typeof(HitData.DamageType), target_attribute);
+                HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), sendEntry.Value);
+                SetItemDamageModifier(modifier, type, ItemCI.ItemDrop.m_itemData);
+
+                // Get and update all of the in-scene game objects
+                IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(ItemMetadata["prefab"]));
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Found in scene objects: {objects.Count()}"); }
+                foreach (GameObject go in objects)
+                {
+                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Found {go.name}"); }
+                    ItemDrop id = null;
+                    if (go.TryGetComponent<ItemDrop>(out id))
+                    {
+                        if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{go.name} updating attribute {target_attribute}"); }
+                        SetItemDamageModifier(modifier, type, id.m_itemData);
+                    }
+                    else
+                    {
+                        if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{go.name} does not have an itemdrop and will not be updated in-place"); }
+                    }
+
+                }
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Checking for the local player."); }
+                // we don't update the backpack items if the znet isn't valid, because they will get updated from the parent item
+                if ((bool)nview && Player.m_localPlayer != null)
+                {
+                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Modifying items within the players inventory."); }
+                    // Update all instances that are in the backpack
+                    foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
+                    {
+                        if (user_item == null) { continue; }
+                        if (user_item.m_dropPrefab.name != ItemMetadata["prefab"]) { continue; }
+
+                        if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{user_item.m_shared.m_name} found in the players backpack, updating."); }
+                        SetItemDamageModifier(modifier, type, user_item);
+                    }
+                }
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Finished modifying ItemDamageModifier setting."); }
+            }
+
+            private void SetItemDamageModifier(HitData.DamageModifier modifier, HitData.DamageType type, ItemDrop.ItemData itemData)
+            {
+                List<HitData.DamageModPair> temp = itemData.m_shared.m_damageModifiers.Where(entry => entry.m_type != type).ToList();
+                if (temp.Count == 0) {
+                    itemData.m_shared.m_damageModifiers.Clear();
+                    itemData.m_shared.m_damageModifiers.Add(new HitData.DamageModPair() { m_modifier = modifier, m_type = type } );
+                } else {
+                    temp.Add(new HitData.DamageModPair() { m_modifier = modifier, m_type = type });
+                    itemData.m_shared.m_damageModifiers = temp;
+                }
             }
 
             private void ItemDataConfigModifier(ItemStat target_attribute, float updatedValue, ItemDrop.ItemData itemData)

@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "ขวานทองแดง",
   "item_dual_axes_bronze_description": "สองใบมีความสนุกสองเท่า และต้นไม้กลัวคุณ",
   "item_dual_axes_iron": "ขวานเหล็กคู่",
-  "item_dual_axes_iron_description": "ไม่มีอะไรสามารถหยุดนักฝ่าฝืนไวกิ้งที่โกรธมากพร้อมมีขวานในแต่ละมือได้เลยครับ "
+  "item_dual_axes_iron_description": "ไม่มีอะไรสามารถหยุดนักฝ่าฝืนไวกิ้งที่โกรธมากพร้อมมีขวานในแต่ละมือได้เลยครับ ",
+  "item_crystal_axe": "เอกของคริสตัล",
+  "item_crystal_axe_description": "ความตายที่เป็นผลลัพธ์จากการแข็งตัว",
+  "item_dual_axes_crystal": "คริสตัลดูแอกเซส",
+  "item_dual_axes_crystal_description": "คมดวงคมของคริสตัล ส่องแสง ส่องแสง ความตาย",
+  "item_dual_axes_blackmetal": "ดับเบิ้ลแอ๊กซ์สีดำ",
+  "item_dual_axes_blackmetal_description": "สะท้อนแสงและมืดเหมือนคืนที่ไม่มีที่สิ้นสุด",
+  "item_blackmetal_2h_axe": " in Thai is ดาบใหญ่ทำจากโลหะสีดำ",
+  "item_blackmetal_2h_axe_description": "คมในแสงส่องแสง ลมพัดของความมืด",
+  "item_dual_axes_jotun": " ดาบคู่ของยอตัน",
+  "item_dual_axes_jotun_description": "สองเท่าพิษ สองเท่าความเจ็บปวด!",
+  "item_jotun_2h_axe": " ของเล็ก",
+  "item_jotun_2h_axe_description": "นักฆ่ายักษ์แท้ ไม่มีสิ่งใดที่รอดจากการกัดของมัน"
 }

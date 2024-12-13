@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Brons tvöfaldarar",
   "item_dual_axes_bronze_description": "Tveir eggjar, tvöföld gaman, og tré hræðast þig.",
   "item_dual_axes_iron": "Járn tvöfaldar öxi",
-  "item_dual_axes_iron_description": "Lítið getur staðist reiði víkinga með öxi í hvorri hendi.Tak."
+  "item_dual_axes_iron_description": "Lítið getur staðist reiði víkinga með öxi í hvorri hendi.Tak.",
+  "item_crystal_axe": "Kristal-øxi",
+  "item_crystal_axe_description": "Kristal dauði.",
+  "item_dual_axes_crystal": "Kristal tvíöxlar",
+  "item_dual_axes_crystal_description": "Tvísköflur úr kristalli, skínandi, skjóðandi, dauði.",
+  "item_dual_axes_blackmetal": "Blackmetal tvíeggja saxar",
+  "item_dual_axes_blackmetal_description": "Skínandi og dökkt, eins og ævinlega nóttin.",
+  "item_blackmetal_2h_axe": "Svartmálm stórköstðagaaxe",
+  "item_blackmetal_2h_axe_description": "Tvískauta skína í ljósi, hvirfilbylur myrkursins.",
+  "item_dual_axes_jotun": "Tvíöxla Jotna",
+  "item_dual_axes_jotun_description": "Tvisvar eitur, tvisvar sársauki!Tvisvar eitur, tvisvar sársauki!",
+  "item_jotun_2h_axe": "Jötunn bardagi-øxi",
+  "item_jotun_2h_axe_description": "Eiginlegur risabana, ekkert lifir eftir bit.Takk fyrir beiðnin."
 }

@@ -4,6 +4,7 @@
 // Project: ValheimArmory
 
 using BepInEx;
+using BepInEx.Configuration;
 using HarmonyLib;
 using Jotunn.Entities;
 using Jotunn.Managers;
@@ -24,7 +25,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.17.2";
+        public const string PluginVersion = "1.18.0";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -46,11 +47,12 @@ namespace ValheimArmory
             AddLocalizations();
             // UnloadAssets();
 
-            // Modify vanilla weapons
+            // extra Modifying Weapon configurations
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.SetupEffects;
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaHammersToWarhammers;
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaKnife;
             VAConfig.VanillaHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyHammers;
+            VAConfig.ModHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyModHammers;
             VAConfig.VanillaAbyssalKnifeBluntDamageConvert.SettingChanged += WeaponModifier.OnConfigChangeModifyVanillaKnife;
 
             Assembly assembly = Assembly.GetExecutingAssembly();

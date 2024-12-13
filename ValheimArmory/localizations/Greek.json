@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Χάλκινες διπλές τσεκούρια",
   "item_dual_axes_bronze_description": "Δύο λεπίδες, διπλάσια διασκέδαση, και οι δέντρα σε φοβούνται.",
   "item_dual_axes_iron": "Σιδερές διπλές τσεκούρια",
-  "item_dual_axes_iron_description": "Λίγα μπορούν να σταθούν στον δρόμο ενός οργισμένου Βίκινγκ με ένα τσεκούρι σε κάθε χέρι."
+  "item_dual_axes_iron_description": "Λίγα μπορούν να σταθούν στον δρόμο ενός οργισμένου Βίκινγκ με ένα τσεκούρι σε κάθε χέρι.",
+  "item_crystal_axe": "Κρυστάλλινη τσεκούρι",
+  "item_crystal_axe_description": "Κρυστάλλινος θάνατος.",
+  "item_dual_axes_crystal": "Κρυστάλλινοι διπλοί άξονες",
+  "item_dual_axes_crystal_description": "Δίδυμες λεπίδες κρυστάλλου, λαμπερές, λαμπυρίζουσες, θάνατος.",
+  "item_dual_axes_blackmetal": "Διπλές αξίνες Blackmetal",
+  "item_dual_axes_blackmetal_description": "Λαμπερό και σκοτεινό, σαν την αιώνια νύχτα.",
+  "item_blackmetal_2h_axe": "Μαύρη μεγάλη αξίνα μπλακμέταλ",
+  "item_blackmetal_2h_axe_description": "Δίκοπα άκρα λάμπουν στο φως, ένας σίγουρος τυφώνας του σκοταδιού.",
+  "item_dual_axes_jotun": "Διπλές αξίνες των Γίγαντων",
+  "item_dual_axes_jotun_description": "Διπλά το δηλητήριο, διπλά ο πόνος!",
+  "item_jotun_2h_axe": "Πολεμική σφυρίτσα Jotun",
+  "item_jotun_2h_axe_description": "Ένας αληθινός δολοφόνος γιγάντων, τίποτα δεν επιζεί μετά το δάγκωμά του."
 }

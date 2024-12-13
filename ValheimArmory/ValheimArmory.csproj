@@ -140,7 +140,9 @@
     </BuildDependsOn>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetDir)$(TargetFileName)" "C:\Users\carls\AppData\Roaming\r2modmanPlus-local\Valheim\profiles\Modtest\BepInEx\plugins" /y /i /q</PostBuildEvent>
+    <PostBuildEvent>xcopy "$(TargetDir)$(TargetFileName)" "C:\Users\carls\AppData\Roaming\r2modmanPlus-local\Valheim\profiles\Modtest\BepInEx\plugins" /y /i /q
+
+xcopy "$(TargetDir)$(TargetFileName)" "C:\Users\carls\AppData\Roaming\com.kesomannen.gale\valheim\profiles\Modtest\BepInEx\plugins" /y /i /q</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>xcopy "C:\Users\carls\Documents\projects\Valheim_Stuff\Unity_Valheim_mod_data\JotunnModUnity\AssetBundles\StandaloneWindows\vabundle" "$(ProjectDir)\AssetsEmbedded\vabundle" /q /y /i

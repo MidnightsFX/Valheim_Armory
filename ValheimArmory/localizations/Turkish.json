@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Bronz çift balta",
   "item_dual_axes_bronze_description": "Iki bıçak, iki kat eğlence ve ağaçlar seni korkar.",
   "item_dual_axes_iron": "Demir çifte baltalar",
-  "item_dual_axes_iron_description": "Öfkeli bir Viking'in her elinde bir balta ile önünde pek az şey durabilir.Anlamak anlayışınız için teşekkür ederim. Bu konuyla ilgili başka bir şey var mı?"
+  "item_dual_axes_iron_description": "Öfkeli bir Viking'in her elinde bir balta ile önünde pek az şey durabilir.Anlamak anlayışınız için teşekkür ederim. Bu konuyla ilgili başka bir şey var mı?",
+  "item_crystal_axe": "Kristal balta",
+  "item_crystal_axe_description": "Kristal ölüm.Kristal ölüm.",
+  "item_dual_axes_crystal": "Kristal çift eksenler",
+  "item_dual_axes_crystal_description": "Kristalın ikiz bıçakları, parlayan, parıldayan, ölüm.",
+  "item_dual_axes_blackmetal": "Blackmetal çift balta",
+  "item_dual_axes_blackmetal_description": "Parıldayan ve karanlık, sanki sonsuz gece.",
+  "item_blackmetal_2h_axe": "Kara metal büyük balta",
+  "item_blackmetal_2h_axe_description": "Çift kenarlar ışıkta parıldar, bir karanlığın girdabı.",
+  "item_dual_axes_jotun": "Jotunların çift baltaları",
+  "item_dual_axes_jotun_description": "İki kat zehir, iki kat acı!",
+  "item_jotun_2h_axe": "Jotun savaş balta",
+  "item_jotun_2h_axe_description": "Gerçek bir dev öldürücü, ısırığından hiçbir şey kurtulamaz."
 }

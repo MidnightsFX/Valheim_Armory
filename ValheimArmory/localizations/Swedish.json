@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Brons dubbelyxor",
   "item_dual_axes_bronze_description": "Två blad, dubbelt så roligt, och träden fruktar dig.",
   "item_dual_axes_iron": "Järndubbelyxor",
-  "item_dual_axes_iron_description": "Litet kan stå i vägen för en rasande viking med en yxa i varje hand.Jag hoppas verkligen att jag aldrig hamnar i den situationen!"
+  "item_dual_axes_iron_description": "Litet kan stå i vägen för en rasande viking med en yxa i varje hand.Jag hoppas verkligen att jag aldrig hamnar i den situationen!",
+  "item_crystal_axe": "Kristall yxa",
+  "item_crystal_axe_description": "Kristallin död.",
+  "item_dual_axes_crystal": "Kristall dubbelyxar",
+  "item_dual_axes_crystal_description": "Tvillingblad av kristall, skinande, skimrande, död.",
+  "item_dual_axes_blackmetal": "svartmetall dubbla yxor",
+  "item_dual_axes_blackmetal_description": "Skimrande och mörk, som den eviga natten.",
+  "item_blackmetal_2h_axe": "Svartmetall stort yxa",
+  "item_blackmetal_2h_axe_description": "Dubbla kanter glittrar i ljuset, en virvelvind av mörker.",
+  "item_dual_axes_jotun": "Jotuns dubbelyxor",
+  "item_dual_axes_jotun_description": "Dubbelt så gift, dubbelt så mycket smärta!",
+  "item_jotun_2h_axe": "Jotun stridshammare",
+  "item_jotun_2h_axe_description": "En sann jättespelare, inget överlever dess bett."
 }

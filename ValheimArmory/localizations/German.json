@@ -216,5 +216,17 @@
   "item_dual_axes_flint_description": "Zwei Äxte sind tödlicher als eine! Wer braucht schon Block.",
   "item_dual_axes_iron": "Eiserne Doppeläxte",
   "item_dual_axes_iron_description": "Wenig steht im Weg eines aufgebrachten Wikingers mit einer Axt in jeder Hand.",
-  "item_moder_shield": "Moders Schild"
+  "item_moder_shield": "Moders Schild",
+  "item_crystal_axe": "Kristallaxt",
+  "item_crystal_axe_description": "Kristalliner Tod.",
+  "item_dual_axes_crystal": "Kristall-Doppeläxte",
+  "item_dual_axes_crystal_description": "Zwillingsschwerter aus Kristall, glänzend, schimmernd, Tod.",
+  "item_dual_axes_blackmetal": "Schwarzes Metall-Doppeläxte",
+  "item_dual_axes_blackmetal_description": "Schimmernd und dunkel, wie die ewige Nacht.",
+  "item_blackmetal_2h_axe": "Schwarze Metallkriegsaxt",
+  "item_blackmetal_2h_axe_description": "Doppelkanten glänzen im Licht, ein Wirbelwind der Dunkelheit.",
+  "item_dual_axes_jotun": "Jotuns doppelte Äxte",
+  "item_dual_axes_jotun_description": "Zweimal das Gift, zweimal der Schmerz!",
+  "item_jotun_2h_axe": "Jotun Streitaxt",
+  "item_jotun_2h_axe_description": "Ein wahrer Riesenbezwinger, nichts überlebt seinen Biss."
 }

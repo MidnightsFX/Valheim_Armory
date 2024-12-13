@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Бронзени двојни секири",
   "item_dual_axes_bronze_description": "Dvete sekiri, dvojno zabava, i drvetata se plašat od tebe.",
   "item_dual_axes_iron": "„Железни двојни секири",
-  "item_dual_axes_iron_description": "Малку може да стои на патот на разјарениот викинг со секира во секоја рака.Малку може да стои на патот на разјарениот викинг со секира во секоја рака."
+  "item_dual_axes_iron_description": "Малку може да стои на патот на разјарениот викинг со секира во секоја рака.Малку може да стои на патот на разјарениот викинг со секира во секоја рака.",
+  "item_crystal_axe": "Кристална секира",
+  "item_crystal_axe_description": "Кристална смрт.",
+  "item_dual_axes_crystal": "Кристални двојни острица",
+  "item_dual_axes_crystal_description": "Близначки сечила од кристал, сјаење, треперење, смрт.",
+  "item_dual_axes_blackmetal": "Црнметални двојни секири",
+  "item_dual_axes_blackmetal_description": "Блескаво и темно, како вечната ноќ.",
+  "item_blackmetal_2h_axe": "Црнметална велика секира",
+  "item_blackmetal_2h_axe_description": "Близанци рубови блескаат во светлината, вихор на темнина.",
+  "item_dual_axes_jotun": "Јотунс двојни секири",
+  "item_dual_axes_jotun_description": "Двојно отров, двојно болка!",
+  "item_jotun_2h_axe": "Јотун боен секира",
+  "item_jotun_2h_axe_description": "Вистинскиот убиец на гиганти, ништо не преживува неговиот удар."
 }

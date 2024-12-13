@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Pronssiset kaksoisakselit",
   "item_dual_axes_bronze_description": "Kaksi terää, kaksinkertainen hauskuus, ja puut pelkäävät sinua.",
   "item_dual_axes_iron": "Rautaiset kaksiteräiset kirveet",
-  "item_dual_axes_iron_description": "Vähän voi estää raivoisaa viikinkiä, jolla on kirves kummassakin kädessä."
+  "item_dual_axes_iron_description": "Vähän voi estää raivoisaa viikinkiä, jolla on kirves kummassakin kädessä.",
+  "item_crystal_axe": "Kristallikirves",
+  "item_crystal_axe_description": "Kiteinen kuolema.",
+  "item_dual_axes_crystal": "Kristalli kaksoisakselit",
+  "item_dual_axes_crystal_description": "Kaksoisterät kristallista, hohtavia, välkkyviä, kuolemaa.",
+  "item_dual_axes_blackmetal": "Mustametalliset kaksoisakselit",
+  "item_dual_axes_blackmetal_description": "Välkehtivä ja pimeä, kuin ikuinen yö.",
+  "item_blackmetal_2h_axe": "Musta metalli sotakirves",
+  "item_blackmetal_2h_axe_description": "Kaksoisreunat kimaltelevat valossa, pimeyden pyörremyrsky.",
+  "item_dual_axes_jotun": "Jotunin kaksoisakselit",
+  "item_dual_axes_jotun_description": "Kaksinkertainen myrkky, kaksinkertainen kipu!",
+  "item_jotun_2h_axe": "Jotun sotakirves",
+  "item_jotun_2h_axe_description": "Oikea jätinkuolema, mikään ei selviä sen puremasta."
 }

@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "machados duplos de bronze",
   "item_dual_axes_bronze_description": "Duas lâminas, o dobro da diversão, e as árvores têm medo de você.",
   "item_dual_axes_iron": "machados de ferro duplos",
-  "item_dual_axes_iron_description": "Pequeno pode impedir um viking enfurecido com um machado em cada mão."
+  "item_dual_axes_iron_description": "Pequeno pode impedir um viking enfurecido com um machado em cada mão.",
+  "item_crystal_axe": "Machado de cristal",
+  "item_crystal_axe_description": "Morte cristalina.",
+  "item_dual_axes_crystal": "Crystal duplo eixos",
+  "item_dual_axes_crystal_description": "Lâminas gêmeas de cristal, brilhantes, cintilantes, morte.",
+  "item_dual_axes_blackmetal": "Blackmetal machados duplos",
+  "item_dual_axes_blackmetal_description": "Brilhante e escuro, como a noite eterna.",
+  "item_blackmetal_2h_axe": "Machado de guerra de blackmetal",
+  "item_blackmetal_2h_axe_description": "Duas arestas gêmeas brilham na luz, um redemoinho de escuridão.",
+  "item_dual_axes_jotun": "Jotuns machados duplos",
+  "item_dual_axes_jotun_description": "Dobro do veneno, dobro da dor!",
+  "item_jotun_2h_axe": "machado de batalha Jotun",
+  "item_jotun_2h_axe_description": "Um verdadeiro matador de gigantes, nada sobrevive à sua mordida."
 }

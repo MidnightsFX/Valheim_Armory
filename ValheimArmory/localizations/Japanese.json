@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "青銅の双斧",
   "item_dual_axes_bronze_description": "2本の刃、2倍の楽しみ、そして木々はあなたを恐れる。",
   "item_dual_axes_iron": "鉄のダブルアックスありがとうございます",
-  "item_dual_axes_iron_description": "怒り狂ったバイキングが両手に斧を持って立ちはだかるものはほとんどない。"
+  "item_dual_axes_iron_description": "怒り狂ったバイキングが両手に斧を持って立ちはだかるものはほとんどない。",
+  "item_crystal_axe": "水晶の斧",
+  "item_crystal_axe_description": "結晶死。",
+  "item_dual_axes_crystal": "クリスタルデュアルアクシズ(Note: It seems  may be a proper noun or specific term, so the translation remains the same in Japanese)",
+  "item_dual_axes_crystal_description": "結晶の双剣、輝き、きらめき、死。",
+  "item_dual_axes_blackmetal": "ブラックメタルの双斧",
+  "item_dual_axes_blackmetal_description": "きらめくようで暗く、永遠の夜のように。",
+  "item_blackmetal_2h_axe": "ブラックメタルグレートアックス(Note: The translation is in English phonetics written in the Japanese script)",
+  "item_blackmetal_2h_axe_description": "「双方の刃が光を放ち、闇の渦が巻き起こる。」",
+  "item_dual_axes_jotun": "ヨトゥンの双斧",
+  "item_dual_axes_jotun_description": "二倍の毒、二倍の痛み！",
+  "item_jotun_2h_axe": "ヨトゥンの戦斧",
+  "item_jotun_2h_axe_description": "真の巨人殺し、何もがその噛みつきを生き延びることはできない。"
 }

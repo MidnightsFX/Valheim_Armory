@@ -8,6 +8,7 @@ using Logger = Jotunn.Logger;
 
 namespace ValheimArmory.common
 {
+
     internal static class WeaponModifier
     {
         static GameObject vfx_sledge_hit;
@@ -18,6 +19,34 @@ namespace ValheimArmory.common
         static GameObject vfx_clubhit;
         static GameObject sfx_clubhit;
 
+        internal class WeaponAttackData
+        {
+            public Attack primary_attack { get; set; }
+            public Attack secondary_attack { get; set; }
+        }
+
+        static Dictionary<String, WeaponAttackData> OriginalWeaponAttackCache = new Dictionary<String, WeaponAttackData>();
+
+        internal static WeaponAttackData CheckForWeaponData(string weapon_name)
+        {
+            if (OriginalWeaponAttackCache.ContainsKey(weapon_name))
+            {
+                return OriginalWeaponAttackCache[weapon_name];
+            }
+
+            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_name));
+            foreach (GameObject obj in objects)
+            {
+                ItemDrop id = null;
+                if (obj.TryGetComponent<ItemDrop>(out id))
+                {
+                    OriginalWeaponAttackCache.Add(weapon_name, new WeaponAttackData() { primary_attack = id.m_itemData.m_shared.m_attack, secondary_attack = id.m_itemData.m_shared.m_secondaryAttack });
+                    // We just need to at this one
+                    break;
+                }
+            }
+            return OriginalWeaponAttackCache[weapon_name];
+        }
 
         public static void SetupEffects()
         {
@@ -251,6 +280,38 @@ namespace ValheimArmory.common
             }
         }
 
+
+        public static void SetWeaponPrimaryAndSecondary(string weapon_prefab, Attack primary, Attack secondary)
+        {
+            // This ensures modifications of clones also
+            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
+
+            foreach (GameObject obj in objects)
+            {
+                ItemDrop id = null;
+                if (obj.TryGetComponent<ItemDrop>(out id))
+                {
+                    id.m_itemData.m_shared.m_attack = primary;
+                    id.m_itemData.m_shared.m_secondaryAttack = secondary;
+                }
+            }
+
+            if (Player.m_localPlayer != null)
+            {
+                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Modifying items within the players inventory."); }
+                // Update all instances that are in the backpack
+                foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
+                {
+                    if (user_item == null) { continue; }
+                    if (user_item.m_dropPrefab.name != weapon_prefab) { continue; }
+
+                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{user_item.m_shared.m_name} found in the players backpack, updating."); }
+                    user_item.m_shared.m_attack = primary;
+                    user_item.m_shared.m_secondaryAttack = secondary;
+                }
+            }
+        }
+
         public static void ModifyVanillaHammersToWarhammers()
         {
             if (VAConfig.VanillaHammersHavePrimaryAttack.Value)
@@ -268,14 +329,49 @@ namespace ValheimArmory.common
             ToSledge("SledgeDemolisher", 28);
         }
 
+        public static void ModifyModHammersToSledges()
+        {
+            SetWeaponPrimaryAndSecondary("VAflametal_sledge_nature", CheckForWeaponData("VAflametal_sledge_nature").secondary_attack, new Attack());
+            SetWeaponPrimaryAndSecondary("VAflametal_sledge_lightning", CheckForWeaponData("VAflametal_sledge_lightning").secondary_attack, new Attack());
+            SetWeaponPrimaryAndSecondary("VAflametal_sledge_blood", CheckForWeaponData("VAflametal_sledge_blood").secondary_attack, new Attack());
+            SetWeaponPrimaryAndSecondary("VAflametal_sledge", CheckForWeaponData("VAflametal_sledge").secondary_attack, new Attack());
+            SetWeaponPrimaryAndSecondary("VAblackmetal_sledge", CheckForWeaponData("VAblackmetal_sledge").secondary_attack, new Attack());
+            SetWeaponPrimaryAndSecondary("VAElderHammer", CheckForWeaponData("VAElderHammer").secondary_attack, new Attack());
+            SetWeaponPrimaryAndSecondary("VABronzeSledge", CheckForWeaponData("VABronzeSledge").secondary_attack, new Attack());
+            SetWeaponPrimaryAndSecondary("VABonemassWarhammer", CheckForWeaponData("VABonemassWarhammer").secondary_attack, new Attack());
+            SetWeaponPrimaryAndSecondary("VASilverSledge", CheckForWeaponData("VASilverSledge").secondary_attack, new Attack());
+        }
+
+        public static void ModifyModHammersToWarhammers()
+        {
+            SetWeaponPrimaryAndSecondary("VAflametal_sledge_nature", CheckForWeaponData("VAflametal_sledge_nature").primary_attack, CheckForWeaponData("VAflametal_sledge_nature").secondary_attack);
+            SetWeaponPrimaryAndSecondary("VAflametal_sledge_lightning", CheckForWeaponData("VAflametal_sledge_lightning").primary_attack, CheckForWeaponData("VAflametal_sledge_lightning").secondary_attack);
+            SetWeaponPrimaryAndSecondary("VAflametal_sledge_blood", CheckForWeaponData("VAflametal_sledge_blood").primary_attack, CheckForWeaponData("VAflametal_sledge_blood").secondary_attack);
+            SetWeaponPrimaryAndSecondary("VAflametal_sledge", CheckForWeaponData("VAflametal_sledge").primary_attack, CheckForWeaponData("VAflametal_sledge").secondary_attack);
+            SetWeaponPrimaryAndSecondary("VAblackmetal_sledge", CheckForWeaponData("VAblackmetal_sledge").primary_attack, CheckForWeaponData("VAblackmetal_sledge").secondary_attack);
+            SetWeaponPrimaryAndSecondary("VAElderHammer", CheckForWeaponData("VAElderHammer").primary_attack, CheckForWeaponData("VAElderHammer").secondary_attack);
+            SetWeaponPrimaryAndSecondary("VABronzeSledge", CheckForWeaponData("VABronzeSledge").primary_attack, CheckForWeaponData("VABronzeSledge").secondary_attack);
+            SetWeaponPrimaryAndSecondary("VABonemassWarhammer", CheckForWeaponData("VABonemassWarhammer").primary_attack, CheckForWeaponData("VABonemassWarhammer").secondary_attack);
+            SetWeaponPrimaryAndSecondary("VASilverSledge", CheckForWeaponData("VASilverSledge").primary_attack, CheckForWeaponData("VASilverSledge").secondary_attack);
+        }
+
         public static void OnConfigChangeModifyHammers(object sender, EventArgs e)
         {
             if (VAConfig.VanillaHammersHavePrimaryAttack.Value)
             {
                 ModifyVanillaHammersToWarhammers();
-            } else
-            {
+            } else {
                 ModifyVanillaHammersToSledges();
+            }
+        }
+
+        public static void OnConfigChangeModifyModHammers(object sender, EventArgs e)
+        {
+            if (VAConfig.ModHammersHavePrimaryAttack.Value)
+            {
+                ModifyModHammersToWarhammers();
+            } else {
+                ModifyModHammersToSledges();
             }
         }
 

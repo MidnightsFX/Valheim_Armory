@@ -216,5 +216,17 @@
   "item_dual_axes_bronze": "Bronze doubleaxes",
   "item_dual_axes_bronze_description": "Two blades, twice the fun, and trees fear you.",
   "item_dual_axes_iron": "Iron doubleaxes",
-  "item_dual_axes_iron_description": "Little can stand in the way of an enraged viking with an axe in each hand."
+  "item_dual_axes_iron_description": "Little can stand in the way of an enraged viking with an axe in each hand.",
+  "item_crystal_axe": "Crystal axe",
+  "item_crystal_axe_description": "Crystalline death.",
+  "item_dual_axes_crystal": "Crystal dualaxes",
+  "item_dual_axes_crystal_description": "Twin blades of crystal, shining, shimmering, death.",
+  "item_dual_axes_blackmetal": "Blackmetal dualaxes",
+  "item_dual_axes_blackmetal_description": "Shimmering and dark, like the eternal night.",
+  "item_blackmetal_2h_axe": "Blackmetal greataxe",
+  "item_blackmetal_2h_axe_description": "Twin edges glisten in the light, a whirlwind of darkness.",
+  "item_dual_axes_jotun": "Jotuns dualaxes",
+  "item_dual_axes_jotun_description": "Twice the poison, twice the pain!",
+  "item_jotun_2h_axe": "Jotun battleaxe",
+  "item_jotun_2h_axe_description": "A true giant slayer, nothing survives its bite."
 }
