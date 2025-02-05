@@ -16,11 +16,6 @@ namespace ValheimArmory
         // constructor, add all items on init
         public ValheimArmoryItems()
         {
-            if (VAConfig.EnableDebugMode.Value == true)
-            {
-                Logger.LogInfo("Loading Items.");
-            }
-
             LoadArrows();
             LoadBows();
             LoadSwords();
@@ -39,16 +34,17 @@ namespace ValheimArmory
 
         private void LoadArrows()
         {
+            Logger.LogInfo("Loading Arrows");
             // Greenmetal Arrows					forge lvl 3
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Black Metal Arrow" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VAArrowGreenMetal" },
-                    { "sprite", "arrow_greenmetal" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Black Metal Arrow" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VAArrowGreenMetal" },
+                    { ItemMetadata.sprite, "arrow_greenmetal" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(52, 0, 200, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(26, 0, 200, true) }
@@ -59,22 +55,22 @@ namespace ValheimArmory
                     { "BlackMetal", new Tuple<int, int>(2, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Bone Arrows							workbench lvl 3(obsidian)
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bone Arrow" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VAArrowBone" },
-                    { "sprite", "bone_arrow" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bone Arrow" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VAArrowBone" },
+                    { ItemMetadata.sprite, "bone_arrow" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(32, 0, 200, true) }
                 },
@@ -83,22 +79,22 @@ namespace ValheimArmory
                     { "BoneFragments", new Tuple<int, int>(8, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Surtling Fire Arrow					workbench lvl 3
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Surtling Fire Arrow" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VAarrow_surtling_fire" },
-                    { "sprite", "surtlingcore_arrow" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Surtling Fire Arrow" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VAarrow_surtling_fire" },
+                    { ItemMetadata.sprite, "surtlingcore_arrow" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.fire, new Tuple<float, float, float, bool>(52, 0, 200, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(26, 0, 200, true) }
@@ -110,22 +106,22 @@ namespace ValheimArmory
                     { "Feathers", new Tuple<int, int>(2, 0) },
                     { "SurtlingCore", new Tuple<int, int>(1, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Ancient Wood Arrow					workbench lvl 3
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Ancient Wood Arrow" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VAarrowancient" },
-                    { "sprite", "ancient_arrow" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Ancient Wood Arrow" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VAarrowancient" },
+                    { ItemMetadata.sprite, "ancient_arrow" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(37, 0, 200, true) }
                 },
@@ -134,22 +130,22 @@ namespace ValheimArmory
                     { "ElderBark", new Tuple<int, int>(8, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Chitin Arrow							workbench lvl 3
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Chitin Arrow" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VAchitinarrow" },
-                    { "sprite", "arrow_chitin" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Chitin Arrow" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VAchitinarrow" },
+                    { ItemMetadata.sprite, "arrow_chitin" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(12, 0, 200, true) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(35, 0, 200, true) }
@@ -160,22 +156,22 @@ namespace ValheimArmory
                     { "Chitin", new Tuple<int, int>(2, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Wood Crossbow Bolt					workbench lvl 1
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Wood Bolt" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VABoltWood" },
-                    { "sprite", "bolt_wood" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Wood Bolt" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VABoltWood" },
+                    { ItemMetadata.sprite, "bolt_wood" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(22, 0, 200, true) }
                 },
@@ -183,22 +179,22 @@ namespace ValheimArmory
                 {
                     { "Wood", new Tuple<int, int>(8, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Corewood Crossbow Bolt					workbench lvl 3
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Corewood Bolt" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VABoltCoreWood" },
-                    { "sprite", "bolt_corewood" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Corewood Bolt" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VABoltCoreWood" },
+                    { ItemMetadata.sprite, "bolt_corewood" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(37, 0, 200, true) }
                 },
@@ -207,22 +203,22 @@ namespace ValheimArmory
                     { "RoundLog", new Tuple<int, int>(8, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Bronze Bolt							forge lvl 1
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bronze Bolt" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VAbolt_bronze" },
-                    { "sprite", "bronze_bolt" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bronze Bolt" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VAbolt_bronze" },
+                    { ItemMetadata.sprite, "bronze_bolt" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(32, 0, 200, true) }
                 },
@@ -232,22 +228,22 @@ namespace ValheimArmory
                     { "Bronze", new Tuple<int, int>(1, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Iron Poison Bolt						forge lvl 2
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Poison Bolt" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VAbolt_poison" },
-                    { "sprite", "poison_bolt" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Poison Bolt" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VAbolt_poison" },
+                    { ItemMetadata.sprite, "poison_bolt" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.poison, new Tuple<float, float, float, bool>(52, 0, 200, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(26, 0, 200, true) }
@@ -259,22 +255,22 @@ namespace ValheimArmory
                     { "Feathers", new Tuple<int, int>(2, 0) },
                     { "Ooze", new Tuple<int, int>(1, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Obsidian Bolt						workbench lvl 3
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Obsidian Bolt" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VAObsidianBolt" },
-                    { "sprite", "obsidian_bolt" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Obsidian Bolt" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VAObsidianBolt" },
+                    { ItemMetadata.sprite, "obsidian_bolt" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(52, 0, 200, true) }
                 },
@@ -284,22 +280,22 @@ namespace ValheimArmory
                     { "Obsidian", new Tuple<int, int>(4, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Silver Ice Bolt						forge lvl 3
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Frost Bolt" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VAbolt_frost" },
-                    { "sprite", "ice_bolt" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Frost Bolt" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VAbolt_frost" },
+                    { ItemMetadata.sprite, "ice_bolt" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.frost, new Tuple<float, float, float, bool>(52, 0, 200, true) },
                     { ItemStat.spirit, new Tuple<float, float, float, bool>(20, 0, 200, true) },
@@ -312,22 +308,22 @@ namespace ValheimArmory
                     { "Feathers", new Tuple<int, int>(2, 0) },
                     { "FreezeGland", new Tuple<int, int>(1, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Iron Surtling bolt					forge lvl 2
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Surtling Core Bolt" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VASurtlingBolt" },
-                    { "sprite", "surtling_bolt" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Surtling Core Bolt" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VASurtlingBolt" },
+                    { ItemMetadata.sprite, "surtling_bolt" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.fire, new Tuple<float, float, float, bool>(52, 0, 200, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(26, 0, 200, true) }
@@ -339,22 +335,22 @@ namespace ValheimArmory
                     { "Feathers", new Tuple<int, int>(2, 0) },
                     { "SurtlingCore", new Tuple<int, int>(1, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Needle bolt					forge lvl 4
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Needle Bolt" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VABoltNeedle" },
-                    { "sprite", "needle_bolt" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Needle Bolt" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VABoltNeedle" },
+                    { ItemMetadata.sprite, "needle_bolt" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(56, 0, 200, true) }
                 },
@@ -363,22 +359,22 @@ namespace ValheimArmory
                     { "Needle", new Tuple<int, int>(8, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
 
             // Fire bolt					forge lvl 2
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Fire Bolt" },
-                    { "catagory", "Arrows" },
-                    { "prefab", "VAFireBolt" },
-                    { "sprite", "surtling_bolt" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Fire Bolt" },
+                    { ItemMetadata.catagory, "Arrows" },
+                    { ItemMetadata.prefab, "VAFireBolt" },
+                    { ItemMetadata.sprite, "surtling_bolt" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(20, 1, 100, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(22, 0, 200, true) },
                     { ItemStat.fire, new Tuple<float, float, float, bool>(34, 0, 200, true) }
@@ -389,25 +385,26 @@ namespace ValheimArmory
                     { "Resin", new Tuple<int, int>(8, 0) },
                     { "Feathers", new Tuple<int, int>(2, 0) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
         }
 
         private void LoadBows()
         {
+            Logger.LogInfo("Loading Bows");
             // Heavy Blood Bone Bow
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Carapace Blood Bow" },
-                    { "catagory", "Bows" },
-                    { "prefab", "VAHeavy_Blood_Bone_Bow" },
-                    { "sprite", "blood_bone_bow_heavy" },
-                    { "craftedAt", "piece_magetable" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Carapace Blood Bow" },
+                    { ItemMetadata.catagory, "Bows" },
+                    { ItemMetadata.prefab, "VAHeavy_Blood_Bone_Bow" },
+                    { ItemMetadata.sprite, "blood_bone_bow_heavy" },
+                    { ItemMetadata.craftedAt, "piece_magetable" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(92, 0, 300, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
@@ -431,22 +428,22 @@ namespace ValheimArmory
                     { "TrophyTick", new Tuple<int, int>(2, 0) },
                     { "Eitr", new Tuple<int, int>(0, 10) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Blood Bone Bow
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Blood Bone Bow" },
-                    { "catagory", "Bows" },
-                    { "prefab", "VABlood_bone_bow" },
-                    { "sprite", "bone_bow" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Blood Bone Bow" },
+                    { ItemMetadata.catagory, "Bows" },
+                    { ItemMetadata.prefab, "VABlood_bone_bow" },
+                    { ItemMetadata.sprite, "bone_bow" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(60, 0, 300, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
@@ -469,22 +466,22 @@ namespace ValheimArmory
                     { "BoneFragments", new Tuple<int, int>(20, 10) },
                     { "TrophyUlv", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Bronze Arbalist
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bronze Arbelist" },
-                    { "catagory", "Bows" },
-                    { "prefab", "VAArbalistBronze" },
-                    { "sprite", "bronze_crossbow_upright" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bronze Arbelist" },
+                    { ItemMetadata.catagory, "Bows" },
+                    { ItemMetadata.prefab, "VAArbalistBronze" },
+                    { ItemMetadata.sprite, "bronze_crossbow_upright" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(105, 0, 300, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
@@ -503,22 +500,22 @@ namespace ValheimArmory
                     { "Tar", new Tuple<int, int>(10, 2) },
                     { "LinenThread", new Tuple<int, int>(2, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
 
             // Antler Bow
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Eikthyrs Bow" },
-                    { "catagory", "Bows" },
-                    { "prefab", "VAAntler_Bow" },
-                    { "sprite", "antler_bow" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Eikthyrs Bow" },
+                    { ItemMetadata.catagory, "Bows" },
+                    { ItemMetadata.prefab, "VAAntler_Bow" },
+                    { ItemMetadata.sprite, "antler_bow" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(26, 0, 120, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(2, 0, 25, true) },
@@ -539,22 +536,22 @@ namespace ValheimArmory
                     { "HardAntler", new Tuple<int, int>(3, 3) },
                     { "TrophyEikthyr", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Bronze Crossbow
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bronze Crossbow" },
-                    { "catagory", "Bows" },
-                    { "prefab", "VACrossbowBronze" },
-                    { "sprite", "bronze_crossbow2" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bronze Crossbow" },
+                    { ItemMetadata.catagory, "Bows" },
+                    { ItemMetadata.prefab, "VACrossbowBronze" },
+                    { ItemMetadata.sprite, "bronze_crossbow2" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(80, 0, 300, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
@@ -573,22 +570,22 @@ namespace ValheimArmory
                     { "Bronze", new Tuple<int, int>(4, 0) },
                     { "DeerHide", new Tuple<int, int>(2, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Elder Crossbow
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Elders Reach" },
-                    { "catagory", "Bows" },
-                    { "prefab", "VACrossbowElder" },
-                    { "sprite", "elder_crossbow" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Elders Reach" },
+                    { ItemMetadata.catagory, "Bows" },
+                    { ItemMetadata.prefab, "VACrossbowElder" },
+                    { ItemMetadata.sprite, "elder_crossbow" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(80, 0, 300, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
@@ -609,22 +606,22 @@ namespace ValheimArmory
                     { "CryptKey", new Tuple<int, int>(1, 0) },
                     { "TrophyTheElder", new Tuple<int, int>(1, 0) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Moder Crossbow
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Moder Crossbow" },
-                    { "catagory", "Bows" },
-                    { "prefab", "VACrossbowModer" },
-                    { "sprite", "moder_crossbow" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Moder Crossbow" },
+                    { ItemMetadata.catagory, "Bows" },
+                    { ItemMetadata.prefab, "VACrossbowModer" },
+                    { ItemMetadata.sprite, "moder_crossbow" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(150, 0, 300, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
@@ -646,22 +643,22 @@ namespace ValheimArmory
                     { "TrophyDragonQueen", new Tuple<int, int>(1, 0) },
                     { "Silver", new Tuple<int, int>(0, 6) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
 
             // Queen Bow
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Queens Greatbow" },
-                    { "catagory", "Bows" },
-                    { "prefab", "VAQueen_bow" },
-                    { "sprite", "queen_bow" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Queens Greatbow" },
+                    { ItemMetadata.catagory, "Bows" },
+                    { ItemMetadata.prefab, "VAQueen_bow" },
+                    { ItemMetadata.sprite, "queen_bow" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(72, 0, 200, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
@@ -685,25 +682,26 @@ namespace ValheimArmory
                     { "TrophySeekerQueen", new Tuple<int, int>(1, 0) },
                     { "Carapace", new Tuple<int, int>(0, 4) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
         }
 
         private void LoadSwords()
         {
+            Logger.LogInfo("Loading Swords");
             // Blackmetal Greatsword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Blackmetal Greatsword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VABlackmetal_greatsword" },
-                    { "sprite", "blackmetal_greatsword" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Blackmetal Greatsword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VABlackmetal_greatsword" },
+                    { ItemMetadata.sprite, "blackmetal_greatsword" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(125, 0, 250, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
@@ -721,21 +719,21 @@ namespace ValheimArmory
                     { "LinenThread", new Tuple<int, int>(10, 5) },
                     { "FineWood", new Tuple<int, int>(6, 3) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
             // Abyssal Sword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Abyssal Sword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VASwordChitin" },
-                    { "sprite", "chitin_sword" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Abyssal Sword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VASwordChitin" },
+                    { ItemMetadata.sprite, "chitin_sword" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(20, 0, 90, true) },
                     { ItemStat.blunt_per_level, new Tuple<float, float, float, bool>(4, 0, 25, true) },
@@ -755,22 +753,22 @@ namespace ValheimArmory
                     { "Chitin", new Tuple<int, int>(30, 15) },
                     { "DeerHide", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Antler Sword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Eikthyrs Sword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VAAntler_Sword" },
-                    { "sprite", "antler_sword" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Eikthyrs Sword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VAAntler_Sword" },
+                    { ItemMetadata.sprite, "antler_sword" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(16, 0, 90, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(2, 0, 20, true) },
@@ -793,22 +791,22 @@ namespace ValheimArmory
                     { "HardAntler", new Tuple<int, int>(3, 3) },
                     { "TrophyEikthyr", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Vine Sword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Elders Balance" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VAVine_Sword" },
-                    { "sprite", "vine_sword" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Elders Balance" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VAVine_Sword" },
+                    { ItemMetadata.sprite, "vine_sword" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(35, 0, 90, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -830,22 +828,22 @@ namespace ValheimArmory
                     { "TrophyTheElder", new Tuple<int, int>(1, 0) },
                     { "RoundLog", new Tuple<int, int>(0, 4) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Ice Sword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Moders Grasp" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VASwordModer" },
-                    { "sprite", "moder_sword" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Moders Grasp" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VASwordModer" },
+                    { ItemMetadata.sprite, "moder_sword" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(35, 0, 90, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(2, 0, 20, true) },
@@ -870,21 +868,21 @@ namespace ValheimArmory
                     { "Silver", new Tuple<int, int>(0, 2) },
                     { "JuteRed", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
 
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Moders Greatsword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VAModer_greatsword" },
-                    { "sprite", "moder_greatsword" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Moders Greatsword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VAModer_greatsword" },
+                    { ItemMetadata.sprite, "moder_greatsword" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(55, 0, 90, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(2, 0, 20, true) },
@@ -909,22 +907,22 @@ namespace ValheimArmory
                     { "Silver", new Tuple<int, int>(0, 4) },
                     { "JuteRed", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
 
             // Bronze Greatsword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bronze Greatsword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VAbronze_greatsword" },
-                    { "sprite", "bronze_greatsword_reforged" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bronze Greatsword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VAbronze_greatsword" },
+                    { ItemMetadata.sprite, "bronze_greatsword_reforged" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(50, 0, 200, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -942,22 +940,22 @@ namespace ValheimArmory
                     { "Bronze", new Tuple<int, int>(20, 10) },
                     { "DeerHide", new Tuple<int, int>(3, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Iron Greatsword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Iron Greatsword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VAiron_greatsword" },
-                    { "sprite", "iron_greatsword_reforged" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Iron Greatsword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VAiron_greatsword" },
+                    { ItemMetadata.sprite, "iron_greatsword_reforged" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(75, 0, 250, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -975,22 +973,22 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(30, 15) },
                     { "LeatherScraps", new Tuple<int, int>(4, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Silver Greatsword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Silver Greatsword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VAsilver_greatsword" },
-                    { "sprite", "silver_greatsword_reforged" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Silver Greatsword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VAsilver_greatsword" },
+                    { ItemMetadata.sprite, "silver_greatsword_reforged" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(100, 0, 300, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -1011,23 +1009,23 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(4, 2) },
                     { "LeatherScraps", new Tuple<int, int>(3, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
 
             );
 
             // Bonemass Greatsword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bonemasses Greatsword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VABonemassGreatsword" },
-                    { "sprite", "bonemass_greatsword" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bonemasses Greatsword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VABonemassGreatsword" },
+                    { ItemMetadata.sprite, "bonemass_greatsword" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(75, 0, 250, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -1050,22 +1048,22 @@ namespace ValheimArmory
                     { "ElderBark", new Tuple<int, int>(0, 2) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Yagluth Greatsword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Yagluths Greatsword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VAYagluth_greatsword" },
-                    { "sprite", "yagluth_greatsword" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Yagluths Greatsword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VAYagluth_greatsword" },
+                    { ItemMetadata.sprite, "yagluth_greatsword" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(125, 0, 250, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -1088,22 +1086,22 @@ namespace ValheimArmory
                     { "Tar", new Tuple<int, int>(0, 3) },
                     { "LinenThread", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
 
             // Flint Sword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flint Sword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VAFlint_Sword" },
-                    { "sprite", "flint_sword" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flint Sword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VAFlint_Sword" },
+                    { ItemMetadata.sprite, "flint_sword" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(15, 0, 90, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -1121,22 +1119,22 @@ namespace ValheimArmory
                     { "Flint", new Tuple<int, int>(6, 3) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Flint Greatsword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flint Greatsword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VAFlint_greatsword" },
-                    { "sprite", "flint_greatsword" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flint Greatsword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VAFlint_greatsword" },
+                    { ItemMetadata.sprite, "flint_greatsword" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(25, 0, 200, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -1154,22 +1152,22 @@ namespace ValheimArmory
                     { "Flint", new Tuple<int, int>(9, 5) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Queen Greatsword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Queen Greatsword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VAQueen_greatsword" },
-                    { "sprite", "queen_greatsword" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Queen Greatsword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VAQueen_greatsword" },
+                    { ItemMetadata.sprite, "queen_greatsword" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(125, 0, 250, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -1193,22 +1191,22 @@ namespace ValheimArmory
                     { "TrophySeekerQueen", new Tuple<int, int>(1, 0) },
                     { "Carapace", new Tuple<int, int>(0, 8) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Queen sword
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Queen Sword" },
-                    { "catagory", "Swords" },
-                    { "prefab", "VASwordQueen" },
-                    { "sprite", "queen_sword" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Queen Sword" },
+                    { ItemMetadata.catagory, "Swords" },
+                    { ItemMetadata.prefab, "VASwordQueen" },
+                    { ItemMetadata.sprite, "queen_sword" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(95, 0, 250, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -1232,25 +1230,26 @@ namespace ValheimArmory
                     { "TrophySeekerQueen", new Tuple<int, int>(1, 0) },
                     { "Carapace", new Tuple<int, int>(0, 6) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
         }
 
         private void LoadAxes()
         {
+            Logger.LogInfo("Loading Axes");
             // Flint Battleaxe
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flint greataxe" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VAFlint_greataxe" },
-                    { "sprite", "flint_greataxe" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flint greataxe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAFlint_greataxe" },
+                    { ItemMetadata.sprite, "flint_greataxe" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(25, 0, 200, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
@@ -1270,22 +1269,22 @@ namespace ValheimArmory
                     { "Flint", new Tuple<int, int>(9, 5) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Flint Dualaxes
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flint dualaxes" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VAFlint_dualaxes" },
-                    { "sprite", "flint_dualaxes" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flint dualaxes" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAFlint_dualaxes" },
+                    { ItemMetadata.sprite, "flint_dualaxes" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(20, 0, 200, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
@@ -1306,22 +1305,22 @@ namespace ValheimArmory
                     { "Flint", new Tuple<int, int>(12, 6) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Bronze Battleaxe
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bronze Lumber Axe" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VAbronze_battleaxe" },
-                    { "sprite", "bronze_axe_rebuild" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bronze Lumber Axe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAbronze_battleaxe" },
+                    { ItemMetadata.sprite, "bronze_axe_rebuild" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(50, 0, 200, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -1341,29 +1340,29 @@ namespace ValheimArmory
                     { "Bronze", new Tuple<int, int>(10, 5) },
                     { "DeerHide", new Tuple<int, int>(2, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Bronze Dualaxes
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bronze dualaxes" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VABronze_dualaxes" },
-                    { "sprite", "bronze_dualaxes" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bronze dualaxes" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VABronze_dualaxes" },
+                    { ItemMetadata.sprite, "bronze_dualaxes" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(40, 0, 200, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { ItemStat.chop, new Tuple<float, float, float, bool>(40, 0, 200, true) },
                     { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { ItemStat.attack_force, new Tuple<float, float, float, bool>(50, 0, 200, true) },
-                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(12, 0, 60, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(16, 0, 60, true) },
                     { ItemStat.block_force, new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { ItemStat.durability, new Tuple<float, float, float, bool>(175, 0, 400, true) },
                     { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
@@ -1377,29 +1376,29 @@ namespace ValheimArmory
                     { "Bronze", new Tuple<int, int>(16, 8) },
                     { "LeatherScraps", new Tuple<int, int>(4, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Iron Dualaxes
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Iron dualaxes" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VAIron_dualaxes" },
-                    { "sprite", "iron_dualaxes" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Iron dualaxes" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAIron_dualaxes" },
+                    { ItemMetadata.sprite, "iron_dualaxes" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(60, 0, 200, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { ItemStat.chop, new Tuple<float, float, float, bool>(50, 0, 200, true) },
                     { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { ItemStat.attack_force, new Tuple<float, float, float, bool>(50, 0, 200, true) },
-                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(12, 0, 60, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(21, 0, 60, true) },
                     { ItemStat.block_force, new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { ItemStat.durability, new Tuple<float, float, float, bool>(175, 0, 400, true) },
                     { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
@@ -1413,22 +1412,22 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(40, 20) },
                     { "LeatherScraps", new Tuple<int, int>(4, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Crystal Axe
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Crystal Axe" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VAcrystal_axe" },
-                    { "sprite", "silver_axe_1h_icon" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Crystal Axe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAcrystal_axe" },
+                    { ItemMetadata.sprite, "silver_axe_1h_icon" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(80, 0, 200, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
@@ -1451,22 +1450,22 @@ namespace ValheimArmory
                     { "Silver", new Tuple<int, int>(20, 10) },
                     { "Crystal", new Tuple<int, int>(8, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Crystal dual Axes
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Crystal dualaxes" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VACrystal_dualaxes" },
-                    { "sprite", "crystal_dualaxes" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Crystal dualaxes" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VACrystal_dualaxes" },
+                    { ItemMetadata.sprite, "crystal_dualaxes" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(80, 0, 200, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
@@ -1475,7 +1474,7 @@ namespace ValheimArmory
                     { ItemStat.chop, new Tuple<float, float, float, bool>(50, 0, 200, true) },
                     { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { ItemStat.attack_force, new Tuple<float, float, float, bool>(50, 0, 200, true) },
-                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(14, 0, 60, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(30, 0, 60, true) },
                     { ItemStat.block_force, new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { ItemStat.durability, new Tuple<float, float, float, bool>(175, 0, 400, true) },
                     { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
@@ -1489,29 +1488,29 @@ namespace ValheimArmory
                     { "Silver", new Tuple<int, int>(50, 20) },
                     { "Crystal", new Tuple<int, int>(16, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Blackmetal Dual Axes
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Blackmetal dualaxes" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VABlackmetal_dualaxes" },
-                    { "sprite", "blackmetal_dualaxes" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Blackmetal dualaxes" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VABlackmetal_dualaxes" },
+                    { ItemMetadata.sprite, "blackmetal_dualaxes" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(100, 0, 200, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { ItemStat.chop, new Tuple<float, float, float, bool>(60, 0, 200, true) },
                     { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { ItemStat.attack_force, new Tuple<float, float, float, bool>(50, 0, 200, true) },
-                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(16, 0, 60, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(39, 0, 60, true) },
                     { ItemStat.block_force, new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { ItemStat.durability, new Tuple<float, float, float, bool>(175, 0, 400, true) },
                     { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
@@ -1525,22 +1524,22 @@ namespace ValheimArmory
                     { "FineWood", new Tuple<int, int>(14, 5) },
                     { "LinenThread", new Tuple<int, int>(8, 0) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Blackmetal Greataxe
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Blackmetal Greataxe" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VAblackmetal_2h_axe" },
-                    { "sprite", "blackmetal_2h_axe" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Blackmetal Greataxe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAblackmetal_2h_axe" },
+                    { ItemMetadata.sprite, "blackmetal_2h_axe" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(130, 0, 300, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
@@ -1560,29 +1559,31 @@ namespace ValheimArmory
                     { "BlackMetal", new Tuple<int, int>(35, 15) },
                     { "LinenThread", new Tuple<int, int>(5, 1) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
 
             // Jotun Dual Axes
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Jotun dualaxes" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VAJotunn_dualaxes" },
-                    { "sprite", "jotun_dualaxes" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Jotun dualaxes" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAJotunn_dualaxes" },
+                    { ItemMetadata.sprite, "jotun_dualaxes" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(120, 0, 200, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { ItemStat.poison, new Tuple<float, float, float, bool>(30, 0, 200, true) },
+                    { ItemStat.poison_per_level, new Tuple<float, float, float, bool>(0, 0, 25, true) },
                     { ItemStat.chop, new Tuple<float, float, float, bool>(80, 0, 200, true) },
                     { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
                     { ItemStat.attack_force, new Tuple<float, float, float, bool>(50, 0, 200, true) },
-                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(18, 0, 60, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(48, 0, 60, true) },
                     { ItemStat.block_force, new Tuple<float, float, float, bool>(20, 0, 60, true) },
                     { ItemStat.durability, new Tuple<float, float, float, bool>(175, 0, 400, true) },
                     { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
@@ -1597,22 +1598,22 @@ namespace ValheimArmory
                     { "YggdrasilWood", new Tuple<int, int>(14, 5) },
                     { "Bilebag", new Tuple<int, int>(6, 2) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Jotun 2H Axe
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Jotun battleaxe" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VAJotunn_2h_axe" },
-                    { "sprite", "jotun_2h_axe" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Jotun battleaxe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAJotunn_2h_axe" },
+                    { ItemMetadata.sprite, "jotun_2h_axe" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(140, 0, 200, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
@@ -1636,22 +1637,22 @@ namespace ValheimArmory
                     { "YggdrasilWood", new Tuple<int, int>(14, 5) },
                     { "Bilebag", new Tuple<int, int>(6, 2) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Antler Battleaxe
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Eikthyrs Greataxe" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VAAntler_greataxe" },
-                    { "sprite", "antler_greataxe" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Eikthyrs Greataxe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAAntler_greataxe" },
+                    { ItemMetadata.sprite, "antler_greataxe" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(10, 0, 200, true) },
                     { ItemStat.blunt_per_level, new Tuple<float, float, float, bool>(2, 0, 25, true) },
@@ -1676,22 +1677,22 @@ namespace ValheimArmory
                     { "HardAntler", new Tuple<int, int>(3, 3) },
                     { "TrophyEikthyr", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Blackmetal Battleaxe
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Blackmetal Battleaxe" },
-                    { "catagory", "Axes" },
-                    { "prefab", "VAblackmetal_battleaxe" },
-                    { "sprite", "blackmetal_battleaxe" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Blackmetal Battleaxe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAblackmetal_battleaxe" },
+                    { ItemMetadata.sprite, "blackmetal_battleaxe" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(120, 0, 300, true) },
                     { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
@@ -1714,9 +1715,9 @@ namespace ValheimArmory
                     { "LinenThread", new Tuple<int, int>(5, 0) },
                     { "SurtlingCore", new Tuple<int, int>(4, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 },
                 new Dictionary<ItemToggles, bool>() {
                     { ItemToggles.enabled, true },
@@ -1727,16 +1728,17 @@ namespace ValheimArmory
 
         private void LoadHammers()
         {
+            Logger.LogInfo("Loading Hammers");
             // Flametal Nature Sledge
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal nature sledge" },
-                    { "catagory", "Hammers" },
-                    { "prefab", "VAflametal_sledge_nature" },
-                    { "sprite", "flametal_sledge_nature" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal nature sledge" },
+                    { ItemMetadata.catagory, "Hammers" },
+                    { ItemMetadata.prefab, "VAflametal_sledge_nature" },
+                    { ItemMetadata.sprite, "flametal_sledge_nature" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(165, 0, 300, true) },
                     { ItemStat.blunt_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -1758,22 +1760,22 @@ namespace ValheimArmory
                     { "Blackwood", new Tuple<int, int>(5, 0) },
                     { "GemstoneGreen", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Flametal Lightning Sledge
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal lightning sledge" },
-                    { "catagory", "Hammers" },
-                    { "prefab", "VAflametal_sledge_lightning" },
-                    { "sprite", "flametal_sledge_lightning" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal lightning sledge" },
+                    { ItemMetadata.catagory, "Hammers" },
+                    { ItemMetadata.prefab, "VAflametal_sledge_lightning" },
+                    { ItemMetadata.sprite, "flametal_sledge_lightning" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(165, 0, 300, true) },
                     { ItemStat.blunt_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -1795,22 +1797,22 @@ namespace ValheimArmory
                     { "Blackwood", new Tuple<int, int>(5, 0) },
                     { "GemstoneBlue", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Flametal Blood Sledge
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal blood sledge" },
-                    { "catagory", "Hammers" },
-                    { "prefab", "VAflametal_sledge_blood" },
-                    { "sprite", "flametal_sledge_blood" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal blood sledge" },
+                    { ItemMetadata.catagory, "Hammers" },
+                    { ItemMetadata.prefab, "VAflametal_sledge_blood" },
+                    { ItemMetadata.sprite, "flametal_sledge_blood" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(175, 0, 300, true) },
                     { ItemStat.blunt_per_level, new Tuple<float, float, float, bool>(10, 0, 20, true) },
@@ -1830,22 +1832,22 @@ namespace ValheimArmory
                     { "Blackwood", new Tuple<int, int>(5, 0) },
                     { "GemstoneRed", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Flametal Sledge
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal sledge" },
-                    { "catagory", "Hammers" },
-                    { "prefab", "VAflametal_sledge" },
-                    { "sprite", "flametal_sledge" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal sledge" },
+                    { ItemMetadata.catagory, "Hammers" },
+                    { ItemMetadata.prefab, "VAflametal_sledge" },
+                    { ItemMetadata.sprite, "flametal_sledge" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(165, 0, 300, true) },
                     { ItemStat.blunt_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -1865,22 +1867,22 @@ namespace ValheimArmory
                     { "Eitr", new Tuple<int, int>(6, 3) },
                     { "Blackwood", new Tuple<int, int>(12, 6) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Blackmarble mace
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Blackmarble mace" },
-                    { "catagory", "Hammers" },
-                    { "prefab", "VAmistland_mace" },
-                    { "sprite", "mist_mace" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Blackmarble mace" },
+                    { ItemMetadata.catagory, "Hammers" },
+                    { ItemMetadata.prefab, "VAmistland_mace" },
+                    { ItemMetadata.sprite, "mist_mace" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(115, 0, 300, true) },
                     { ItemStat.blunt_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -1900,22 +1902,22 @@ namespace ValheimArmory
                     { "Eitr", new Tuple<int, int>(8, 2) },
                     { "BlackMarble", new Tuple<int, int>(20, 10) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Blackmetal Sledge
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Blackmetal Sledge" },
-                    { "catagory", "Hammers" },
-                    { "prefab", "VAblackmetal_sledge" },
-                    { "sprite", "blackmetal_hammer" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Blackmetal Sledge" },
+                    { ItemMetadata.catagory, "Hammers" },
+                    { ItemMetadata.prefab, "VAblackmetal_sledge" },
+                    { ItemMetadata.sprite, "blackmetal_hammer" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(120, 0, 300, true) },
                     { ItemStat.blunt_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -1937,20 +1939,20 @@ namespace ValheimArmory
                     { "LinenThread", new Tuple<int, int>(5, 0) },
                     { "Thunderstone", new Tuple<int, int>(4, 0) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
 
             // Elder Sledge
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Elders Rock" },
-                    { "catagory", "Hammers" },
-                    { "prefab", "VAElderHammer" },
-                    { "sprite", "elder_hammer" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Elders Rock" },
+                    { ItemMetadata.catagory, "Hammers" },
+                    { ItemMetadata.prefab, "VAElderHammer" },
+                    { ItemMetadata.sprite, "elder_hammer" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
                 new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
@@ -1975,22 +1977,22 @@ namespace ValheimArmory
                     { "TrophyTheElder", new Tuple<int, int>(1, 0) },
                     { "RoundLog", new Tuple<int, int>(0, 8) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Bronze sledge
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bronze Sledge" },
-                    { "catagory", "Hammers" },
-                    { "prefab", "VABronzeSledge" },
-                    { "sprite", "bronze_sledge" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bronze Sledge" },
+                    { ItemMetadata.catagory, "Hammers" },
+                    { ItemMetadata.prefab, "VABronzeSledge" },
+                    { ItemMetadata.sprite, "bronze_sledge" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(35, 0, 300, true) },
                     { ItemStat.blunt_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -2009,22 +2011,22 @@ namespace ValheimArmory
                     { "TrollHide", new Tuple<int, int>(6, 3) },
                     { "RoundLog", new Tuple<int, int>(4, 4) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Bonemass Warhammer
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bonemasses Rage" },
-                    { "catagory", "Hammers" },
-                    { "prefab", "VABonemassWarhammer" },
-                    { "sprite", "bonemass_warhammer" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bonemasses Rage" },
+                    { ItemMetadata.catagory, "Hammers" },
+                    { ItemMetadata.prefab, "VABonemassWarhammer" },
+                    { ItemMetadata.sprite, "bonemass_warhammer" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(70, 0, 300, true) },
                     { ItemStat.blunt_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -2047,22 +2049,22 @@ namespace ValheimArmory
                     { "ElderBark", new Tuple<int, int>(0, 2) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Silver sledge
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Silver Sledge" },
-                    { "catagory", "Hammers" },
-                    { "prefab", "VASilverSledge" },
-                    { "sprite", "silver_sledge" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Silver Sledge" },
+                    { ItemMetadata.catagory, "Hammers" },
+                    { ItemMetadata.prefab, "VASilverSledge" },
+                    { ItemMetadata.sprite, "silver_sledge" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(85, 0, 300, true) },
                     { ItemStat.blunt_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -2083,25 +2085,26 @@ namespace ValheimArmory
                     { "YmirRemains", new Tuple<int, int>(4, 2) },
                     { "TrophyFenring", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
         }
 
         private void LoadAtgeirs()
         {
+            Logger.LogInfo("Loading Atgeirs");
             // Flint Atgeir
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flint Atgeir" },
-                    { "catagory", "Atgeirs" },
-                    { "prefab", "VAAtgeir_Flint" },
-                    { "sprite", "flint_atgeir" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flint Atgeir" },
+                    { ItemMetadata.catagory, "Atgeirs" },
+                    { ItemMetadata.prefab, "VAAtgeir_Flint" },
+                    { ItemMetadata.sprite, "flint_atgeir" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(25, 0, 90, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -2118,22 +2121,22 @@ namespace ValheimArmory
                     { "Flint", new Tuple<int, int>(6, 3) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Antler Atgeir
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Eikthyrs Atgeir" },
-                    { "catagory", "Atgeirs" },
-                    { "prefab", "VAatgeir_antler" },
-                    { "sprite", "antler_atgeir" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Eikthyrs Atgeir" },
+                    { ItemMetadata.catagory, "Atgeirs" },
+                    { ItemMetadata.prefab, "VAatgeir_antler" },
+                    { ItemMetadata.sprite, "antler_atgeir" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(35, 0, 90, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
@@ -2153,22 +2156,22 @@ namespace ValheimArmory
                     { "HardAntler", new Tuple<int, int>(3, 3) },
                     { "TrophyEikthyr", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Abyssal Atgeir
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Abyssal Atgeir" },
-                    { "catagory", "Atgeirs" },
-                    { "prefab", "VAAtgeirchitin" },
-                    { "sprite", "chitin_heavy_atgeir_small2" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Abyssal Atgeir" },
+                    { ItemMetadata.catagory, "Atgeirs" },
+                    { ItemMetadata.prefab, "VAAtgeirchitin" },
+                    { ItemMetadata.sprite, "chitin_heavy_atgeir_small2" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(35, 0, 140, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(2, 0, 25, true) },
@@ -2187,22 +2190,22 @@ namespace ValheimArmory
                     { "Chitin", new Tuple<int, int>(30, 15) },
                     { "DeerHide", new Tuple<int, int>(2, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Silver Atgeir
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Silver Atgeir" },
-                    { "catagory", "Atgeirs" },
-                    { "prefab", "VASilverAtgeir" },
-                    { "sprite", "silver_atgeir" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Silver Atgeir" },
+                    { ItemMetadata.catagory, "Atgeirs" },
+                    { ItemMetadata.prefab, "VASilverAtgeir" },
+                    { ItemMetadata.sprite, "silver_atgeir" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(85, 0, 250, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -2222,22 +2225,22 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(4, 2) },
                     { "LeatherScraps", new Tuple<int, int>(3, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Yagluth Atgeir
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Yagluths Reach" },
-                    { "catagory", "Atgeirs" },
-                    { "prefab", "VAYagluthAtgeir" },
-                    { "sprite", "yagluth_atgeir" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Yagluths Reach" },
+                    { ItemMetadata.catagory, "Atgeirs" },
+                    { ItemMetadata.prefab, "VAYagluthAtgeir" },
+                    { ItemMetadata.sprite, "yagluth_atgeir" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(105, 0, 250, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
@@ -2259,22 +2262,22 @@ namespace ValheimArmory
                     { "Tar", new Tuple<int, int>(0, 3) },
                     { "LinenThread", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
 
             // Meteor atgeir
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal Atgeir" },
-                    { "catagory", "Atgeirs" },
-                    { "prefab", "VAMeteorAtgeir" },
-                    { "sprite", "meteor_atgeir" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal Atgeir" },
+                    { ItemMetadata.catagory, "Atgeirs" },
+                    { ItemMetadata.prefab, "VAMeteorAtgeir" },
+                    { ItemMetadata.sprite, "meteor_atgeir" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(145, 0, 300, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -2292,22 +2295,22 @@ namespace ValheimArmory
                     { "Blackwood", new Tuple<int, int>(10, 0) },
                     { "MorgenSinew", new Tuple<int, int>(2, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Meteor primal atgeir
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal primal Atgeir" },
-                    { "catagory", "Atgeirs" },
-                    { "prefab", "VAMeteorAtgeir_nature" },
-                    { "sprite", "meteor_atgeir_nature" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal primal Atgeir" },
+                    { ItemMetadata.catagory, "Atgeirs" },
+                    { ItemMetadata.prefab, "VAMeteorAtgeir_nature" },
+                    { ItemMetadata.sprite, "meteor_atgeir_nature" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(145, 0, 300, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -2327,22 +2330,22 @@ namespace ValheimArmory
                     { "Blackwood", new Tuple<int, int>(5, 0) },
                     { "GemstoneGreen", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Meteor lightning atgeir
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal lightning Atgeir" },
-                    { "catagory", "Atgeirs" },
-                    { "prefab", "VAMeteorAtgeir_lightning" },
-                    { "sprite", "meteor_atgeir_lightning" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal lightning Atgeir" },
+                    { ItemMetadata.catagory, "Atgeirs" },
+                    { ItemMetadata.prefab, "VAMeteorAtgeir_lightning" },
+                    { ItemMetadata.sprite, "meteor_atgeir_lightning" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(145, 0, 300, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -2362,22 +2365,22 @@ namespace ValheimArmory
                     { "Blackwood", new Tuple<int, int>(5, 0) },
                     { "GemstoneBlue", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Meteor blood atgeir
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal blood Atgeir" },
-                    { "catagory", "Atgeirs" },
-                    { "prefab", "VAMeteorAtgeir_blood" },
-                    { "sprite", "meteor_atgeir_blood" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal blood Atgeir" },
+                    { ItemMetadata.catagory, "Atgeirs" },
+                    { ItemMetadata.prefab, "VAMeteorAtgeir_blood" },
+                    { ItemMetadata.sprite, "meteor_atgeir_blood" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(145, 0, 300, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(6, 0, 25, true) },
@@ -2395,25 +2398,26 @@ namespace ValheimArmory
                     { "Blackwood", new Tuple<int, int>(5, 0) },
                     { "GemstoneRed", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
         }
 
         private void LoadShields()
         {
+            Logger.LogInfo("Loading Shields");
             // Serpentscale Buckler
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Serpent Scale Buckler" },
-                    { "catagory", "Shields" },
-                    { "prefab", "VAserpent_buckler" },
-                    { "sprite", "serpentscale_shield2" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Serpent Scale Buckler" },
+                    { ItemMetadata.catagory, "Shields" },
+                    { ItemMetadata.prefab, "VAserpent_buckler" },
+                    { ItemMetadata.sprite, "serpentscale_shield2" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(48, 0, 120, true) },
                     { ItemStat.block_armor_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -2429,9 +2433,9 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(2, 2) },
                     { "SerpentScale", new Tuple<int, int>(6, 3) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 },
                 itemModifiers: new Dictionary<HitData.DamageType, HitData.DamageModifier>
                 {
@@ -2441,14 +2445,14 @@ namespace ValheimArmory
 
             // Elder Round Shield
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Elders Bulwark" },
-                    { "catagory", "Shields" },
-                    { "prefab", "VAElderRoundShield" },
-                    { "sprite", "elder_roundshield" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Elders Bulwark" },
+                    { ItemMetadata.catagory, "Shields" },
+                    { ItemMetadata.prefab, "VAElderRoundShield" },
+                    { ItemMetadata.sprite, "elder_roundshield" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(28, 0, 120, true) },
                     { ItemStat.block_armor_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -2466,9 +2470,9 @@ namespace ValheimArmory
                     { "CryptKey", new Tuple<int, int>(1, 1) },
                     { "TrophyTheElder", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 },
                 itemModifiers: new Dictionary<HitData.DamageType, HitData.DamageModifier>
                 {
@@ -2478,14 +2482,14 @@ namespace ValheimArmory
 
             // Moder Round Shield
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Moders Roundshield" },
-                    { "catagory", "Shields" },
-                    { "prefab", "VAModer_RoundShield" },
-                    { "sprite", "moder_roundshield" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Moders Roundshield" },
+                    { ItemMetadata.catagory, "Shields" },
+                    { ItemMetadata.prefab, "VAModer_RoundShield" },
+                    { ItemMetadata.sprite, "moder_roundshield" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(62, 0, 120, true) },
                     { ItemStat.block_armor_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -2506,9 +2510,9 @@ namespace ValheimArmory
                     { "Obsidian", new Tuple<int, int>(0, 2) },
                     { "JuteRed", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 },
                 new Dictionary<ItemToggles, bool>() {
                     { ItemToggles.enabled, true },
@@ -2522,14 +2526,14 @@ namespace ValheimArmory
 
             // Moder Tower Shield
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Moders Shield" },
-                    { "catagory", "Shields" },
-                    { "prefab", "VAModer_shield" },
-                    { "sprite", "modershiled_v2" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Moders Shield" },
+                    { ItemMetadata.catagory, "Shields" },
+                    { ItemMetadata.prefab, "VAModer_shield" },
+                    { ItemMetadata.sprite, "modershiled_v2" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(100, 0, 180, true) },
                     { ItemStat.block_armor_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -2549,9 +2553,9 @@ namespace ValheimArmory
                     { "Obsidian", new Tuple<int, int>(0, 2) },
                     { "JuteRed", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 },
                 itemModifiers: new Dictionary<HitData.DamageType, HitData.DamageModifier>
                 {
@@ -2561,14 +2565,14 @@ namespace ValheimArmory
 
             // Silver Wolf tower shield
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Silver Wolf Towershield" },
-                    { "catagory", "Shields" },
-                    { "prefab", "VAsilver_tower" },
-                    { "sprite", "silver_tower_shield" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Silver Wolf Towershield" },
+                    { ItemMetadata.catagory, "Shields" },
+                    { ItemMetadata.prefab, "VAsilver_tower" },
+                    { ItemMetadata.sprite, "silver_tower_shield" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(78, 0, 120, true) },
                     { ItemStat.block_armor_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -2584,25 +2588,26 @@ namespace ValheimArmory
                     { "Silver", new Tuple<int, int>(10, 6) },
                     { "TrophyUlv", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
         }
 
         private void LoadDaggers()
         {
+            Logger.LogInfo("Loading Daggers");
             // Blackmetal (mistlands) 1H Daggers
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Hati Knife" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_blackmetal_mistlands" },
-                    { "sprite", "hatti_knife" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Hati Knife" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_blackmetal_mistlands" },
+                    { ItemMetadata.sprite, "hatti_knife" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(4, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(39, 0, 99, true) },
@@ -2621,22 +2626,22 @@ namespace ValheimArmory
                     { "BlackMetal", new Tuple<int, int>(8, 4) },
                     { "Iron", new Tuple<int, int>(2, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Blackmetal 2H Daggers
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Blackmetal knives" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAknife_blackmetal" },
-                    { "sprite", "2h_blackmetal_knives" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Blackmetal knives" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAknife_blackmetal" },
+                    { ItemMetadata.sprite, "2h_blackmetal_knives" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(20, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(39, 0, 99, true) },
@@ -2655,22 +2660,22 @@ namespace ValheimArmory
                     { "BlackMetal", new Tuple<int, int>(20, 10) },
                     { "LinenThread", new Tuple<int, int>(10, 5) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
 
             // Flint 2H Daggers
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flint knives" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VADagger_Flint_2h" },
-                    { "sprite", "2h_flint_knives" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flint knives" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VADagger_Flint_2h" },
+                    { ItemMetadata.sprite, "2h_flint_knives" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(4, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(12, 0, 99, true) },
@@ -2689,22 +2694,22 @@ namespace ValheimArmory
                     { "Flint", new Tuple<int, int>(6, 3) },
                     { "LeatherScraps", new Tuple<int, int>(2, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Antler 1H Daggers
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Eikthyrs knife" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAAntler_dagger" },
-                    { "sprite", "antler_dagger" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Eikthyrs knife" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAAntler_dagger" },
+                    { ItemMetadata.sprite, "antler_dagger" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(8, 0, 99, true) },
@@ -2726,22 +2731,22 @@ namespace ValheimArmory
                     { "HardAntler", new Tuple<int, int>(3, 3) },
                     { "TrophyEikthyr", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Copper 2H Daggers
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Rascals knives" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_copper_2h" },
-                    { "sprite", "copper_knives_2h" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Rascals knives" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_copper_2h" },
+                    { ItemMetadata.sprite, "copper_knives_2h" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(8, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(20, 0, 99, true) },
@@ -2760,22 +2765,22 @@ namespace ValheimArmory
                     { "Copper", new Tuple<int, int>(16, 4) },
                     { "LeatherScraps", new Tuple<int, int>(4, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Iron 2H Daggers
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Rogue knives" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_iron_2h" },
-                    { "sprite", "iron_dagger_2h" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Rogue knives" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_iron_2h" },
+                    { ItemMetadata.sprite, "iron_dagger_2h" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(12, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(25, 0, 99, true) },
@@ -2794,22 +2799,22 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(16, 8) },
                     { "LeatherScraps", new Tuple<int, int>(6, 3) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Iron 1H Daggers
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Iron knives" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_iron" },
-                    { "sprite", "iron_dagger" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Iron knives" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_iron" },
+                    { ItemMetadata.sprite, "iron_dagger" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(22, 0, 99, true) },
@@ -2828,22 +2833,22 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(12, 6) },
                     { "LeatherScraps", new Tuple<int, int>(4, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Silver 2H Daggers
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Silver knives" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_silver_2h" },
-                    { "sprite", "silver_dagger_2h" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Silver knives" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_silver_2h" },
+                    { ItemMetadata.sprite, "silver_dagger_2h" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(16, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(34, 0, 99, true) },
@@ -2867,22 +2872,22 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(4, 2) },
                     { "LeatherScraps", new Tuple<int, int>(6, 3) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Moders Daggers 1H
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Moders knife" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_moder" },
-                    { "sprite", "moder_dagger" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Moders knife" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_moder" },
+                    { ItemMetadata.sprite, "moder_dagger" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(28, 0, 99, true) },
@@ -2908,22 +2913,22 @@ namespace ValheimArmory
                     { "Silver", new Tuple<int, int>(0, 2) },
                     { "JuteRed", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
 
             // Bonemass Dagger
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bonemasses knife" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VABonemassDagger" },
-                    { "sprite", "bonemass_dagger" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bonemasses knife" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VABonemassDagger" },
+                    { ItemMetadata.sprite, "bonemass_dagger" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(22, 0, 99, true) },
@@ -2947,22 +2952,22 @@ namespace ValheimArmory
                     { "ElderBark", new Tuple<int, int>(0, 2) },
                     { "LeatherScraps", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 3 }
+                    { ItemSettings.stationRequiredLevel, 3 }
                 }
             );
 
             // Queens Dagger
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Queens knife" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_queen" },
-                    { "sprite", "dagger_queen" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Queens knife" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_queen" },
+                    { ItemMetadata.sprite, "dagger_queen" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(34, 0, 99, true) },
@@ -2987,22 +2992,22 @@ namespace ValheimArmory
                     { "TrophySeekerQueen", new Tuple<int, int>(1, 0) },
                     { "Carapace", new Tuple<int, int>(0, 4) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Meteor dagger
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal knife" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_meteor" },
-                    { "sprite", "meteor_dagger" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal knife" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_meteor" },
+                    { ItemMetadata.sprite, "meteor_dagger" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(45, 0, 99, true) },
@@ -3022,22 +3027,22 @@ namespace ValheimArmory
                     { "Blackwood", new Tuple<int, int>(4, 0) },
                     { "MorgenSinew", new Tuple<int, int>(4, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Meteor primal dagger
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal primal knife" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_meteor_nature" },
-                    { "sprite", "meteor_dagger_primal" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal primal knife" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_meteor_nature" },
+                    { ItemMetadata.sprite, "meteor_dagger_primal" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(45, 0, 99, true) },
@@ -3058,22 +3063,22 @@ namespace ValheimArmory
                     { "FlametalNew", new Tuple<int, int>(4, 4) },
                     { "GemstoneGreen", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Meteor lightning dagger
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal lightning knife" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_meteor_lightning" },
-                    { "sprite", "meteor_dagger_lightning" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal lightning knife" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_meteor_lightning" },
+                    { ItemMetadata.sprite, "meteor_dagger_lightning" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(45, 0, 99, true) },
@@ -3094,22 +3099,22 @@ namespace ValheimArmory
                     { "FlametalNew", new Tuple<int, int>(4, 4) },
                     { "GemstoneBlue", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Meteor blood dagger
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flametal blood knife" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_meteor_blood" },
-                    { "sprite", "meteor_dagger_blood" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal blood knife" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_meteor_blood" },
+                    { ItemMetadata.sprite, "meteor_dagger_blood" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(2, 0, 48, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(45, 0, 99, true) },
@@ -3128,22 +3133,22 @@ namespace ValheimArmory
                     { "FlametalNew", new Tuple<int, int>(4, 4) },
                     { "GemstoneRed", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Meteor dagger 2h
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Assassins knives" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_meteor_2h" },
-                    { "sprite", "2h_meteor_daggers" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Assassins knives" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_meteor_2h" },
+                    { ItemMetadata.sprite, "2h_meteor_daggers" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(28, 0, 48, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(52, 0, 99, true) },
@@ -3163,22 +3168,22 @@ namespace ValheimArmory
                     { "Blackwood", new Tuple<int, int>(6, 0) },
                     { "MorgenSinew", new Tuple<int, int>(4, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Meteor dagger 2h nature
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Assassins primal knives" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_meteor_2h_nature" },
-                    { "sprite", "meteor_dagger_primal_2h" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Assassins primal knives" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_meteor_2h_nature" },
+                    { ItemMetadata.sprite, "meteor_dagger_primal_2h" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(28, 0, 48, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(52, 0, 99, true) },
@@ -3199,22 +3204,22 @@ namespace ValheimArmory
                     { "FlametalNew", new Tuple<int, int>(8, 8) },
                     { "GemstoneGreen", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Meteor dagger 2h lightning
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Assassins lightning knives" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_meteor_2h_lightning" },
-                    { "sprite", "meteor_dagger_lightning_2h" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Assassins lightning knives" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_meteor_2h_lightning" },
+                    { ItemMetadata.sprite, "meteor_dagger_lightning_2h" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(28, 0, 48, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(52, 0, 99, true) },
@@ -3235,22 +3240,22 @@ namespace ValheimArmory
                     { "FlametalNew", new Tuple<int, int>(8, 8) },
                     { "GemstoneBlue", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Meteor dagger 2h Blood
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Assassins blood knives" },
-                    { "catagory", "Knives" },
-                    { "prefab", "VAdagger_meteor_2h_blood" },
-                    { "sprite", "meteor_dagger_blood_2h" },
-                    { "craftedAt", "blackforge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Assassins blood knives" },
+                    { ItemMetadata.catagory, "Knives" },
+                    { ItemMetadata.prefab, "VAdagger_meteor_2h_blood" },
+                    { ItemMetadata.sprite, "meteor_dagger_blood_2h" },
+                    { ItemMetadata.craftedAt, "blackforge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(28, 0, 48, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(52, 0, 99, true) },
@@ -3269,25 +3274,26 @@ namespace ValheimArmory
                     { "FlametalNew", new Tuple<int, int>(8, 8) },
                     { "GemstoneRed", new Tuple<int, int>(1, 1) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
         }
 
         private void LoadSpears()
         {
+            Logger.LogInfo("Loading Spears");
             // Moder Spear
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Moders Strike" },
-                    { "catagory", "Spears" },
-                    { "prefab", "VASpearModer" },
-                    { "sprite", "moder_spear" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Moders Strike" },
+                    { ItemMetadata.catagory, "Spears" },
+                    { ItemMetadata.prefab, "VASpearModer" },
+                    { ItemMetadata.sprite, "moder_spear" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(30, 0, 48, true) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(45, 0, 120, true) },
@@ -3311,25 +3317,26 @@ namespace ValheimArmory
                     { "Silver", new Tuple<int, int>(0, 2) },
                     { "JuteRed", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
         }
 
         private void LoadFists()
         {
+            Logger.LogInfo("Loading Fists");
             // Flint Fists
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Flint knuckles" },
-                    { "catagory", "Fists" },
-                    { "prefab", "VAFist_Flint" },
-                    { "sprite", "flint_fists" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flint knuckles" },
+                    { ItemMetadata.catagory, "Fists" },
+                    { ItemMetadata.prefab, "VAFist_Flint" },
+                    { ItemMetadata.sprite, "flint_fists" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(5, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(6, 0, 120, true) },
@@ -3347,22 +3354,22 @@ namespace ValheimArmory
                     { "Flint", new Tuple<int, int>(4, 2) },
                     { "LeatherScraps", new Tuple<int, int>(2, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Bronze Fists
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bronze knuckles" },
-                    { "catagory", "Fists" },
-                    { "prefab", "VAFist_Bronze" },
-                    { "sprite", "bronze_fists" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bronze knuckles" },
+                    { ItemMetadata.catagory, "Fists" },
+                    { ItemMetadata.prefab, "VAFist_Bronze" },
+                    { ItemMetadata.sprite, "bronze_fists" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(5, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(20, 0, 120, true) },
@@ -3380,22 +3387,22 @@ namespace ValheimArmory
                     { "Bronze", new Tuple<int, int>(6, 3) },
                     { "LeatherScraps", new Tuple<int, int>(4, 4) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Iron Fists
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Iron knuckles" },
-                    { "catagory", "Fists" },
-                    { "prefab", "VAFist_Iron" },
-                    { "sprite", "iron_fists" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Iron knuckles" },
+                    { ItemMetadata.catagory, "Fists" },
+                    { ItemMetadata.prefab, "VAFist_Iron" },
+                    { ItemMetadata.sprite, "iron_fists" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(5, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(35, 0, 120, true) },
@@ -3413,22 +3420,22 @@ namespace ValheimArmory
                     { "Iron", new Tuple<int, int>(12, 6) },
                     { "LeatherScraps", new Tuple<int, int>(6, 6) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Yagluth Fists
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Goblin king knuckles" },
-                    { "catagory", "Fists" },
-                    { "prefab", "VAFist_Yagluth" },
-                    { "sprite", "yagluth_fists" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Goblin king knuckles" },
+                    { ItemMetadata.catagory, "Fists" },
+                    { ItemMetadata.prefab, "VAFist_Yagluth" },
+                    { ItemMetadata.sprite, "yagluth_fists" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(5, 0, 48, true) },
                     { ItemStat.slash, new Tuple<float, float, float, bool>(80, 0, 120, true) },
@@ -3452,25 +3459,26 @@ namespace ValheimArmory
                     { "Tar", new Tuple<int, int>(0, 3) },
                     { "LinenThread", new Tuple<int, int>(0, 2) }
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
         }
 
         private void LoadMaces()
         {
+            Logger.LogInfo("Loading Maces");
             // Elders Mace
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Elders Fist" },
-                    { "catagory", "Maces" },
-                    { "prefab", "VAElder_mace" },
-                    { "sprite", "elder_mace" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Elders Fist" },
+                    { ItemMetadata.catagory, "Maces" },
+                    { ItemMetadata.prefab, "VAElder_mace" },
+                    { ItemMetadata.sprite, "elder_mace" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.blunt, new Tuple<float, float, float, bool>(35, 0, 90, true) },
                     { ItemStat.blunt_per_level, new Tuple<float, float, float, bool>(6, 0, 20, true) },
@@ -3491,25 +3499,26 @@ namespace ValheimArmory
                     { "TrophyTheElder", new Tuple<int, int>(1, 0) },
                     { "RoundLog", new Tuple<int, int>(0, 6) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
         }
 
         private void LoadMagic()
         {
+            Logger.LogInfo("Loading Magic Weapons");
             // Staff of poison
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Staff of poison" },
-                    { "catagory", "Magics" },
-                    { "prefab", "VAStaff_Poison" },
-                    { "sprite", "poison_staff" },
-                    { "craftedAt", "piece_magetable" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Staff of poison" },
+                    { ItemMetadata.catagory, "Magics" },
+                    { ItemMetadata.prefab, "VAStaff_Poison" },
+                    { ItemMetadata.sprite, "poison_staff" },
+                    { ItemMetadata.craftedAt, "piece_magetable" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(48, 0, 90, true) },
                     { ItemStat.poison, new Tuple<float, float, float, bool>(120, 0, 200, true) },
@@ -3528,22 +3537,22 @@ namespace ValheimArmory
                     { "Guck", new Tuple<int, int>(4, 2) },
                     { "Eitr", new Tuple<int, int>(16, 8) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
 
             // Staff of spirit
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Staff of Spirit" },
-                    { "catagory", "Magics" },
-                    { "prefab", "VAStaff_Spirit" },
-                    { "sprite", "spirit_staff" },
-                    { "craftedAt", "piece_magetable" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Staff of Spirit" },
+                    { ItemMetadata.catagory, "Magics" },
+                    { ItemMetadata.prefab, "VAStaff_Spirit" },
+                    { ItemMetadata.sprite, "spirit_staff" },
+                    { ItemMetadata.craftedAt, "piece_magetable" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(48, 0, 90, true) },
                     { ItemStat.spirit, new Tuple<float, float, float, bool>(120, 0, 200, true) },
@@ -3563,22 +3572,22 @@ namespace ValheimArmory
                     { "Eitr", new Tuple<int, int>(16, 8) },
                     { "TrophyDvergr", new Tuple<int, int>(2, 0) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 4 }
+                    { ItemSettings.stationRequiredLevel, 4 }
                 }
             );
 
             // Druidic Staff of poison
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Druidic Staff of Poison" },
-                    { "catagory", "Magics" },
-                    { "prefab", "VAStaff_Druid_Poison" },
-                    { "sprite", "poison_staff_druidic" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Druidic Staff of Poison" },
+                    { ItemMetadata.catagory, "Magics" },
+                    { ItemMetadata.prefab, "VAStaff_Druid_Poison" },
+                    { ItemMetadata.sprite, "poison_staff_druidic" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(24, 0, 48, true) },
                     { ItemStat.poison, new Tuple<float, float, float, bool>(50, 0, 120, true) },
@@ -3597,22 +3606,22 @@ namespace ValheimArmory
                     { "Guck", new Tuple<int, int>(4, 2) },
                     { "TrophyBlob", new Tuple<int, int>(2, 1) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Druidic Staff of spirit
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Druidic Staff of Spirit" },
-                    { "catagory", "Magics" },
-                    { "prefab", "VAStaff_Druid_Spirit" },
-                    { "sprite", "spirit_staff_druid" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Druidic Staff of Spirit" },
+                    { ItemMetadata.catagory, "Magics" },
+                    { ItemMetadata.prefab, "VAStaff_Druid_Spirit" },
+                    { ItemMetadata.sprite, "spirit_staff_druid" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(24, 0, 48, true) },
                     { ItemStat.spirit, new Tuple<float, float, float, bool>(50, 0, 120, true) },
@@ -3631,22 +3640,22 @@ namespace ValheimArmory
                     { "GreydwarfEye", new Tuple<int, int>(4, 2) },
                     { "TrophyGreydwarfShaman", new Tuple<int, int>(2, 1) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Druidic Staff of Ice
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Druidic Staff of Ice" },
-                    { "catagory", "Magics" },
-                    { "prefab", "VAStaff_Druid_Ice" },
-                    { "sprite", "ice_staff_druidic" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Druidic Staff of Ice" },
+                    { ItemMetadata.catagory, "Magics" },
+                    { ItemMetadata.prefab, "VAStaff_Druid_Ice" },
+                    { ItemMetadata.sprite, "ice_staff_druidic" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(24, 0, 48, true) },
                     { ItemStat.frost, new Tuple<float, float, float, bool>(12, 0, 120, true) },
@@ -3665,22 +3674,22 @@ namespace ValheimArmory
                     { "FreezeGland", new Tuple<int, int>(4, 2) },
                     { "TrophyHatchling", new Tuple<int, int>(2, 1) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
 
             // Druidic Staff of Fire
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Druidic Staff of Fire" },
-                    { "catagory", "Magics" },
-                    { "prefab", "VAStaff_Druid_Fire" },
-                    { "sprite", "fire_staff_druidic" },
-                    { "craftedAt", "piece_workbench" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Druidic Staff of Fire" },
+                    { ItemMetadata.catagory, "Magics" },
+                    { ItemMetadata.prefab, "VAStaff_Druid_Fire" },
+                    { ItemMetadata.sprite, "fire_staff_druidic" },
+                    { ItemMetadata.craftedAt, "piece_workbench" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.block_armor, new Tuple<float, float, float, bool>(24, 0, 48, true) },
                     { ItemStat.fire, new Tuple<float, float, float, bool>(50, 0, 120, true) },
@@ -3699,25 +3708,28 @@ namespace ValheimArmory
                     { "SurtlingCore", new Tuple<int, int>(4, 2) },
                     { "TrophySurtling", new Tuple<int, int>(2, 1) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 2 }
+                    { ItemSettings.stationRequiredLevel, 2 }
                 }
             );
         }
 
         private void LoadPickaxes()
         {
+            // This is just another magic weapon so we are not gunna log its loading seperately
+            // If more pickaxes are are added this will be restructured
+
             // Bone Blood Pickaxe
             new JotunnItem(
-                new Dictionary<string, string>() {
-                    { "name", "Bone Blood Pickaxe" },
-                    { "catagory", "Pickaxes" },
-                    { "prefab", "VABlood_Bones_pickaxe" },
-                    { "sprite", "blood_bone_pickaxe" },
-                    { "craftedAt", "forge" }
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Bone Blood Pickaxe" },
+                    { ItemMetadata.catagory, "Pickaxes" },
+                    { ItemMetadata.prefab, "VABlood_Bones_pickaxe" },
+                    { ItemMetadata.sprite, "blood_bone_pickaxe" },
+                    { ItemMetadata.craftedAt, "forge" }
                 },
-                new Dictionary<common.ItemStat, Tuple<float, float, float, bool>>() {
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
                     { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
                     { ItemStat.pierce, new Tuple<float, float, float, bool>(26, 0, 200, true) },
                     { ItemStat.pierce_per_level, new Tuple<float, float, float, bool>(4, 0, 20, true) },
@@ -3743,9 +3755,9 @@ namespace ValheimArmory
                     { "Bronze", new Tuple<int, int>(4, 2) },
                     { "TrophySkeleton", new Tuple<int, int>(2, 0) },
                 },
-                new Dictionary<string, int>
+                new Dictionary<ItemSettings, int>
                 {
-                    { "stationRequiredLevel", 1 }
+                    { ItemSettings.stationRequiredLevel, 1 }
                 }
             );
         }

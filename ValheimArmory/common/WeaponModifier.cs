@@ -57,9 +57,8 @@ namespace ValheimArmory.common
              fx_demolisher_hit = PrefabManager.Instance.GetPrefab("fx_sledge_demolisher_hit");
              vfx_clubhit = PrefabManager.Instance.GetPrefab("vfx_clubhit");
              sfx_clubhit = PrefabManager.Instance.GetPrefab("sfx_club_hit");
-            if (VAConfig.EnableDebugMode.Value) {
-                Logger.LogInfo($"Set Effect Prefabs: vfx_sledge_hit:{vfx_sledge_hit} fx_camshake:{fx_camshake} sfx_sledge_hit:{sfx_sledge_hit} sfx_sledge_swing:{sfx_sledge_swing} fx_demolisher_hit:{fx_demolisher_hit} vfx_clubhit:{vfx_clubhit} sfx_clubhit:{sfx_clubhit}"); 
-            }
+
+            Logger.LogDebug($"Set Effect Prefabs: vfx_sledge_hit:{vfx_sledge_hit} fx_camshake:{fx_camshake} sfx_sledge_hit:{sfx_sledge_hit} sfx_sledge_swing:{sfx_sledge_swing} fx_demolisher_hit:{fx_demolisher_hit} vfx_clubhit:{vfx_clubhit} sfx_clubhit:{sfx_clubhit}");
         }
 
         public static Attack SetWarhammerPrimaryAttack(float stamina_cost = 22f)
@@ -192,14 +191,14 @@ namespace ValheimArmory.common
 
             if (Player.m_localPlayer != null)
             {
-                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Modifying items within the players inventory."); }
+                Logger.LogDebug($"Modifying items within the players inventory.");
                 // Update all instances that are in the backpack
                 foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
                 {
                     if (user_item == null) { continue; }
                     if (user_item.m_dropPrefab.name != weapon_prefab) { continue; }
 
-                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{user_item.m_shared.m_name} found in the players backpack, updating."); }
+                    Logger.LogDebug($"{user_item.m_shared.m_name} found in the players backpack, updating.");
                     user_item.m_shared.m_attack = primary;
                     user_item.m_shared.m_secondaryAttack = secondary;
                     user_item.m_shared.m_attack.m_hitEffect = warhammer_primary_effects;
@@ -235,14 +234,14 @@ namespace ValheimArmory.common
 
             if (Player.m_localPlayer != null)
             {
-                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Modifying items within the players inventory."); }
+                Logger.LogDebug($"Modifying items within the players inventory.");
                 // Update all instances that are in the backpack
                 foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
                 {
                     if (user_item == null) { continue; }
                     if (user_item.m_dropPrefab.name != weapon_prefab) { continue; }
 
-                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{user_item.m_shared.m_name} found in the players backpack, updating."); }
+                    Logger.LogDebug($"{user_item.m_shared.m_name} found in the players backpack, updating.");
                     user_item.m_shared.m_attack = sledgesmash;
                     ClearSharedVFX(user_item);
                     ClearSecondaryAttack(user_item);
@@ -268,13 +267,13 @@ namespace ValheimArmory.common
 
             if (Player.m_localPlayer != null)
             {
-                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Modifying items within the players inventory."); }
+                Logger.LogDebug($"Modifying items within the players inventory.");
                 // Update all instances that are in the backpack
                 foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
                 {
                     if (user_item == null) { continue; }
                     if (user_item.m_dropPrefab.name != weapon_prefab) { continue; }
-                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{user_item.m_shared.m_name} found in the players backpack, updating."); }
+                    Logger.LogDebug($"{user_item.m_shared.m_name} found in the players backpack, updating.");
                     user_item.m_shared.m_attack.m_attackStamina = sledge_stamina;
                 }
             }
@@ -298,14 +297,14 @@ namespace ValheimArmory.common
 
             if (Player.m_localPlayer != null)
             {
-                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Modifying items within the players inventory."); }
+                Logger.LogDebug($"Modifying items within the players inventory.");
                 // Update all instances that are in the backpack
                 foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
                 {
                     if (user_item == null) { continue; }
                     if (user_item.m_dropPrefab.name != weapon_prefab) { continue; }
 
-                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{user_item.m_shared.m_name} found in the players backpack, updating."); }
+                    Logger.LogDebug($"{user_item.m_shared.m_name} found in the players backpack, updating.");
                     user_item.m_shared.m_attack = primary;
                     user_item.m_shared.m_secondaryAttack = secondary;
                 }
@@ -446,14 +445,14 @@ namespace ValheimArmory.common
 
             if (Player.m_localPlayer != null)
             {
-                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Modifying items within the players inventory."); }
+                Logger.LogDebug($"Modifying items within the players inventory.");
                 // Update all instances that are in the backpack
                 foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
                 {
                     if (user_item == null) { continue; }
                     if (user_item.m_dropPrefab.name != weapon_prefab) { continue; }
 
-                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{user_item.m_shared.m_name} found in the players backpack, updating."); }
+                    Logger.LogDebug($"{user_item.m_shared.m_name} found in the players backpack, updating.");
                     user_item.m_shared.m_damages.m_slash = 0;
                     user_item.m_shared.m_damages.m_blunt = VAConfig.AbyssalKnifeBlunt.Value;
                     user_item.m_shared.m_damagesPerLevel.m_slash = 0;
@@ -481,14 +480,14 @@ namespace ValheimArmory.common
 
             if (Player.m_localPlayer != null)
             {
-                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Modifying items within the players inventory."); }
+                Logger.LogDebug($"Modifying items within the players inventory.");
                 // Update all instances that are in the backpack
                 foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
                 {
                     if (user_item == null) { continue; }
                     if (user_item.m_dropPrefab.name != weapon_prefab) { continue; }
 
-                    if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"{user_item.m_shared.m_name} found in the players backpack, updating."); }
+                    Logger.LogDebug($"{user_item.m_shared.m_name} found in the players backpack, updating.");
                     user_item.m_shared.m_damages.m_blunt = 0;
                     user_item.m_shared.m_damages.m_slash = 20;
                     user_item.m_shared.m_damagesPerLevel.m_blunt = 0;

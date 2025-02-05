@@ -5,6 +5,7 @@
 
 using BepInEx;
 using BepInEx.Configuration;
+using BepInEx.Logging;
 using HarmonyLib;
 using Jotunn.Entities;
 using Jotunn.Managers;
@@ -14,7 +15,6 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using ValheimArmory.common;
-using Logger = Jotunn.Logger;
 
 namespace ValheimArmory
 {
@@ -25,17 +25,18 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.18.0";
+        public const string PluginVersion = "1.18.5";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
+        public static ManualLogSource Log;
 
 
         private void Awake()
         {
             // build the config class, and ensure defaults are available / configs ingested.
             VAConfig cfg = new VAConfig(Config);
-
+            Log = this.Logger;
             // Load assets
             LoadAssets();
 
@@ -58,6 +59,8 @@ namespace ValheimArmory
             Assembly assembly = Assembly.GetExecutingAssembly();
             Harmony harmony = new(PluginGUID);
             harmony.PatchAll(assembly);
+
+            VAConfig.SaveOnSet(true);
         }
 
         // Check for other mods here and add compatability functionality
@@ -84,13 +87,13 @@ namespace ValheimArmory
             {
                 if (!embeddedResouce.Contains("localizations")) { continue; }
                 // Read the localization file
-                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Reading {embeddedResouce}"); }
+                Logger.LogDebug($"Reading {embeddedResouce}");
                 string localization = ReadEmbeddedResourceFile(embeddedResouce);
                 // since I use comments in the localization that are not valid JSON those need to be stripped
                 string cleaned_localization = Regex.Replace(localization, @"\/\/.*", "");
                 // Just the localization name
                 var localization_name = embeddedResouce.Split('.');
-                if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Adding localization: '{localization_name[2]}'"); }
+                Logger.LogDebug($"Adding localization: '{localization_name[2]}'");
                 // Logging some characters seem to cause issues sometimes
                 // if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Localization Text: {cleaned_localization}"); }
                 //Localization.AddTranslation(localization_name[2], localization);

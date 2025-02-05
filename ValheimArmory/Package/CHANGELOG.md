@@ -1,3 +1,43 @@
+**1.18.5**
+ ---
+ ```
+ - Fixed Asset bundle updates not being applied
+ - Reduced debug logging options
+ - Optimized startup slightly
+ ```
+
+**1.18.4**
+ ---
+ ```
+ - Fixed tool tier for the blackmetal dual axes being incorrect
+ ```
+
+**1.18.3**
+ ---
+ ```
+ - Fixed auto-pickup for the flametal sledge
+ - Brightened up the copper greataxe blade
+ - Slight startup optimizations
+ - Updated Russian translation
+ - Increased damage for 2h Axes secondary attack, slightly decreased stagger damage
+ - Increased default block values for the 2h axes (delete your config if you want to use the new defaults)
+ ```
+
+**1.18.2**
+ ---
+ ```
+ - Optimized startup slightly
+ - Fixed the default damage for the dual blackmetal knives incorrectly having spirit damage
+ - Fixed tool tier for the blackmetal dual axes being incorrect
+ ```
+
+**1.18.1**
+ ---
+ ```
+ - Fixed Jotun dual axes not being the correct tool level
+ - Fixed Jotun dual axes not having poison damage or configuration for poison damage
+ ```
+
 **1.18.0**
  ---
  ```

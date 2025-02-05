@@ -21,9 +21,13 @@ namespace ValheimArmory
         {
             // ensure all the config values are created
             cfg = Config;
-            cfg.SaveOnConfigSet = true;
+            cfg.SaveOnConfigSet = false;
             CreateConfigValues(Config);
-            
+        }
+
+        public static void SaveOnSet(bool enabled)
+        {
+            cfg.SaveOnConfigSet = enabled;
         }
 
         // Create Configuration and load it.
@@ -34,6 +38,7 @@ namespace ValheimArmory
                 new ConfigDescription("Enables Debug logging for Valheim Armory.",
                 null,
                 new ConfigurationManagerAttributes { IsAdvanced = true }));
+            EnableDebugMode.SettingChanged += Logger.enableDebugLogging;
             HybridWeaponBloodMagicSkillIncrease = BindServerConfig("Blood Magic Hybrid Weapons", "HybridWeaponBloodMagicSkillIncrease", 1f, "How much experiance should one usage of a blood magic hybrid weapon provide?", true, 0f, 4f);
             VanillaHammersHavePrimaryAttack = BindServerConfig("Vanilla Weapons", "VanillaHammersHavePrimaryAttack", true, "Enables a primary swing for vanilla sledges. Moves the slam to a secondary attack.");
             ModHammersHavePrimaryAttack = BindServerConfig("Vanilla Weapons", "ModHammersHavePrimaryAttack", true, "Enables a primary swing for mod weapons, disabling makes mod added hammers like vanilla sledges.");

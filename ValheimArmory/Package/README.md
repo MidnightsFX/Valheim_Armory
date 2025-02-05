@@ -140,13 +140,35 @@ It is encouraged that you find these items by exploring and discovery, but many 
 <details>
   <summary>Axes</summary>
 
+  ### Axes
+
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Silver Axe | Forge | Mountain | `VAcrystal_axe` | ![crystal axe icon](https://i.postimg.cc/KjVkkWNf/silver-axe-1h-icon.png) |
+
+
+  ### Dualaxes
+
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Dualaxes | Workbench | Meadows | `VAFlint_dualaxes` | ![flint dualaxes icon](https://i.postimg.cc/C5YYvsK0/flint-dualaxes.png) |
+  | Bronze Dualaxes | Forge | Blackforest | `VABronze_dualaxes` | ![bronze dualaxes icon](https://i.postimg.cc/dtNPdYGw/bronze-dualaxes.png) |
+  | Iron Dualaxes | Forge | Swamp | `VAIron_dualaxes` | ![iron dualaxes icon](https://i.postimg.cc/TP4JqtCy/iron-dualaxes.png) |
+  | Crystal Dualaxes | Forge | Mountain | `VACrystal_dualaxes` | ![crystal dualaxes icon](https://i.postimg.cc/MGQvNtzf/crystal-dualaxes.png) |
+  | Blackmetal Dualaxes | Forge | Plains | `VABlackmetal_dualaxes` | ![blackmetal dualaxes icon](https://i.postimg.cc/509WLNK9/blackmetal-dualaxes.png) |
+  | Jotun Dualaxes | Blackforge | Mistlands | `VAJotunn_dualaxes` | ![blackmetal dualaxes icon](https://i.postimg.cc/fWj51fbP/jotun-dualaxes.png) |
+  
+
+
   ### Greataxes (2H Axes)
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Flint Greataxe | Workbench | Meadows | `VAFlint_greataxe` | ![flint greataxe icon](https://i.imgur.com/dPbaKtX.png) |
   | Bronze Lumber Axe | Forge | Blackforest | `VAbronze_battleaxe` | ![bronze greataxe icon](https://i.postimg.cc/v839g0k3/bronze-axe-rebuild.png) |
-  | Blackmetal Greataxe | Forge | Mistlands | `VAblackmetal_battleaxe` | ![blackmetal greataxe icon](https://i.imgur.com/2H94zhh.png) |
+  | Blackmetal Greataxe | Forge | Plains | `VAblackmetal_2h_axe` | ![blackmetal greataxe icon](https://i.postimg.cc/2yYnjM0Z/blackmetal-2h-axe.png) |
+  | Herkirs Wrath | Forge | Plains | `VAblackmetal_battleaxe` | ![blackmetal greataxe icon](https://i.imgur.com/2H94zhh.png) |
+  | Jotuns Greataxe | Blackforge | Mistlands | `VAJotunn_2h_axe` | ![jotun greataxe icon](https://i.postimg.cc/TwtThW9J/jotun-2h-axe.png) |
 
 </details>
 

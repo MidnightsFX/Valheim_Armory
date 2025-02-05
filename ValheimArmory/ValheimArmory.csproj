@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="common\JotunnItemFactory.cs" />
+    <Compile Include="common\Logger.cs" />
     <Compile Include="common\WeaponModifier.cs" />
     <Compile Include="patches\HybridBloodWeapon.cs" />
     <Compile Include="ValheimArmoryItems.cs" />
