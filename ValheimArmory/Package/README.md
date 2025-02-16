@@ -20,13 +20,12 @@ If you would like to contribute a new translation, or improve an existing one pl
 
 # Features
 
-Here is a sample gallery of weapons added by this mod. 
+Here is a sample gallery of weapons added by this mod. There are over 115 items added by this mod, and you might not notice.
 
-![Sample of weapons added](https://i.postimg.cc/Xvz79KRH/image.png)
 
-Completed Sledge update (The blunt update)
+*Completed Axe Update*
 
-![Sample Gallery of added content](https://i.postimg.cc/BQVVRdNp/image.png)
+[![image.png](https://i.postimg.cc/257dFJTh/image.png)](https://postimg.cc/v1D6G0JZ)
 
 
 Below is more information on all of the items added, what tier they are in, where they are crafted and at what progression point. All of the sections below are expandable to view the details. 
@@ -145,7 +144,13 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Silver Axe | Forge | Mountain | `VAcrystal_axe` | ![crystal axe icon](https://i.postimg.cc/KjVkkWNf/silver-axe-1h-icon.png) |
+  | Jotuns Bane (half) | Blackforge | Mistlands | `VAJotunn_single_axe` | ![jotun half blade](https://i.postimg.cc/63xxYX7M/jotunn-halfblade.png) |
+  | Flametal Axe | Blackforge | Ashlands | `VAFlametal_Axe` | ![flametal axe](https://i.postimg.cc/6Q9CMc8Z/flametal-Axe-Base.png) |
+  | Flametal Blood Axe | Blackforge | Ashlands | `VAFlametal_Axe_Blood` | ![flametal blood axe](https://i.postimg.cc/sXg9gmyz/flametal-axe-1h-blood.png) |
+  | Flametal Lightning Axe | Blackforge | Ashlands | `VAFlametal_Axe_Lightning` | ![flametal lightning axe](https://i.postimg.cc/QMbJDP2S/flametal-axe-1h-lightning.png) |
+  | Flametal Primal Axe | Blackforge | Ashlands | `VAFlametal_Axe_Primal` | ![flametal primal axe](https://i.postimg.cc/JnY3DX4k/flametal-axe-1h-primal.png) |
 
+  *Note the Jotun Bane half axe is uncraftable by default*
 
   ### Dualaxes
 
@@ -157,7 +162,6 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Crystal Dualaxes | Forge | Mountain | `VACrystal_dualaxes` | ![crystal dualaxes icon](https://i.postimg.cc/MGQvNtzf/crystal-dualaxes.png) |
   | Blackmetal Dualaxes | Forge | Plains | `VABlackmetal_dualaxes` | ![blackmetal dualaxes icon](https://i.postimg.cc/509WLNK9/blackmetal-dualaxes.png) |
   | Jotun Dualaxes | Blackforge | Mistlands | `VAJotunn_dualaxes` | ![blackmetal dualaxes icon](https://i.postimg.cc/fWj51fbP/jotun-dualaxes.png) |
-  
 
 
   ### Greataxes (2H Axes)
@@ -169,6 +173,12 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Blackmetal Greataxe | Forge | Plains | `VAblackmetal_2h_axe` | ![blackmetal greataxe icon](https://i.postimg.cc/2yYnjM0Z/blackmetal-2h-axe.png) |
   | Herkirs Wrath | Forge | Plains | `VAblackmetal_battleaxe` | ![blackmetal greataxe icon](https://i.imgur.com/2H94zhh.png) |
   | Jotuns Greataxe | Blackforge | Mistlands | `VAJotunn_2h_axe` | ![jotun greataxe icon](https://i.postimg.cc/TwtThW9J/jotun-2h-axe.png) |
+  | Flametal Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_2h` | ![flametal greataxe](https://i.postimg.cc/0NqV42fK/flametal-battleaxe.png) |
+  | Flametal Blood Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_blood_2h` | ![flametal blood greataxe](https://i.postimg.cc/3w7ZBf8g/flametal-battleaxe-blood.png) |
+  | Flametal Lightning Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_lightning_2h` | ![flametal lightning greataxe](https://i.postimg.cc/5NCqMWjB/flametal-battleaxe-lightning.png) |
+  | Flametal Primal Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_primal_2h` | ![flametal primal greataxe](https://i.postimg.cc/QVG7MVVp/flametal-battleaxe-primal.png) |
+
+  *Note Herkirs Wrath is uncraftable by default*
 
 </details>
 

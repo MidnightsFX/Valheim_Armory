@@ -23,7 +23,7 @@ def sanitize_response(text, original_text)
   return sanitized_response
 end
 
-client = OpenAI::Client.new(access_token: config["OPENAI_KEY"])
+client = OpenAI::Client.new(access_token: config["OPENAI_KEY"], log_errors: true)
 
 master_file = File.read("#{localizations_dir}/English.json")
 master_json = JSON.parse(master_file)

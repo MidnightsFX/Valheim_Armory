@@ -343,11 +343,11 @@ namespace ValheimArmory.common
                        GameObject craftedAtCheck = PrefabManager.Instance.GetPrefab(sendEntry.Value);
                         if (craftedAtCheck == null)
                         {
-                            // Logger.LogWarning($"CraftedAt prefab ({sendEntry.Value}) is not valid, recipe will not update.");
+                            Logger.LogWarning($"CraftedAt prefab ({sendEntry.Value}) is not valid, recipe will not update.");
                             return;
                         }
                     } else {
-                        // Logger.LogDebug($"Recieved new recipe config {sendEntry.Value}");
+                        Logger.LogDebug($"Recieved new recipe config {sendEntry.Value}");
                         // Nothing to do if the recipe is invalid, its just going to be reset to its current recipe
                         if (RecipeConfigUpdater(sendEntry.Value) == false) { return; }
                     }
@@ -356,14 +356,14 @@ namespace ValheimArmory.common
 
                 RequirementConfig[] recipe = new RequirementConfig[UpdatedRecipeData.Count];
                 int recipe_index = 0;
-                // Logger.LogDebug("Validating and building requirementsConfig");
+                Logger.LogDebug("Validating and building requirementsConfig");
                 foreach (KeyValuePair<string, Tuple<int, int>> entry in UpdatedRecipeData)
                 {
                     if (PrefabManager.Instance.GetPrefab(entry.Key) == null) {
                         Logger.LogDebug($"{entry.Key} is not a valid prefab, skipping recipe update.");
                         return;
                     }
-                    // Logger.LogDebug($"Checking entry {entry.Key} c:{entry.Value.Item1} u:{entry.Value.Item2}");
+                    Logger.LogDebug($"Checking entry {entry.Key} c:{entry.Value.Item1} u:{entry.Value.Item2}");
                     recipe[recipe_index] = new RequirementConfig { Item = entry.Key, Amount = entry.Value.Item1, AmountPerLevel = entry.Value.Item2 };
                     recipe_index++;
                 }
@@ -378,14 +378,14 @@ namespace ValheimArmory.common
                     Enabled = CraftableConfig.Value,
                     Requirements = recipe,
                 });
-                // Logger.LogDebug($"Looking for existing recipe with name: {ItemRecipeName}");
+                Logger.LogDebug($"Looking for existing recipe with name: {ItemRecipeName}");
                 CustomRecipe curCrecipe = ItemManager.Instance.GetRecipe(ItemRecipeName);
 
-                // Logger.LogDebug("Checking craftable toggle.");
+                Logger.LogDebug("Checking craftable toggle.");
                 // Enable/disable recipe
                 if (ItemToggles[common.ItemToggles.craftable])
                 {
-                    // Logger.LogDebug("Updating Recipe.");
+                    Logger.LogDebug("Updating Recipe.");
                     // Add the recipe
                     ItemCI.Recipe = updatedCustomRecipe;
 
@@ -402,7 +402,7 @@ namespace ValheimArmory.common
                     if (curCrecipe != null && curCrecipe.Recipe != updatedCustomRecipe.Recipe)
                     {
                         HashSet<CustomRecipe> hashsetRecipes = AccessTools.Field(typeof(ItemManager), "Recipes").GetValue(ItemManager.Instance) as HashSet<CustomRecipe>;
-                        // Logger.LogDebug("Updating Registered Recipe");
+                        Logger.LogDebug("Updating Registered Recipe");
 
                         //ItemManager.Instance.RemoveRecipe(curCrecipe);
                         //ItemManager.Instance.AddRecipe(updatedCustomRecipe);

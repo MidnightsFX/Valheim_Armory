@@ -1643,6 +1643,49 @@ namespace ValheimArmory
                 }
             );
 
+            // Jotunn halfblade
+            new JotunnItem(
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Jotun halfblade" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAJotunn_single_axe" },
+                    { ItemMetadata.sprite, "jotunn_halfblade" },
+                    { ItemMetadata.craftedAt, "blackforge" }
+                },
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
+                    { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { ItemStat.slash, new Tuple<float, float, float, bool>(80, 0, 200, true) },
+                    { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { ItemStat.poison, new Tuple<float, float, float, bool>(40, 0, 200, true) },
+                    { ItemStat.poison_per_level, new Tuple<float, float, float, bool>(0, 0, 25, true) },
+                    { ItemStat.chop, new Tuple<float, float, float, bool>(70, 0, 200, true) },
+                    { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { ItemStat.attack_force, new Tuple<float, float, float, bool>(50, 0, 200, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(48, 0, 60, true) },
+                    { ItemStat.block_force, new Tuple<float, float, float, bool>(20, 0, 60, true) },
+                    { ItemStat.durability, new Tuple<float, float, float, bool>(175, 0, 400, true) },
+                    { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { ItemStat.primary_attack_stamina, new Tuple<float, float, float, bool>(16, 1, 50, true) },
+                    { ItemStat.secondary_attack_stamina, new Tuple<float, float, float, bool>(32, 1, 50, true) },
+                    { ItemStat.movement_speed, new Tuple<float, float, float, bool>(-0.05f, -0.20f, 0, true) },
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "Eitr", new Tuple<int, int>(10, 1) },
+                    { "Iron", new Tuple<int, int>(15, 10) },
+                    { "YggdrasilWood", new Tuple<int, int>(5, 0) },
+                    { "Bilebag", new Tuple<int, int>(3, 1) },
+                },
+                new Dictionary<ItemSettings, int>
+                {
+                    { ItemSettings.stationRequiredLevel, 1 }
+                },
+                new Dictionary<ItemToggles, bool>() {
+                    { ItemToggles.enabled, true },
+                    { ItemToggles.craftable, false }
+                }
+            );
+
             // Antler Battleaxe
             new JotunnItem(
                 new Dictionary<ItemMetadata, string>() {
@@ -1669,6 +1712,7 @@ namespace ValheimArmory
                     { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
                     { ItemStat.primary_attack_stamina, new Tuple<float, float, float, bool>(14, 1, 50, true) },
                     { ItemStat.secondary_attack_stamina, new Tuple<float, float, float, bool>(28, 1, 20, true) },
+                    { ItemStat.movement_speed, new Tuple<float, float, float, bool>(-0.20f, -0.20f, 0, true) },
                 },
                 new Dictionary<string, Tuple<int, int>>()
                 {
@@ -1707,6 +1751,7 @@ namespace ValheimArmory
                     { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
                     { ItemStat.primary_attack_stamina, new Tuple<float, float, float, bool>(22, 1, 50, true) },
                     { ItemStat.secondary_attack_stamina, new Tuple<float, float, float, bool>(10, 1, 50, true) },
+                    { ItemStat.movement_speed, new Tuple<float, float, float, bool>(-0.20f, -0.20f, 0, true) },
                 },
                 new Dictionary<string, Tuple<int, int>>()
                 {
@@ -1724,6 +1769,342 @@ namespace ValheimArmory
                     { ItemToggles.craftable, false }
                 }
             );
+
+            // Flametal Battleaxe
+            new JotunnItem(
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal Battleaxe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAFlametalAxe_2h" },
+                    { ItemMetadata.sprite, "flametal_battleaxe" },
+                    { ItemMetadata.craftedAt, "blackforge" }
+                },
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
+                    { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { ItemStat.slash, new Tuple<float, float, float, bool>(150, 0, 300, true) },
+                    { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { ItemStat.chop, new Tuple<float, float, float, bool>(90, 0, 300, true) },
+                    { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(2.5f, 0, 25, true) },
+                    { ItemStat.attack_force, new Tuple<float, float, float, bool>(70, 0, 200, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(78, 0, 60, true) },
+                    { ItemStat.block_force, new Tuple<float, float, float, bool>(70, 0, 120, true) },
+                    { ItemStat.durability, new Tuple<float, float, float, bool>(200, 0, 400, true) },
+                    { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { ItemStat.primary_attack_stamina, new Tuple<float, float, float, bool>(28, 1, 50, true) },
+                    { ItemStat.secondary_attack_stamina, new Tuple<float, float, float, bool>(12, 1, 50, true) },
+                    { ItemStat.movement_speed, new Tuple<float, float, float, bool>(-0.20f, -0.20f, 0, true) },
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "Blackwood", new Tuple<int, int>(10, 5) },
+                    { "FlametalNew", new Tuple<int, int>(20, 10) },
+                    { "CharredBone", new Tuple<int, int>(20, 15) },
+                    { "AskHide", new Tuple<int, int>(4, 0) }
+                },
+                new Dictionary<ItemSettings, int>
+                {
+                    { ItemSettings.stationRequiredLevel, 2 }
+                },
+                new Dictionary<ItemToggles, bool>() {
+                    { ItemToggles.enabled, true },
+                    { ItemToggles.craftable, true }
+                }
+            );
+
+            // Flametal Primal Battleaxe
+            new JotunnItem(
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal Primal Battleaxe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAFlametalAxe_primal_2h" },
+                    { ItemMetadata.sprite, "flametal_battleaxe_primal" },
+                    { ItemMetadata.craftedAt, "blackforge" }
+                },
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
+                    { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { ItemStat.slash, new Tuple<float, float, float, bool>(150, 0, 300, true) },
+                    { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { ItemStat.poison, new Tuple<float, float, float, bool>(25, 0, 300, true) },
+                    { ItemStat.poison_per_level, new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { ItemStat.chop, new Tuple<float, float, float, bool>(90, 0, 300, true) },
+                    { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(2.5f, 0, 25, true) },
+                    { ItemStat.attack_force, new Tuple<float, float, float, bool>(70, 0, 200, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(78, 0, 60, true) },
+                    { ItemStat.block_force, new Tuple<float, float, float, bool>(70, 0, 120, true) },
+                    { ItemStat.durability, new Tuple<float, float, float, bool>(200, 0, 400, true) },
+                    { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { ItemStat.primary_attack_stamina, new Tuple<float, float, float, bool>(28, 1, 50, true) },
+                    { ItemStat.secondary_attack_stamina, new Tuple<float, float, float, bool>(12, 1, 50, true) },
+                    { ItemStat.movement_speed, new Tuple<float, float, float, bool>(-0.20f, -0.20f, 0, true) },
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAFlametalAxe_2h", new Tuple<int, int>(1, 0) },
+                    { "Blackwood", new Tuple<int, int>(5, 0) },
+                    { "FlametalNew", new Tuple<int, int>(10, 5) },
+                    { "GemstoneGreen", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<ItemSettings, int>
+                {
+                    { ItemSettings.stationRequiredLevel, 2 }
+                },
+                new Dictionary<ItemToggles, bool>() {
+                    { ItemToggles.enabled, true },
+                    { ItemToggles.craftable, true }
+                }
+            );
+
+            // Flametal Lightning Battleaxe
+            new JotunnItem(
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal Lightning Battleaxe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAFlametalAxe_lightning_2h" },
+                    { ItemMetadata.sprite, "flametal_battleaxe_lightning" },
+                    { ItemMetadata.craftedAt, "blackforge" }
+                },
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
+                    { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { ItemStat.slash, new Tuple<float, float, float, bool>(150, 0, 300, true) },
+                    { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { ItemStat.lightning, new Tuple<float, float, float, bool>(20, 0, 300, true) },
+                    { ItemStat.lightning_per_level, new Tuple<float, float, float, bool>(2, 0, 20, true) },
+                    { ItemStat.chop, new Tuple<float, float, float, bool>(90, 0, 300, true) },
+                    { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(2.5f, 0, 25, true) },
+                    { ItemStat.attack_force, new Tuple<float, float, float, bool>(70, 0, 200, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(78, 0, 60, true) },
+                    { ItemStat.block_force, new Tuple<float, float, float, bool>(70, 0, 120, true) },
+                    { ItemStat.durability, new Tuple<float, float, float, bool>(200, 0, 400, true) },
+                    { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { ItemStat.primary_attack_stamina, new Tuple<float, float, float, bool>(28, 1, 50, true) },
+                    { ItemStat.secondary_attack_stamina, new Tuple<float, float, float, bool>(12, 1, 50, true) },
+                    { ItemStat.movement_speed, new Tuple<float, float, float, bool>(-0.20f, -0.20f, 0, true) },
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAFlametalAxe_2h", new Tuple<int, int>(1, 0) },
+                    { "Blackwood", new Tuple<int, int>(5, 0) },
+                    { "FlametalNew", new Tuple<int, int>(10, 5) },
+                    { "GemstoneBlue", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<ItemSettings, int>
+                {
+                    { ItemSettings.stationRequiredLevel, 2 }
+                },
+                new Dictionary<ItemToggles, bool>() {
+                    { ItemToggles.enabled, true },
+                    { ItemToggles.craftable, true }
+                }
+            );
+
+            // Flametal Blood Battleaxe
+            new JotunnItem(
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal Blood Battleaxe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAFlametalAxe_blood_2h" },
+                    { ItemMetadata.sprite, "flametal_battleaxe_blood" },
+                    { ItemMetadata.craftedAt, "blackforge" }
+                },
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
+                    { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { ItemStat.slash, new Tuple<float, float, float, bool>(150, 0, 300, true) },
+                    { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { ItemStat.chop, new Tuple<float, float, float, bool>(90, 0, 300, true) },
+                    { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(2.5f, 0, 25, true) },
+                    { ItemStat.attack_force, new Tuple<float, float, float, bool>(70, 0, 200, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(78, 0, 60, true) },
+                    { ItemStat.block_force, new Tuple<float, float, float, bool>(70, 0, 120, true) },
+                    { ItemStat.durability, new Tuple<float, float, float, bool>(200, 0, 400, true) },
+                    { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { ItemStat.primary_attack_stamina, new Tuple<float, float, float, bool>(28, 1, 50, true) },
+                    { ItemStat.secondary_attack_stamina, new Tuple<float, float, float, bool>(12, 1, 50, true) },
+                    { ItemStat.movement_speed, new Tuple<float, float, float, bool>(-0.20f, -0.20f, 0, true) },
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "VAFlametalAxe_2h", new Tuple<int, int>(1, 0) },
+                    { "Blackwood", new Tuple<int, int>(5, 0) },
+                    { "FlametalNew", new Tuple<int, int>(10, 5) },
+                    { "GemstoneRed", new Tuple<int, int>(1, 1) }
+                },
+                new Dictionary<ItemSettings, int>
+                {
+                    { ItemSettings.stationRequiredLevel, 2 }
+                },
+                new Dictionary<ItemToggles, bool>() {
+                    { ItemToggles.enabled, true },
+                    { ItemToggles.craftable, true }
+                }
+            );
+
+            // Flametal Axe
+            new JotunnItem(
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal Axe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAFlametal_Axe" },
+                    { ItemMetadata.sprite, "flametalAxeBase" },
+                    { ItemMetadata.craftedAt, "blackforge" }
+                },
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
+                    { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { ItemStat.slash, new Tuple<float, float, float, bool>(140, 0, 200, true) },
+                    { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { ItemStat.chop, new Tuple<float, float, float, bool>(80, 0, 200, true) },
+                    { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { ItemStat.attack_force, new Tuple<float, float, float, bool>(50, 0, 200, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(48, 0, 60, true) },
+                    { ItemStat.block_force, new Tuple<float, float, float, bool>(20, 0, 60, true) },
+                    { ItemStat.durability, new Tuple<float, float, float, bool>(175, 0, 400, true) },
+                    { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { ItemStat.primary_attack_stamina, new Tuple<float, float, float, bool>(18, 1, 50, true) },
+                    { ItemStat.secondary_attack_stamina, new Tuple<float, float, float, bool>(36, 1, 50, true) },
+                    { ItemStat.movement_speed, new Tuple<float, float, float, bool>(-0.05f, -0.20f, 0, true) },
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "FlametalNew", new Tuple<int, int>(12, 6) },
+                    { "AskHide", new Tuple<int, int>(4, 1) },
+                    { "CharredBone", new Tuple<int, int>(10, 0) },
+                },
+                new Dictionary<ItemSettings, int>
+                {
+                    { ItemSettings.stationRequiredLevel, 1 }
+                },
+                new Dictionary<ItemToggles, bool>() {
+                    { ItemToggles.enabled, true },
+                    { ItemToggles.craftable, true }
+                }
+            );
+
+            // Flametal Primal Axe
+            new JotunnItem(
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal Primal Axe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAFlametal_Axe_Primal" },
+                    { ItemMetadata.sprite, "flametal_axe_1h_primal" },
+                    { ItemMetadata.craftedAt, "blackforge" }
+                },
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
+                    { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { ItemStat.slash, new Tuple<float, float, float, bool>(140, 0, 200, true) },
+                    { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { ItemStat.poison, new Tuple<float, float, float, bool>(25, 0, 300, true) },
+                    { ItemStat.poison_per_level, new Tuple<float, float, float, bool>(3, 0, 20, true) },
+                    { ItemStat.chop, new Tuple<float, float, float, bool>(80, 0, 200, true) },
+                    { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { ItemStat.attack_force, new Tuple<float, float, float, bool>(50, 0, 200, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(48, 0, 60, true) },
+                    { ItemStat.block_force, new Tuple<float, float, float, bool>(20, 0, 60, true) },
+                    { ItemStat.durability, new Tuple<float, float, float, bool>(175, 0, 400, true) },
+                    { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { ItemStat.primary_attack_stamina, new Tuple<float, float, float, bool>(18, 1, 50, true) },
+                    { ItemStat.secondary_attack_stamina, new Tuple<float, float, float, bool>(36, 1, 50, true) },
+                    { ItemStat.movement_speed, new Tuple<float, float, float, bool>(-0.05f, -0.20f, 0, true) },
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "FlametalNew", new Tuple<int, int>(12, 6) },
+                    { "GemstoneGreen", new Tuple<int, int>(4, 1) },
+                    { "CharredBone", new Tuple<int, int>(10, 0) },
+                    { "VAFlametal_Axe", new Tuple<int, int>(1, 0) },
+                },
+                new Dictionary<ItemSettings, int>
+                {
+                    { ItemSettings.stationRequiredLevel, 1 }
+                },
+                new Dictionary<ItemToggles, bool>() {
+                    { ItemToggles.enabled, true },
+                    { ItemToggles.craftable, true }
+                }
+            );
+
+            // Flametal Lightning Axe
+            new JotunnItem(
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal Lightning Axe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAFlametal_Axe_Lightning" },
+                    { ItemMetadata.sprite, "flametal_axe_1h_lightning" },
+                    { ItemMetadata.craftedAt, "blackforge" }
+                },
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
+                    { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { ItemStat.slash, new Tuple<float, float, float, bool>(140, 0, 200, true) },
+                    { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { ItemStat.lightning, new Tuple<float, float, float, bool>(20, 0, 300, true) },
+                    { ItemStat.lightning_per_level, new Tuple<float, float, float, bool>(2, 0, 20, true) },
+                    { ItemStat.chop, new Tuple<float, float, float, bool>(80, 0, 200, true) },
+                    { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { ItemStat.attack_force, new Tuple<float, float, float, bool>(50, 0, 200, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(48, 0, 60, true) },
+                    { ItemStat.block_force, new Tuple<float, float, float, bool>(20, 0, 60, true) },
+                    { ItemStat.durability, new Tuple<float, float, float, bool>(175, 0, 400, true) },
+                    { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { ItemStat.primary_attack_stamina, new Tuple<float, float, float, bool>(18, 1, 50, true) },
+                    { ItemStat.secondary_attack_stamina, new Tuple<float, float, float, bool>(36, 1, 50, true) },
+                    { ItemStat.movement_speed, new Tuple<float, float, float, bool>(-0.05f, -0.20f, 0, true) },
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "FlametalNew", new Tuple<int, int>(12, 6) },
+                    { "GemstoneBlue", new Tuple<int, int>(4, 1) },
+                    { "CharredBone", new Tuple<int, int>(10, 0) },
+                    { "VAFlametal_Axe", new Tuple<int, int>(1, 0) },
+                },
+                new Dictionary<ItemSettings, int>
+                {
+                    { ItemSettings.stationRequiredLevel, 1 }
+                },
+                new Dictionary<ItemToggles, bool>() {
+                    { ItemToggles.enabled, true },
+                    { ItemToggles.craftable, true }
+                }
+            );
+
+            // Flametal Blood Axe
+            new JotunnItem(
+                new Dictionary<ItemMetadata, string>() {
+                    { ItemMetadata.name, "Flametal Blood Axe" },
+                    { ItemMetadata.catagory, "Axes" },
+                    { ItemMetadata.prefab, "VAFlametal_Axe_Blood" },
+                    { ItemMetadata.sprite, "flametal_axe_1h_blood" },
+                    { ItemMetadata.craftedAt, "blackforge" }
+                },
+                new Dictionary<ItemStat, Tuple<float, float, float, bool>>() {
+                    { ItemStat.amount, new Tuple<float, float, float, bool>(1, 1, 1, false) },
+                    { ItemStat.slash, new Tuple<float, float, float, bool>(140, 0, 200, true) },
+                    { ItemStat.slash_per_level, new Tuple<float, float, float, bool>(5, 0, 25, true) },
+                    { ItemStat.chop, new Tuple<float, float, float, bool>(80, 0, 200, true) },
+                    { ItemStat.chop_per_level, new Tuple<float, float, float, bool>(3, 0, 25, true) },
+                    { ItemStat.attack_force, new Tuple<float, float, float, bool>(50, 0, 200, true) },
+                    { ItemStat.block_armor, new Tuple<float, float, float, bool>(48, 0, 60, true) },
+                    { ItemStat.block_force, new Tuple<float, float, float, bool>(20, 0, 60, true) },
+                    { ItemStat.durability, new Tuple<float, float, float, bool>(175, 0, 400, true) },
+                    { ItemStat.durability_per_level, new Tuple<float, float, float, bool>(50, 0, 75, true) },
+                    { ItemStat.primary_attack_stamina, new Tuple<float, float, float, bool>(18, 1, 50, true) },
+                    { ItemStat.secondary_attack_stamina, new Tuple<float, float, float, bool>(36, 1, 50, true) },
+                    { ItemStat.movement_speed, new Tuple<float, float, float, bool>(-0.05f, -0.20f, 0, true) },
+                },
+                new Dictionary<string, Tuple<int, int>>()
+                {
+                    { "FlametalNew", new Tuple<int, int>(12, 6) },
+                    { "GemstoneBlue", new Tuple<int, int>(4, 1) },
+                    { "CharredBone", new Tuple<int, int>(10, 0) },
+                    { "VAFlametal_Axe", new Tuple<int, int>(1, 0) },
+                },
+                new Dictionary<ItemSettings, int>
+                {
+                    { ItemSettings.stationRequiredLevel, 1 }
+                },
+                new Dictionary<ItemToggles, bool>() {
+                    { ItemToggles.enabled, true },
+                    { ItemToggles.craftable, true }
+                }
+            );
+
         }
 
         private void LoadHammers()

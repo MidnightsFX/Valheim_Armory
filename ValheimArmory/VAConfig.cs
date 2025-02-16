@@ -28,6 +28,7 @@ namespace ValheimArmory
         public static void SaveOnSet(bool enabled)
         {
             cfg.SaveOnConfigSet = enabled;
+            cfg.Save();
         }
 
         // Create Configuration and load it.

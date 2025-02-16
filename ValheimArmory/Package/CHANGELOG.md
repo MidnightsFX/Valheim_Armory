@@ -1,3 +1,17 @@
+**1.19.0**
+ ---
+ ```
+ - Tweaks to the elemental shader to bring it closer to vanilla
+ - Added Flametal greataxe and 1H axe
+ - Added Flametal primal greataxe and 1H axe
+ - Added Flametal lightning greataxe and 1H axe
+ - Added Flametal blood greataxe and 1H axe
+ - Added single blade variant of the Jotun axe
+ - Updated Ukranain translation
+ - Fixed config files not being regenerated on startup
+ - Fixes crystal axe high attachment point
+ ```
+
 **1.18.5**
  ---
  ```
