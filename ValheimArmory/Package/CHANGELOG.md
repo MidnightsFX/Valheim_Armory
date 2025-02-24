@@ -1,3 +1,19 @@
+**1.19.2**
+ ---
+ ```
+ - Updates limit values for most attacks, blocks, and costs
+ - Updated default block values for 2H Jotun axe, 2H flametal axes
+ - Fixed stagger, force applied, and damage for the 1H axes
+ ```
+
+**1.19.1**
+ ---
+ ```
+ - Updated localizations for the axe update
+ - Fixed default recipe for Flametal 1H blood axe (reset or delete your config if needed)
+ - Fixes for 1H flametal axes having issues when being removed from itemstands
+ ```
+
 **1.19.0**
  ---
  ```

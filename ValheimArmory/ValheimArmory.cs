@@ -25,7 +25,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.19.0";
+        public const string PluginVersion = "1.19.2";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
