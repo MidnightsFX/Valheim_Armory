@@ -373,9 +373,7 @@ Q. Why does disabling the recipe do nothing?
 - A. You must have an item enabled, for the recipe disable flag to do anything. When an item is disabled it is completely removed from the game, so its recipe doesn't matter. Items can be uncraftable, and removed from the game seperately.
 
 Q. I want to edit the text for a weapon, how do I do that?
-- A. You can download a copy of any of the language files [available on github](https://github.com/MidnightsFX/Valheim_Armory/tree/master/ValheimArmory/localizations) and place it at the following location: `Valheim\BepInEx\plugins\ValheimArmory\Assets\Translations\YOUR_LANGUAGE_HERE\ValheimArmory.json` this will override
-     the default localization for VA for the language specified. This is localization sideloading that is supported through [Jotunn](https://valheim-modding.github.io/Jotunn/tutorials/localization.html#side-loading-localizations)
-     I also accept language translation updates, if you want to translate or update an existing translation please reach out on the discord server or open a github ticket.
+- A. All of the localizations are added to `BepinEx/config/ValheimArmory` modifying localizations in that folder will result in them being different in game. Changes do require a game restart to take effect.
 
 Q. Why does x weapon look bad?
 - A.

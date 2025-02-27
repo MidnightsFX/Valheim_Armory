@@ -17,6 +17,8 @@ namespace ValheimArmory
         public static ConfigEntry<bool> VanillaAbyssalKnifeBluntDamageConvert;
         public static ConfigEntry<float> AbyssalKnifeBlunt;
         public static ConfigEntry<float> AbyssalKnifeBluntPerLevel;
+
+        public static ConfigEntry<int> InMemoryModificationsPerTick;
         public VAConfig(ConfigFile Config)
         {
             // ensure all the config values are created
@@ -54,6 +56,8 @@ namespace ValheimArmory
             AbyssalKnifeBluntPerLevel = BindServerConfig("Vanilla Weapons", "AbyssalKnifeBluntPerLevel", 1f, "Blunt damage per level for the abyssal knife", true, 0, 10);
             AbyssalKnifeBlunt.SettingChanged += WeaponModifier.OnConfigAbyssalKnifeValueChanged;
             AbyssalKnifeBluntPerLevel.SettingChanged += WeaponModifier.OnConfigAbyssalKnifeValueChanged;
+
+            InMemoryModificationsPerTick = BindServerConfig("General", "InMemoryModificationsPerTick", 10, "How many modifications should be processed per tick.", true, 1, 100);
         }
 
         /// <summary>

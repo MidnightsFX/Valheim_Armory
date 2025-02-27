@@ -53,6 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="common\ItemDefinition.cs" />
+    <Compile Include="common\JotunBatchLoader.cs" />
     <Compile Include="common\JotunnItemFactory.cs" />
     <Compile Include="common\Logger.cs" />
     <Compile Include="common\WeaponModifier.cs" />

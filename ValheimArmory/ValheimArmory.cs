@@ -4,12 +4,12 @@
 // Project: ValheimArmory
 
 using BepInEx;
-using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
 using Jotunn.Entities;
 using Jotunn.Managers;
 using Jotunn.Utils;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Text.RegularExpressions;
@@ -73,6 +73,11 @@ namespace ValheimArmory
         {
             Localization = LocalizationManager.Instance.GetLocalization();
             //LocalizationManager.Instance.AddLocalization(Localization);
+
+            // Ensure localization folder exists
+            var translationFolder = Path.Combine(BepInEx.Paths.ConfigPath, "ValheimArmory");
+            Directory.CreateDirectory(translationFolder);
+            //SimpleJson.SimpleJson.CurrentJsonSerializerStrategy
             
 
             // ValheimArmory.localizations.English.json,ValheimArmory.localizations.German.json,ValheimArmory.localizations.Russian.json
@@ -81,17 +86,51 @@ namespace ValheimArmory
             {
                 if (!embeddedResouce.Contains("localizations")) { continue; }
                 // Read the localization file
-                Logger.LogDebug($"Reading {embeddedResouce}");
+                
                 string localization = ReadEmbeddedResourceFile(embeddedResouce);
                 // since I use comments in the localization that are not valid JSON those need to be stripped
                 string cleaned_localization = Regex.Replace(localization, @"\/\/.*", "");
+                Dictionary<string, string> internal_localization = SimpleJson.SimpleJson.DeserializeObject<Dictionary<string, string>>(cleaned_localization);
                 // Just the localization name
                 var localization_name = embeddedResouce.Split('.');
-                Logger.LogDebug($"Adding localization: '{localization_name[2]}'");
+                if (File.Exists($"{translationFolder}/{localization_name[2]}.json")) {
+                    string cached_translation_file = File.ReadAllText($"{translationFolder}/{localization_name[2]}.json");
+                    try {
+                        Dictionary<string, string> cached_localization = SimpleJson.SimpleJson.DeserializeObject<Dictionary<string, string>>(cached_translation_file);
+                        UpdateLocalizationWithMissingKeys(internal_localization, cached_localization);
+                        Logger.LogDebug($"Reading {translationFolder}/{localization_name[2]}.json");
+                        File.WriteAllText($"{translationFolder}/{localization_name[2]}.json", SimpleJson.SimpleJson.SerializeObject(cached_localization));
+                        Localization.AddJsonFile(localization_name[2], cached_translation_file);
+                    } catch {
+                        File.WriteAllText($"{translationFolder}/{localization_name[2]}.json", cleaned_localization);
+                        Logger.LogDebug($"Reading {embeddedResouce}");
+                        Localization.AddJsonFile(localization_name[2], cleaned_localization);
+                    }
+                } else {
+                    File.WriteAllText($"{translationFolder}/{localization_name[2]}.json", cleaned_localization);
+                    Logger.LogDebug($"Reading {embeddedResouce}");
+                    Localization.AddJsonFile(localization_name[2], cleaned_localization);
+                }
+
+                Logger.LogDebug($"Added localization: '{localization_name[2]}'");
                 // Logging some characters seem to cause issues sometimes
                 // if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Localization Text: {cleaned_localization}"); }
                 //Localization.AddTranslation(localization_name[2], localization);
-                Localization.AddJsonFile(localization_name[2], cleaned_localization);
+                // Localization.AddJsonFile(localization_name[2], cleaned_localization);
+            }
+        }
+
+        private void UpdateLocalizationWithMissingKeys(Dictionary<string, string> internal_localization, Dictionary<string, string> cached_localization) {
+            if (internal_localization.Keys.Count != cached_localization.Keys.Count)
+            {
+                Logger.LogDebug("Cached localization was missing some entries. They will be added.");
+                foreach (KeyValuePair<string, string> entry in internal_localization)
+                {
+                    if (!cached_localization.ContainsKey(entry.Key))
+                    {
+                        cached_localization.Add(entry.Key, entry.Value);
+                    }
+                }
             }
         }
 
