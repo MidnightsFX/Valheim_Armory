@@ -233,8 +233,7 @@ namespace ValheimArmory.common
                 CreateAndUpdateRecipe();
                 RequirementConfig[] recipe = new RequirementConfig[UpdatedRecipeData.Count];
                 int recipe_index = 0;
-                foreach (KeyValuePair<string, Tuple<int, int>> entry in UpdatedRecipeData)
-                {
+                foreach (KeyValuePair<string, Tuple<int, int>> entry in UpdatedRecipeData) {
                     recipe[recipe_index] = new RequirementConfig { Item = entry.Key, Amount = entry.Value.Item1, AmountPerLevel = entry.Value.Item2 };
                     recipe_index++;
                 }
@@ -705,10 +704,8 @@ namespace ValheimArmory.common
                         itemData.m_shared.m_toolTier = (int)updatedValue;
                         break;
                     default:
-                        // Logger.LogWarning($"{target_attribute} was not modified, ensure the pattern is correct.");
                         break;
                 }
-                // Logger.LogDebug($"Updated {target_attribute} to {updatedValue}");
             }
 
             private bool RecipeConfigUpdater(String rawrecipe, bool startup = false)
