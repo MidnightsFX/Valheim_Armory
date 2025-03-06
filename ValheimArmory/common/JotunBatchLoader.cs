@@ -1,5 +1,6 @@
 ﻿using BepInEx.Configuration;
 using HarmonyLib;
+using Jotunn;
 using Jotunn.Configs;
 using Jotunn.Entities;
 using Jotunn.Managers;
@@ -34,10 +35,13 @@ namespace ValheimArmory.common
                 resourceDefinitions.Reverse();
             }
             WireConfigDefs();
-            BatchAddItems();
 
-            // This is not needed on the server
-            SetupOnChange();
+            if (ZNet.instance.IsServerInstance()) {
+                // This is not needed on the server
+                // The server does not actually do anything with prefabs, and is not responsible for modifying them
+                BatchAddItems();
+                SetupOnChange();
+            }
 
             VAConfig.SaveOnSet(true);
 
