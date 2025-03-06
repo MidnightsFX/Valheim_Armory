@@ -397,8 +397,7 @@ namespace ValheimArmory.common
                         {
                             // Logger.LogDebug($"Recipe resource {res.m_resItem.name} {res.m_amount} updating..");
                             var prefab = ObjectDB.instance.GetItemPrefab(res.m_resItem.name.Replace("JVLmock_", ""));
-                            if (prefab != null)
-                            {
+                            if (prefab != null) {
                                 res.m_resItem = prefab.GetComponent<ItemDrop>();
                                 // Logger.LogDebug($"{res.m_resItem.name} itemdrop set");
                             }
