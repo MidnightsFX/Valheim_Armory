@@ -1,5 +1,4 @@
 ﻿using BepInEx.Configuration;
-using HarmonyLib;
 using Jotunn;
 using Jotunn.Configs;
 using Jotunn.Entities;
@@ -9,13 +8,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static InventoryGrid;
 
 namespace ValheimArmory.common
 {
     class JotunBatchLoader : MonoBehaviour
     {
         internal static List<ItemDefinition> resourceDefinitions = new List<ItemDefinition>();
+        internal static Queue<Action> queuedModifications = new Queue<Action>();
+        internal static bool runningQueuedChanges = false;
         internal static AssetBundle Assets;
 
         internal static readonly AcceptableValueList<string> allowedModifiers = new AcceptableValueList<string>(new string[] {
@@ -36,12 +36,19 @@ namespace ValheimArmory.common
             }
             WireConfigDefs();
 
-            if (ZNet.instance.IsServerInstance()) {
+            bool on_server = false;
+            if (ZNet.instance != null && ZNet.instance.IsServerInstance()) {
+                on_server = true;
+            }
+
+            if (on_server == false) {       
                 // This is not needed on the server
                 // The server does not actually do anything with prefabs, and is not responsible for modifying them
                 BatchAddItems();
                 SetupOnChange();
+
             }
+
 
             VAConfig.SaveOnSet(true);
 
@@ -93,17 +100,23 @@ namespace ValheimArmory.common
                 if (!itemdef.enabled) { continue; }
                 // Craftable config toggle
                 itemdef.craftable_cfg.SettingChanged += (_, _) => {
-                    EnableDisableItemInDB(itemdef, itemdef.craftable_cfg.Value);
+                    Action mod = () => { EnableDisableItemInDB(itemdef, itemdef.craftable_cfg.Value); };
+                    queuedModifications.Enqueue(mod);
+                    StartCoroutine(RunQueuedModification());
                 };
                 // Logger.LogInfo("Setup Craftable toggle");
                 // Station level config
                 itemdef.stationlvl_cfg.SettingChanged += (_, _) => {
-                    ModifyItemRecipeLevel(itemdef, itemdef.stationlvl_cfg.Value);
+                    Action mod = () => { ModifyItemRecipeLevel(itemdef, itemdef.stationlvl_cfg.Value); };
+                    queuedModifications.Enqueue(mod);
+                    StartCoroutine(RunQueuedModification());
                 };
                 // Logger.LogInfo("Setup Crafting station level");
                 // Modify where the item is crafted
                 itemdef.craftedAt_cfg.SettingChanged += (_, _) => {
-                    ModifyItemRecipeCraftedAt(itemdef, itemdef.craftedAt_cfg.Value);
+                    Action mod = () => { ModifyItemRecipeCraftedAt(itemdef, itemdef.craftedAt_cfg.Value); };
+                    queuedModifications.Enqueue(mod);
+                    StartCoroutine(RunQueuedModification());
                 };
                 // Logger.LogInfo("Setup single value changes");
                 
@@ -111,20 +124,28 @@ namespace ValheimArmory.common
                 foreach (KeyValuePair<ItemStat, ItemStatConfig> stat in itemdef.modifableStats) {
                     if (stat.Value.configurable == false) { continue; }
                     stat.Value.cfg.SettingChanged += (sender, args) => {
-                        stat.Value.default_value = stat.Value.cfg.Value;
-                        // Update player items
-                        UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
-                        // Update in world items, this is delayed and batched to prevent lag spikes.
-                        IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(itemdef.prefab));
-                        // UpdateItemInWorldAsync(objects, true, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
-                        StartCoroutine(UpdateItemInWorldAsync(objects, true,(ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); }));
+                        Action mod = () => {
+                            stat.Value.default_value = stat.Value.cfg.Value;
+                            // Update player items
+                            UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
+                            // Update in world items, this is delayed and batched to prevent lag spikes.
+                            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(itemdef.prefab));
+                            // UpdateItemInWorldAsync(objects, true, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
+                            StartCoroutine(UpdateItemInWorldAsync(objects, true, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); }));
+                        };
+                        queuedModifications.Enqueue(mod);
+                        StartCoroutine(RunQueuedModification());
                     };
                 }
                 // Logger.LogInfo("Setup stat changes");
 
                 // Modify the recipe in the object DB
                 itemdef.recipe.recipeConfig.SettingChanged += (sender, args) => {
-                    if (ValidateRecipeConfig(itemdef)) { ModifyItemRecipeInODB(itemdef); }
+                    if (ValidateRecipeConfig(itemdef)) {
+                        Action mod = () => { ModifyItemRecipeInODB(itemdef); };
+                        queuedModifications.Enqueue(mod);
+                        StartCoroutine(RunQueuedModification());
+                    }
                 };
                 // Logger.LogInfo("Setup recipe changes");
 
@@ -133,13 +154,18 @@ namespace ValheimArmory.common
                 foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.damageMods)
                 {
                     dmgmod.Value.dmgModcfg.SettingChanged += (_, _) => {
-                        HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.dmgModcfg.Value);
-                        // Update player items
-                        UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
-                        IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(itemdef.prefab));
-                        // Update world items
-                        // UpdateItemInWorldAsync(objects, false, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
-                        StartCoroutine(UpdateItemInWorldAsync(objects, false, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); }));
+                        Action mod = () =>
+                        {
+                            HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.dmgModcfg.Value);
+                            // Update player items
+                            UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
+                            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(itemdef.prefab));
+                            // Update world items
+                            // UpdateItemInWorldAsync(objects, false, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
+                            StartCoroutine(UpdateItemInWorldAsync(objects, false, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); }));
+                        };
+                        queuedModifications.Enqueue(mod);
+                        StartCoroutine(RunQueuedModification());
                     };
                 }
             }
@@ -472,6 +498,27 @@ namespace ValheimArmory.common
                     callback(id.m_itemData);
                 }
             }
+            yield break;
+        }
+
+        static IEnumerator RunQueuedModification() {
+            if (queuedModifications.Count == 0 || runningQueuedChanges == true) {
+                yield break;
+            }
+            runningQueuedChanges = true;
+            // wait for a tiny bit to give ourselves a good chance of catching bulk changes
+            yield return new WaitForSeconds(0.5f);
+            int concurrent_updates = VAConfig.InMemoryModificationsPerTick.Value;
+            int op_num = 0;
+            while (queuedModifications.Count > 0) {
+                op_num ++;
+                if (op_num >= concurrent_updates) {
+                    yield return new WaitForSeconds(0.2f);
+                    op_num = 0;
+                }
+                queuedModifications.Dequeue().Invoke();
+            }
+            runningQueuedChanges = false;
             yield break;
         }
     }

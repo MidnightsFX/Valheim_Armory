@@ -32,7 +32,7 @@ namespace ValheimArmory
         public static ManualLogSource Log;
 
 
-        private void Awake()
+        public void Awake()
         {
             // build the config class, and ensure defaults are available / configs ingested.
             VAConfig cfg = new VAConfig(Config);

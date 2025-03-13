@@ -1,5 +1,4 @@
 ﻿using Jotunn.Configs;
-using Jotunn.Entities;
 using System.Collections.Generic;
 
 namespace ValheimArmory.common

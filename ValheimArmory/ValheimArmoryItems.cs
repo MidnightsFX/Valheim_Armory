@@ -5,7 +5,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using ValheimArmory.common;
-using static ValheimArmory.common.JotunnItemFactory;
 using Logger = Jotunn.Logger;
 
 namespace ValheimArmory
