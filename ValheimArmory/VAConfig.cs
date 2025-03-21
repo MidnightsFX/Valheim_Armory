@@ -1,5 +1,4 @@
 ﻿using BepInEx.Configuration;
-using System.Collections.Generic;
 using ValheimArmory.common;
 
 namespace ValheimArmory
@@ -25,6 +24,7 @@ namespace ValheimArmory
             cfg = Config;
             cfg.SaveOnConfigSet = false;
             CreateConfigValues(Config);
+            Logger.toggleDebug(); // Read the debug logging and set that now that its created and bound
         }
 
         public static void SaveOnSet(bool enabled)

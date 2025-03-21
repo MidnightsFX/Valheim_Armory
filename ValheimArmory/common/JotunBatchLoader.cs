@@ -4,17 +4,15 @@ using Jotunn.Configs;
 using Jotunn.Entities;
 using Jotunn.Managers;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
 namespace ValheimArmory.common
 {
-    class JotunBatchLoader : MonoBehaviour
+    class JotunBatchLoader
     {
         internal static List<ItemDefinition> resourceDefinitions = new List<ItemDefinition>();
-        internal static Queue<Action> queuedModifications = new Queue<Action>();
         internal static bool runningQueuedChanges = false;
         internal static AssetBundle Assets;
 
@@ -46,12 +44,11 @@ namespace ValheimArmory.common
                 // The server does not actually do anything with prefabs, and is not responsible for modifying them
                 BatchAddItems();
                 SetupOnChange();
-
             }
 
-
+            // Flush to disk
+            VAConfig.cfg.Save();
             VAConfig.SaveOnSet(true);
-
             return true;
         }
 
@@ -65,9 +62,8 @@ namespace ValheimArmory.common
             foreach (ItemDefinition itemdef in resourceDefinitions) {
                 // Build a compacted display name for reference, this primarily just needs spaces removed.
                 itemdef.DisplayName = string.Join("", itemdef.Name.Split(default(string[]), StringSplitOptions.RemoveEmptyEntries));
-                itemdef.enabled = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-enabled", itemdef.enabled, $"Enable/Disable the {itemdef.Name}. Items set to Disabled will not be loaded. Requires a restart if changed while the game is running.").Value;
                 // Skip over all loading of items that are disabled.
-                if (!itemdef.enabled) { continue; }
+                // if (!itemdef.enabled) { continue; }
                 itemdef.craftable_cfg = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftable", itemdef.craftable, $"Enable/Disable the crafting recipe for {itemdef.Name}.");
                 itemdef.stationlvl_cfg = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-stationRequiredLevel", itemdef.reqStationlevel, $"Sets the required minimum crafting station level to craft {itemdef.Name}", true, 1, 4);
                 itemdef.craftAmount_cfg = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftAmount", itemdef.craftAmount, $"Sets the amount of {itemdef.Name} crafted per recipe.", true, 1, 50);
@@ -85,8 +81,8 @@ namespace ValheimArmory.common
                 }
 
                 // Build the item recipe
-                itemdef.recipe.recipeConfig = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-recipe", "", $"Recipe for {itemdef.Name}. Should be in the format of Prefab,Amount,AmountPerLevel|Prefab,Amount,AmountPerLevel eg: Wood,12,2|Stone,2,0");
-                if (ValidateRecipeConfig(itemdef) == false) { 
+                itemdef.recipe.recipeConfig = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-recipe", BuildStringRecipeFromItemDef(itemdef), $"Recipe for {itemdef.Name}. Should be in the format of Prefab,Amount,AmountPerLevel|Prefab,Amount,AmountPerLevel eg: Wood,12,2|Stone,2,0");
+                if (ValidateRecipeConfig(itemdef) == false) {
                     BuildRecipeReqsFromDefault(itemdef); 
                 }
                 // itemdef.recipe.resolvedRecipe = BuildRecipeFromConfig(itemdef);
@@ -97,26 +93,21 @@ namespace ValheimArmory.common
         // TODO: Change batch onchange actions to pass to a queue and execute queue from a couroutine.
         private bool SetupOnChange(){
             foreach (ItemDefinition itemdef in resourceDefinitions) {
-                if (!itemdef.enabled) { continue; }
+                // Need to have config onchange settings available for items which are not enabled to ensure that we can enable them when joining a remote server with different items enabled
+                // if (!itemdef.enabled) { continue; }
                 // Craftable config toggle
                 itemdef.craftable_cfg.SettingChanged += (_, _) => {
-                    Action mod = () => { EnableDisableItemInDB(itemdef, itemdef.craftable_cfg.Value); };
-                    queuedModifications.Enqueue(mod);
-                    StartCoroutine(RunQueuedModification());
+                    EnableDisableItemInDB(itemdef, itemdef.craftable_cfg.Value);
                 };
                 // Logger.LogInfo("Setup Craftable toggle");
                 // Station level config
                 itemdef.stationlvl_cfg.SettingChanged += (_, _) => {
-                    Action mod = () => { ModifyItemRecipeLevel(itemdef, itemdef.stationlvl_cfg.Value); };
-                    queuedModifications.Enqueue(mod);
-                    StartCoroutine(RunQueuedModification());
+                    ModifyItemRecipeLevel(itemdef, itemdef.stationlvl_cfg.Value);
                 };
                 // Logger.LogInfo("Setup Crafting station level");
                 // Modify where the item is crafted
                 itemdef.craftedAt_cfg.SettingChanged += (_, _) => {
-                    Action mod = () => { ModifyItemRecipeCraftedAt(itemdef, itemdef.craftedAt_cfg.Value); };
-                    queuedModifications.Enqueue(mod);
-                    StartCoroutine(RunQueuedModification());
+                    ModifyItemRecipeCraftedAt(itemdef, itemdef.craftedAt_cfg.Value);
                 };
                 // Logger.LogInfo("Setup single value changes");
                 
@@ -124,17 +115,13 @@ namespace ValheimArmory.common
                 foreach (KeyValuePair<ItemStat, ItemStatConfig> stat in itemdef.modifableStats) {
                     if (stat.Value.configurable == false) { continue; }
                     stat.Value.cfg.SettingChanged += (sender, args) => {
-                        Action mod = () => {
-                            stat.Value.default_value = stat.Value.cfg.Value;
-                            // Update player items
-                            UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
-                            // Update in world items, this is delayed and batched to prevent lag spikes.
-                            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(itemdef.prefab));
-                            // UpdateItemInWorldAsync(objects, true, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
-                            StartCoroutine(UpdateItemInWorldAsync(objects, true, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); }));
-                        };
-                        queuedModifications.Enqueue(mod);
-                        StartCoroutine(RunQueuedModification());
+                        if (ZNet.instance.enabled == false) { return; }
+                        stat.Value.default_value = stat.Value.cfg.Value;
+                        // Update player items
+                        UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
+                        // Update in world items, this is delayed and batched to prevent lag spikes.
+                        IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(itemdef.prefab));
+                        UpdateItemInWorldSynchronize(objects, true, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
                     };
                 }
                 // Logger.LogInfo("Setup stat changes");
@@ -142,9 +129,7 @@ namespace ValheimArmory.common
                 // Modify the recipe in the object DB
                 itemdef.recipe.recipeConfig.SettingChanged += (sender, args) => {
                     if (ValidateRecipeConfig(itemdef)) {
-                        Action mod = () => { ModifyItemRecipeInODB(itemdef); };
-                        queuedModifications.Enqueue(mod);
-                        StartCoroutine(RunQueuedModification());
+                        ModifyItemRecipeInODB(itemdef);
                     }
                 };
                 // Logger.LogInfo("Setup recipe changes");
@@ -154,18 +139,13 @@ namespace ValheimArmory.common
                 foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.damageMods)
                 {
                     dmgmod.Value.dmgModcfg.SettingChanged += (_, _) => {
-                        Action mod = () =>
-                        {
-                            HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.dmgModcfg.Value);
-                            // Update player items
-                            UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
-                            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(itemdef.prefab));
-                            // Update world items
-                            // UpdateItemInWorldAsync(objects, false, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
-                            StartCoroutine(UpdateItemInWorldAsync(objects, false, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); }));
-                        };
-                        queuedModifications.Enqueue(mod);
-                        StartCoroutine(RunQueuedModification());
+                        if (ZNet.instance.enabled == false) { return; }
+                        HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.dmgModcfg.Value);
+                        // Update player items
+                        UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
+                        IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(itemdef.prefab));
+                        // Update world items
+                        UpdateItemInWorldSynchronize(objects, false, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
                     };
                 }
             }
@@ -174,12 +154,10 @@ namespace ValheimArmory.common
 
         private static bool BatchAddItems() {
             foreach (ItemDefinition itemdef in resourceDefinitions) {
-                if (!itemdef.enabled) { continue; }
-                // Add item to game
                 GameObject ItemPrefab = Assets.LoadAsset<GameObject>($"Assets/Custom/Weapons/{itemdef.Category}/{itemdef.prefab}.prefab");
                 Sprite ItemSprite = Assets.LoadAsset<Sprite>($"Assets/Custom/Icons/{itemdef.icon}.png");
                 ItemDrop ItemD = ItemPrefab.GetComponent<ItemDrop>();
-                foreach(KeyValuePair<ItemStat, ItemStatConfig> modstat in itemdef.modifableStats) {
+                foreach (KeyValuePair<ItemStat, ItemStatConfig> modstat in itemdef.modifableStats) {
                     if (modstat.Value.configurable == false) { continue; }
                     ItemDataConfigModifier(modstat.Key, modstat.Value.cfg.Value, ItemD.m_itemData);
                 }
@@ -344,6 +322,7 @@ namespace ValheimArmory.common
                     itemData.m_shared.m_toolTier = (int)updatedValue;
                     break;
                 default:
+                    Logger.LogWarning($"Unknown item stat {target_attribute} for {itemData.m_shared.m_name}");
                     break;
             }
         }
@@ -355,8 +334,12 @@ namespace ValheimArmory.common
                 foreach (string ingredient in recipeConfig) {
                     // Logger.LogInfo($"Ingrediant details: {ingredient}");
                     string[] ingredientConfig = ingredient.Split(',');
+                    if (ingredientConfig.Length == 1) {
+                        // This is the first run or deleted config entry scenario
+                        return false;
+                    }
                     if (ingredientConfig.Length != 3) {
-                        Logger.LogWarning($"Invalid recipe config detected: {ingredient}. Needs three entries eg: Wood,1,1");
+                        Logger.LogWarning($"Invalid ({itemdef.Name}) recipe config detected: {ingredient}. Needs three entries eg: Wood,1,1");
                         return false;
                     }
                     requirements.Add(new RequirementConfig { Item = ingredientConfig[0], Amount = int.Parse(ingredientConfig[1]), AmountPerLevel = int.Parse(ingredientConfig[2]) });
@@ -378,10 +361,19 @@ namespace ValheimArmory.common
             itemdef.recipe.recipeReqs = requirements;
         }
 
+        private static string BuildStringRecipeFromItemDef(ItemDefinition itemdef) {
+            List<string> recipe = new();
+            foreach (var req in itemdef.recipe.recipeItems) {
+                recipe.Add($"{req.prefab},{req.amount},{req.upgradeCost}");
+            }
+            return string.Join("|", recipe);
+        }
+
         private static bool ModifyItemRecipeCraftedAt(ItemDefinition itemdef, string craftedAt) {
-            int index = ObjectDB.instance.m_recipes.IndexOf(GetRecipeByPrefab(itemdef));
+            int index = GetRecipeIndexByPrefab(itemdef.prefab);
             if (index == -1) {
-                Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB.");
+                Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, recipe will not be modified.");
+                // ObjectDB.instance.m_recipes.Add(BuildRecipeForItem(itemdef));
                 return false;
             }
             CraftingStation craftable_at = PrefabManager.Instance.GetPrefab(itemdef.craftedAt_cfg.Value)?.GetComponent<CraftingStation>();
@@ -397,7 +389,15 @@ namespace ValheimArmory.common
 
 
         private static void ModifyItemRecipeInODB(ItemDefinition itemdef) {
-            Recipe current_recipe = GetRecipeByPrefab(itemdef);
+            // if (itemdef.enabled == false) { return; }
+            // Logger.LogInfo($"Modifying {itemdef.Name} recipe in OODB");
+            int recipe_index = GetRecipeIndexByPrefab(itemdef.prefab);
+            if (recipe_index == -1) {
+                Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, Recipe will not be modified.");
+                //ObjectDB.instance.m_recipes.Add(BuildRecipeForItem(itemdef));
+                return;
+            }
+            Recipe current_recipe = ObjectDB.instance.m_recipes[recipe_index];
             Recipe newRecipe = current_recipe;
             List<Piece.Requirement> newRequirements = new List<Piece.Requirement>();
             foreach (var req in itemdef.recipe.recipeReqs)
@@ -421,12 +421,20 @@ namespace ValheimArmory.common
         }
 
         private static void EnableDisableItemInDB(ItemDefinition itemdef, bool enable) {
-            int index = ObjectDB.instance.m_recipes.IndexOf(GetRecipeByPrefab(itemdef));
-            Logger.LogWarning($"Enable/Disable item in ODB. target state: {enable}");
-            if (index == -1) {
-                Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB.");
+            int index = GetRecipeIndexByPrefab(itemdef.prefab);
+            if (index == -1 && enable == false) {
                 return; 
             }
+            if (index == -1 && enable == true) {
+                if (itemdef.recipe.resolvedRecipe != null) {
+                    ObjectDB.instance.m_recipes.Add(itemdef.recipe.resolvedRecipe);
+                } else {
+                    //ObjectDB.instance.m_recipes.Add(BuildRecipeForItem(itemdef));
+                    Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, recipe wont be set to enabled.");
+                }
+                return;
+            }
+            // recipe exists in the ODB
             if (enable) {
                 ObjectDB.instance.m_recipes[index].m_enabled = true;
             } else {
@@ -436,9 +444,11 @@ namespace ValheimArmory.common
         }
 
         private static void ModifyItemRecipeLevel(ItemDefinition itemdef, int level) {
-            int index = ObjectDB.instance.m_recipes.IndexOf(GetRecipeByPrefab(itemdef));
+            // if (itemdef.enabled == false) { return; }
+            int index = GetRecipeIndexByPrefab(itemdef.prefab);
             if (index == -1) {
-                Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB.");
+                Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, required level will not be modified.");
+                // ObjectDB.instance.m_recipes.Add(BuildRecipeForItem(itemdef));
                 return;
             }
             ObjectDB.instance.m_recipes[index].m_minStationLevel = level;
@@ -446,16 +456,8 @@ namespace ValheimArmory.common
             itemdef.recipe.resolvedRecipe = ObjectDB.instance.m_recipes[index];
         }
 
-        private static Recipe GetRecipeByPrefab(ItemDefinition itemdef, bool lookup = false) {
-            if (itemdef.recipe.resolvedRecipe != null && lookup == false) {
-                return itemdef.recipe.resolvedRecipe;
-            }
-
-            GameObject go = PrefabManager.Instance.GetPrefab(itemdef.prefab);
-            ItemDrop itemDrop = go.GetComponent<ItemDrop>();
-            Recipe target_recipe = ObjectDB.instance.GetRecipe(itemDrop.m_itemData);
-            itemdef.recipe.resolvedRecipe = target_recipe;
-            return target_recipe;
+        private static int GetRecipeIndexByPrefab(string prefab) {
+            return ObjectDB.instance.m_recipes.FindIndex(m => m.m_item != null && m.m_item.name == prefab);
         }
 
         private static void SetItemDamageModifier(HitData.DamageModifier modifier, HitData.DamageType type, ItemDrop.ItemData itemData) {
@@ -472,7 +474,35 @@ namespace ValheimArmory.common
             }
         }
 
+        //private static Recipe BuildRecipeForItem(ItemDefinition itemdef, bool assign = true) {
+        //    if (!ValidateRecipeConfig(itemdef)) {
+        //        BuildRecipeReqsFromDefault(itemdef);
+        //    }
+        //    List<RequirementConfig> requirements = new List<RequirementConfig>();
+        //    foreach (var ireq in itemdef.recipe.recipeReqs) {
+        //        requirements.Add(new RequirementConfig { Item = ireq.Item, Amount = ireq.Amount, AmountPerLevel = ireq.AmountPerLevel });
+        //    };
+        //    CustomRecipe updatedCustomRecipe = new CustomRecipe(new RecipeConfig() {
+        //        Name = $"Recipe_{itemdef.prefab}",
+        //        Amount = itemdef.craftAmount_cfg.Value,
+        //        CraftingStation = $"{itemdef.craftedAt_cfg.Value}",
+        //        RepairStation = $"{itemdef.craftedAt_cfg.Value}",
+        //        MinStationLevel = itemdef.stationlvl_cfg.Value,
+        //        Enabled = itemdef.craftable_cfg.Value,
+        //        Requirements = requirements.ToArray()
+        //    });
+        //    // Must resolve crafting station name
+        //    // Must resolve the reapir station
+        //    // Must resolve the requirements
+        //    if (assign) {
+        //        itemdef.recipe.resolvedRecipe = updatedCustomRecipe.Recipe;
+        //    }
+        //    Logger.LogDebug($"Built new recipe for {itemdef.Name}: RecipeValid? {updatedCustomRecipe.Recipe.IsValid()}");
+        //    return updatedCustomRecipe.Recipe;
+        //}
+
         private static void UpdateItemInPlayerInventory(string prefab, Action<ItemDrop.ItemData> callback) {
+            if (Player.m_localPlayer == null) { return; }
             foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems()) {
                 if (user_item == null) { continue; }
                 if (user_item.m_dropPrefab.name != prefab) { continue; }
@@ -480,46 +510,44 @@ namespace ValheimArmory.common
             }
         }
 
-        static IEnumerator UpdateItemInWorldAsync(IEnumerable<GameObject> objects, bool start_sleep, Action<ItemDrop.ItemData> callback) {
-            if (objects == null || objects.Count() == 0) { yield break; }
-            if (start_sleep) { yield return new WaitForSeconds(0.5f); }
-            Logger.LogDebug($"Updating {objects.Count()} objects in the world.");
+        //static IEnumerator UpdateItemInWorldAsync(IEnumerable<GameObject> objects, bool start_sleep, Action<ItemDrop.ItemData> callback) {
+        //    if (objects == null || objects.Count() == 0) { yield break; }
+        //    if (start_sleep) { yield return new WaitForSeconds(0.5f); }
+        //    Logger.LogDebug($"Updating {objects.Count()} objects in the world.");
+        //    int concurrent_updates = VAConfig.InMemoryModificationsPerTick.Value;
+        //    int update_num = 0;
+        //    foreach (GameObject go in objects)
+        //    {
+        //        if (update_num >= concurrent_updates) {
+        //            yield return new WaitForSeconds(0.5f);
+        //            update_num = 0;
+        //        }
+        //        ItemDrop id = null;
+        //        if (go.TryGetComponent<ItemDrop>(out id)) {
+        //            Logger.LogDebug($"Updating {id.m_itemData.m_shared.m_name}");
+        //            callback(id.m_itemData);
+        //        }
+        //    }
+        //    yield break;
+        //}
+
+        static void UpdateItemInWorldSynchronize(IEnumerable<GameObject> objects, bool start_sleep, Action<ItemDrop.ItemData> callback) {
+            if (objects == null || objects.Count() == 0) { return; }
+            // Logger.LogDebug($"Updating {objects.Count()} objects in the world.");
             int concurrent_updates = VAConfig.InMemoryModificationsPerTick.Value;
             int update_num = 0;
             foreach (GameObject go in objects)
             {
-                if (update_num >= concurrent_updates) {
-                    yield return new WaitForSeconds(0.5f);
+                if (update_num >= concurrent_updates){
                     update_num = 0;
                 }
                 ItemDrop id = null;
-                if (go.TryGetComponent<ItemDrop>(out id)) {
-                    Logger.LogDebug($"Updating {id.m_itemData.m_shared.m_name}");
+                if (go.TryGetComponent<ItemDrop>(out id))
+                {
+                    // Logger.LogDebug($"Updating {id.m_itemData.m_shared.m_name}");
                     callback(id.m_itemData);
                 }
             }
-            yield break;
-        }
-
-        static IEnumerator RunQueuedModification() {
-            if (queuedModifications.Count == 0 || runningQueuedChanges == true) {
-                yield break;
-            }
-            runningQueuedChanges = true;
-            // wait for a tiny bit to give ourselves a good chance of catching bulk changes
-            yield return new WaitForSeconds(0.5f);
-            int concurrent_updates = VAConfig.InMemoryModificationsPerTick.Value;
-            int op_num = 0;
-            while (queuedModifications.Count > 0) {
-                op_num ++;
-                if (op_num >= concurrent_updates) {
-                    yield return new WaitForSeconds(0.2f);
-                    op_num = 0;
-                }
-                queuedModifications.Dequeue().Invoke();
-            }
-            runningQueuedChanges = false;
-            yield break;
         }
     }
 }

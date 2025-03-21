@@ -31,7 +31,6 @@ namespace ValheimArmory.common
         // configurable
         public string craftedAt { get; set; }
         public BepInEx.Configuration.ConfigEntry<string> craftedAt_cfg { get; set; }
-        public bool enabled { get; set; } = true;
         public bool craftable { get; set; } = true;
         public BepInEx.Configuration.ConfigEntry<bool> craftable_cfg { get; set; }
         public int reqStationlevel { get; set; }

@@ -18,6 +18,17 @@ namespace ValheimArmory.common
             // set log level
         }
 
+        public static void toggleDebug()
+        {
+            if (VAConfig.EnableDebugMode.Value)
+            {
+                Level = LogLevel.Debug;
+            } else {
+                Level = LogLevel.Info;
+            }
+            // set log level
+        }
+
         public static void LogDebug(string message)
         {
             if (Level >= LogLevel.Debug) {

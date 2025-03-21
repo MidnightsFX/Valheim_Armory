@@ -1,10 +1,10 @@
 ﻿{
   "name": "ValheimArmory",
   "description": "ValheimArmory aims to create a more diverse selection of weapons to make all playstyles feel fully supported at each level.",
-  "version_number": "1.19.2",
+  "version_number": "1.20.0",
   "website_url": "https://discord.gg/Dmr9PQTy9m",
   "dependencies": [
-    "denikson-BepInExPack_Valheim-5.4.2200",
-    "ValheimModding-Jotunn-2.21.2"
+    "denikson-BepInExPack_Valheim-5.4.2202",
+    "ValheimModding-Jotunn-2.24.3"
   ]
 }

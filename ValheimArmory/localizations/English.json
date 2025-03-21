@@ -18,7 +18,7 @@
   "item_bolt_silver_frost": "Silver frost bolt",
   "item_bolt_silver_frost_description": "Silver bolts, encased in ice deadly to the firey and dead.",
   "item_bolt_surtling": "Surtling fire bolt",
-  "item_bolt_surtling_description": "A pointed spike armed with a surtling core, this is gunna burn.",
+  "item_bolt_surtling_description": "A pointed spike, armed with a surtling core at its tip. Its fire bound to burn whatever it pierces",
   "item_bolt_obsidian": "Obsidian bolt",
   "item_bolt_obsidian_description": "A shard of complete darkness.",
   "item_arbalist_bronze": "Bronze arbalist",
@@ -34,7 +34,7 @@
   "item_serpent_buckler": "Serpent scaled buckler",
   "item_serpent_buckler_description": "A flexible wooden-iron woven shield fronted by an array of shiny scales.",
   "item_atgeir_flint": "Flint atgeir",
-  "item_atgeir_flint_description": "A simple pole with a large piece of flint clumsily attached.",
+  "item_atgeir_flint_description": "a crudely fashioned pole with a clumsily attached piece of flint.",
   "item_atgeir_chitin_heavy": "Abyssal atgeir",
   "item_atgeir_chitin_heavy_description": "A sharpened chitin atgeir, fit for the bravest of seafarers.",
   "item_silver_atgeir": "Silver atgeir",
@@ -246,5 +246,7 @@
   "item_axe_flametal_1h_lightning": "Flametal lightning axe",
   "item_axe_flametal_1h_description_lightning": "A storm of its own kind.",
   "item_axe_flametal_1h_blood": "Flametal blood axe",
-  "item_axe_flametal_1h_description_blood": "This sinister axe is dripping in energy after being fused with a red gemstone."
+  "item_axe_flametal_1h_description_blood": "This sinister axe is dripping in energy after being fused with a red gemstone.",
+  "item_spear_blackmetal": "Blackmetal spear",
+  "item_spear_blackmetal_description": "A slice of blackmetal chained to a sturdy haft."
 }

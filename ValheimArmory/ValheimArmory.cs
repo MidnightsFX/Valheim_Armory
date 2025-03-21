@@ -25,7 +25,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.19.2";
+        public const string PluginVersion = "1.20.0";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -75,7 +75,7 @@ namespace ValheimArmory
             //LocalizationManager.Instance.AddLocalization(Localization);
 
             // Ensure localization folder exists
-            var translationFolder = Path.Combine(BepInEx.Paths.ConfigPath, "ValheimArmory");
+            var translationFolder = Path.Combine(BepInEx.Paths.ConfigPath, "ValheimArmory", "localizations");
             Directory.CreateDirectory(translationFolder);
             //SimpleJson.SimpleJson.CurrentJsonSerializerStrategy
             
@@ -100,7 +100,8 @@ namespace ValheimArmory
                         UpdateLocalizationWithMissingKeys(internal_localization, cached_localization);
                         Logger.LogDebug($"Reading {translationFolder}/{localization_name[2]}.json");
                         File.WriteAllText($"{translationFolder}/{localization_name[2]}.json", SimpleJson.SimpleJson.SerializeObject(cached_localization));
-                        Localization.AddJsonFile(localization_name[2], cached_translation_file);
+                        string updated_local_translation = File.ReadAllText($"{translationFolder}/{localization_name[2]}.json");
+                        Localization.AddJsonFile(localization_name[2], updated_local_translation);
                     } catch {
                         File.WriteAllText($"{translationFolder}/{localization_name[2]}.json", cleaned_localization);
                         Logger.LogDebug($"Reading {embeddedResouce}");

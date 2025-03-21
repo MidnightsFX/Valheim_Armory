@@ -108,7 +108,7 @@ namespace ValheimArmory
             ItemDefinition Ancient_Wood_Arrow = new ItemDefinition();
             Ancient_Wood_Arrow.Name = "Ancient Wood Arrow";
             Ancient_Wood_Arrow.Category = ItemCategory.Arrows;
-            Ancient_Wood_Arrow.prefab = "VAarrowancient";
+            Ancient_Wood_Arrow.prefab = "VAArrowAncient";
             Ancient_Wood_Arrow.icon = "ancient_arrow";
             Ancient_Wood_Arrow.craftedAt = "piece_workbench";
             Ancient_Wood_Arrow.craftAmount = 20;
@@ -128,7 +128,7 @@ namespace ValheimArmory
             ItemDefinition Chitin_Arrow = new ItemDefinition();
             Chitin_Arrow.Name = "Chitin Arrow";
             Chitin_Arrow.Category = ItemCategory.Arrows;
-            Chitin_Arrow.prefab = "VAchitinarrow";
+            Chitin_Arrow.prefab = "VAChitinArrow";
             Chitin_Arrow.icon = "arrow_chitin";
             Chitin_Arrow.craftedAt = "piece_workbench";
             Chitin_Arrow.craftAmount = 20;
@@ -515,8 +515,8 @@ namespace ValheimArmory
             Elders_Reach.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ default_value = 80, min =  0, max =  300 } },
                 { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
-                { ItemStat.spirit, new ItemStatConfig{ default_value = 20, min =  0, max =  300 } },
-                { ItemStat.spirit_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.spirit, new ItemStatConfig{ default_value = 7, min =  0, max =  300 } },
+                { ItemStat.spirit_per_level, new ItemStatConfig{ default_value = 2, min =  0, max =  50 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 3, min =  0, max =  150 } },
                 { ItemStat.attack_force, new ItemStatConfig{ default_value = 150, min =  0, max =  300 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  300 } },
@@ -710,10 +710,10 @@ namespace ValheimArmory
             Elders_Balance.craftedAt = "forge";
             Elders_Balance.craftAmount = 1;
             Elders_Balance.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
-                { ItemStat.slash, new ItemStatConfig{ default_value = 35, min =  0, max =  90 } },
+                { ItemStat.slash, new ItemStatConfig{ default_value = 40, min =  0, max =  90 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
-                { ItemStat.spirit, new ItemStatConfig{ default_value = 20, min =  0, max =  120 } },
-                { ItemStat.spirit_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.spirit, new ItemStatConfig{ default_value = 10, min =  0, max =  120 } },
+                { ItemStat.spirit_per_level, new ItemStatConfig{ default_value = 2, min =  0, max =  50 } },
                 { ItemStat.attack_force, new ItemStatConfig{ default_value = 40, min =  0, max =  120 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 12, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  120 } },
@@ -2039,9 +2039,9 @@ namespace ValheimArmory
             Elders_Rock.craftedAt = "forge";
             Elders_Rock.craftAmount = 1;
             Elders_Rock.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
-                { ItemStat.blunt, new ItemStatConfig{ default_value = 50, min =  0, max =  300 } },
+                { ItemStat.blunt, new ItemStatConfig{ default_value = 35, min =  0, max =  300 } },
                 { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
-                { ItemStat.spirit, new ItemStatConfig{ default_value = 20, min =  0, max =  99 } },
+                { ItemStat.spirit, new ItemStatConfig{ default_value = 10, min =  0, max =  99 } },
                 { ItemStat.spirit_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.attack_force, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 22, min =  0, max =  150 } },
@@ -2227,7 +2227,7 @@ namespace ValheimArmory
             ItemDefinition Abyssal_Atgeir = new ItemDefinition();
             Abyssal_Atgeir.Name = "Abyssal Atgeir";
             Abyssal_Atgeir.Category = ItemCategory.Atgeirs;
-            Abyssal_Atgeir.prefab = "VAAtgeirchitin";
+            Abyssal_Atgeir.prefab = "VAAtgeirChitin";
             Abyssal_Atgeir.icon = "chitin_heavy_atgeir_small2";
             Abyssal_Atgeir.craftedAt = "piece_workbench";
             Abyssal_Atgeir.craftAmount = 1;
@@ -3249,6 +3249,35 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(Moders_Strike);
+
+            // Blackmetal Spear
+            ItemDefinition BlackmetalSpear = new ItemDefinition();
+            BlackmetalSpear.Name = "Blackmetal Spear";
+            BlackmetalSpear.Category = ItemCategory.Spears;
+            BlackmetalSpear.prefab = "VASpearBlackmetal";
+            BlackmetalSpear.icon = "blackmetal_spear";
+            BlackmetalSpear.craftedAt = "forge";
+            BlackmetalSpear.craftAmount = 1;
+            BlackmetalSpear.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 30, min =  0, max =  48 } },
+                { ItemStat.pierce, new ItemStatConfig{ default_value = 95, min =  0, max =  120 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 2, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 14, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 18, min =  1, max =  50 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  300 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+            };
+            BlackmetalSpear.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "BlackMetal", amount = 6, upgradeCost = 6 },
+                    new RecipeIngredient { prefab = "FineWood", amount = 10, upgradeCost = 5 },
+                    new RecipeIngredient { prefab = "Chain", amount = 2, upgradeCost = 1 },
+                    new RecipeIngredient { prefab = "JuteRed", amount = 2, upgradeCost = 1 },
+                }
+            };
+            Loader.AddDefinition(BlackmetalSpear);
         }
 
         private void LoadFists()
