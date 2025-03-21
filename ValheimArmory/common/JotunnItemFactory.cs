@@ -4,9 +4,11 @@ using Jotunn.Configs;
 using Jotunn.Entities;
 using Jotunn.Managers;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static InventoryGrid;
 
 namespace ValheimArmory.common
 {
@@ -82,21 +84,6 @@ namespace ValheimArmory.common
 
     class JotunnItemFactory
     {
-        enum Catagories
-        {
-            Arrows,
-            Atgeirs,
-            Axes,
-            Hammers,
-            Shields,
-            Swords,
-            Spears,
-            Daggers,
-            Maces,
-            Fists,
-            Pickaxes,
-            Magics
-        }
 
         public static AssetBundle Assets;
         internal static readonly AcceptableValueList<string> allowedModifiers = new AcceptableValueList<string>(new string[] 
@@ -115,7 +102,7 @@ namespace ValheimArmory.common
             Assets = EmbeddedResourceBundle;
         }
 
-        public class JotunnItem
+        public class JotunnItem : MonoBehaviour
         {
             Dictionary<ItemMetadata, String> ItemMdata;
             Dictionary<ItemStat, Tuple<float, float, float, bool>> ItemData;
@@ -246,8 +233,7 @@ namespace ValheimArmory.common
                 CreateAndUpdateRecipe();
                 RequirementConfig[] recipe = new RequirementConfig[UpdatedRecipeData.Count];
                 int recipe_index = 0;
-                foreach (KeyValuePair<string, Tuple<int, int>> entry in UpdatedRecipeData)
-                {
+                foreach (KeyValuePair<string, Tuple<int, int>> entry in UpdatedRecipeData) {
                     recipe[recipe_index] = new RequirementConfig { Item = entry.Key, Amount = entry.Value.Item1, AmountPerLevel = entry.Value.Item2 };
                     recipe_index++;
                 }
@@ -297,20 +283,7 @@ namespace ValheimArmory.common
                 // Get and update all of the in-scene game objects
                 IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(ItemMdata[ItemMetadata.prefab]));
                 // Logger.LogDebug($"Found in scene objects: {objects.Count()}");
-                foreach ( GameObject go in objects)
-                {
-                    // Logger.LogDebug($"Found {go.name}");
-                    ItemDrop id = null;
-                    if (go.TryGetComponent<ItemDrop>(out id))
-                    {
-                        // Logger.LogDebug($"{go.name} updating attribute {target_attribute}");
-                        ItemDataConfigModifier(t_attribute, sendEntry.Value, id.m_itemData);
-                    } else
-                    {
-                        // Logger.LogDebug($"{go.name} does not have an itemdrop and will not be updated in-place");
-                    }
-                    
-                }
+                StartCoroutine(UpdateItemDataConfigModifierAsync(objects, t_attribute, sendEntry.Value));
                 // Logger.LogDebug($"Checking for the local player.");
                 // we don't update the backpack items if the znet isn't valid, because they will get updated from the parent item
                 if ((bool)nview && Player.m_localPlayer != null)
@@ -338,11 +311,9 @@ namespace ValheimArmory.common
                 {
                     ConfigEntry<string> sendEntry = (ConfigEntry<string>)sender;
                     String target_attribute = sendEntry.Definition.Key.Split('-')[1];
-                    if (target_attribute == "CraftedAt")
-                    {
+                    if (target_attribute == "CraftedAt") {
                        GameObject craftedAtCheck = PrefabManager.Instance.GetPrefab(sendEntry.Value);
-                        if (craftedAtCheck == null)
-                        {
+                        if (craftedAtCheck == null) {
                             Logger.LogWarning($"CraftedAt prefab ({sendEntry.Value}) is not valid, recipe will not update.");
                             return;
                         }
@@ -426,8 +397,7 @@ namespace ValheimArmory.common
                         {
                             // Logger.LogDebug($"Recipe resource {res.m_resItem.name} {res.m_amount} updating..");
                             var prefab = ObjectDB.instance.GetItemPrefab(res.m_resItem.name.Replace("JVLmock_", ""));
-                            if (prefab != null)
-                            {
+                            if (prefab != null) {
                                 res.m_resItem = prefab.GetComponent<ItemDrop>();
                                 // Logger.LogDebug($"{res.m_resItem.name} itemdrop set");
                             }
@@ -516,22 +486,7 @@ namespace ValheimArmory.common
 
                 // Get and update all of the in-scene game objects
                 IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(ItemMdata[ItemMetadata.prefab]));
-                // Logger.LogDebug($"Found in scene objects: {objects.Count()}");
-                foreach (GameObject go in objects)
-                {
-                    // Logger.LogDebug($"Found {go.name}");
-                    ItemDrop id = null;
-                    if (go.TryGetComponent<ItemDrop>(out id))
-                    {
-                        // Logger.LogDebug($"{go.name} updating attribute {target_attribute}");
-                        SetItemDamageModifier(modifier, type, id.m_itemData);
-                    }
-                    else
-                    {
-                        // Logger.LogDebug($"{go.name} does not have an itemdrop and will not be updated in-place");
-                    }
-
-                }
+                StartCoroutine(UpdateItemDamageConfigModifierAsync(objects, modifier, type));
                 // Logger.LogDebug($"Checking for the local player.");
                 // we don't update the backpack items if the znet isn't valid, because they will get updated from the parent item
                 if ((bool)nview && Player.m_localPlayer != null)
@@ -550,7 +505,44 @@ namespace ValheimArmory.common
                 // Logger.LogDebug($"Finished modifying ItemDamageModifier setting.");
             }
 
-            private void SetItemDamageModifier(HitData.DamageModifier modifier, HitData.DamageType type, ItemDrop.ItemData itemData)
+            static IEnumerator UpdateItemDamageConfigModifierAsync(IEnumerable<GameObject> objects, HitData.DamageModifier dmg_mod, HitData.DamageType dmg_type)
+            {
+                int concurrent_updates = VAConfig.InMemoryModificationsPerTick.Value;
+                int update_num = 0;
+                foreach (GameObject go in objects) {
+                    if (update_num >= concurrent_updates)
+                    {
+                        yield return new WaitForSeconds(0.5f);
+                        update_num = 0;
+                    }
+                    ItemDrop id = null;
+                    if (go.TryGetComponent<ItemDrop>(out id)){
+                        SetItemDamageModifier(dmg_mod, dmg_type, id.m_itemData);
+                    }
+                }
+            }
+
+            static IEnumerator UpdateItemDataConfigModifierAsync(IEnumerable<GameObject> objects, ItemStat t_attribute, float updated_value)
+            {
+                int concurrent_updates = VAConfig.InMemoryModificationsPerTick.Value;
+                int update_num = 0;
+                foreach (GameObject go in objects)
+                {
+                    if (update_num >= concurrent_updates)
+                    {
+                        yield return new WaitForSeconds(0.5f);
+                        update_num = 0;
+                    }
+                    ItemDrop id = null;
+                    if (go.TryGetComponent<ItemDrop>(out id))
+                    {
+                        // Logger.LogDebug($"{go.name} updating attribute {target_attribute}");
+                        ItemDataConfigModifier(t_attribute, updated_value, id.m_itemData);
+                    }
+                }
+            }
+
+            private static void SetItemDamageModifier(HitData.DamageModifier modifier, HitData.DamageType type, ItemDrop.ItemData itemData)
             {
                 List<HitData.DamageModPair> temp = itemData.m_shared.m_damageModifiers.Where(entry => entry.m_type != type).ToList();
                 if (temp.Count == 0) {
@@ -562,7 +554,7 @@ namespace ValheimArmory.common
                 }
             }
 
-            private void ItemDataConfigModifier(ItemStat target_attribute, float updatedValue, ItemDrop.ItemData itemData)
+            private static void ItemDataConfigModifier(ItemStat target_attribute, float updatedValue, ItemDrop.ItemData itemData)
             {
                 if (itemData == null) { return; }
                 // Logger.LogDebug($"Updating {target_attribute} to {updatedValue}");
@@ -711,10 +703,8 @@ namespace ValheimArmory.common
                         itemData.m_shared.m_toolTier = (int)updatedValue;
                         break;
                     default:
-                        // Logger.LogWarning($"{target_attribute} was not modified, ensure the pattern is correct.");
                         break;
                 }
-                // Logger.LogDebug($"Updated {target_attribute} to {updatedValue}");
             }
 
             private bool RecipeConfigUpdater(String rawrecipe, bool startup = false)

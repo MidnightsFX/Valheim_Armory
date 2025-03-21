@@ -1,3 +1,21 @@
+**1.20.0**
+ ---
+ ```
+ - Full MacOS support!! Shaders are all now compatible with MacOS
+ - All Ashland level weapons now match vanilla shaders
+ - Added a blackmetal spear
+ - Improved how items are loaded, and configuration is sychronized
+    - Server impact from loading the mod is now reduced by ~98%
+    - Removed a pattern that could cause lagspikes with new users connect
+ - Adds a config folder for ValheimArmory that directly exposes all translations
+    - Bepinex/Config/ValheimArmory/localizations
+    - All files in here can be edited as you see fit to change localization of the mod
+    - New items will automatically be added to existing localizations
+    - I still accept community translations! If you want to help improve a translation feel free to submit a PR, open a ticket or just let me know!
+- Balance Changes
+    - Reduced the default damage of most of the Elders weapons
+ ```
+
 **1.19.2**
  ---
  ```
