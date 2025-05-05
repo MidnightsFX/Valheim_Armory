@@ -343,6 +343,36 @@ namespace ValheimArmory
         private void LoadBows()
         {
             Logger.LogInfo("Loading Bows");
+
+            // Blackmetal Bow
+            ItemDefinition Blackmetal_Bow = new ItemDefinition();
+            Blackmetal_Bow.Name = "Blackmetal Bow";
+            Blackmetal_Bow.Category = ItemCategory.Bows;
+            Blackmetal_Bow.prefab = "VABlackmetal_bow";
+            Blackmetal_Bow.icon = "blackmetal_bow";
+            Blackmetal_Bow.craftedAt = "forge";
+            Blackmetal_Bow.craftAmount = 1;
+            Blackmetal_Bow.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.pierce, new ItemStatConfig{ default_value = 62, min =  0, max =  300 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 3, min =  0, max =  150 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  300 } },
+                { ItemStat.draw_stamina_drain, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  500 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.bow_draw_speed, new ItemStatConfig{ default_value = 2, min =  0.01f, max =  2 } },
+                { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 60, min =  0, max =  120 } },
+            };
+            Blackmetal_Bow.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "FineWood", amount = 15, upgradeCost = 5 },
+                    new RecipeIngredient { prefab = "BlackMetal", amount = 20, upgradeCost = 10 },
+                    new RecipeIngredient { prefab = "LinenThread", amount = 5, upgradeCost = 5 },
+                }
+            };
+            Loader.AddDefinition(Blackmetal_Bow);
+
             // Heavy Blood Bone Bow
             ItemDefinition Carapace_Blood_Bow = new ItemDefinition();
             Carapace_Blood_Bow.Name = "Carapace Blood Bow";
@@ -889,8 +919,8 @@ namespace ValheimArmory
             {
                 recipeItems = new List<RecipeIngredient> {
                     new RecipeIngredient { prefab = "Wood", amount = 10, upgradeCost = 5 },
-                    new RecipeIngredient { prefab = "Silver", amount = 25, upgradeCost = 10 },
-                    new RecipeIngredient { prefab = "Iron", amount = 4, upgradeCost = 2 },
+                    new RecipeIngredient { prefab = "Silver", amount = 45, upgradeCost = 10 },
+                    new RecipeIngredient { prefab = "Iron", amount = 5, upgradeCost = 2 },
                     new RecipeIngredient { prefab = "LeatherScraps", amount = 3, upgradeCost = 1 },
                 }
             };
@@ -905,7 +935,7 @@ namespace ValheimArmory
             Bonemasses_Greatsword.craftedAt = "forge";
             Bonemasses_Greatsword.craftAmount = 1;
             Bonemasses_Greatsword.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
-                { ItemStat.slash, new ItemStatConfig{ default_value = 75, min =  0, max =  250 } },
+                { ItemStat.slash, new ItemStatConfig{ default_value = 65, min =  0, max =  250 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
                 { ItemStat.poison, new ItemStatConfig{ default_value = 20, min =  0, max =  250 } },
                 { ItemStat.poison_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
@@ -1116,6 +1146,7 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 24, min =  1, max =  50 } },
+                { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.20f, min =  -0.20f, max =  0 } },
             };
             Flint_greataxe.recipe = new RecipeDefinition
             {
@@ -1179,6 +1210,7 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 14, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 28, min =  1, max =  50 } },
+                { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.20f, min =  -0.20f, max =  0 } },
             };
             Bronze_Lumber_Axe.recipe = new RecipeDefinition
             {
@@ -1199,16 +1231,16 @@ namespace ValheimArmory
             Bronze_dualaxes.craftedAt = "forge";
             Bronze_dualaxes.craftAmount = 1;
             Bronze_dualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
-                { ItemStat.slash, new ItemStatConfig{ default_value = 40, min =  0, max =  200 } },
+                { ItemStat.slash, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
-                { ItemStat.chop, new ItemStatConfig{ default_value = 40, min =  0, max =  200 } },
+                { ItemStat.chop, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
                 { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.attack_force, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 16, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
-                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 8, min =  1, max =  50 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 10, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 16, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.05f, min =  -0.20f, max =  0 } },
             };
@@ -1231,7 +1263,7 @@ namespace ValheimArmory
             Iron_dualaxes.craftedAt = "forge";
             Iron_dualaxes.craftAmount = 1;
             Iron_dualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
-                { ItemStat.slash, new ItemStatConfig{ default_value = 60, min =  0, max =  200 } },
+                { ItemStat.slash, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
                 { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
@@ -1240,7 +1272,7 @@ namespace ValheimArmory
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
-                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 10, min =  1, max =  50 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 18, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.05f, min =  -0.20f, max =  0 } },
             };
@@ -1374,6 +1406,7 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 20, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 10, min =  1, max =  50 } },
+                { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.20f, min =  -0.20f, max =  0 } },
             };
             Blackmetal_Greataxe.recipe = new RecipeDefinition
             {
@@ -2453,7 +2486,7 @@ namespace ValheimArmory
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 48, min =  0, max =  120 } },
                 { ItemStat.block_armor_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 40, min =  0, max =  120 } },
-                { ItemStat.parry, new ItemStatConfig{ default_value = 1.5f, min =  0, max =  3 } },
+                { ItemStat.parry, new ItemStatConfig{ default_value = 2.5f, min =  0, max =  3 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 250, min =  0, max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.05f, min =  -0.30f, max =  0 } },
@@ -2551,7 +2584,7 @@ namespace ValheimArmory
             Moders_Shield.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 100, min =  0, max =  180 } },
                 { ItemStat.block_armor_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
-                { ItemStat.block_force, new ItemStatConfig{ default_value = 40, min =  0, max =  120 } },
+                { ItemStat.block_force, new ItemStatConfig{ default_value = 120, min =  0, max =  200 } },
                 { ItemStat.block_force_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  30 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 250, min =  0, max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
@@ -2585,7 +2618,7 @@ namespace ValheimArmory
             Silver_Wolf_Towershield.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 78, min =  0, max =  120 } },
                 { ItemStat.block_armor_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
-                { ItemStat.block_force, new ItemStatConfig{ default_value = 40, min =  0, max =  120 } },
+                { ItemStat.block_force, new ItemStatConfig{ default_value = 120, min =  0, max =  200 } },
                 { ItemStat.block_force_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  30 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.20f, min =  -0.30f, max =  0 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 250, min =  0, max =  500 } },
@@ -2889,6 +2922,42 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(Moders_knife);
+
+            // Moders Daggers 2H
+            ItemDefinition Moders_knife_2h = new ItemDefinition();
+            Moders_knife_2h.Name = "Moders dualknives";
+            Moders_knife_2h.Category = ItemCategory.Knives;
+            Moders_knife_2h.prefab = "VAdagger_moder_2h";
+            Moders_knife_2h.icon = "moder_dagger_2h";
+            Moders_knife_2h.craftedAt = "forge";
+            Moders_knife_2h.craftAmount = 1;
+            Moders_knife_2h.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 18, min =  0, max =  48 } },
+                { ItemStat.slash, new ItemStatConfig{ default_value = 32, min =  0, max =  99 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 1, min =  0, max =  50 } },
+                { ItemStat.pierce, new ItemStatConfig{ default_value = 32, min =  0, max =  99 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 1, min =  0, max =  50 } },
+                { ItemStat.spirit, new ItemStatConfig{ default_value = 0, min =  0, max =  99 } },
+                { ItemStat.spirit_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
+                { ItemStat.frost, new ItemStatConfig{ default_value = 8, min =  0, max =  99 } },
+                { ItemStat.frost_per_level, new ItemStatConfig{ default_value = 1, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 10, min =  0, max =  30 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 10, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 30, min =  1, max =  50 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  500 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+            };
+            Moders_knife_2h.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "DragonTear", amount = 10, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "TrophyDragonQueen", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "Silver", amount = 15, upgradeCost = 4 },
+                    new RecipeIngredient { prefab = "ElderBark", amount = 6, upgradeCost = 3 },
+                    new RecipeIngredient { prefab = "JuteRed", amount = 0, upgradeCost = 4 },
+                }
+            };
+            Loader.AddDefinition(Moders_knife_2h);
 
             // Bonemass Dagger
             ItemDefinition Bonemasses_knife = new ItemDefinition();
@@ -3377,7 +3446,7 @@ namespace ValheimArmory
             Goblin_king_knuckles.prefab = "VAFist_Yagluth";
             Goblin_king_knuckles.icon = "yagluth_fists";
             Goblin_king_knuckles.craftedAt = "forge";
-            Goblin_king_knuckles.craftAmount = 20;
+            Goblin_king_knuckles.craftAmount = 1;
             Goblin_king_knuckles.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 5, min =  0, max =  48 } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 80, min =  0, max =  120 } },

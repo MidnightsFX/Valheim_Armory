@@ -39,7 +39,7 @@ namespace ValheimArmory.common
                 on_server = true;
             }
 
-            if (on_server == false) {       
+            if (on_server == false) {
                 // This is not needed on the server
                 // The server does not actually do anything with prefabs, and is not responsible for modifying them
                 BatchAddItems();
@@ -136,8 +136,7 @@ namespace ValheimArmory.common
 
                 //Modify the damage modifiers
                 if (itemdef.damageMods == null) { continue; }
-                foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.damageMods)
-                {
+                foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.damageMods) {
                     dmgmod.Value.dmgModcfg.SettingChanged += (_, _) => {
                         if (ZNet.instance.enabled == false) { return; }
                         HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.dmgModcfg.Value);
