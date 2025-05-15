@@ -367,7 +367,7 @@ Q. Valheim Enchanting System doesn't support these weapons?
 - A. There is a VES config available my [discord](https://discord.gg/Dmr9PQTy9m).
 
 Q. Epic Loot doesn't automatically drop these weapons, what gives?
-- A. Epic Loot configs are available on my [discord](https://discord.gg/Dmr9PQTy9m) and the [Epic loot discord](https://discord.gg/ZNhYeavv3C). These should be placed in the Epicloot patches folder.
+- A. Epic Loot configs are available on my [discord](https://discord.gg/Dmr9PQTy9m) and the [Epic loot discord](https://discord.gg/ZNhYeavv3C). These should be placed in the Epicloot patches folder .
 
 Q. I want to edit the text for a weapon, how do I do that?
 - A. All of the localizations are added to `BepinEx/config/ValheimArmory` modifying localizations in that folder will result in them being different in game. Changes do require a game restart to take effect.
@@ -385,7 +385,7 @@ Q. Why does x weapon look bad?
 <details>
   <summary>Potential Spoilers!</summary>
   
-  * Designing Boss Weapons for the mistlands
+  * Designing Boss Weapons for the Ashlands
 
   Boss Weapon Release roadmap
   * Additional weapon types for all existing bosses
@@ -401,7 +401,6 @@ Q. Why does x weapon look bad?
   
   * Filling out boss weapons for most/all playstyles (long term)
   * Chitin Shield
-  * Named Mace (blackmetal mace)
   * Better VFX for weapons
   * New spear alternatives
   * More magic (eitr) powered weapons (non-staves, post Ashlands update)

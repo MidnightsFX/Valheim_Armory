@@ -1,3 +1,30 @@
+**1.22.4**
+ ---
+ ```
+ - Fixes damage/resistance modifiers not being applied initially
+ - Fixes combo reset when hitting trees with the blackmarble mace
+ ```
+
+**1.22.3**
+ ---
+ ```
+ - Fixes incorrect status buff on blackmetal bow
+ ```
+
+**1.22.2**
+ ---
+ ```
+ - Updated Chinese and Traditional Chinese translations
+ - Added missing sounds to the blood-bone pickaxe on-hit effects list
+ - Prevent error on blood hybrid weapons due to the local player not existing
+ ```
+
+**1.22.1**
+ ---
+ ```
+ - Fix for transparent shader issue on Eikythr weapons
+ ```
+
 **1.22.0**
  ---
  ```
