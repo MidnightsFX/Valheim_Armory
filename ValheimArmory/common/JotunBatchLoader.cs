@@ -39,7 +39,7 @@ namespace ValheimArmory.common
                 on_server = true;
             }
 
-            if (on_server == false) {       
+            if (on_server == false) {
                 // This is not needed on the server
                 // The server does not actually do anything with prefabs, and is not responsible for modifying them
                 BatchAddItems();
@@ -136,8 +136,7 @@ namespace ValheimArmory.common
 
                 //Modify the damage modifiers
                 if (itemdef.damageMods == null) { continue; }
-                foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.damageMods)
-                {
+                foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.damageMods) {
                     dmgmod.Value.dmgModcfg.SettingChanged += (_, _) => {
                         if (ZNet.instance.enabled == false) { return; }
                         HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.dmgModcfg.Value);
@@ -154,12 +153,22 @@ namespace ValheimArmory.common
 
         private static bool BatchAddItems() {
             foreach (ItemDefinition itemdef in resourceDefinitions) {
+                // Logger.LogInfo($"Adding {itemdef.Name}.");
                 GameObject ItemPrefab = Assets.LoadAsset<GameObject>($"Assets/Custom/Weapons/{itemdef.Category}/{itemdef.prefab}.prefab");
                 Sprite ItemSprite = Assets.LoadAsset<Sprite>($"Assets/Custom/Icons/{itemdef.icon}.png");
                 ItemDrop ItemD = ItemPrefab.GetComponent<ItemDrop>();
+                // Modify this items stats
                 foreach (KeyValuePair<ItemStat, ItemStatConfig> modstat in itemdef.modifableStats) {
                     if (modstat.Value.configurable == false) { continue; }
                     ItemDataConfigModifier(modstat.Key, modstat.Value.cfg.Value, ItemD.m_itemData);
+                }
+                // Modify this items resistances
+                if (itemdef.damageMods != null) {
+                    foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.damageMods) {
+                        if (dmgmod.Value.configurable == false || dmgmod.Value.dmgModcfg == null) { continue; }
+                        HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.dmgModcfg.Value);
+                        SetItemDamageModifier(modifier, dmgmod.Key, ItemD.m_itemData);
+                    }
                 }
                 ItemConfig itemcfg = new ItemConfig() {
                     Amount = itemdef.craftAmount_cfg.Value,
@@ -170,7 +179,6 @@ namespace ValheimArmory.common
                     Requirements = itemdef.recipe.recipeReqs.ToArray()
                 };
                 ItemManager.Instance.AddItem(new CustomItem(ItemPrefab, fixReference: true, itemcfg));
-                // itemdef.recipe.resolvedRecipe = itemcfg.GetRecipe();
             }
             return true;
         }
@@ -461,45 +469,16 @@ namespace ValheimArmory.common
         }
 
         private static void SetItemDamageModifier(HitData.DamageModifier modifier, HitData.DamageType type, ItemDrop.ItemData itemData) {
+            // Logger.LogInfo($"Setting {itemData.m_shared.m_name} damage modifier {modifier} for {type}");
             List<HitData.DamageModPair> temp = itemData.m_shared.m_damageModifiers.Where(entry => entry.m_type != type).ToList();
-            if (temp.Count == 0)
-            {
+            if (temp.Count == 0) {
                 itemData.m_shared.m_damageModifiers.Clear();
                 itemData.m_shared.m_damageModifiers.Add(new HitData.DamageModPair() { m_modifier = modifier, m_type = type });
-            }
-            else
-            {
+            } else {
                 temp.Add(new HitData.DamageModPair() { m_modifier = modifier, m_type = type });
                 itemData.m_shared.m_damageModifiers = temp;
             }
         }
-
-        //private static Recipe BuildRecipeForItem(ItemDefinition itemdef, bool assign = true) {
-        //    if (!ValidateRecipeConfig(itemdef)) {
-        //        BuildRecipeReqsFromDefault(itemdef);
-        //    }
-        //    List<RequirementConfig> requirements = new List<RequirementConfig>();
-        //    foreach (var ireq in itemdef.recipe.recipeReqs) {
-        //        requirements.Add(new RequirementConfig { Item = ireq.Item, Amount = ireq.Amount, AmountPerLevel = ireq.AmountPerLevel });
-        //    };
-        //    CustomRecipe updatedCustomRecipe = new CustomRecipe(new RecipeConfig() {
-        //        Name = $"Recipe_{itemdef.prefab}",
-        //        Amount = itemdef.craftAmount_cfg.Value,
-        //        CraftingStation = $"{itemdef.craftedAt_cfg.Value}",
-        //        RepairStation = $"{itemdef.craftedAt_cfg.Value}",
-        //        MinStationLevel = itemdef.stationlvl_cfg.Value,
-        //        Enabled = itemdef.craftable_cfg.Value,
-        //        Requirements = requirements.ToArray()
-        //    });
-        //    // Must resolve crafting station name
-        //    // Must resolve the reapir station
-        //    // Must resolve the requirements
-        //    if (assign) {
-        //        itemdef.recipe.resolvedRecipe = updatedCustomRecipe.Recipe;
-        //    }
-        //    Logger.LogDebug($"Built new recipe for {itemdef.Name}: RecipeValid? {updatedCustomRecipe.Recipe.IsValid()}");
-        //    return updatedCustomRecipe.Recipe;
-        //}
 
         private static void UpdateItemInPlayerInventory(string prefab, Action<ItemDrop.ItemData> callback) {
             if (Player.m_localPlayer == null) { return; }

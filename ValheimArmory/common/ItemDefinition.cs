@@ -45,6 +45,7 @@ namespace ValheimArmory.common
 
     class HitCustomDamageMod
     {
+        public bool configurable { get; set; } = true;
         public HitData.DamageModifier damageModifier { get; set; }
         public BepInEx.Configuration.ConfigEntry<string> dmgModcfg { get; set; }
     }

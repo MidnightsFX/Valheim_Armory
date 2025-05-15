@@ -64,12 +64,13 @@ It is encouraged that you find these items by exploring and discovery, but many 
   ## Moder
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Dragonfrost sword | Forge | Post-Mountain | `VASwordModer` | ![Ice sword Icon](https://i.imgur.com/iXVICFY.png) |
-  | Dragonfrost spear | Forge | Post-Mountain | `VASpearModer` | ![Ice Spear Icon](https://i.imgur.com/X4CuFZs.png) |
+  | Dragonfrost sword | Forge | Post-Mountain | `VASwordModer` | ![Ice sword Icon](https://i.postimg.cc/hPTmNHFS/moder-sword.png) |
+  | Dragonfrost spear | Forge | Post-Mountain | `VASpearModer` | ![Ice Spear Icon](https://i.postimg.cc/t7QXhSDk/moder-spear.png) |
   | Dragonfrost crossbow | Forge | Post-Mountain | `VACrossbowModer` | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
-  | Dragonfrost shield | Forge | Post-Mountain | `VAModer_shield` | ![Moder shield](https://i.postimg.cc/9FK6FVN6/modershiled-v2.png) |
-  | Dragonfrost dagger | Forge | Post-Mountain | `VAdagger_moder` | ![Moder dagger](https://i.imgur.com/9EdsSsE.png) |
-  | Dragonfrost greatsword | Forge | Post-Mountain | `VAModer_greatsword` | ![Moder greatsword](https://i.postimg.cc/g24qfRYW/moder-greatsword.png) |
+  | Dragonfrost shield | Forge | Post-Mountain | `VAModer_shield` | ![Moder shield](https://i.postimg.cc/C1q7K5BQ/modershiled-v2.png) |
+  | Dragonfrost knife | Forge | Post-Mountain | `VAdagger_moder` | ![Moder Knife](https://i.postimg.cc/FHbKx4ML/moder-dagger.png) |
+  | Dragonfrost dual knives | Forge | Post-Mountain | `VAdagger_moder_2h` | ![Dual Ice Knives](https://i.postimg.cc/t4zx4WCw/moder-dagger-2h.png) |
+  | Dragonfrost greatsword | Forge | Post-Mountain | `VAModer_greatsword` | ![Moder greatsword](https://i.postimg.cc/c4nCrYTT/moder-greatsword.png) |
 
   ## Yagluth
   | Name | Crafted At | Stage | prefab | Icon |
@@ -113,8 +114,8 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Poison Bolt | Forge | Swamp | `VAbolt_poison` | ![iron poison bolt](https://i.imgur.com/mVLDfm8.png) |
   | Surtling Bolt | Forge | Swamp | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/iZ5fOrF.png) |
   | Frost Bolt | Forge | Mountain | `VAbolt_frost` | ![Silver Frost bolt](https://i.imgur.com/0FGHrBB.png) |
-  | Obsidian Bolt | Workbench | Mountain | `VASurtlingBolt` | ![obsidian bolt](https://i.imgur.com/luqYGzO.png) |
-  | Needle Bolt | Workbench | Plains | `VASurtlingBolt` | ![needle bolt](https://i.postimg.cc/t4VwknJ4/needle-bolt.png) |
+  | Obsidian Bolt | Workbench | Mountain | `VAObsidianBolt` | ![obsidian bolt](https://i.imgur.com/luqYGzO.png) |
+  | Needle Bolt | Workbench | Plains | `VABoltNeedle` | ![needle bolt](https://i.postimg.cc/t4VwknJ4/needle-bolt.png) |
 
 
 </details>
@@ -193,9 +194,9 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Iron knife | Forge | Swamp | `VAdagger_iron` | ![iron dagger icon](https://i.postimg.cc/CxfC5ZQf/iron-dagger.png) |
   | Hati knife | Forge | Mistlands | `VAdagger_blackmetal_mistlands` | ![hati knife icon](https://i.postimg.cc/5yBdfNMc/hatti-knife.png) |
   | Flametal knife | Blackforge | Ashlands | `VAdagger_meteor` | ![meteor dagger icon](https://i.postimg.cc/Xq8H2Zbv/meteor-dagger.png) |
-  | Flametal primal knife | Blackforge | Ashlands | `VAdagger_meteor_nature` | ![meteor nature dagger icon](https://i.postimg.cc/1X9MN9q1/meteor-dagger-primal.png) |
-  | Flametal lightning knife | Blackforge | Ashlands | `VAdagger_meteor_lightning` | ![meteor lightning dagger icon](https://i.postimg.cc/Kjvr8J6Z/meteor-dagger-lightning.png) |
-  | Flametal blood knife | Blackforge | Ashlands | `VAdagger_meteor_blood` | ![meteor blood dagger icon](https://i.postimg.cc/y6vybCRW/meteor-dagger-blood.png) |
+  | Flametal primal knife | Blackforge | Ashlands | `VAdagger_meteor_nature` | ![meteor nature dagger icon](https://i.postimg.cc/nhpPw4jc/meteor-dagger-primal.png) |
+  | Flametal lightning knife | Blackforge | Ashlands | `VAdagger_meteor_lightning` | ![meteor lightning dagger icon](https://i.postimg.cc/gJCMy8bp/meteor-dagger-lightning.png) |
+  | Flametal blood knife | Blackforge | Ashlands | `VAdagger_meteor_blood` | ![meteor blood dagger icon](https://i.postimg.cc/sgmNFM7P/meteor-dagger-blood.png) |
 
   ---
 
@@ -209,9 +210,9 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Silver knives | Forge | Mountain | `VAdagger_silver_2h` | ![blackguard runic daggers icon](https://i.postimg.cc/7L3g1FDH/silver-dagger-2h.png) |
   | Blackmetal knives | Forge | Plains | `VAknife_blackmetal` | ![blackmetal icon 2h](https://i.postimg.cc/ZY9GTHLb/2h-blackmetal-knives.png) |
   | Assassins knives | Blackforge | Ashlands | `VAdagger_meteor_2h` | ![meteor dagger icon 2h](https://i.postimg.cc/pTWNZtNR/2h-meteor-daggers.png) |
-  | Assassins primal knives | Blackforge | Ashlands | `VAdagger_meteor_2h_nature` | ![meteor nature dagger icon 2h](https://i.postimg.cc/05VWTwSY/meteor-dagger-primal-2h.png) |
-  | Assassins lightning knives | Blackforge | Ashlands | `VAdagger_meteor_2h_lightning` | ![meteor lightning dagger icon 2h](https://i.postimg.cc/pTZGX96t/meteor-dagger-lightning-2h.png) |
-  | Assassins blood knives | Blackforge | Ashlands | `VAdagger_meteor_2h_blood` | ![meteor blood dagger icon 2h](https://i.postimg.cc/brw6Gz7S/meteor-dagger-blood-2h.png) |
+  | Assassins primal knives | Blackforge | Ashlands | `VAdagger_meteor_2h_nature` | ![meteor nature dagger icon 2h](https://i.postimg.cc/jjjkRR4p/meteor-dagger-primal-2h.png) |
+  | Assassins lightning knives | Blackforge | Ashlands | `VAdagger_meteor_2h_lightning` | ![meteor lightning dagger icon 2h](https://i.postimg.cc/FRdWJGqG/meteor-dagger-lightning-2h.png) |
+  | Assassins blood knives | Blackforge | Ashlands | `VAdagger_meteor_2h_blood` | ![meteor blood dagger icon 2h](https://i.postimg.cc/yNrpd2fk/meteor-dagger-blood-2h.png) |
 
 </details>
 
@@ -363,14 +364,10 @@ Current configuration options:
 ## FAQ
 
 Q. Valheim Enchanting System doesn't support these weapons?
-- A. There is a default VES config in the VA folder (`VES.ValheimArmory.default.yml`), it must be moved to the VES config folder. This gives you full control of configurations that are actually applied in regards to VES.
-     The folder you should place this config file in is `BepInEx\config\ValheimEnchantmentSystem\AdditionalEnchantmentReqs`
+- A. There is a VES config available my [discord](https://discord.gg/Dmr9PQTy9m).
 
 Q. Epic Loot doesn't automatically drop these weapons, what gives?
-- A. There is a default Epic Loot config files (`EpicLoot_Valheim_Armory.loottables.json, EpicLoot_Valheim_Armory.iteminfo.json`) in the VA folder, they must be moved to the Epic loot config patches folder. `\BepInEx\config\EpicLoot\patches`
-
-Q. Why does disabling the recipe do nothing?
-- A. You must have an item enabled, for the recipe disable flag to do anything. When an item is disabled it is completely removed from the game, so its recipe doesn't matter. Items can be uncraftable, and removed from the game seperately.
+- A. Epic Loot configs are available on my [discord](https://discord.gg/Dmr9PQTy9m) and the [Epic loot discord](https://discord.gg/ZNhYeavv3C). These should be placed in the Epicloot patches folder .
 
 Q. I want to edit the text for a weapon, how do I do that?
 - A. All of the localizations are added to `BepinEx/config/ValheimArmory` modifying localizations in that folder will result in them being different in game. Changes do require a game restart to take effect.
@@ -388,7 +385,7 @@ Q. Why does x weapon look bad?
 <details>
   <summary>Potential Spoilers!</summary>
   
-  * Designing Boss Weapons for the mistlands
+  * Designing Boss Weapons for the Ashlands
 
   Boss Weapon Release roadmap
   * Additional weapon types for all existing bosses
@@ -404,7 +401,6 @@ Q. Why does x weapon look bad?
   
   * Filling out boss weapons for most/all playstyles (long term)
   * Chitin Shield
-  * Named Mace (blackmetal mace)
   * Better VFX for weapons
   * New spear alternatives
   * More magic (eitr) powered weapons (non-staves, post Ashlands update)
@@ -418,14 +414,11 @@ Just download with your favorite modmanager!
 ## Installation (manual)
 Toss the ValheimArmory folder and files into your plugins folder. Technically the only thing required is the ValheimArmory.ddl, configs will generate on first run. 
 
-Optionally follow the instructions to setup VES or Epic Loot configs.
-* VES or Epic loot configs should be placed in the required locations specified, these configurations are not auto-loaded to prevent this mods defaults from overriding your preferred configuration. Check the FAQ.
-
-
 ## Issues
 Please report any issues you encounter on the [github issue tracker](https://github.com/MidnightsFX/Valheim_Armory/issues) or ask for help on the [discord](https://discord.gg/Dmr9PQTy9m)
 
 ## Credits
+* @chaseowski for many updates and optimizations to the 3d models!
 * German translations provided by SACK3000
 * Chinese translations provided by ZhiTian Wu
 * Valheim Enchantment System config defaults by Aziraphale

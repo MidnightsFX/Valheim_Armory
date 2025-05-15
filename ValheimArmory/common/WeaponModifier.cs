@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using static EffectList;
-using Logger = Jotunn.Logger;
 
 namespace ValheimArmory.common
 {
@@ -38,11 +37,12 @@ namespace ValheimArmory.common
             foreach (GameObject obj in objects)
             {
                 ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    OriginalWeaponAttackCache.Add(weapon_name, new WeaponAttackData() { primary_attack = id.m_itemData.m_shared.m_attack, secondary_attack = id.m_itemData.m_shared.m_secondaryAttack });
-                    // We just need to at this one
-                    break;
+                if (obj.TryGetComponent<ItemDrop>(out id)) {
+                    if (id.m_itemData.m_shared.m_attack.m_attackAnimation != null && id.m_itemData.m_shared.m_secondaryAttack.m_attackAnimation != null) {
+                        // We just need to at this one
+                        OriginalWeaponAttackCache.Add(weapon_name, new WeaponAttackData() { primary_attack = id.m_itemData.m_shared.m_attack, secondary_attack = id.m_itemData.m_shared.m_secondaryAttack });
+                        break;
+                    }
                 }
             }
             return OriginalWeaponAttackCache[weapon_name];
@@ -356,6 +356,7 @@ namespace ValheimArmory.common
 
         public static void OnConfigChangeModifyHammers(object sender, EventArgs e)
         {
+            if (Game.instance.IsShuttingDown()) { return; }
             if (VAConfig.VanillaHammersHavePrimaryAttack.Value)
             {
                 ModifyVanillaHammersToWarhammers();
@@ -366,6 +367,7 @@ namespace ValheimArmory.common
 
         public static void OnConfigChangeModifyModHammers(object sender, EventArgs e)
         {
+            if (Game.instance.IsShuttingDown()) { return; }
             if (VAConfig.ModHammersHavePrimaryAttack.Value)
             {
                 ModifyModHammersToWarhammers();

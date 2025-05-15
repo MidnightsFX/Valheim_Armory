@@ -1,3 +1,74 @@
+**1.22.4**
+ ---
+ ```
+ - Fixes damage/resistance modifiers not being applied initially
+ - Fixes combo reset when hitting trees with the blackmarble mace
+ ```
+
+**1.22.3**
+ ---
+ ```
+ - Fixes incorrect status buff on blackmetal bow
+ ```
+
+**1.22.2**
+ ---
+ ```
+ - Updated Chinese and Traditional Chinese translations
+ - Added missing sounds to the blood-bone pickaxe on-hit effects list
+ - Prevent error on blood hybrid weapons due to the local player not existing
+ ```
+
+**1.22.1**
+ ---
+ ```
+ - Fix for transparent shader issue on Eikythr weapons
+ ```
+
+**1.22.0**
+ ---
+ ```
+ - Updated default Chinese translation (delete your old translation in the config folder if you want the new defaults))
+ - Adds a Blackmetal bow
+ - Increased default deflect force for mod tower shields
+ - Fixes a rare error on shutdown when some items would try to revert to their original state as the game is exiting
+ - Improved the mounting rotation for the serpent scale buckler
+ - Readded missing config for movement speed penalty on some Greataxes
+ - Added missing spear throwing sounds for blackmetal and moder spear
+ - Fixesx20 multiplier for the goblin kinds knuckles
+ - Updated Flametal Knives with customized models based on the evolution chosen
+ ```
+
+**1.21.2**
+ ---
+ ```
+ - Shader fix for macOS users for Queen and Vine weapons, and Bolts
+ - Shader compatibility improvement for Sky Shatterer
+ - Rework of Moders tower shield, potential future changes still planned.
+ ```
+
+**1.21.1**
+ ---
+ ```
+ - Particle effect fixes for the spirit staff explosion
+ - Grip improvements for all staves
+ ```
+
+**1.21.0**
+ ---
+ ```
+ - Many of the model updates are a contribution from @chaseowski, thank you!
+ - Added some new Moder weapons and retextured many of the existing moder weapons, more in progress!
+    - Added Moders dual knives
+    - Updated Moders 1H knife, 1H sword, 2H sword and spear
+ - Updated flint weapon models, and textures!
+ - Updated many of the english translation default descriptions and names
+    - Translation changes will not override existing translations, delete your old translations (BepInEx/config/ValheimArmory/localizations/English.json) if you want the new defaults
+ - Shader fixes for particle effects of the poison/spirit staves and arrow trails
+ - Fixed flametal 1H axes being very hard to pickup and floating in the air after dropped
+ - Removed included VES and EpicLoot configs, these are now available in discord
+ ```
+
 **1.20.0**
  ---
  ```
