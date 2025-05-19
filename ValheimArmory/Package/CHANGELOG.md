@@ -1,3 +1,10 @@
+**1.22.5**
+ ---
+ ```
+ - Fixes thrown spears disappearing
+ - Fixes thrown spears sometimes falling underneath the world or rocks
+ ```
+
 **1.22.4**
  ---
  ```

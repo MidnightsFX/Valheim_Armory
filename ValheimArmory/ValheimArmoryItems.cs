@@ -3752,6 +3752,10 @@ namespace ValheimArmory
             new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_boltSurtling.prefab");
             new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_greenmetal.prefab");
             new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_surtlingfire.prefab");
+            // Spear projectiles
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Spears/VAspearblackmetal_projectile.prefab");
+            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Spears/VAspearmoder_projectile.prefab");
+
             // Magic projectiles
             //new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_ice_projectile.prefab");
             new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_poison_projectile.prefab");
