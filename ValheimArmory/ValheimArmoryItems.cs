@@ -451,8 +451,8 @@ namespace ValheimArmory
             Bronze_Arbelist.craftedAt = "forge";
             Bronze_Arbelist.craftAmount = 1;
             Bronze_Arbelist.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
-                { ItemStat.pierce, new ItemStatConfig{ default_value = 105, min =  0, max =  300 } },
-                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
+                { ItemStat.pierce, new ItemStatConfig{ default_value = 140, min =  0, max =  300 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
                 { ItemStat.attack_force, new ItemStatConfig{ default_value = 200, min =  0, max =  300 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 3, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  300 } },
@@ -466,11 +466,41 @@ namespace ValheimArmory
                 recipeItems = new List<RecipeIngredient> {
                     new RecipeIngredient { prefab = "ElderBark", amount = 10, upgradeCost = 5 },
                     new RecipeIngredient { prefab = "Bronze", amount = 20, upgradeCost = 10 },
-                    new RecipeIngredient { prefab = "Tar", amount = 10, upgradeCost = 2 },
-                    new RecipeIngredient { prefab = "LinenThread", amount = 2, upgradeCost = 2 },
+                    new RecipeIngredient { prefab = "JuteRed", amount = 5, upgradeCost = 2 },
+                    new RecipeIngredient { prefab = "Silver", amount = 2, upgradeCost = 2 },
                 }
             };
             Loader.AddDefinition(Bronze_Arbelist);
+
+            // Blackmetal crossbow
+            ItemDefinition BlackmetalCrossbow = new ItemDefinition();
+            BlackmetalCrossbow.Name = "Blackmetal Crossbow";
+            BlackmetalCrossbow.Category = ItemCategory.Bows;
+            BlackmetalCrossbow.prefab = "VACrossbowBlackmetal";
+            BlackmetalCrossbow.icon = "blackmetal_crossbow";
+            BlackmetalCrossbow.craftedAt = "forge";
+            BlackmetalCrossbow.craftAmount = 1;
+            BlackmetalCrossbow.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.pierce, new ItemStatConfig{ default_value = 180, min =  0, max =  300 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 200, min =  0, max =  300 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 3, min =  0, max =  150 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 50, min =  0, max =  300 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.crossbow_reload_speed, new ItemStatConfig{ default_value = 3.5f, min =  0.01f, max =  3.5f } },
+                { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
+                { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 200, min =  0, max =  300 } },
+            };
+            BlackmetalCrossbow.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "FineWood", amount = 16, upgradeCost = 8 },
+                    new RecipeIngredient { prefab = "BlackMetal", amount = 20, upgradeCost = 10 },
+                    new RecipeIngredient { prefab = "LinenThread", amount = 6, upgradeCost = 4 },
+                    new RecipeIngredient { prefab = "Iron", amount = 4, upgradeCost = 2 },
+                }
+            };
+            Loader.AddDefinition(BlackmetalCrossbow);
 
             // Antler Bow
             ItemDefinition Eikthyrs_Bow = new ItemDefinition();
@@ -638,6 +668,74 @@ namespace ValheimArmory
         private void LoadSwords()
         {
             Logger.LogInfo("Loading Swords");
+            // Fader Sword
+            ItemDefinition FaderSword = new ItemDefinition();
+            FaderSword.Name = "Faders Sword";
+            FaderSword.Category = ItemCategory.Swords;
+            FaderSword.prefab = "VASwordFader";
+            FaderSword.icon = "fader_sword";
+            FaderSword.craftedAt = "blackforge";
+            FaderSword.craftAmount = 1;
+            FaderSword.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.slash, new ItemStatConfig{ default_value = 145, min =  0, max =  250 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
+                { ItemStat.fire, new ItemStatConfig{ default_value = 25, min =  0, max =  250 } },
+                { ItemStat.fire_per_level, new ItemStatConfig{ default_value = 1, min =  0, max =  50 } },
+                { ItemStat.poison, new ItemStatConfig{ default_value = 25, min =  0, max =  250 } },
+                { ItemStat.poison_per_level, new ItemStatConfig{ default_value = 1, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 55, min =  0, max =  120 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 60, min =  0, max =  150 } },
+                { ItemStat.block_force, new ItemStatConfig{ default_value = 50, min =  0, max =  120 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 18, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 30, min =  1, max =  50 } },
+            };
+            FaderSword.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "FlametalNew", amount = 30, upgradeCost = 30 },
+                    new RecipeIngredient { prefab = "CharredBone", amount = 30, upgradeCost = 30 },
+                    new RecipeIngredient { prefab = "TrophyFader", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "FaderDrop", amount = 1, upgradeCost = 0 },
+                }
+            };
+            Loader.AddDefinition(FaderSword);
+
+            // Faders Greatsword
+            ItemDefinition FaderGreatsword = new ItemDefinition();
+            FaderGreatsword.Name = "Faders Greatsword";
+            FaderGreatsword.Category = ItemCategory.Swords;
+            FaderGreatsword.prefab = "VAGreatswordFader";
+            FaderGreatsword.icon = "fader_greatsword";
+            FaderGreatsword.craftedAt = "blackforge";
+            FaderGreatsword.craftAmount = 1;
+            FaderGreatsword.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.slash, new ItemStatConfig{ default_value = 180, min =  0, max =  250 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
+                { ItemStat.fire, new ItemStatConfig{ default_value = 30, min =  0, max =  250 } },
+                { ItemStat.fire_per_level, new ItemStatConfig{ default_value = 1, min =  0, max =  50 } },
+                { ItemStat.poison, new ItemStatConfig{ default_value = 30, min =  0, max =  250 } },
+                { ItemStat.poison_per_level, new ItemStatConfig{ default_value = 1, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 55, min =  0, max =  120 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 60, min =  0, max =  150 } },
+                { ItemStat.block_force, new ItemStatConfig{ default_value = 50, min =  0, max =  120 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 18, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 30, min =  1, max =  50 } },
+            };
+            FaderGreatsword.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "FlametalNew", amount = 40, upgradeCost = 20 },
+                    new RecipeIngredient { prefab = "CharredBone", amount = 20, upgradeCost = 20 },
+                    new RecipeIngredient { prefab = "TrophyFader", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "FaderDrop", amount = 1, upgradeCost = 0 },
+                }
+            };
+            Loader.AddDefinition(FaderGreatsword);
+
             // Blackmetal Greatsword
             ItemDefinition Blackmetal_Greatsword = new ItemDefinition();
             Blackmetal_Greatsword.Name = "Blackmetal Greatsword";
@@ -1145,7 +1243,7 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
-                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 24, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 6, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.20f, min =  -0.20f, max =  0 } },
             };
             Flint_greataxe.recipe = new RecipeDefinition
@@ -1209,7 +1307,7 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 14, min =  1, max =  50 } },
-                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 28, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 7, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.20f, min =  -0.20f, max =  0 } },
             };
             Bronze_Lumber_Axe.recipe = new RecipeDefinition
@@ -1231,7 +1329,7 @@ namespace ValheimArmory
             Bronze_dualaxes.craftedAt = "forge";
             Bronze_dualaxes.craftAmount = 1;
             Bronze_dualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
-                { ItemStat.slash, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
+                { ItemStat.slash, new ItemStatConfig{ default_value = 40, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
                 { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
@@ -1263,7 +1361,7 @@ namespace ValheimArmory
             Iron_dualaxes.craftedAt = "forge";
             Iron_dualaxes.craftAmount = 1;
             Iron_dualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
-                { ItemStat.slash, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
+                { ItemStat.slash, new ItemStatConfig{ default_value = 60, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
                 { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
@@ -1546,7 +1644,7 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 14, min =  1, max =  50 } },
-                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 28, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 7, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.20f, min =  -0.20f, max =  0 } },
             };
             Eikthyrs_Greataxe.recipe = new RecipeDefinition
@@ -1614,7 +1712,7 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 28, min =  1, max =  50 } },
-                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 14, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.20f, min =  -0.20f, max =  0 } },
             };
             Flametal_Battleaxe.recipe = new RecipeDefinition
@@ -1649,7 +1747,7 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 28, min =  1, max =  50 } },
-                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 14, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.20f, min =  -0.20f, max =  0 } },
             };
             Flametal_Primal_Battleaxe.recipe = new RecipeDefinition
@@ -1684,7 +1782,7 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 28, min =  1, max =  50 } },
-                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 14, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.20f, min =  -0.20f, max =  0 } },
             };
             Flametal_Lightning_Battleaxe.recipe = new RecipeDefinition
@@ -1717,7 +1815,7 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 28, min =  1, max =  50 } },
-                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 14, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.20f, min =  -0.20f, max =  0 } },
             };
             Flametal_Blood_Battleaxe.recipe = new RecipeDefinition
@@ -1865,7 +1963,6 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(Flametal_Blood_Axe);
-
         }
 
         private void LoadHammers()
@@ -3347,6 +3444,39 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(BlackmetalSpear);
+
+            // Fader Spear
+            ItemDefinition FaderSpear = new ItemDefinition();
+            FaderSpear.Name = "Fader Spear";
+            FaderSpear.Category = ItemCategory.Spears;
+            FaderSpear.prefab = "VASpearFader";
+            FaderSpear.icon = "fader_spear";
+            FaderSpear.craftedAt = "blackforge";
+            FaderSpear.craftAmount = 1;
+            FaderSpear.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 30, min =  0, max =  48 } },
+                { ItemStat.pierce, new ItemStatConfig{ default_value = 150, min =  0, max =  300 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
+                { ItemStat.poison, new ItemStatConfig{ default_value = 25, min =  0, max =  300 } },
+                { ItemStat.poison_per_level, new ItemStatConfig{ default_value = 1, min =  0, max =  50 } },
+                { ItemStat.fire, new ItemStatConfig{ default_value = 25, min =  0, max =  300 } },
+                { ItemStat.fire_per_level, new ItemStatConfig{ default_value = 1, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 18, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 20, min =  1, max =  50 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  300 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+            };
+            FaderSpear.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "FlametalNew", amount = 24, upgradeCost = 24 },
+                    new RecipeIngredient { prefab = "Blackwood", amount = 10, upgradeCost = 10 },
+                    new RecipeIngredient { prefab = "TrophyFader", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "FaderDrop", amount = 1, upgradeCost = 0 },
+                }
+            };
+            Loader.AddDefinition(FaderSpear);
         }
 
         private void LoadFists()
@@ -3554,10 +3684,12 @@ namespace ValheimArmory
             Staff_of_Spirit.craftAmount = 1;
             Staff_of_Spirit.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 48, min =  0, max =  90 } },
-                { ItemStat.spirit, new ItemStatConfig{ default_value = 120, min =  0, max =  200 } },
-                { ItemStat.spirit_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
-                { ItemStat.blunt, new ItemStatConfig{ default_value = 120, min =  0, max =  200 } },
+                { ItemStat.spirit, new ItemStatConfig{ default_value = 90, min =  0, max =  200 } },
+                { ItemStat.spirit_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
+                { ItemStat.blunt, new ItemStatConfig{ default_value = 0, min =  0, max =  200 } },
                 { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
+                { ItemStat.slash, new ItemStatConfig{ default_value = 120, min =  0, max =  200 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
                 { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
                 { ItemStat.primary_attack_eitr, new ItemStatConfig{ default_value = 35, min =  0, max =  50 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
@@ -3615,10 +3747,12 @@ namespace ValheimArmory
             Druidic_Staff_of_Spirit.craftAmount = 1;
             Druidic_Staff_of_Spirit.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 24, min =  0, max =  48 } },
-                { ItemStat.spirit, new ItemStatConfig{ default_value = 50, min =  0, max =  120 } },
-                { ItemStat.spirit_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
-                { ItemStat.blunt, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
+                { ItemStat.spirit, new ItemStatConfig{ default_value = 20, min =  0, max =  120 } },
+                { ItemStat.spirit_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
+                { ItemStat.blunt, new ItemStatConfig{ default_value = 0, min =  0, max =  200 } },
                 { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
+                { ItemStat.slash, new ItemStatConfig{ default_value = 40, min =  0, max =  200 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
                 { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 50, min =  0, max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 10, min =  0, max =  150 } },

@@ -252,5 +252,13 @@
   "item_dagger_moder_2h": "Dragonfrost knives",
   "item_dagger_moder_2h_description": "A pair of glistening shards of ice, graceful deathbringers.",
   "item_bow_blackmetal": "Blackmetal Bow",
-  "item_bow_blackmetal_description": "Linen thread stengthens its draw, blackmetal gleams, eager for an arrow."
+  "item_bow_blackmetal_description": "Linen thread stengthens its draw, blackmetal gleams, eager for an arrow.",
+  "item_spear_fader": "Dreadfire Spear",
+  "item_spear_fader_description": "Crafted from the body of Fader, it still burns earily and hungrily.",
+  "item_crossbow_blackmetal": "Blackmetal Crossbow",
+  "item_crossbow_blackmetal_description": "An extremely sturdy crossbow, a pinacle of engineering and death.",
+  "item_sword_fader": "Dreadfire Sword",
+  "item_sword_fader_description": "A sword crafted from Faders remains, it burns with necrotic magic.",
+  "item_greatsword_fader": "Dreadfire Greatsword",
+  "item_greatsword_fader_description": "A massive sword forged from Faders gift. It burns the dead and living alike.",
 }

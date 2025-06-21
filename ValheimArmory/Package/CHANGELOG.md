@@ -1,3 +1,30 @@
+**1.23.0**
+ ---
+ ```
+ - Added the blackmetal crossbow
+ - Added new model variants for the flametal 2H Elemental variants (Shoutout to Mario Zúñiga)
+ - Added Faders Spear, Faders sword and Faders greatsword
+ - Improves stamina and damage consistency of dualaxes vs the berserker axes
+ - Increases default damage of dualaxes at lower tiers to match their 1H variants (delete your config if you want the new defaults)
+ - Added configuration options to tune the status effects provided by this mod (blood hunger, and Queens presence)
+ - Adds missing sfx to some lightning and nature weapons that were missing it
+ - Improves grip on the assassins lightning knives
+ - All dual wielded knives now show up on your character when stowed instead of disappearing
+ ```
+
+**1.22.7**
+ ---
+ ```
+ - Hotfix to prevent the filewatcher from becoming overreactive when trying to connect to a modded server
+ ```
+
+**1.22.6**
+ ---
+ ```
+ - Fixes dragonfrost spear grip
+ - Fixes config definitions not being hot reloaded if they are manually edited from the config file while the game/server is running
+ ```
+
 **1.22.5**
  ---
  ```
