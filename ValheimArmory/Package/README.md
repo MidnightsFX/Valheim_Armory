@@ -87,6 +87,13 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Pincer greatsword | Blackforge | Post-Mistlands | `VAQueen_greatsword` | ![pincer greatsword](https://i.imgur.com/cR358cp.png) |
   | Pincer greatbow | Blackforge | Post-Mistlands | `VAQueen_bow` | ![pincer greatbow](https://i.imgur.com/CUFQTOp.png) |
 
+  ## Fader
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Dreadfire sword | Blackforge | Post-Ashlands | `VASwordFader` | ![fader sword](https://i.postimg.cc/NFwjfrtZ/fader-sword.png) |
+  | Dreadfire greatsword | Blackforge | Post-Ashlands | `VAGreatswordFader` | ![fader greatsword](https://i.postimg.cc/G2DpCxWk/fader-greatsword.png) |
+  | Dreadfire spear | Blackforge | Post-Ashlands | `VASpearFader` | ![pincer greatsword](https://i.postimg.cc/QNpMYSkD/fader-spear.png) |
+
 </details>
 
 <details>
@@ -147,9 +154,9 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Silver Axe | Forge | Mountain | `VAcrystal_axe` | ![crystal axe icon](https://i.postimg.cc/KjVkkWNf/silver-axe-1h-icon.png) |
   | Jotuns Bane (half) | Blackforge | Mistlands | `VAJotunn_single_axe` | ![jotun half blade](https://i.postimg.cc/63xxYX7M/jotunn-halfblade.png) |
   | Flametal Axe | Blackforge | Ashlands | `VAFlametal_Axe` | ![flametal axe](https://i.postimg.cc/6Q9CMc8Z/flametal-Axe-Base.png) |
-  | Flametal Blood Axe | Blackforge | Ashlands | `VAFlametal_Axe_Blood` | ![flametal blood axe](https://i.postimg.cc/sXg9gmyz/flametal-axe-1h-blood.png) |
-  | Flametal Lightning Axe | Blackforge | Ashlands | `VAFlametal_Axe_Lightning` | ![flametal lightning axe](https://i.postimg.cc/QMbJDP2S/flametal-axe-1h-lightning.png) |
-  | Flametal Primal Axe | Blackforge | Ashlands | `VAFlametal_Axe_Primal` | ![flametal primal axe](https://i.postimg.cc/JnY3DX4k/flametal-axe-1h-primal.png) |
+  | Flametal Blood Axe | Blackforge | Ashlands | `VAFlametal_Axe_Blood` | ![flametal blood axe](https://i.postimg.cc/6qdTdfz9/flametal-battleaxe-blood.png) |
+  | Flametal Lightning Axe | Blackforge | Ashlands | `VAFlametal_Axe_Lightning` | ![flametal lightning axe](https://i.postimg.cc/dVW3m1RT/flametal-battleaxe-lightning.png) |
+  | Flametal Primal Axe | Blackforge | Ashlands | `VAFlametal_Axe_Primal` | ![flametal primal axe](https://i.postimg.cc/bvsJ6hLV/flametal-battleaxe-primal.png) |
 
   *Note the Jotun Bane half axe is uncraftable by default*
 
@@ -224,6 +231,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Bronze Crossbow | Forge | Blackforest | `VACrossbowBronze` | ![bronze crossbow icon](https://i.imgur.com/GkWbooT.png) |
+  | Blackmetal Crossbow | Forge | Plains | `VACrossbowBlackmetal` | ![blackmetal crossbow](https://i.postimg.cc/nrkpFR0Q/blackmetal-crossbow.png) |
   | Bronze Arbalist | Forge | Plains | `VAArbalistBronze` | ![bronze arbalist icon](https://i.imgur.com/iuk67H0.png) |
 
 </details>
