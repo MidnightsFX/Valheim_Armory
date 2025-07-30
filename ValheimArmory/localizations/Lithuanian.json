@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Flametal šviesos kirvis",
   "item_axe_flametal_1h_description_lightning": "Savo rūšies audra.Savo rūšies audra.",
   "item_axe_flametal_1h_blood": "Flametal kraujo kirvis",
-  "item_axe_flametal_1h_description_blood": "Ši siaubo kirvis laša energiją, po to kai jis buvo sujungtas su raudonu deimantu."
+  "item_axe_flametal_1h_description_blood": "Ši siaubo kirvis laša energiją, po to kai jis buvo sujungtas su raudonu deimantu.",
+  "item_spear_blackmetal": "Juodasis metalinis ietis",
+  "item_spear_blackmetal_description": "Tamsus, lenktas peilis. Apsaugotas aplink grandinės mazgus, jis sugauna šviesą žaliuoju švytėjimu.",
+  "item_dagger_moder_2h": "Drakonų šerkšno peilis",
+  "item_dagger_moder_2h_description": "Švytintis ledų gabalėlis, išskirtinis mirties nešėjas.",
+  "item_bow_blackmetal": "Juodas metalas Lankas",
+  "item_bow_blackmetal_description": "Linų siūlas sustiprina jo trauką, juodas metalas blizga, trokšta strėlės.",
+  "item_spear_fader": "Baime ugnies ietis",
+  "item_spear_fader_description": "Sukurtas iš Fader kūno, jis vis dar dega ankstyvai ir alkanai.",
+  "item_crossbow_blackmetal": "Juodojo metalo kumštis",
+  "item_crossbow_blackmetal_description": "Labai tvirtas arbaletas, inžinerijos ir mirties aukštybė.",
+  "item_sword_fader": "Baime deganti karda",
+  "item_sword_fader_description": "Kardas pagamintas iš Faderio liekanų, jis dega nekrotine magija.",
+  "item_greatsword_fader": "Didžioji kardas siaubo ugnies",
+  "item_greatsword_fader_description": "Galingas kardas iškovotas iš Faders dovanos. Jis degina mirusiuosius ir gyvuosius vienodai."
 }

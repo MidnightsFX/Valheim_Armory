@@ -252,5 +252,13 @@
   "item_dagger_silver": "銀製小刀",
   "item_dagger_silver_description": "一件鋒利的符文短匕.",
   "item_bow_blackmetal": "黑金硬弓",
-  "item_bow_blackmetal_description": "亞麻線加強了它的拉力，以及黑色的金屬閃閃發光，它渴望一支箭。"
+  "item_bow_blackmetal_description": "亞麻線加強了它的拉力，以及黑色的金屬閃閃發光，它渴望一支箭。",
+  "item_spear_fader": "恐懼之火矛",
+  "item_spear_fader_description": "由Fader的身體製成，它仍然燃燒得早早地和饑渴地。",
+  "item_crossbow_blackmetal": "黑金屬弩",
+  "item_crossbow_blackmetal_description": "一把非常堅固的弩弓，工程和死亡的頂峰。",
+  "item_sword_fader": "恐懼之火劍",
+  "item_sword_fader_description": "一把由菲德爾的遺體製成的劍，擁有著腐蝕魔法的火焰。",
+  "item_greatsword_fader": "恐懼之火巨劍",
+  "item_greatsword_fader_description": "Faders的禮物鍛造出的巨大劍。它燃燒死者和活者一樣。"
 }

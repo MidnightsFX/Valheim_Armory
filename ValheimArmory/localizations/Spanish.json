@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Hacha relámpago de flametal",
   "item_axe_flametal_1h_description_lightning": "Una tormenta de su propia clase.",
   "item_axe_flametal_1h_blood": "Hacha de sangre de flametalI'm sorry, I'm not sure what  refers to.",
-  "item_axe_flametal_1h_description_blood": "Este hacha siniestra está goteando energía después de ser fusionada con una gema roja."
+  "item_axe_flametal_1h_description_blood": "Este hacha siniestra está goteando energía después de ser fusionada con una gema roja.",
+  "item_spear_blackmetal": "Lanza de Blackmetal",
+  "item_spear_blackmetal_description": "Una hoja oscura y curva. Asegurada alrededor de nudos de cadena, atrapa la luz con un brillo verdoso.",
+  "item_dagger_moder_2h": "Cuchillos de escarcha de dragón",
+  "item_dagger_moder_2h_description": "Un par de relucientes fragmentos de hielo, graciosos portadores de muerte.",
+  "item_bow_blackmetal": "Arco de metal negro",
+  "item_bow_blackmetal_description": "Hilo de lino fortalece su tracción, el metal negro brilla, ansioso por una flecha.",
+  "item_spear_fader": "Lanza de fuego temido",
+  "item_spear_fader_description": "Elaborado a partir del cuerpo de Fader, todavía arde temprano y hambriento.",
+  "item_crossbow_blackmetal": "Ballesta de metal negro",
+  "item_crossbow_blackmetal_description": "Una ballesta extremadamente resistente, la cúspide de la ingeniería y la muerte.",
+  "item_sword_fader": "Espada de Fuego Atemorizante",
+  "item_sword_fader_description": "Una espada hecha de los restos de Fader, arde con magia necrótica.",
+  "item_greatsword_fader": "Espada de fuego temible",
+  "item_greatsword_fader_description": "Una espada masiva forjada con el regalo de Faders. Quema a los muertos y vivos por igual."
 }

@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "ფლამეტალის დართი ღირს ფერიSure, here is the translation: ფლამეტალის დართი ღირს ფერი",
   "item_axe_flametal_1h_description_lightning": "თვალებს თავისი სახლის ქარი.",
   "item_axe_flametal_1h_blood": "ფლამეტალი სისხვის საფეხი  ფლამეტალი სისხვის საფეხი",
-  "item_axe_flametal_1h_description_blood": "ეს უკეთე ბურთული ენერგიით დაკმადებული არის, როცა შიგ შერერის ქჰმი იქცევა."
+  "item_axe_flametal_1h_description_blood": "ეს უკეთე ბურთული ენერგიით დაკმადებული არის, როცა შიგ შერერის ქჰმი იქცევა.",
+  "item_spear_blackmetal": "შავი მეტალური მშვიდი",
+  "item_spear_blackmetal_description": "ბნელი, გრძელი ხელი. ჯიღის მამულებში დამალული, ის შეიცვლება ნეღების ნათებში ყველაფერი ყველაფერს აწერებს.",
+  "item_dagger_moder_2h": "დრაკონის გმირის მაჭარი დრაკონის გმირის მაჭარი",
+  "item_dagger_moder_2h_description": "ცეცხლს თეთრი რეიღვნული კლარქები, სამწვანე სიკვდილეები.",
+  "item_bow_blackmetal": "შავი მეტალური მაღლა",
+  "item_bow_blackmetal_description": "ლინის დარება გაიძლევა, შავი მეტალი გალება, ის არის მზის თვალი, რომელსაც სიჩქარე გაქვს.",
+  "item_spear_fader": "შიშის ცხენი",
+  "item_spear_fader_description": "შექმნილია Fader-ის სხეულიდან, ის კი ჯერ კიდევ ციკლას და მეხვევა.",
+  "item_crossbow_blackmetal": "შავი მეტალის გადაბრუნებული",
+  "item_crossbow_blackmetal_description": "ძახილი ძლევი კროსბო, საინჟინერო და სიკვდილის სასტაცი.",
+  "item_sword_fader": "შემწყნარე მახარი",
+  "item_sword_fader_description": "ფეიდერის ნანახისგან შექმნილი მშვიდობის ხუმრობით დაინდება ნეკროტური მაგიკით.",
+  "item_greatsword_fader": "შავისუნის დიდი მაჭა შავისუნის დიდი მაჭა",
+  "item_greatsword_fader_description": "დიდი ფერის მიერ შექმნილი დიდი ხუთი. ის აწევს მკვდარ და ცხოველებს ერთიანად."
 }

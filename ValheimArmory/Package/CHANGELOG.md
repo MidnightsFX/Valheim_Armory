@@ -1,3 +1,18 @@
+**1.23.2**
+ ---
+ ```
+ - Fixed auto pickup for silver knives and copper knives
+ - Reduces default resistance of the elder shield for blunt to resistant from veryResistant
+ - Ensured that Moders tower shield has no parry multiplier
+ ```
+
+**1.23.1**
+ ---
+ ```
+ - Adds missing translations to recently added weapons (community translations are still greatly appreciated!)
+ - Fixes some cases where status effects would not be modified by the config
+ ```
+
 **1.23.0**
  ---
  ```

@@ -2631,7 +2631,7 @@ namespace ValheimArmory
             };
             Elders_Bulwark.damageMods = new Dictionary<HitData.DamageType, HitCustomDamageMod>
             {
-                { HitData.DamageType.Blunt, new HitCustomDamageMod { damageModifier = HitData.DamageModifier.VeryResistant } }
+                { HitData.DamageType.Blunt, new HitCustomDamageMod { damageModifier = HitData.DamageModifier.Resistant } }
             };
             Loader.AddDefinition(Elders_Bulwark);
 

@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Hache éclair de flametal",
   "item_axe_flametal_1h_description_lightning": "Une tempête de son propre genre.",
   "item_axe_flametal_1h_blood": "Flametal hache de sang",
-  "item_axe_flametal_1h_description_blood": "Cette hache sinistre dégouline d'énergie après avoir été fusionnée avec une pierre précieuse rouge."
+  "item_axe_flametal_1h_description_blood": "Cette hache sinistre dégouline d'énergie après avoir été fusionnée avec une pierre précieuse rouge.",
+  "item_spear_blackmetal": "Lance de Blackmetal",
+  "item_spear_blackmetal_description": "Une lame sombre et courbée. Attachée autour de nœuds de chaîne, elle attrape la lumière avec une lueur verdâtre.",
+  "item_dagger_moder_2h": "Couteaux DragonfrostQuelle est la taille que vous recherchez pour ces couteaux Dragonfrost?",
+  "item_dagger_moder_2h_description": "Une paire d'éclats de glace étincelants, gracieux messagers de la mort.",
+  "item_bow_blackmetal": "Arc en blackmetal",
+  "item_bow_blackmetal_description": "Le fil de lin renforce son tir, le métal noir luit, avide d'une flèche.",
+  "item_spear_fader": "Lance de Feu de Terreur",
+  "item_spear_fader_description": "Fabriqué à partir du corps de Fader, il brûle toujours de manière précoce et avidement.",
+  "item_crossbow_blackmetal": "Arbalète Blackmetal",
+  "item_crossbow_blackmetal_description": "Une arbalète extrêmement robuste, un sommet de l'ingénierie et de la mort.",
+  "item_sword_fader": "Épée de Feu de l'Effroi",
+  "item_sword_fader_description": "Une épée fabriquée à partir des restes de Fader, elle brûle avec une magie nécrotique.",
+  "item_greatsword_fader": "Épée de grand feu de terreur",
+  "item_greatsword_fader_description": "Une épée massive forgée du don de Faders. Elle brûle les morts et les vivants de la même manière."
 }

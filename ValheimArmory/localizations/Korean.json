@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "플레임탈 번개 도끼",
   "item_axe_flametal_1h_description_lightning": "그 자체의 종류의 폭풍.",
   "item_axe_flametal_1h_blood": "플레임탈 블러드 엑스",
-  "item_axe_flametal_1h_description_blood": "이 악랄한 도끼는 붉은 보석과 융합된 후에 에너지가 떨어져 나옵니다."
+  "item_axe_flametal_1h_description_blood": "이 악랄한 도끼는 붉은 보석과 융합된 후에 에너지가 떨어져 나옵니다.",
+  "item_spear_blackmetal": "블랙메탈 스피어",
+  "item_spear_blackmetal_description": "어두운 곡선 칼. 사슬 매듭 주위에 고정되어 있으며, 녹색 빛을 내며 빛을 잡는다.",
+  "item_dagger_moder_2h": "드래곤프로스트 나이프",
+  "item_dagger_moder_2h_description": "빛나는 얼음 조각 한 쌍, 우아한 죽음의 전령.",
+  "item_bow_blackmetal": "블랙메탈 보우",
+  "item_bow_blackmetal_description": "리넨 실이 그것의 잡아당기는 힘을 강화시키고, 블랙메탈이 빛나며, 화살을 기다리고 있다.",
+  "item_spear_fader": "공포의 불길 창",
+  "item_spear_fader_description": "Fader의 몸으로부터 만들어졌으며, 여전히 이른 아침에도 배고프게 타고 있습니다.",
+  "item_crossbow_blackmetal": "블랙메탈 크로스보우",
+  "item_crossbow_blackmetal_description": "엄청 튼튼한 석궁, 공학과 죽음의 정점.",
+  "item_sword_fader": "드레드파이어 소드",
+  "item_sword_fader_description": "페이더의 잔해로 만들어진 검, 부패 마법과 함께 타오른다.",
+  "item_greatsword_fader": "두려움의 대검",
+  "item_greatsword_fader_description": "페이더의 선물로 제작된 거대한 검. 죽은 이들과 산 이들을 모두 태운다."
 }

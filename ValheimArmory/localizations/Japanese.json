@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "フレーメタル・ライトニング・アックス(I am not sure what you are referring to. Can you provide more context?)",
   "item_axe_flametal_1h_description_lightning": "独特な嵐。",
   "item_axe_flametal_1h_blood": "フレーメタルブラッドアックス(Note: This is the translation of  in Japanese)",
-  "item_axe_flametal_1h_description_blood": "この邪悪な斧は、赤い宝石と融合した後、エネルギーを滴らせています。"
+  "item_axe_flametal_1h_description_blood": "この邪悪な斧は、赤い宝石と融合した後、エネルギーを滴らせています。",
+  "item_spear_blackmetal": "ブラックメタルスピア",
+  "item_spear_blackmetal_description": "暗い、曲がった刃。鎖の結び目の周りに固定され、緑がかった輝きで光を捕らえる。暗い、曲がった刃。鎖の結び目の周りに固定され、緑がかった輝きで光を捕らえる。",
+  "item_dagger_moder_2h": "ドラゴンフロスト ナイフThank you for your request. Let me know if there is anything else I can help with.",
+  "item_dagger_moder_2h_description": "光る氷の破片のペア、優雅な死をもたらす者たち。",
+  "item_bow_blackmetal": "ブラックメタルの弓",
+  "item_bow_blackmetal_description": "リネン糸は引っ張られると強くなり、ブラックメタルが輝き、矢を待ちわびています。",
+  "item_spear_fader": "ドレッドファイアスピアドレッドファイアスピア",
+  "item_spear_fader_description": "Faderの体から作られ、それはまだ早くて飢えて燃えています。",
+  "item_crossbow_blackmetal": "黒金属クロスボウ",
+  "item_crossbow_blackmetal_description": "「非常に頑丈なクロスボウ、工学と死の頂点。」",
+  "item_sword_fader": "ドレッドファイアソード",
+  "item_sword_fader_description": "「フェーダーの遺骸から作られた剣、それは壊死魔法で燃えています。」",
+  "item_greatsword_fader": "恐怖の大剣",
+  "item_greatsword_fader_description": "「フェイダーの贈り物から作られた巨大な剣。それは生者も死者も焼き尽くす。」"
 }

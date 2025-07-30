@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Flametal lynøkse",
   "item_axe_flametal_1h_description_lightning": "En storm af sin egen art.",
   "item_axe_flametal_1h_blood": "Flametal blodøkse",
-  "item_axe_flametal_1h_description_blood": "Denne skumle økse drypper af energi efter at være blevet smeltet sammen med en rød ædelsten."
+  "item_axe_flametal_1h_description_blood": "Denne skumle økse drypper af energi efter at være blevet smeltet sammen med en rød ædelsten.",
+  "item_spear_blackmetal": "Sortmetal spyd",
+  "item_spear_blackmetal_description": "En mørk, buet klinge. Sikret omkring knuder af kæde, fanger den lyset med en grønlig glans.",
+  "item_dagger_moder_2h": "Dragonfrost knive",
+  "item_dagger_moder_2h_description": "Et par skinnende isstykker, yndefulde dødbringere.",
+  "item_bow_blackmetal": "Sortmetalsbue",
+  "item_bow_blackmetal_description": "Linetråden styrker sit træk, sort metal glimter, ivrig efter en pil.",
+  "item_spear_fader": "Dreadfire Spyd",
+  "item_spear_fader_description": "Udført af Faders krop, brænder den stadig tidligt og sultent.",
+  "item_crossbow_blackmetal": "Sortmetal Armbrøst",
+  "item_crossbow_blackmetal_description": "En ekstremt robust armbrøst, en højdepunkt af ingeniørkunst og død.",
+  "item_sword_fader": " Skærsildssværd",
+  "item_sword_fader_description": "Et sværd skabt af Faders rester, det brænder med nekrotisk magi.",
+  "item_greatsword_fader": "Dreadfire Stor Sværd",
+  "item_greatsword_fader_description": "Et massivt sværd smedet af Faders gave. Det brænder de døde og levende ens."
 }

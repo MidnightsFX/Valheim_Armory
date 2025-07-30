@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Bleskove sekera Flametal",
   "item_axe_flametal_1h_description_lightning": "Bouře vlastního druhu.",
   "item_axe_flametal_1h_blood": "Flametal krvavá sekera",
-  "item_axe_flametal_1h_description_blood": "Tento zlověstný sekera kape energií po spojení s červeným drahokamem."
+  "item_axe_flametal_1h_description_blood": "Tento zlověstný sekera kape energií po spojení s červeným drahokamem.",
+  "item_spear_blackmetal": "Černý kovový oštěp",
+  "item_spear_blackmetal_description": "Temná zakřivená čepel. Upevněná kolem uzlů řetězu, chytá světlo s zelenavým zářením.",
+  "item_dagger_moder_2h": "Dragonfrost nože",
+  "item_dagger_moder_2h_description": "Pár třpytivých střepů ledu, elegantní přinášitelé smrti.",
+  "item_bow_blackmetal": "Černý kovový luk",
+  "item_bow_blackmetal_description": "Laněný závit posiluje svůj tah, černý kov září, touží po šípu.",
+  "item_spear_fader": "Děsivý oheň kopí",
+  "item_spear_fader_description": "Vytvořeno z těla Fadera, stále hoří brzy a hladově.",
+  "item_crossbow_blackmetal": "Černý kovový kuše",
+  "item_crossbow_blackmetal_description": "Extrémně pevný kuše, vrchol inženýrství a smrti.",
+  "item_sword_fader": "Mec hrůzy ohně",
+  "item_sword_fader_description": "Mec vyrobený z pozůstatků Faderů, hoří nekrotickou magií.",
+  "item_greatsword_fader": "Velký meč hrůzy",
+  "item_greatsword_fader_description": "Obrovský meč kovaný z daru Faderu. Hoří jak mrtví, tak živí."
 }

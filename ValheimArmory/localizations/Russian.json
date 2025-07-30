@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Молниеносный огненный топор",
   "item_axe_flametal_1h_description_lightning": "Буря своего рода.",
   "item_axe_flametal_1h_blood": "Фламетальный кровавый топор",
-  "item_axe_flametal_1h_description_blood": "Этот зловещий топор капает энергией после объединения с красным драгоценным камнем."
+  "item_axe_flametal_1h_description_blood": "Этот зловещий топор капает энергией после объединения с красным драгоценным камнем.",
+  "item_spear_blackmetal": "Чернометаллическое копье",
+  "item_spear_blackmetal_description": "Темный изогнутый клинок. Закрепленный вокруг узлов цепи, он ловит свет зеленоватым сиянием.",
+  "item_dagger_moder_2h": "Ножи Драконового Льда",
+  "item_dagger_moder_2h_description": "Пара блестящих осколков льда, изящных убийц.",
+  "item_bow_blackmetal": "Черный металлический лук",
+  "item_bow_blackmetal_description": "Льняная нить укрепляет свой натяг, черный металл сверкает, жаждет стрелу.",
+  "item_spear_fader": "Копье Ужасного огня",
+  "item_spear_fader_description": "Сделанный из тела Фадера, он все еще горит рано и жадно.",
+  "item_crossbow_blackmetal": "Черный металлический арбалет",
+  "item_crossbow_blackmetal_description": "Исключительно прочный арбалет, вершина инженерии и смерти.",
+  "item_sword_fader": "Меч Ужасного Огня",
+  "item_sword_fader_description": "Меч, изготовленный из останков Фейдеров, горит некротической магией.",
+  "item_greatsword_fader": "Ужасный огненный меч",
+  "item_greatsword_fader_description": "Массивный меч, выкованный из дара Фейдера. Он сжигает мертвых и живых одинаково."
 }

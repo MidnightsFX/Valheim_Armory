@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Flametal munja sekira",
   "item_axe_flametal_1h_description_lightning": "Oluja svoje vrste.",
   "item_axe_flametal_1h_blood": "Plameni krvavi sekira",
-  "item_axe_flametal_1h_description_blood": "Ova zlokobna sekira kaplje energijom nakon što je spojena sa crvenim dragim kamenom."
+  "item_axe_flametal_1h_description_blood": "Ova zlokobna sekira kaplje energijom nakon što je spojena sa crvenim dragim kamenom.",
+  "item_spear_blackmetal": "Crni metalni koplje",
+  "item_spear_blackmetal_description": "Tamno, zakrivljeno sečivo. Osigurano oko čvorova lanca, hvata svetlost zelenkastim sjajem.",
+  "item_dagger_moder_2h": "Noževi Zmajeve Ledene Staze",
+  "item_dagger_moder_2h_description": "Par sjajnih šiljaka leda, graciozni donosioci smrti.",
+  "item_bow_blackmetal": "Crni metalni luk",
+  "item_bow_blackmetal_description": "Konac od lana jača svoje povlačenje, crni metal blista, željan strele.(Molim vas da napišete samo tekst prevoda)",
+  "item_spear_fader": " Dugačko koplje straha",
+  "item_spear_fader_description": "Izrađeno od tela Fadera, još uvek gori rano i žedno.",
+  "item_crossbow_blackmetal": "Crna metalna samostrela",
+  "item_crossbow_blackmetal_description": "Izuzetno čvrst samostrel, vrhunac inženjeringa i smrti.",
+  "item_sword_fader": "Maca strašnog vatre",
+  "item_sword_fader_description": "Mač izrađen od ostataka Fadera, gori necrotic magic.",
+  "item_greatsword_fader": "Veliki mač straha od vatre",
+  "item_greatsword_fader_description": "Masivni mač kovan od Faderovog dara. On spaljuje mrtve i žive podjednako."
 }

@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Flametal lynøks",
   "item_axe_flametal_1h_description_lightning": "En storm av sin egen art.",
   "item_axe_flametal_1h_blood": "Flametal blodøks",
-  "item_axe_flametal_1h_description_blood": "Denne skumle øksen drypper av energi etter å ha blitt smeltet sammen med en rød edelsten."
+  "item_axe_flametal_1h_description_blood": "Denne skumle øksen drypper av energi etter å ha blitt smeltet sammen med en rød edelsten.",
+  "item_spear_blackmetal": "Svartmetallspyd",
+  "item_spear_blackmetal_description": "En mørk, bøyd kniv. Sikret rundt knuter av kjede, den fanger lyset med en grønnlig glans.Takk for oversettelsen.",
+  "item_dagger_moder_2h": "Dragefrost kniver",
+  "item_dagger_moder_2h_description": "Et par glitrende skår av is, grasiøse dødsbringere.",
+  "item_bow_blackmetal": "Svartmetallbue",
+  "item_bow_blackmetal_description": "Linetråden styrker sitt trekk, svartmetallet skinner, ivrig etter en pil.",
+  "item_spear_fader": "Fryktilds Spyd",
+  "item_spear_fader_description": "Skapt fra Faders kropp, brenner den fortsatt tidlig og sultent.",
+  "item_crossbow_blackmetal": "Sortmetall Armbrøst",
+  "item_crossbow_blackmetal_description": "En ekstremt solid armbrøst, en høydepunkt av ingeniørkunst og død.",
+  "item_sword_fader": "Dreadfire sverd",
+  "item_sword_fader_description": "Et sverd smidd av Faders levninger, det brenner med nekrotisk magi.Takk for oversettelsen.",
+  "item_greatsword_fader": "Dreadfire Storsverd",
+  "item_greatsword_fader_description": "Et massivt sverd smidd fra Faders gave. Det brenner de døde og levende likt."
 }

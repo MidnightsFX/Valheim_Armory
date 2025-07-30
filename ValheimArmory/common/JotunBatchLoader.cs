@@ -159,8 +159,11 @@ namespace ValheimArmory.common
                 ItemDrop ItemD = ItemPrefab.GetComponent<ItemDrop>();
                 // Modify this items stats
                 foreach (KeyValuePair<ItemStat, ItemStatConfig> modstat in itemdef.modifableStats) {
-                    if (modstat.Value.configurable == false) { continue; }
-                    ItemDataConfigModifier(modstat.Key, modstat.Value.cfg.Value, ItemD.m_itemData);
+                    if (modstat.Value.configurable == false) {
+                        ItemDataConfigModifier(modstat.Key, modstat.Value.default_value, ItemD.m_itemData);
+                    } else {
+                        ItemDataConfigModifier(modstat.Key, modstat.Value.cfg.Value, ItemD.m_itemData);
+                    }
                 }
                 // Modify this items resistances
                 if (itemdef.damageMods != null) {

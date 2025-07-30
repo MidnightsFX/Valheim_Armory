@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Fulmine ascia flammetal",
   "item_axe_flametal_1h_description_lightning": "Una tempesta tutta sua.",
   "item_axe_flametal_1h_blood": "Falce di sangue flammetal",
-  "item_axe_flametal_1h_description_blood": "Quest'ascia sinistra sta gocciolando energia dopo essere stata fusa con una gemma rossa."
+  "item_axe_flametal_1h_description_blood": "Quest'ascia sinistra sta gocciolando energia dopo essere stata fusa con una gemma rossa.",
+  "item_spear_blackmetal": "Lancia Blackmetal",
+  "item_spear_blackmetal_description": "Una lama scura e curva. Fissata intorno a nodi di catena, cattura la luce con un bagliore verdastro.",
+  "item_dagger_moder_2h": "Coltelli Dragonfrost",
+  "item_dagger_moder_2h_description": "Un paio di splendenti frammenti di ghiaccio, graziosi messaggeri di morte.",
+  "item_bow_blackmetal": "Arco black metal",
+  "item_bow_blackmetal_description": "Filo di lino rafforza il suo disegno, il metallo nero luccica, desideroso di una freccia.I'm sorry, I'm not sure how to respond to that.",
+  "item_spear_fader": "Lancia del Fuoco del Terrore",
+  "item_spear_fader_description": "Realizzato dal corpo di Fader, brucia ancora in modo inquietante e vorace.",
+  "item_crossbow_blackmetal": "Balestra Blackmetal",
+  "item_crossbow_blackmetal_description": "Una balestra estremamente robusta, un apice di ingegneria e morte.",
+  "item_sword_fader": "Spada del Terrore Infuocato",
+  "item_sword_fader_description": "Una spada forgiata dai resti di Faders, brucia con magia necrotica.",
+  "item_greatsword_fader": "Spada grande Focolaio del Terrore",
+  "item_greatsword_fader_description": "Una spada massiccia forgiata dal dono di Fader. Brucia i morti e i vivi allo stesso modo."
 }

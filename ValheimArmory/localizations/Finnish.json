@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Flametal salaman kirves",
   "item_axe_flametal_1h_description_lightning": "Omaa lajiaan oleva myrsky.",
   "item_axe_flametal_1h_blood": "Flametal veriakseli",
-  "item_axe_flametal_1h_description_blood": "Tämä synkkä kirves tihkuu energiaa sen jälkeen, kun se on sulautettu punaiseen jalokiveen."
+  "item_axe_flametal_1h_description_blood": "Tämä synkkä kirves tihkuu energiaa sen jälkeen, kun se on sulautettu punaiseen jalokiveen.",
+  "item_spear_blackmetal": "Mustametallikeihäs",
+  "item_spear_blackmetal_description": "Pimeä, kaareva terä. Kiinnitetty ketjujen solmuihin, se tarttuu valoon vihertävällä hohteella.",
+  "item_dagger_moder_2h": "Dragonfrost veitset",
+  "item_dagger_moder_2h_description": "Kaksi kimaltelevaa jääpaloa, sulavan kuoleman tuojia.",
+  "item_bow_blackmetal": "Mustametallinen jousi",
+  "item_bow_blackmetal_description": "Lankalanka vahvistaa vetovoimaansa, mustametalli hohtaa, odottaen nuolta.",
+  "item_spear_fader": "Pelkoahehkuva keihäs",
+  "item_spear_fader_description": "Valmistettu Faderin ruumiista, se palaa edelleen varhain ja ahnaasti.",
+  "item_crossbow_blackmetal": "Mustametallinen ristikaarijous",
+  "item_crossbow_blackmetal_description": "Äärimmäisen kestävä jousipyssy, insinööritaidon ja kuoleman huippu.",
+  "item_sword_fader": "Kauhutuli miekka",
+  "item_sword_fader_description": "Miekka, joka on valmistettu Faderin jäännöksistä, palaa nekroottisella magialla.",
+  "item_greatsword_fader": "Kauhutulen suuri miekka",
+  "item_greatsword_fader_description": "Valtava miekka, takojana Faders lahja. Se polttaa niin kuolleet kuin elävätkin."
 }

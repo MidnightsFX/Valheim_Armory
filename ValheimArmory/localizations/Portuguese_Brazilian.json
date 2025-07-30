@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Machado relâmpago flametal",
   "item_axe_flametal_1h_description_lightning": "Uma tempestade de sua própria espécie.",
   "item_axe_flametal_1h_blood": "Flametal machado de sangue",
-  "item_axe_flametal_1h_description_blood": "Este machado sinistro está pingando energia depois de ter sido fundido com uma pedra vermelha."
+  "item_axe_flametal_1h_description_blood": "Este machado sinistro está pingando energia depois de ter sido fundido com uma pedra vermelha.",
+  "item_spear_blackmetal": "Lança de Blackmetal",
+  "item_spear_blackmetal_description": "Uma lâmina escura e curva. Presa em nós de corrente, ela captura a luz com um brilho esverdeado.",
+  "item_dagger_moder_2h": "Facas Dragonfrost",
+  "item_dagger_moder_2h_description": "Um par de cintilantes pedaços de gelo, graciosos portadores da morte.",
+  "item_bow_blackmetal": "Arco de Blackmetal",
+  "item_bow_blackmetal_description": "Fio de linho fortalece seu traço, metal preto brilha, ansioso por uma flecha.",
+  "item_spear_fader": "lança de fogo do medo",
+  "item_spear_fader_description": "Elaborado a partir do corpo de Fader, ainda queima precocemente e famintamente.",
+  "item_crossbow_blackmetal": "Besta de metal negro",
+  "item_crossbow_blackmetal_description": "Uma besta extremamente resistente, o ápice da engenharia e da morte.",
+  "item_sword_fader": "Espada de Fogo do Medo",
+  "item_sword_fader_description": "Uma espada feita dos restos de Faders, que queima com magia necrótica.",
+  "item_greatsword_fader": "Espada Grande Fogo do Pavor",
+  "item_greatsword_fader_description": "Uma espada massiva forjada do presente de Faders. Ela queima os mortos e os vivos igualmente."
 }

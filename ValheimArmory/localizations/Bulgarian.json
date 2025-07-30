@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Пламенният метален мълот",
   "item_axe_flametal_1h_description_lightning": "Буря от свой собствен вид.",
   "item_axe_flametal_1h_blood": "Фламетален къс брада",
-  "item_axe_flametal_1h_description_blood": "Този зловещ топор капе от енергия след като беше сливан с червен камък."
+  "item_axe_flametal_1h_description_blood": "Този зловещ топор капе от енергия след като беше сливан с червен камък.",
+  "item_spear_blackmetal": "Черенметален копие",
+  "item_spear_blackmetal_description": "Тъмно, извито острие. Закрепено около възли от верига, то улавя светлината с зеленикаво светене.",
+  "item_dagger_moder_2h": "Ножове Dragonfrost",
+  "item_dagger_moder_2h_description": "Една двойка блестящи парченца лед, благородни убийци.",
+  "item_bow_blackmetal": "Черен метълен лък",
+  "item_bow_blackmetal_description": "Ленената нишка затвърждава тегленето си, черният метал блести, като чака стрела.",
+  "item_spear_fader": "Дълга копие Dreadfire",
+  "item_spear_fader_description": "Изработено от тялото на Фейдър, все още гори рано и алчно.",
+  "item_crossbow_blackmetal": "Черен метален арбалет",
+  "item_crossbow_blackmetal_description": "Изключително здрава арбалет, върхът на инженерството и смъртта.",
+  "item_sword_fader": "Меч на ужасен огън",
+  "item_sword_fader_description": "Меч, изработен от останките на Фейдър, гори с некротична магия.",
+  "item_greatsword_fader": "Голям меч на ужасната огнена магия",
+  "item_greatsword_fader_description": "Масивен меч кован от подаръка на Фейдър. Той изгаря мъртвите и живите еднакво."
 }

@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Płomienno-metalowy topór błyskawic",
   "item_axe_flametal_1h_description_lightning": "Burza własnego rodzaju.",
   "item_axe_flametal_1h_blood": "Płomienny topór krwi",
-  "item_axe_flametal_1h_description_blood": "To ponure topór ocieka energią po połączeniu z czerwonym kamieniem szlachetnym."
+  "item_axe_flametal_1h_description_blood": "To ponure topór ocieka energią po połączeniu z czerwonym kamieniem szlachetnym.",
+  "item_spear_blackmetal": "Czarna metalowa włócznia",
+  "item_spear_blackmetal_description": " Ciemna, zakrzywiona ostrze. Zabezpieczone wokół węzłów łańcucha, łapie światło z zielonkawym blaskiem.",
+  "item_dagger_moder_2h": "noże Dragonfrost",
+  "item_dagger_moder_2h_description": "Para błyszczących się odłamków lodu, zgrabnych zwiastunów śmierci.",
+  "item_bow_blackmetal": " Czarny metalowy łuk",
+  "item_bow_blackmetal_description": "Nici lniane wzmacniają swoje ciągnięcie, czarny metal błyszczy, czekając na strzał.",
+  "item_spear_fader": "Włócznia Strachu",
+  "item_spear_fader_description": "Utworzony z ciała Fadera, wciąż płonie wcześnie i chciwie.",
+  "item_crossbow_blackmetal": "Blackmetal Kusza",
+  "item_crossbow_blackmetal_description": "Niebywale wytrzymały kusza, szczyt inżynierii i śmierci.",
+  "item_sword_fader": "Miecz Strachu",
+  "item_sword_fader_description": "Miecz wykonany z pozostałości Fadera, płonie magią nekrotyczną.",
+  "item_greatsword_fader": "Miecz Wielkiego Strachu",
+  "item_greatsword_fader_description": "Potężny miecz wykuty z daru Fadera. Pali zarówno umarłych, jak i żywych.Thank you for the translation."
 }

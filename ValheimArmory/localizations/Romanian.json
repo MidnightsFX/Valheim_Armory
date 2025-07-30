@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "securează securează securează securează securează",
   "item_axe_flametal_1h_description_lightning": "O furtună de felul ei.",
   "item_axe_flametal_1h_blood": "Securețe de sânge de flametal",
-  "item_axe_flametal_1h_description_blood": "Axa sinistră aceasta picură energie după ce a fost fuzionată cu o piatră prețioasă roșie."
+  "item_axe_flametal_1h_description_blood": "Axa sinistră aceasta picură energie după ce a fost fuzionată cu o piatră prețioasă roșie.",
+  "item_spear_blackmetal": "Sulița de Blackmetal",
+  "item_spear_blackmetal_description": "O lamă neagră și curbă. Prinsă în jurul nodurilor de lanț, prinde lumina cu o strălucire verzuie.",
+  "item_dagger_moder_2h": "Cuțite Dragonfrost",
+  "item_dagger_moder_2h_description": "Un cuplu de fragmente strălucitoare de gheață, aducători de moarte grațioși.",
+  "item_bow_blackmetal": "Blackmetal Arc",
+  "item_bow_blackmetal_description": "Firele de in își întăresc tracțiunea, metalul negru strălucește, nerăbdător să primească o săgeată.",
+  "item_spear_fader": "Lancea Focului Îngrozitor",
+  "item_spear_fader_description": "Lucrat din corpul lui Fader, încă arde înfometat și cu poftă.",
+  "item_crossbow_blackmetal": "Arbaletă Blackmetal",
+  "item_crossbow_blackmetal_description": "O arbaletă extrem de robustă, vârful ingineriei și al morții.",
+  "item_sword_fader": "Sabie de foc înfricoșătoare",
+  "item_sword_fader_description": "Un sabie făcută din resturile Fader-ului, arde cu magie necrotică.",
+  "item_greatsword_fader": "Spada mare Dreadfire",
+  "item_greatsword_fader_description": "O sabie masivă forjată din darul lui Fader. Arde atât morții, cât și cei vii."
 }

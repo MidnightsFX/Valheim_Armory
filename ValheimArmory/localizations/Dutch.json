@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Flametal bliksemsbijl",
   "item_axe_flametal_1h_description_lightning": "Een storm van zijn eigen soort.",
   "item_axe_flametal_1h_blood": "Flametal bloedbijl",
-  "item_axe_flametal_1h_description_blood": "Deze sinistere bijl druipt van energie nadat hij is versmolten met een rode edelsteen."
+  "item_axe_flametal_1h_description_blood": "Deze sinistere bijl druipt van energie nadat hij is versmolten met een rode edelsteen.",
+  "item_spear_blackmetal": "Zwarte metalen speer",
+  "item_spear_blackmetal_description": "Een donker, gebogen mes. Bevestigd rond knopen van ketting, vangt het licht op met een groenachtige gloed.",
+  "item_dagger_moder_2h": "Dragonfrost messen",
+  "item_dagger_moder_2h_description": "Een paar glinsterende scherven van ijs, gracieuze doodbrengers.",
+  "item_bow_blackmetal": "Zwarte metalen boog",
+  "item_bow_blackmetal_description": "Linnen draad versterkt zijn trek, zwartmetaal glanst, klaar voor een pijl.",
+  "item_spear_fader": "Dreadfire Speer",
+  "item_spear_fader_description": "Vervaardigd uit het lichaam van Fader, brandt het nog steeds vroeg en hongerig.",
+  "item_crossbow_blackmetal": "Zwarte metalen kruisboog",
+  "item_crossbow_blackmetal_description": "Een uiterst stevige kruisboog, een hoogtepunt van techniek en dood.Bedankt voor de vertaling!",
+  "item_sword_fader": "Angstvuurzwaard",
+  "item_sword_fader_description": "Een zwaard gesmeed uit de resten van Fader, het brandt met necrotische magie.",
+  "item_greatsword_fader": "Dreadfire Grootzwaard",
+  "item_greatsword_fader_description": "Een massief zwaard gesmeed uit Faders geschenk. Het verbrandt de doden en levenden gelijk."
 }

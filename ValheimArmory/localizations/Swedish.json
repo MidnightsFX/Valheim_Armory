@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Flammande blixtyxa",
   "item_axe_flametal_1h_description_lightning": "En storm av sin egen sort.",
   "item_axe_flametal_1h_blood": "Flametal blod yxa",
-  "item_axe_flametal_1h_description_blood": "Denna ondskefulla yxa dryper av energi efter att ha förenats med en röd ädelsten."
+  "item_axe_flametal_1h_description_blood": "Denna ondskefulla yxa dryper av energi efter att ha förenats med en röd ädelsten.",
+  "item_spear_blackmetal": "Svartmetallspjut",
+  "item_spear_blackmetal_description": "En mörk, böjd klinga. Säkrad runt knutar av kedja, den fångar ljuset med en grönaktig glans.",
+  "item_dagger_moder_2h": "Drakfrostknivar",
+  "item_dagger_moder_2h_description": "Ett par glittrande skärvor av is, graciösa dödsbringare.",
+  "item_bow_blackmetal": "Svartmetallbåge",
+  "item_bow_blackmetal_description": "Linnetråd stärker sitt drag, blackmetal glänser, ivrig efter en pil.",
+  "item_spear_fader": "Dreadfire Spjut",
+  "item_spear_fader_description": "Tillverkad av Faders kropp, brinner den fortfarande tidigt och hungrigt.",
+  "item_crossbow_blackmetal": "Svartmetallarmbröst",
+  "item_crossbow_blackmetal_description": "En extremt robust armborst, en kulmen av ingenjörskonst och död.",
+  "item_sword_fader": " Skräckeldsvärd",
+  "item_sword_fader_description": "Ett svärd smittat av Faders kvarlevor, det brinner av nekrotisk magi.",
+  "item_greatsword_fader": "Skräckeldsvärd",
+  "item_greatsword_fader_description": "Ett massivt svärd smittat av Faderns gåva. Det bränner de döda och levande lika."
 }

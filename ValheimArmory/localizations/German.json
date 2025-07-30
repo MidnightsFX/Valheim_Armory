@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Flammendes Blitzaxt",
   "item_axe_flametal_1h_description_lightning": "Ein Sturm eigener Art.",
   "item_axe_flametal_1h_blood": "Flametal-Blutaxt",
-  "item_axe_flametal_1h_description_blood": "Diese finstere Axt tropft vor Energie, nachdem sie mit einem roten Edelstein verschmolzen wurde."
+  "item_axe_flametal_1h_description_blood": "Diese finstere Axt tropft vor Energie, nachdem sie mit einem roten Edelstein verschmolzen wurde.",
+  "item_spear_blackmetal": "Schwarze Metalllanze",
+  "item_spear_blackmetal_description": "Eine dunkle, gebogene Klinge. Um Knoten von Ketten gesichert, fängt sie das Licht mit einem grünlichen Glanz ein.",
+  "item_dagger_moder_2h": "Drachenfrost Messer",
+  "item_dagger_moder_2h_description": "Ein Paar schimmernde Scherben aus Eis, anmutige Todesbringer.",
+  "item_bow_blackmetal": "Schwarzes Metallbogen",
+  "item_bow_blackmetal_description": "Leinenzwirn stärkt seinen Zug, Schwarzmetall glänzt, begierig nach einem Pfeil.",
+  "item_spear_fader": "Furchtfeuerspeer",
+  "item_spear_fader_description": "Hergestellt aus dem Körper von Fader, brennt es immer noch früh und hungrig.",
+  "item_crossbow_blackmetal": "Schwarze Metalarmbrust",
+  "item_crossbow_blackmetal_description": "Ein äußerst stabiler Armbrust, der Höhepunkt von Technik und Tod.",
+  "item_sword_fader": "Dreadfire Schwert",
+  "item_sword_fader_description": "Ein Schwert, das aus Faders Überresten geschmiedet wurde, brennt mit nekrotischer Magie.",
+  "item_greatsword_fader": "Dreadfire Großschwert",
+  "item_greatsword_fader_description": "Ein massives Schwert, geschmiedet aus Faders Geschenk. Es verbrennt die Toten und die Lebenden gleichermaßen."
 }

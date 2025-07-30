@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "ขวานไฟแห่งความเป็นเหล็ก",
   "item_axe_flametal_1h_description_lightning": "พายุที่เป็นลักษณะของตัวเอง( พายุของลักษณะของตัวเอง)",
   "item_axe_flametal_1h_blood": " แปลเป็นภาษาไทยคือ ขวานเลือดเหล็กไฟ",
-  "item_axe_flametal_1h_description_blood": "  ขวานที่น่ากลัวนี้กำลังหยดน้ำเงินหลังจากที่ถูกผสมกับอัญมณีสีแดงแล้วครับ/ค่ะ"
+  "item_axe_flametal_1h_description_blood": "  ขวานที่น่ากลัวนี้กำลังหยดน้ำเงินหลังจากที่ถูกผสมกับอัญมณีสีแดงแล้วครับ/ค่ะ",
+  "item_spear_blackmetal": "ไม้แหกดำ",
+  "item_spear_blackmetal_description": "ด้ามมีรูปทรงโค้งและสีมืด มัดโซ่ติดรอบด้าม ทำให้ด้ามเกิดแสงสีเขียว",
+  "item_dagger_moder_2h": "มีดดรากอนฟรอสต์",
+  "item_dagger_moder_2h_description": "คู่ของแก้วแข็งที่ส่องแสง, นักสร้างความตายที่งดงาม",
+  "item_bow_blackmetal": "โบว์โลหะสีดำ",
+  "item_bow_blackmetal_description": "เส้นใยลินน์เสริมความแข็งแรงในการดึง, โลหะสีดำส่งแสง, กระหายตั้งรอรับลูกธนูTranslated response: เส้นใยลินน์เสริมความแข็งแรงในการดึง, โลหะสีดำส่งแสง, กระหายตั้งรอรับลูกธนู",
+  "item_spear_fader": "ไม้แหกไฟผี",
+  "item_spear_fader_description": "ผลิตจากตัวของฟาเดอร์ มันยังเผาไหม้อย่างขี้ขลาดและหิวโหย",
+  "item_crossbow_blackmetal": " in Thai is ครอสโบว์โลหะสีดำ",
+  "item_crossbow_blackmetal_description": "หน้าจับศักดิ์สิทธิ์อย่างมหาศาล, ประเทศจำเป็นของวิศวกรรมและความตาย",
+  "item_sword_fader": "ดรีดไฟร์ ซอร์ด",
+  "item_sword_fader_description": "ดาบที่ทำจากเศษสิ่งที่เหลือของเฟเดอร์ มันเผาผลาญด้วยเวทมนตร์ที่ทำให้เนโครติก",
+  "item_greatsword_fader": "ดรีดไฟร์เกรทซอร์ด",
+  "item_greatsword_fader_description": "ดาบขนาดใหญ่ที่ถูกชั่งจากของขวัญของฟาเดอร์ มันไหม้ศพและมนุษย์อย่างเท่าเทียม"
 }

@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Φλογοβόλο αστραπιαίο τσεκούρι",
   "item_axe_flametal_1h_description_lightning": "Μια καταιγίδα της δικής του φύσης.",
   "item_axe_flametal_1h_blood": "Φλογιστική αξίνα αίματος",
-  "item_axe_flametal_1h_description_blood": "Αυτή η σκοτεινή πέλεκυς στάζει ενέργεια μετά από τη συνένωσή της με ένα κόκκινο πετράδι."
+  "item_axe_flametal_1h_description_blood": "Αυτή η σκοτεινή πέλεκυς στάζει ενέργεια μετά από τη συνένωσή της με ένα κόκκινο πετράδι.",
+  "item_spear_blackmetal": "Μαύρη μεταλλική λόγχη",
+  "item_spear_blackmetal_description": "Ένα σκοτεινό, καμπύλο λεπίδι. Στερεωμένο γύρω από κόμπους αλυσίδας, πιάνει το φως με μια πράσινη λάμψη.",
+  "item_dagger_moder_2h": "Μαχαίρια Dragonfrost",
+  "item_dagger_moder_2h_description": "Ένα ζευγάρι λαμπερά κομμάτια πάγου, χάριες φονικές.",
+  "item_bow_blackmetal": "Μαύρο μεταλλικό τόξο",
+  "item_bow_blackmetal_description": "Το λινάρι νήμα ενισχύει την τράβηγμα, το μαύρο μέταλλο λάμπει, πεινώντας για ένα βέλος.",
+  "item_spear_fader": "Λόγχη του φόβου της φωτιάς( Λόγχη του φόβου της φωτιάς)",
+  "item_spear_fader_description": "Φτιαγμένο από το σώμα του Fader, εξακολουθεί να καίει πεινασμένα και αναίσθητα.",
+  "item_crossbow_blackmetal": "Μαύρο μεταλλικό τόξο",
+  "item_crossbow_blackmetal_description": "Ένα εξαιρετικά ανθεκτικό βαλλίστρα, ένα αποκορύφωμα της μηχανικής και του θανάτου.",
+  "item_sword_fader": "Σπαθί της Φρίκης",
+  "item_sword_fader_description": "Ένα σπαθί που φτιάχτηκε από τα περισσότερα, καίει με νεκρωτική μαγεία.",
+  "item_greatsword_fader": "Μεγάλο ξίφος Δρεντφάιρ",
+  "item_greatsword_fader_description": "Ένα τεράστιο σπαθί σφυρηλατημένο από το δώρο του Φάντερ. Καίει τους νεκρούς και τους ζωντανούς εξίσου."
 }

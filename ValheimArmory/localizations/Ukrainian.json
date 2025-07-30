@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Вогнеметалева сокира блискавки",
   "item_axe_flametal_1h_description_lightning": "Своєрідний шторм.",
   "item_axe_flametal_1h_blood": "Вогнеметалева сокира крові",
-  "item_axe_flametal_1h_description_blood": "З цієї зловісної сокири стікає енергія після того, як її злили з червоним дорогоцінним каменем."
+  "item_axe_flametal_1h_description_blood": "З цієї зловісної сокири стікає енергія після того, як її злили з червоним дорогоцінним каменем.",
+  "item_spear_blackmetal": "Чорнометалеве коп'є",
+  "item_spear_blackmetal_description": "Темний, згорнутий клинок. Закріплений навколо вузлів ланцюга, він ловить світло з зеленуватим сяйвом.",
+  "item_dagger_moder_2h": "Ніжі Драконів мороз",
+  "item_dagger_moder_2h_description": "Пара блискучих обломків льоду, витончені вбивці смерті.",
+  "item_bow_blackmetal": "Чорнометалева вія",
+  "item_bow_blackmetal_description": "Льонова нитка посилює свій малюнок, чорний метал блищить, спраглий до стріли.",
+  "item_spear_fader": "Коп'я жаху",
+  "item_spear_fader_description": "Виготовлене з тіла Фадера, воно все ще горить дивно і голодно.",
+  "item_crossbow_blackmetal": "Чорнометалева арбалета",
+  "item_crossbow_blackmetal_description": "Надзвичайно міцний арбалет, вершина інженерії та смерті.",
+  "item_sword_fader": "Меч Смертельного Вогню",
+  "item_sword_fader_description": "Меч, виготовлений зі залишків Фейдерс, горить некротичною магією.",
+  "item_greatsword_fader": "Меч Великого Вогню",
+  "item_greatsword_fader_description": "Величезний меч, виготовлений з подарунка Фейдера. Він спалює мертвих і живих однаково."
 }

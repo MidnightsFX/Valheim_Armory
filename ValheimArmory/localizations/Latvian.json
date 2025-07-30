@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Flametal zibens cirvis",
   "item_axe_flametal_1h_description_lightning": "Pati savdabīgā vētra.",
   "item_axe_flametal_1h_blood": "Flametal asins cirvis",
-  "item_axe_flametal_1h_description_blood": "Šis ļaunais cirvis pil satriecošas enerģijas pēc sarkanā gemstones saplūdināšanas."
+  "item_axe_flametal_1h_description_blood": "Šis ļaunais cirvis pil satriecošas enerģijas pēc sarkanā gemstones saplūdināšanas.",
+  "item_spear_blackmetal": "Melnmetāla zobens",
+  "item_spear_blackmetal_description": "Tumša, izliekta asme. Piesprausta ķēdes mezglu apsētos, tā iemieso gaismu ar zaļgano spīdumu.",
+  "item_dagger_moder_2h": "Drakona sala nazis",
+  "item_dagger_moder_2h_description": "Pāris spīdīgi šķautnes ledus, graciozi nāvējoši.",
+  "item_bow_blackmetal": "Melnbetona bulta",
+  "item_bow_blackmetal_description": " Lins zigas stiprina savu piesaisti, melnas metāla spīd, laipni gaida bultu.",
+  "item_spear_fader": "Bailes uguns zobens",
+  "item_spear_fader_description": "Izgatavots no Fadera ķermeņa, tas joprojām deg nepacietīgi un bada.",
+  "item_crossbow_blackmetal": "Melna metāla arbaleta",
+  "item_crossbow_blackmetal_description": "Ļoti izturīgs arbalets, inženierijas un nāves simbols.",
+  "item_sword_fader": "Bailēsdegvielas zobens",
+  "item_sword_fader_description": "Zobens, kas izgatavots no Fadera paliekām, deg ar nekrotisku maģiju.",
+  "item_greatsword_fader": "Bailēšanās liels zobens",
+  "item_greatsword_fader_description": "Masīvs zobens, kurš izkaltēts no Fēdera dāvanas. Tas dedzina gan mirušos, gan dzīvos."
 }

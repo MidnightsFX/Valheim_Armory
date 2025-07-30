@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Flametal eldingar öxi",
   "item_axe_flametal_1h_description_lightning": "Eigin tegundar stormur.",
   "item_axe_flametal_1h_blood": "Blóðsárgáni í flametalinn",
-  "item_axe_flametal_1h_description_blood": "Þessi ógnarlega öxi er að dropa af orku eftir að hafa verið sameind með rauðri steinsteini."
+  "item_axe_flametal_1h_description_blood": "Þessi ógnarlega öxi er að dropa af orku eftir að hafa verið sameind með rauðri steinsteini.",
+  "item_spear_blackmetal": "Svörtmetal Spjót",
+  "item_spear_blackmetal_description": "Dimmt, kúrvóttur eggur. Festur um hnúta af keðju, hann grípur ljósið með grænleitri skír.",
+  "item_dagger_moder_2h": "Ísfjalladagar hnífarnir",
+  "item_dagger_moder_2h_description": "Eitt par af glitrandi brotum ís, yndislegir dauðadragarar. Eitt par af glitrandi brotum ís, yndislegir dauðadragarar.",
+  "item_bow_blackmetal": "Svartmálmur Bogi",
+  "item_bow_blackmetal_description": "Línutráður styrkir teikninguna, svartmálmur glær, í fyrirhuguðum fyrir ör.",
+  "item_spear_fader": "Ótti eldspjót",
+  "item_spear_fader_description": "Smíðað úr líkama Fader, brennur það enn bráðum og ómetanlega.",
+  "item_crossbow_blackmetal": "Blackmetal krossbogi",
+  "item_crossbow_blackmetal_description": "Mjög sterkur krossbogi, toppur verkfræði og dauðans.",
+  "item_sword_fader": "Ógnarelds Sverð",
+  "item_sword_fader_description": "Eitt sverð smíðað úr leifum Faders, það brennur með nekrotískri galdur.",
+  "item_greatsword_fader": "Ógnareldshöggspjót",
+  "item_greatsword_fader_description": "Massíft sverð smíðað úr gjöf Faders. Það brennur dauða og lifandi sama."
 }

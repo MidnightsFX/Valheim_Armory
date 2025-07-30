@@ -246,5 +246,19 @@
   "item_axe_flametal_1h_lightning": "Flametal şimşek baltası",
   "item_axe_flametal_1h_description_lightning": "Kendi türünde bir fırtına.",
   "item_axe_flametal_1h_blood": "Flametal kan balta",
-  "item_axe_flametal_1h_description_blood": "Bu karanlık balta, kırmızı bir değerli taş ile birleştirildikten sonra enerji damlıyor."
+  "item_axe_flametal_1h_description_blood": "Bu karanlık balta, kırmızı bir değerli taş ile birleştirildikten sonra enerji damlıyor.",
+  "item_spear_blackmetal": "Kara metal mızrak",
+  "item_spear_blackmetal_description": "Koyu, kıvrımlı bir bıçak. Zincir düğümleri etrafında güvence altına alınmış, yeşilimsi bir parıltıyla ışığı yakalar.",
+  "item_dagger_moder_2h": "Dragonfrost bıçakları",
+  "item_dagger_moder_2h_description": "Parıldayan buz parçaları, zarif ölüm getirenler.",
+  "item_bow_blackmetal": "Kara metal yay",
+  "item_bow_blackmetal_description": "Keten iplik çekilirken güçlenir, siyah metal parıldar, ok için isteklidir.",
+  "item_spear_fader": "Korku Ateşi MızrakThank you for using the translation service. Is there anything else I can help you with?",
+  "item_spear_fader_description": "Fader'ın bedeninden yapıldı, hala erken ve açgözlüce yanıyor.",
+  "item_crossbow_blackmetal": "Kara metal kiriş",
+  "item_crossbow_blackmetal_description": "Son derece sağlam bir yaylı tüfek, mühendisliğin ve ölümün zirvesi.Teşekkürler!",
+  "item_sword_fader": "Korku Ateşi Kılıcı",
+  "item_sword_fader_description": "Bir Fader'ın kalıntılarından yapılmış bir kılıç, nekrotik sihirle yanıyor.",
+  "item_greatsword_fader": "Korku Ateşi Büyük Kılıç",
+  "item_greatsword_fader_description": "Büyük bir kılıç, Faders'ın hediyesinden dövülmüştür. Ölüleri ve dirileri aynı şekilde yakar."
 }
