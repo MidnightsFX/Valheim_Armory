@@ -260,5 +260,11 @@
   "item_sword_fader": "Dreadfire Sword",
   "item_sword_fader_description": "A sword crafted from Faders remains, it burns with necrotic magic.",
   "item_greatsword_fader": "Dreadfire Greatsword",
-  "item_greatsword_fader_description": "A massive sword forged from Faders gift. It burns the dead and living alike."
+  "item_greatsword_fader_description": "A massive sword forged from Faders gift. It burns the dead and living alike.",
+  "item_crossbow_iron": "Iron Crossbow",
+  "item_crossbow_iron_description": "A sturdy crossbow, rugged and tough to load.",
+  "item_dagger_chitin_2h": "Abyssal knives",
+  "item_dagger_chitin_2h_description": "You wield the serpents fangs.",
+  "item_sword_bonemass": "Bonerot Sword",
+  "item_sword_bonemass_description": "A ragged iron blade fused with dreadful bones from the swamp."
 }

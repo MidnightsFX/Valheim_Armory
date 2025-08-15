@@ -3,6 +3,55 @@ using System.Collections.Generic;
 
 namespace ValheimArmory.common
 {
+    enum ItemStat
+    {
+        slash,
+        slash_per_level,
+        blunt,
+        blunt_per_level,
+        pierce,
+        pierce_per_level,
+        pickaxe,
+        pickaxe_per_level,
+        chop,
+        chop_per_level,
+        attack_force,
+        fire,
+        fire_per_level,
+        lightning,
+        lightning_per_level,
+        frost,
+        frost_per_level,
+        poison,
+        poison_per_level,
+        spirit,
+        spirit_per_level,
+        block_armor,
+        block_armor_per_level,
+        parry,
+        block_force,
+        block_force_per_level,
+        primary_attack_stamina,
+        primary_attack_eitr,
+        primary_attack_flat_health_cost,
+        primary_attack_percent_health_cost,
+        secondary_attack_stamina,
+        secondary_attack_eitr,
+        secondary_attack_flat_health_cost,
+        secondary_attack_percent_health_cost,
+        movement_speed,
+        bow_draw_speed,
+        crossbow_reload_speed,
+        crossbow_reload_stamina_drain,
+        draw_stamina_drain,
+        projectile_velocity,
+        durability,
+        durability_per_level,
+        max_item_level,
+        amount,
+        tool_level
+    }
+
     enum ItemCategory
     {
         Arrows,

@@ -472,6 +472,36 @@ namespace ValheimArmory
             };
             Loader.AddDefinition(Bronze_Arbelist);
 
+            // Iron Crossbow
+            ItemDefinition IronCrossbow = new ItemDefinition();
+            IronCrossbow.Name = "Iron Crossbow";
+            IronCrossbow.Category = ItemCategory.Bows;
+            IronCrossbow.prefab = "VACrossbowIron";
+            IronCrossbow.icon = "iron_crossbow";
+            IronCrossbow.craftedAt = "forge";
+            IronCrossbow.craftAmount = 1;
+            IronCrossbow.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.pierce, new ItemStatConfig{ default_value = 120, min =  0, max =  300 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 200, min =  0, max =  300 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 3, min =  0, max =  150 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  300 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.crossbow_reload_speed, new ItemStatConfig{ default_value = 3.5f, min =  0.01f, max =  3.5f } },
+                { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
+                { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 200, min =  0, max =  300 } },
+            };
+            IronCrossbow.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "ElderBark", amount = 5, upgradeCost = 5 },
+                    new RecipeIngredient { prefab = "FineWood", amount = 20, upgradeCost = 10 },
+                    new RecipeIngredient { prefab = "Iron", amount = 10, upgradeCost = 2 },
+                    new RecipeIngredient { prefab = "IronNails", amount = 2, upgradeCost = 2 },
+                }
+            };
+            Loader.AddDefinition(IronCrossbow);
+
             // Blackmetal crossbow
             ItemDefinition BlackmetalCrossbow = new ItemDefinition();
             BlackmetalCrossbow.Name = "Blackmetal Crossbow";
@@ -1025,6 +1055,40 @@ namespace ValheimArmory
             Loader.AddDefinition(Silver_Greatsword);
 
             // Bonemass Greatsword
+            ItemDefinition Bm_sword = new ItemDefinition();
+            Bm_sword.Name = "Bonemasses Sword";
+            Bm_sword.Category = ItemCategory.Swords;
+            Bm_sword.prefab = "VABonemassSword";
+            Bm_sword.icon = "bonemass_sword";
+            Bm_sword.craftedAt = "forge";
+            Bm_sword.craftAmount = 1;
+            Bm_sword.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.slash, new ItemStatConfig{ default_value = 65, min =  0, max =  250 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
+                { ItemStat.poison, new ItemStatConfig{ default_value = 20, min =  0, max =  250 } },
+                { ItemStat.poison_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 55, min =  0, max =  160 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 30, min =  0, max =  150 } },
+                { ItemStat.block_force, new ItemStatConfig{ default_value = 45, min =  0, max =  120 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 15, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 30, min =  1, max =  50 } },
+            };
+            Bm_sword.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "WitheredBone", amount = 10, upgradeCost = 5 },
+                    new RecipeIngredient { prefab = "Iron", amount = 22, upgradeCost = 15 },
+                    new RecipeIngredient { prefab = "Wishbone", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "TrophyBonemass", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "ElderBark", amount = 0, upgradeCost = 2 },
+                    new RecipeIngredient { prefab = "LeatherScraps", amount = 0, upgradeCost = 2 },
+                }
+            };
+            Loader.AddDefinition(Bm_sword);
+
+            // Bonemass Greatsword
             ItemDefinition Bonemasses_Greatsword = new ItemDefinition();
             Bonemasses_Greatsword.Name = "Bonemasses Greatsword";
             Bonemasses_Greatsword.Category = ItemCategory.Swords;
@@ -1033,7 +1097,7 @@ namespace ValheimArmory
             Bonemasses_Greatsword.craftedAt = "forge";
             Bonemasses_Greatsword.craftAmount = 1;
             Bonemasses_Greatsword.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
-                { ItemStat.slash, new ItemStatConfig{ default_value = 65, min =  0, max =  250 } },
+                { ItemStat.slash, new ItemStatConfig{ default_value = 75, min =  0, max =  250 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
                 { ItemStat.poison, new ItemStatConfig{ default_value = 20, min =  0, max =  250 } },
                 { ItemStat.poison_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
@@ -2887,6 +2951,38 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(Rascals_knives);
+
+            // Abyssal 2H Daggers
+            ItemDefinition Abyssal_knives = new ItemDefinition();
+            Abyssal_knives.Name = "Abyssal knives";
+            Abyssal_knives.Category = ItemCategory.Knives;
+            Abyssal_knives.prefab = "VAdagger_chitin_2h";
+            Abyssal_knives.icon = "chitin_knives";
+            Abyssal_knives.craftedAt = "piece_workbench";
+            Abyssal_knives.craftAmount = 1;
+            Abyssal_knives.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 12, min =  0, max =  48 } },
+                { ItemStat.slash, new ItemStatConfig{ default_value = 24, min =  0, max =  99 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 1, min =  0, max =  50 } },
+                { ItemStat.pierce, new ItemStatConfig{ default_value = 0, min =  0, max =  99 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
+                { ItemStat.blunt, new ItemStatConfig{ default_value = 24, min =  0, max =  99 } },
+                { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 10, min =  0, max =  40 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 8, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 24, min =  1, max =  50 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  500 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+            };
+            Abyssal_knives.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "FineWood", amount = 6, upgradeCost = 4 },
+                    new RecipeIngredient { prefab = "Chitin", amount = 32, upgradeCost = 12 },
+                    new RecipeIngredient { prefab = "LeatherScraps", amount = 8, upgradeCost = 4 },
+                }
+            };
+            Loader.AddDefinition(Abyssal_knives);
 
             // Iron 2H Daggers
             ItemDefinition Rogue_knives = new ItemDefinition();

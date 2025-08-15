@@ -42,7 +42,6 @@ namespace ValheimArmory
 
             // Build the piece & item creation classes, provide configuration for toggles and loaded resources
             // new ValheimArmoryPieces(EmbeddedResourceBundle); // not used right now
-            new JotunnItemFactory(EmbeddedResourceBundle);
             new ValheimArmoryItems();
 
             AddLocalizations();

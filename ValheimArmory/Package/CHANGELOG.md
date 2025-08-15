@@ -1,3 +1,12 @@
+**1.24.0**
+ ---
+ ```
+ - Added the Iron Crossbow
+ - Added Silver Crossbow
+ - Added Abyssal Dual knives
+ - Retuned and rebalanced the bronze arbalest
+ ```
+
 **1.23.2**
  ---
  ```
