@@ -1,6 +1,7 @@
 **1.24.0**
  ---
  ```
+ - All Sledges, 2H axes, and tower shields now have a default movement speed penalty of -15% (reduced from -20%) 
  - Added the Iron Crossbow
  - Added Silver Crossbow
  - Added Abyssal Dual knives

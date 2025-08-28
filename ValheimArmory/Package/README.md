@@ -231,6 +231,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Bronze Crossbow | Forge | Blackforest | `VACrossbowBronze` | ![bronze crossbow icon](https://i.imgur.com/GkWbooT.png) |
+  | Iron Crossbow | Forge | Swamp | `VACrossbowIron` | ![bronze arbalist icon](https://i.postimg.cc/QCCMz0sb/iron-crossbow.png) |
   | Blackmetal Crossbow | Forge | Plains | `VACrossbowBlackmetal` | ![blackmetal crossbow](https://i.postimg.cc/nrkpFR0Q/blackmetal-crossbow.png) |
   | Bronze Arbalist | Forge | Plains | `VAArbalistBronze` | ![bronze arbalist icon](https://i.imgur.com/iuk67H0.png) |
 
