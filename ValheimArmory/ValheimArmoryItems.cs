@@ -1448,6 +1448,42 @@ namespace ValheimArmory
             };
             Loader.AddDefinition(Iron_dualaxes);
 
+            // Bonemass Axe
+            ItemDefinition Bonemass_Axe = new ItemDefinition();
+            Bonemass_Axe.Name = "Bonemasses Axe";
+            Bonemass_Axe.Category = ItemCategory.Axes;
+            Bonemass_Axe.prefab = "VABone_axe";
+            Bonemass_Axe.icon = "bonemass_axe";
+            Bonemass_Axe.craftedAt = "forge";
+            Bonemass_Axe.craftAmount = 1;
+            Bonemass_Axe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.slash, new ItemStatConfig{ default_value = 70, min =  0, max =  200 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.poison, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
+                { ItemStat.poison_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
+                { ItemStat.chop, new ItemStatConfig{ default_value = 45, min =  0, max =  200 } },
+                { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 26, min =  0, max =  150 } },
+                { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 24, min =  1, max =  50 } },
+                { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.05f, min =  -0.20f, max =  0 } },
+            };
+            Bonemass_Axe.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "WitheredBone", amount = 6, upgradeCost = 5 },
+                    new RecipeIngredient { prefab = "Iron", amount = 20, upgradeCost = 10 },
+                    new RecipeIngredient { prefab = "Wishbone", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "TrophyBonemass", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "LeatherScraps", amount = 0, upgradeCost = 2 },
+                }
+            };
+            Loader.AddDefinition(Bonemass_Axe);
+
             // Crystal Axe
             ItemDefinition Crystal_Axe = new ItemDefinition();
             Crystal_Axe.Name = "Crystal Axe";
@@ -1515,6 +1551,76 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(Crystal_dualaxes);
+
+            // Moder Axe
+            ItemDefinition Moder_Axe = new ItemDefinition();
+            Moder_Axe.Name = "Dragonfrost Axe";
+            Moder_Axe.Category = ItemCategory.Axes;
+            Moder_Axe.prefab = "VAModer_Axe";
+            Moder_Axe.icon = "moder_axe_1h";
+            Moder_Axe.craftedAt = "forge";
+            Moder_Axe.craftAmount = 1;
+            Moder_Axe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.slash, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.frost, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
+                { ItemStat.frost_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
+                { ItemStat.chop, new ItemStatConfig{ default_value = 45, min =  0, max =  200 } },
+                { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 26, min =  0, max =  150 } },
+                { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 24, min =  1, max =  50 } },
+                { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.05f, min =  -0.20f, max =  0 } },
+            };
+            Moder_Axe.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "DragonTear", amount = 10, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "TrophyDragonQueen", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "Silver", amount = 15, upgradeCost = 15 },
+                    new RecipeIngredient { prefab = "FineWood", amount = 8, upgradeCost = 4 },
+                }
+            };
+            Loader.AddDefinition(Moder_Axe);
+
+            // Moder Dualaxes
+            ItemDefinition Moder_Dualaxes = new ItemDefinition();
+            Moder_Dualaxes.Name = "Crystal dualaxes";
+            Moder_Dualaxes.Category = ItemCategory.Axes;
+            Moder_Dualaxes.prefab = "VAModer_dualaxes";
+            Moder_Dualaxes.icon = "moder_dualaxes";
+            Moder_Dualaxes.craftedAt = "forge";
+            Moder_Dualaxes.craftAmount = 1;
+            Moder_Dualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.slash, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.frost, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
+                { ItemStat.frost_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
+                { ItemStat.chop, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
+                { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 30, min =  0, max =  150 } },
+                { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 20, min =  1, max =  50 } },
+                { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.05f, min =  -0.20f, max =  0 } },
+            };
+            Moder_Dualaxes.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "DragonTear", amount = 10, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "TrophyDragonQueen", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "Silver", amount = 30, upgradeCost = 30 },
+                    new RecipeIngredient { prefab = "FineWood", amount = 16, upgradeCost = 8 },
+                }
+            };
+            Loader.AddDefinition(Moder_Dualaxes);
 
             // Blackmetal Dual Axes
             ItemDefinition Blackmetal_dualaxes = new ItemDefinition();

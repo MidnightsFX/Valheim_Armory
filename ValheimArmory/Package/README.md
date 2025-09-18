@@ -57,9 +57,10 @@ It is encouraged that you find these items by exploring and discovery, but many 
   ## Bonemass
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Skull hammer | Forge | Post-Swamp | `VABonemassWarhammer` | ![Bonemass Warhammer icon](https://i.imgur.com/sg9yGYu.png) |
-  | Bone blade | Forge | Post-Swamp | `VABonemassGreatsword` | ![bonemass greatsword icon](https://i.imgur.com/OWfG9nK.png) |
-  | Poisoned bone dagger | Forge | Post-Swamp | `VABonemassDagger` | ![Bonemasses dagger icon](https://i.imgur.com/o9qxcEG.png) |
+  | Bonerot Sledge | Forge | Post-Swamp | `VABonemassWarhammer` | ![Bonemass Warhammer icon](https://i.postimg.cc/LXhpnFY0/bonemass-warhammer.png) |
+  | Bonerot Greatsword | Forge | Post-Swamp | `VABonemassGreatsword` | ![bonemass greatsword icon](https://i.postimg.cc/0Q3qSX75/bonemass-greatsword.png) |
+  | Bonerot Sword | Forge | Post-Swamp | `VABonemassSword` | ![bonemass sword icon](https://i.postimg.cc/TYnpRnX5/bonemass-sword.png) |
+  | Bonerot Knife | Forge | Post-Swamp | `VABonemassDagger` | ![Bonemasses dagger icon](https://i.postimg.cc/qq3HxcGs/bonemass-dagger.png) |
 
   ## Moder
   | Name | Crafted At | Stage | prefab | Icon |
@@ -71,6 +72,8 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Dragonfrost knife | Forge | Post-Mountain | `VAdagger_moder` | ![Moder Knife](https://i.postimg.cc/FHbKx4ML/moder-dagger.png) |
   | Dragonfrost dual knives | Forge | Post-Mountain | `VAdagger_moder_2h` | ![Dual Ice Knives](https://i.postimg.cc/t4zx4WCw/moder-dagger-2h.png) |
   | Dragonfrost greatsword | Forge | Post-Mountain | `VAModer_greatsword` | ![Moder greatsword](https://i.postimg.cc/c4nCrYTT/moder-greatsword.png) |
+  | Dragonfrost Axe | Forge | Post-Mountain | `VAModer_Axe` | ![Moder Knife](https://i.postimg.cc/qvjBRLDq/moder-axe-1h.png) |
+  | Dragonfrost Dual axes | Forge | Post-Mountain | `VAModer_dualaxes` | ![Moder Knife](https://i.postimg.cc/FH9sNqZw/moder-dualaxes.png) |
 
   ## Yagluth
   | Name | Crafted At | Stage | prefab | Icon |
@@ -214,6 +217,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Flint knives | Workbench | Meadows | `VADagger_Flint_2h` | ![flint daggers icon](https://i.postimg.cc/ryj3qHBt/2h-flint-knives.png) |
   | Copper knives | Forge | Blackforest | `VAdagger_copper_2h` | ![rascal daggers icon](https://i.postimg.cc/yYN5xPKp/copper-knives-2h.png) |
   | Iron knives | Forge | Swamp | `VAdagger_iron_2h` | ![rogue daggers icon](https://i.postimg.cc/yN4mZVMp/iron-dagger-2h.png) |
+  | Chitin knives | Workbench | Swamp | `VAdagger_chitin_2h` | ![chitin knives icon](https://i.postimg.cc/DwyFtGfT/chitin-knives.png) |
   | Silver knives | Forge | Mountain | `VAdagger_silver_2h` | ![blackguard runic daggers icon](https://i.postimg.cc/7L3g1FDH/silver-dagger-2h.png) |
   | Blackmetal knives | Forge | Plains | `VAknife_blackmetal` | ![blackmetal icon 2h](https://i.postimg.cc/ZY9GTHLb/2h-blackmetal-knives.png) |
   | Assassins knives | Blackforge | Ashlands | `VAdagger_meteor_2h` | ![meteor dagger icon 2h](https://i.postimg.cc/pTWNZtNR/2h-meteor-daggers.png) |
@@ -226,6 +230,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
 <details>
   <summary>Bows</summary>
   
+
   ### Added Crossbows
 
   | Name | Crafted At | Stage | prefab | Icon |

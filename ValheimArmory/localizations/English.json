@@ -266,5 +266,11 @@
   "item_dagger_chitin_2h": "Abyssal knives",
   "item_dagger_chitin_2h_description": "You wield the serpents fangs.",
   "item_sword_bonemass": "Bonerot Sword",
-  "item_sword_bonemass_description": "A ragged iron blade fused with dreadful bones from the swamp."
+  "item_sword_bonemass_description": "A ragged iron blade fused with dreadful bones from the swamp.",
+  "item_moder_axe": "Dragonfrost Axe",
+  "item_moder_axe_description": "An axe blade carved from pure ice held with moders tears.",
+  "item_dual_axes_moder": "Dragonfrost Dualaxes",
+  "item_dual_axes_moder_description": "Twin axes frozen in time.",
+  "item_bonemass_axe": "Bonerot Axe",
+  "item_bonemass_axe_description": "A jagged edge embedded in a foul skull."
 }

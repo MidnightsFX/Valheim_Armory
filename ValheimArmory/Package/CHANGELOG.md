@@ -1,11 +1,15 @@
 **1.24.0**
  ---
  ```
+ - Updated models and textures for all Bonemass Weapons
+ - Added Bonerot Blade, Bonerot Axe
  - All Sledges, 2H axes, and tower shields now have a default movement speed penalty of -15% (reduced from -20%) 
  - Added the Iron Crossbow
- - Added Silver Crossbow
  - Added Abyssal Dual knives
+ - Added Moders Axe and Dualaxe
  - Retuned and rebalanced the bronze arbalest
+ - Added missing sound effect to Yagluth fists
+ - Updated texture and model of Bonemass Sword, Greatsword and Knife
  ```
 
 **1.23.2**
