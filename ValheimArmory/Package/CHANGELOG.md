@@ -1,3 +1,24 @@
+**1.25.0**
+ ---
+ ```
+ - Fixes missing woosh sounds for sledges
+ - Fixes trail effects not being activated for some axes
+ - Adds bonemass dualaxes
+ - Added Wood Crossbow
+ - Added Silver Crossbow
+ - Added Mistlands tower shield
+ - Added Soulstealer
+ - Fixes texture issue for the blood pick on MacOSX
+ - Remodeled a number of flint weapons
+    - Flint Spear and Flint axe alternatives are now available and enabled by default (configuration available to disable/enable both)
+ ```
+
+**1.24.1**
+ ---
+ ```
+ - Fixes dragonfrost and crystal dualaxes sharing the same config values
+ ```
+
 **1.24.0**
  ---
  ```

@@ -11,6 +11,7 @@ using Jotunn.Managers;
 using Jotunn.Utils;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
@@ -25,7 +26,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.24.0";
+        public const string PluginVersion = "1.25.0";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -43,14 +44,14 @@ namespace ValheimArmory
             // Build the piece & item creation classes, provide configuration for toggles and loaded resources
             // new ValheimArmoryPieces(EmbeddedResourceBundle); // not used right now
             new ValheimArmoryItems();
-
-            AddLocalizations();
             // UnloadAssets();
 
             // extra Modifying Weapon configurations
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.SetupEffects;
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaHammersToWarhammers;
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaKnife;
+            PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.DisableVanillaFlintAxe;
+            PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.DisableVanillaFlintSpear;
             PrefabManager.OnPrefabsRegistered += StatusModifiers.SyncStatusEffectsToConfig;
             VAConfig.VanillaHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyHammers;
             VAConfig.ModHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyModHammers;
@@ -62,6 +63,7 @@ namespace ValheimArmory
 
             VAConfig.SaveOnSet(true);
             VAConfig.SetupMainFileWatcher();
+            AddLocalizations();
         }
 
         // This loads all localizations within the localization directory.
@@ -79,42 +81,42 @@ namespace ValheimArmory
             var translationFolder = Path.Combine(BepInEx.Paths.ConfigPath, "ValheimArmory", "localizations");
             Directory.CreateDirectory(translationFolder);
             //SimpleJson.SimpleJson.CurrentJsonSerializerStrategy
-            
 
+            
             // ValheimArmory.localizations.English.json,ValheimArmory.localizations.German.json,ValheimArmory.localizations.Russian.json
             // load all localization files within the localizations directory
             foreach (string embeddedResouce in typeof(ValheimArmory).Assembly.GetManifestResourceNames())
             {
                 if (!embeddedResouce.Contains("localizations")) { continue; }
                 // Read the localization file
-                
                 string localization = ReadEmbeddedResourceFile(embeddedResouce);
                 // since I use comments in the localization that are not valid JSON those need to be stripped
                 string cleaned_localization = Regex.Replace(localization, @"\/\/.*", "");
                 Dictionary<string, string> internal_localization = SimpleJson.SimpleJson.DeserializeObject<Dictionary<string, string>>(cleaned_localization);
                 // Just the localization name
                 var localization_name = embeddedResouce.Split('.');
-                if (File.Exists($"{translationFolder}/{localization_name[2]}.json")) {
-                    string cached_translation_file = File.ReadAllText($"{translationFolder}/{localization_name[2]}.json");
+                string ondiskLocalization = Path.Combine(BepInEx.Paths.ConfigPath, "ValheimArmory", "localizations", $"{localization_name[2]}.json");
+                if (File.Exists(ondiskLocalization)) {
+                    string cached_translation_file = File.ReadAllText(ondiskLocalization);
                     try {
                         Dictionary<string, string> cached_localization = SimpleJson.SimpleJson.DeserializeObject<Dictionary<string, string>>(cached_translation_file);
-                        UpdateLocalizationWithMissingKeys(internal_localization, cached_localization);
-                        Logger.LogDebug($"Reading {translationFolder}/{localization_name[2]}.json");
-                        File.WriteAllText($"{translationFolder}/{localization_name[2]}.json", SimpleJson.SimpleJson.SerializeObject(cached_localization));
-                        string updated_local_translation = File.ReadAllText($"{translationFolder}/{localization_name[2]}.json");
+                        cached_localization = UpdateLocalizationWithMissingKeys(internal_localization, cached_localization);
+                        //Logger.LogInfo($"Reading {ondiskLocalization}");
+                        File.WriteAllText(ondiskLocalization, SimpleJson.SimpleJson.SerializeObject(cached_localization));
+                        string updated_local_translation = File.ReadAllText(ondiskLocalization);
                         Localization.AddJsonFile(localization_name[2], updated_local_translation);
                     } catch {
-                        File.WriteAllText($"{translationFolder}/{localization_name[2]}.json", cleaned_localization);
-                        Logger.LogDebug($"Reading {embeddedResouce}");
+                        File.WriteAllText(ondiskLocalization, cleaned_localization);
+                        //Logger.LogInfo($"Reading {embeddedResouce}");
                         Localization.AddJsonFile(localization_name[2], cleaned_localization);
                     }
                 } else {
-                    File.WriteAllText($"{translationFolder}/{localization_name[2]}.json", cleaned_localization);
-                    Logger.LogDebug($"Reading {embeddedResouce}");
+                    File.WriteAllText(ondiskLocalization, cleaned_localization);
+                    //Logger.LogInfo($"Reading {embeddedResouce}");
                     Localization.AddJsonFile(localization_name[2], cleaned_localization);
                 }
 
-                Logger.LogDebug($"Added localization: '{localization_name[2]}'");
+                Logger.LogInfo($"Added localization: '{localization_name[2]}'");
                 // Logging some characters seem to cause issues sometimes
                 // if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Localization Text: {cleaned_localization}"); }
                 //Localization.AddTranslation(localization_name[2], localization);
@@ -122,18 +124,29 @@ namespace ValheimArmory
             }
         }
 
-        private void UpdateLocalizationWithMissingKeys(Dictionary<string, string> internal_localization, Dictionary<string, string> cached_localization) {
-            if (internal_localization.Keys.Count != cached_localization.Keys.Count)
+        private Dictionary<string, string> UpdateLocalizationWithMissingKeys(Dictionary<string, string> internal_localization, Dictionary<string, string> cached_localization) {
+            if (internal_localization.Keys != cached_localization.Keys)
             {
-                Logger.LogDebug("Cached localization was missing some entries. They will be added.");
+                List<string> extra_keys = cached_localization.Keys.ToList();
                 foreach (KeyValuePair<string, string> entry in internal_localization)
                 {
+                    extra_keys.Remove(entry.Key);
                     if (!cached_localization.ContainsKey(entry.Key))
                     {
+                        Logger.LogInfo($"Adding missing localization key {entry.Key}");
                         cached_localization.Add(entry.Key, entry.Value);
                     }
                 }
+                if (extra_keys.Count > 0)
+                {
+                    Logger.LogInfo($"Removing extra keys {string.Join(",", extra_keys)}.");
+                    foreach (string key in extra_keys)
+                    {
+                        cached_localization.Remove(key);
+                    }
+                }
             }
+            return cached_localization;
         }
 
         private void LoadAssets()

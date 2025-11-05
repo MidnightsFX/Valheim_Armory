@@ -1,8 +1,10 @@
 ﻿using Jotunn.Managers;
+using SoftReferenceableAssets;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using static EffectList;
 
 namespace ValheimArmory.common
@@ -17,6 +19,7 @@ namespace ValheimArmory.common
         static GameObject fx_demolisher_hit;
         static GameObject vfx_clubhit;
         static GameObject sfx_clubhit;
+        static GameObject sfx_swing_wosh;
 
         internal class WeaponAttackData
         {
@@ -37,8 +40,10 @@ namespace ValheimArmory.common
             foreach (GameObject obj in objects)
             {
                 ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id)) {
-                    if (id.m_itemData.m_shared.m_attack.m_attackAnimation != null && id.m_itemData.m_shared.m_secondaryAttack.m_attackAnimation != null) {
+                if (obj.TryGetComponent<ItemDrop>(out id))
+                {
+                    if (id.m_itemData.m_shared.m_attack.m_attackAnimation != null && id.m_itemData.m_shared.m_secondaryAttack.m_attackAnimation != null)
+                    {
                         // We just need to at this one
                         OriginalWeaponAttackCache.Add(weapon_name, new WeaponAttackData() { primary_attack = id.m_itemData.m_shared.m_attack, secondary_attack = id.m_itemData.m_shared.m_secondaryAttack });
                         break;
@@ -50,15 +55,16 @@ namespace ValheimArmory.common
 
         public static void SetupEffects()
         {
-             vfx_sledge_hit = PrefabManager.Instance.GetPrefab("vfx_sledge_hit");
-             fx_camshake = PrefabManager.Instance.GetPrefab("fx_swing_camshake");
-             sfx_sledge_hit = PrefabManager.Instance.GetPrefab("sfx_sledge_hit");
-             sfx_sledge_swing = PrefabManager.Instance.GetPrefab("sfx_sledge_swing");
-             fx_demolisher_hit = PrefabManager.Instance.GetPrefab("fx_sledge_demolisher_hit");
-             vfx_clubhit = PrefabManager.Instance.GetPrefab("vfx_clubhit");
-             sfx_clubhit = PrefabManager.Instance.GetPrefab("sfx_club_hit");
+            vfx_sledge_hit = PrefabManager.Instance.GetPrefab("vfx_sledge_hit");
+            fx_camshake = PrefabManager.Instance.GetPrefab("fx_swing_camshake");
+            sfx_sledge_hit = PrefabManager.Instance.GetPrefab("sfx_sledge_hit");
+            sfx_sledge_swing = PrefabManager.Instance.GetPrefab("sfx_sledge_swing");
+            fx_demolisher_hit = PrefabManager.Instance.GetPrefab("fx_sledge_demolisher_hit");
+            vfx_clubhit = PrefabManager.Instance.GetPrefab("vfx_clubhit");
+            sfx_clubhit = PrefabManager.Instance.GetPrefab("sfx_club_hit");
+            sfx_swing_wosh = PrefabManager.Instance.GetPrefab("sfx_battleaxe_swing_wosh");
 
-            Logger.LogDebug($"Set Effect Prefabs: vfx_sledge_hit:{vfx_sledge_hit} fx_camshake:{fx_camshake} sfx_sledge_hit:{sfx_sledge_hit} sfx_sledge_swing:{sfx_sledge_swing} fx_demolisher_hit:{fx_demolisher_hit} vfx_clubhit:{vfx_clubhit} sfx_clubhit:{sfx_clubhit}");
+            Logger.LogDebug($"Set Effect Prefabs: vfx_sledge_hit:{vfx_sledge_hit} fx_camshake:{fx_camshake} sfx_sledge_hit:{sfx_sledge_hit} sfx_sledge_swing:{sfx_sledge_swing} fx_demolisher_hit:{fx_demolisher_hit} vfx_clubhit:{vfx_clubhit} sfx_clubhit:{sfx_clubhit} sfx_swing_wosh: {sfx_swing_wosh}");
         }
 
         public static Attack SetWarhammerPrimaryAttack(float stamina_cost = 22f)
@@ -133,7 +139,7 @@ namespace ValheimArmory.common
         {
             EffectData[] sledge_trigger_effects = { new EffectData() { m_prefab = fx_camshake, m_enabled = true, m_variant = -1 }, new EffectData() { m_prefab = vfx_sledge_hit, m_enabled = true, m_variant = -1 }, new EffectData() { m_prefab = sfx_sledge_hit, m_enabled = true, m_variant = -1 } };
             EffectData[] demolisher_trigger_effects = { new EffectData() { m_prefab = fx_camshake, m_enabled = true, m_variant = -1 }, new EffectData() { m_prefab = fx_demolisher_hit, m_enabled = true, m_variant = -1 } };
-            
+
             if (demolisher) { sledge_trigger_effects = demolisher_trigger_effects; }
             return new EffectList { m_effectPrefabs = sledge_trigger_effects };
         }
@@ -142,6 +148,12 @@ namespace ValheimArmory.common
         {
             EffectData[] sledge_start_efffect = { new EffectData() { m_prefab = sfx_sledge_swing, m_enabled = true, m_variant = -1 } };
             return new EffectList { m_effectPrefabs = sledge_start_efffect }; ;
+        }
+
+        public static EffectList SledgeComboSwingSFX()
+        {
+            EffectData[] sledge_swing_effects = { new EffectData() { m_prefab = sfx_swing_wosh, m_enabled = true, m_variant = -1 } };
+            return new EffectList { m_effectPrefabs = sledge_swing_effects }; ;
         }
 
         public static EffectList SetWarhammerAttackVFX()
@@ -172,6 +184,7 @@ namespace ValheimArmory.common
             EffectList warhammer_primary_effects = SetWarhammerAttackVFX();
             EffectList sledge_trigger_effects = SledgeTriggerEffects(demolisher);
             EffectList sledge_start_effects = SledgeStartEffects();
+            EffectList sledge_swing_effects = SledgeComboSwingSFX();
             // This ensures modifications of clones also
             IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
 
@@ -183,6 +196,7 @@ namespace ValheimArmory.common
                     id.m_itemData.m_shared.m_attack = primary;
                     id.m_itemData.m_shared.m_secondaryAttack = secondary;
                     id.m_itemData.m_shared.m_attack.m_hitEffect = warhammer_primary_effects;
+                    id.m_itemData.m_shared.m_attack.m_trailStartEffect = sledge_swing_effects;
                     id.m_itemData.m_shared.m_secondaryAttack.m_triggerEffect = sledge_trigger_effects;
                     id.m_itemData.m_shared.m_secondaryAttack.m_startEffect = sledge_start_effects;
                     ClearSharedVFX(id.m_itemData);
@@ -202,6 +216,7 @@ namespace ValheimArmory.common
                     user_item.m_shared.m_attack = primary;
                     user_item.m_shared.m_secondaryAttack = secondary;
                     user_item.m_shared.m_attack.m_hitEffect = warhammer_primary_effects;
+                    user_item.m_shared.m_attack.m_trailStartEffect = sledge_swing_effects;
                     user_item.m_shared.m_secondaryAttack.m_triggerEffect = sledge_trigger_effects;
                     user_item.m_shared.m_secondaryAttack.m_startEffect = sledge_start_effects;
                     ClearSharedVFX(user_item);
@@ -229,6 +244,7 @@ namespace ValheimArmory.common
                     ClearSecondaryAttack(id.m_itemData);
                     id.m_itemData.m_shared.m_triggerEffect = sledge_trigger_effects;
                     id.m_itemData.m_shared.m_startEffect = sledge_start_effects;
+                    id.m_itemData.m_shared.m_attack.m_trailStartEffect = null;
                 }
             }
 
@@ -247,6 +263,7 @@ namespace ValheimArmory.common
                     ClearSecondaryAttack(user_item);
                     user_item.m_shared.m_triggerEffect = sledge_trigger_effects;
                     user_item.m_shared.m_startEffect = sledge_start_effects;
+                    user_item.m_shared.m_attack.m_trailStartEffect = null;
                 }
             }
         }
@@ -360,7 +377,9 @@ namespace ValheimArmory.common
             if (VAConfig.VanillaHammersHavePrimaryAttack.Value)
             {
                 ModifyVanillaHammersToWarhammers();
-            } else {
+            }
+            else
+            {
                 ModifyVanillaHammersToSledges();
             }
         }
@@ -371,7 +390,9 @@ namespace ValheimArmory.common
             if (VAConfig.ModHammersHavePrimaryAttack.Value)
             {
                 ModifyModHammersToWarhammers();
-            } else {
+            }
+            else
+            {
                 ModifyModHammersToSledges();
             }
         }
@@ -498,5 +519,39 @@ namespace ValheimArmory.common
             }
         }
 
+        public static void OnConfigChangeModifyVanillaFlintAxe(object sender, EventArgs e)
+        {
+            DisableVanillaFlintAxe();
+        }
+
+        public static void DisableVanillaFlintAxe()
+        {
+            if (!SceneManager.GetActiveScene().name.Equals("main"))
+            {
+                return;
+            }
+
+            GameObject go = PrefabManager.Instance.GetPrefab("AxeFlint");
+            ItemDrop id = go.GetComponent<ItemDrop>();
+            Recipe recipe = ObjectDB.instance.GetRecipe(id.m_itemData);
+            recipe.m_enabled = VAConfig.EnableVanillaFlintAxe.Value;
+        }
+
+        public static void OnConfigChangeModifyVanillaFlintSpear(object sender, EventArgs e)
+        {
+            DisableVanillaFlintSpear();
+        }
+
+        public static void DisableVanillaFlintSpear()
+        {
+            if (!SceneManager.GetActiveScene().name.Equals("main")) {
+                return;
+            }
+
+            GameObject go = PrefabManager.Instance.GetPrefab("SpearFlint");
+            ItemDrop id = go.GetComponent<ItemDrop>();
+            Recipe recipe = ObjectDB.instance.GetRecipe(id.m_itemData);
+            recipe.m_enabled = VAConfig.EnableVanillaSpear.Value;
+        }
     }
 }

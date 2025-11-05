@@ -16,6 +16,8 @@ namespace ValheimArmory
         public static ConfigEntry<float> IronSledgePrimaryAttackStamina;
         public static ConfigEntry<float> DemolisherPrimaryAttackStamina;
         public static ConfigEntry<bool> VanillaAbyssalKnifeBluntDamageConvert;
+        public static ConfigEntry<bool> EnableVanillaSpear;
+        public static ConfigEntry<bool> EnableVanillaFlintAxe;
         public static ConfigEntry<float> AbyssalKnifeBlunt;
         public static ConfigEntry<float> AbyssalKnifeBluntPerLevel;
         public static ConfigEntry<float> BloodHungerRegen;
@@ -62,6 +64,11 @@ namespace ValheimArmory
             AbyssalKnifeBluntPerLevel = BindServerConfig("Vanilla Weapons", "AbyssalKnifeBluntPerLevel", 1f, "Blunt damage per level for the abyssal knife", true, 0, 10);
             AbyssalKnifeBlunt.SettingChanged += WeaponModifier.OnConfigAbyssalKnifeValueChanged;
             AbyssalKnifeBluntPerLevel.SettingChanged += WeaponModifier.OnConfigAbyssalKnifeValueChanged;
+            EnableVanillaSpear = BindServerConfig("Vanilla Weapons", "DisableVanillaFlintSpear", false, "Disables crafting of the vanilla spear, to be used in conjuction with the VA flint spear.");
+            EnableVanillaSpear.SettingChanged += WeaponModifier.OnConfigChangeModifyVanillaFlintSpear;
+            EnableVanillaFlintAxe = BindServerConfig("Vanilla Weapons", "DisableVanillaFlintAxe", false, "Disables crafting of the vanilla flint axe, to be used in conuction with the VA flint axe.");
+            EnableVanillaFlintAxe.SettingChanged += WeaponModifier.OnConfigChangeModifyVanillaFlintAxe;
+
 
             BloodHungerRegen = BindServerConfig("Status Effects", "BloodHungerRegen", 2f, "How strong the hp regen effect for blood weapons is (2 is 200% regen).", true, 0f, 5f);
             BloodHungerRegen.SettingChanged += StatusModifiers.OnConfigBloodChanged;

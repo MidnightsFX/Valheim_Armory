@@ -10,12 +10,7 @@ namespace ValheimArmory.common
 
         public static void enableDebugLogging(object sender, EventArgs e)
         {
-            if (VAConfig.EnableDebugMode.Value) {
-                Level = LogLevel.Debug;
-            } else {
-                Level = LogLevel.Info;
-            }
-            // set log level
+            toggleDebug();
         }
 
         public static void toggleDebug()

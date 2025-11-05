@@ -61,6 +61,8 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Bonerot Greatsword | Forge | Post-Swamp | `VABonemassGreatsword` | ![bonemass greatsword icon](https://i.postimg.cc/0Q3qSX75/bonemass-greatsword.png) |
   | Bonerot Sword | Forge | Post-Swamp | `VABonemassSword` | ![bonemass sword icon](https://i.postimg.cc/TYnpRnX5/bonemass-sword.png) |
   | Bonerot Knife | Forge | Post-Swamp | `VABonemassDagger` | ![Bonemasses dagger icon](https://i.postimg.cc/qq3HxcGs/bonemass-dagger.png) |
+  | Bonerot Axe | Forge | Post-Swamp | `VABone_axe` | ![Bonemasses axe](https://i.postimg.cc/Wzr98FpZ/bonemass-axe.png) |
+  | Bonerot Dualaxes | Forge | Post-Swamp | `VABone_dualaxes` | ![Bonemasses dualaxe](https://i.postimg.cc/P5d6b5g8/bonerot-dualaxes.png) |
 
   ## Moder
   | Name | Crafted At | Stage | prefab | Icon |
@@ -154,6 +156,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Axe | Workbench | Meadows | `VAFlint_Axe` | ![flint axe](https://i.postimg.cc/65XzwQ5Y/flint-axe.png) |
   | Silver Axe | Forge | Mountain | `VAcrystal_axe` | ![crystal axe icon](https://i.postimg.cc/KjVkkWNf/silver-axe-1h-icon.png) |
   | Jotuns Bane (half) | Blackforge | Mistlands | `VAJotunn_single_axe` | ![jotun half blade](https://i.postimg.cc/63xxYX7M/jotunn-halfblade.png) |
   | Flametal Axe | Blackforge | Ashlands | `VAFlametal_Axe` | ![flametal axe](https://i.postimg.cc/6Q9CMc8Z/flametal-Axe-Base.png) |
@@ -167,7 +170,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Flint Dualaxes | Workbench | Meadows | `VAFlint_dualaxes` | ![flint dualaxes icon](https://i.postimg.cc/C5YYvsK0/flint-dualaxes.png) |
+  | Flint Dualaxes | Workbench | Meadows | `VAFlint_dualaxes` | ![flint dualaxes icon](https://i.postimg.cc/d0Ljnkng/flint-dualaxes.png) |
   | Bronze Dualaxes | Forge | Blackforest | `VABronze_dualaxes` | ![bronze dualaxes icon](https://i.postimg.cc/dtNPdYGw/bronze-dualaxes.png) |
   | Iron Dualaxes | Forge | Swamp | `VAIron_dualaxes` | ![iron dualaxes icon](https://i.postimg.cc/TP4JqtCy/iron-dualaxes.png) |
   | Crystal Dualaxes | Forge | Mountain | `VACrystal_dualaxes` | ![crystal dualaxes icon](https://i.postimg.cc/MGQvNtzf/crystal-dualaxes.png) |
@@ -235,8 +238,10 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Wood Crossbow | Workbench | Meadows | `VACrossbowWood` | ![bronze crossbow icon](https://i.postimg.cc/02nGsdBH/wood-Crossbow.png) |
   | Bronze Crossbow | Forge | Blackforest | `VACrossbowBronze` | ![bronze crossbow icon](https://i.imgur.com/GkWbooT.png) |
   | Iron Crossbow | Forge | Swamp | `VACrossbowIron` | ![bronze arbalist icon](https://i.postimg.cc/QCCMz0sb/iron-crossbow.png) |
+  | Silver Crossbow | Forge | Mountain | `VACrossbowSilver` | ![bronze arbalist icon](https://i.postimg.cc/Hxb5PQMz/silver-crossbow.png) |
   | Blackmetal Crossbow | Forge | Plains | `VACrossbowBlackmetal` | ![blackmetal crossbow](https://i.postimg.cc/nrkpFR0Q/blackmetal-crossbow.png) |
   | Bronze Arbalist | Forge | Plains | `VAArbalistBronze` | ![bronze arbalist icon](https://i.imgur.com/iuk67H0.png) |
 
@@ -263,6 +268,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
   | Name | Crafted At | Stage | prefab | Icon |
   | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint mace | Meadows | Workbench | `VAFlintMace` | ![flint mace](https://i.postimg.cc/k4jVHf4c/flint-Mace.png) |
   | Blackmarble mace | Blackforge | Mistlands | `VAmistland_mace` | ![mistlands mace icon](https://i.postimg.cc/MTnD0TJ8/mist-mace.png) |
 
 </details>
@@ -276,6 +282,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Serpent Scale Buckler | Forge | Swamp | `VAserpent_buckler` | ![serpent scale buckler icon](https://i.imgur.com/jtB6efS.png) |
   | Silver tower shield | Forge | Mountain | `VAsilver_tower` | ![silver wolf tower shield icon](https://i.postimg.cc/L6yxH8Dj/silver-tower-shield.png) |
+  | Dverger Towershield | Blackforge | Mistlands | `VAdverger_tower` | ![blackmarble tower shield](https://i.postimg.cc/tC8q78wD/dverger-towershield.png) |
 
 </details>
 
@@ -317,6 +324,18 @@ It is encouraged that you find these items by exploring and discovery, but many 
 </details>
 
 <details>
+  <summary>Spears</summary>
+  
+  ### Added Spears
+
+  | Name | Crafted At | Stage | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint spear | Workbench | Meadows | `VASpearFlint` | ![flint spear](https://i.postimg.cc/q7SSGdcP/flint-spear.png) |
+  | Blackmetal Spear | Forge | Plains | `VASpearBlackmetal` | ![blackmetal spear](https://i.postimg.cc/brTm4Xb8/blackmetal-spear.png) |
+
+</details>
+
+<details>
   <summary>Magic Weapons</summary>
 
   
@@ -338,6 +357,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Blood bone battlepick | forge | BlackForest | `VABlood_Bones_pickaxe` | ![blood bone battlepick](https://i.imgur.com/W18gjEx.png) |
   | Blood bone bow | forge | Mountains | `VABlood_bone_bow` | ![blood bone bow](https://i.imgur.com/nBN4Jac.png) |
   | Carapace bone bow | Magetable | Mistlands | `VAHeavy_Blood_Bone_Bow` | ![carapace bone bow](https://i.postimg.cc/SKF5vQY7/blood-bone-bow-heavy.png) |
+  | Soulstealer | Magetable | Ashlands | `VASoulStealer` | ![soulstealer](https://i.postimg.cc/PrvhG2JY/soulstealer.png) |
   
 
 </details>
@@ -398,8 +418,6 @@ Q. Why does x weapon look bad?
 ## Currently in-progress
 <details>
   <summary>Potential Spoilers!</summary>
-  
-  * Designing Boss Weapons for the Ashlands
 
   Boss Weapon Release roadmap
   * Additional weapon types for all existing bosses
@@ -416,7 +434,6 @@ Q. Why does x weapon look bad?
   * Filling out boss weapons for most/all playstyles (long term)
   * Chitin Shield
   * Better VFX for weapons
-  * New spear alternatives
   * More magic (eitr) powered weapons (non-staves, post Ashlands update)
 </details>
 

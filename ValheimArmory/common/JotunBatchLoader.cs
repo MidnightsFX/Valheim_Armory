@@ -153,9 +153,9 @@ namespace ValheimArmory.common
 
         private static bool BatchAddItems() {
             foreach (ItemDefinition itemdef in resourceDefinitions) {
-                // Logger.LogInfo($"Adding {itemdef.Name}.");
                 GameObject ItemPrefab = Assets.LoadAsset<GameObject>($"Assets/Custom/Weapons/{itemdef.Category}/{itemdef.prefab}.prefab");
                 Sprite ItemSprite = Assets.LoadAsset<Sprite>($"Assets/Custom/Icons/{itemdef.icon}.png");
+                //Logger.LogInfo($"Adding {itemdef.Name} gopath: {prefabPath} go: {ItemPrefab} sprite: {ItemSprite}");
                 ItemDrop ItemD = ItemPrefab.GetComponent<ItemDrop>();
                 // Modify this items stats
                 foreach (KeyValuePair<ItemStat, ItemStatConfig> modstat in itemdef.modifableStats) {
@@ -287,6 +287,15 @@ namespace ValheimArmory.common
                     break;
                 case ItemStat.primary_attack_percent_health_cost:
                     itemData.m_shared.m_attack.m_attackHealthPercentage = updatedValue;
+                    break;
+                case ItemStat.primary_attack_health_returned:
+                    itemData.m_shared.m_attack.m_attackHealthReturnHit = updatedValue;
+                    break;
+                case ItemStat.primary_attack_damage_bonus_per_missing_hp:
+                    itemData.m_shared.m_attack.m_damageMultiplierPerMissingHP = updatedValue;
+                    break;
+                case ItemStat.primary_attack_projectile_count:
+                    itemData.m_shared.m_attack.m_projectiles = (int)updatedValue;
                     break;
                 case ItemStat.secondary_attack_stamina:
                     itemData.m_shared.m_secondaryAttack.m_attackStamina = updatedValue;

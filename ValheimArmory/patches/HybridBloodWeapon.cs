@@ -9,7 +9,7 @@ namespace ValheimArmory.patches
     {
 
         [HarmonyPatch(typeof(Skills), nameof(Skills.RaiseSkill))]
-        public class BloodHybridWeaponsRaiseSkills
+        public static class BloodHybridWeaponsRaiseSkills
         {
             static List<int> HybridWeapons = new List<int>() { "VABlood_bone_bow".GetHashCode(), "VABlood_Bones_pickaxe".GetHashCode(), "VAHeavy_Blood_Bone_Bow".GetHashCode() };
             // This doesn't need to manipulate the result, we just want to hook into the skill type and item that cause the skill increase etc

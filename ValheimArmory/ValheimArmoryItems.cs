@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using ValheimArmory.common;
-using Logger = Jotunn.Logger;
+using Logger = ValheimArmory.common.Logger;
 
 namespace ValheimArmory
 {
@@ -450,6 +450,7 @@ namespace ValheimArmory
             Bronze_Arbelist.icon = "bronze_crossbow_upright";
             Bronze_Arbelist.craftedAt = "forge";
             Bronze_Arbelist.craftAmount = 1;
+            Bronze_Arbelist.craftable = false;
             Bronze_Arbelist.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ default_value = 140, min =  0, max =  300 } },
                 { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
@@ -501,6 +502,38 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(IronCrossbow);
+
+            // Silver Crossbow
+            ItemDefinition SilverCrossbow = new ItemDefinition();
+            SilverCrossbow.Name = "Silver Crossbow";
+            SilverCrossbow.Category = ItemCategory.Bows;
+            SilverCrossbow.prefab = "VACrossbowSilver";
+            SilverCrossbow.icon = "silver_crossbow";
+            SilverCrossbow.craftedAt = "forge";
+            SilverCrossbow.craftAmount = 1;
+            SilverCrossbow.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.pierce, new ItemStatConfig{ default_value = 140, min =  0, max =  300 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
+                { ItemStat.poison, new ItemStatConfig{ default_value = 30, min =  0, max =  300 } },
+                { ItemStat.spirit, new ItemStatConfig{ default_value = 40, min =  0, max =  300 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 200, min =  0, max =  300 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 3, min =  0, max =  150 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  300 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.crossbow_reload_speed, new ItemStatConfig{ default_value = 3.5f, min =  0.01f, max =  3.5f } },
+                { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
+                { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 200, min =  0, max =  300 } },
+            };
+            SilverCrossbow.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "Guck", amount = 5, upgradeCost = 5 },
+                    new RecipeIngredient { prefab = "ElderBark", amount = 20, upgradeCost = 10 },
+                    new RecipeIngredient { prefab = "Silver", amount = 12, upgradeCost = 2 },
+                    new RecipeIngredient { prefab = "IronNails", amount = 2, upgradeCost = 2 },
+                }
+            };
+            Loader.AddDefinition(SilverCrossbow);
 
             // Blackmetal crossbow
             ItemDefinition BlackmetalCrossbow = new ItemDefinition();
@@ -593,6 +626,35 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(Bronze_Crossbow);
+
+            // Wood Crossbow
+            ItemDefinition WoodCrossbow = new ItemDefinition();
+            WoodCrossbow.Name = "Wood Crossbow";
+            WoodCrossbow.Category = ItemCategory.Bows;
+            WoodCrossbow.prefab = "VACrossbowWood";
+            WoodCrossbow.icon = "woodCrossbow";
+            WoodCrossbow.craftedAt = "piece_workbench";
+            WoodCrossbow.craftAmount = 1;
+            WoodCrossbow.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.pierce, new ItemStatConfig{ default_value = 40, min =  0, max =  300 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 3, min =  0, max =  150 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 150, min =  0, max =  300 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 50, min =  0, max =  300 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.crossbow_reload_speed, new ItemStatConfig{ default_value = 7f, min =  0.01f, max =  10f } },
+                { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
+                { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 200, min =  0, max =  300 } },
+            };
+            WoodCrossbow.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "Wood", amount = 30, upgradeCost = 15 },
+                    new RecipeIngredient { prefab = "Resin", amount = 10, upgradeCost = 5 },
+                    new RecipeIngredient { prefab = "DeerHide", amount = 2, upgradeCost = 2 },
+                }
+            };
+            Loader.AddDefinition(WoodCrossbow);
 
             // Elder Crossbow
             ItemDefinition Elders_Reach = new ItemDefinition();
@@ -1288,6 +1350,40 @@ namespace ValheimArmory
         private void LoadAxes()
         {
             Logger.LogInfo("Loading Axes");
+
+            
+            // Flint Axe
+            ItemDefinition FlintAxe = new ItemDefinition();
+            FlintAxe.Name = "Flint greataxe";
+            FlintAxe.Category = ItemCategory.Axes;
+            FlintAxe.prefab = "VAFlint_Axe";
+            FlintAxe.icon = "flint_axe";
+            FlintAxe.craftedAt = "piece_workbench";
+            FlintAxe.craftAmount = 1;
+            FlintAxe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.slash, new ItemStatConfig{ default_value = 20, min =  0, max =  200 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.chop, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
+                { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 4, min =  0, max =  150 } },
+                { ItemStat.block_force, new ItemStatConfig{ default_value = 50, min =  0, max =  120 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 6, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
+                { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.05f, min =  -0.15f, max =  0 } },
+            };
+            FlintAxe.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "Wood", amount = 4, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "Flint", amount = 6, upgradeCost = 3 },
+                    new RecipeIngredient { prefab = "LeatherScraps", amount = 0, upgradeCost = 2 },
+                }
+            };
+            Loader.AddDefinition(FlintAxe);
+
             // Flint Battleaxe
             ItemDefinition Flint_greataxe = new ItemDefinition();
             Flint_greataxe.Name = "Flint greataxe";
@@ -1484,6 +1580,44 @@ namespace ValheimArmory
             };
             Loader.AddDefinition(Bonemass_Axe);
 
+
+            // Bonemass Dualaxes
+            ItemDefinition BonemassDualaxes = new ItemDefinition();
+            BonemassDualaxes.Name = "Bonemasses Dualaxes";
+            BonemassDualaxes.Category = ItemCategory.Axes;
+            BonemassDualaxes.prefab = "VABone_dualaxes";
+            BonemassDualaxes.icon = "bonerot_dualaxes";
+            BonemassDualaxes.craftedAt = "forge";
+            BonemassDualaxes.craftAmount = 1;
+            BonemassDualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.slash, new ItemStatConfig{ default_value = 70, min =  0, max =  200 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.poison, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
+                { ItemStat.poison_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
+                { ItemStat.chop, new ItemStatConfig{ default_value = 45, min =  0, max =  200 } },
+                { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 26, min =  0, max =  150 } },
+                { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 19, min =  1, max =  50 } },
+                { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.05f, min =  -0.20f, max =  0 } },
+            };
+            BonemassDualaxes.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "WitheredBone", amount = 12, upgradeCost = 10 },
+                    new RecipeIngredient { prefab = "Iron", amount = 40, upgradeCost = 20 },
+                    new RecipeIngredient { prefab = "Wishbone", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "TrophyBonemass", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "LeatherScraps", amount = 0, upgradeCost = 4 },
+                }
+            };
+            Loader.AddDefinition(BonemassDualaxes);
+            
+
             // Crystal Axe
             ItemDefinition Crystal_Axe = new ItemDefinition();
             Crystal_Axe.Name = "Crystal Axe";
@@ -1589,7 +1723,7 @@ namespace ValheimArmory
 
             // Moder Dualaxes
             ItemDefinition Moder_Dualaxes = new ItemDefinition();
-            Moder_Dualaxes.Name = "Crystal dualaxes";
+            Moder_Dualaxes.Name = "Moder dualaxes";
             Moder_Dualaxes.Category = ItemCategory.Axes;
             Moder_Dualaxes.prefab = "VAModer_dualaxes";
             Moder_Dualaxes.icon = "moder_dualaxes";
@@ -1656,7 +1790,7 @@ namespace ValheimArmory
 
             // Blackmetal Greataxe
             ItemDefinition Blackmetal_Greataxe = new ItemDefinition();
-            Blackmetal_Greataxe.Name = "Blackmetal Greataxe";
+            Blackmetal_Greataxe.Name = "Blackmetal Greataxe (Legacy)";
             Blackmetal_Greataxe.Category = ItemCategory.Axes;
             Blackmetal_Greataxe.prefab = "VAblackmetal_2h_axe";
             Blackmetal_Greataxe.icon = "blackmetal_2h_axe";
@@ -2900,6 +3034,34 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(Silver_Wolf_Towershield);
+
+            // Dverger tower shield
+            ItemDefinition dverger_tower_shield = new ItemDefinition();
+            dverger_tower_shield.Name = "Dverger Towershield";
+            dverger_tower_shield.Category = ItemCategory.Shields;
+            dverger_tower_shield.prefab = "VAdverger_tower";
+            dverger_tower_shield.icon = "dverger_towershield";
+            dverger_tower_shield.craftedAt = "blackforge";
+            dverger_tower_shield.craftAmount = 1;
+            dverger_tower_shield.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 122, min =  0, max =  200 } },
+                { ItemStat.block_armor_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
+                { ItemStat.block_force, new ItemStatConfig{ default_value = 150, min =  0, max =  200 } },
+                { ItemStat.block_force_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  30 } },
+                { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.15f, min =  -0.15f, max =  0 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  500 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+            };
+            dverger_tower_shield.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "BlackMarble", amount = 20, upgradeCost = 10 },
+                    new RecipeIngredient { prefab = "YggdrasilWood", amount = 12, upgradeCost = 6 },
+                    new RecipeIngredient { prefab = "BlackCore", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "Copper", amount = 14, upgradeCost = 10 },
+                }
+            };
+            Loader.AddDefinition(dverger_tower_shield);
         }
 
         private void LoadDaggers()
@@ -3583,6 +3745,34 @@ namespace ValheimArmory
         private void LoadSpears()
         {
             Logger.LogInfo("Loading Spears");
+            // Flint Spear
+            ItemDefinition FlintSpear = new ItemDefinition();
+            FlintSpear.Name = "Flint Spear";
+            FlintSpear.Category = ItemCategory.Spears;
+            FlintSpear.prefab = "VASpearFlint";
+            FlintSpear.icon = "flint_spear";
+            FlintSpear.craftedAt = "piece_workbench";
+            FlintSpear.craftAmount = 1;
+            FlintSpear.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 4, min =  0, max =  48 } },
+                { ItemStat.pierce, new ItemStatConfig{ default_value = 20, min =  0, max =  120 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 30, min =  0, max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 6, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 8, min =  1, max =  50 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  300 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+            };
+            FlintSpear.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "Wood", amount = 5, upgradeCost = 3 },
+                    new RecipeIngredient { prefab = "Flint", amount = 10, upgradeCost = 5 },
+                    new RecipeIngredient { prefab = "LeatherScraps", amount = 2, upgradeCost = 1 },
+                }
+            };
+            Loader.AddDefinition(FlintSpear);
+
             // Moder Spear
             ItemDefinition Moders_Strike = new ItemDefinition();
             Moders_Strike.Name = "Moders Strike";
@@ -3841,6 +4031,37 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(Elders_Fist);
+
+
+            // Flint Mace
+            ItemDefinition FlintMace = new ItemDefinition();
+            FlintMace.Name = "Flint Mace";
+            FlintMace.Category = ItemCategory.Maces;
+            FlintMace.prefab = "VAFlintMace";
+            FlintMace.icon = "flintMace";
+            FlintMace.craftedAt = "piece_workbench";
+            FlintMace.craftAmount = 1;
+            FlintMace.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.blunt, new ItemStatConfig{ default_value = 16, min =  0, max =  90 } },
+                { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 30, min =  0, max =  120 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 4, min =  0, max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 7, min =  1, max =  30 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 14, min =  1, max =  50 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+            };
+            FlintMace.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "Wood", amount = 4, upgradeCost = 8 },
+                    new RecipeIngredient { prefab = "Flint", amount = 8, upgradeCost = 8 },
+                    new RecipeIngredient { prefab = "LeatherScraps", amount = 2, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "BoneFragments", amount = 0, upgradeCost = 5 },
+                }
+            };
+            Loader.AddDefinition(FlintMace);
+            
         }
 
         private void LoadMagic()
@@ -4030,6 +4251,42 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(Druidic_Staff_of_Fire);
+
+            // Soulstealer
+            ItemDefinition Soulstealer = new ItemDefinition();
+            Soulstealer.Name = "Soulstealer";
+            Soulstealer.Category = ItemCategory.Magics;
+            Soulstealer.prefab = "VASoulStealer";
+            Soulstealer.icon = "soulstealer";
+            Soulstealer.craftedAt = "piece_magetable";
+            Soulstealer.craftAmount = 1;
+            Soulstealer.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.pierce, new ItemStatConfig{ default_value = 200, min =  0, max =  300 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
+                { ItemStat.spirit, new ItemStatConfig{ default_value = 100, min =  0, max =  300 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 200, min =  0, max =  300 } },
+                { ItemStat.block_armor, new ItemStatConfig{ default_value = 3, min =  0, max =  150 } },
+                { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  300 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
+                { ItemStat.crossbow_reload_speed, new ItemStatConfig{ default_value = 2f, min =  0.01f, max =  3.5f } },
+                { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
+                { ItemStat.primary_attack_percent_health_cost, new ItemStatConfig{ default_value = 12, min =  0, max =  50 } },
+                { ItemStat.primary_attack_flat_health_cost, new ItemStatConfig{ default_value = 10, min =  0, max =  120 } },
+                { ItemStat.primary_attack_health_returned, new ItemStatConfig{ default_value = 10, min =  0, max =  50 } },
+                { ItemStat.primary_attack_projectile_count, new ItemStatConfig { default_value = 2, min =  1, max =  10 } },
+                { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 200, min =  0, max =  300 } },
+            };
+            Soulstealer.recipe = new RecipeDefinition
+            {
+                recipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { prefab = "FlametalNew", amount = 18, upgradeCost = 10 },
+                    new RecipeIngredient { prefab = "Blackwood", amount = 24, upgradeCost = 12 },
+                    new RecipeIngredient { prefab = "GemstoneRed", amount = 2, upgradeCost = 2 },
+                    new RecipeIngredient { prefab = "DvergrNeedle", amount = 1, upgradeCost = 0 },
+                    new RecipeIngredient { prefab = "Bronze", amount = 0, upgradeCost = 6 },
+                }
+            };
+            Loader.AddDefinition(Soulstealer);
         }
 
         private void LoadPickaxes()
