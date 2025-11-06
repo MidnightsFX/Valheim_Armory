@@ -1,3 +1,12 @@
+**1.25.1**
+ ---
+ ```
+ - Fixes flint axe config
+ - Adds primary and secondary force multipliers (knockback) configuration for all modded sledges
+ - Adjusts modded sledges knockback to allow primary attacks to keep enemies at arms reach, and slam to send them flying (delete your config if you want the new defaults)
+ - Reduces early game maces/hammers default force (knockback)
+ ```
+
 **1.25.0**
  ---
  ```

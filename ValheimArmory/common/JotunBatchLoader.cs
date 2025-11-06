@@ -15,6 +15,7 @@ namespace ValheimArmory.common
         internal static List<ItemDefinition> resourceDefinitions = new List<ItemDefinition>();
         internal static bool runningQueuedChanges = false;
         internal static AssetBundle Assets;
+        internal static Dictionary<string, string> AddedItems = new Dictionary<string, string>();
 
         internal static readonly AcceptableValueList<string> allowedModifiers = new AcceptableValueList<string>(new string[] {
             HitData.DamageModifier.Normal.ToString(),
@@ -63,6 +64,8 @@ namespace ValheimArmory.common
                 // Build a compacted display name for reference, this primarily just needs spaces removed.
                 itemdef.DisplayName = string.Join("", itemdef.Name.Split(default(string[]), StringSplitOptions.RemoveEmptyEntries));
                 // Skip over all loading of items that are disabled.
+                // Blow up if adding a non-unique data control
+                AddedItems.Add(itemdef.DisplayName, itemdef.prefab);
                 // if (!itemdef.enabled) { continue; }
                 itemdef.craftable_cfg = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftable", itemdef.craftable, $"Enable/Disable the crafting recipe for {itemdef.Name}.");
                 itemdef.stationlvl_cfg = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-stationRequiredLevel", itemdef.reqStationlevel, $"Sets the required minimum crafting station level to craft {itemdef.Name}", true, 1, 4);
@@ -227,6 +230,12 @@ namespace ValheimArmory.common
                     break;
                 case ItemStat.attack_force:
                     itemData.m_shared.m_attackForce = updatedValue;
+                    break;
+                case ItemStat.secondary_attack_force_multiply:
+                    itemData.m_shared.m_secondaryAttack.m_forceMultiplier = updatedValue;
+                    break;
+                case ItemStat.primary_attack_force_multiply:
+                    itemData.m_shared.m_attack.m_forceMultiplier = updatedValue;
                     break;
                 // Elemental Damage Types
                 case ItemStat.fire:

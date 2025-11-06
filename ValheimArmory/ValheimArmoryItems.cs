@@ -1354,7 +1354,7 @@ namespace ValheimArmory
             
             // Flint Axe
             ItemDefinition FlintAxe = new ItemDefinition();
-            FlintAxe.Name = "Flint greataxe";
+            FlintAxe.Name = "Flint axe";
             FlintAxe.Category = ItemCategory.Axes;
             FlintAxe.prefab = "VAFlint_Axe";
             FlintAxe.icon = "flint_axe";
@@ -2285,13 +2285,15 @@ namespace ValheimArmory
                 { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
                 { ItemStat.poison, new ItemStatConfig{ default_value = 25, min =  0, max =  300 } },
                 { ItemStat.poison_per_level, new ItemStatConfig{ default_value = 3, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 210, min =  0, max =  400 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 64, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 50, min =  0, max =  120 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 24, min =  1, max =  50 } },
+                { ItemStat.primary_attack_force_multiply, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 30, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ default_value = 2.5f, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.15f, min =  -0.15f, max =  0 } },
             };
             Flametal_nature_sledge.recipe = new RecipeDefinition
@@ -2318,13 +2320,15 @@ namespace ValheimArmory
                 { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
                 { ItemStat.lightning, new ItemStatConfig{ default_value = 20, min =  0, max =  300 } },
                 { ItemStat.lightning_per_level, new ItemStatConfig{ default_value = 2, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 210, min =  0, max =  400 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 64, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 50, min =  0, max =  120 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 24, min =  1, max =  50 } },
+                { ItemStat.primary_attack_force_multiply, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 30, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ default_value = 2.5f, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.15f, min =  -0.15f, max =  0 } },
             };
             Flametal_lightning_sledge.recipe = new RecipeDefinition
@@ -2349,13 +2353,15 @@ namespace ValheimArmory
             Flametal_blood_sledge.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ default_value = 175, min =  0, max =  300 } },
                 { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 10, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 210, min =  0, max =  400 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 64, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 50, min =  0, max =  120 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 24, min =  1, max =  50 } },
+                { ItemStat.primary_attack_force_multiply, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 30, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ default_value = 2.5f, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.15f, min =  -0.15f, max =  0 } },
             };
             Flametal_blood_sledge.recipe = new RecipeDefinition
@@ -2380,13 +2386,15 @@ namespace ValheimArmory
             Flametal_sledge.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ default_value = 165, min =  0, max =  300 } },
                 { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 210, min =  0, max =  400 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 64, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 50, min =  0, max =  120 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 24, min =  1, max =  50 } },
+                { ItemStat.primary_attack_force_multiply, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 30, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ default_value = 2.5f, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.15f, min =  -0.15f, max =  0 } },
             };
             Flametal_sledge.recipe = new RecipeDefinition
@@ -2411,7 +2419,7 @@ namespace ValheimArmory
             Blackmarble_mace.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ default_value = 115, min =  0, max =  300 } },
                 { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 40, min =  0, max =  400 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 48, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  120 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
@@ -2450,7 +2458,9 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 20, min =  1, max =  50 } },
+                { ItemStat.primary_attack_force_multiply, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 40, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ default_value = 2.5f, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.15f, min =  -0.15f, max =  0 } },
             };
             Blackmetal_Sledge.recipe = new RecipeDefinition
@@ -2477,13 +2487,15 @@ namespace ValheimArmory
                 { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
                 { ItemStat.spirit, new ItemStatConfig{ default_value = 10, min =  0, max =  99 } },
                 { ItemStat.spirit_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 80, min =  0, max =  400 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 22, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 50, min =  0, max =  120 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
+                { ItemStat.primary_attack_force_multiply, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 22, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ default_value = 2.5f, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.15f, min =  -0.15f, max =  0 } },
             };
             Elders_Rock.recipe = new RecipeDefinition
@@ -2509,12 +2521,14 @@ namespace ValheimArmory
             Bronze_Sledge.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ default_value = 35, min =  0, max =  300 } },
                 { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 80, min =  0, max =  400 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 22, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
+                { ItemStat.primary_attack_force_multiply, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 22, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ default_value = 2.5f, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.15f, min =  -0.15f, max =  0 } },
             };
             Bronze_Sledge.recipe = new RecipeDefinition
@@ -2541,12 +2555,14 @@ namespace ValheimArmory
                 { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
                 { ItemStat.poison, new ItemStatConfig{ default_value = 20, min =  0, max =  99 } },
                 { ItemStat.poison_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 100, min =  0, max =  400 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 90, min =  0, max =  400 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 31, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 14, min =  1, max =  50 } },
+                { ItemStat.primary_attack_force_multiply, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 24, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ default_value = 2.5f, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.15f, min =  -0.15f, max =  0 } },
             };
             Bonemasses_Rage.recipe = new RecipeDefinition
@@ -2580,7 +2596,9 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min =  0, max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ default_value = 15, min =  1, max =  50 } },
+                { ItemStat.primary_attack_force_multiply, new ItemStatConfig{ default_value = 1, min =  1, max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 24, min =  1, max =  50 } },
+                { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ default_value = 2.5f, min =  1, max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ default_value = -0.15f, min =  -0.15f, max =  0 } },
             };
             Silver_Sledge.recipe = new RecipeDefinition
