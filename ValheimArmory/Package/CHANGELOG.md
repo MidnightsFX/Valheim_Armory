@@ -1,3 +1,12 @@
+**1.25.2**
+ ---
+ ```
+ - Updates Korean and French translations (thanks bellreco0912-art and Dalkhus)
+ - Fixes for bolts not showing up in the bolt category in MyLittleUI
+ - Fixes for bolts/arrows from VA not returning ammo from the archery target
+ - Localization for new weapons
+ ```
+
 **1.25.1**
  ---
  ```

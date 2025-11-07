@@ -16,6 +16,7 @@ namespace ValheimArmory.common
         internal static bool runningQueuedChanges = false;
         internal static AssetBundle Assets;
         internal static Dictionary<string, string> AddedItems = new Dictionary<string, string>();
+        internal static List<string> ArcheryAmmoToAdd = new List<string>();
 
         internal static readonly AcceptableValueList<string> allowedModifiers = new AcceptableValueList<string>(new string[] {
             HitData.DamageModifier.Normal.ToString(),
@@ -45,6 +46,7 @@ namespace ValheimArmory.common
                 // The server does not actually do anything with prefabs, and is not responsible for modifying them
                 BatchAddItems();
                 SetupOnChange();
+                ItemManager.OnItemsRegistered += AddAmmoItemsToArcheryTarget;
             }
 
             // Flush to disk
@@ -185,6 +187,11 @@ namespace ValheimArmory.common
                     Requirements = itemdef.recipe.recipeReqs.ToArray()
                 };
                 ItemManager.Instance.AddItem(new CustomItem(ItemPrefab, fixReference: true, itemcfg));
+
+                // This item needs to be included as a returnable arrow/bolt
+                if (itemdef.Category == ItemCategory.Arrows) {
+                    ArcheryAmmoToAdd.Add(itemdef.prefab);
+                }
             }
             return true;
         }
@@ -546,6 +553,19 @@ namespace ValheimArmory.common
                 {
                     // Logger.LogDebug($"Updating {id.m_itemData.m_shared.m_name}");
                     callback(id.m_itemData);
+                }
+            }
+        }
+
+        static void AddAmmoItemsToArcheryTarget() {
+            GameObject archerTarget = PrefabManager.Instance.GetPrefab("piece_ArcheryTarget");
+            ArcheryTarget ArcherAmmoManger = archerTarget.GetComponentInChildren<ArcheryTarget>(true);
+
+            foreach(string ammoPrefab in ArcheryAmmoToAdd) {
+                Logger.LogDebug($"Adding {ammoPrefab} to Archery Target Ammo Return.");
+                ItemDrop ammoID = PrefabManager.Instance.GetPrefab(ammoPrefab).GetComponent<ItemDrop>();
+                if (ammoID != null && ArcherAmmoManger.m_returnAmmo.Contains(ammoID) == false) {
+                    ArcherAmmoManger.m_returnAmmo.Add(ammoID);
                 }
             }
         }

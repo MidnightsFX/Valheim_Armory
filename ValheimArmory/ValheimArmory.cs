@@ -26,7 +26,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.25.1";
+        public const string PluginVersion = "1.25.2";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -106,6 +106,7 @@ namespace ValheimArmory
                         string updated_local_translation = File.ReadAllText(ondiskLocalization);
                         Localization.AddJsonFile(localization_name[2], updated_local_translation);
                     } catch {
+                        Logger.LogWarning("Failed to update on-disk localization, it will be overwritten.");
                         File.WriteAllText(ondiskLocalization, cleaned_localization);
                         //Logger.LogInfo($"Reading {embeddedResouce}");
                         Localization.AddJsonFile(localization_name[2], cleaned_localization);
@@ -116,7 +117,7 @@ namespace ValheimArmory
                     Localization.AddJsonFile(localization_name[2], cleaned_localization);
                 }
 
-                Logger.LogInfo($"Added localization: '{localization_name[2]}'");
+                Logger.LogDebug($"Added localization: '{localization_name[2]}'");
                 // Logging some characters seem to cause issues sometimes
                 // if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Localization Text: {cleaned_localization}"); }
                 //Localization.AddTranslation(localization_name[2], localization);
@@ -133,13 +134,13 @@ namespace ValheimArmory
                     extra_keys.Remove(entry.Key);
                     if (!cached_localization.ContainsKey(entry.Key))
                     {
-                        Logger.LogInfo($"Adding missing localization key {entry.Key}");
+                        Logger.LogDebug($"Adding missing localization key {entry.Key}");
                         cached_localization.Add(entry.Key, entry.Value);
                     }
                 }
                 if (extra_keys.Count > 0)
                 {
-                    Logger.LogInfo($"Removing extra keys {string.Join(",", extra_keys)}.");
+                    Logger.LogDebug($"Removing extra keys {string.Join(",", extra_keys)}.");
                     foreach (string key in extra_keys)
                     {
                         cached_localization.Remove(key);
