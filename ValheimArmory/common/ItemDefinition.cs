@@ -1,4 +1,5 @@
 ﻿using Jotunn.Configs;
+using System;
 using System.Collections.Generic;
 
 namespace ValheimArmory.common
@@ -106,8 +107,10 @@ namespace ValheimArmory.common
 
     class ItemStatConfig {
         public bool configurable { get; set; } = true;
+        public bool isInt { get; set; } = false;
         public float default_value { get; set; }
         public BepInEx.Configuration.ConfigEntry<float> cfg { get; set; }
+        public BepInEx.Configuration.ConfigEntry<int> cfgInt { get; set; }
         public float min { get; set; } = 0f;
         public float max { get; set; } = 400f;
     }

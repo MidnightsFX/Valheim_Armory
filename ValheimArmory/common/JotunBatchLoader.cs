@@ -5,6 +5,7 @@ using Jotunn.Entities;
 using Jotunn.Managers;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using UnityEngine;
 
@@ -76,7 +77,11 @@ namespace ValheimArmory.common
                 // Setup the modifiable stats that this item has defined
                 foreach (KeyValuePair<ItemStat, ItemStatConfig> stat in itemdef.modifableStats) {
                     if (stat.Value.configurable == false) { continue; }
-                    stat.Value.cfg= VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-{stat.Key}", stat.Value.default_value, $"Value for {stat.Key} on {itemdef.Name}", true, stat.Value.min, stat.Value.max);
+                    if (stat.Value.isInt) {
+                        stat.Value.cfgInt = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-{stat.Key}", (int)stat.Value.default_value, $"Value for {stat.Key} on {itemdef.Name}", true, (int)stat.Value.min, (int)stat.Value.max);
+                    } else {
+                        stat.Value.cfg = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-{stat.Key}", stat.Value.default_value, $"Value for {stat.Key} on {itemdef.Name}", true, stat.Value.min, stat.Value.max);
+                    }
                 }
                 // Set the damage modifiers for this item
                 if (itemdef.damageMods != null) {
@@ -119,15 +124,26 @@ namespace ValheimArmory.common
                 // All of the configurable stat variables
                 foreach (KeyValuePair<ItemStat, ItemStatConfig> stat in itemdef.modifableStats) {
                     if (stat.Value.configurable == false) { continue; }
-                    stat.Value.cfg.SettingChanged += (sender, args) => {
+                    void UpdateFromConfig(object sender, EventArgs args) {
                         if (ZNet.instance.enabled == false) { return; }
-                        stat.Value.default_value = stat.Value.cfg.Value;
+                        if (stat.Value.isInt) {
+                            stat.Value.default_value = stat.Value.cfgInt.Value;
+                        } else {
+                            stat.Value.default_value = stat.Value.cfg.Value;
+                        }
                         // Update player items
                         UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
                         // Update in world items, this is delayed and batched to prevent lag spikes.
                         IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(itemdef.prefab));
                         UpdateItemInWorldSynchronize(objects, true, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
-                    };
+                    }
+
+                    if (stat.Value.isInt) {
+                        stat.Value.cfgInt.SettingChanged += UpdateFromConfig;
+                    } else {
+                        stat.Value.cfg.SettingChanged += UpdateFromConfig;
+                    }
+                    
                 }
                 // Logger.LogInfo("Setup stat changes");
 
@@ -167,7 +183,11 @@ namespace ValheimArmory.common
                     if (modstat.Value.configurable == false) {
                         ItemDataConfigModifier(modstat.Key, modstat.Value.default_value, ItemD.m_itemData);
                     } else {
-                        ItemDataConfigModifier(modstat.Key, modstat.Value.cfg.Value, ItemD.m_itemData);
+                        if (modstat.Value.isInt) {
+                            ItemDataConfigModifier(modstat.Key, modstat.Value.cfgInt.Value, ItemD.m_itemData);
+                        } else {
+                            ItemDataConfigModifier(modstat.Key, modstat.Value.cfg.Value, ItemD.m_itemData);
+                        }
                     }
                 }
                 // Modify this items resistances

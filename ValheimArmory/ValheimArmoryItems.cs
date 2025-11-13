@@ -1361,6 +1361,7 @@ namespace ValheimArmory
             FlintAxe.craftedAt = "piece_workbench";
             FlintAxe.craftAmount = 1;
             FlintAxe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 1, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 20, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
@@ -1393,6 +1394,7 @@ namespace ValheimArmory
             Flint_greataxe.craftedAt = "piece_workbench";
             Flint_greataxe.craftAmount = 1;
             Flint_greataxe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 1, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 25, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 45, min =  0, max =  200 } },
@@ -1425,6 +1427,7 @@ namespace ValheimArmory
             Flint_dualaxes.craftedAt = "piece_workbench";
             Flint_dualaxes.craftAmount = 1;
             Flint_dualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 1, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 20, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
@@ -1457,6 +1460,7 @@ namespace ValheimArmory
             Bronze_Lumber_Axe.craftedAt = "forge";
             Bronze_Lumber_Axe.craftAmount = 1;
             Bronze_Lumber_Axe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 2, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 6, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
@@ -1489,6 +1493,7 @@ namespace ValheimArmory
             Bronze_dualaxes.craftedAt = "forge";
             Bronze_dualaxes.craftAmount = 1;
             Bronze_dualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 2, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 40, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
@@ -1521,6 +1526,7 @@ namespace ValheimArmory
             Iron_dualaxes.craftedAt = "forge";
             Iron_dualaxes.craftAmount = 1;
             Iron_dualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 3, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 60, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
@@ -1553,6 +1559,7 @@ namespace ValheimArmory
             Bonemass_Axe.craftedAt = "forge";
             Bonemass_Axe.craftAmount = 1;
             Bonemass_Axe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 3, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 70, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.poison, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
@@ -1590,6 +1597,7 @@ namespace ValheimArmory
             BonemassDualaxes.craftedAt = "forge";
             BonemassDualaxes.craftAmount = 1;
             BonemassDualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 3, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 70, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.poison, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
@@ -1627,6 +1635,7 @@ namespace ValheimArmory
             Crystal_Axe.craftedAt = "forge";
             Crystal_Axe.craftAmount = 1;
             Crystal_Axe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 4, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.spirit, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
@@ -1661,6 +1670,7 @@ namespace ValheimArmory
             Crystal_dualaxes.craftedAt = "forge";
             Crystal_dualaxes.craftAmount = 1;
             Crystal_dualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 4, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.spirit, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
@@ -1695,6 +1705,7 @@ namespace ValheimArmory
             Moder_Axe.craftedAt = "forge";
             Moder_Axe.craftAmount = 1;
             Moder_Axe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 4, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.frost, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
@@ -1730,6 +1741,7 @@ namespace ValheimArmory
             Moder_Dualaxes.craftedAt = "forge";
             Moder_Dualaxes.craftAmount = 1;
             Moder_Dualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 4, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.frost, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
@@ -1765,6 +1777,7 @@ namespace ValheimArmory
             Blackmetal_dualaxes.craftedAt = "forge";
             Blackmetal_dualaxes.craftAmount = 1;
             Blackmetal_dualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 5, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 100, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 60, min =  0, max =  200 } },
@@ -1797,6 +1810,7 @@ namespace ValheimArmory
             Blackmetal_Greataxe.craftedAt = "forge";
             Blackmetal_Greataxe.craftAmount = 1;
             Blackmetal_Greataxe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 5, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 130, min =  0, max =  300 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 60, min =  0, max =  300 } },
@@ -1829,6 +1843,7 @@ namespace ValheimArmory
             Jotun_dualaxes.craftedAt = "blackforge";
             Jotun_dualaxes.craftAmount = 1;
             Jotun_dualaxes.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 5, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 120, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.poison, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
@@ -1864,6 +1879,7 @@ namespace ValheimArmory
             Jotun_battleaxe.craftedAt = "blackforge";
             Jotun_battleaxe.craftAmount = 1;
             Jotun_battleaxe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 5, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 140, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.poison, new ItemStatConfig{ default_value = 13, min =  0, max =  200 } },
@@ -1899,6 +1915,7 @@ namespace ValheimArmory
             Jotun_halfblade.craftedAt = "blackforge";
             Jotun_halfblade.craftAmount = 1;
             Jotun_halfblade.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 5, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.poison, new ItemStatConfig{ default_value = 40, min =  0, max =  200 } },
@@ -1934,6 +1951,7 @@ namespace ValheimArmory
             Eikthyrs_Greataxe.craftedAt = "piece_workbench";
             Eikthyrs_Greataxe.craftAmount = 1;
             Eikthyrs_Greataxe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 1, min =  0, max =  6, isInt = true } },
                 { ItemStat.blunt, new ItemStatConfig{ default_value = 10, min =  0, max =  200 } },
                 { ItemStat.blunt_per_level, new ItemStatConfig{ default_value = 2, min =  0, max =  50 } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 25, min =  0, max =  200 } },
@@ -1971,6 +1989,7 @@ namespace ValheimArmory
             Blackmetal_Battleaxe.craftedAt = "forge";
             Blackmetal_Battleaxe.craftAmount = 1;
             Blackmetal_Battleaxe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 5, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 120, min =  0, max =  300 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 60, min =  0, max =  300 } },
@@ -2006,6 +2025,7 @@ namespace ValheimArmory
             Flametal_Battleaxe.craftedAt = "blackforge";
             Flametal_Battleaxe.craftAmount = 1;
             Flametal_Battleaxe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 6, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 150, min =  0, max =  300 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 90, min =  0, max =  300 } },
@@ -2039,6 +2059,7 @@ namespace ValheimArmory
             Flametal_Primal_Battleaxe.craftedAt = "blackforge";
             Flametal_Primal_Battleaxe.craftAmount = 1;
             Flametal_Primal_Battleaxe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 6, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 150, min =  0, max =  300 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.poison, new ItemStatConfig{ default_value = 25, min =  0, max =  300 } },
@@ -2074,6 +2095,7 @@ namespace ValheimArmory
             Flametal_Lightning_Battleaxe.craftedAt = "blackforge";
             Flametal_Lightning_Battleaxe.craftAmount = 1;
             Flametal_Lightning_Battleaxe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 6, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 150, min =  0, max =  300 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.lightning, new ItemStatConfig{ default_value = 20, min =  0, max =  300 } },
@@ -2109,6 +2131,7 @@ namespace ValheimArmory
             Flametal_Blood_Battleaxe.craftedAt = "blackforge";
             Flametal_Blood_Battleaxe.craftAmount = 1;
             Flametal_Blood_Battleaxe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 6, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 150, min =  0, max =  300 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 90, min =  0, max =  300 } },
@@ -2142,6 +2165,7 @@ namespace ValheimArmory
             Flametal_Axe.craftedAt = "blackforge";
             Flametal_Axe.craftAmount = 1;
             Flametal_Axe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 6, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 140, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
@@ -2174,6 +2198,7 @@ namespace ValheimArmory
             Flametal_Primal_Axe.craftedAt = "blackforge";
             Flametal_Primal_Axe.craftAmount = 1;
             Flametal_Primal_Axe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 6, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 140, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.poison, new ItemStatConfig{ default_value = 25, min =  0, max =  300 } },
@@ -2209,6 +2234,7 @@ namespace ValheimArmory
             Flametal_Lightning_Axe.craftedAt = "blackforge";
             Flametal_Lightning_Axe.craftAmount = 1;
             Flametal_Lightning_Axe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 6, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 140, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.lightning, new ItemStatConfig{ default_value = 20, min =  0, max =  300 } },
@@ -2244,6 +2270,7 @@ namespace ValheimArmory
             Flametal_Blood_Axe.craftedAt = "blackforge";
             Flametal_Blood_Axe.craftAmount = 1;
             Flametal_Blood_Axe.modifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 6, min =  0, max =  6, isInt = true } },
                 { ItemStat.slash, new ItemStatConfig{ default_value = 140, min =  0, max =  200 } },
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
@@ -4291,7 +4318,7 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_percent_health_cost, new ItemStatConfig{ default_value = 12, min =  0, max =  50 } },
                 { ItemStat.primary_attack_flat_health_cost, new ItemStatConfig{ default_value = 10, min =  0, max =  120 } },
                 { ItemStat.primary_attack_health_returned, new ItemStatConfig{ default_value = 10, min =  0, max =  50 } },
-                { ItemStat.primary_attack_projectile_count, new ItemStatConfig { default_value = 2, min =  1, max =  10 } },
+                { ItemStat.primary_attack_projectile_count, new ItemStatConfig { default_value = 2, min =  1, max =  10, isInt = true } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 200, min =  0, max =  300 } },
             };
             Soulstealer.recipe = new RecipeDefinition
@@ -4335,7 +4362,7 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ default_value = 4, min = 0, max = 50 } },
                 { ItemStat.secondary_attack_flat_health_cost, new ItemStatConfig{ default_value = 6, min = 0, max = 50 } },
                 { ItemStat.secondary_attack_percent_health_cost, new ItemStatConfig{ default_value = 0, min = 0, max = 100 } },
-                { ItemStat.tool_level, new ItemStatConfig{ default_value = 1, min = 0, max = 5 } },
+                { ItemStat.tool_level, new ItemStatConfig{ default_value = 1, min = 0, max = 5, isInt = true } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 200, min = 0, max = 800 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min = 0, max = 200 } },
             };

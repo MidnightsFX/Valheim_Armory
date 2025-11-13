@@ -1,3 +1,17 @@
+**1.25.4**
+ ---
+ ```
+ - Fixes flint spear gaining frost damage on levelup
+ ```
+
+**1.25.3**
+ ---
+ ```
+ - Add tool level configuration for all Axe type weapons (already available on pickaxe)
+ - Fixes default tool level for flint axe being bronze level not flint level
+ - Converted projectile count on soulstealer to whole number config (delete your config file or reset the value to default if you have errors)
+ ```
+
 **1.25.2**
  ---
  ```
