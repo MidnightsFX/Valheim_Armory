@@ -51,6 +51,7 @@ namespace ValheimArmory.common
         crossbow_reload_stamina_drain,
         draw_stamina_drain,
         projectile_velocity,
+        projectile_accuracy_max,
         durability,
         durability_per_level,
         max_item_level,

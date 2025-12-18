@@ -15,13 +15,12 @@ namespace ValheimArmory.patches
             // This doesn't need to manipulate the result, we just want to hook into the skill type and item that cause the skill increase etc
             public static void Postfix(SkillType skillType, float factor)
             {
-                // if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Checking skilltype raise that includes blood hybrid weapon {skillType}"); }
                 // Current weapon skill types that have blood magic usage
                 if (skillType == Skills.SkillType.Bows || skillType == Skills.SkillType.Pickaxes)
                 {
                     if (Player.m_localPlayer == null) return;
-                    //List<ItemDrop.ItemData> equipedItems = Player.m_localPlayer.m_inventory.GetEquippedItems();
-                    // if (VAConfig.EnableDebugMode.Value == true) { Logger.LogInfo($"Checking for a blood-hybrid weapontype {Player.m_localPlayer.GetCurrentWeapon().m_dropPrefab.name}"); }
+                    ItemDrop.ItemData id = Player.m_localPlayer.GetCurrentWeapon();
+                    if (id == null || id.m_dropPrefab == null) return;
                     if (HybridWeapons.Contains(Player.m_localPlayer.GetCurrentWeapon().m_dropPrefab.name.GetHashCode()))
                     {
                         Player.m_localPlayer.RaiseSkill(Skills.SkillType.BloodMagic, VAConfig.HybridWeaponBloodMagicSkillIncrease.Value);

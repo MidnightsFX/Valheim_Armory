@@ -362,6 +362,7 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ default_value = 2, min =  0.01f, max =  2 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 60, min =  0, max =  120 } },
+                { ItemStat.projectile_accuracy_max, new ItemStatConfig{ default_value = 100, min =  0, max =  100 } },
             };
             Blackmetal_Bow.recipe = new RecipeDefinition
             {
@@ -395,6 +396,7 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ default_value = 2, min =  0.01f, max =  2 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 60, min =  0, max =  120 } },
+                { ItemStat.projectile_accuracy_max, new ItemStatConfig{ default_value = 95, min =  0, max =  100 } },
             };
             Carapace_Blood_Bow.recipe = new RecipeDefinition
             {
@@ -430,6 +432,7 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ default_value = 2, min =  0.01f, max =  2 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 60, min =  0, max =  120 } },
+                { ItemStat.projectile_accuracy_max, new ItemStatConfig{ default_value = 100, min =  0, max =  100 } },
             };
             Blood_Bone_Bow.recipe = new RecipeDefinition
             {
@@ -585,6 +588,7 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  300 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 45, min =  0, max =  120 } },
+                { ItemStat.projectile_accuracy_max, new ItemStatConfig{ default_value = 90, min =  0, max =  100 } },
             };
             Eikthyrs_Bow.recipe = new RecipeDefinition
             {
@@ -743,6 +747,7 @@ namespace ValheimArmory
                 { ItemStat.draw_stamina_drain, new ItemStatConfig{ default_value = 12, min =  1, max =  50 } },
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ default_value = 3f, min =  0.01f, max =  3f } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 60, min =  0, max =  120 } },
+                { ItemStat.projectile_accuracy_max, new ItemStatConfig{ default_value = 100, min =  0, max =  100 } },
             };
             Queens_Greatbow.recipe = new RecipeDefinition
             {
@@ -4380,35 +4385,44 @@ namespace ValheimArmory
         private void LoadNonCraftables()
         {
             // Arrow resources
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_ancient.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_bone.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Bows/projectiles/blood_projectile.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_boltBronze.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_boltFrost.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_boltObsidian.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_boltPoison.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_boltSurtling.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_greenmetal.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Arrows/VAbow_projectile_surtlingfire.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_ancient.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_bone.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Bows/projectiles/blood_projectile.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_boltBronze.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_boltFrost.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_boltObsidian.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_boltPoison.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_boltSurtling.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_greenmetal.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_surtlingfire.prefab");
             // Spear projectiles
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Spears/VAspearblackmetal_projectile.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Spears/VAspearmoder_projectile.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAspearblackmetal_projectile.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAspearmoder_projectile.prefab");
 
             // Magic projectiles
             //new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_ice_projectile.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_poison_projectile.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_spirit_projectile.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Magics/projectiles/staff_poison_projectile.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Magics/projectiles/staff_spirit_projectile.prefab");
             // new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/vfx_poison_explosion.prefab");
-            new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/vfx_spirit_explosion.prefab");
-        }
-    }
+            NonCraftablePrefab("Assets/Custom/Weapons/Magics/projectiles/vfx_spirit_explosion.prefab");
 
-    class NonCraftablePrefab
-    {
-        // full_path like: Assets/Custom/Pieces/VFortress/VF_creature_notify.prefab
-        public NonCraftablePrefab(AssetBundle EmbeddedResourceBundle, String full_path)
+            // Status effects
+            NonCraftableItem("Assets/Custom/statuses/VABloodBuff.asset");
+            NonCraftableItem("Assets/Custom/statuses/VAModerShield.asset");
+            NonCraftableItem("Assets/Custom/statuses/VAQueen_buff.asset");
+            NonCraftableItem("Assets/Custom/statuses/VAVineshield_resistance.asset");
+        }
+
+        private static void NonCraftableItem(string full_path)
         {
-            GameObject game_obj = EmbeddedResourceBundle.LoadAsset<GameObject>($"{full_path}");
+            SE_Stats status_effect = ValheimArmory.EmbeddedResourceBundle.LoadAsset<SE_Stats>($"{full_path}");
+            CustomStatusEffect customEffect = new CustomStatusEffect(status_effect, fixReference: false); ;
+            ItemManager.Instance.AddStatusEffect(customEffect);
+        }
+
+        public static void NonCraftablePrefab(String full_path)
+        {
+            GameObject game_obj = ValheimArmory.EmbeddedResourceBundle.LoadAsset<GameObject>($"{full_path}");
             CustomPrefab prefab_obj = new CustomPrefab(game_obj, true);
             PrefabManager.Instance.AddPrefab(prefab_obj);
         }

@@ -64,9 +64,9 @@ namespace ValheimArmory
             AbyssalKnifeBluntPerLevel = BindServerConfig("Vanilla Weapons", "AbyssalKnifeBluntPerLevel", 1f, "Blunt damage per level for the abyssal knife", true, 0, 10);
             AbyssalKnifeBlunt.SettingChanged += WeaponModifier.OnConfigAbyssalKnifeValueChanged;
             AbyssalKnifeBluntPerLevel.SettingChanged += WeaponModifier.OnConfigAbyssalKnifeValueChanged;
-            EnableVanillaSpear = BindServerConfig("Vanilla Weapons", "DisableVanillaFlintSpear", false, "Disables crafting of the vanilla spear, to be used in conjuction with the VA flint spear.");
+            EnableVanillaSpear = BindServerConfig("Vanilla Weapons", "VanillaFlintSpearCraftable", false, "Disables or enables crafting of the vanilla spear, to be used in conjuction with the VA flint spear.");
             EnableVanillaSpear.SettingChanged += WeaponModifier.OnConfigChangeModifyVanillaFlintSpear;
-            EnableVanillaFlintAxe = BindServerConfig("Vanilla Weapons", "DisableVanillaFlintAxe", false, "Disables crafting of the vanilla flint axe, to be used in conuction with the VA flint axe.");
+            EnableVanillaFlintAxe = BindServerConfig("Vanilla Weapons", "VanillaFlintAxeCraftable", false, "Disables or enables crafting of the vanilla flint axe, to be used in conuction with the VA flint axe.");
             EnableVanillaFlintAxe.SettingChanged += WeaponModifier.OnConfigChangeModifyVanillaFlintAxe;
 
 

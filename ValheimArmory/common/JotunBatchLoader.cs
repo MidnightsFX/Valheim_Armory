@@ -364,6 +364,9 @@ namespace ValheimArmory.common
                 case ItemStat.projectile_velocity:
                     itemData.m_shared.m_attack.m_projectileVel = updatedValue;
                     break;
+                case ItemStat.projectile_accuracy_max:
+                    itemData.m_shared.m_attack.m_projectileAccuracy = (100f - updatedValue);
+                    break;
                 // Item Modifiers
                 case ItemStat.durability:
                     itemData.m_shared.m_maxDurability = updatedValue;

@@ -1,3 +1,20 @@
+**1.25.6**
+ ---
+ ```
+ - Improves all weapons collision detection to more closely match vanilla weapons after the combat (slope) update changes
+ - Adjusts grip of blackmetal bow
+ - Improves consistency of disabling vanilla flint spear and flint axe (if enabled)
+ - Adjusts max accuracy of late game bows to be closer to vanilla bows
+    - Adds max accuracy configuration to all bows
+ - Registers status effects for modded weapons to allow other mods to use them
+ ```
+
+**1.25.5**
+ ---
+ ```
+ - Fixes generic damage bonus on flint mace when leveling up
+ ```
+
 **1.25.4**
  ---
  ```

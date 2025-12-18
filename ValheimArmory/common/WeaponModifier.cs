@@ -521,37 +521,33 @@ namespace ValheimArmory.common
 
         public static void OnConfigChangeModifyVanillaFlintAxe(object sender, EventArgs e)
         {
-            DisableVanillaFlintAxe();
+            ToggleVanillaFlintAxe();
         }
 
-        public static void DisableVanillaFlintAxe()
+        public static void ToggleVanillaFlintAxe()
         {
-            if (!SceneManager.GetActiveScene().name.Equals("main"))
-            {
-                return;
-            }
-
-            GameObject go = PrefabManager.Instance.GetPrefab("AxeFlint");
-            ItemDrop id = go.GetComponent<ItemDrop>();
-            Recipe recipe = ObjectDB.instance.GetRecipe(id.m_itemData);
-            recipe.m_enabled = VAConfig.EnableVanillaFlintAxe.Value;
+            if (ObjectDB.m_instance == null) { return; }
+            int recipeindex = RecipeIndexForPrefab("AxeFlint");
+            if (recipeindex == -1) { return; }
+            ObjectDB.instance.m_recipes[recipeindex].m_enabled = VAConfig.EnableVanillaFlintAxe.Value;
         }
 
         public static void OnConfigChangeModifyVanillaFlintSpear(object sender, EventArgs e)
         {
-            DisableVanillaFlintSpear();
+            ToggleVanillaFlintSpear();
         }
 
-        public static void DisableVanillaFlintSpear()
+        public static void ToggleVanillaFlintSpear()
         {
-            if (!SceneManager.GetActiveScene().name.Equals("main")) {
-                return;
-            }
+            if (ObjectDB.m_instance == null) { return; }
+            int recipeindex = RecipeIndexForPrefab("SpearFlint");
+            if (recipeindex == -1) { return; }
+            ObjectDB.instance.m_recipes[recipeindex].m_enabled = VAConfig.EnableVanillaSpear.Value;
+        }
 
-            GameObject go = PrefabManager.Instance.GetPrefab("SpearFlint");
-            ItemDrop id = go.GetComponent<ItemDrop>();
-            Recipe recipe = ObjectDB.instance.GetRecipe(id.m_itemData);
-            recipe.m_enabled = VAConfig.EnableVanillaSpear.Value;
+        public static int RecipeIndexForPrefab(string prefab)
+        {
+            return ObjectDB.instance.m_recipes.FindIndex(m => m.m_item != null && m.m_item.name == prefab);
         }
     }
 }
