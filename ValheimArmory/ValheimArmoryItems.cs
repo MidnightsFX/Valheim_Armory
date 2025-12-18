@@ -396,7 +396,7 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ default_value = 2, min =  0.01f, max =  2 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 60, min =  0, max =  120 } },
-                { ItemStat.projectile_accuracy_max, new ItemStatConfig{ default_value = 95, min =  0, max =  100 } },
+                { ItemStat.projectile_accuracy_max, new ItemStatConfig{ default_value = 100, min =  0, max =  100 } },
             };
             Carapace_Blood_Bow.recipe = new RecipeDefinition
             {
@@ -588,7 +588,7 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ default_value = 100, min =  0, max =  300 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ default_value = 50, min =  0, max =  150 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ default_value = 45, min =  0, max =  120 } },
-                { ItemStat.projectile_accuracy_max, new ItemStatConfig{ default_value = 90, min =  0, max =  100 } },
+                { ItemStat.projectile_accuracy_max, new ItemStatConfig{ default_value = 100, min =  0, max =  100 } },
             };
             Eikthyrs_Bow.recipe = new RecipeDefinition
             {

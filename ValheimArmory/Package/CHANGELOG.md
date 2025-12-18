@@ -1,3 +1,9 @@
+**1.25.7**
+ ---
+ ```
+ - Increases default accuracy of all bows to 100%
+ ```
+
 **1.25.6**
  ---
  ```
