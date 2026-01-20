@@ -1437,7 +1437,7 @@ namespace ValheimArmory
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
                 { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  200 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 12, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
@@ -1503,7 +1503,7 @@ namespace ValheimArmory
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 30, min =  0, max =  200 } },
                 { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  200 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 16, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
@@ -1536,7 +1536,7 @@ namespace ValheimArmory
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
                 { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  200 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 21, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
@@ -1609,7 +1609,7 @@ namespace ValheimArmory
                 { ItemStat.poison_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 45, min =  0, max =  200 } },
                 { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  200 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 26, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
@@ -1682,7 +1682,7 @@ namespace ValheimArmory
                 { ItemStat.spirit_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
                 { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  200 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 30, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
@@ -1753,7 +1753,7 @@ namespace ValheimArmory
                 { ItemStat.frost_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
                 { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  200 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 30, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
@@ -1787,7 +1787,7 @@ namespace ValheimArmory
                 { ItemStat.slash_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 60, min =  0, max =  200 } },
                 { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  200 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 39, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
@@ -1855,7 +1855,7 @@ namespace ValheimArmory
                 { ItemStat.poison_per_level, new ItemStatConfig{ default_value = 0, min =  0, max =  50 } },
                 { ItemStat.chop, new ItemStatConfig{ default_value = 80, min =  0, max =  200 } },
                 { ItemStat.chop_per_level, new ItemStatConfig{ default_value = 5, min =  0, max =  50 } },
-                { ItemStat.attack_force, new ItemStatConfig{ default_value = 50, min =  0, max =  200 } },
+                { ItemStat.attack_force, new ItemStatConfig{ default_value = 20, min =  0, max =  200 } },
                 { ItemStat.block_armor, new ItemStatConfig{ default_value = 48, min =  0, max =  150 } },
                 { ItemStat.block_force, new ItemStatConfig{ default_value = 20, min =  0, max =  150 } },
                 { ItemStat.durability, new ItemStatConfig{ default_value = 175, min =  0, max =  400 } },
@@ -4395,6 +4395,10 @@ namespace ValheimArmory
             NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_boltSurtling.prefab");
             NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_greenmetal.prefab");
             NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_surtlingfire.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_boltWood.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_boltCorewood.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_chitin.prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_needle.prefab");
             // Spear projectiles
             NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAspearblackmetal_projectile.prefab");
             NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAspearmoder_projectile.prefab");

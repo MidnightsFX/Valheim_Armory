@@ -160,9 +160,9 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Silver Axe | Forge | Mountain | `VAcrystal_axe` | ![crystal axe icon](https://i.postimg.cc/KjVkkWNf/silver-axe-1h-icon.png) |
   | Jotuns Bane (half) | Blackforge | Mistlands | `VAJotunn_single_axe` | ![jotun half blade](https://i.postimg.cc/63xxYX7M/jotunn-halfblade.png) |
   | Flametal Axe | Blackforge | Ashlands | `VAFlametal_Axe` | ![flametal axe](https://i.postimg.cc/6Q9CMc8Z/flametal-Axe-Base.png) |
-  | Flametal Blood Axe | Blackforge | Ashlands | `VAFlametal_Axe_Blood` | ![flametal blood axe](https://i.postimg.cc/6qdTdfz9/flametal-battleaxe-blood.png) |
-  | Flametal Lightning Axe | Blackforge | Ashlands | `VAFlametal_Axe_Lightning` | ![flametal lightning axe](https://i.postimg.cc/dVW3m1RT/flametal-battleaxe-lightning.png) |
-  | Flametal Primal Axe | Blackforge | Ashlands | `VAFlametal_Axe_Primal` | ![flametal primal axe](https://i.postimg.cc/bvsJ6hLV/flametal-battleaxe-primal.png) |
+  | Flametal Blood Axe | Blackforge | Ashlands | `VAFlametal_Axe_Blood` | ![flametal blood axe](https://i.postimg.cc/sXg9gmyz/flametal_axe_1h_blood.png) |
+  | Flametal Lightning Axe | Blackforge | Ashlands | `VAFlametal_Axe_Lightning` | ![flametal lightning axe](https://i.postimg.cc/QMbJDP2S/flametal_axe_1h_lightning.png) |
+  | Flametal Primal Axe | Blackforge | Ashlands | `VAFlametal_Axe_Primal` | ![flametal primal axe](https://i.postimg.cc/JnY3DX4k/flametal_axe_1h_primal.png) |
 
   *Note the Jotun Bane half axe is uncraftable by default*
 
@@ -188,9 +188,9 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Herkirs Wrath | Forge | Plains | `VAblackmetal_battleaxe` | ![blackmetal greataxe icon](https://i.imgur.com/2H94zhh.png) |
   | Jotuns Greataxe | Blackforge | Mistlands | `VAJotunn_2h_axe` | ![jotun greataxe icon](https://i.postimg.cc/TwtThW9J/jotun-2h-axe.png) |
   | Flametal Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_2h` | ![flametal greataxe](https://i.postimg.cc/0NqV42fK/flametal-battleaxe.png) |
-  | Flametal Blood Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_blood_2h` | ![flametal blood greataxe](https://i.postimg.cc/3w7ZBf8g/flametal-battleaxe-blood.png) |
-  | Flametal Lightning Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_lightning_2h` | ![flametal lightning greataxe](https://i.postimg.cc/5NCqMWjB/flametal-battleaxe-lightning.png) |
-  | Flametal Primal Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_primal_2h` | ![flametal primal greataxe](https://i.postimg.cc/QVG7MVVp/flametal-battleaxe-primal.png) |
+  | Flametal Blood Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_blood_2h` | ![flametal blood greataxe](https://i.postimg.cc/6qdTdfz9/flametal_battleaxe_blood.png) |
+  | Flametal Lightning Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_lightning_2h` | ![flametal lightning greataxe](https://i.postimg.cc/dVW3m1RT/flametal_battleaxe_lightning.png) |
+  | Flametal Primal Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_primal_2h` | ![flametal primal greataxe](https://i.postimg.cc/bvsJ6hLV/flametal_battleaxe_primal.png) |
 
   *Note Herkirs Wrath is uncraftable by default*
 
@@ -241,7 +241,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Wood Crossbow | Workbench | Meadows | `VACrossbowWood` | ![bronze crossbow icon](https://i.postimg.cc/02nGsdBH/wood-Crossbow.png) |
   | Bronze Crossbow | Forge | Blackforest | `VACrossbowBronze` | ![bronze crossbow icon](https://i.imgur.com/GkWbooT.png) |
   | Iron Crossbow | Forge | Swamp | `VACrossbowIron` | ![bronze arbalist icon](https://i.postimg.cc/QCCMz0sb/iron-crossbow.png) |
-  | Silver Crossbow | Forge | Mountain | `VACrossbowSilver` | ![bronze arbalist icon](https://i.postimg.cc/Hxb5PQMz/silver-crossbow.png) |
+  | Draugr Claw | Forge | Mountain | `VACrossbowSilver` | ![bronze arbalist icon](https://i.postimg.cc/Hxb5PQMz/silver-crossbow.png) |
   | Blackmetal Crossbow | Forge | Plains | `VACrossbowBlackmetal` | ![blackmetal crossbow](https://i.postimg.cc/nrkpFR0Q/blackmetal-crossbow.png) |
   | Bronze Arbalist | Forge | Plains | `VAArbalistBronze` | ![bronze arbalist icon](https://i.imgur.com/iuk67H0.png) |
 
@@ -262,7 +262,7 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Flametal Sledge | Blackforge | Ashlands | `VAflametal_sledge` | ![Flametal Sledge icon](https://i.postimg.cc/tJ1h6mPR/flametal-sledge.png) |
   | Thundermaker | Blackforge | Ashlands | `VAflametal_sledge_lightning` | ![Flametal Sledge lightning icon](https://i.postimg.cc/Wbg5fhFN/flametal-sledge-lightning.png) |
   | Earthshaker | Blackforge | Ashlands | `VAflametal_sledge_nature` | ![Flametal Sledge nature icon](https://i.postimg.cc/HLs3xzSn/flametal-sledge-nature.png) |
-  | Deathblow | Blackforge | Ashlands | `VAflametal_sledge_blood` | ![Flametal Sledge blood icon](https://i.postimg.cc/7hT2hJ8f/flametal-sledge-blood.png) |
+  | Deathblow | Blackforge | Ashlands | `VAflametal_sledge_blood` | ![Flametal Sledge blood icon](https://i.postimg.cc/BQkY4xyV/flametal-sledge-blood.png) |
 
   ### Added Maces
 

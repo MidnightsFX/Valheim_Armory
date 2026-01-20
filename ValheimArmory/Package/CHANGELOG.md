@@ -1,3 +1,12 @@
+**1.26.0**
+ ---
+ ```
+ - Remodel of the Blood flametal sledge
+ - Added 4 missing projectiles to znet scene
+ - Increases modded spear hitbox allowance
+ - Reduces spear turn rate
+ ```
+
 **1.25.7**
  ---
  ```
