@@ -1,3 +1,11 @@
+**1.26.1**
+ ---
+ ```
+ - Remodel of the Flametal Sledge, Earthshaker, and Thundermaker
+ - Fixes missing collider on chitin dual knives
+ - Reduces spear turn rate to match vanilla spears
+ ```
+
 **1.26.0**
  ---
  ```

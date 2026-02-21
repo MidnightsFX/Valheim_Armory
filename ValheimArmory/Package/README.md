@@ -259,9 +259,9 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Bronze sledge | Forge | Blackforest | `VABronzeSledge` | ![Bronze sledge icon](https://i.postimg.cc/4yMhXkZK/bronze-sledge.png) |
   | Silver sledge | Forge | Mountain | `VASilverSledge` | ![silver sledge icon](https://i.postimg.cc/RVCP5H7M/silver-sledge.png) |
   | Skyshatter | Forge | Plains | `VAblackmetal_sledge` | ![blackmetal sledge icon](https://i.imgur.com/ChVYaYS.png) |
-  | Flametal Sledge | Blackforge | Ashlands | `VAflametal_sledge` | ![Flametal Sledge icon](https://i.postimg.cc/tJ1h6mPR/flametal-sledge.png) |
-  | Thundermaker | Blackforge | Ashlands | `VAflametal_sledge_lightning` | ![Flametal Sledge lightning icon](https://i.postimg.cc/Wbg5fhFN/flametal-sledge-lightning.png) |
-  | Earthshaker | Blackforge | Ashlands | `VAflametal_sledge_nature` | ![Flametal Sledge nature icon](https://i.postimg.cc/HLs3xzSn/flametal-sledge-nature.png) |
+  | Flametal Sledge | Blackforge | Ashlands | `VAflametal_sledge` | ![Flametal Sledge icon](https://i.postimg.cc/fRkfScXC/flametal-sledge.png) |
+  | Thundermaker | Blackforge | Ashlands | `VAflametal_sledge_lightning` | ![Flametal Sledge lightning icon](https://i.postimg.cc/sgB5gVdS/flametal-sledge-lightning.png) |
+  | Earthshaker | Blackforge | Ashlands | `VAflametal_sledge_nature` | ![Flametal Sledge nature icon](https://i.postimg.cc/WzbkLVwF/flametal-sledge-nature.png) |
   | Deathblow | Blackforge | Ashlands | `VAflametal_sledge_blood` | ![Flametal Sledge blood icon](https://i.postimg.cc/BQkY4xyV/flametal-sledge-blood.png) |
 
   ### Added Maces
