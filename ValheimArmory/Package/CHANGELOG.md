@@ -1,3 +1,16 @@
+**1.27.0**
+ ---
+ ```
+ - Adds Hybrid weapon XP for soulstealer (bloodmagic + crossbows)
+ - Fixes flametal blood axe hp bonus to be 0.2%
+ - Remodel of Ashlands atgeirs
+    - New Blood atgier model
+    - New Lightning atgeir model
+    - New Primarl atgeir model
+ - Support for the PTB (save update) note: this is backwards compatible.
+ - Adjusted Flametal lightning knives attachment size to better fit character equipped size
+ ```
+
 **1.26.1**
  ---
  ```

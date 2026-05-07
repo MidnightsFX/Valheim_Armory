@@ -11,7 +11,8 @@ namespace ValheimArmory.patches
         [HarmonyPatch(typeof(Skills), nameof(Skills.RaiseSkill))]
         public static class BloodHybridWeaponsRaiseSkills
         {
-            static List<int> HybridWeapons = new List<int>() { "VABlood_bone_bow".GetHashCode(), "VABlood_Bones_pickaxe".GetHashCode(), "VAHeavy_Blood_Bone_Bow".GetHashCode() };
+            static List<string> HybridWeapons = new List<string>() { "VABlood_bone_bow", "VABlood_Bones_pickaxe", "VAHeavy_Blood_Bone_Bow" };
+            static string SoulStealer = "VASoulStealer";
             // This doesn't need to manipulate the result, we just want to hook into the skill type and item that cause the skill increase etc
             public static void Postfix(SkillType skillType, float factor)
             {
@@ -21,9 +22,12 @@ namespace ValheimArmory.patches
                     if (Player.m_localPlayer == null) return;
                     ItemDrop.ItemData id = Player.m_localPlayer.GetCurrentWeapon();
                     if (id == null || id.m_dropPrefab == null) return;
-                    if (HybridWeapons.Contains(Player.m_localPlayer.GetCurrentWeapon().m_dropPrefab.name.GetHashCode()))
-                    {
+                    string currentWeapon = Player.m_localPlayer.GetCurrentWeapon().m_dropPrefab.name;
+                    if (HybridWeapons.Contains(currentWeapon)) {
                         Player.m_localPlayer.RaiseSkill(Skills.SkillType.BloodMagic, VAConfig.HybridWeaponBloodMagicSkillIncrease.Value);
+                    }
+                    if (SoulStealer == currentWeapon) {
+                        Player.m_localPlayer.RaiseSkill(Skills.SkillType.Crossbows, VAConfig.HybridWeaponBloodMagicSkillIncrease.Value);
                     }
                 }
             }

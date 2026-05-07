@@ -4417,15 +4417,13 @@ namespace ValheimArmory
             NonCraftableItem("Assets/Custom/statuses/VAVineshield_resistance.asset");
         }
 
-        private static void NonCraftableItem(string full_path)
-        {
+        private static void NonCraftableItem(string full_path) {
             SE_Stats status_effect = ValheimArmory.EmbeddedResourceBundle.LoadAsset<SE_Stats>($"{full_path}");
             CustomStatusEffect customEffect = new CustomStatusEffect(status_effect, fixReference: false); ;
             ItemManager.Instance.AddStatusEffect(customEffect);
         }
 
-        public static void NonCraftablePrefab(String full_path)
-        {
+        public static void NonCraftablePrefab(String full_path) {
             GameObject game_obj = ValheimArmory.EmbeddedResourceBundle.LoadAsset<GameObject>($"{full_path}");
             CustomPrefab prefab_obj = new CustomPrefab(game_obj, true);
             PrefabManager.Instance.AddPrefab(prefab_obj);
