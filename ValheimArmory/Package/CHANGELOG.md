@@ -1,3 +1,10 @@
+**1.27.1**
+ ---
+ ```
+ - Fixes herkirs blackmetal axe description not showing
+ - Fixes one missing french translation
+ ```
+
 **1.27.0**
  ---
  ```
