@@ -1,3 +1,10 @@
+**1.27.2**
+ ---
+ ```
+ - Fixes flametal blood sledge dropping through the floor
+ - Fixes cost of flametal axes gems being too high
+ ```
+
 **1.27.1**
  ---
  ```

@@ -2223,7 +2223,7 @@ namespace ValheimArmory
             {
                 recipeItems = new List<RecipeIngredient> {
                     new RecipeIngredient { prefab = "FlametalNew", amount = 12, upgradeCost = 6 },
-                    new RecipeIngredient { prefab = "GemstoneGreen", amount = 4, upgradeCost = 1 },
+                    new RecipeIngredient { prefab = "GemstoneGreen", amount = 1, upgradeCost = 1 },
                     new RecipeIngredient { prefab = "CharredBone", amount = 10, upgradeCost = 0 },
                     new RecipeIngredient { prefab = "VAFlametal_Axe", amount = 1, upgradeCost = 0 },
                 }
@@ -2259,7 +2259,7 @@ namespace ValheimArmory
             {
                 recipeItems = new List<RecipeIngredient> {
                     new RecipeIngredient { prefab = "FlametalNew", amount = 12, upgradeCost = 6 },
-                    new RecipeIngredient { prefab = "GemstoneBlue", amount = 4, upgradeCost = 1 },
+                    new RecipeIngredient { prefab = "GemstoneBlue", amount = 1, upgradeCost = 1 },
                     new RecipeIngredient { prefab = "CharredBone", amount = 10, upgradeCost = 0 },
                     new RecipeIngredient { prefab = "VAFlametal_Axe", amount = 1, upgradeCost = 0 },
                 }
@@ -2293,7 +2293,7 @@ namespace ValheimArmory
             {
                 recipeItems = new List<RecipeIngredient> {
                     new RecipeIngredient { prefab = "FlametalNew", amount = 12, upgradeCost = 6 },
-                    new RecipeIngredient { prefab = "GemstoneRed", amount = 4, upgradeCost = 1 },
+                    new RecipeIngredient { prefab = "GemstoneRed", amount = 1, upgradeCost = 1 },
                     new RecipeIngredient { prefab = "CharredBone", amount = 10, upgradeCost = 0 },
                     new RecipeIngredient { prefab = "VAFlametal_Axe", amount = 1, upgradeCost = 0 },
                 }
