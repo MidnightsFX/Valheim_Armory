@@ -10,11 +10,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using ValheimArmory;
+using ValheimArmory.common;
 
-namespace ValheimArmory.common
-{
-    class JotunBatchLoader
-    {
+namespace ValheimArmory.Common {
+    class JotunBatchLoader {
         internal static List<ItemDefinition> resourceDefinitions = new List<ItemDefinition>();
         internal static bool runningQueuedChanges = false;
         internal static AssetBundle Assets;
@@ -44,7 +44,7 @@ namespace ValheimArmory.common
         public bool BatchSetup(AssetBundle assetBundle, bool reverse_order = true) {
             Assets = assetBundle;
             // Since configs are ordered by when they are connected this allows us to add things in the order they are defined.
-            if (reverse_order){
+            if (reverse_order) {
                 resourceDefinitions.Reverse();
             }
             WireConfigDefs();
@@ -68,8 +68,8 @@ namespace ValheimArmory.common
             }
 
             // Flush to disk
-            VAConfig.cfg.Save();
-            VAConfig.SaveOnSet(true);
+            ValConfig.cfg.Save();
+            ValConfig.SaveOnSet(true);
             return true;
         }
 
@@ -78,144 +78,141 @@ namespace ValheimArmory.common
             return true;
         }
 
-        private static bool WireConfigDefs() { 
+        private static bool WireConfigDefs() {
             // Ensure save on set is false, we will save at the end of this process.
             foreach (ItemDefinition itemdef in resourceDefinitions) {
                 // Build a compacted display name for reference, this primarily just needs spaces removed.
                 itemdef.DisplayName = string.Join("", itemdef.Name.Split(default(string[]), StringSplitOptions.RemoveEmptyEntries));
                 // Skip over all loading of items that are disabled.
                 // Blow up if adding a non-unique data control
-                AddedItems.Add(itemdef.DisplayName, itemdef.prefab);
+                AddedItems.Add(itemdef.DisplayName, itemdef.Prefab);
                 // if (!itemdef.enabled) { continue; }
-                itemdef.craftable_cfg = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftable", itemdef.craftable, $"Enable/Disable the crafting recipe for {itemdef.Name}.");
-                itemdef.stationlvl_cfg = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-stationRequiredLevel", itemdef.reqStationlevel, $"Sets the required minimum crafting station level to craft {itemdef.Name}", true, 1, 4);
-                itemdef.craftAmount_cfg = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftAmount", itemdef.craftAmount, $"Sets the amount of {itemdef.Name} crafted per recipe.", true, 1, 50);
-                itemdef.craftedAt_cfg = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftedAt", itemdef.craftedAt, $"Sets the crafting station for {itemdef.Name}.");
+                itemdef.CraftableCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftable", itemdef.Craftable, $"Enable/Disable the crafting recipe for {itemdef.Name}.");
+                itemdef.StationLVLCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-stationRequiredLevel", itemdef.ReqStationlevel, $"Sets the required minimum crafting station level to craft {itemdef.Name}", true, 1, 4);
+                itemdef.CraftAmountCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftAmount", itemdef.CraftAmount, $"Sets the amount of {itemdef.Name} crafted per recipe.", true, 1, 50);
+                itemdef.CraftedAtCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftedAt", itemdef.CraftedAt, $"Sets the crafting station for {itemdef.Name}.");
                 // Setup the modifiable stats that this item has defined
-                foreach (KeyValuePair<ItemStat, ItemStatConfig> stat in itemdef.modifableStats) {
-                    if (stat.Value.configurable == false) { continue; }
-                    if (stat.Value.isInt) {
-                        stat.Value.cfgInt = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-{stat.Key}", (int)stat.Value.default_value, $"Value for {stat.Key} on {itemdef.Name}", true, (int)stat.Value.min, (int)stat.Value.max);
+                foreach (KeyValuePair<ItemStat, ItemStatConfig> stat in itemdef.ModifableStats) {
+                    if (stat.Value.Configurable == false) { continue; }
+                    if (stat.Value.IsInt) {
+                        stat.Value.CfgInt = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-{stat.Key}", (int)stat.Value.Default_value, $"Value for {stat.Key} on {itemdef.Name}", true, (int)stat.Value.Min, (int)stat.Value.Max);
                     } else {
-                        stat.Value.cfg = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-{stat.Key}", stat.Value.default_value, $"Value for {stat.Key} on {itemdef.Name}", true, stat.Value.min, stat.Value.max);
+                        stat.Value.Cfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-{stat.Key}", stat.Value.Default_value, $"Value for {stat.Key} on {itemdef.Name}", true, stat.Value.Min, stat.Value.Max);
                     }
                 }
                 // Set the damage modifiers for this item
-                if (itemdef.damageMods != null) {
-                    foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.damageMods) {
-                        dmgmod.Value.dmgModcfg = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-{dmgmod.Key}-DamageModifier", dmgmod.Value.damageModifier.ToString(), $"Damage modifier for {dmgmod.Key} on {itemdef.Name}", true, allowedModifiers);
+                if (itemdef.DamageMods != null) {
+                    foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.DamageMods) {
+                        dmgmod.Value.DmgModCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-{dmgmod.Key}-DamageModifier", dmgmod.Value.DamageModifier.ToString(), $"Damage modifier for {dmgmod.Key} on {itemdef.Name}", true, allowedModifiers);
                     }
                 }
 
                 // Build the item recipe
-                itemdef.recipe.recipeConfig = VAConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-recipe", BuildStringRecipeFromItemDef(itemdef), $"Recipe for {itemdef.Name}. Should be in the format of Prefab,Amount,AmountPerLevel|Prefab,Amount,AmountPerLevel eg: Wood,12,2|Stone,2,0");
+                itemdef.Recipe.RecipeConfig = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-recipe", BuildStringRecipeFromItemDef(itemdef), $"Recipe for {itemdef.Name}. Should be in the format of Prefab,Amount,AmountPerLevel|Prefab,Amount,AmountPerLevel eg: Wood,12,2|Stone,2,0");
                 if (ValidateRecipeConfig(itemdef) == false) {
-                    BuildRecipeReqsFromDefault(itemdef); 
+                    BuildRecipeReqsFromDefault(itemdef);
                 }
                 // itemdef.recipe.resolvedRecipe = BuildRecipeFromConfig(itemdef);
+
+                // Collapse this item's entries into a single grouped custom drawer to keep the in-game
+                // Configuration Manager responsive (one visible row per item instead of ~10-20).
+                ItemConfigDrawer.Attach(itemdef);
             }
             return true;
         }
 
         // TODO: Change batch onchange actions to pass to a queue and execute queue from a couroutine.
-        private bool SetupOnChange(){
+        private bool SetupOnChange() {
             foreach (ItemDefinition itemdef in resourceDefinitions) {
                 // Need to have config onchange settings available for items which are not enabled to ensure that we can enable them when joining a remote server with different items enabled
                 // if (!itemdef.enabled) { continue; }
                 // Craftable config toggle
-                itemdef.craftable_cfg.SettingChanged += (_, _) => {
-                    EnableDisableItemInDB(itemdef, itemdef.craftable_cfg.Value);
+                itemdef.CraftableCfg.SettingChanged += (_, _) => {
+                    ConfigChangeDebouncer.Schedule(itemdef.CraftableCfg, () => EnableDisableItemInDB(itemdef, itemdef.CraftableCfg.Value));
                 };
                 // Logger.LogInfo("Setup Craftable toggle");
                 // Station level config
-                itemdef.stationlvl_cfg.SettingChanged += (_, _) => {
-                    ModifyItemRecipeLevel(itemdef, itemdef.stationlvl_cfg.Value);
+                itemdef.StationLVLCfg.SettingChanged += (_, _) => {
+                    ConfigChangeDebouncer.Schedule(itemdef.StationLVLCfg, () => ModifyItemRecipeLevel(itemdef, itemdef.StationLVLCfg.Value));
                 };
                 // Logger.LogInfo("Setup Crafting station level");
                 // Modify where the item is crafted
-                itemdef.craftedAt_cfg.SettingChanged += (_, _) => {
-                    ModifyItemRecipeCraftedAt(itemdef);
+                itemdef.CraftedAtCfg.SettingChanged += (_, _) => {
+                    ConfigChangeDebouncer.Schedule(itemdef.CraftedAtCfg, () => ModifyItemRecipeCraftedAt(itemdef));
                 };
                 // Modify how many of the item are crafted per recipe
-                itemdef.craftAmount_cfg.SettingChanged += (_, _) => {
-                    ModifyItemRecipeCraftAmount(itemdef, itemdef.craftAmount_cfg.Value);
+                itemdef.CraftAmountCfg.SettingChanged += (_, _) => {
+                    ConfigChangeDebouncer.Schedule(itemdef.CraftAmountCfg, () => ModifyItemRecipeCraftAmount(itemdef, itemdef.CraftAmountCfg.Value));
                 };
                 // Logger.LogInfo("Setup single value changes");
-                
+
                 // All of the configurable stat variables
-                foreach (KeyValuePair<ItemStat, ItemStatConfig> stat in itemdef.modifableStats) {
-                    if (stat.Value.configurable == false) { continue; }
+                foreach (KeyValuePair<ItemStat, ItemStatConfig> stat in itemdef.ModifableStats) {
+                    if (stat.Value.Configurable == false) { continue; }
+                    object statKey = stat.Value.IsInt ? (object)stat.Value.CfgInt : stat.Value.Cfg;
                     void UpdateFromConfig(object sender, EventArgs args) {
-                        if (ZNet.instance.enabled == false) { return; }
-                        if (stat.Value.isInt) {
-                            stat.Value.default_value = stat.Value.cfgInt.Value;
-                        } else {
-                            stat.Value.default_value = stat.Value.cfg.Value;
-                        }
-                        // Update player items
-                        UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
-                        // Update in world items, batched into a single scan to prevent lag spikes (e.g. on server config sync).
-                        EnqueueWorldUpdate(itemdef.prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
+                        ConfigChangeDebouncer.Schedule(statKey, () => {
+                            if (ZNet.instance.enabled == false) { return; }
+                            if (stat.Value.IsInt) {
+                                stat.Value.Default_value = stat.Value.CfgInt.Value;
+                            } else {
+                                stat.Value.Default_value = stat.Value.Cfg.Value;
+                            }
+                            // Update player items
+                            UpdateItemInPlayerInventory(itemdef.Prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.Default_value, item); });
+                            // Update in world items, batched into a single scan to prevent lag spikes (e.g. on server config sync).
+                            EnqueueWorldUpdate(itemdef.Prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.Default_value, item); });
+                        });
                     }
 
-                    if (stat.Value.isInt) {
-                        stat.Value.cfgInt.SettingChanged += UpdateFromConfig;
+                    if (stat.Value.IsInt) {
+                        stat.Value.CfgInt.SettingChanged += UpdateFromConfig;
                     } else {
-                        stat.Value.cfg.SettingChanged += UpdateFromConfig;
+                        stat.Value.Cfg.SettingChanged += UpdateFromConfig;
                     }
-                    
+
                 }
                 // Logger.LogInfo("Setup stat changes");
 
                 // Modify the recipe in the object DB
-                itemdef.recipe.recipeConfig.SettingChanged += (sender, args) => {
-                    if (ValidateRecipeConfig(itemdef)) {
-                        ModifyItemRecipeInODB(itemdef);
-                    }
+                itemdef.Recipe.RecipeConfig.SettingChanged += (sender, args) => {
+                    ConfigChangeDebouncer.Schedule(itemdef.Recipe.RecipeConfig, () => {
+                        if (ValidateRecipeConfig(itemdef)) {
+                            ModifyItemRecipeInODB(itemdef);
+                        }
+                    });
                 };
                 // Logger.LogInfo("Setup recipe changes");
 
                 //Modify the damage modifiers
-                if (itemdef.damageMods == null) { continue; }
-                foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.damageMods) {
-                    dmgmod.Value.dmgModcfg.SettingChanged += (_, _) => {
-                        if (ZNet.instance.enabled == false) { return; }
-                        HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.dmgModcfg.Value);
-                        // Update player items
-                        UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
-                        // Update world items, batched into a single scan to prevent lag spikes (e.g. on server config sync).
-                        EnqueueWorldUpdate(itemdef.prefab, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
+                if (itemdef.DamageMods == null) { continue; }
+                foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.DamageMods) {
+                    dmgmod.Value.DmgModCfg.SettingChanged += (_, _) => {
+                        ConfigChangeDebouncer.Schedule(dmgmod.Value.DmgModCfg, () => {
+                            if (ZNet.instance.enabled == false) { return; }
+                            HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.DmgModCfg.Value);
+                            // Update player items
+                            UpdateItemInPlayerInventory(itemdef.Prefab, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
+                            // Update world items, batched into a single scan to prevent lag spikes (e.g. on server config sync).
+                            EnqueueWorldUpdate(itemdef.Prefab, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
+                        });
                     };
                 }
             }
             return true;
         }
 
+
         // Idempotently reconciles every item recipe in the live ObjectDB to the current config values.
         // Safe to call repeatedly and from multiple lifecycle events; self guards when no ObjectDB exists.
         private static void ReapplyAllRecipeConfig() {
             if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
-            // Build a prefab -> recipe index map once so the ~5 GetRecipeIndexByPrefab lookups per item below
-            // are O(1) instead of a linear scan over m_recipes (which is ~680 linear scans across all items).
-            // EnableDisableItemInDB may append a recipe when enabling a missing one; appends keep existing
-            // indexes valid, so the cache stays correct for the remainder of the pass.
-            recipeIndexCache = new Dictionary<string, int>(ObjectDB.instance.m_recipes.Count);
-            for (int i = 0; i < ObjectDB.instance.m_recipes.Count; i++) {
-                Recipe recipe = ObjectDB.instance.m_recipes[i];
-                if (recipe.m_item != null && !recipeIndexCache.ContainsKey(recipe.m_item.name)) {
-                    recipeIndexCache[recipe.m_item.name] = i;
-                }
-            }
-            try {
-                foreach (ItemDefinition itemdef in resourceDefinitions) {
-                    if (ValidateRecipeConfig(itemdef)) { ModifyItemRecipeInODB(itemdef); }
-                    ModifyItemRecipeLevel(itemdef, itemdef.stationlvl_cfg.Value);
-                    ModifyItemRecipeCraftedAt(itemdef);
-                    ModifyItemRecipeCraftAmount(itemdef, itemdef.craftAmount_cfg.Value);
-                    EnableDisableItemInDB(itemdef, itemdef.craftable_cfg.Value);
-                }
-            } finally {
-                recipeIndexCache = null;
+            foreach (ItemDefinition itemdef in resourceDefinitions) {
+                if (ValidateRecipeConfig(itemdef)) { ModifyItemRecipeInODB(itemdef); }
+                ModifyItemRecipeLevel(itemdef, itemdef.StationLVLCfg.Value);
+                ModifyItemRecipeCraftedAt(itemdef);
+                ModifyItemRecipeCraftAmount(itemdef, itemdef.CraftAmountCfg.Value);
+                EnableDisableItemInDB(itemdef, itemdef.CraftableCfg.Value);
             }
             // Refresh an open crafting panel so changed recipes/amounts/enabled state are reflected immediately.
             if (Player.m_localPlayer != null) { Player.m_localPlayer.UpdateKnownRecipesList(); }
@@ -232,43 +229,43 @@ namespace ValheimArmory.common
 
         private static bool BatchAddItems() {
             foreach (ItemDefinition itemdef in resourceDefinitions) {
-                GameObject ItemPrefab = Assets.LoadAsset<GameObject>($"Assets/Custom/Weapons/{itemdef.Category}/{itemdef.prefab}.prefab");
-                Sprite ItemSprite = Assets.LoadAsset<Sprite>($"Assets/Custom/Icons/{itemdef.icon}.png");
+                GameObject ItemPrefab = Assets.LoadAsset<GameObject>($"Assets/Custom/Weapons/{itemdef.Category}/{itemdef.Prefab}.prefab");
+                Sprite ItemSprite = Assets.LoadAsset<Sprite>($"Assets/Custom/Icons/{itemdef.Icon}.png");
                 //Logger.LogInfo($"Adding {itemdef.Name} gopath: {prefabPath} go: {ItemPrefab} sprite: {ItemSprite}");
                 ItemDrop ItemD = ItemPrefab.GetComponent<ItemDrop>();
                 // Modify this items stats
-                foreach (KeyValuePair<ItemStat, ItemStatConfig> modstat in itemdef.modifableStats) {
-                    if (modstat.Value.configurable == false) {
-                        ItemDataConfigModifier(modstat.Key, modstat.Value.default_value, ItemD.m_itemData);
+                foreach (KeyValuePair<ItemStat, ItemStatConfig> modstat in itemdef.ModifableStats) {
+                    if (modstat.Value.Configurable == false) {
+                        ItemDataConfigModifier(modstat.Key, modstat.Value.Default_value, ItemD.m_itemData);
                     } else {
-                        if (modstat.Value.isInt) {
-                            ItemDataConfigModifier(modstat.Key, modstat.Value.cfgInt.Value, ItemD.m_itemData);
+                        if (modstat.Value.IsInt) {
+                            ItemDataConfigModifier(modstat.Key, modstat.Value.CfgInt.Value, ItemD.m_itemData);
                         } else {
-                            ItemDataConfigModifier(modstat.Key, modstat.Value.cfg.Value, ItemD.m_itemData);
+                            ItemDataConfigModifier(modstat.Key, modstat.Value.Cfg.Value, ItemD.m_itemData);
                         }
                     }
                 }
                 // Modify this items resistances
-                if (itemdef.damageMods != null) {
-                    foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.damageMods) {
-                        if (dmgmod.Value.configurable == false || dmgmod.Value.dmgModcfg == null) { continue; }
-                        HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.dmgModcfg.Value);
+                if (itemdef.DamageMods != null) {
+                    foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.DamageMods) {
+                        if (dmgmod.Value.Configurable == false || dmgmod.Value.DmgModCfg == null) { continue; }
+                        HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.DmgModCfg.Value);
                         SetItemDamageModifier(modifier, dmgmod.Key, ItemD.m_itemData);
                     }
                 }
                 ItemConfig itemcfg = new ItemConfig() {
-                    Amount = itemdef.craftAmount_cfg.Value,
-                    CraftingStation = $"{itemdef.craftedAt_cfg.Value}",
-                    MinStationLevel = itemdef.stationlvl_cfg.Value,
-                    Enabled = itemdef.craftable_cfg.Value,
+                    Amount = itemdef.CraftAmountCfg.Value,
+                    CraftingStation = $"{itemdef.CraftedAtCfg.Value}",
+                    MinStationLevel = itemdef.StationLVLCfg.Value,
+                    Enabled = itemdef.CraftableCfg.Value,
                     Icons = new[] { ItemSprite },
-                    Requirements = itemdef.recipe.recipeReqs.ToArray()
+                    Requirements = itemdef.Recipe.RecipeReqs.ToArray()
                 };
                 ItemManager.Instance.AddItem(new CustomItem(ItemPrefab, fixReference: true, itemcfg));
 
                 // This item needs to be included as a returnable arrow/bolt
                 if (itemdef.Category == ItemCategory.Arrows) {
-                    ArcheryAmmoToAdd.Add(itemdef.prefab);
+                    ArcheryAmmoToAdd.Add(itemdef.Prefab);
                 }
             }
             return true;
@@ -276,11 +273,9 @@ namespace ValheimArmory.common
 
 
 
-        private static void ItemDataConfigModifier(ItemStat target_attribute, float updatedValue, ItemDrop.ItemData itemData)
-        {
+        private static void ItemDataConfigModifier(ItemStat target_attribute, float updatedValue, ItemDrop.ItemData itemData) {
             if (itemData == null) { return; }
-            switch (target_attribute)
-            {
+            switch (target_attribute) {
                 // Standard Dmg types
                 case ItemStat.slash:
                     itemData.m_shared.m_damages.m_slash = updatedValue;
@@ -447,7 +442,7 @@ namespace ValheimArmory.common
         private static bool ValidateRecipeConfig(ItemDefinition itemdef) {
             List<RequirementConfig> requirements = new List<RequirementConfig>();
             try {
-                string[] recipeConfig = itemdef.recipe.recipeConfig.Value.Split('|');
+                string[] recipeConfig = itemdef.Recipe.RecipeConfig.Value.Split('|');
                 foreach (string ingredient in recipeConfig) {
                     // Logger.LogInfo($"Ingrediant details: {ingredient}");
                     string[] ingredientConfig = ingredient.Split(',');
@@ -462,7 +457,7 @@ namespace ValheimArmory.common
                     requirements.Add(new RequirementConfig { Item = ingredientConfig[0], Amount = int.Parse(ingredientConfig[1]), AmountPerLevel = int.Parse(ingredientConfig[2]) });
                 }
                 // Only happens if the recipe is valid
-                itemdef.recipe.recipeReqs = requirements;
+                itemdef.Recipe.RecipeReqs = requirements;
                 return true;
             } catch {
                 Logger.LogWarning($"Recipe is Invalid. Should have the format of Wood,1,1|Stone,2,0 - Prefab,cost,upgrade.");
@@ -472,32 +467,33 @@ namespace ValheimArmory.common
 
         private static void BuildRecipeReqsFromDefault(ItemDefinition itemdef) {
             List<RequirementConfig> requirements = new List<RequirementConfig>();
-            foreach(var recipeIng in itemdef.recipe.recipeItems) {
-                requirements.Add(new RequirementConfig { Item = recipeIng.prefab, Amount = recipeIng.amount, AmountPerLevel = recipeIng.upgradeCost });
+            foreach (var recipeIng in itemdef.Recipe.RecipeItems) {
+                requirements.Add(new RequirementConfig { Item = recipeIng.Prefab, Amount = recipeIng.Amount, AmountPerLevel = recipeIng.UpgradeCost });
             }
-            itemdef.recipe.recipeReqs = requirements;
+            itemdef.Recipe.RecipeReqs = requirements;
         }
 
         private static string BuildStringRecipeFromItemDef(ItemDefinition itemdef) {
             List<string> recipe = new();
-            foreach (var req in itemdef.recipe.recipeItems) {
-                recipe.Add($"{req.prefab},{req.amount},{req.upgradeCost}");
+            foreach (var req in itemdef.Recipe.RecipeItems) {
+                recipe.Add($"{req.Prefab},{req.Amount},{req.UpgradeCost}");
             }
             return string.Join("|", recipe);
         }
 
         private static bool ModifyItemRecipeCraftedAt(ItemDefinition itemdef) {
             if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return false; }
-            int index = GetRecipeIndexByPrefab(itemdef.prefab);
+
+            int index = GetRecipeIndexByPrefab(itemdef.Prefab);
             if (index == -1) {
-                Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, recipe will not be modified.");
+                Logger.LogWarning($"Recipe of {itemdef.Prefab} not found in ObjectDB, recipe will not be modified.");
                 // ObjectDB.instance.m_recipes.Add(BuildRecipeForItem(itemdef));
                 return false;
             }
-            CraftingStation craftable_at = PrefabManager.Instance.GetPrefab(itemdef.craftedAt_cfg.Value)?.GetComponent<CraftingStation>();
+            CraftingStation craftable_at = PrefabManager.Instance.GetPrefab(itemdef.CraftedAtCfg.Value)?.GetComponent<CraftingStation>();
             if (craftable_at == null) {
-                Logger.LogWarning($"Crafting Station {itemdef.craftedAt_cfg.Value} prefab not found, or does not have a crafting station componet.");
-                return  false;
+                Logger.LogWarning($"Crafting Station {itemdef.CraftedAtCfg.Value} prefab not found, or does not have a crafting station componet.");
+                return false;
             }
             ObjectDB.instance.m_recipes[index].m_craftingStation = craftable_at;
             // repair station should likely be split out into a seperate config
@@ -507,23 +503,23 @@ namespace ValheimArmory.common
 
 
         private static void ModifyItemRecipeInODB(ItemDefinition itemdef) {
+            if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
+
             // if (itemdef.enabled == false) { return; }
             // Logger.LogInfo($"Modifying {itemdef.Name} recipe in OODB");
-            if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
-            int recipe_index = GetRecipeIndexByPrefab(itemdef.prefab);
+            int recipe_index = GetRecipeIndexByPrefab(itemdef.Prefab);
             if (recipe_index == -1) {
-                Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, Recipe will not be modified.");
+                Logger.LogWarning($"Recipe of {itemdef.Prefab} not found in ObjectDB, Recipe will not be modified.");
                 //ObjectDB.instance.m_recipes.Add(BuildRecipeForItem(itemdef));
                 return;
             }
             Recipe current_recipe = ObjectDB.instance.m_recipes[recipe_index];
             Recipe newRecipe = current_recipe;
             List<Piece.Requirement> newRequirements = new List<Piece.Requirement>();
-            foreach (var req in itemdef.recipe.recipeReqs)
-            {
+            foreach (var req in itemdef.Recipe.RecipeReqs) {
                 GameObject resgo = ObjectDB.instance.GetItemPrefab(req.Item);
                 if (resgo == null) {
-                    Logger.LogWarning($"Recipe {itemdef.recipe.resolvedRecipe.name} has an invalid requirement {req.Item}.");
+                    Logger.LogWarning($"Recipe {itemdef.Recipe.ResolvedRecipe.name} has an invalid requirement {req.Item}.");
                     return;
                 }
                 newRequirements.Add(new Piece.Requirement { m_resItem = resgo.GetComponent<ItemDrop>(), m_amount = req.Amount, m_amountPerLevel = req.AmountPerLevel });
@@ -533,7 +529,7 @@ namespace ValheimArmory.common
             int index = ObjectDB.instance.m_recipes.IndexOf(current_recipe);
             if (index > -1) {
                 ObjectDB.instance.m_recipes[index] = newRecipe;
-                itemdef.recipe.resolvedRecipe = newRecipe;
+                itemdef.Recipe.ResolvedRecipe = newRecipe;
             } else {
                 Logger.LogWarning($"Recipe {current_recipe.name} not found in ObjectDB.");
             }
@@ -541,16 +537,17 @@ namespace ValheimArmory.common
 
         private static void EnableDisableItemInDB(ItemDefinition itemdef, bool enable) {
             if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
-            int index = GetRecipeIndexByPrefab(itemdef.prefab);
+
+            int index = GetRecipeIndexByPrefab(itemdef.Prefab);
             if (index == -1 && enable == false) {
-                return; 
+                return;
             }
             if (index == -1 && enable == true) {
-                if (itemdef.recipe.resolvedRecipe != null) {
-                    ObjectDB.instance.m_recipes.Add(itemdef.recipe.resolvedRecipe);
+                if (itemdef.Recipe.ResolvedRecipe != null) {
+                    ObjectDB.instance.m_recipes.Add(itemdef.Recipe.ResolvedRecipe);
                 } else {
                     //ObjectDB.instance.m_recipes.Add(BuildRecipeForItem(itemdef));
-                    Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, recipe wont be set to enabled.");
+                    Logger.LogWarning($"Recipe of {itemdef.Prefab} not found in ObjectDB, recipe wont be set to enabled.");
                 }
                 return;
             }
@@ -560,41 +557,36 @@ namespace ValheimArmory.common
             } else {
                 ObjectDB.instance.m_recipes[index].m_enabled = false;
             }
-            itemdef.recipe.resolvedRecipe = ObjectDB.instance.m_recipes[index];
+            itemdef.Recipe.ResolvedRecipe = ObjectDB.instance.m_recipes[index];
         }
 
         private static void ModifyItemRecipeLevel(ItemDefinition itemdef, int level) {
-            // if (itemdef.enabled == false) { return; }
             if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
-            int index = GetRecipeIndexByPrefab(itemdef.prefab);
+            // if (itemdef.enabled == false) { return; }
+            int index = GetRecipeIndexByPrefab(itemdef.Prefab);
             if (index == -1) {
-                Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, required level will not be modified.");
+                Logger.LogWarning($"Recipe of {itemdef.Prefab} not found in ObjectDB, required level will not be modified.");
                 // ObjectDB.instance.m_recipes.Add(BuildRecipeForItem(itemdef));
                 return;
             }
             ObjectDB.instance.m_recipes[index].m_minStationLevel = level;
             // Update the stored recipe so if we use it to target things again it will still be accurate
-            itemdef.recipe.resolvedRecipe = ObjectDB.instance.m_recipes[index];
+            itemdef.Recipe.ResolvedRecipe = ObjectDB.instance.m_recipes[index];
         }
 
         private static void ModifyItemRecipeCraftAmount(ItemDefinition itemdef, int amount) {
             if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
-            int index = GetRecipeIndexByPrefab(itemdef.prefab);
+            int index = GetRecipeIndexByPrefab(itemdef.Prefab);
             if (index == -1) {
-                Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, craft amount will not be modified.");
+                Logger.LogWarning($"Recipe of {itemdef.Prefab} not found in ObjectDB, craft amount will not be modified.");
                 return;
             }
             ObjectDB.instance.m_recipes[index].m_amount = amount;
             // Update the stored recipe so if we use it to target things again it will still be accurate
-            itemdef.recipe.resolvedRecipe = ObjectDB.instance.m_recipes[index];
+            itemdef.Recipe.ResolvedRecipe = ObjectDB.instance.m_recipes[index];
         }
 
         private static int GetRecipeIndexByPrefab(string prefab) {
-            // During a ReapplyAllRecipeConfig pass the cache is authoritative: a hit is the index, a miss means
-            // the recipe is not in the ObjectDB (same as FindIndex returning -1).
-            if (recipeIndexCache != null) {
-                return recipeIndexCache.TryGetValue(prefab, out int cachedIndex) ? cachedIndex : -1;
-            }
             return ObjectDB.instance.m_recipes.FindIndex(m => m.m_item != null && m.m_item.name == prefab);
         }
 
@@ -656,7 +648,7 @@ namespace ValheimArmory.common
             GameObject archerTarget = PrefabManager.Instance.GetPrefab("piece_ArcheryTarget");
             ArcheryTarget ArcherAmmoManger = archerTarget.GetComponentInChildren<ArcheryTarget>(true);
 
-            foreach(string ammoPrefab in ArcheryAmmoToAdd) {
+            foreach (string ammoPrefab in ArcheryAmmoToAdd) {
                 Logger.LogDebug($"Adding {ammoPrefab} to Archery Target Ammo Return.");
                 ItemDrop ammoID = PrefabManager.Instance.GetPrefab(ammoPrefab).GetComponent<ItemDrop>();
                 if (ammoID != null && ArcherAmmoManger.m_returnAmmo.Contains(ammoID) == false) {

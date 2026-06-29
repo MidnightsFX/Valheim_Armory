@@ -1,7 +1,7 @@
 ﻿using BepInEx.Logging;
 using System;
 
-namespace ValheimArmory.common
+namespace ValheimArmory
 {
     internal static class Logger
     {
@@ -15,7 +15,7 @@ namespace ValheimArmory.common
 
         public static void toggleDebug()
         {
-            if (VAConfig.EnableDebugMode.Value)
+            if (ValConfig.EnableDebugMode.Value)
             {
                 Level = LogLevel.Debug;
             } else {

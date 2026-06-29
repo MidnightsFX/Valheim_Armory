@@ -26,7 +26,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.27.3";
+        public const string PluginVersion = "1.28.0";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -36,7 +36,7 @@ namespace ValheimArmory
         public void Awake()
         {
             // build the config class, and ensure defaults are available / configs ingested.
-            VAConfig cfg = new VAConfig(Config);
+            ValConfig cfg = new ValConfig(Config);
             Log = this.Logger;
             // Load assets
             LoadAssets();
@@ -53,16 +53,16 @@ namespace ValheimArmory
             MinimapManager.OnVanillaMapDataLoaded += WeaponModifier.ToggleVanillaFlintAxe;
             MinimapManager.OnVanillaMapDataLoaded += WeaponModifier.ToggleVanillaFlintSpear;
             PrefabManager.OnPrefabsRegistered += StatusModifiers.SyncStatusEffectsToConfig;
-            VAConfig.VanillaHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyHammers;
-            VAConfig.ModHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyModHammers;
-            VAConfig.VanillaAbyssalKnifeBluntDamageConvert.SettingChanged += WeaponModifier.OnConfigChangeModifyVanillaKnife;
+            ValConfig.VanillaHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyHammers;
+            ValConfig.ModHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyModHammers;
+            ValConfig.VanillaAbyssalKnifeBluntDamageConvert.SettingChanged += WeaponModifier.OnConfigChangeModifyVanillaKnife;
 
             Assembly assembly = Assembly.GetExecutingAssembly();
             Harmony harmony = new(PluginGUID);
             harmony.PatchAll(assembly);
 
-            VAConfig.SaveOnSet(true);
-            VAConfig.SetupMainFileWatcher();
+            ValConfig.SaveOnSet(true);
+            ValConfig.SetupMainFileWatcher();
             AddLocalizations();
         }
 
@@ -152,13 +152,13 @@ namespace ValheimArmory
 
         private void LoadAssets()
         {
-            if (VAConfig.EnableDebugMode.Value == true)
+            if (ValConfig.EnableDebugMode.Value == true)
             {
                 Logger.LogInfo($"Embedded resources: {string.Join(",", typeof(ValheimArmory).Assembly.GetManifestResourceNames())}");
             }
             EmbeddedResourceBundle = AssetUtils.LoadAssetBundleFromResources("ValheimArmory.AssetsEmbedded.vabundle", typeof(ValheimArmory).Assembly);
 
-            if (VAConfig.EnableDebugMode.Value == true)
+            if (ValConfig.EnableDebugMode.Value == true)
             {
                 Logger.LogInfo($"Asset Names: {string.Join(",", EmbeddedResourceBundle.GetAllAssetNames())}");
             }

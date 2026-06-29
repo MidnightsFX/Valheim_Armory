@@ -1,8 +1,11 @@
-**1.27.3**
+**1.28.0**
  ---
  ```
  - Fixes Crafting recipe modifications not being applied during server startup
  - Optimize batched modifications
+ - Optimizes config entries
+    - All config entries now show up in their own config drawers
+    - Configs have a slight delay before applying to batch up changes (this also reduces churn from config sync)
  ```
 
 **1.27.2**

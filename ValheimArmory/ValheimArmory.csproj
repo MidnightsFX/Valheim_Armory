@@ -83,6 +83,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="common\ConfigChangeDebouncer.cs" />
+    <Compile Include="common\ConfigDrawers.cs" />
     <Compile Include="common\ItemDefinition.cs" />
     <Compile Include="common\JotunBatchLoader.cs" />
     <Compile Include="common\Logger.cs" />
@@ -93,7 +95,7 @@
     <Compile Include="Properties\IgnoreAccessModifiers.cs" />
     <Compile Include="ValheimArmory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VAConfig.cs" />
+    <Compile Include="common\ValConfig.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

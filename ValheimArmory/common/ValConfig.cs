@@ -5,7 +5,7 @@ using ValheimArmory.common;
 
 namespace ValheimArmory
 {
-    class VAConfig
+    class ValConfig
     {
         public static ConfigFile cfg;
         public static ConfigEntry<bool> EnableDebugMode;
@@ -25,8 +25,9 @@ namespace ValheimArmory
         public static ConfigEntry<float> QueenEitrRegen;
 
         public static ConfigEntry<int> InMemoryModificationsPerTick;
+        public static ConfigEntry<float> ConfigApplyDelay;
 
-        public VAConfig(ConfigFile Config)
+        public ValConfig(ConfigFile Config)
         {
             // ensure all the config values are created
             cfg = Config;
@@ -78,6 +79,7 @@ namespace ValheimArmory
             QueenEitrRegen.SettingChanged += StatusModifiers.OnConfigQueenHealthRegenChanged;
 
             InMemoryModificationsPerTick = BindServerConfig("General", "InMemoryModificationsPerTick", 10, "How many modifications should be processed per tick.", true, 1, 100);
+            ConfigApplyDelay = BindServerConfig("Config", "Config Apply Delay", 1f, "Delay in seconds before a changed config entry is applied in-game. Coalesces a burst of rapid edits (typing, file reloads, server sync) into a single apply. Set to 0 to apply instantly.", true, 0f, 10f);
         }
 
         internal static void SetupMainFileWatcher() {

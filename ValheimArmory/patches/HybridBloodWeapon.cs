@@ -24,10 +24,10 @@ namespace ValheimArmory.patches
                     if (id == null || id.m_dropPrefab == null) return;
                     string currentWeapon = Player.m_localPlayer.GetCurrentWeapon().m_dropPrefab.name;
                     if (HybridWeapons.Contains(currentWeapon)) {
-                        Player.m_localPlayer.RaiseSkill(Skills.SkillType.BloodMagic, VAConfig.HybridWeaponBloodMagicSkillIncrease.Value);
+                        Player.m_localPlayer.RaiseSkill(Skills.SkillType.BloodMagic, ValConfig.HybridWeaponBloodMagicSkillIncrease.Value);
                     }
                     if (SoulStealer == currentWeapon) {
-                        Player.m_localPlayer.RaiseSkill(Skills.SkillType.Crossbows, VAConfig.HybridWeaponBloodMagicSkillIncrease.Value);
+                        Player.m_localPlayer.RaiseSkill(Skills.SkillType.Crossbows, ValConfig.HybridWeaponBloodMagicSkillIncrease.Value);
                     }
                 }
             }

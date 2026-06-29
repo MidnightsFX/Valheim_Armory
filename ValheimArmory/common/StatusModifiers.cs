@@ -33,7 +33,7 @@ namespace ValheimArmory.common
         {
             SE_Stats bloodbuff = null;
             foreach (SE_Stats buff in Resources.FindObjectsOfTypeAll<SE_Stats>().Where(se => se.name == "VABloodBuff").ToList()) {
-                buff.m_healthRegenMultiplier = VAConfig.BloodHungerRegen.Value;
+                buff.m_healthRegenMultiplier = ValConfig.BloodHungerRegen.Value;
                 bloodbuff = buff;
             }
             IEnumerable<GameObject> prefabs = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => bloodBuffPrefabs.Contains(obj.name));
@@ -57,8 +57,8 @@ namespace ValheimArmory.common
             SE_Stats queenbuff = null;
             foreach (SE_Stats buff in Resources.FindObjectsOfTypeAll<SE_Stats>().Where(se => se.name == "VAQueen_buff").ToList())
             {
-                buff.m_healthRegenMultiplier = VAConfig.QueenHealthRegen.Value;
-                buff.m_eitrRegenMultiplier = VAConfig.QueenEitrRegen.Value;
+                buff.m_healthRegenMultiplier = ValConfig.QueenHealthRegen.Value;
+                buff.m_eitrRegenMultiplier = ValConfig.QueenEitrRegen.Value;
                 queenbuff = buff;
             }
             IEnumerable<GameObject> prefabs = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => queenBuffPrefabs.Contains(obj.name));

@@ -330,11 +330,11 @@ namespace ValheimArmory.common
 
         public static void ModifyVanillaHammersToWarhammers()
         {
-            if (VAConfig.VanillaHammersHavePrimaryAttack.Value)
+            if (ValConfig.VanillaHammersHavePrimaryAttack.Value)
             {
-                SledgeToWarhammer("SledgeStagbreaker", VAConfig.StagbreakerPrimaryAttackStamina.Value, 12);
-                SledgeToWarhammer("SledgeIron", VAConfig.IronSledgePrimaryAttackStamina.Value, 20);
-                SledgeToWarhammer("SledgeDemolisher", VAConfig.DemolisherPrimaryAttackStamina.Value, 28);
+                SledgeToWarhammer("SledgeStagbreaker", ValConfig.StagbreakerPrimaryAttackStamina.Value, 12);
+                SledgeToWarhammer("SledgeIron", ValConfig.IronSledgePrimaryAttackStamina.Value, 20);
+                SledgeToWarhammer("SledgeDemolisher", ValConfig.DemolisherPrimaryAttackStamina.Value, 28);
             }
         }
 
@@ -374,7 +374,7 @@ namespace ValheimArmory.common
         public static void OnConfigChangeModifyHammers(object sender, EventArgs e)
         {
             if (Game.instance.IsShuttingDown()) { return; }
-            if (VAConfig.VanillaHammersHavePrimaryAttack.Value)
+            if (ValConfig.VanillaHammersHavePrimaryAttack.Value)
             {
                 ModifyVanillaHammersToWarhammers();
             }
@@ -387,7 +387,7 @@ namespace ValheimArmory.common
         public static void OnConfigChangeModifyModHammers(object sender, EventArgs e)
         {
             if (Game.instance.IsShuttingDown()) { return; }
-            if (VAConfig.ModHammersHavePrimaryAttack.Value)
+            if (ValConfig.ModHammersHavePrimaryAttack.Value)
             {
                 ModifyModHammersToWarhammers();
             }
@@ -399,31 +399,31 @@ namespace ValheimArmory.common
 
         public static void OnConfigStagbreakerValueChanged(object sender, EventArgs e)
         {
-            if (VAConfig.VanillaHammersHavePrimaryAttack.Value)
+            if (ValConfig.VanillaHammersHavePrimaryAttack.Value)
             {
-                ModifyStamina("SledgeStagbreaker", VAConfig.StagbreakerPrimaryAttackStamina.Value);
+                ModifyStamina("SledgeStagbreaker", ValConfig.StagbreakerPrimaryAttackStamina.Value);
             }
         }
 
         public static void OnConfigIronSledgeValueChanged(object sender, EventArgs e)
         {
-            if (VAConfig.VanillaHammersHavePrimaryAttack.Value)
+            if (ValConfig.VanillaHammersHavePrimaryAttack.Value)
             {
-                ModifyStamina("SledgeIron", VAConfig.IronSledgePrimaryAttackStamina.Value);
+                ModifyStamina("SledgeIron", ValConfig.IronSledgePrimaryAttackStamina.Value);
             }
         }
 
         public static void OnConfigDemolisherValueChanged(object sender, EventArgs e)
         {
-            if (VAConfig.VanillaHammersHavePrimaryAttack.Value)
+            if (ValConfig.VanillaHammersHavePrimaryAttack.Value)
             {
-                ModifyStamina("SledgeDemolisher", VAConfig.DemolisherPrimaryAttackStamina.Value);
+                ModifyStamina("SledgeDemolisher", ValConfig.DemolisherPrimaryAttackStamina.Value);
             }
         }
 
         public static void ModifyVanillaKnife()
         {
-            if (VAConfig.VanillaAbyssalKnifeBluntDamageConvert.Value)
+            if (ValConfig.VanillaAbyssalKnifeBluntDamageConvert.Value)
             {
                 KnifeToAbyssal("KnifeChitin");
             }
@@ -431,7 +431,7 @@ namespace ValheimArmory.common
 
         public static void OnConfigChangeModifyVanillaKnife(object sender, EventArgs e)
         {
-            if (VAConfig.VanillaAbyssalKnifeBluntDamageConvert.Value)
+            if (ValConfig.VanillaAbyssalKnifeBluntDamageConvert.Value)
             {
                 KnifeToAbyssal("KnifeChitin");
             }
@@ -443,7 +443,7 @@ namespace ValheimArmory.common
 
         public static void OnConfigAbyssalKnifeValueChanged(object sender, EventArgs e)
         {
-            if (VAConfig.VanillaHammersHavePrimaryAttack.Value)
+            if (ValConfig.VanillaHammersHavePrimaryAttack.Value)
             {
                 KnifeToAbyssal("KnifeChitin");
             }
@@ -460,9 +460,9 @@ namespace ValheimArmory.common
                 if (obj.TryGetComponent<ItemDrop>(out id))
                 {
                     id.m_itemData.m_shared.m_damages.m_slash = 0;
-                    id.m_itemData.m_shared.m_damages.m_blunt = VAConfig.AbyssalKnifeBlunt.Value;
+                    id.m_itemData.m_shared.m_damages.m_blunt = ValConfig.AbyssalKnifeBlunt.Value;
                     id.m_itemData.m_shared.m_damagesPerLevel.m_slash = 0;
-                    id.m_itemData.m_shared.m_damagesPerLevel.m_blunt = VAConfig.AbyssalKnifeBluntPerLevel.Value;
+                    id.m_itemData.m_shared.m_damagesPerLevel.m_blunt = ValConfig.AbyssalKnifeBluntPerLevel.Value;
                 }
             }
 
@@ -477,9 +477,9 @@ namespace ValheimArmory.common
 
                     Logger.LogDebug($"{user_item.m_shared.m_name} found in the players backpack, updating.");
                     user_item.m_shared.m_damages.m_slash = 0;
-                    user_item.m_shared.m_damages.m_blunt = VAConfig.AbyssalKnifeBlunt.Value;
+                    user_item.m_shared.m_damages.m_blunt = ValConfig.AbyssalKnifeBlunt.Value;
                     user_item.m_shared.m_damagesPerLevel.m_slash = 0;
-                    user_item.m_shared.m_damagesPerLevel.m_blunt = VAConfig.AbyssalKnifeBluntPerLevel.Value;
+                    user_item.m_shared.m_damagesPerLevel.m_blunt = ValConfig.AbyssalKnifeBluntPerLevel.Value;
                 }
             }
         }
@@ -529,7 +529,7 @@ namespace ValheimArmory.common
             if (ObjectDB.m_instance == null) { return; }
             int recipeindex = RecipeIndexForPrefab("AxeFlint");
             if (recipeindex == -1) { return; }
-            ObjectDB.instance.m_recipes[recipeindex].m_enabled = VAConfig.EnableVanillaFlintAxe.Value;
+            ObjectDB.instance.m_recipes[recipeindex].m_enabled = ValConfig.EnableVanillaFlintAxe.Value;
         }
 
         public static void OnConfigChangeModifyVanillaFlintSpear(object sender, EventArgs e)
@@ -542,7 +542,7 @@ namespace ValheimArmory.common
             if (ObjectDB.m_instance == null) { return; }
             int recipeindex = RecipeIndexForPrefab("SpearFlint");
             if (recipeindex == -1) { return; }
-            ObjectDB.instance.m_recipes[recipeindex].m_enabled = VAConfig.EnableVanillaSpear.Value;
+            ObjectDB.instance.m_recipes[recipeindex].m_enabled = ValConfig.EnableVanillaSpear.Value;
         }
 
         public static int RecipeIndexForPrefab(string prefab)

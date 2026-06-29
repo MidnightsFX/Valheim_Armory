@@ -2,10 +2,8 @@
 using System;
 using System.Collections.Generic;
 
-namespace ValheimArmory.common
-{
-    enum ItemStat
-    {
+namespace ValheimArmory.Common {
+    enum ItemStat {
         slash,
         slash_per_level,
         blunt,
@@ -59,8 +57,7 @@ namespace ValheimArmory.common
         tool_level
     }
 
-    enum ItemCategory
-    {
+    enum ItemCategory {
         Arrows,
         Atgeirs,
         Axes,
@@ -75,58 +72,107 @@ namespace ValheimArmory.common
         Pickaxes,
         Magics
     }
-    class ItemDefinition
-    {
+    class ItemDefinition {
         // Metadata
-        public string Name { get; set; }
-        public string DisplayName { get; set; }
-        public ItemCategory Category { get; set; }
-        public string prefab { get; set; }
-        public string icon { get; set; }
+        public string Name {
+            get; set;
+        }
+        public string DisplayName {
+            get; set;
+        }
+        public ItemCategory Category {
+            get; set;
+        }
+        public string Prefab {
+            get; set;
+        }
+        public string Icon {
+            get; set;
+        }
 
         // configurable
-        public string craftedAt { get; set; }
-        public BepInEx.Configuration.ConfigEntry<string> craftedAt_cfg { get; set; }
-        public bool craftable { get; set; } = true;
-        public BepInEx.Configuration.ConfigEntry<bool> craftable_cfg { get; set; }
-        public int reqStationlevel { get; set; }
-        public BepInEx.Configuration.ConfigEntry<int> stationlvl_cfg { get; set; }
-        public int craftAmount { get; set; }
-        public BepInEx.Configuration.ConfigEntry<int> craftAmount_cfg { get; set; }
-        public Dictionary<ItemStat, ItemStatConfig> modifableStats { get; set; }
-        public Dictionary<HitData.DamageType, HitCustomDamageMod> damageMods { get; set; }
+        public string CraftedAt {
+            get; set;
+        }
+        public BepInEx.Configuration.ConfigEntry<string> CraftedAtCfg {
+            get; set;
+        }
+        public bool Craftable { get; set; } = true;
+        public BepInEx.Configuration.ConfigEntry<bool> CraftableCfg {
+            get; set;
+        }
+        public int ReqStationlevel {
+            get; set;
+        }
+        public BepInEx.Configuration.ConfigEntry<int> StationLVLCfg {
+            get; set;
+        }
+        public int CraftAmount {
+            get; set;
+        }
+        public BepInEx.Configuration.ConfigEntry<int> CraftAmountCfg {
+            get; set;
+        }
+        public Dictionary<ItemStat, ItemStatConfig> ModifableStats {
+            get; set;
+        }
+        public Dictionary<HitData.DamageType, HitCustomDamageMod> DamageMods {
+            get; set;
+        }
 
-        public RecipeDefinition recipe { get; set; }
+        public RecipeDefinition Recipe {
+            get; set;
+        }
     }
 
-    class HitCustomDamageMod
-    {
-        public bool configurable { get; set; } = true;
-        public HitData.DamageModifier damageModifier { get; set; }
-        public BepInEx.Configuration.ConfigEntry<string> dmgModcfg { get; set; }
+    class HitCustomDamageMod {
+        public bool Configurable { get; set; } = true;
+        public HitData.DamageModifier DamageModifier {
+            get; set;
+        }
+        public BepInEx.Configuration.ConfigEntry<string> DmgModCfg {
+            get; set;
+        }
     }
 
     class ItemStatConfig {
-        public bool configurable { get; set; } = true;
-        public bool isInt { get; set; } = false;
-        public float default_value { get; set; }
-        public BepInEx.Configuration.ConfigEntry<float> cfg { get; set; }
-        public BepInEx.Configuration.ConfigEntry<int> cfgInt { get; set; }
-        public float min { get; set; } = 0f;
-        public float max { get; set; } = 400f;
+        public bool Configurable { get; set; } = true;
+        public bool IsInt { get; set; } = false;
+        public float Default_value {
+            get; set;
+        }
+        public BepInEx.Configuration.ConfigEntry<float> Cfg {
+            get; set;
+        }
+        public BepInEx.Configuration.ConfigEntry<int> CfgInt {
+            get; set;
+        }
+        public float Min { get; set; } = 0f;
+        public float Max { get; set; } = 400f;
     }
 
-    class RecipeDefinition
-    {
-        public BepInEx.Configuration.ConfigEntry<string> recipeConfig { get; set; }
-        public List<RecipeIngredient> recipeItems { get; set; }
-        public List<RequirementConfig> recipeReqs { get; set; }
-        public Recipe resolvedRecipe { get; set; }
+    class RecipeDefinition {
+        public BepInEx.Configuration.ConfigEntry<string> RecipeConfig {
+            get; set;
+        }
+        public List<RecipeIngredient> RecipeItems {
+            get; set;
+        }
+        public List<RequirementConfig> RecipeReqs {
+            get; set;
+        }
+        public Recipe ResolvedRecipe {
+            get; set;
+        }
     }
 
     class RecipeIngredient {
-        public string prefab { get; set; }
-        public int amount { get; set; }
-        public int upgradeCost { get; set; } = 0;
+        public string Prefab {
+            get; set;
+        }
+        public int Amount {
+            get; set;
+        }
+        public int UpgradeCost { get; set; } = 0;
     }
 }
