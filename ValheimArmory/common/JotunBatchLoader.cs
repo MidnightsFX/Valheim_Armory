@@ -3,7 +3,9 @@ using Jotunn;
 using Jotunn.Configs;
 using Jotunn.Entities;
 using Jotunn.Managers;
+using Jotunn.Utils;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -18,6 +20,16 @@ namespace ValheimArmory.common
         internal static AssetBundle Assets;
         internal static Dictionary<string, string> AddedItems = new Dictionary<string, string>();
         internal static List<string> ArcheryAmmoToAdd = new List<string>();
+
+        // Pending in-world item updates, drained once per frame so an entire burst of SettingChanged
+        // handlers (e.g. a full server config sync) costs a single Resources.FindObjectsOfTypeAll scan
+        // instead of one scan per changed setting.
+        private static readonly List<KeyValuePair<string, Action<ItemDrop.ItemData>>> pendingWorldUpdates = new List<KeyValuePair<string, Action<ItemDrop.ItemData>>>();
+        private static bool worldUpdateScheduled = false;
+
+        // When non-null, GetRecipeIndexByPrefab resolves indexes via this map (O(1)) instead of a linear
+        // FindIndex over ObjectDB.instance.m_recipes. Built for the duration of a ReapplyAllRecipeConfig pass.
+        private static Dictionary<string, int> recipeIndexCache = null;
 
         internal static readonly AcceptableValueList<string> allowedModifiers = new AcceptableValueList<string>(new string[] {
             HitData.DamageModifier.Normal.ToString(),
@@ -48,6 +60,11 @@ namespace ValheimArmory.common
                 BatchAddItems();
                 SetupOnChange();
                 ItemManager.OnItemsRegistered += AddAmmoItemsToArcheryTarget;
+                // Re-apply config driven recipe values whenever the ObjectDB is (re)built. Jotunn re-adds the
+                // cached (local-config) recipes on every ObjectDB.Awake, so this reconciles them to the current
+                // (possibly server-synced) config values. Also re-apply when admin config arrives from the server.
+                ItemManager.OnItemsRegistered += ReapplyAllRecipeConfig;
+                SynchronizationManager.OnConfigurationSynchronized += OnModConfigsChanged;
             }
 
             // Flush to disk
@@ -117,7 +134,11 @@ namespace ValheimArmory.common
                 // Logger.LogInfo("Setup Crafting station level");
                 // Modify where the item is crafted
                 itemdef.craftedAt_cfg.SettingChanged += (_, _) => {
-                    ModifyItemRecipeCraftedAt(itemdef, itemdef.craftedAt_cfg.Value);
+                    ModifyItemRecipeCraftedAt(itemdef);
+                };
+                // Modify how many of the item are crafted per recipe
+                itemdef.craftAmount_cfg.SettingChanged += (_, _) => {
+                    ModifyItemRecipeCraftAmount(itemdef, itemdef.craftAmount_cfg.Value);
                 };
                 // Logger.LogInfo("Setup single value changes");
                 
@@ -133,9 +154,8 @@ namespace ValheimArmory.common
                         }
                         // Update player items
                         UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
-                        // Update in world items, this is delayed and batched to prevent lag spikes.
-                        IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(itemdef.prefab));
-                        UpdateItemInWorldSynchronize(objects, true, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
+                        // Update in world items, batched into a single scan to prevent lag spikes (e.g. on server config sync).
+                        EnqueueWorldUpdate(itemdef.prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.default_value, item); });
                     }
 
                     if (stat.Value.isInt) {
@@ -163,13 +183,51 @@ namespace ValheimArmory.common
                         HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.dmgModcfg.Value);
                         // Update player items
                         UpdateItemInPlayerInventory(itemdef.prefab, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
-                        IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(itemdef.prefab));
-                        // Update world items
-                        UpdateItemInWorldSynchronize(objects, false, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
+                        // Update world items, batched into a single scan to prevent lag spikes (e.g. on server config sync).
+                        EnqueueWorldUpdate(itemdef.prefab, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });
                     };
                 }
             }
             return true;
+        }
+
+        // Idempotently reconciles every item recipe in the live ObjectDB to the current config values.
+        // Safe to call repeatedly and from multiple lifecycle events; self guards when no ObjectDB exists.
+        private static void ReapplyAllRecipeConfig() {
+            if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
+            // Build a prefab -> recipe index map once so the ~5 GetRecipeIndexByPrefab lookups per item below
+            // are O(1) instead of a linear scan over m_recipes (which is ~680 linear scans across all items).
+            // EnableDisableItemInDB may append a recipe when enabling a missing one; appends keep existing
+            // indexes valid, so the cache stays correct for the remainder of the pass.
+            recipeIndexCache = new Dictionary<string, int>(ObjectDB.instance.m_recipes.Count);
+            for (int i = 0; i < ObjectDB.instance.m_recipes.Count; i++) {
+                Recipe recipe = ObjectDB.instance.m_recipes[i];
+                if (recipe.m_item != null && !recipeIndexCache.ContainsKey(recipe.m_item.name)) {
+                    recipeIndexCache[recipe.m_item.name] = i;
+                }
+            }
+            try {
+                foreach (ItemDefinition itemdef in resourceDefinitions) {
+                    if (ValidateRecipeConfig(itemdef)) { ModifyItemRecipeInODB(itemdef); }
+                    ModifyItemRecipeLevel(itemdef, itemdef.stationlvl_cfg.Value);
+                    ModifyItemRecipeCraftedAt(itemdef);
+                    ModifyItemRecipeCraftAmount(itemdef, itemdef.craftAmount_cfg.Value);
+                    EnableDisableItemInDB(itemdef, itemdef.craftable_cfg.Value);
+                }
+            } finally {
+                recipeIndexCache = null;
+            }
+            // Refresh an open crafting panel so changed recipes/amounts/enabled state are reflected immediately.
+            if (Player.m_localPlayer != null) { Player.m_localPlayer.UpdateKnownRecipesList(); }
+        }
+
+        // Fires when admin (server) config is synchronized to this client. Only re-apply when our plugin's
+        // config was part of the sync payload to avoid needless work when other mods sync.
+        private static void OnModConfigsChanged(object sender, ConfigurationSynchronizationEventArgs e) {
+            if (e.UpdatedPluginGUIDs != null && e.UpdatedPluginGUIDs.Count > 0 && !e.UpdatedPluginGUIDs.Contains(global::ValheimArmory.ValheimArmory.PluginGUID)) {
+                return;
+            }
+            ReapplyAllRecipeConfig();
         }
 
         private static bool BatchAddItems() {
@@ -428,7 +486,8 @@ namespace ValheimArmory.common
             return string.Join("|", recipe);
         }
 
-        private static bool ModifyItemRecipeCraftedAt(ItemDefinition itemdef, string craftedAt) {
+        private static bool ModifyItemRecipeCraftedAt(ItemDefinition itemdef) {
+            if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return false; }
             int index = GetRecipeIndexByPrefab(itemdef.prefab);
             if (index == -1) {
                 Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, recipe will not be modified.");
@@ -450,6 +509,7 @@ namespace ValheimArmory.common
         private static void ModifyItemRecipeInODB(ItemDefinition itemdef) {
             // if (itemdef.enabled == false) { return; }
             // Logger.LogInfo($"Modifying {itemdef.Name} recipe in OODB");
+            if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
             int recipe_index = GetRecipeIndexByPrefab(itemdef.prefab);
             if (recipe_index == -1) {
                 Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, Recipe will not be modified.");
@@ -480,6 +540,7 @@ namespace ValheimArmory.common
         }
 
         private static void EnableDisableItemInDB(ItemDefinition itemdef, bool enable) {
+            if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
             int index = GetRecipeIndexByPrefab(itemdef.prefab);
             if (index == -1 && enable == false) {
                 return; 
@@ -504,6 +565,7 @@ namespace ValheimArmory.common
 
         private static void ModifyItemRecipeLevel(ItemDefinition itemdef, int level) {
             // if (itemdef.enabled == false) { return; }
+            if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
             int index = GetRecipeIndexByPrefab(itemdef.prefab);
             if (index == -1) {
                 Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, required level will not be modified.");
@@ -515,7 +577,24 @@ namespace ValheimArmory.common
             itemdef.recipe.resolvedRecipe = ObjectDB.instance.m_recipes[index];
         }
 
+        private static void ModifyItemRecipeCraftAmount(ItemDefinition itemdef, int amount) {
+            if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
+            int index = GetRecipeIndexByPrefab(itemdef.prefab);
+            if (index == -1) {
+                Logger.LogWarning($"Recipe of {itemdef.prefab} not found in ObjectDB, craft amount will not be modified.");
+                return;
+            }
+            ObjectDB.instance.m_recipes[index].m_amount = amount;
+            // Update the stored recipe so if we use it to target things again it will still be accurate
+            itemdef.recipe.resolvedRecipe = ObjectDB.instance.m_recipes[index];
+        }
+
         private static int GetRecipeIndexByPrefab(string prefab) {
+            // During a ReapplyAllRecipeConfig pass the cache is authoritative: a hit is the index, a miss means
+            // the recipe is not in the ObjectDB (same as FindIndex returning -1).
+            if (recipeIndexCache != null) {
+                return recipeIndexCache.TryGetValue(prefab, out int cachedIndex) ? cachedIndex : -1;
+            }
             return ObjectDB.instance.m_recipes.FindIndex(m => m.m_item != null && m.m_item.name == prefab);
         }
 
@@ -540,43 +619,36 @@ namespace ValheimArmory.common
             }
         }
 
-        //static IEnumerator UpdateItemInWorldAsync(IEnumerable<GameObject> objects, bool start_sleep, Action<ItemDrop.ItemData> callback) {
-        //    if (objects == null || objects.Count() == 0) { yield break; }
-        //    if (start_sleep) { yield return new WaitForSeconds(0.5f); }
-        //    Logger.LogDebug($"Updating {objects.Count()} objects in the world.");
-        //    int concurrent_updates = VAConfig.InMemoryModificationsPerTick.Value;
-        //    int update_num = 0;
-        //    foreach (GameObject go in objects)
-        //    {
-        //        if (update_num >= concurrent_updates) {
-        //            yield return new WaitForSeconds(0.5f);
-        //            update_num = 0;
-        //        }
-        //        ItemDrop id = null;
-        //        if (go.TryGetComponent<ItemDrop>(out id)) {
-        //            Logger.LogDebug($"Updating {id.m_itemData.m_shared.m_name}");
-        //            callback(id.m_itemData);
-        //        }
-        //    }
-        //    yield break;
-        //}
+        // Queues an in-world item update. All updates enqueued within a frame are applied together in a single
+        // scan (see DrainWorldUpdates), collapsing N Resources.FindObjectsOfTypeAll scans - one per changed
+        // setting during a config sync - into one.
+        private static void EnqueueWorldUpdate(string prefab, Action<ItemDrop.ItemData> callback) {
+            pendingWorldUpdates.Add(new KeyValuePair<string, Action<ItemDrop.ItemData>>(prefab, callback));
+            if (worldUpdateScheduled) { return; }
+            worldUpdateScheduled = true;
+            BepInEx.ThreadingHelper.Instance.StartCoroutine(DrainWorldUpdates());
+        }
 
-        static void UpdateItemInWorldSynchronize(IEnumerable<GameObject> objects, bool start_sleep, Action<ItemDrop.ItemData> callback) {
-            if (objects == null || objects.Count() == 0) { return; }
-            // Logger.LogDebug($"Updating {objects.Count()} objects in the world.");
-            int concurrent_updates = VAConfig.InMemoryModificationsPerTick.Value;
-            int update_num = 0;
-            foreach (GameObject go in objects)
-            {
-                if (update_num >= concurrent_updates){
-                    update_num = 0;
+        // Applies all queued in-world item updates using a single Resources.FindObjectsOfTypeAll scan.
+        private static IEnumerator DrainWorldUpdates() {
+            // Wait a frame so the full burst of SettingChanged handlers (e.g. an entire config sync) enqueues first.
+            yield return null;
+            try {
+                if (pendingWorldUpdates.Count > 0) {
+                    foreach (GameObject go in Resources.FindObjectsOfTypeAll<GameObject>()) {
+                        if (go == null) { continue; }
+                        if (!go.TryGetComponent<ItemDrop>(out ItemDrop id)) { continue; }
+                        foreach (KeyValuePair<string, Action<ItemDrop.ItemData>> update in pendingWorldUpdates) {
+                            if (go.name.StartsWith(update.Key)) {
+                                // Logger.LogDebug($"Updating {id.m_itemData.m_shared.m_name}");
+                                update.Value(id.m_itemData);
+                            }
+                        }
+                    }
                 }
-                ItemDrop id = null;
-                if (go.TryGetComponent<ItemDrop>(out id))
-                {
-                    // Logger.LogDebug($"Updating {id.m_itemData.m_shared.m_name}");
-                    callback(id.m_itemData);
-                }
+            } finally {
+                pendingWorldUpdates.Clear();
+                worldUpdateScheduled = false;
             }
         }
 

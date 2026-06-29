@@ -1,3 +1,10 @@
+**1.27.3**
+ ---
+ ```
+ - Fixes Crafting recipe modifications not being applied during server startup
+ - Optimize batched modifications
+ ```
+
 **1.27.2**
  ---
  ```
