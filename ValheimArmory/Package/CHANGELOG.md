@@ -1,3 +1,9 @@
+**1.28.1**
+ ---
+ ```
+ - Ensures custom recipes are available for modification when server and client ODBs differ
+ ```
+
 **1.28.0**
  ---
  ```

@@ -208,6 +208,10 @@ namespace ValheimArmory.Common {
         private static void ReapplyAllRecipeConfig() {
             if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
             foreach (ItemDefinition itemdef in resourceDefinitions) {
+                // Make sure the recipe is present before we try to modify it. A prior ObjectDB.CopyOtherDB
+                // (server join) can drop our custom recipes, so re-add disabled items too - their config is
+                // applied here and EnableDisableItemInDB sets the disabled flag last.
+                EnsureRecipeInDB(itemdef);
                 if (ValidateRecipeConfig(itemdef)) { ModifyItemRecipeInODB(itemdef); }
                 ModifyItemRecipeLevel(itemdef, itemdef.StationLVLCfg.Value);
                 ModifyItemRecipeCraftedAt(itemdef);
@@ -257,7 +261,12 @@ namespace ValheimArmory.Common {
                     Amount = itemdef.CraftAmountCfg.Value,
                     CraftingStation = $"{itemdef.CraftedAtCfg.Value}",
                     MinStationLevel = itemdef.StationLVLCfg.Value,
-                    Enabled = itemdef.CraftableCfg.Value,
+                    // Always register as enabled so the recipe is added to and retained in the ObjectDB (a
+                    // recipe registered disabled never gets cached/retained). The real craftable state is
+                    // applied immediately after by ReapplyAllRecipeConfig -> EnableDisableItemInDB, so a
+                    // disabled item still lives in the DB (m_enabled=false), stays modifiable, and re-enables
+                    // correctly - including after a server ObjectDB copy replaces the recipe list.
+                    Enabled = true,
                     Icons = new[] { ItemSprite },
                     Requirements = itemdef.Recipe.RecipeReqs.ToArray()
                 };
@@ -535,28 +544,34 @@ namespace ValheimArmory.Common {
             }
         }
 
+        // Re-add itemdef's cached recipe to the live ObjectDB if a prior ObjectDB.CopyOtherDB (server join)
+        // replaced m_recipes and dropped it. Keeps even disabled items present so their recipe can still be
+        // modified and correctly re-enabled later.
+        private static void EnsureRecipeInDB(ItemDefinition itemdef) {
+            if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
+            if (GetRecipeIndexByPrefab(itemdef.Prefab) != -1) { return; }
+            if (itemdef.Recipe.ResolvedRecipe != null) {
+                ObjectDB.instance.m_recipes.Add(itemdef.Recipe.ResolvedRecipe);
+            }
+        }
+
         private static void EnableDisableItemInDB(ItemDefinition itemdef, bool enable) {
             if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
 
             int index = GetRecipeIndexByPrefab(itemdef.Prefab);
-            if (index == -1 && enable == false) {
-                return;
-            }
-            if (index == -1 && enable == true) {
+            if (index == -1) {
+                // Recipe was dropped (e.g. server ObjectDB copy). Re-add our cached recipe so a disabled
+                // item still lives in the DB and can be modified / re-enabled later.
                 if (itemdef.Recipe.ResolvedRecipe != null) {
+                    itemdef.Recipe.ResolvedRecipe.m_enabled = enable;
                     ObjectDB.instance.m_recipes.Add(itemdef.Recipe.ResolvedRecipe);
                 } else {
-                    //ObjectDB.instance.m_recipes.Add(BuildRecipeForItem(itemdef));
-                    Logger.LogWarning($"Recipe of {itemdef.Prefab} not found in ObjectDB, recipe wont be set to enabled.");
+                    Logger.LogWarning($"Recipe of {itemdef.Prefab} not found in ObjectDB and no cached recipe to re-add.");
                 }
                 return;
             }
             // recipe exists in the ODB
-            if (enable) {
-                ObjectDB.instance.m_recipes[index].m_enabled = true;
-            } else {
-                ObjectDB.instance.m_recipes[index].m_enabled = false;
-            }
+            ObjectDB.instance.m_recipes[index].m_enabled = enable;
             itemdef.Recipe.ResolvedRecipe = ObjectDB.instance.m_recipes[index];
         }
 
