@@ -1255,7 +1255,7 @@ namespace ValheimArmory
             ItemDefinition Flint_Greatsword = new ItemDefinition();
             Flint_Greatsword.Name = "Flint Greatsword";
             Flint_Greatsword.Category = ItemCategory.Swords;
-            Flint_Greatsword.Prefab = "VAFlint_greatsword";
+            Flint_Greatsword.Prefab = "VAFlint_Greatsword";
             Flint_Greatsword.Icon = "flint_greatsword";
             Flint_Greatsword.CraftedAt = "piece_workbench";
             Flint_Greatsword.CraftAmount = 1;

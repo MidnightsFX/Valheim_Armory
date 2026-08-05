@@ -1,3 +1,12 @@
+**1.28.2**
+ ---
+ ```
+ - Reduce flint spear size
+ - Fixes Flint Greatsword config errors
+ - Fix shutdown error from config changes as objects are destroyed
+ - Update required Jotunn version
+ ```
+
 **1.28.1**
  ---
  ```

@@ -22,11 +22,17 @@ namespace ValheimArmory.Common {
                 action();
                 return;
             }
+            // During game shutdown the ThreadingHelper's MonoBehaviour is destroyed while config entries can
+            // still fire SettingChanged (e.g. Jotunn reverting server-synced values on disconnect). Calling
+            // StartCoroutine on a destroyed behaviour throws ArgumentNullException, and there's nothing left
+            // to update anyway, so drop the change. The Unity '==' overload treats a destroyed object as null.
+            BepInEx.ThreadingHelper host = BepInEx.ThreadingHelper.Instance;
+            if (host == null) { return; }
             pendingActions[key] = action;
             fireAt[key] = Time.realtimeSinceStartup + delay;
             if (running.Contains(key)) { return; }
             running.Add(key);
-            BepInEx.ThreadingHelper.Instance.StartCoroutine(Run(key));
+            host.StartCoroutine(Run(key));
         }
 
         private static IEnumerator Run(object key) {

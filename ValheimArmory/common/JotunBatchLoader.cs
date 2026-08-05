@@ -630,10 +630,14 @@ namespace ValheimArmory.Common {
         // scan (see DrainWorldUpdates), collapsing N Resources.FindObjectsOfTypeAll scans - one per changed
         // setting during a config sync - into one.
         private static void EnqueueWorldUpdate(string prefab, Action<ItemDrop.ItemData> callback) {
+            // Skip during game shutdown: the ThreadingHelper's MonoBehaviour is destroyed (StartCoroutine
+            // would throw) and there are no in-world items left to update. Unity's '==' treats it as null.
+            BepInEx.ThreadingHelper host = BepInEx.ThreadingHelper.Instance;
+            if (host == null) { return; }
             pendingWorldUpdates.Add(new KeyValuePair<string, Action<ItemDrop.ItemData>>(prefab, callback));
             if (worldUpdateScheduled) { return; }
             worldUpdateScheduled = true;
-            BepInEx.ThreadingHelper.Instance.StartCoroutine(DrainWorldUpdates());
+            host.StartCoroutine(DrainWorldUpdates());
         }
 
         // Applies all queued in-world item updates using a single Resources.FindObjectsOfTypeAll scan.
