@@ -31,5 +31,7 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("0.0.1.0")]
-[assembly: AssemblyFileVersion("0.0.1.0")]
+// Derived from the PluginVersion const so the assembly cannot disagree with
+// what [BepInPlugin] reports. It was frozen at "0.0.1.0" through every release.
+[assembly: AssemblyVersion(ValheimArmory.ValheimArmory.PluginVersion)]
+[assembly: AssemblyFileVersion(ValheimArmory.ValheimArmory.PluginVersion)]

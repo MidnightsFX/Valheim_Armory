@@ -1,0 +1,44 @@
+# Release configuration for mod-tools.
+# Shared settings come from the preset, which ships inside the gem.
+#
+# Inspect what this actually resolves to:
+#   mod-tools print-config
+
+extends:  jotunn
+assembly: ValheimArmory
+
+# Copy the build into this machine's mod manager profiles after every
+# build. Destinations live in /mnt/c/Users/carls/Documents/projects/Valheim_Stuff/mod-tools/.config/config.yml,
+# because they differ per machine.
+deploy:
+  enabled: true
+
+publish:
+  github:
+    enabled: true
+
+  discord:
+    enabled: true
+
+  thunderstore:
+    enabled: true
+    author_name: MidnightMods          # the Thunderstore TEAM, not your username
+    communities: [valheim]
+    categories: []                    # optional
+    has_nsfw_content: false           # optional, default false
+
+  hexium:
+    enabled: false
+    base_url: https://valheim.hexium.gg   # required: the community subdomain
+    author_name: MidnightsFX
+    communities: [valheim]
+
+  nexus:
+    enabled: true
+    file_id: 7313465                  # required: an EXISTING file on the mod page
+    mod_id: 1455                      # required only when send_changelog is true
+    send_changelog: true              # posts the CHANGELOG entry for this version
+    file_category: main               # optional, default "main"
+    update_mod_version: true          # optional, sets the mod version to this one
+    archive_existing_version: true    # optional
+    display_name: "ValheimArmory"  # optional, defaults to the zip filename

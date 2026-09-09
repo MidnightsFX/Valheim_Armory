@@ -1,79 +1,63 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DEAF4438-8089-40ED-8175-398E1261D45B}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFramework>net48</TargetFramework>
     <RootNamespace>ValheimArmory</RootNamespace>
     <AssemblyName>ValheimArmory</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
-    <TargetFrameworkProfile />
     <LangVersion>10</LangVersion>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>
-    </DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-    <Prefer32Bit>false</Prefer32Bit>
-  </PropertyGroup>
-  <PropertyGroup>
-  </PropertyGroup>
-  <PropertyGroup>
+    <!-- Properties/AssemblyInfo.cs owns the assembly attributes and derives the version from
+         ValheimArmory.PluginVersion, so the SDK must not generate a second set. -->
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- VALHEIM_MANAGED and BEPINEX_PATH are resolved in ..\Directory.Build.props, which runs
+         early enough for JotunnLib's reference HintPaths to see them. Only fill in what is
+         still missing here. Declared before the reference groups below, which use them. -->
+    <VALHEIM_MANAGED Condition=" '$(VALHEIM_MANAGED)' == '' ">$(VALHEIM_INSTALL)/valheim_Data/Managed</VALHEIM_MANAGED>
+    <BEPINEX_PATH Condition=" '$(BEPINEX_PATH)' == '' ">$(VALHEIM_INSTALL)/BepInEx</BEPINEX_PATH>
+    <!-- The Unity project lives in a sibling repo. Relative to this one so it does not depend
+         on where the checkout sits; override in the gitignored Environment.props. -->
+    <UNITY_BUNDLES Condition=" '$(UNITY_BUNDLES)' == '' ">$(MSBuildProjectDirectory)/../../Unity_Valheim_mod_data/JotunnModUnity/AssetBundles/StandaloneWindows</UNITY_BUNDLES>
+  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="Assembly-CSharp_publicized">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\Assembly-CSharp_publicized.dll</HintPath>
-    </Reference>
-    <Reference Include="com.rlabrecque.steamworks.net_publicized">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\com.rlabrecque.steamworks.net_publicized.dll</HintPath>
-    </Reference>
-    <Reference Include="gui_framework_publicized">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\gui_framework_publicized.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Security_publicized">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\Mono.Security_publicized.dll</HintPath>
-    </Reference>
-    <Reference Include="mscorlib_publicized">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\mscorlib_publicized.dll</HintPath>
-    </Reference>
-    <Reference Include="netstandard_publicized">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\netstandard_publicized.dll</HintPath>
-    </Reference>
-    <Reference Include="PlayFabParty_publicized">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\PlayFabParty_publicized.dll</HintPath>
-    </Reference>
-    <Reference Include="PlayFab_publicized">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\PlayFab_publicized.dll</HintPath>
-    </Reference>
-    <Reference Include="Splatform.Steam_publicized">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\Splatform.Steam_publicized.dll</HintPath>
-    </Reference>
-    <Reference Include="Splatform_publicized">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Valheim\valheim_Data\Managed\publicized_assemblies\Splatform_publicized.dll</HintPath>
-    </Reference>
+    <Compile Remove="Releases\**" />
+    <EmbeddedResource Remove="Releases\**" />
+    <None Remove="Releases\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="AssetsEmbedded\vabundle" />
+    <None Remove="localizations\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="AssetsEmbedded\vabundle" />
+    <EmbeddedResource Include="localizations\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -82,114 +66,106 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="common\ConfigChangeDebouncer.cs" />
-    <Compile Include="common\ConfigDrawers.cs" />
-    <Compile Include="common\ItemDefinition.cs" />
-    <Compile Include="common\JotunBatchLoader.cs" />
-    <Compile Include="common\Logger.cs" />
-    <Compile Include="common\StatusModifiers.cs" />
-    <Compile Include="common\WeaponModifier.cs" />
-    <Compile Include="patches\HybridBloodWeapon.cs" />
-    <Compile Include="ValheimArmoryItems.cs" />
-    <Compile Include="Properties\IgnoreAccessModifiers.cs" />
-    <Compile Include="ValheimArmory.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="common\ValConfig.cs" />
-  </ItemGroup>
+
   <ItemGroup>
     <None Include="app.config" />
-    <EmbeddedResource Include="AssetsEmbedded\vabundle" />
-    <None Include="DoPrebuild.props" />
-    <None Include="Environment.props" />
-    <EmbeddedResource Include="localizations\English.json" />
-    <EmbeddedResource Include="localizations\German.json" />
-    <EmbeddedResource Include="localizations\Russian.json" />
-    <EmbeddedResource Include="localizations\Chinese_Trad.json" />
-    <EmbeddedResource Include="localizations\Chinese.json" />
-    <EmbeddedResource Include="localizations\Spanish.json" />
-    <EmbeddedResource Include="localizations\Bulgarian.json" />
-    <EmbeddedResource Include="localizations\Croatian.json" />
-    <EmbeddedResource Include="localizations\Czech.json" />
-    <EmbeddedResource Include="localizations\Danish.json" />
-    <EmbeddedResource Include="localizations\Dutch.json" />
-    <EmbeddedResource Include="localizations\Finnish.json" />
-    <EmbeddedResource Include="localizations\French.json" />
-    <EmbeddedResource Include="localizations\Georgian.json" />
-    <EmbeddedResource Include="localizations\Greek.json" />
-    <EmbeddedResource Include="localizations\Hindi.json" />
-    <EmbeddedResource Include="localizations\Hungarian.json" />
-    <EmbeddedResource Include="localizations\Icelandic.json" />
-    <EmbeddedResource Include="localizations\Italian.json" />
-    <EmbeddedResource Include="localizations\Japanese.json" />
-    <EmbeddedResource Include="localizations\Korean.json" />
-    <EmbeddedResource Include="localizations\Latvian.json" />
-    <EmbeddedResource Include="localizations\Lithuanian.json" />
-    <EmbeddedResource Include="localizations\Macedonian.json" />
-    <EmbeddedResource Include="localizations\Norwegian.json" />
-    <EmbeddedResource Include="localizations\Polish.json" />
-    <EmbeddedResource Include="localizations\Portuguese_Brazilian.json" />
-    <EmbeddedResource Include="localizations\Portuguese_European.json" />
-    <EmbeddedResource Include="localizations\Romanian.json" />
-    <EmbeddedResource Include="localizations\Serbian.json" />
-    <EmbeddedResource Include="localizations\Slovak.json" />
-    <EmbeddedResource Include="localizations\Swedish.json" />
-    <EmbeddedResource Include="localizations\Thai.json" />
-    <EmbeddedResource Include="localizations\Turkish.json" />
-    <EmbeddedResource Include="localizations\Ukrainian.json" />
-    <None Include="Package\CHANGELOG.md" />
-    <None Include="README.md" />
   </ItemGroup>
+
   <ItemGroup>
-    <Folder Include="Package\plugins\" />
-    <Folder Include="Tutorials\" />
+    <PackageReference Include="HarmonyX" Version="2.10.2" />
+    <PackageReference Include="JotunnLib" Version="2.21.2" />
+    <PackageReference Include="Mono.Cecil" Version="0.11.5" />
   </ItemGroup>
+
   <ItemGroup>
-    <None Include="Package\manifest.json" />
+    <!-- Vanilla assemblies JotunnLib 2.21.2's own reference list does not carry. gui_framework
+         is one the prebuild publicizer generates (see ..\DoPrebuild.props); the others are
+         referenced stock, since nothing here reaches into their internals. -->
+    <Reference Include="gui_framework_publicized">
+      <HintPath>$(VALHEIM_MANAGED)/publicized_assemblies/gui_framework_publicized.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(VALHEIM_MANAGED)/Assembly-CSharp.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>$(VALHEIM_MANAGED)/com.rlabrecque.steamworks.net.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="PlayFab">
+      <HintPath>$(VALHEIM_MANAGED)/PlayFab.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="PlayFabParty">
+      <HintPath>$(VALHEIM_MANAGED)/PlayFabParty.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Splatform">
+      <HintPath>$(VALHEIM_MANAGED)/Splatform.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Splatform.Steam">
+      <HintPath>$(VALHEIM_MANAGED)/Splatform.Steam.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
   </ItemGroup>
+
   <ItemGroup>
-    <Content Include="Package\icon.png" />
+    <!-- JotunnLib's reference list still carries assemblies that Valheim's Unity version
+         dropped. Nothing here uses them, and leaving them in warns MSB3245 every build. -->
+    <Reference Remove="UnityEngine.ProfilerModule" Condition="!Exists('$(VALHEIM_MANAGED)/UnityEngine.ProfilerModule.dll')" />
   </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="HarmonyX">
-      <Version>2.10.2</Version>
-    </PackageReference>
-    <PackageReference Include="JotunnLib">
-      <Version>2.21.2</Version>
-    </PackageReference>
-    <PackageReference Include="Mono.Cecil">
-      <Version>0.11.5</Version>
-    </PackageReference>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="JotunnPostBuildTaskWin" Condition="'$(OS)' == 'Windows_NT'">
-    <Exec Command="powershell.exe -ExecutionPolicy RemoteSigned -File &quot;$(SolutionDir)publish.ps1&quot; -Target &quot;$(ConfigurationName)&quot; -TargetPath &quot;$(TargetDir.TrimEnd('\'))&quot; -TargetAssembly &quot;$(TargetFileName)&quot; -ValheimPath &quot;$(VALHEIM_INSTALL.TrimEnd('\'))&quot; -ProjectPath &quot;$(ProjectDir.TrimEnd('\'))&quot; " />
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Message Text="Copy asset bundle from $(UNITY_BUNDLES) to AssetsEmbedded" Importance="high" />
+    <Copy Condition="Exists('$(UNITY_BUNDLES)/vabundle')" SourceFiles="$(UNITY_BUNDLES)/vabundle" DestinationFolder="$(ProjectDir)AssetsEmbedded" SkipUnchangedFiles="true" />
+    <Warning Condition="!Exists('$(UNITY_BUNDLES)/vabundle')" Text="No asset bundle at $(UNITY_BUNDLES)/vabundle - building against the existing AssetsEmbedded/vabundle" />
   </Target>
-  <Target Name="CopyToModManagers">
-    <Message Text="Copying to mod managers" Importance="high" />
-    <Copy SourceFiles="$(TargetDir)\$(TargetFileName)" DestinationFolder="$(AppData)\com.kesomannen.gale\valheim\profiles\Modtest\BepInEx\plugins\" />
-    <Copy SourceFiles="$(TargetDir)\$(TargetFileName)" DestinationFolder="$(AppData)\r2modmanPlus-local\Valheim\profiles\Modtest\BepInEx\plugins\" />
-    <Copy SourceFiles="$(TargetDir)\$(TargetFileName)" DestinationFolder="$(AppData)\Thunderstore Mod Manager\DataFolder\Valheim\profiles\Modtesting\BepInEx\plugins\" />
-    <Copy SourceFiles="$(TargetDir)\$(TargetFileName)" DestinationFolder="$(ProjectDir)\Package\plugins\" />
-  </Target>
+
   <PropertyGroup>
     <BuildDependsOn>
       $(BuildDependsOn);
-      JotunnPostBuildTaskWin;
-      CopyToModManagers;
     </BuildDependsOn>
   </PropertyGroup>
+  <!-- BEGIN mod-tools (managed block; replaced by `mod-tools setup`) -->
   <PropertyGroup>
-    <PreBuildEvent>xcopy "C:\Users\carls\Documents\projects\Valheim_Stuff\Unity_Valheim_mod_data\JotunnModUnity\AssetBundles\StandaloneWindows\vabundle" "$(ProjectDir)\AssetsEmbedded\vabundle" /q /y /i
-</PreBuildEvent>
+    <RepoRoot Condition=" '$(RepoRoot)' == '' ">$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)/../'))</RepoRoot>
+    <!-- Override in the gitignored Environment.props when the gem's bindir
+         is not on the PATH that MSBuild sees. -->
+    <ModTools Condition=" '$(ModTools)' == '' ">mod-tools</ModTools>
   </PropertyGroup>
-  <Target Name="EnsureEnvironmentPropsImport" BeforeTargets="PrepareForBuild">
+
+  <!-- Nothing is vendored into this repo, so a machine that never installed
+       the tools has no mod-tools at all. This probes for it once and warns,
+       rather than failing: not having a release tool should not stop anyone
+       compiling. Everything below is then conditioned on the result, so a
+       machine without it skips those steps instead of failing three times
+       over with "command not found" buried in Exec output. -->
+  <Target Name="ModToolsGuard" BeforeTargets="Build">
+    <Exec Command="$(ModTools) preflight --root &quot;$(RepoRoot).&quot;" ContinueOnError="true" IgnoreExitCode="true" StandardOutputImportance="low">
+      <Output TaskParameter="ExitCode" PropertyName="ModToolsExit" />
+    </Exec>
     <PropertyGroup>
-      <ErrorText>This project needs a Environment.props file with the path to your Valheim installation. See https://github.com/Valheim-Modding/ValheimAdditions. {0} is missing.</ErrorText>
+      <ModToolsAvailable Condition=" '$(ModToolsExit)' == '0' ">true</ModToolsAvailable>
     </PropertyGroup>
-    <Error Condition="!Exists('$(SolutionDir)Environment.props')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)Environment.props'))" />
+    <Warning Condition=" '$(ModToolsAvailable)' != 'true' " Text="mod-tools is not installed on this machine, or this repo is not set up. Skipping release checks, packaging and deploy. Install it with `rake install` from a clone of the tools repo; see its SETUP.md." />
   </Target>
+
+  <Target Name="ReleaseChecks" BeforeTargets="Build" Condition=" '$(ModToolsAvailable)' == 'true' AND '$(Configuration)' == 'Release' ">
+    <Exec Command="$(ModTools) check --root &quot;$(RepoRoot).&quot;" />
+  </Target>
+
+  <Target Name="ReleasePackage" AfterTargets="Build" Condition=" '$(ModToolsAvailable)' == 'true' AND '$(Configuration)' == 'Release' ">
+    <Exec Command="$(ModTools) package --root &quot;$(RepoRoot).&quot;" />
+  </Target>
+
+  <!-- No Configuration condition, unlike the two above: every build lands
+       in the test profiles, Debug and Release alike. Declared last so it
+       runs after a GenerateMdb target defined earlier in this file, whose
+       .mdb it copies. Does nothing unless release.yml enables deploy. -->
+  <Target Name="ModToolsDeploy" AfterTargets="Build" Condition=" '$(ModToolsAvailable)' == 'true' ">
+    <Exec Command="$(ModTools) deploy --root &quot;$(RepoRoot).&quot; --configuration $(Configuration)" />
+  </Target>
+  <!-- END mod-tools -->
 </Project>

@@ -4398,6 +4398,7 @@ namespace ValheimArmory
             NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_boltCorewood.Prefab");
             NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_chitin.Prefab");
             NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_needle.Prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Arrows/VAbow_projectile_boltFire.Prefab");
             // Spear projectiles
             NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAspearblackmetal_projectile.Prefab");
             NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAspearmoder_projectile.Prefab");

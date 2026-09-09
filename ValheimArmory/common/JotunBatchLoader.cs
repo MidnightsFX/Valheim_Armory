@@ -49,10 +49,10 @@ namespace ValheimArmory.Common {
             }
             WireConfigDefs();
 
-            bool on_server = false;
-            if (ZNet.instance != null && ZNet.instance.IsServerInstance()) {
-                on_server = true;
-            }
+            // BatchSetup runs from plugin Awake, before any world exists -- ZNet.instance is always null
+            // here, so the ZNet probe could never detect a server. The headless graphics-device check is
+            // what actually identifies a dedicated server this early.
+            bool on_server = UnityEngine.SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Null;
 
             if (on_server == false) {
                 // This is not needed on the server
@@ -81,6 +81,14 @@ namespace ValheimArmory.Common {
         private static bool WireConfigDefs() {
             // Ensure save on set is false, we will save at the end of this process.
             foreach (ItemDefinition itemdef in resourceDefinitions) {
+                // A definition registered without a Recipe (or with a null item list) used to NRE here,
+                // killing the whole mod during Awake. Normalize instead: the item is still registered,
+                // it just gets no crafting recipe (see BatchAddItems).
+                if (itemdef.Recipe == null) { itemdef.Recipe = new RecipeDefinition(); }
+                if (itemdef.Recipe.RecipeItems == null) {
+                    Logger.LogError($"Item definition '{itemdef.Name}' has no recipe items; it will be registered without a crafting recipe.");
+                    itemdef.Recipe.RecipeItems = new List<RecipeIngredient>();
+                }
                 // Build a compacted display name for reference, this primarily just needs spaces removed.
                 itemdef.DisplayName = string.Join("", itemdef.Name.Split(default(string[]), StringSplitOptions.RemoveEmptyEntries));
                 // Skip over all loading of items that are disabled.
@@ -257,20 +265,28 @@ namespace ValheimArmory.Common {
                         SetItemDamageModifier(modifier, dmgmod.Key, ItemD.m_itemData);
                     }
                 }
-                ItemConfig itemcfg = new ItemConfig() {
-                    Amount = itemdef.CraftAmountCfg.Value,
-                    CraftingStation = $"{itemdef.CraftedAtCfg.Value}",
-                    MinStationLevel = itemdef.StationLVLCfg.Value,
-                    // Always register as enabled so the recipe is added to and retained in the ObjectDB (a
-                    // recipe registered disabled never gets cached/retained). The real craftable state is
-                    // applied immediately after by ReapplyAllRecipeConfig -> EnableDisableItemInDB, so a
-                    // disabled item still lives in the DB (m_enabled=false), stays modifiable, and re-enables
-                    // correctly - including after a server ObjectDB copy replaces the recipe list.
-                    Enabled = true,
-                    Icons = new[] { ItemSprite },
-                    Requirements = itemdef.Recipe.RecipeReqs.ToArray()
-                };
-                ItemManager.Instance.AddItem(new CustomItem(ItemPrefab, fixReference: true, itemcfg));
+                if (itemdef.Recipe.RecipeReqs == null || itemdef.Recipe.RecipeReqs.Count == 0) {
+                    // No valid requirements resolved (empty/missing recipe definition and no usable config
+                    // value). Registering a recipe with zero requirements would make the item free to craft,
+                    // so register the item without one.
+                    Logger.LogError($"Item '{itemdef.Name}' has no valid recipe requirements; registering it without a crafting recipe.");
+                    ItemManager.Instance.AddItem(new CustomItem(ItemPrefab, fixReference: true));
+                } else {
+                    ItemConfig itemcfg = new ItemConfig() {
+                        Amount = itemdef.CraftAmountCfg.Value,
+                        CraftingStation = $"{itemdef.CraftedAtCfg.Value}",
+                        MinStationLevel = itemdef.StationLVLCfg.Value,
+                        // Always register as enabled so the recipe is added to and retained in the ObjectDB (a
+                        // recipe registered disabled never gets cached/retained). The real craftable state is
+                        // applied immediately after by ReapplyAllRecipeConfig -> EnableDisableItemInDB, so a
+                        // disabled item still lives in the DB (m_enabled=false), stays modifiable, and re-enables
+                        // correctly - including after a server ObjectDB copy replaces the recipe list.
+                        Enabled = true,
+                        Icons = new[] { ItemSprite },
+                        Requirements = itemdef.Recipe.RecipeReqs.ToArray()
+                    };
+                    ItemManager.Instance.AddItem(new CustomItem(ItemPrefab, fixReference: true, itemcfg));
+                }
 
                 // This item needs to be included as a returnable arrow/bolt
                 if (itemdef.Category == ItemCategory.Arrows) {
@@ -650,7 +666,10 @@ namespace ValheimArmory.Common {
                         if (go == null) { continue; }
                         if (!go.TryGetComponent<ItemDrop>(out ItemDrop id)) { continue; }
                         foreach (KeyValuePair<string, Action<ItemDrop.ItemData>> update in pendingWorldUpdates) {
-                            if (go.name.StartsWith(update.Key)) {
+                            // Exact match (plus the runtime clone suffix): StartsWith would also hit prefabs
+                            // that merely share the prefix ("ArrowWood" -> "ArrowWoodFire"), and shared data
+                            // means that silently rewrites the other item's stats.
+                            if (go.name == update.Key || go.name == update.Key + "(Clone)") {
                                 // Logger.LogDebug($"Updating {id.m_itemData.m_shared.m_name}");
                                 update.Value(id.m_itemData);
                             }

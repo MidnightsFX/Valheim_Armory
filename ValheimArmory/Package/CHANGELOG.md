@@ -1,3 +1,11 @@
+**1.29.0**
+ ---
+ ```
+- Deep North update!
+- Configuration improvements
+- Fixes needle bolt and bone arrow dropping inccorect bolt/arrow when used on a practice target
+ ```
+
 **1.28.2**
  ---
  ```

@@ -12,7 +12,6 @@ Got a bug to report or just want to chat about the mod? Drop by the discord or g
 
 ## Translations
 This mod will always have an up-to-date English localization, as that is what I can provide as its author.
-I occassionally generate missing translations with ChatGPT to fill in for un-trasnlated languages, however I am always open to community edits or new translations.
 
 If you would like to contribute a new translation, or improve an existing one please feel free to reach out to me or provide a translation file in the same format as one of the existing ones.
 [Found here](https://github.com/MidnightsFX/Valheim_Armory/tree/master/ValheimArmory/localizations)
