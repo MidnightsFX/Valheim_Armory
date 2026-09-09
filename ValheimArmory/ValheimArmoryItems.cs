@@ -4402,6 +4402,7 @@ namespace ValheimArmory
             // Spear projectiles
             NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAspearblackmetal_projectile.Prefab");
             NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAspearmoder_projectile.Prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Spears/VASpearFlint_projectile.Prefab");
 
             // Magic projectiles
             //new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_ice_projectile.Prefab");

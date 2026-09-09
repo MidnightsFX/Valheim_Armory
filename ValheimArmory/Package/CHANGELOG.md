@@ -1,3 +1,9 @@
+**1.29.1**
+ ---
+ ```
+- Fixes flint spear projectile not being visible for all players
+ ```
+
 **1.29.0**
  ---
  ```
