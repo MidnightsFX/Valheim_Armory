@@ -17,7 +17,7 @@ namespace ValheimArmory.patches
             public static void Postfix(SkillType skillType, float factor)
             {
                 // Current weapon skill types that have blood magic usage
-                if (skillType == Skills.SkillType.Bows || skillType == Skills.SkillType.Pickaxes)
+                if (skillType == Skills.SkillType.Bows || skillType == Skills.SkillType.Pickaxes || skillType == Skills.SkillType.Crossbows)
                 {
                     if (Player.m_localPlayer == null) return;
                     ItemDrop.ItemData id = Player.m_localPlayer.GetCurrentWeapon();
