@@ -1,3 +1,9 @@
+**1.29.2**
+ ---
+ ```
+- Fixes Faders sword not auto-picking up
+ ```
+
 **1.29.1**
  ---
  ```
