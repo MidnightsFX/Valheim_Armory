@@ -161,7 +161,7 @@ namespace ValheimArmory.Common {
                     object statKey = stat.Value.IsInt ? (object)stat.Value.CfgInt : stat.Value.Cfg;
                     void UpdateFromConfig(object sender, EventArgs args) {
                         ConfigChangeDebouncer.Schedule(statKey, () => {
-                            if (ZNet.instance.enabled == false) { return; }
+                            if (ZNet.instance == null || ZNet.instance.enabled == false) { return; }
                             if (stat.Value.IsInt) {
                                 stat.Value.Default_value = stat.Value.CfgInt.Value;
                             } else {
