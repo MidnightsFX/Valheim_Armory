@@ -1,7 +1,7 @@
 **1.30.0**
  ---
  ```
-- Fixes NRE on disconnect/shutdown
+- Adds support for all Valheim Armory weapons to be used at the Upgrader
  ```
 
 **1.29.5**
