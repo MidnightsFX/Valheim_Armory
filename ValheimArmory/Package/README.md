@@ -391,6 +391,11 @@ Current configuration options:
 * min level required to craft
 * recipe enabled
 * item enabled
+* Forge of Potential idol (`-upgraderResource`)
+
+### Forge of Potential
+
+Every upgradeable weapon and shield can be refined past its max level at the Forge of Potential. Each attempt costs one idol, chosen by the item's biome tier (Wooden through Bloodgold), and boss weapons use the idol one tier higher. Weapons use Battle idols (`Upgrader0Weapon`-`Upgrader7Weapon`) and shields use Protection idols (`Upgrader0Armor`-`Upgrader7Armor`). Change an item's idol with its `-upgraderResource` config, or leave the value empty to disable refinement for that item.
 
 ---
 

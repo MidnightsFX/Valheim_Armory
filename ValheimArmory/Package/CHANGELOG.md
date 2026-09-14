@@ -1,3 +1,9 @@
+**1.30.0**
+ ---
+ ```
+- Fixes NRE on disconnect/shutdown
+ ```
+
 **1.29.5**
  ---
  ```

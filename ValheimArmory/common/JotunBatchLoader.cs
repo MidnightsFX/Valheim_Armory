@@ -122,6 +122,10 @@ namespace ValheimArmory.Common {
                     BuildRecipeReqsFromDefault(itemdef);
                 }
                 // itemdef.recipe.resolvedRecipe = BuildRecipeFromConfig(itemdef);
+                // Idol consumed per refinement at the Forge of Potential. Only upgradeable items define one.
+                if (itemdef.UpgraderResource != null) {
+                    itemdef.UpgraderResourceCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-upgraderResource", itemdef.UpgraderResource, $"Item consumed for each refinement attempt when upgrading {itemdef.Name} past its max level at the Forge of Potential. Vanilla idols are Upgrader0Weapon-Upgrader7Weapon and Upgrader0Armor-Upgrader7Armor. Leave empty to disable refinement for this item.");
+                }
 
                 // Collapse this item's entries into a single grouped custom drawer to keep the in-game
                 // Configuration Manager responsive (one visible row per item instead of ~10-20).
@@ -192,6 +196,13 @@ namespace ValheimArmory.Common {
                     });
                 };
                 // Logger.LogInfo("Setup recipe changes");
+
+                // The Forge of Potential idol is rebuilt as part of the recipe requirements
+                if (itemdef.UpgraderResourceCfg != null) {
+                    itemdef.UpgraderResourceCfg.SettingChanged += (_, _) => {
+                        ConfigChangeDebouncer.Schedule(itemdef.UpgraderResourceCfg, () => ModifyItemRecipeInODB(itemdef));
+                    };
+                }
 
                 //Modify the damage modifiers
                 if (itemdef.DamageMods == null) { continue; }
@@ -550,11 +561,13 @@ namespace ValheimArmory.Common {
             foreach (var req in itemdef.Recipe.RecipeReqs) {
                 GameObject resgo = ObjectDB.instance.GetItemPrefab(req.Item);
                 if (resgo == null) {
-                    Logger.LogWarning($"Recipe {itemdef.Recipe.ResolvedRecipe.name} has an invalid requirement {req.Item}.");
+                    Logger.LogWarning($"Recipe for {itemdef.Prefab} has an invalid requirement {req.Item}.");
                     return;
                 }
                 newRequirements.Add(new Piece.Requirement { m_resItem = resgo.GetComponent<ItemDrop>(), m_amount = req.Amount, m_amountPerLevel = req.AmountPerLevel });
             }
+            Piece.Requirement upgraderReq = BuildUpgraderRequirement(itemdef);
+            if (upgraderReq != null) { newRequirements.Add(upgraderReq); }
             newRecipe.m_resources = newRequirements.ToArray();
 
             int index = ObjectDB.instance.m_recipes.IndexOf(current_recipe);
@@ -564,6 +577,21 @@ namespace ValheimArmory.Common {
             } else {
                 Logger.LogWarning($"Recipe {current_recipe.name} not found in ObjectDB.");
             }
+        }
+
+        // Builds the Forge of Potential requirement for this item, mirroring vanilla idol requirements: one idol per
+        // attempt, only consumed at an upgrader station (normal stations ignore m_upgraderResource requirements).
+        // Jotunn's RequirementConfig can't carry the upgrader flag, so this is only ever added directly to the ObjectDB recipe.
+        private static Piece.Requirement BuildUpgraderRequirement(ItemDefinition itemdef) {
+            if (itemdef.UpgraderResourceCfg == null) { return null; }
+            string idolName = itemdef.UpgraderResourceCfg.Value?.Trim();
+            if (string.IsNullOrEmpty(idolName)) { return null; }
+            ItemDrop idol = ObjectDB.instance.GetItemPrefab(idolName)?.GetComponent<ItemDrop>();
+            if (idol == null) {
+                Logger.LogWarning($"Upgrader resource {idolName} for {itemdef.Prefab} not found, it will not be refinable at the Forge of Potential.");
+                return null;
+            }
+            return new Piece.Requirement { m_resItem = idol, m_amount = 1, m_amountPerLevel = 0, m_upgraderResource = true, m_recover = false };
         }
 
         // Re-add itemdef's cached recipe to the live ObjectDB if a prior ObjectDB.CopyOtherDB (server join)

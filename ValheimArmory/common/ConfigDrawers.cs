@@ -193,6 +193,7 @@ namespace ValheimArmory.Common {
             ConfigDrawHelpers.Hide(itemdef.CraftAmountCfg);
             ConfigDrawHelpers.Hide(itemdef.CraftedAtCfg);
             ConfigDrawHelpers.Hide(itemdef.Recipe.RecipeConfig);
+            if (itemdef.UpgraderResourceCfg != null) { ConfigDrawHelpers.Hide(itemdef.UpgraderResourceCfg); }
             if (itemdef.ModifableStats != null) {
                 foreach (ItemStatConfig stat in itemdef.ModifableStats.Values) {
                     if (stat.Cfg != null) { ConfigDrawHelpers.Hide(stat.Cfg); }
@@ -236,6 +237,7 @@ namespace ValheimArmory.Common {
                 ConfigDrawHelpers.DrawString("Crafted at", itemdef.CraftedAtCfg);
                 ConfigDrawHelpers.DrawInt("Station level", itemdef.StationLVLCfg);
                 ConfigDrawHelpers.DrawInt("Craft amount", itemdef.CraftAmountCfg);
+                if (itemdef.UpgraderResourceCfg != null) { ConfigDrawHelpers.DrawString("Forge of Potential idol", itemdef.UpgraderResourceCfg); }
 
                 DrawRecipeEditor(itemdef);
 

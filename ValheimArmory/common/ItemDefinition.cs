@@ -97,6 +97,13 @@ namespace ValheimArmory.Common {
         public BepInEx.Configuration.ConfigEntry<string> CraftedAtCfg {
             get; set;
         }
+        // Item consumed per refinement attempt at the Forge of Potential (eg: Upgrader3Weapon). Null = not refinable.
+        public string UpgraderResource {
+            get; set;
+        }
+        public BepInEx.Configuration.ConfigEntry<string> UpgraderResourceCfg {
+            get; set;
+        }
         public bool Craftable { get; set; } = true;
         public BepInEx.Configuration.ConfigEntry<bool> CraftableCfg {
             get; set;
