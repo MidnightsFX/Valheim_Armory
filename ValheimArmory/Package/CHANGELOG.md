@@ -1,7 +1,14 @@
+**1.29.4**
+ ---
+ ```
+- Fixes soulstealer and other hybrid weapons not getting XP
+- Changes blood bone pickaxe to also give blood XP when mining
+ ```
+
 **1.29.3**
  ---
  ```
-- Fixes Faders sword not auto-picking up
+- Fixes Soulstealer not getting hybrid XP
  ```
 
 **1.29.2**

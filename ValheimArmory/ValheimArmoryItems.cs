@@ -381,6 +381,7 @@ namespace ValheimArmory
             Carapace_Blood_Bow.Icon = "blood_bone_bow_heavy";
             Carapace_Blood_Bow.CraftedAt = "piece_magetable";
             Carapace_Blood_Bow.CraftAmount = 1;
+            Carapace_Blood_Bow.HybridSkills = new List<Skills.SkillType> { Skills.SkillType.BloodMagic };
             Carapace_Blood_Bow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 92, Min =  0, Max =  300 } },
                 { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
@@ -417,6 +418,7 @@ namespace ValheimArmory
             Blood_Bone_Bow.Icon = "bone_bow";
             Blood_Bone_Bow.CraftedAt = "forge";
             Blood_Bone_Bow.CraftAmount = 1;
+            Blood_Bone_Bow.HybridSkills = new List<Skills.SkillType> { Skills.SkillType.BloodMagic };
             Blood_Bone_Bow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 60, Min =  0, Max =  300 } },
                 { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
@@ -4309,6 +4311,7 @@ namespace ValheimArmory
             Soulstealer.Icon = "soulstealer";
             Soulstealer.CraftedAt = "piece_magetable";
             Soulstealer.CraftAmount = 1;
+            Soulstealer.HybridSkills = new List<Skills.SkillType> { Skills.SkillType.Crossbows };
             Soulstealer.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
                 { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
@@ -4352,6 +4355,7 @@ namespace ValheimArmory
             bonepick.CraftedAt = "forge";
             bonepick.CraftAmount = 1;
             bonepick.ReqStationlevel = 1;
+            bonepick.HybridSkills = new List<Skills.SkillType> { Skills.SkillType.BloodMagic };
             bonepick.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min = 0, Max = 200 } },
                 { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 4, Min = 0, Max = 50 } },

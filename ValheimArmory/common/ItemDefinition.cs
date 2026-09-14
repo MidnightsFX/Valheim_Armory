@@ -119,6 +119,10 @@ namespace ValheimArmory.Common {
         public Dictionary<HitData.DamageType, HitCustomDamageMod> DamageMods {
             get; set;
         }
+        // Extra skills trained whenever this weapon trains its own skill (eg: blood magic hybrids)
+        public List<Skills.SkillType> HybridSkills {
+            get; set;
+        }
 
         public RecipeDefinition Recipe {
             get; set;

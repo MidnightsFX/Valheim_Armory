@@ -12,6 +12,7 @@ using System.Linq;
 using UnityEngine;
 using ValheimArmory;
 using ValheimArmory.common;
+using ValheimArmory.patches;
 
 namespace ValheimArmory.Common {
     class JotunBatchLoader {
@@ -291,6 +292,11 @@ namespace ValheimArmory.Common {
                 // This item needs to be included as a returnable arrow/bolt
                 if (itemdef.Category == ItemCategory.Arrows) {
                     ArcheryAmmoToAdd.Add(itemdef.Prefab);
+                }
+
+                // This weapon also trains other skills when used
+                if (itemdef.HybridSkills != null) {
+                    HybridBloodWeapon.RegisterHybridWeapon(ItemD, itemdef.HybridSkills);
                 }
             }
             return true;
