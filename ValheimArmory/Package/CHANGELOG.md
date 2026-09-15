@@ -1,3 +1,9 @@
+**1.31.0**
+ ---
+ ```
+- Optimizes to on config change for large object modifications and loaded objects
+ ```
+
 **1.30.0**
  ---
  ```

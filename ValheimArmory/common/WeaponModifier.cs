@@ -36,18 +36,13 @@ namespace ValheimArmory.common
                 return OriginalWeaponAttackCache[weapon_name];
             }
 
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_name));
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_name))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
+                if (id.m_itemData.m_shared.m_attack.m_attackAnimation != null && id.m_itemData.m_shared.m_secondaryAttack.m_attackAnimation != null)
                 {
-                    if (id.m_itemData.m_shared.m_attack.m_attackAnimation != null && id.m_itemData.m_shared.m_secondaryAttack.m_attackAnimation != null)
-                    {
-                        // We just need to at this one
-                        OriginalWeaponAttackCache.Add(weapon_name, new WeaponAttackData() { primary_attack = id.m_itemData.m_shared.m_attack, secondary_attack = id.m_itemData.m_shared.m_secondaryAttack });
-                        break;
-                    }
+                    // We just need to at this one
+                    OriginalWeaponAttackCache.Add(weapon_name, new WeaponAttackData() { primary_attack = id.m_itemData.m_shared.m_attack, secondary_attack = id.m_itemData.m_shared.m_secondaryAttack });
+                    break;
                 }
             }
             return OriginalWeaponAttackCache[weapon_name];
@@ -186,21 +181,15 @@ namespace ValheimArmory.common
             EffectList sledge_start_effects = SledgeStartEffects();
             EffectList sledge_swing_effects = SledgeComboSwingSFX();
             // This ensures modifications of clones also
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
-
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    id.m_itemData.m_shared.m_attack = primary;
-                    id.m_itemData.m_shared.m_secondaryAttack = secondary;
-                    id.m_itemData.m_shared.m_attack.m_hitEffect = warhammer_primary_effects;
-                    id.m_itemData.m_shared.m_attack.m_trailStartEffect = sledge_swing_effects;
-                    id.m_itemData.m_shared.m_secondaryAttack.m_triggerEffect = sledge_trigger_effects;
-                    id.m_itemData.m_shared.m_secondaryAttack.m_startEffect = sledge_start_effects;
-                    ClearSharedVFX(id.m_itemData);
-                }
+                id.m_itemData.m_shared.m_attack = primary;
+                id.m_itemData.m_shared.m_secondaryAttack = secondary;
+                id.m_itemData.m_shared.m_attack.m_hitEffect = warhammer_primary_effects;
+                id.m_itemData.m_shared.m_attack.m_trailStartEffect = sledge_swing_effects;
+                id.m_itemData.m_shared.m_secondaryAttack.m_triggerEffect = sledge_trigger_effects;
+                id.m_itemData.m_shared.m_secondaryAttack.m_startEffect = sledge_start_effects;
+                ClearSharedVFX(id.m_itemData);
             }
 
             if (Player.m_localPlayer != null)
@@ -232,20 +221,14 @@ namespace ValheimArmory.common
             EffectList sledge_trigger_effects = SledgeTriggerEffects(demolisher);
             EffectList sledge_start_effects = SledgeStartEffects();
             // This ensures modifications of clones also
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
-
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    id.m_itemData.m_shared.m_attack = sledgesmash;
-                    ClearSharedVFX(id.m_itemData);
-                    ClearSecondaryAttack(id.m_itemData);
-                    id.m_itemData.m_shared.m_triggerEffect = sledge_trigger_effects;
-                    id.m_itemData.m_shared.m_startEffect = sledge_start_effects;
-                    id.m_itemData.m_shared.m_attack.m_trailStartEffect = null;
-                }
+                id.m_itemData.m_shared.m_attack = sledgesmash;
+                ClearSharedVFX(id.m_itemData);
+                ClearSecondaryAttack(id.m_itemData);
+                id.m_itemData.m_shared.m_triggerEffect = sledge_trigger_effects;
+                id.m_itemData.m_shared.m_startEffect = sledge_start_effects;
+                id.m_itemData.m_shared.m_attack.m_trailStartEffect = null;
             }
 
             if (Player.m_localPlayer != null)
@@ -271,15 +254,9 @@ namespace ValheimArmory.common
         public static void ModifyStamina(string weapon_prefab, float sledge_stamina)
         {
             // This ensures modifications of clones also
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
-
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    id.m_itemData.m_shared.m_attack.m_attackStamina = sledge_stamina;
-                }
+                id.m_itemData.m_shared.m_attack.m_attackStamina = sledge_stamina;
             }
 
             if (Player.m_localPlayer != null)
@@ -300,16 +277,10 @@ namespace ValheimArmory.common
         public static void SetWeaponPrimaryAndSecondary(string weapon_prefab, Attack primary, Attack secondary)
         {
             // This ensures modifications of clones also
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
-
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    id.m_itemData.m_shared.m_attack = primary;
-                    id.m_itemData.m_shared.m_secondaryAttack = secondary;
-                }
+                id.m_itemData.m_shared.m_attack = primary;
+                id.m_itemData.m_shared.m_secondaryAttack = secondary;
             }
 
             if (Player.m_localPlayer != null)
@@ -443,7 +414,7 @@ namespace ValheimArmory.common
 
         public static void OnConfigAbyssalKnifeValueChanged(object sender, EventArgs e)
         {
-            if (ValConfig.VanillaHammersHavePrimaryAttack.Value)
+            if (ValConfig.VanillaAbyssalKnifeBluntDamageConvert.Value)
             {
                 KnifeToAbyssal("KnifeChitin");
             }
@@ -452,18 +423,12 @@ namespace ValheimArmory.common
         public static void KnifeToAbyssal(string weapon_prefab)
         {
             // This ensures modifications of clones also
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
-
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    id.m_itemData.m_shared.m_damages.m_slash = 0;
-                    id.m_itemData.m_shared.m_damages.m_blunt = ValConfig.AbyssalKnifeBlunt.Value;
-                    id.m_itemData.m_shared.m_damagesPerLevel.m_slash = 0;
-                    id.m_itemData.m_shared.m_damagesPerLevel.m_blunt = ValConfig.AbyssalKnifeBluntPerLevel.Value;
-                }
+                id.m_itemData.m_shared.m_damages.m_slash = 0;
+                id.m_itemData.m_shared.m_damages.m_blunt = ValConfig.AbyssalKnifeBlunt.Value;
+                id.m_itemData.m_shared.m_damagesPerLevel.m_slash = 0;
+                id.m_itemData.m_shared.m_damagesPerLevel.m_blunt = ValConfig.AbyssalKnifeBluntPerLevel.Value;
             }
 
             if (Player.m_localPlayer != null)
@@ -487,18 +452,12 @@ namespace ValheimArmory.common
         public static void KnifeToVanilla(string weapon_prefab)
         {
             // This ensures modifications of clones also
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
-
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    id.m_itemData.m_shared.m_damages.m_blunt = 0;
-                    id.m_itemData.m_shared.m_damages.m_slash = 20;
-                    id.m_itemData.m_shared.m_damagesPerLevel.m_blunt = 0;
-                    id.m_itemData.m_shared.m_damagesPerLevel.m_slash = 1f;
-                }
+                id.m_itemData.m_shared.m_damages.m_blunt = 0;
+                id.m_itemData.m_shared.m_damages.m_slash = 20;
+                id.m_itemData.m_shared.m_damagesPerLevel.m_blunt = 0;
+                id.m_itemData.m_shared.m_damagesPerLevel.m_slash = 1f;
             }
 
             if (Player.m_localPlayer != null)

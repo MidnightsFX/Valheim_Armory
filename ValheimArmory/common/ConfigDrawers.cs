@@ -16,8 +16,8 @@ namespace ValheimArmory.Common {
     internal static class ConfigDrawHelpers {
         // Edit buffers so partial typing in text/number fields doesn't immediately overwrite the live value.
         private static readonly Dictionary<object, string> TextBuffer = new Dictionary<object, string>();
-        // In-progress slider values; committed to the ConfigEntry only on mouse release to avoid a disk
-        // write (SaveOnConfigSet is true) on every frame of a drag.
+        // In-progress slider values; committed to the ConfigEntry only on mouse release, so the change
+        // handlers run once per drag rather than on every frame of it.
         private static readonly Dictionary<object, float> SliderPending = new Dictionary<object, float>();
 
         private static GUIStyle _headerButton;
@@ -122,8 +122,8 @@ namespace ValheimArmory.Common {
             if (Mathf.Abs(slid - shown) > Mathf.Epsilon) { SliderPending[key] = slid; }
             if (SliderPending.TryGetValue(key, out float dragging)) {
                 // Deferred commit: while the mouse is held, only the pending display value changes.
-                // Returning the dragged value every frame wrote cfg.Value (and with SaveOnConfigSet, the
-                // .cfg file) once per frame of the drag -- commit exactly once, on release.
+                // Returning the dragged value every frame wrote cfg.Value once per frame of the drag --
+                // commit exactly once, on release.
                 if (!Input.GetMouseButton(0)) {
                     SliderPending.Remove(key);
                     result = dragging;

@@ -17,7 +17,12 @@ namespace ValheimArmory.Common {
         // key before it fires replaces the action and resets the timer (true debounce + coalesce).
         // A delay <= 0 applies immediately (lets admins disable the delay).
         internal static void Schedule(object key, Action action) {
-            float delay = ValConfig.ConfigApplyDelay != null ? ValConfig.ConfigApplyDelay.Value : 0f;
+            Schedule(key, action, ValConfig.ConfigApplyDelay != null ? ValConfig.ConfigApplyDelay.Value : 0f);
+        }
+
+        // Same as above with an explicit delay, for work whose timing should not follow ConfigApplyDelay
+        // (the config file write, which must stay batched even when an admin sets that delay to 0).
+        internal static void Schedule(object key, Action action, float delay) {
             if (delay <= 0f) {
                 action();
                 return;

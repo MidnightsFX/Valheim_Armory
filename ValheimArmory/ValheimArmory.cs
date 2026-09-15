@@ -26,7 +26,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.30.0";
+        public const string PluginVersion = "1.31.0";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -53,17 +53,23 @@ namespace ValheimArmory
             MinimapManager.OnVanillaMapDataLoaded += WeaponModifier.ToggleVanillaFlintAxe;
             MinimapManager.OnVanillaMapDataLoaded += WeaponModifier.ToggleVanillaFlintSpear;
             PrefabManager.OnPrefabsRegistered += StatusModifiers.SyncStatusEffectsToConfig;
-            ValConfig.VanillaHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyHammers;
-            ValConfig.ModHammersHavePrimaryAttack.SettingChanged += WeaponModifier.OnConfigChangeModifyModHammers;
-            ValConfig.VanillaAbyssalKnifeBluntDamageConvert.SettingChanged += WeaponModifier.OnConfigChangeModifyVanillaKnife;
+            ValConfig.OnChangeDebounced(ValConfig.VanillaHammersHavePrimaryAttack, WeaponModifier.OnConfigChangeModifyHammers);
+            ValConfig.OnChangeDebounced(ValConfig.ModHammersHavePrimaryAttack, WeaponModifier.OnConfigChangeModifyModHammers);
+            ValConfig.OnChangeDebounced(ValConfig.VanillaAbyssalKnifeBluntDamageConvert, WeaponModifier.OnConfigChangeModifyVanillaKnife);
 
             Assembly assembly = Assembly.GetExecutingAssembly();
             Harmony harmony = new(PluginGUID);
             harmony.PatchAll(assembly);
 
-            ValConfig.SaveOnSet(true);
+            ValConfig.EnableDeferredSave();
             ValConfig.SetupMainFileWatcher();
             AddLocalizations();
+        }
+
+        public void OnDestroy()
+        {
+            // A config write still waiting on its delay would otherwise be lost when the game closes.
+            ValConfig.SavePending();
         }
 
         // This loads all localizations within the localization directory.
