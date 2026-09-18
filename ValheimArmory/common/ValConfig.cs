@@ -10,6 +10,7 @@ namespace ValheimArmory
     {
         public static ConfigFile cfg;
         public static ConfigEntry<bool> EnableDebugMode;
+        public static ConfigEntry<bool> LoadPrefabsOnServer;
         public static ConfigEntry<float> HybridWeaponBloodMagicSkillIncrease;
         public static ConfigEntry<bool> VanillaHammersHavePrimaryAttack;
         public static ConfigEntry<bool> ModHammersHavePrimaryAttack;
@@ -100,6 +101,13 @@ namespace ValheimArmory
                 null,
                 new ConfigurationManagerAttributes { IsAdvanced = true }));
             EnableDebugMode.SettingChanged += Logger.enableDebugLogging;
+
+            // Deliberately not an admin (server synced) config: it is read during Awake, on the machine it
+            // applies to, long before a server sync could arrive, and a client always loads its own prefabs.
+            LoadPrefabsOnServer = Config.Bind("Server config", "LoadPrefabsOnServer", false,
+                new ConfigDescription("Registers Valheim Armory's item prefabs on a dedicated server. Off by default since the server neither renders nor modifies them; enable it when another server side mod has to resolve Valheim Armory items (spawn/loot tables, admin spawn commands). Takes effect on server restart.",
+                null,
+                new ConfigurationManagerAttributes { IsAdvanced = true }));
             HybridWeaponBloodMagicSkillIncrease = BindServerConfig("Blood Magic Hybrid Weapons", "HybridWeaponBloodMagicSkillIncrease", 1f, "How much experiance should one usage of a blood magic hybrid weapon provide?", true, 0f, 4f);
             VanillaHammersHavePrimaryAttack = BindServerConfig("Vanilla Weapons", "VanillaHammersHavePrimaryAttack", true, "Enables a primary swing for vanilla sledges. Moves the slam to a secondary attack.");
             ModHammersHavePrimaryAttack = BindServerConfig("Vanilla Weapons", "ModHammersHavePrimaryAttack", true, "Enables a primary swing for mod weapons, disabling makes mod added hammers like vanilla sledges.");

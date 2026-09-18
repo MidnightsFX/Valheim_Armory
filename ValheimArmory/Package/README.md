@@ -393,6 +393,13 @@ Current configuration options:
 * item enabled
 * Forge of Potential idol (`-upgraderResource`)
 
+### Dedicated servers
+
+A dedicated server does not render or modify the weapons itself, so it skips registering their prefabs by
+default. Set `LoadPrefabsOnServer` to `true` under `[Server config]` if another server side mod has to
+resolve Valheim Armory items - spawn or loot tables, admin spawn commands and the like. This one is local to
+the machine rather than server enforced, and takes effect on the next server restart.
+
 ### Forge of Potential
 
 Every upgradeable weapon and shield can be refined past its max level at the Forge of Potential. Each attempt costs one idol, chosen by the item's biome tier (Wooden through Bloodgold), and boss weapons use the idol one tier higher. Weapons use Battle idols (`Upgrader0Weapon`-`Upgrader7Weapon`) and shields use Protection idols (`Upgrader0Armor`-`Upgrader7Armor`). Change an item's idol with its `-upgraderResource` config, or leave the value empty to disable refinement for that item.

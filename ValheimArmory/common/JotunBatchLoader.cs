@@ -54,10 +54,13 @@ namespace ValheimArmory.Common {
             // here, so the ZNet probe could never detect a server. The headless graphics-device check is
             // what actually identifies a dedicated server this early.
             bool on_server = UnityEngine.SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Null;
+            // The server does not actually do anything with prefabs, and is not responsible for modifying them,
+            // so it skips registration by default. Opting in puts the items in the server's ObjectDB for other
+            // server side mods that need to resolve them (spawn/loot tables, admin spawn commands).
+            bool load_prefabs = on_server == false || ValConfig.LoadPrefabsOnServer.Value;
+            if (on_server && load_prefabs) { Logger.LogInfo("LoadPrefabsOnServer is enabled, registering Valheim Armory items on this server."); }
 
-            if (on_server == false) {
-                // This is not needed on the server
-                // The server does not actually do anything with prefabs, and is not responsible for modifying them
+            if (load_prefabs) {
                 BatchAddItems();
                 SetupOnChange();
                 ItemManager.OnItemsRegistered += AddAmmoItemsToArcheryTarget;

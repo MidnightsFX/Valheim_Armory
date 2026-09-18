@@ -1,3 +1,11 @@
+**1.32.0**
+ ---
+ ```
+- Adds a LoadPrefabsOnServer config to register Valheim Armory items on a dedicated server, for server side mods that need to resolve them
+- Fixes the blackmetal spear and blackmetal dual axes not hitting targets at or below the player's elevation
+- Corrects spear primary attack horizontal offset to match vanilla
+ ```
+
 **1.31.0**
  ---
  ```
