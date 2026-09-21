@@ -385,6 +385,8 @@ Current configuration options:
 * Crafted amount (where applicable)
 * movement speed (where applicable)
 * parry bonus (where applicable)
+* adrenaline gained from hits, casts/shots, projectile hits, blocks and parries (where applicable)
+* idle stance used by sledges, vanilla and modded (`SledgeStance`)
 * bow draw/crossbow reload time
 * crafting recipe
 * crafting station used
@@ -411,8 +413,8 @@ Every upgradeable weapon and shield can be refined past its max level at the For
 Q. Valheim Enchanting System doesn't support these weapons?
 - A. There is a VES config available my [discord](https://discord.gg/Dmr9PQTy9m).
 
-Q. Epic Loot doesn't automatically drop these weapons, what gives?
-- A. Epic Loot configs are available on my [discord](https://discord.gg/Dmr9PQTy9m) and the [Epic loot discord](https://discord.gg/ZNhYeavv3C). These should be placed in the Epicloot patches folder .
+Q. Does this mod work with Epicloot?
+- A. Yes! Automatically. You don't need to do anything, all of the weapons will drop at progression appropriate spots.
 
 Q. I want to edit the text for a weapon, how do I do that?
 - A. All of the localizations are added to `BepinEx/config/ValheimArmory` modifying localizations in that folder will result in them being different in game. Changes do require a game restart to take effect.

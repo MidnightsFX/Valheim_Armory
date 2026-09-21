@@ -17,6 +17,9 @@ namespace ValheimArmory
         public static ConfigEntry<float> StagbreakerPrimaryAttackStamina;
         public static ConfigEntry<float> IronSledgePrimaryAttackStamina;
         public static ConfigEntry<float> DemolisherPrimaryAttackStamina;
+        public static ConfigEntry<float> GoldSledgePrimaryAttackStamina;
+        public static ConfigEntry<string> SledgeStance;
+        internal static readonly AcceptableValueList<string> allowedSledgeStances = new AcceptableValueList<string>(new string[] { "TwoHandedAxe", "Sledge" });
         public static ConfigEntry<bool> VanillaAbyssalKnifeBluntDamageConvert;
         public static ConfigEntry<bool> EnableVanillaSpear;
         public static ConfigEntry<bool> EnableVanillaFlintAxe;
@@ -117,6 +120,10 @@ namespace ValheimArmory
             OnChangeDebounced(IronSledgePrimaryAttackStamina, WeaponModifier.OnConfigIronSledgeValueChanged);
             DemolisherPrimaryAttackStamina = BindServerConfig("Vanilla Weapons", "DemolisherPrimaryAttackStamina", 14f, "Stamina cost of the basic attack when enabled for the demolisher.", true, 1, 30);
             OnChangeDebounced(DemolisherPrimaryAttackStamina, WeaponModifier.OnConfigDemolisherValueChanged);
+            GoldSledgePrimaryAttackStamina = BindServerConfig("Vanilla Weapons", "GoldSledgePrimaryAttackStamina", 14f, "Stamina cost of the basic attack when enabled for the bloodgold sledge, including its blood/lightning and frost/fire variants.", true, 1, 30);
+            OnChangeDebounced(GoldSledgePrimaryAttackStamina, WeaponModifier.OnConfigGoldSledgeValueChanged);
+            SledgeStance = BindServerConfig("Vanilla Weapons", "SledgeStance", "TwoHandedAxe", "How sledges are held while idle, for both the vanilla and the mod added ones. TwoHandedAxe holds them like a battleaxe, matching how they swing here. Sledge is the vanilla sledge stance.", false, allowedSledgeStances);
+            OnChangeDebounced(SledgeStance, WeaponModifier.OnConfigSledgeStanceChanged);
             VanillaAbyssalKnifeBluntDamageConvert = BindServerConfig("Vanilla Weapons", "VanillaAbyssalKnifeBluntDamageConvert", true, "Removes slash damage from the abyssal knife and adds blunt damage instead.");
             AbyssalKnifeBlunt = BindServerConfig("Vanilla Weapons", "AbyssalKnifeBlunt", 20f, "Blunt damage for the abyssal knife", true, 0, 40);
             AbyssalKnifeBluntPerLevel = BindServerConfig("Vanilla Weapons", "AbyssalKnifeBluntPerLevel", 1f, "Blunt damage per level for the abyssal knife", true, 0, 10);

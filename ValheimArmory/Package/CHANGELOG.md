@@ -1,3 +1,13 @@
+**1.33.0**
+ ---
+ ```
+- Fixes some staves not providing adrenaline in any way
+- Removes the readme section about Epicloot patches. These haven't been required for a year or more, I should know, I wrote the auto-assigner for Epicloot to support this.
+- Adds Adrenaline configuration for ALL weapons/shields
+- Added primary attacks toggle support for the Deep North Sledges
+- Adds a SledgeStance config for how sledges are held while idle, covering the vanilla sledges as well as this mods. Defaults to the two handed axe stance these sledges already use, set it to Sledge for the vanilla sledge stance
+ ```
+
 **1.32.0**
  ---
  ```

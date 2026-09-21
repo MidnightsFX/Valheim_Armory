@@ -319,6 +319,11 @@ namespace ValheimArmory.Common {
                 if (itemdef.HybridSkills != null) {
                     HybridBloodWeapon.RegisterHybridWeapon(ItemD, itemdef.HybridSkills);
                 }
+
+                // Projectiles fired by (or loaded as) this item grant its configured adrenaline on hit
+                if (itemdef.ModifableStats.TryGetValue(ItemStat.projectile_adrenaline, out ItemStatConfig projectileAdrenaline) && projectileAdrenaline.Cfg != null) {
+                    ProjectileAdrenaline.Register(ItemD, projectileAdrenaline.Cfg);
+                }
             }
             return true;
         }
@@ -484,6 +489,25 @@ namespace ValheimArmory.Common {
                     break;
                 case ItemStat.tool_level:
                     itemData.m_shared.m_toolTier = (int)updatedValue;
+                    break;
+                // Adrenaline
+                case ItemStat.primary_attack_adrenaline:
+                    itemData.m_shared.m_attack.m_attackAdrenaline = updatedValue;
+                    break;
+                case ItemStat.secondary_attack_adrenaline:
+                    itemData.m_shared.m_secondaryAttack.m_attackAdrenaline = updatedValue;
+                    break;
+                case ItemStat.primary_attack_use_adrenaline:
+                    itemData.m_shared.m_attack.m_attackUseAdrenaline = updatedValue;
+                    break;
+                case ItemStat.projectile_adrenaline:
+                    // Not stored on the item: ProjectileAdrenaline reads the config as each projectile is spawned.
+                    break;
+                case ItemStat.block_adrenaline:
+                    itemData.m_shared.m_blockAdrenaline = updatedValue;
+                    break;
+                case ItemStat.parry_adrenaline:
+                    itemData.m_shared.m_perfectBlockAdrenaline = updatedValue;
                     break;
                 default:
                     Logger.LogWarning($"Unknown item stat {target_attribute} for {itemData.m_shared.m_name}");

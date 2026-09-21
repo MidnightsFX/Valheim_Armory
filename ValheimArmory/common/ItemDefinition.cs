@@ -54,7 +54,13 @@ namespace ValheimArmory.Common {
         durability_per_level,
         max_item_level,
         amount,
-        tool_level
+        tool_level,
+        primary_attack_adrenaline,
+        secondary_attack_adrenaline,
+        primary_attack_use_adrenaline,
+        projectile_adrenaline,
+        block_adrenaline,
+        parry_adrenaline
     }
 
     enum ItemCategory {

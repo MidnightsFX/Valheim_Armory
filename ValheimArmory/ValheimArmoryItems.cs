@@ -49,6 +49,7 @@ namespace ValheimArmory
             Black_Metal_Arrow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 52, Min =  0, Max =  200 } },
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Black_Metal_Arrow.Recipe = new RecipeDefinition
             {
@@ -70,6 +71,7 @@ namespace ValheimArmory
             Bone_Arrow.CraftAmount = 20;
             Bone_Arrow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 32, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Bone_Arrow.Recipe = new RecipeDefinition
             {
@@ -91,6 +93,7 @@ namespace ValheimArmory
             Surtling_Fire_Arrow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.fire, new ItemStatConfig{ Default_value = 52, Min =  0, Max =  200 } },
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Surtling_Fire_Arrow.Recipe = new RecipeDefinition
             {
@@ -113,6 +116,7 @@ namespace ValheimArmory
             Ancient_Wood_Arrow.CraftAmount = 20;
             Ancient_Wood_Arrow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 37, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Ancient_Wood_Arrow.Recipe = new RecipeDefinition
             {
@@ -134,6 +138,7 @@ namespace ValheimArmory
             Chitin_Arrow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 12, Min =  0, Max =  200 } },
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Chitin_Arrow.Recipe = new RecipeDefinition
             {
@@ -155,6 +160,7 @@ namespace ValheimArmory
             Wood_Bolt.CraftAmount = 20;
             Wood_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 22, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Wood_Bolt.Recipe = new RecipeDefinition
             {
@@ -174,6 +180,7 @@ namespace ValheimArmory
             Corewood_Bolt.CraftAmount = 20;
             Corewood_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 37, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Corewood_Bolt.Recipe = new RecipeDefinition
             {
@@ -194,6 +201,7 @@ namespace ValheimArmory
             Bronze_Bolt.CraftAmount = 20;
             Bronze_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 32, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Bronze_Bolt.Recipe = new RecipeDefinition
             {
@@ -216,6 +224,7 @@ namespace ValheimArmory
             Poison_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.poison, new ItemStatConfig{ Default_value = 52, Min =  0, Max =  200 } },
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Poison_Bolt.Recipe = new RecipeDefinition
             {
@@ -238,6 +247,7 @@ namespace ValheimArmory
             Obsidian_Bolt.CraftAmount = 20;
             Obsidian_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 52, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Obsidian_Bolt.Recipe = new RecipeDefinition
             {
@@ -261,6 +271,7 @@ namespace ValheimArmory
                 { ItemStat.frost, new ItemStatConfig{ Default_value = 52, Min =  0, Max =  200 } },
                 { ItemStat.spirit, new ItemStatConfig{ Default_value = 20, Min =  0, Max =  200 } },
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Frost_Bolt.Recipe = new RecipeDefinition
             {
@@ -284,6 +295,7 @@ namespace ValheimArmory
             Surtling_Core_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.fire, new ItemStatConfig{ Default_value = 52, Min =  0, Max =  200 } },
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Surtling_Core_Bolt.Recipe = new RecipeDefinition
             {
@@ -306,6 +318,7 @@ namespace ValheimArmory
             Needle_Bolt.CraftAmount = 20;
             Needle_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 56, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Needle_Bolt.Recipe = new RecipeDefinition
             {
@@ -327,6 +340,7 @@ namespace ValheimArmory
             Fire_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 22, Min =  0, Max =  200 } },
                 { ItemStat.fire, new ItemStatConfig{ Default_value = 34, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Fire_Bolt.Recipe = new RecipeDefinition
             {
@@ -363,6 +377,9 @@ namespace ValheimArmory
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ Default_value = 2, Min =  0.01f, Max =  2 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 60, Min =  0, Max =  120 } },
                 { ItemStat.projectile_accuracy_max, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  100 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_Bow.Recipe = new RecipeDefinition
             {
@@ -399,6 +416,10 @@ namespace ValheimArmory
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ Default_value = 2, Min =  0.01f, Max =  2 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 60, Min =  0, Max =  120 } },
                 { ItemStat.projectile_accuracy_max, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  100 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Carapace_Blood_Bow.Recipe = new RecipeDefinition
             {
@@ -437,6 +458,10 @@ namespace ValheimArmory
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ Default_value = 2, Min =  0.01f, Max =  2 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 60, Min =  0, Max =  120 } },
                 { ItemStat.projectile_accuracy_max, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  100 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blood_Bone_Bow.Recipe = new RecipeDefinition
             {
@@ -469,6 +494,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_Arbelist.Recipe = new RecipeDefinition
             {
@@ -500,6 +528,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             IronCrossbow.Recipe = new RecipeDefinition
             {
@@ -533,6 +564,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             SilverCrossbow.Recipe = new RecipeDefinition
             {
@@ -564,6 +598,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             BlackmetalCrossbow.Recipe = new RecipeDefinition
             {
@@ -598,6 +635,9 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 45, Min =  0, Max =  120 } },
                 { ItemStat.projectile_accuracy_max, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  100 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Eikthyrs_Bow.Recipe = new RecipeDefinition
             {
@@ -629,6 +669,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_Crossbow.Recipe = new RecipeDefinition
             {
@@ -660,6 +703,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 7f, Min =  0.01f, Max =  10f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             WoodCrossbow.Recipe = new RecipeDefinition
             {
@@ -692,6 +738,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Elders_Reach.Recipe = new RecipeDefinition
             {
@@ -725,6 +774,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moder_Crossbow.Recipe = new RecipeDefinition
             {
@@ -762,6 +814,9 @@ namespace ValheimArmory
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ Default_value = 3f, Min =  0.01f, Max =  3f } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 60, Min =  0, Max =  120 } },
                 { ItemStat.projectile_accuracy_max, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  100 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Queens_Greatbow.Recipe = new RecipeDefinition
             {
@@ -802,6 +857,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             FaderSword.Recipe = new RecipeDefinition
             {
@@ -837,6 +896,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             FaderGreatsword.Recipe = new RecipeDefinition
             {
@@ -868,6 +931,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_Greatsword.Recipe = new RecipeDefinition
             {
@@ -899,6 +966,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 10, Min =  1, Max =  30 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Abyssal_Sword.Recipe = new RecipeDefinition
             {
@@ -933,6 +1004,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 8, Min =  1, Max =  30 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Eikthyrs_Sword.Recipe = new RecipeDefinition
             {
@@ -966,6 +1041,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 8, Min =  1, Max =  30 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Elders_Balance.Recipe = new RecipeDefinition
             {
@@ -1002,6 +1081,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  30 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_Grasp.Recipe = new RecipeDefinition
             {
@@ -1039,6 +1122,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 17, Min =  1, Max =  30 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 34, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1072,6 +1159,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1102,6 +1193,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Iron_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1134,6 +1229,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 32, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Silver_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1167,6 +1266,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 15, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bm_sword.Recipe = new RecipeDefinition
             {
@@ -1202,6 +1305,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 15, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bonemasses_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1237,6 +1344,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Yagluths_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1270,6 +1381,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 6, Min =  1, Max =  30 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_Sword.Recipe = new RecipeDefinition
             {
@@ -1300,6 +1415,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 10, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1334,6 +1453,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 40, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Queen_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1370,6 +1493,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 32, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Queen_Sword.Recipe = new RecipeDefinition
             {
@@ -1412,6 +1539,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 6, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             FlintAxe.Recipe = new RecipeDefinition
             {
@@ -1446,6 +1577,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 6, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_greataxe.Recipe = new RecipeDefinition
             {
@@ -1480,6 +1615,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 6, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_dualaxes.Recipe = new RecipeDefinition
             {
@@ -1514,6 +1653,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 7, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_Lumber_Axe.Recipe = new RecipeDefinition
             {
@@ -1548,6 +1691,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 10, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_dualaxes.Recipe = new RecipeDefinition
             {
@@ -1582,6 +1729,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Iron_dualaxes.Recipe = new RecipeDefinition
             {
@@ -1618,6 +1769,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bonemass_Axe.Recipe = new RecipeDefinition
             {
@@ -1657,6 +1812,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 19, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             BonemassDualaxes.Recipe = new RecipeDefinition
             {
@@ -1696,6 +1855,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Crystal_Axe.Recipe = new RecipeDefinition
             {
@@ -1732,6 +1895,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Crystal_dualaxes.Recipe = new RecipeDefinition
             {
@@ -1768,6 +1935,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moder_Axe.Recipe = new RecipeDefinition
             {
@@ -1805,6 +1976,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moder_Dualaxes.Recipe = new RecipeDefinition
             {
@@ -1840,6 +2015,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_dualaxes.Recipe = new RecipeDefinition
             {
@@ -1874,6 +2053,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 10, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_Greataxe.Recipe = new RecipeDefinition
             {
@@ -1910,6 +2093,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 15, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Jotun_dualaxes.Recipe = new RecipeDefinition
             {
@@ -1947,6 +2134,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 11, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Jotun_battleaxe.Recipe = new RecipeDefinition
             {
@@ -1984,6 +2175,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 32, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Jotun_halfblade.Recipe = new RecipeDefinition
             {
@@ -2023,6 +2218,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 7, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Eikthyrs_Greataxe.Recipe = new RecipeDefinition
             {
@@ -2060,6 +2259,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 10, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_Battleaxe.Recipe = new RecipeDefinition
             {
@@ -2095,6 +2298,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Battleaxe.Recipe = new RecipeDefinition
             {
@@ -2132,6 +2339,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Primal_Battleaxe.Recipe = new RecipeDefinition
             {
@@ -2169,6 +2380,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Lightning_Battleaxe.Recipe = new RecipeDefinition
             {
@@ -2204,6 +2419,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Blood_Battleaxe.Recipe = new RecipeDefinition
             {
@@ -2239,6 +2458,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Axe.Recipe = new RecipeDefinition
             {
@@ -2275,6 +2498,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Primal_Axe.Recipe = new RecipeDefinition
             {
@@ -2312,6 +2539,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Lightning_Axe.Recipe = new RecipeDefinition
             {
@@ -2347,6 +2578,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Blood_Axe.Recipe = new RecipeDefinition
             {
@@ -2387,6 +2622,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_nature_sledge.Recipe = new RecipeDefinition
             {
@@ -2423,6 +2662,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_lightning_sledge.Recipe = new RecipeDefinition
             {
@@ -2457,6 +2700,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_blood_sledge.Recipe = new RecipeDefinition
             {
@@ -2491,6 +2738,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_sledge.Recipe = new RecipeDefinition
             {
@@ -2523,6 +2774,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 15, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.05f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmarble_mace.Recipe = new RecipeDefinition
             {
@@ -2559,6 +2814,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 40, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_Sledge.Recipe = new RecipeDefinition
             {
@@ -2595,6 +2854,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Elders_Rock.Recipe = new RecipeDefinition
             {
@@ -2629,6 +2892,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_Sledge.Recipe = new RecipeDefinition
             {
@@ -2664,6 +2931,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bonemasses_Rage.Recipe = new RecipeDefinition
             {
@@ -2701,6 +2972,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Silver_Sledge.Recipe = new RecipeDefinition
             {
@@ -2735,6 +3010,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 10, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2766,6 +3045,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Eikthyrs_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2798,6 +3081,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Abyssal_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2829,6 +3116,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 32, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Silver_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2861,6 +3152,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Yagluths_Reach.Recipe = new RecipeDefinition
             {
@@ -2893,6 +3188,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2925,6 +3224,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_primal_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2957,6 +3260,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_lightning_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2987,6 +3294,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_blood_Atgeir.Recipe = new RecipeDefinition
             {
@@ -3020,6 +3331,8 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 250, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.30f, Max =  0 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Serpent_Scale_Buckler.Recipe = new RecipeDefinition
             {
@@ -3053,6 +3366,8 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 250, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.30f, Max =  0 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Elders_Bulwark.Recipe = new RecipeDefinition
             {
@@ -3087,6 +3402,8 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 250, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.30f, Max =  0 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_Roundshield.Recipe = new RecipeDefinition
             {
@@ -3122,6 +3439,8 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 250, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_Shield.Recipe = new RecipeDefinition
             {
@@ -3157,6 +3476,8 @@ namespace ValheimArmory
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 250, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Silver_Wolf_Towershield.Recipe = new RecipeDefinition
             {
@@ -3185,6 +3506,8 @@ namespace ValheimArmory
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             dverger_tower_shield.Recipe = new RecipeDefinition
             {
@@ -3221,6 +3544,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 38, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Hati_Knife.Recipe = new RecipeDefinition
             {
@@ -3252,6 +3579,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_knives.Recipe = new RecipeDefinition
             {
@@ -3283,6 +3614,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_knives.Recipe = new RecipeDefinition
             {
@@ -3316,6 +3651,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Eikthyrs_knife.Recipe = new RecipeDefinition
             {
@@ -3348,6 +3687,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Rascals_knives.Recipe = new RecipeDefinition
             {
@@ -3381,6 +3724,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Abyssal_knives.Recipe = new RecipeDefinition
             {
@@ -3412,6 +3759,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Rogue_knives.Recipe = new RecipeDefinition
             {
@@ -3443,6 +3794,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Iron_knives.Recipe = new RecipeDefinition
             {
@@ -3478,6 +3833,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Silver_knives.Recipe = new RecipeDefinition
             {
@@ -3514,6 +3873,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_knife.Recipe = new RecipeDefinition
             {
@@ -3552,6 +3915,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_knife_2h.Recipe = new RecipeDefinition
             {
@@ -3587,6 +3954,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bonemasses_knife.Recipe = new RecipeDefinition
             {
@@ -3625,6 +3996,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Queens_knife.Recipe = new RecipeDefinition
             {
@@ -3658,6 +4033,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_knife.Recipe = new RecipeDefinition
             {
@@ -3692,6 +4071,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_primal_knife.Recipe = new RecipeDefinition
             {
@@ -3725,6 +4108,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_lightning_knife.Recipe = new RecipeDefinition
             {
@@ -3756,6 +4143,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_blood_knife.Recipe = new RecipeDefinition
             {
@@ -3787,6 +4178,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 45, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Assassins_knives.Recipe = new RecipeDefinition
             {
@@ -3821,6 +4216,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 45, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Assassins_primal_knives.Recipe = new RecipeDefinition
             {
@@ -3854,6 +4253,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 45, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Assassins_lightning_knives.Recipe = new RecipeDefinition
             {
@@ -3885,6 +4288,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 45, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Assassins_blood_knives.Recipe = new RecipeDefinition
             {
@@ -3918,6 +4325,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 8, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  300 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             FlintSpear.Recipe = new RecipeDefinition
             {
@@ -3951,6 +4362,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  300 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_Strike.Recipe = new RecipeDefinition
             {
@@ -3983,6 +4398,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  300 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             BlackmetalSpear.Recipe = new RecipeDefinition
             {
@@ -4017,6 +4436,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  300 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             FaderSpear.Recipe = new RecipeDefinition
             {
@@ -4052,6 +4475,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 4, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 300, Min =  0, Max =  600 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_knuckles.Recipe = new RecipeDefinition
             {
@@ -4082,6 +4509,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 6, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 300, Min =  0, Max =  600 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_knuckles.Recipe = new RecipeDefinition
             {
@@ -4112,6 +4543,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 8, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 300, Min =  0, Max =  600 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Iron_knuckles.Recipe = new RecipeDefinition
             {
@@ -4145,6 +4580,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 300, Min =  0, Max =  600 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Goblin_king_knuckles.Recipe = new RecipeDefinition
             {
@@ -4183,6 +4622,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Elders_Fist.Recipe = new RecipeDefinition
             {
@@ -4215,6 +4658,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             FlintMace.Recipe = new RecipeDefinition
             {
@@ -4252,6 +4699,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 0, Min =  0, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 3, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Staff_of_poison.Recipe = new RecipeDefinition
             {
@@ -4285,6 +4736,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 0, Min =  0, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 3, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Staff_of_Spirit.Recipe = new RecipeDefinition
             {
@@ -4317,6 +4772,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  50 } },
                 { ItemStat.primary_attack_eitr, new ItemStatConfig{ Default_value = 0, Min =  0, Max =  50 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 3, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Druidic_Staff_of_Poison.Recipe = new RecipeDefinition
             {
@@ -4350,6 +4809,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  50 } },
                 { ItemStat.primary_attack_eitr, new ItemStatConfig{ Default_value = 0, Min =  0, Max =  50 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 3, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Druidic_Staff_of_Spirit.Recipe = new RecipeDefinition
             {
@@ -4381,6 +4844,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  50 } },
                 { ItemStat.primary_attack_eitr, new ItemStatConfig{ Default_value = 0, Min =  0, Max =  50 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Druidic_Staff_of_Ice.Recipe = new RecipeDefinition
             {
@@ -4412,6 +4879,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  50 } },
                 { ItemStat.primary_attack_eitr, new ItemStatConfig{ Default_value = 0, Min =  0, Max =  50 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 3, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Druidic_Staff_of_Fire.Recipe = new RecipeDefinition
             {
@@ -4448,6 +4919,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_health_returned, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  50 } },
                 { ItemStat.primary_attack_projectile_count, new ItemStatConfig { Default_value = 2, Min =  1, Max =  10, IsInt = true } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Soulstealer.Recipe = new RecipeDefinition
             {
@@ -4495,6 +4970,10 @@ namespace ValheimArmory
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 5, IsInt = true } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min = 0, Max = 800 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min = 0, Max = 200 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             bonepick.Recipe = new RecipeDefinition {
                 RecipeItems = new List<RecipeIngredient> {
@@ -4529,6 +5008,7 @@ namespace ValheimArmory
             NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAspearblackmetal_projectile.Prefab");
             NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAspearmoder_projectile.Prefab");
             NonCraftablePrefab("Assets/Custom/Weapons/Spears/VASpearFlint_projectile.Prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAFader_projectile.Prefab");
 
             // Magic projectiles
             //new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_ice_projectile.Prefab");

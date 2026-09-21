@@ -181,6 +181,11 @@ namespace ValheimArmory.Common {
                 ItemStat.block_armor, ItemStat.block_armor_per_level, ItemStat.parry,
                 ItemStat.block_force, ItemStat.block_force_per_level
             }),
+            ("Adrenaline", new[] {
+                ItemStat.primary_attack_adrenaline, ItemStat.secondary_attack_adrenaline,
+                ItemStat.primary_attack_use_adrenaline, ItemStat.projectile_adrenaline,
+                ItemStat.block_adrenaline, ItemStat.parry_adrenaline
+            }),
             ("Item", new[] {
                 ItemStat.durability, ItemStat.durability_per_level, ItemStat.max_item_level,
                 ItemStat.tool_level, ItemStat.movement_speed, ItemStat.amount
