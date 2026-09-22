@@ -5026,7 +5026,7 @@ namespace ValheimArmory
 
         private static void NonCraftableItem(string full_path) {
             SE_Stats status_effect = ValheimArmory.EmbeddedResourceBundle.LoadAsset<SE_Stats>($"{full_path}");
-            CustomStatusEffect customEffect = new CustomStatusEffect(status_effect, fixReference: false); ;
+            CustomStatusEffect customEffect = new CustomStatusEffect(status_effect, fixReference: true); ;
             ItemManager.Instance.AddStatusEffect(customEffect);
         }
 

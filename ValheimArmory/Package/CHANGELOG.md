@@ -1,3 +1,11 @@
+**1.33.1**
+ ---
+ ```
+- Fixes fire effects causing rainbow fire
+    - Certain weapons now provide their lore accurate green fire
+    - Most fire weapons now use red fire
+ ```
+
 **1.33.0**
  ---
  ```
