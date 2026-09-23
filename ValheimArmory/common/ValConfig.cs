@@ -3,6 +3,7 @@ using System;
 using System.IO;
 using ValheimArmory.common;
 using ValheimArmory.Common;
+using ValheimArmory.patches;
 
 namespace ValheimArmory
 {
@@ -108,7 +109,7 @@ namespace ValheimArmory
             // Deliberately not an admin (server synced) config: it is read during Awake, on the machine it
             // applies to, long before a server sync could arrive, and a client always loads its own prefabs.
             LoadPrefabsOnServer = Config.Bind("Server config", "LoadPrefabsOnServer", false,
-                new ConfigDescription("Registers Valheim Armory's item prefabs on a dedicated server. Off by default since the server neither renders nor modifies them; enable it when another server side mod has to resolve Valheim Armory items (spawn/loot tables, admin spawn commands). Takes effect on server restart.",
+                new ConfigDescription("Registers Valheim Armory's item prefabs on a dedicated server. Off by default since the server neither renders nor modifies them; enable it when another server side mod has to resolve Valheim Armory items (spawn/loot tables, admin spawn commands). Registered regardless while Chest Loot adds this mod's bolts to treasure chests, since the server rolls chest loot. Takes effect on server restart.",
                 null,
                 new ConfigurationManagerAttributes { IsAdvanced = true }));
             HybridWeaponBloodMagicSkillIncrease = BindServerConfig("Blood Magic Hybrid Weapons", "HybridWeaponBloodMagicSkillIncrease", 1f, "How much experiance should one usage of a blood magic hybrid weapon provide?", true, 0f, 4f);
@@ -145,6 +146,8 @@ namespace ValheimArmory
             InMemoryModificationsPerTick = BindServerConfig("General", "InMemoryModificationsPerTick", 10, "How many modifications should be processed per tick.", true, 1, 100);
             ConfigApplyDelay = BindServerConfig("Config", "Config Apply Delay", 1f, "Delay in seconds before a changed config entry is applied in-game. Coalesces a burst of rapid edits (typing, file reloads, server sync) into a single apply. Set to 0 to apply instantly.", true, 0f, 10f);
             ConfigPollIntervalSeconds = BindServerConfig("Config", "Config Poll Interval", 30f, "Seconds between checks for edits to this mod's config file while a world is running. Lower reacts faster to a hand edit, higher does less disk work.", true, 1f, 300f);
+
+            ChestBoltLoot.BindConfig();
         }
 
         // Watches the config file for edits made outside the game. Only a server reloads (see

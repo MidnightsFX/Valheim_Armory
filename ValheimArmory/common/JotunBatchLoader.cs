@@ -57,8 +57,12 @@ namespace ValheimArmory.Common {
             // The server does not actually do anything with prefabs, and is not responsible for modifying them,
             // so it skips registration by default. Opting in puts the items in the server's ObjectDB for other
             // server side mods that need to resolve them (spawn/loot tables, admin spawn commands).
-            bool load_prefabs = on_server == false || ValConfig.LoadPrefabsOnServer.Value;
-            if (on_server && load_prefabs) { Logger.LogInfo("LoadPrefabsOnServer is enabled, registering Valheim Armory items on this server."); }
+            // The server also rolls treasure chest loot for the zones it generates, so the bolts Chest Loot adds
+            // must resolve there.
+            bool chest_loot_needs_prefabs = on_server && ChestBoltLoot.NeedsModPrefabs();
+            bool load_prefabs = on_server == false || ValConfig.LoadPrefabsOnServer.Value || chest_loot_needs_prefabs;
+            if (on_server && ValConfig.LoadPrefabsOnServer.Value) { Logger.LogInfo("LoadPrefabsOnServer is enabled, registering Valheim Armory items on this server."); }
+            else if (chest_loot_needs_prefabs) { Logger.LogInfo("Chest Loot adds Valheim Armory bolts to treasure chests, registering Valheim Armory items on this server."); }
 
             if (load_prefabs) {
                 BatchAddItems();
