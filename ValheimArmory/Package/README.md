@@ -128,6 +128,24 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Obsidian Bolt | Workbench | Mountain | `VAObsidianBolt` | ![obsidian bolt](https://i.imgur.com/luqYGzO.png) |
   | Needle Bolt | Workbench | Plains | `VABoltNeedle` | ![needle bolt](https://i.postimg.cc/t4VwknJ4/needle-bolt.png) |
 
+  #### Bolts in treasure chests
+
+  Treasure chests in the world can hold crossbow bolts next to the arrows they already hold, with the same stack size and chance as those arrows.
+  Configured in the `Chest Loot` config section (server synced): `EnableChestBolts`, plus one entry per chest in the format `Prefab,StackMin,StackMax,Weight|...`.
+
+  | Chest | Arrow | Bolt |
+  | ----------- | ----------- | ----------- |
+  | Meadows chests | Flint arrow 10-20 | `VABoltWood` 10-20 |
+  | Buried meadows chest | Fire arrow 10-15 | `VAFireBolt` 10-15 |
+  | Black Forest and burial chamber chests | Flint arrow 5-10 | `VABoltWood` 5-10 |
+  | Swamp and sunken crypt chests | Iron and poison arrows 10-15 | `BoltIron` and `VAbolt_poison` 10-15 |
+  | Mountain chests | Frost arrow 5-10 | `VAbolt_frost` 5-10 |
+  | Plains stone chests | Obsidian arrow 5-10 | `VAObsidianBolt` 5-10 |
+  | Ashlands stone chests | Carapace arrow 3-12 | `BoltCarapace` 3-12 |
+  | Morkhalla chests | Charred arrow 5-11 | `BoltCharred` 5-11 |
+
+  Chest loot is rolled once, when the area is first generated, so only chests in areas not yet visited get bolts. On a dedicated server the server rolls chest loot: install the mod on the server, which then registers this mod's items for the bolts.
+
 
 </details>
 
@@ -385,12 +403,26 @@ Current configuration options:
 * Crafted amount (where applicable)
 * movement speed (where applicable)
 * parry bonus (where applicable)
+* adrenaline gained from hits, casts/shots, projectile hits, blocks and parries (where applicable)
+* idle stance used by sledges, vanilla and modded (`SledgeStance`)
 * bow draw/crossbow reload time
 * crafting recipe
 * crafting station used
 * min level required to craft
 * recipe enabled
 * item enabled
+* Forge of Potential idol (`-upgraderResource`)
+
+### Dedicated servers
+
+A dedicated server does not render or modify the weapons itself, so it skips registering their prefabs by
+default. Set `LoadPrefabsOnServer` to `true` under `[Server config]` if another server side mod has to
+resolve Valheim Armory items - spawn or loot tables, admin spawn commands and the like. This one is local to
+the machine rather than server enforced, and takes effect on the next server restart.
+
+### Forge of Potential
+
+Every upgradeable weapon and shield can be refined past its max level at the Forge of Potential. Each attempt costs one idol, chosen by the item's biome tier (Wooden through Bloodgold), and boss weapons use the idol one tier higher. Weapons use Battle idols (`Upgrader0Weapon`-`Upgrader7Weapon`) and shields use Protection idols (`Upgrader0Armor`-`Upgrader7Armor`). Change an item's idol with its `-upgraderResource` config, or leave the value empty to disable refinement for that item.
 
 ---
 
@@ -399,8 +431,8 @@ Current configuration options:
 Q. Valheim Enchanting System doesn't support these weapons?
 - A. There is a VES config available my [discord](https://discord.gg/Dmr9PQTy9m).
 
-Q. Epic Loot doesn't automatically drop these weapons, what gives?
-- A. Epic Loot configs are available on my [discord](https://discord.gg/Dmr9PQTy9m) and the [Epic loot discord](https://discord.gg/ZNhYeavv3C). These should be placed in the Epicloot patches folder .
+Q. Does this mod work with Epicloot?
+- A. Yes! Automatically. You don't need to do anything, all of the weapons will drop at progression appropriate spots.
 
 Q. I want to edit the text for a weapon, how do I do that?
 - A. All of the localizations are added to `BepinEx/config/ValheimArmory` modifying localizations in that folder will result in them being different in game. Changes do require a game restart to take effect.

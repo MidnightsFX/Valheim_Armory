@@ -16,8 +16,8 @@ namespace ValheimArmory.Common {
     internal static class ConfigDrawHelpers {
         // Edit buffers so partial typing in text/number fields doesn't immediately overwrite the live value.
         private static readonly Dictionary<object, string> TextBuffer = new Dictionary<object, string>();
-        // In-progress slider values; committed to the ConfigEntry only on mouse release to avoid a disk
-        // write (SaveOnConfigSet is true) on every frame of a drag.
+        // In-progress slider values; committed to the ConfigEntry only on mouse release, so the change
+        // handlers run once per drag rather than on every frame of it.
         private static readonly Dictionary<object, float> SliderPending = new Dictionary<object, float>();
 
         private static GUIStyle _headerButton;
@@ -122,8 +122,8 @@ namespace ValheimArmory.Common {
             if (Mathf.Abs(slid - shown) > Mathf.Epsilon) { SliderPending[key] = slid; }
             if (SliderPending.TryGetValue(key, out float dragging)) {
                 // Deferred commit: while the mouse is held, only the pending display value changes.
-                // Returning the dragged value every frame wrote cfg.Value (and with SaveOnConfigSet, the
-                // .cfg file) once per frame of the drag -- commit exactly once, on release.
+                // Returning the dragged value every frame wrote cfg.Value once per frame of the drag --
+                // commit exactly once, on release.
                 if (!Input.GetMouseButton(0)) {
                     SliderPending.Remove(key);
                     result = dragging;
@@ -181,6 +181,11 @@ namespace ValheimArmory.Common {
                 ItemStat.block_armor, ItemStat.block_armor_per_level, ItemStat.parry,
                 ItemStat.block_force, ItemStat.block_force_per_level
             }),
+            ("Adrenaline", new[] {
+                ItemStat.primary_attack_adrenaline, ItemStat.secondary_attack_adrenaline,
+                ItemStat.primary_attack_use_adrenaline, ItemStat.projectile_adrenaline,
+                ItemStat.block_adrenaline, ItemStat.parry_adrenaline
+            }),
             ("Item", new[] {
                 ItemStat.durability, ItemStat.durability_per_level, ItemStat.max_item_level,
                 ItemStat.tool_level, ItemStat.movement_speed, ItemStat.amount
@@ -193,6 +198,7 @@ namespace ValheimArmory.Common {
             ConfigDrawHelpers.Hide(itemdef.CraftAmountCfg);
             ConfigDrawHelpers.Hide(itemdef.CraftedAtCfg);
             ConfigDrawHelpers.Hide(itemdef.Recipe.RecipeConfig);
+            if (itemdef.UpgraderResourceCfg != null) { ConfigDrawHelpers.Hide(itemdef.UpgraderResourceCfg); }
             if (itemdef.ModifableStats != null) {
                 foreach (ItemStatConfig stat in itemdef.ModifableStats.Values) {
                     if (stat.Cfg != null) { ConfigDrawHelpers.Hide(stat.Cfg); }
@@ -236,6 +242,7 @@ namespace ValheimArmory.Common {
                 ConfigDrawHelpers.DrawString("Crafted at", itemdef.CraftedAtCfg);
                 ConfigDrawHelpers.DrawInt("Station level", itemdef.StationLVLCfg);
                 ConfigDrawHelpers.DrawInt("Craft amount", itemdef.CraftAmountCfg);
+                if (itemdef.UpgraderResourceCfg != null) { ConfigDrawHelpers.DrawString("Forge of Potential idol", itemdef.UpgraderResourceCfg); }
 
                 DrawRecipeEditor(itemdef);
 

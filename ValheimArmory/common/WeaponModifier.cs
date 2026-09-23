@@ -29,6 +29,24 @@ namespace ValheimArmory.common
 
         static Dictionary<String, WeaponAttackData> OriginalWeaponAttackCache = new Dictionary<String, WeaponAttackData>();
 
+        // The bloodgold sledge and the two enchanted variants crafted from it. One weapon line: same slam,
+        // same stamina, so they convert together and share a single primary attack stamina config.
+        private static readonly string[] GoldSledges = { "SledgeGold", "SledgeGold_BloodLightning", "SledgeGold_FrostFire" };
+        private const float GoldSledgeSlamStamina = 28f;
+
+        // This mod's sledges, the ones ModHammersHavePrimaryAttack switches between warhammer and sledge.
+        private static readonly string[] ModSledges = {
+            "VAflametal_sledge_nature", "VAflametal_sledge_lightning", "VAflametal_sledge_blood", "VAflametal_sledge",
+            "VAblackmetal_sledge", "VAElderHammer", "VABronzeSledge", "VABonemassWarhammer", "VASilverSledge"
+        };
+
+        // The vanilla sledges this mod converts, apart from the bloodgold line in GoldSledges.
+        private static readonly string[] VanillaSledges = { "SledgeStagbreaker", "SledgeIron", "SledgeDemolisher" };
+
+        // Every sledge the SledgeStance config drives. A set: LiveItemDrops tests each live drop against it.
+        private static readonly HashSet<string> StanceSledges =
+            new HashSet<string>(ModSledges.Concat(VanillaSledges).Concat(GoldSledges));
+
         internal static WeaponAttackData CheckForWeaponData(string weapon_name)
         {
             if (OriginalWeaponAttackCache.ContainsKey(weapon_name))
@@ -36,18 +54,13 @@ namespace ValheimArmory.common
                 return OriginalWeaponAttackCache[weapon_name];
             }
 
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_name));
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_name))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
+                if (id.m_itemData.m_shared.m_attack.m_attackAnimation != null && id.m_itemData.m_shared.m_secondaryAttack.m_attackAnimation != null)
                 {
-                    if (id.m_itemData.m_shared.m_attack.m_attackAnimation != null && id.m_itemData.m_shared.m_secondaryAttack.m_attackAnimation != null)
-                    {
-                        // We just need to at this one
-                        OriginalWeaponAttackCache.Add(weapon_name, new WeaponAttackData() { primary_attack = id.m_itemData.m_shared.m_attack, secondary_attack = id.m_itemData.m_shared.m_secondaryAttack });
-                        break;
-                    }
+                    // We just need to at this one
+                    OriginalWeaponAttackCache.Add(weapon_name, new WeaponAttackData() { primary_attack = id.m_itemData.m_shared.m_attack, secondary_attack = id.m_itemData.m_shared.m_secondaryAttack });
+                    break;
                 }
             }
             return OriginalWeaponAttackCache[weapon_name];
@@ -101,7 +114,9 @@ namespace ValheimArmory.common
             return primary_attack;
         }
 
-        public static Attack SetSledgeSmash(float stamina_cost = 14f)
+        // stagger_multiplier defaults to the vanilla slam value shared by every sledge except the
+        // stagbreaker, which staggers for 1.
+        public static Attack SetSledgeSmash(float stamina_cost = 14f, float stagger_multiplier = 2f)
         {
             Attack sledge_attack = new Attack();
             sledge_attack.m_attackChainLevels = 0;
@@ -112,7 +127,6 @@ namespace ValheimArmory.common
             sledge_attack.m_attackStartNoise = 10f;
             sledge_attack.m_attackHitNoise = 60f;
             sledge_attack.m_forceMultiplier = 1f;
-            sledge_attack.m_staggerMultiplier = 1.5f;
             sledge_attack.m_damageMultiplier = 1f;
             sledge_attack.m_attackAnimation = "swing_sledge";
             sledge_attack.m_attackType = Attack.AttackType.Area;
@@ -130,6 +144,7 @@ namespace ValheimArmory.common
 
             // Things specific to each weapon
             sledge_attack.m_attackStamina = stamina_cost;
+            sledge_attack.m_staggerMultiplier = stagger_multiplier;
             sledge_attack.m_lastChainDamageMultiplier = 2f;
 
             return sledge_attack;
@@ -175,32 +190,26 @@ namespace ValheimArmory.common
             id.m_shared.m_hitTerrainEffect = new EffectList();
         }
 
-        public static void SledgeToWarhammer(string weapon_prefab, float primary_stamina, float secondary_stamina)
+        public static void SledgeToWarhammer(string weapon_prefab, float primary_stamina, float secondary_stamina, float stagger_multiplier = 2f)
         {
             bool demolisher = false;
             if (weapon_prefab == "SledgeDemolisher") { demolisher = true; }
             Attack primary = SetWarhammerPrimaryAttack(primary_stamina);
-            Attack secondary = SetSledgeSmash(secondary_stamina);
+            Attack secondary = SetSledgeSmash(secondary_stamina, stagger_multiplier);
             EffectList warhammer_primary_effects = SetWarhammerAttackVFX();
             EffectList sledge_trigger_effects = SledgeTriggerEffects(demolisher);
             EffectList sledge_start_effects = SledgeStartEffects();
             EffectList sledge_swing_effects = SledgeComboSwingSFX();
             // This ensures modifications of clones also
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
-
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    id.m_itemData.m_shared.m_attack = primary;
-                    id.m_itemData.m_shared.m_secondaryAttack = secondary;
-                    id.m_itemData.m_shared.m_attack.m_hitEffect = warhammer_primary_effects;
-                    id.m_itemData.m_shared.m_attack.m_trailStartEffect = sledge_swing_effects;
-                    id.m_itemData.m_shared.m_secondaryAttack.m_triggerEffect = sledge_trigger_effects;
-                    id.m_itemData.m_shared.m_secondaryAttack.m_startEffect = sledge_start_effects;
-                    ClearSharedVFX(id.m_itemData);
-                }
+                id.m_itemData.m_shared.m_attack = primary;
+                id.m_itemData.m_shared.m_secondaryAttack = secondary;
+                id.m_itemData.m_shared.m_attack.m_hitEffect = warhammer_primary_effects;
+                id.m_itemData.m_shared.m_attack.m_trailStartEffect = sledge_swing_effects;
+                id.m_itemData.m_shared.m_secondaryAttack.m_triggerEffect = sledge_trigger_effects;
+                id.m_itemData.m_shared.m_secondaryAttack.m_startEffect = sledge_start_effects;
+                ClearSharedVFX(id.m_itemData);
             }
 
             if (Player.m_localPlayer != null)
@@ -224,28 +233,22 @@ namespace ValheimArmory.common
             }
         }
 
-        public static void ToSledge(string weapon_prefab, float sledge_stamina)
+        public static void ToSledge(string weapon_prefab, float sledge_stamina, float stagger_multiplier = 2f)
         {
             bool demolisher = false;
             if (weapon_prefab == "SledgeDemolisher") { demolisher = true; }
-            Attack sledgesmash = SetSledgeSmash(sledge_stamina);
+            Attack sledgesmash = SetSledgeSmash(sledge_stamina, stagger_multiplier);
             EffectList sledge_trigger_effects = SledgeTriggerEffects(demolisher);
             EffectList sledge_start_effects = SledgeStartEffects();
             // This ensures modifications of clones also
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
-
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    id.m_itemData.m_shared.m_attack = sledgesmash;
-                    ClearSharedVFX(id.m_itemData);
-                    ClearSecondaryAttack(id.m_itemData);
-                    id.m_itemData.m_shared.m_triggerEffect = sledge_trigger_effects;
-                    id.m_itemData.m_shared.m_startEffect = sledge_start_effects;
-                    id.m_itemData.m_shared.m_attack.m_trailStartEffect = null;
-                }
+                id.m_itemData.m_shared.m_attack = sledgesmash;
+                ClearSharedVFX(id.m_itemData);
+                ClearSecondaryAttack(id.m_itemData);
+                id.m_itemData.m_shared.m_triggerEffect = sledge_trigger_effects;
+                id.m_itemData.m_shared.m_startEffect = sledge_start_effects;
+                id.m_itemData.m_shared.m_attack.m_trailStartEffect = null;
             }
 
             if (Player.m_localPlayer != null)
@@ -271,15 +274,9 @@ namespace ValheimArmory.common
         public static void ModifyStamina(string weapon_prefab, float sledge_stamina)
         {
             // This ensures modifications of clones also
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
-
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    id.m_itemData.m_shared.m_attack.m_attackStamina = sledge_stamina;
-                }
+                id.m_itemData.m_shared.m_attack.m_attackStamina = sledge_stamina;
             }
 
             if (Player.m_localPlayer != null)
@@ -300,16 +297,10 @@ namespace ValheimArmory.common
         public static void SetWeaponPrimaryAndSecondary(string weapon_prefab, Attack primary, Attack secondary)
         {
             // This ensures modifications of clones also
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
-
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    id.m_itemData.m_shared.m_attack = primary;
-                    id.m_itemData.m_shared.m_secondaryAttack = secondary;
-                }
+                id.m_itemData.m_shared.m_attack = primary;
+                id.m_itemData.m_shared.m_secondaryAttack = secondary;
             }
 
             if (Player.m_localPlayer != null)
@@ -332,43 +323,41 @@ namespace ValheimArmory.common
         {
             if (ValConfig.VanillaHammersHavePrimaryAttack.Value)
             {
-                SledgeToWarhammer("SledgeStagbreaker", ValConfig.StagbreakerPrimaryAttackStamina.Value, 12);
+                SledgeToWarhammer("SledgeStagbreaker", ValConfig.StagbreakerPrimaryAttackStamina.Value, 12, stagger_multiplier: 1f);
                 SledgeToWarhammer("SledgeIron", ValConfig.IronSledgePrimaryAttackStamina.Value, 20);
                 SledgeToWarhammer("SledgeDemolisher", ValConfig.DemolisherPrimaryAttackStamina.Value, 28);
+                foreach (string goldSledge in GoldSledges)
+                {
+                    SledgeToWarhammer(goldSledge, ValConfig.GoldSledgePrimaryAttackStamina.Value, GoldSledgeSlamStamina);
+                }
             }
         }
 
         public static void ModifyVanillaHammersToSledges()
         {
-            ToSledge("SledgeStagbreaker", 12);
+            ToSledge("SledgeStagbreaker", 12, stagger_multiplier: 1f);
             ToSledge("SledgeIron", 20);
             ToSledge("SledgeDemolisher", 28);
+            foreach (string goldSledge in GoldSledges)
+            {
+                ToSledge(goldSledge, GoldSledgeSlamStamina);
+            }
         }
 
         public static void ModifyModHammersToSledges()
         {
-            SetWeaponPrimaryAndSecondary("VAflametal_sledge_nature", CheckForWeaponData("VAflametal_sledge_nature").secondary_attack, new Attack());
-            SetWeaponPrimaryAndSecondary("VAflametal_sledge_lightning", CheckForWeaponData("VAflametal_sledge_lightning").secondary_attack, new Attack());
-            SetWeaponPrimaryAndSecondary("VAflametal_sledge_blood", CheckForWeaponData("VAflametal_sledge_blood").secondary_attack, new Attack());
-            SetWeaponPrimaryAndSecondary("VAflametal_sledge", CheckForWeaponData("VAflametal_sledge").secondary_attack, new Attack());
-            SetWeaponPrimaryAndSecondary("VAblackmetal_sledge", CheckForWeaponData("VAblackmetal_sledge").secondary_attack, new Attack());
-            SetWeaponPrimaryAndSecondary("VAElderHammer", CheckForWeaponData("VAElderHammer").secondary_attack, new Attack());
-            SetWeaponPrimaryAndSecondary("VABronzeSledge", CheckForWeaponData("VABronzeSledge").secondary_attack, new Attack());
-            SetWeaponPrimaryAndSecondary("VABonemassWarhammer", CheckForWeaponData("VABonemassWarhammer").secondary_attack, new Attack());
-            SetWeaponPrimaryAndSecondary("VASilverSledge", CheckForWeaponData("VASilverSledge").secondary_attack, new Attack());
+            foreach (string sledge in ModSledges)
+            {
+                SetWeaponPrimaryAndSecondary(sledge, CheckForWeaponData(sledge).secondary_attack, new Attack());
+            }
         }
 
         public static void ModifyModHammersToWarhammers()
         {
-            SetWeaponPrimaryAndSecondary("VAflametal_sledge_nature", CheckForWeaponData("VAflametal_sledge_nature").primary_attack, CheckForWeaponData("VAflametal_sledge_nature").secondary_attack);
-            SetWeaponPrimaryAndSecondary("VAflametal_sledge_lightning", CheckForWeaponData("VAflametal_sledge_lightning").primary_attack, CheckForWeaponData("VAflametal_sledge_lightning").secondary_attack);
-            SetWeaponPrimaryAndSecondary("VAflametal_sledge_blood", CheckForWeaponData("VAflametal_sledge_blood").primary_attack, CheckForWeaponData("VAflametal_sledge_blood").secondary_attack);
-            SetWeaponPrimaryAndSecondary("VAflametal_sledge", CheckForWeaponData("VAflametal_sledge").primary_attack, CheckForWeaponData("VAflametal_sledge").secondary_attack);
-            SetWeaponPrimaryAndSecondary("VAblackmetal_sledge", CheckForWeaponData("VAblackmetal_sledge").primary_attack, CheckForWeaponData("VAblackmetal_sledge").secondary_attack);
-            SetWeaponPrimaryAndSecondary("VAElderHammer", CheckForWeaponData("VAElderHammer").primary_attack, CheckForWeaponData("VAElderHammer").secondary_attack);
-            SetWeaponPrimaryAndSecondary("VABronzeSledge", CheckForWeaponData("VABronzeSledge").primary_attack, CheckForWeaponData("VABronzeSledge").secondary_attack);
-            SetWeaponPrimaryAndSecondary("VABonemassWarhammer", CheckForWeaponData("VABonemassWarhammer").primary_attack, CheckForWeaponData("VABonemassWarhammer").secondary_attack);
-            SetWeaponPrimaryAndSecondary("VASilverSledge", CheckForWeaponData("VASilverSledge").primary_attack, CheckForWeaponData("VASilverSledge").secondary_attack);
+            foreach (string sledge in ModSledges)
+            {
+                SetWeaponPrimaryAndSecondary(sledge, CheckForWeaponData(sledge).primary_attack, CheckForWeaponData(sledge).secondary_attack);
+            }
         }
 
         public static void OnConfigChangeModifyHammers(object sender, EventArgs e)
@@ -421,6 +410,55 @@ namespace ValheimArmory.common
             }
         }
 
+        // Applies the configured idle stance to every sledge, vanilla and modded. Inventory items are clones
+        // that kept the prefab's m_shared, so the prefab covers those; each live world drop carries its own
+        // copy, which is what LiveItemDrops walks.
+        public static void ApplySledgeStance()
+        {
+            ItemDrop.ItemData.AnimationState stance = ValConfig.SledgeStance.Value == "Sledge"
+                ? ItemDrop.ItemData.AnimationState.TwoHandedClub
+                : ItemDrop.ItemData.AnimationState.TwoHandedAxe;
+            Logger.LogDebug($"Setting the idle stance of {StanceSledges.Count} sledges to {stance}.");
+
+            LiveItemDrops.ForEach(StanceSledges, (_, drop) => drop.m_itemData.m_shared.m_animationState = stance);
+
+            if (Player.m_localPlayer == null) { return; }
+            foreach (ItemDrop.ItemData user_item in Player.m_localPlayer.m_inventory.GetAllItems())
+            {
+                if (user_item == null || user_item.m_dropPrefab == null) { continue; }
+                if (StanceSledges.Contains(user_item.m_dropPrefab.name) == false) { continue; }
+                user_item.m_shared.m_animationState = stance;
+            }
+            RefreshLocalPlayerStance();
+        }
+
+        // The stance is only pushed to the animator when equipment is set up, so a sledge that is already in
+        // hand keeps the old one until then. Re-running that is idempotent: it reapplies the visible
+        // equipment, equipment status effects, build piece mode and the animation state.
+        private static void RefreshLocalPlayerStance()
+        {
+            Player player = Player.m_localPlayer;
+            if (player == null || player.m_nview == null || player.m_nview.GetZDO() == null) { return; }
+            player.SetupEquipment();
+        }
+
+        public static void OnConfigSledgeStanceChanged(object sender, EventArgs e)
+        {
+            if (Game.instance != null && Game.instance.IsShuttingDown()) { return; }
+            ApplySledgeStance();
+        }
+
+        public static void OnConfigGoldSledgeValueChanged(object sender, EventArgs e)
+        {
+            if (ValConfig.VanillaHammersHavePrimaryAttack.Value)
+            {
+                foreach (string goldSledge in GoldSledges)
+                {
+                    ModifyStamina(goldSledge, ValConfig.GoldSledgePrimaryAttackStamina.Value);
+                }
+            }
+        }
+
         public static void ModifyVanillaKnife()
         {
             if (ValConfig.VanillaAbyssalKnifeBluntDamageConvert.Value)
@@ -443,7 +481,7 @@ namespace ValheimArmory.common
 
         public static void OnConfigAbyssalKnifeValueChanged(object sender, EventArgs e)
         {
-            if (ValConfig.VanillaHammersHavePrimaryAttack.Value)
+            if (ValConfig.VanillaAbyssalKnifeBluntDamageConvert.Value)
             {
                 KnifeToAbyssal("KnifeChitin");
             }
@@ -452,18 +490,12 @@ namespace ValheimArmory.common
         public static void KnifeToAbyssal(string weapon_prefab)
         {
             // This ensures modifications of clones also
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
-
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    id.m_itemData.m_shared.m_damages.m_slash = 0;
-                    id.m_itemData.m_shared.m_damages.m_blunt = ValConfig.AbyssalKnifeBlunt.Value;
-                    id.m_itemData.m_shared.m_damagesPerLevel.m_slash = 0;
-                    id.m_itemData.m_shared.m_damagesPerLevel.m_blunt = ValConfig.AbyssalKnifeBluntPerLevel.Value;
-                }
+                id.m_itemData.m_shared.m_damages.m_slash = 0;
+                id.m_itemData.m_shared.m_damages.m_blunt = ValConfig.AbyssalKnifeBlunt.Value;
+                id.m_itemData.m_shared.m_damagesPerLevel.m_slash = 0;
+                id.m_itemData.m_shared.m_damagesPerLevel.m_blunt = ValConfig.AbyssalKnifeBluntPerLevel.Value;
             }
 
             if (Player.m_localPlayer != null)
@@ -487,18 +519,12 @@ namespace ValheimArmory.common
         public static void KnifeToVanilla(string weapon_prefab)
         {
             // This ensures modifications of clones also
-            IEnumerable<GameObject> objects = Resources.FindObjectsOfTypeAll<GameObject>().Where(obj => obj.name.StartsWith(weapon_prefab));
-
-            foreach (GameObject obj in objects)
+            foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                ItemDrop id = null;
-                if (obj.TryGetComponent<ItemDrop>(out id))
-                {
-                    id.m_itemData.m_shared.m_damages.m_blunt = 0;
-                    id.m_itemData.m_shared.m_damages.m_slash = 20;
-                    id.m_itemData.m_shared.m_damagesPerLevel.m_blunt = 0;
-                    id.m_itemData.m_shared.m_damagesPerLevel.m_slash = 1f;
-                }
+                id.m_itemData.m_shared.m_damages.m_blunt = 0;
+                id.m_itemData.m_shared.m_damages.m_slash = 20;
+                id.m_itemData.m_shared.m_damagesPerLevel.m_blunt = 0;
+                id.m_itemData.m_shared.m_damagesPerLevel.m_slash = 1f;
             }
 
             if (Player.m_localPlayer != null)

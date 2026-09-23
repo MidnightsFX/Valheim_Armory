@@ -49,6 +49,7 @@ namespace ValheimArmory
             Black_Metal_Arrow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 52, Min =  0, Max =  200 } },
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Black_Metal_Arrow.Recipe = new RecipeDefinition
             {
@@ -70,6 +71,7 @@ namespace ValheimArmory
             Bone_Arrow.CraftAmount = 20;
             Bone_Arrow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 32, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Bone_Arrow.Recipe = new RecipeDefinition
             {
@@ -91,6 +93,7 @@ namespace ValheimArmory
             Surtling_Fire_Arrow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.fire, new ItemStatConfig{ Default_value = 52, Min =  0, Max =  200 } },
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Surtling_Fire_Arrow.Recipe = new RecipeDefinition
             {
@@ -113,6 +116,7 @@ namespace ValheimArmory
             Ancient_Wood_Arrow.CraftAmount = 20;
             Ancient_Wood_Arrow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 37, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Ancient_Wood_Arrow.Recipe = new RecipeDefinition
             {
@@ -134,6 +138,7 @@ namespace ValheimArmory
             Chitin_Arrow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 12, Min =  0, Max =  200 } },
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Chitin_Arrow.Recipe = new RecipeDefinition
             {
@@ -155,6 +160,7 @@ namespace ValheimArmory
             Wood_Bolt.CraftAmount = 20;
             Wood_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 22, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Wood_Bolt.Recipe = new RecipeDefinition
             {
@@ -174,6 +180,7 @@ namespace ValheimArmory
             Corewood_Bolt.CraftAmount = 20;
             Corewood_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 37, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Corewood_Bolt.Recipe = new RecipeDefinition
             {
@@ -194,6 +201,7 @@ namespace ValheimArmory
             Bronze_Bolt.CraftAmount = 20;
             Bronze_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 32, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Bronze_Bolt.Recipe = new RecipeDefinition
             {
@@ -216,6 +224,7 @@ namespace ValheimArmory
             Poison_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.poison, new ItemStatConfig{ Default_value = 52, Min =  0, Max =  200 } },
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Poison_Bolt.Recipe = new RecipeDefinition
             {
@@ -238,6 +247,7 @@ namespace ValheimArmory
             Obsidian_Bolt.CraftAmount = 20;
             Obsidian_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 52, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Obsidian_Bolt.Recipe = new RecipeDefinition
             {
@@ -261,6 +271,7 @@ namespace ValheimArmory
                 { ItemStat.frost, new ItemStatConfig{ Default_value = 52, Min =  0, Max =  200 } },
                 { ItemStat.spirit, new ItemStatConfig{ Default_value = 20, Min =  0, Max =  200 } },
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Frost_Bolt.Recipe = new RecipeDefinition
             {
@@ -284,6 +295,7 @@ namespace ValheimArmory
             Surtling_Core_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.fire, new ItemStatConfig{ Default_value = 52, Min =  0, Max =  200 } },
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Surtling_Core_Bolt.Recipe = new RecipeDefinition
             {
@@ -306,6 +318,7 @@ namespace ValheimArmory
             Needle_Bolt.CraftAmount = 20;
             Needle_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 56, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Needle_Bolt.Recipe = new RecipeDefinition
             {
@@ -327,6 +340,7 @@ namespace ValheimArmory
             Fire_Bolt.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 22, Min =  0, Max =  200 } },
                 { ItemStat.fire, new ItemStatConfig{ Default_value = 34, Min =  0, Max =  200 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
             };
             Fire_Bolt.Recipe = new RecipeDefinition
             {
@@ -350,6 +364,7 @@ namespace ValheimArmory
             Blackmetal_Bow.Prefab = "VABlackmetal_bow";
             Blackmetal_Bow.Icon = "blackmetal_bow";
             Blackmetal_Bow.CraftedAt = "forge";
+            Blackmetal_Bow.UpgraderResource = "Upgrader4Weapon";
             Blackmetal_Bow.CraftAmount = 1;
             Blackmetal_Bow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 62, Min =  0, Max =  300 } },
@@ -362,6 +377,9 @@ namespace ValheimArmory
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ Default_value = 2, Min =  0.01f, Max =  2 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 60, Min =  0, Max =  120 } },
                 { ItemStat.projectile_accuracy_max, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  100 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_Bow.Recipe = new RecipeDefinition
             {
@@ -380,7 +398,9 @@ namespace ValheimArmory
             Carapace_Blood_Bow.Prefab = "VAHeavy_Blood_Bone_Bow";
             Carapace_Blood_Bow.Icon = "blood_bone_bow_heavy";
             Carapace_Blood_Bow.CraftedAt = "piece_magetable";
+            Carapace_Blood_Bow.UpgraderResource = "Upgrader5Weapon";
             Carapace_Blood_Bow.CraftAmount = 1;
+            Carapace_Blood_Bow.HybridSkills = new List<Skills.SkillType> { Skills.SkillType.BloodMagic };
             Carapace_Blood_Bow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 92, Min =  0, Max =  300 } },
                 { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
@@ -396,6 +416,10 @@ namespace ValheimArmory
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ Default_value = 2, Min =  0.01f, Max =  2 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 60, Min =  0, Max =  120 } },
                 { ItemStat.projectile_accuracy_max, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  100 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Carapace_Blood_Bow.Recipe = new RecipeDefinition
             {
@@ -416,7 +440,9 @@ namespace ValheimArmory
             Blood_Bone_Bow.Prefab = "VABlood_bone_bow";
             Blood_Bone_Bow.Icon = "bone_bow";
             Blood_Bone_Bow.CraftedAt = "forge";
+            Blood_Bone_Bow.UpgraderResource = "Upgrader3Weapon";
             Blood_Bone_Bow.CraftAmount = 1;
+            Blood_Bone_Bow.HybridSkills = new List<Skills.SkillType> { Skills.SkillType.BloodMagic };
             Blood_Bone_Bow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 60, Min =  0, Max =  300 } },
                 { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
@@ -432,6 +458,10 @@ namespace ValheimArmory
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ Default_value = 2, Min =  0.01f, Max =  2 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 60, Min =  0, Max =  120 } },
                 { ItemStat.projectile_accuracy_max, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  100 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blood_Bone_Bow.Recipe = new RecipeDefinition
             {
@@ -451,6 +481,7 @@ namespace ValheimArmory
             Bronze_Arbelist.Prefab = "VAArbalistBronze";
             Bronze_Arbelist.Icon = "bronze_crossbow_upright";
             Bronze_Arbelist.CraftedAt = "forge";
+            Bronze_Arbelist.UpgraderResource = "Upgrader3Weapon";
             Bronze_Arbelist.CraftAmount = 1;
             Bronze_Arbelist.Craftable = false;
             Bronze_Arbelist.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
@@ -463,6 +494,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_Arbelist.Recipe = new RecipeDefinition
             {
@@ -482,6 +516,7 @@ namespace ValheimArmory
             IronCrossbow.Prefab = "VACrossbowIron";
             IronCrossbow.Icon = "iron_crossbow";
             IronCrossbow.CraftedAt = "forge";
+            IronCrossbow.UpgraderResource = "Upgrader2Weapon";
             IronCrossbow.CraftAmount = 1;
             IronCrossbow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 120, Min =  0, Max =  300 } },
@@ -493,6 +528,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             IronCrossbow.Recipe = new RecipeDefinition
             {
@@ -512,6 +550,7 @@ namespace ValheimArmory
             SilverCrossbow.Prefab = "VACrossbowSilver";
             SilverCrossbow.Icon = "silver_crossbow";
             SilverCrossbow.CraftedAt = "forge";
+            SilverCrossbow.UpgraderResource = "Upgrader3Weapon";
             SilverCrossbow.CraftAmount = 1;
             SilverCrossbow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 140, Min =  0, Max =  300 } },
@@ -525,6 +564,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             SilverCrossbow.Recipe = new RecipeDefinition
             {
@@ -544,6 +586,7 @@ namespace ValheimArmory
             BlackmetalCrossbow.Prefab = "VACrossbowBlackmetal";
             BlackmetalCrossbow.Icon = "blackmetal_crossbow";
             BlackmetalCrossbow.CraftedAt = "forge";
+            BlackmetalCrossbow.UpgraderResource = "Upgrader4Weapon";
             BlackmetalCrossbow.CraftAmount = 1;
             BlackmetalCrossbow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 180, Min =  0, Max =  300 } },
@@ -555,6 +598,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             BlackmetalCrossbow.Recipe = new RecipeDefinition
             {
@@ -574,6 +620,7 @@ namespace ValheimArmory
             Eikthyrs_Bow.Prefab = "VAAntler_Bow";
             Eikthyrs_Bow.Icon = "antler_bow";
             Eikthyrs_Bow.CraftedAt = "piece_workbench";
+            Eikthyrs_Bow.UpgraderResource = "Upgrader1Weapon";
             Eikthyrs_Bow.CraftAmount = 1;
             Eikthyrs_Bow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min =  0, Max =  120 } },
@@ -588,6 +635,9 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 45, Min =  0, Max =  120 } },
                 { ItemStat.projectile_accuracy_max, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  100 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Eikthyrs_Bow.Recipe = new RecipeDefinition
             {
@@ -607,6 +657,7 @@ namespace ValheimArmory
             Bronze_Crossbow.Prefab = "VACrossbowBronze";
             Bronze_Crossbow.Icon = "bronze_crossbow2";
             Bronze_Crossbow.CraftedAt = "forge";
+            Bronze_Crossbow.UpgraderResource = "Upgrader1Weapon";
             Bronze_Crossbow.CraftAmount = 1;
             Bronze_Crossbow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 80, Min =  0, Max =  300 } },
@@ -618,6 +669,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_Crossbow.Recipe = new RecipeDefinition
             {
@@ -637,6 +691,7 @@ namespace ValheimArmory
             WoodCrossbow.Prefab = "VACrossbowWood";
             WoodCrossbow.Icon = "woodCrossbow";
             WoodCrossbow.CraftedAt = "piece_workbench";
+            WoodCrossbow.UpgraderResource = "Upgrader0Weapon";
             WoodCrossbow.CraftAmount = 1;
             WoodCrossbow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 40, Min =  0, Max =  300 } },
@@ -648,6 +703,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 7f, Min =  0.01f, Max =  10f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             WoodCrossbow.Recipe = new RecipeDefinition
             {
@@ -666,6 +724,7 @@ namespace ValheimArmory
             Elders_Reach.Prefab = "VACrossbowElder";
             Elders_Reach.Icon = "elder_crossbow";
             Elders_Reach.CraftedAt = "forge";
+            Elders_Reach.UpgraderResource = "Upgrader2Weapon";
             Elders_Reach.CraftAmount = 1;
             Elders_Reach.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 80, Min =  0, Max =  300 } },
@@ -679,6 +738,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Elders_Reach.Recipe = new RecipeDefinition
             {
@@ -698,6 +760,7 @@ namespace ValheimArmory
             Moder_Crossbow.Prefab = "VACrossbowModer";
             Moder_Crossbow.Icon = "moder_crossbow";
             Moder_Crossbow.CraftedAt = "forge";
+            Moder_Crossbow.UpgraderResource = "Upgrader4Weapon";
             Moder_Crossbow.CraftAmount = 1;
             Moder_Crossbow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 150, Min =  0, Max =  300 } },
@@ -711,6 +774,9 @@ namespace ValheimArmory
                 { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
                 { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moder_Crossbow.Recipe = new RecipeDefinition
             {
@@ -731,6 +797,7 @@ namespace ValheimArmory
             Queens_Greatbow.Prefab = "VAQueen_bow";
             Queens_Greatbow.Icon = "queen_bow";
             Queens_Greatbow.CraftedAt = "blackforge";
+            Queens_Greatbow.UpgraderResource = "Upgrader6Weapon";
             Queens_Greatbow.CraftAmount = 1;
             Queens_Greatbow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 72, Min =  0, Max =  200 } },
@@ -747,6 +814,9 @@ namespace ValheimArmory
                 { ItemStat.bow_draw_speed, new ItemStatConfig{ Default_value = 3f, Min =  0.01f, Max =  3f } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 60, Min =  0, Max =  120 } },
                 { ItemStat.projectile_accuracy_max, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  100 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Queens_Greatbow.Recipe = new RecipeDefinition
             {
@@ -771,6 +841,7 @@ namespace ValheimArmory
             FaderSword.Prefab = "VASwordFader";
             FaderSword.Icon = "fader_sword";
             FaderSword.CraftedAt = "blackforge";
+            FaderSword.UpgraderResource = "Upgrader7Weapon";
             FaderSword.CraftAmount = 1;
             FaderSword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 145, Min =  0, Max =  250 } },
@@ -786,6 +857,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             FaderSword.Recipe = new RecipeDefinition
             {
@@ -805,6 +880,7 @@ namespace ValheimArmory
             FaderGreatsword.Prefab = "VAGreatswordFader";
             FaderGreatsword.Icon = "fader_greatsword";
             FaderGreatsword.CraftedAt = "blackforge";
+            FaderGreatsword.UpgraderResource = "Upgrader7Weapon";
             FaderGreatsword.CraftAmount = 1;
             FaderGreatsword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 180, Min =  0, Max =  250 } },
@@ -820,6 +896,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             FaderGreatsword.Recipe = new RecipeDefinition
             {
@@ -839,6 +919,7 @@ namespace ValheimArmory
             Blackmetal_Greatsword.Prefab = "VABlackmetal_greatsword";
             Blackmetal_Greatsword.Icon = "blackmetal_greatsword";
             Blackmetal_Greatsword.CraftedAt = "forge";
+            Blackmetal_Greatsword.UpgraderResource = "Upgrader4Weapon";
             Blackmetal_Greatsword.CraftAmount = 1;
             Blackmetal_Greatsword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 125, Min =  0, Max =  250 } },
@@ -850,6 +931,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_Greatsword.Recipe = new RecipeDefinition
             {
@@ -867,6 +952,7 @@ namespace ValheimArmory
             Abyssal_Sword.Prefab = "VASwordChitin";
             Abyssal_Sword.Icon = "chitin_sword";
             Abyssal_Sword.CraftedAt = "piece_workbench";
+            Abyssal_Sword.UpgraderResource = "Upgrader3Weapon";
             Abyssal_Sword.CraftAmount = 1;
             Abyssal_Sword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 20, Min =  0, Max =  90 } },
@@ -880,6 +966,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 10, Min =  1, Max =  30 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Abyssal_Sword.Recipe = new RecipeDefinition
             {
@@ -898,6 +988,7 @@ namespace ValheimArmory
             Eikthyrs_Sword.Prefab = "VAAntler_Sword";
             Eikthyrs_Sword.Icon = "antler_sword";
             Eikthyrs_Sword.CraftedAt = "piece_workbench";
+            Eikthyrs_Sword.UpgraderResource = "Upgrader1Weapon";
             Eikthyrs_Sword.CraftAmount = 1;
             Eikthyrs_Sword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 16, Min =  0, Max =  90 } },
@@ -913,6 +1004,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 8, Min =  1, Max =  30 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Eikthyrs_Sword.Recipe = new RecipeDefinition
             {
@@ -932,6 +1027,7 @@ namespace ValheimArmory
             Elders_Balance.Prefab = "VAVine_Sword";
             Elders_Balance.Icon = "vine_sword";
             Elders_Balance.CraftedAt = "forge";
+            Elders_Balance.UpgraderResource = "Upgrader2Weapon";
             Elders_Balance.CraftAmount = 1;
             Elders_Balance.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 40, Min =  0, Max =  90 } },
@@ -945,6 +1041,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 8, Min =  1, Max =  30 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Elders_Balance.Recipe = new RecipeDefinition
             {
@@ -965,6 +1065,7 @@ namespace ValheimArmory
             Moders_Grasp.Prefab = "VASwordModer";
             Moders_Grasp.Icon = "moder_sword";
             Moders_Grasp.CraftedAt = "forge";
+            Moders_Grasp.UpgraderResource = "Upgrader4Weapon";
             Moders_Grasp.CraftAmount = 1;
             Moders_Grasp.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  90 } },
@@ -980,6 +1081,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  30 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_Grasp.Recipe = new RecipeDefinition
             {
@@ -1001,6 +1106,7 @@ namespace ValheimArmory
             Moders_Greatsword.Prefab = "VAModer_greatsword";
             Moders_Greatsword.Icon = "moder_greatsword";
             Moders_Greatsword.CraftedAt = "forge";
+            Moders_Greatsword.UpgraderResource = "Upgrader4Weapon";
             Moders_Greatsword.CraftAmount = 1;
             Moders_Greatsword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 55, Min =  0, Max =  90 } },
@@ -1016,6 +1122,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 17, Min =  1, Max =  30 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 34, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1037,6 +1147,7 @@ namespace ValheimArmory
             Bronze_Greatsword.Prefab = "VAbronze_greatsword";
             Bronze_Greatsword.Icon = "bronze_greatsword_reforged";
             Bronze_Greatsword.CraftedAt = "forge";
+            Bronze_Greatsword.UpgraderResource = "Upgrader1Weapon";
             Bronze_Greatsword.CraftAmount = 1;
             Bronze_Greatsword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  200 } },
@@ -1048,6 +1159,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1066,6 +1181,7 @@ namespace ValheimArmory
             Iron_Greatsword.Prefab = "VAiron_greatsword";
             Iron_Greatsword.Icon = "iron_greatsword_reforged";
             Iron_Greatsword.CraftedAt = "forge";
+            Iron_Greatsword.UpgraderResource = "Upgrader2Weapon";
             Iron_Greatsword.CraftAmount = 1;
             Iron_Greatsword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 75, Min =  0, Max =  250 } },
@@ -1077,6 +1193,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Iron_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1095,6 +1215,7 @@ namespace ValheimArmory
             Silver_Greatsword.Prefab = "VAsilver_greatsword";
             Silver_Greatsword.Icon = "silver_greatsword_reforged";
             Silver_Greatsword.CraftedAt = "forge";
+            Silver_Greatsword.UpgraderResource = "Upgrader3Weapon";
             Silver_Greatsword.CraftAmount = 1;
             Silver_Greatsword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  300 } },
@@ -1108,6 +1229,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 32, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Silver_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1127,6 +1252,7 @@ namespace ValheimArmory
             Bm_sword.Prefab = "VABonemassSword";
             Bm_sword.Icon = "bonemass_sword";
             Bm_sword.CraftedAt = "forge";
+            Bm_sword.UpgraderResource = "Upgrader3Weapon";
             Bm_sword.CraftAmount = 1;
             Bm_sword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 65, Min =  0, Max =  250 } },
@@ -1140,6 +1266,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 15, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bm_sword.Recipe = new RecipeDefinition
             {
@@ -1161,6 +1291,7 @@ namespace ValheimArmory
             Bonemasses_Greatsword.Prefab = "VABonemassGreatsword";
             Bonemasses_Greatsword.Icon = "bonemass_greatsword";
             Bonemasses_Greatsword.CraftedAt = "forge";
+            Bonemasses_Greatsword.UpgraderResource = "Upgrader3Weapon";
             Bonemasses_Greatsword.CraftAmount = 1;
             Bonemasses_Greatsword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 75, Min =  0, Max =  250 } },
@@ -1174,6 +1305,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 15, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bonemasses_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1195,6 +1330,7 @@ namespace ValheimArmory
             Yagluths_Greatsword.Prefab = "VAYagluth_greatsword";
             Yagluths_Greatsword.Icon = "yagluth_greatsword";
             Yagluths_Greatsword.CraftedAt = "forge";
+            Yagluths_Greatsword.UpgraderResource = "Upgrader5Weapon";
             Yagluths_Greatsword.CraftAmount = 1;
             Yagluths_Greatsword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 125, Min =  0, Max =  250 } },
@@ -1208,6 +1344,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Yagluths_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1229,6 +1369,7 @@ namespace ValheimArmory
             Flint_Sword.Prefab = "VAFlint_Sword";
             Flint_Sword.Icon = "flint_sword";
             Flint_Sword.CraftedAt = "piece_workbench";
+            Flint_Sword.UpgraderResource = "Upgrader0Weapon";
             Flint_Sword.CraftAmount = 1;
             Flint_Sword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 15, Min =  0, Max =  90 } },
@@ -1240,6 +1381,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 6, Min =  1, Max =  30 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_Sword.Recipe = new RecipeDefinition
             {
@@ -1258,6 +1403,7 @@ namespace ValheimArmory
             Flint_Greatsword.Prefab = "VAFlint_Greatsword";
             Flint_Greatsword.Icon = "flint_greatsword";
             Flint_Greatsword.CraftedAt = "piece_workbench";
+            Flint_Greatsword.UpgraderResource = "Upgrader0Weapon";
             Flint_Greatsword.CraftAmount = 1;
             Flint_Greatsword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 25, Min =  0, Max =  200 } },
@@ -1269,6 +1415,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 10, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1287,6 +1437,7 @@ namespace ValheimArmory
             Queen_Greatsword.Prefab = "VAQueen_greatsword";
             Queen_Greatsword.Icon = "queen_greatsword";
             Queen_Greatsword.CraftedAt = "blackforge";
+            Queen_Greatsword.UpgraderResource = "Upgrader6Weapon";
             Queen_Greatsword.CraftAmount = 1;
             Queen_Greatsword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 125, Min =  0, Max =  250 } },
@@ -1302,6 +1453,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 40, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Queen_Greatsword.Recipe = new RecipeDefinition
             {
@@ -1322,6 +1477,7 @@ namespace ValheimArmory
             Queen_Sword.Prefab = "VASwordQueen";
             Queen_Sword.Icon = "queen_sword";
             Queen_Sword.CraftedAt = "blackforge";
+            Queen_Sword.UpgraderResource = "Upgrader6Weapon";
             Queen_Sword.CraftAmount = 1;
             Queen_Sword.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.slash, new ItemStatConfig{ Default_value = 95, Min =  0, Max =  250 } },
@@ -1337,6 +1493,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 32, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Queen_Sword.Recipe = new RecipeDefinition
             {
@@ -1363,6 +1523,7 @@ namespace ValheimArmory
             FlintAxe.Prefab = "VAFlint_Axe";
             FlintAxe.Icon = "flint_axe";
             FlintAxe.CraftedAt = "piece_workbench";
+            FlintAxe.UpgraderResource = "Upgrader0Weapon";
             FlintAxe.CraftAmount = 1;
             FlintAxe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 1, Min =  0, Max =  6, IsInt = true } },
@@ -1378,6 +1539,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 6, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             FlintAxe.Recipe = new RecipeDefinition
             {
@@ -1396,6 +1561,7 @@ namespace ValheimArmory
             Flint_greataxe.Prefab = "VAFlint_greataxe";
             Flint_greataxe.Icon = "flint_greataxe";
             Flint_greataxe.CraftedAt = "piece_workbench";
+            Flint_greataxe.UpgraderResource = "Upgrader0Weapon";
             Flint_greataxe.CraftAmount = 1;
             Flint_greataxe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 1, Min =  0, Max =  6, IsInt = true } },
@@ -1411,6 +1577,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 6, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_greataxe.Recipe = new RecipeDefinition
             {
@@ -1429,6 +1599,7 @@ namespace ValheimArmory
             Flint_dualaxes.Prefab = "VAFlint_dualaxes";
             Flint_dualaxes.Icon = "flint_dualaxes";
             Flint_dualaxes.CraftedAt = "piece_workbench";
+            Flint_dualaxes.UpgraderResource = "Upgrader0Weapon";
             Flint_dualaxes.CraftAmount = 1;
             Flint_dualaxes.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 1, Min =  0, Max =  6, IsInt = true } },
@@ -1444,6 +1615,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 6, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_dualaxes.Recipe = new RecipeDefinition
             {
@@ -1462,6 +1637,7 @@ namespace ValheimArmory
             Bronze_Lumber_Axe.Prefab = "VAbronze_battleaxe";
             Bronze_Lumber_Axe.Icon = "bronze_axe_rebuild";
             Bronze_Lumber_Axe.CraftedAt = "forge";
+            Bronze_Lumber_Axe.UpgraderResource = "Upgrader1Weapon";
             Bronze_Lumber_Axe.CraftAmount = 1;
             Bronze_Lumber_Axe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 2, Min =  0, Max =  6, IsInt = true } },
@@ -1477,6 +1653,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 7, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_Lumber_Axe.Recipe = new RecipeDefinition
             {
@@ -1495,6 +1675,7 @@ namespace ValheimArmory
             Bronze_dualaxes.Prefab = "VABronze_dualaxes";
             Bronze_dualaxes.Icon = "bronze_dualaxes";
             Bronze_dualaxes.CraftedAt = "forge";
+            Bronze_dualaxes.UpgraderResource = "Upgrader1Weapon";
             Bronze_dualaxes.CraftAmount = 1;
             Bronze_dualaxes.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 2, Min =  0, Max =  6, IsInt = true } },
@@ -1510,6 +1691,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 10, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_dualaxes.Recipe = new RecipeDefinition
             {
@@ -1528,6 +1713,7 @@ namespace ValheimArmory
             Iron_dualaxes.Prefab = "VAIron_dualaxes";
             Iron_dualaxes.Icon = "iron_dualaxes";
             Iron_dualaxes.CraftedAt = "forge";
+            Iron_dualaxes.UpgraderResource = "Upgrader2Weapon";
             Iron_dualaxes.CraftAmount = 1;
             Iron_dualaxes.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  6, IsInt = true } },
@@ -1543,6 +1729,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Iron_dualaxes.Recipe = new RecipeDefinition
             {
@@ -1561,6 +1751,7 @@ namespace ValheimArmory
             Bonemass_Axe.Prefab = "VABone_axe";
             Bonemass_Axe.Icon = "bonemass_axe";
             Bonemass_Axe.CraftedAt = "forge";
+            Bonemass_Axe.UpgraderResource = "Upgrader3Weapon";
             Bonemass_Axe.CraftAmount = 1;
             Bonemass_Axe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  6, IsInt = true } },
@@ -1578,6 +1769,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bonemass_Axe.Recipe = new RecipeDefinition
             {
@@ -1599,6 +1794,7 @@ namespace ValheimArmory
             BonemassDualaxes.Prefab = "VABone_dualaxes";
             BonemassDualaxes.Icon = "bonerot_dualaxes";
             BonemassDualaxes.CraftedAt = "forge";
+            BonemassDualaxes.UpgraderResource = "Upgrader3Weapon";
             BonemassDualaxes.CraftAmount = 1;
             BonemassDualaxes.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  6, IsInt = true } },
@@ -1616,6 +1812,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 19, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             BonemassDualaxes.Recipe = new RecipeDefinition
             {
@@ -1637,6 +1837,7 @@ namespace ValheimArmory
             Crystal_Axe.Prefab = "VAcrystal_axe";
             Crystal_Axe.Icon = "silver_axe_1h_icon";
             Crystal_Axe.CraftedAt = "forge";
+            Crystal_Axe.UpgraderResource = "Upgrader3Weapon";
             Crystal_Axe.CraftAmount = 1;
             Crystal_Axe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 4, Min =  0, Max =  6, IsInt = true } },
@@ -1654,6 +1855,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Crystal_Axe.Recipe = new RecipeDefinition
             {
@@ -1672,6 +1877,7 @@ namespace ValheimArmory
             Crystal_dualaxes.Prefab = "VACrystal_dualaxes";
             Crystal_dualaxes.Icon = "crystal_dualaxes";
             Crystal_dualaxes.CraftedAt = "forge";
+            Crystal_dualaxes.UpgraderResource = "Upgrader3Weapon";
             Crystal_dualaxes.CraftAmount = 1;
             Crystal_dualaxes.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 4, Min =  0, Max =  6, IsInt = true } },
@@ -1689,6 +1895,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Crystal_dualaxes.Recipe = new RecipeDefinition
             {
@@ -1707,6 +1917,7 @@ namespace ValheimArmory
             Moder_Axe.Prefab = "VAModer_Axe";
             Moder_Axe.Icon = "moder_axe_1h";
             Moder_Axe.CraftedAt = "forge";
+            Moder_Axe.UpgraderResource = "Upgrader4Weapon";
             Moder_Axe.CraftAmount = 1;
             Moder_Axe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 4, Min =  0, Max =  6, IsInt = true } },
@@ -1724,6 +1935,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moder_Axe.Recipe = new RecipeDefinition
             {
@@ -1743,6 +1958,7 @@ namespace ValheimArmory
             Moder_Dualaxes.Prefab = "VAModer_dualaxes";
             Moder_Dualaxes.Icon = "moder_dualaxes";
             Moder_Dualaxes.CraftedAt = "forge";
+            Moder_Dualaxes.UpgraderResource = "Upgrader4Weapon";
             Moder_Dualaxes.CraftAmount = 1;
             Moder_Dualaxes.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 4, Min =  0, Max =  6, IsInt = true } },
@@ -1760,6 +1976,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moder_Dualaxes.Recipe = new RecipeDefinition
             {
@@ -1779,6 +1999,7 @@ namespace ValheimArmory
             Blackmetal_dualaxes.Prefab = "VABlackmetal_dualaxes";
             Blackmetal_dualaxes.Icon = "blackmetal_dualaxes";
             Blackmetal_dualaxes.CraftedAt = "forge";
+            Blackmetal_dualaxes.UpgraderResource = "Upgrader4Weapon";
             Blackmetal_dualaxes.CraftAmount = 1;
             Blackmetal_dualaxes.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  6, IsInt = true } },
@@ -1794,6 +2015,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_dualaxes.Recipe = new RecipeDefinition
             {
@@ -1812,6 +2037,7 @@ namespace ValheimArmory
             Blackmetal_Greataxe.Prefab = "VAblackmetal_2h_axe";
             Blackmetal_Greataxe.Icon = "blackmetal_2h_axe";
             Blackmetal_Greataxe.CraftedAt = "forge";
+            Blackmetal_Greataxe.UpgraderResource = "Upgrader4Weapon";
             Blackmetal_Greataxe.CraftAmount = 1;
             Blackmetal_Greataxe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  6, IsInt = true } },
@@ -1827,6 +2053,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 10, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_Greataxe.Recipe = new RecipeDefinition
             {
@@ -1845,6 +2075,7 @@ namespace ValheimArmory
             Jotun_dualaxes.Prefab = "VAJotunn_dualaxes";
             Jotun_dualaxes.Icon = "jotun_dualaxes";
             Jotun_dualaxes.CraftedAt = "blackforge";
+            Jotun_dualaxes.UpgraderResource = "Upgrader5Weapon";
             Jotun_dualaxes.CraftAmount = 1;
             Jotun_dualaxes.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  6, IsInt = true } },
@@ -1862,6 +2093,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 15, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Jotun_dualaxes.Recipe = new RecipeDefinition
             {
@@ -1881,6 +2116,7 @@ namespace ValheimArmory
             Jotun_battleaxe.Prefab = "VAJotunn_2h_axe";
             Jotun_battleaxe.Icon = "jotun_2h_axe";
             Jotun_battleaxe.CraftedAt = "blackforge";
+            Jotun_battleaxe.UpgraderResource = "Upgrader5Weapon";
             Jotun_battleaxe.CraftAmount = 1;
             Jotun_battleaxe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  6, IsInt = true } },
@@ -1898,6 +2134,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 11, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Jotun_battleaxe.Recipe = new RecipeDefinition
             {
@@ -1917,6 +2157,7 @@ namespace ValheimArmory
             Jotun_halfblade.Prefab = "VAJotunn_single_axe";
             Jotun_halfblade.Icon = "jotunn_halfblade";
             Jotun_halfblade.CraftedAt = "blackforge";
+            Jotun_halfblade.UpgraderResource = "Upgrader5Weapon";
             Jotun_halfblade.CraftAmount = 1;
             Jotun_halfblade.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  6, IsInt = true } },
@@ -1934,6 +2175,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 32, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Jotun_halfblade.Recipe = new RecipeDefinition
             {
@@ -1953,6 +2198,7 @@ namespace ValheimArmory
             Eikthyrs_Greataxe.Prefab = "VAAntler_greataxe";
             Eikthyrs_Greataxe.Icon = "antler_greataxe";
             Eikthyrs_Greataxe.CraftedAt = "piece_workbench";
+            Eikthyrs_Greataxe.UpgraderResource = "Upgrader1Weapon";
             Eikthyrs_Greataxe.CraftAmount = 1;
             Eikthyrs_Greataxe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 1, Min =  0, Max =  6, IsInt = true } },
@@ -1972,6 +2218,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 7, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Eikthyrs_Greataxe.Recipe = new RecipeDefinition
             {
@@ -1991,6 +2241,7 @@ namespace ValheimArmory
             Blackmetal_Battleaxe.Prefab = "VAblackmetal_battleaxe";
             Blackmetal_Battleaxe.Icon = "blackmetal_battleaxe";
             Blackmetal_Battleaxe.CraftedAt = "forge";
+            Blackmetal_Battleaxe.UpgraderResource = "Upgrader4Weapon";
             Blackmetal_Battleaxe.CraftAmount = 1;
             Blackmetal_Battleaxe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  6, IsInt = true } },
@@ -2008,6 +2259,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 10, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_Battleaxe.Recipe = new RecipeDefinition
             {
@@ -2027,6 +2282,7 @@ namespace ValheimArmory
             Flametal_Battleaxe.Prefab = "VAFlametalAxe_2h";
             Flametal_Battleaxe.Icon = "flametal_battleaxe";
             Flametal_Battleaxe.CraftedAt = "blackforge";
+            Flametal_Battleaxe.UpgraderResource = "Upgrader6Weapon";
             Flametal_Battleaxe.CraftAmount = 1;
             Flametal_Battleaxe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 6, Min =  0, Max =  6, IsInt = true } },
@@ -2042,6 +2298,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Battleaxe.Recipe = new RecipeDefinition
             {
@@ -2061,6 +2321,7 @@ namespace ValheimArmory
             Flametal_Primal_Battleaxe.Prefab = "VAFlametalAxe_primal_2h";
             Flametal_Primal_Battleaxe.Icon = "flametal_battleaxe_primal";
             Flametal_Primal_Battleaxe.CraftedAt = "blackforge";
+            Flametal_Primal_Battleaxe.UpgraderResource = "Upgrader6Weapon";
             Flametal_Primal_Battleaxe.CraftAmount = 1;
             Flametal_Primal_Battleaxe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 6, Min =  0, Max =  6, IsInt = true } },
@@ -2078,6 +2339,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Primal_Battleaxe.Recipe = new RecipeDefinition
             {
@@ -2097,6 +2362,7 @@ namespace ValheimArmory
             Flametal_Lightning_Battleaxe.Prefab = "VAFlametalAxe_lightning_2h";
             Flametal_Lightning_Battleaxe.Icon = "flametal_battleaxe_lightning";
             Flametal_Lightning_Battleaxe.CraftedAt = "blackforge";
+            Flametal_Lightning_Battleaxe.UpgraderResource = "Upgrader6Weapon";
             Flametal_Lightning_Battleaxe.CraftAmount = 1;
             Flametal_Lightning_Battleaxe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 6, Min =  0, Max =  6, IsInt = true } },
@@ -2114,6 +2380,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Lightning_Battleaxe.Recipe = new RecipeDefinition
             {
@@ -2133,6 +2403,7 @@ namespace ValheimArmory
             Flametal_Blood_Battleaxe.Prefab = "VAFlametalAxe_blood_2h";
             Flametal_Blood_Battleaxe.Icon = "flametal_battleaxe_blood";
             Flametal_Blood_Battleaxe.CraftedAt = "blackforge";
+            Flametal_Blood_Battleaxe.UpgraderResource = "Upgrader6Weapon";
             Flametal_Blood_Battleaxe.CraftAmount = 1;
             Flametal_Blood_Battleaxe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 6, Min =  0, Max =  6, IsInt = true } },
@@ -2148,6 +2419,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Blood_Battleaxe.Recipe = new RecipeDefinition
             {
@@ -2167,6 +2442,7 @@ namespace ValheimArmory
             Flametal_Axe.Prefab = "VAFlametal_Axe";
             Flametal_Axe.Icon = "flametalAxeBase";
             Flametal_Axe.CraftedAt = "blackforge";
+            Flametal_Axe.UpgraderResource = "Upgrader6Weapon";
             Flametal_Axe.CraftAmount = 1;
             Flametal_Axe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 6, Min =  0, Max =  6, IsInt = true } },
@@ -2182,6 +2458,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Axe.Recipe = new RecipeDefinition
             {
@@ -2200,6 +2480,7 @@ namespace ValheimArmory
             Flametal_Primal_Axe.Prefab = "VAFlametal_Axe_Primal";
             Flametal_Primal_Axe.Icon = "flametal_axe_1h_primal";
             Flametal_Primal_Axe.CraftedAt = "blackforge";
+            Flametal_Primal_Axe.UpgraderResource = "Upgrader6Weapon";
             Flametal_Primal_Axe.CraftAmount = 1;
             Flametal_Primal_Axe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 6, Min =  0, Max =  6, IsInt = true } },
@@ -2217,6 +2498,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Primal_Axe.Recipe = new RecipeDefinition
             {
@@ -2236,6 +2521,7 @@ namespace ValheimArmory
             Flametal_Lightning_Axe.Prefab = "VAFlametal_Axe_Lightning";
             Flametal_Lightning_Axe.Icon = "flametal_axe_1h_lightning";
             Flametal_Lightning_Axe.CraftedAt = "blackforge";
+            Flametal_Lightning_Axe.UpgraderResource = "Upgrader6Weapon";
             Flametal_Lightning_Axe.CraftAmount = 1;
             Flametal_Lightning_Axe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 6, Min =  0, Max =  6, IsInt = true } },
@@ -2253,6 +2539,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Lightning_Axe.Recipe = new RecipeDefinition
             {
@@ -2272,6 +2562,7 @@ namespace ValheimArmory
             Flametal_Blood_Axe.Prefab = "VAFlametal_Axe_Blood";
             Flametal_Blood_Axe.Icon = "flametal_axe_1h_blood";
             Flametal_Blood_Axe.CraftedAt = "blackforge";
+            Flametal_Blood_Axe.UpgraderResource = "Upgrader6Weapon";
             Flametal_Blood_Axe.CraftAmount = 1;
             Flametal_Blood_Axe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 6, Min =  0, Max =  6, IsInt = true } },
@@ -2287,6 +2578,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Blood_Axe.Recipe = new RecipeDefinition
             {
@@ -2310,6 +2605,7 @@ namespace ValheimArmory
             Flametal_nature_sledge.Prefab = "VAflametal_sledge_nature";
             Flametal_nature_sledge.Icon = "flametal_sledge_nature";
             Flametal_nature_sledge.CraftedAt = "blackforge";
+            Flametal_nature_sledge.UpgraderResource = "Upgrader6Weapon";
             Flametal_nature_sledge.CraftAmount = 1;
             Flametal_nature_sledge.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 165, Min =  0, Max =  300 } },
@@ -2326,6 +2622,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_nature_sledge.Recipe = new RecipeDefinition
             {
@@ -2345,6 +2645,7 @@ namespace ValheimArmory
             Flametal_lightning_sledge.Prefab = "VAflametal_sledge_lightning";
             Flametal_lightning_sledge.Icon = "flametal_sledge_lightning";
             Flametal_lightning_sledge.CraftedAt = "blackforge";
+            Flametal_lightning_sledge.UpgraderResource = "Upgrader6Weapon";
             Flametal_lightning_sledge.CraftAmount = 1;
             Flametal_lightning_sledge.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 165, Min =  0, Max =  300 } },
@@ -2361,6 +2662,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_lightning_sledge.Recipe = new RecipeDefinition
             {
@@ -2380,6 +2685,7 @@ namespace ValheimArmory
             Flametal_blood_sledge.Prefab = "VAflametal_sledge_blood";
             Flametal_blood_sledge.Icon = "flametal_sledge_blood";
             Flametal_blood_sledge.CraftedAt = "blackforge";
+            Flametal_blood_sledge.UpgraderResource = "Upgrader6Weapon";
             Flametal_blood_sledge.CraftAmount = 1;
             Flametal_blood_sledge.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 175, Min =  0, Max =  300 } },
@@ -2394,6 +2700,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_blood_sledge.Recipe = new RecipeDefinition
             {
@@ -2413,6 +2723,7 @@ namespace ValheimArmory
             Flametal_sledge.Prefab = "VAflametal_sledge";
             Flametal_sledge.Icon = "flametal_sledge";
             Flametal_sledge.CraftedAt = "blackforge";
+            Flametal_sledge.UpgraderResource = "Upgrader6Weapon";
             Flametal_sledge.CraftAmount = 1;
             Flametal_sledge.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 165, Min =  0, Max =  300 } },
@@ -2427,6 +2738,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_sledge.Recipe = new RecipeDefinition
             {
@@ -2446,6 +2761,7 @@ namespace ValheimArmory
             Blackmarble_mace.Prefab = "VAmistland_mace";
             Blackmarble_mace.Icon = "mist_mace";
             Blackmarble_mace.CraftedAt = "blackforge";
+            Blackmarble_mace.UpgraderResource = "Upgrader5Weapon";
             Blackmarble_mace.CraftAmount = 1;
             Blackmarble_mace.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 115, Min =  0, Max =  300 } },
@@ -2458,6 +2774,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 15, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.05f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmarble_mace.Recipe = new RecipeDefinition
             {
@@ -2477,6 +2797,7 @@ namespace ValheimArmory
             Blackmetal_Sledge.Prefab = "VAblackmetal_sledge";
             Blackmetal_Sledge.Icon = "blackmetal_hammer";
             Blackmetal_Sledge.CraftedAt = "forge";
+            Blackmetal_Sledge.UpgraderResource = "Upgrader4Weapon";
             Blackmetal_Sledge.CraftAmount = 1;
             Blackmetal_Sledge.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 120, Min =  0, Max =  300 } },
@@ -2493,6 +2814,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 40, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_Sledge.Recipe = new RecipeDefinition
             {
@@ -2512,6 +2837,7 @@ namespace ValheimArmory
             Elders_Rock.Prefab = "VAElderHammer";
             Elders_Rock.Icon = "elder_hammer";
             Elders_Rock.CraftedAt = "forge";
+            Elders_Rock.UpgraderResource = "Upgrader2Weapon";
             Elders_Rock.CraftAmount = 1;
             Elders_Rock.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  300 } },
@@ -2528,6 +2854,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Elders_Rock.Recipe = new RecipeDefinition
             {
@@ -2548,6 +2878,7 @@ namespace ValheimArmory
             Bronze_Sledge.Prefab = "VABronzeSledge";
             Bronze_Sledge.Icon = "bronze_sledge";
             Bronze_Sledge.CraftedAt = "forge";
+            Bronze_Sledge.UpgraderResource = "Upgrader1Weapon";
             Bronze_Sledge.CraftAmount = 1;
             Bronze_Sledge.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  300 } },
@@ -2561,6 +2892,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_Sledge.Recipe = new RecipeDefinition
             {
@@ -2580,6 +2915,7 @@ namespace ValheimArmory
             Bonemasses_Rage.Prefab = "VABonemassWarhammer";
             Bonemasses_Rage.Icon = "bonemass_warhammer";
             Bonemasses_Rage.CraftedAt = "forge";
+            Bonemasses_Rage.UpgraderResource = "Upgrader3Weapon";
             Bonemasses_Rage.CraftAmount = 1;
             Bonemasses_Rage.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 70, Min =  0, Max =  300 } },
@@ -2595,6 +2931,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bonemasses_Rage.Recipe = new RecipeDefinition
             {
@@ -2616,6 +2956,7 @@ namespace ValheimArmory
             Silver_Sledge.Prefab = "VASilverSledge";
             Silver_Sledge.Icon = "silver_sledge";
             Silver_Sledge.CraftedAt = "forge";
+            Silver_Sledge.UpgraderResource = "Upgrader3Weapon";
             Silver_Sledge.CraftAmount = 1;
             Silver_Sledge.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 85, Min =  0, Max =  300 } },
@@ -2631,6 +2972,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_force_multiply, new ItemStatConfig{ Default_value = 2.5f, Min =  1, Max =  50 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Silver_Sledge.Recipe = new RecipeDefinition
             {
@@ -2654,6 +2999,7 @@ namespace ValheimArmory
             Flint_Atgeir.Prefab = "VAAtgeir_Flint";
             Flint_Atgeir.Icon = "flint_atgeir";
             Flint_Atgeir.CraftedAt = "piece_workbench";
+            Flint_Atgeir.UpgraderResource = "Upgrader0Weapon";
             Flint_Atgeir.CraftAmount = 1;
             Flint_Atgeir.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 25, Min =  0, Max =  90 } },
@@ -2664,6 +3010,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 10, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2682,6 +3032,7 @@ namespace ValheimArmory
             Eikthyrs_Atgeir.Prefab = "VAatgeir_antler";
             Eikthyrs_Atgeir.Icon = "antler_atgeir";
             Eikthyrs_Atgeir.CraftedAt = "piece_workbench";
+            Eikthyrs_Atgeir.UpgraderResource = "Upgrader1Weapon";
             Eikthyrs_Atgeir.CraftAmount = 1;
             Eikthyrs_Atgeir.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  90 } },
@@ -2694,6 +3045,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Eikthyrs_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2713,6 +3068,7 @@ namespace ValheimArmory
             Abyssal_Atgeir.Prefab = "VAAtgeirChitin";
             Abyssal_Atgeir.Icon = "chitin_heavy_atgeir_small2";
             Abyssal_Atgeir.CraftedAt = "piece_workbench";
+            Abyssal_Atgeir.UpgraderResource = "Upgrader3Weapon";
             Abyssal_Atgeir.CraftAmount = 1;
             Abyssal_Atgeir.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  140 } },
@@ -2725,6 +3081,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Abyssal_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2743,6 +3103,7 @@ namespace ValheimArmory
             Silver_Atgeir.Prefab = "VASilverAtgeir";
             Silver_Atgeir.Icon = "silver_atgeir";
             Silver_Atgeir.CraftedAt = "forge";
+            Silver_Atgeir.UpgraderResource = "Upgrader3Weapon";
             Silver_Atgeir.CraftAmount = 1;
             Silver_Atgeir.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 85, Min =  0, Max =  250 } },
@@ -2755,6 +3116,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 32, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Silver_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2774,6 +3139,7 @@ namespace ValheimArmory
             Yagluths_Reach.Prefab = "VAYagluthAtgeir";
             Yagluths_Reach.Icon = "yagluth_atgeir";
             Yagluths_Reach.CraftedAt = "forge";
+            Yagluths_Reach.UpgraderResource = "Upgrader5Weapon";
             Yagluths_Reach.CraftAmount = 1;
             Yagluths_Reach.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 105, Min =  0, Max =  250 } },
@@ -2786,6 +3152,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Yagluths_Reach.Recipe = new RecipeDefinition
             {
@@ -2807,6 +3177,7 @@ namespace ValheimArmory
             Flametal_Atgeir.Prefab = "VAMeteorAtgeir";
             Flametal_Atgeir.Icon = "meteor_atgeir";
             Flametal_Atgeir.CraftedAt = "blackforge";
+            Flametal_Atgeir.UpgraderResource = "Upgrader6Weapon";
             Flametal_Atgeir.CraftAmount = 1;
             Flametal_Atgeir.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 145, Min =  0, Max =  300 } },
@@ -2817,6 +3188,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2836,6 +3211,7 @@ namespace ValheimArmory
             Flametal_primal_Atgeir.Prefab = "VAMeteorAtgeir_nature";
             Flametal_primal_Atgeir.Icon = "meteor_atgeir_nature";
             Flametal_primal_Atgeir.CraftedAt = "blackforge";
+            Flametal_primal_Atgeir.UpgraderResource = "Upgrader6Weapon";
             Flametal_primal_Atgeir.CraftAmount = 1;
             Flametal_primal_Atgeir.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 145, Min =  0, Max =  300 } },
@@ -2848,6 +3224,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_primal_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2867,6 +3247,7 @@ namespace ValheimArmory
             Flametal_lightning_Atgeir.Prefab = "VAMeteorAtgeir_lightning";
             Flametal_lightning_Atgeir.Icon = "meteor_atgeir_lightning";
             Flametal_lightning_Atgeir.CraftedAt = "blackforge";
+            Flametal_lightning_Atgeir.UpgraderResource = "Upgrader6Weapon";
             Flametal_lightning_Atgeir.CraftAmount = 1;
             Flametal_lightning_Atgeir.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 145, Min =  0, Max =  300 } },
@@ -2879,6 +3260,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_lightning_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2898,6 +3283,7 @@ namespace ValheimArmory
             Flametal_blood_Atgeir.Prefab = "VAMeteorAtgeir_blood";
             Flametal_blood_Atgeir.Icon = "meteor_atgeir_blood";
             Flametal_blood_Atgeir.CraftedAt = "blackforge";
+            Flametal_blood_Atgeir.UpgraderResource = "Upgrader6Weapon";
             Flametal_blood_Atgeir.CraftAmount = 1;
             Flametal_blood_Atgeir.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 145, Min =  0, Max =  300 } },
@@ -2908,6 +3294,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  50 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_blood_Atgeir.Recipe = new RecipeDefinition
             {
@@ -2931,6 +3321,7 @@ namespace ValheimArmory
             Serpent_Scale_Buckler.Prefab = "VAserpent_buckler";
             Serpent_Scale_Buckler.Icon = "serpentscale_shield2";
             Serpent_Scale_Buckler.CraftedAt = "forge";
+            Serpent_Scale_Buckler.UpgraderResource = "Upgrader3Armor";
             Serpent_Scale_Buckler.CraftAmount = 1;
             Serpent_Scale_Buckler.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 48, Min =  0, Max =  120 } },
@@ -2940,6 +3331,8 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 250, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.30f, Max =  0 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Serpent_Scale_Buckler.Recipe = new RecipeDefinition
             {
@@ -2962,6 +3355,7 @@ namespace ValheimArmory
             Elders_Bulwark.Prefab = "VAElderRoundShield";
             Elders_Bulwark.Icon = "elder_roundshield";
             Elders_Bulwark.CraftedAt = "forge";
+            Elders_Bulwark.UpgraderResource = "Upgrader2Armor";
             Elders_Bulwark.CraftAmount = 1;
             Elders_Bulwark.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 28, Min =  0, Max =  120 } },
@@ -2972,6 +3366,8 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 250, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.30f, Max =  0 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Elders_Bulwark.Recipe = new RecipeDefinition
             {
@@ -2995,6 +3391,7 @@ namespace ValheimArmory
             Moders_Roundshield.Prefab = "VAModer_RoundShield";
             Moders_Roundshield.Icon = "moder_roundshield";
             Moders_Roundshield.CraftedAt = "forge";
+            Moders_Roundshield.UpgraderResource = "Upgrader4Armor";
             Moders_Roundshield.CraftAmount = 1;
             Moders_Roundshield.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 62, Min =  0, Max =  120 } },
@@ -3005,6 +3402,8 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 250, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.30f, Max =  0 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_Roundshield.Recipe = new RecipeDefinition
             {
@@ -3030,6 +3429,7 @@ namespace ValheimArmory
             Moders_Shield.Prefab = "VAModer_shield";
             Moders_Shield.Icon = "modershiled_v2";
             Moders_Shield.CraftedAt = "forge";
+            Moders_Shield.UpgraderResource = "Upgrader4Armor";
             Moders_Shield.CraftAmount = 1;
             Moders_Shield.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  180 } },
@@ -3039,6 +3439,8 @@ namespace ValheimArmory
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 250, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_Shield.Recipe = new RecipeDefinition
             {
@@ -3064,6 +3466,7 @@ namespace ValheimArmory
             Silver_Wolf_Towershield.Prefab = "VAsilver_tower";
             Silver_Wolf_Towershield.Icon = "silver_tower_shield";
             Silver_Wolf_Towershield.CraftedAt = "forge";
+            Silver_Wolf_Towershield.UpgraderResource = "Upgrader3Armor";
             Silver_Wolf_Towershield.CraftAmount = 1;
             Silver_Wolf_Towershield.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 78, Min =  0, Max =  120 } },
@@ -3073,6 +3476,8 @@ namespace ValheimArmory
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 250, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Silver_Wolf_Towershield.Recipe = new RecipeDefinition
             {
@@ -3091,6 +3496,7 @@ namespace ValheimArmory
             dverger_tower_shield.Prefab = "VAdverger_tower";
             dverger_tower_shield.Icon = "dverger_towershield";
             dverger_tower_shield.CraftedAt = "blackforge";
+            dverger_tower_shield.UpgraderResource = "Upgrader5Armor";
             dverger_tower_shield.CraftAmount = 1;
             dverger_tower_shield.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 122, Min =  0, Max =  200 } },
@@ -3100,6 +3506,8 @@ namespace ValheimArmory
                 { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.15f, Min =  -0.15f, Max =  0 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             dverger_tower_shield.Recipe = new RecipeDefinition
             {
@@ -3123,6 +3531,7 @@ namespace ValheimArmory
             Hati_Knife.Prefab = "VAdagger_blackmetal_mistlands";
             Hati_Knife.Icon = "hatti_knife";
             Hati_Knife.CraftedAt = "blackforge";
+            Hati_Knife.UpgraderResource = "Upgrader4Weapon";
             Hati_Knife.CraftAmount = 1;
             Hati_Knife.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 4, Min =  0, Max =  48 } },
@@ -3135,6 +3544,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 38, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Hati_Knife.Recipe = new RecipeDefinition
             {
@@ -3153,6 +3566,7 @@ namespace ValheimArmory
             Blackmetal_knives.Prefab = "VAknife_blackmetal";
             Blackmetal_knives.Icon = "2h_blackmetal_knives";
             Blackmetal_knives.CraftedAt = "forge";
+            Blackmetal_knives.UpgraderResource = "Upgrader4Weapon";
             Blackmetal_knives.CraftAmount = 1;
             Blackmetal_knives.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 20, Min =  0, Max =  48 } },
@@ -3165,6 +3579,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Blackmetal_knives.Recipe = new RecipeDefinition
             {
@@ -3183,6 +3601,7 @@ namespace ValheimArmory
             Flint_knives.Prefab = "VADagger_Flint_2h";
             Flint_knives.Icon = "2h_flint_knives";
             Flint_knives.CraftedAt = "piece_workbench";
+            Flint_knives.UpgraderResource = "Upgrader0Weapon";
             Flint_knives.CraftAmount = 1;
             Flint_knives.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 4, Min =  0, Max =  48 } },
@@ -3195,6 +3614,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 12, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_knives.Recipe = new RecipeDefinition
             {
@@ -3213,6 +3636,7 @@ namespace ValheimArmory
             Eikthyrs_knife.Prefab = "VAAntler_dagger";
             Eikthyrs_knife.Icon = "antler_dagger";
             Eikthyrs_knife.CraftedAt = "piece_workbench";
+            Eikthyrs_knife.UpgraderResource = "Upgrader1Weapon";
             Eikthyrs_knife.CraftAmount = 1;
             Eikthyrs_knife.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 2, Min =  0, Max =  48 } },
@@ -3227,6 +3651,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Eikthyrs_knife.Recipe = new RecipeDefinition
             {
@@ -3246,6 +3674,7 @@ namespace ValheimArmory
             Rascals_knives.Prefab = "VAdagger_copper_2h";
             Rascals_knives.Icon = "copper_knives_2h";
             Rascals_knives.CraftedAt = "forge";
+            Rascals_knives.UpgraderResource = "Upgrader1Weapon";
             Rascals_knives.CraftAmount = 1;
             Rascals_knives.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 8, Min =  0, Max =  48 } },
@@ -3258,6 +3687,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Rascals_knives.Recipe = new RecipeDefinition
             {
@@ -3276,6 +3709,7 @@ namespace ValheimArmory
             Abyssal_knives.Prefab = "VAdagger_chitin_2h";
             Abyssal_knives.Icon = "chitin_knives";
             Abyssal_knives.CraftedAt = "piece_workbench";
+            Abyssal_knives.UpgraderResource = "Upgrader3Weapon";
             Abyssal_knives.CraftAmount = 1;
             Abyssal_knives.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 12, Min =  0, Max =  48 } },
@@ -3290,6 +3724,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Abyssal_knives.Recipe = new RecipeDefinition
             {
@@ -3308,6 +3746,7 @@ namespace ValheimArmory
             Rogue_knives.Prefab = "VAdagger_iron_2h";
             Rogue_knives.Icon = "iron_dagger_2h";
             Rogue_knives.CraftedAt = "forge";
+            Rogue_knives.UpgraderResource = "Upgrader2Weapon";
             Rogue_knives.CraftAmount = 1;
             Rogue_knives.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 12, Min =  0, Max =  48 } },
@@ -3320,6 +3759,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Rogue_knives.Recipe = new RecipeDefinition
             {
@@ -3338,6 +3781,7 @@ namespace ValheimArmory
             Iron_knives.Prefab = "VAdagger_iron";
             Iron_knives.Icon = "iron_dagger";
             Iron_knives.CraftedAt = "forge";
+            Iron_knives.UpgraderResource = "Upgrader2Weapon";
             Iron_knives.CraftAmount = 1;
             Iron_knives.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 2, Min =  0, Max =  48 } },
@@ -3350,6 +3794,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 24, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Iron_knives.Recipe = new RecipeDefinition
             {
@@ -3368,6 +3816,7 @@ namespace ValheimArmory
             Silver_knives.Prefab = "VAdagger_silver_2h";
             Silver_knives.Icon = "silver_dagger_2h";
             Silver_knives.CraftedAt = "forge";
+            Silver_knives.UpgraderResource = "Upgrader3Weapon";
             Silver_knives.CraftAmount = 1;
             Silver_knives.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 16, Min =  0, Max =  48 } },
@@ -3384,6 +3833,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Silver_knives.Recipe = new RecipeDefinition
             {
@@ -3403,6 +3856,7 @@ namespace ValheimArmory
             Moders_knife.Prefab = "VAdagger_moder";
             Moders_knife.Icon = "moder_dagger";
             Moders_knife.CraftedAt = "forge";
+            Moders_knife.UpgraderResource = "Upgrader4Weapon";
             Moders_knife.CraftAmount = 1;
             Moders_knife.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 2, Min =  0, Max =  48 } },
@@ -3419,6 +3873,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_knife.Recipe = new RecipeDefinition
             {
@@ -3440,6 +3898,7 @@ namespace ValheimArmory
             Moders_knife_2h.Prefab = "VAdagger_moder_2h";
             Moders_knife_2h.Icon = "moder_dagger_2h";
             Moders_knife_2h.CraftedAt = "forge";
+            Moders_knife_2h.UpgraderResource = "Upgrader4Weapon";
             Moders_knife_2h.CraftAmount = 1;
             Moders_knife_2h.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 18, Min =  0, Max =  48 } },
@@ -3456,6 +3915,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 30, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_knife_2h.Recipe = new RecipeDefinition
             {
@@ -3476,6 +3939,7 @@ namespace ValheimArmory
             Bonemasses_knife.Prefab = "VABonemassDagger";
             Bonemasses_knife.Icon = "bonemass_dagger";
             Bonemasses_knife.CraftedAt = "forge";
+            Bonemasses_knife.UpgraderResource = "Upgrader3Weapon";
             Bonemasses_knife.CraftAmount = 1;
             Bonemasses_knife.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 2, Min =  0, Max =  48 } },
@@ -3490,6 +3954,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 28, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bonemasses_knife.Recipe = new RecipeDefinition
             {
@@ -3511,6 +3979,7 @@ namespace ValheimArmory
             Queens_knife.Prefab = "VAdagger_queen";
             Queens_knife.Icon = "dagger_queen";
             Queens_knife.CraftedAt = "blackforge";
+            Queens_knife.UpgraderResource = "Upgrader6Weapon";
             Queens_knife.CraftAmount = 1;
             Queens_knife.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 2, Min =  0, Max =  48 } },
@@ -3527,6 +3996,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Queens_knife.Recipe = new RecipeDefinition
             {
@@ -3547,6 +4020,7 @@ namespace ValheimArmory
             Flametal_knife.Prefab = "VAdagger_meteor";
             Flametal_knife.Icon = "meteor_dagger";
             Flametal_knife.CraftedAt = "blackforge";
+            Flametal_knife.UpgraderResource = "Upgrader6Weapon";
             Flametal_knife.CraftAmount = 1;
             Flametal_knife.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 2, Min =  0, Max =  48 } },
@@ -3559,6 +4033,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_knife.Recipe = new RecipeDefinition
             {
@@ -3578,6 +4056,7 @@ namespace ValheimArmory
             Flametal_primal_knife.Prefab = "VAdagger_meteor_nature";
             Flametal_primal_knife.Icon = "meteor_dagger_primal";
             Flametal_primal_knife.CraftedAt = "blackforge";
+            Flametal_primal_knife.UpgraderResource = "Upgrader6Weapon";
             Flametal_primal_knife.CraftAmount = 1;
             Flametal_primal_knife.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 2, Min =  0, Max =  48 } },
@@ -3592,6 +4071,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_primal_knife.Recipe = new RecipeDefinition
             {
@@ -3610,6 +4093,7 @@ namespace ValheimArmory
             Flametal_lightning_knife.Prefab = "VAdagger_meteor_lightning";
             Flametal_lightning_knife.Icon = "meteor_dagger_lightning";
             Flametal_lightning_knife.CraftedAt = "blackforge";
+            Flametal_lightning_knife.UpgraderResource = "Upgrader6Weapon";
             Flametal_lightning_knife.CraftAmount = 1;
             Flametal_lightning_knife.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 2, Min =  0, Max =  48 } },
@@ -3624,6 +4108,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_lightning_knife.Recipe = new RecipeDefinition
             {
@@ -3642,6 +4130,7 @@ namespace ValheimArmory
             Flametal_blood_knife.Prefab = "VAdagger_meteor_blood";
             Flametal_blood_knife.Icon = "meteor_dagger_blood";
             Flametal_blood_knife.CraftedAt = "blackforge";
+            Flametal_blood_knife.UpgraderResource = "Upgrader6Weapon";
             Flametal_blood_knife.CraftAmount = 1;
             Flametal_blood_knife.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 2, Min =  0, Max =  48 } },
@@ -3654,6 +4143,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 42, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flametal_blood_knife.Recipe = new RecipeDefinition
             {
@@ -3672,6 +4165,7 @@ namespace ValheimArmory
             Assassins_knives.Prefab = "VAdagger_meteor_2h";
             Assassins_knives.Icon = "2h_meteor_daggers";
             Assassins_knives.CraftedAt = "blackforge";
+            Assassins_knives.UpgraderResource = "Upgrader6Weapon";
             Assassins_knives.CraftAmount = 1;
             Assassins_knives.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 28, Min =  0, Max =  48 } },
@@ -3684,6 +4178,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 45, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Assassins_knives.Recipe = new RecipeDefinition
             {
@@ -3703,6 +4201,7 @@ namespace ValheimArmory
             Assassins_primal_knives.Prefab = "VAdagger_meteor_2h_nature";
             Assassins_primal_knives.Icon = "meteor_dagger_primal_2h";
             Assassins_primal_knives.CraftedAt = "blackforge";
+            Assassins_primal_knives.UpgraderResource = "Upgrader6Weapon";
             Assassins_primal_knives.CraftAmount = 1;
             Assassins_primal_knives.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 28, Min =  0, Max =  48 } },
@@ -3717,6 +4216,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 45, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Assassins_primal_knives.Recipe = new RecipeDefinition
             {
@@ -3735,6 +4238,7 @@ namespace ValheimArmory
             Assassins_lightning_knives.Prefab = "VAdagger_meteor_2h_lightning";
             Assassins_lightning_knives.Icon = "meteor_dagger_lightning_2h";
             Assassins_lightning_knives.CraftedAt = "blackforge";
+            Assassins_lightning_knives.UpgraderResource = "Upgrader6Weapon";
             Assassins_lightning_knives.CraftAmount = 1;
             Assassins_lightning_knives.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 28, Min =  0, Max =  48 } },
@@ -3749,6 +4253,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 45, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Assassins_lightning_knives.Recipe = new RecipeDefinition
             {
@@ -3767,6 +4275,7 @@ namespace ValheimArmory
             Assassins_blood_knives.Prefab = "VAdagger_meteor_2h_blood";
             Assassins_blood_knives.Icon = "meteor_dagger_blood_2h";
             Assassins_blood_knives.CraftedAt = "blackforge";
+            Assassins_blood_knives.UpgraderResource = "Upgrader6Weapon";
             Assassins_blood_knives.CraftAmount = 1;
             Assassins_blood_knives.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 28, Min =  0, Max =  48 } },
@@ -3779,6 +4288,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 45, Min =  1, Max =  80 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Assassins_blood_knives.Recipe = new RecipeDefinition
             {
@@ -3801,6 +4314,7 @@ namespace ValheimArmory
             FlintSpear.Prefab = "VASpearFlint";
             FlintSpear.Icon = "flint_spear";
             FlintSpear.CraftedAt = "piece_workbench";
+            FlintSpear.UpgraderResource = "Upgrader0Weapon";
             FlintSpear.CraftAmount = 1;
             FlintSpear.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 4, Min =  0, Max =  48 } },
@@ -3811,6 +4325,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 8, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  300 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             FlintSpear.Recipe = new RecipeDefinition
             {
@@ -3829,6 +4347,7 @@ namespace ValheimArmory
             Moders_Strike.Prefab = "VASpearModer";
             Moders_Strike.Icon = "moder_spear";
             Moders_Strike.CraftedAt = "forge";
+            Moders_Strike.UpgraderResource = "Upgrader4Weapon";
             Moders_Strike.CraftAmount = 1;
             Moders_Strike.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 30, Min =  0, Max =  48 } },
@@ -3843,6 +4362,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  300 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Moders_Strike.Recipe = new RecipeDefinition
             {
@@ -3864,6 +4387,7 @@ namespace ValheimArmory
             BlackmetalSpear.Prefab = "VASpearBlackmetal";
             BlackmetalSpear.Icon = "blackmetal_spear";
             BlackmetalSpear.CraftedAt = "forge";
+            BlackmetalSpear.UpgraderResource = "Upgrader4Weapon";
             BlackmetalSpear.CraftAmount = 1;
             BlackmetalSpear.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 30, Min =  0, Max =  48 } },
@@ -3874,6 +4398,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 18, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  300 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             BlackmetalSpear.Recipe = new RecipeDefinition
             {
@@ -3893,6 +4421,7 @@ namespace ValheimArmory
             FaderSpear.Prefab = "VASpearFader";
             FaderSpear.Icon = "fader_spear";
             FaderSpear.CraftedAt = "blackforge";
+            FaderSpear.UpgraderResource = "Upgrader7Weapon";
             FaderSpear.CraftAmount = 1;
             FaderSpear.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 30, Min =  0, Max =  48 } },
@@ -3907,6 +4436,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 20, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  300 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             FaderSpear.Recipe = new RecipeDefinition
             {
@@ -3930,6 +4463,7 @@ namespace ValheimArmory
             Flint_knuckles.Prefab = "VAFist_Flint";
             Flint_knuckles.Icon = "flint_fists";
             Flint_knuckles.CraftedAt = "piece_workbench";
+            Flint_knuckles.UpgraderResource = "Upgrader0Weapon";
             Flint_knuckles.CraftAmount = 1;
             Flint_knuckles.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  48 } },
@@ -3941,6 +4475,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 4, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 300, Min =  0, Max =  600 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Flint_knuckles.Recipe = new RecipeDefinition
             {
@@ -3959,6 +4497,7 @@ namespace ValheimArmory
             Bronze_knuckles.Prefab = "VAFist_Bronze";
             Bronze_knuckles.Icon = "bronze_fists";
             Bronze_knuckles.CraftedAt = "forge";
+            Bronze_knuckles.UpgraderResource = "Upgrader1Weapon";
             Bronze_knuckles.CraftAmount = 1;
             Bronze_knuckles.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  48 } },
@@ -3970,6 +4509,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 6, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 300, Min =  0, Max =  600 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Bronze_knuckles.Recipe = new RecipeDefinition
             {
@@ -3988,6 +4531,7 @@ namespace ValheimArmory
             Iron_knuckles.Prefab = "VAFist_Iron";
             Iron_knuckles.Icon = "iron_fists";
             Iron_knuckles.CraftedAt = "forge";
+            Iron_knuckles.UpgraderResource = "Upgrader2Weapon";
             Iron_knuckles.CraftAmount = 1;
             Iron_knuckles.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  48 } },
@@ -3999,6 +4543,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 8, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 300, Min =  0, Max =  600 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Iron_knuckles.Recipe = new RecipeDefinition
             {
@@ -4017,6 +4565,7 @@ namespace ValheimArmory
             Goblin_king_knuckles.Prefab = "VAFist_Yagluth";
             Goblin_king_knuckles.Icon = "yagluth_fists";
             Goblin_king_knuckles.CraftedAt = "forge";
+            Goblin_king_knuckles.UpgraderResource = "Upgrader5Weapon";
             Goblin_king_knuckles.CraftAmount = 1;
             Goblin_king_knuckles.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  48 } },
@@ -4031,6 +4580,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 36, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 300, Min =  0, Max =  600 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Goblin_king_knuckles.Recipe = new RecipeDefinition
             {
@@ -4056,6 +4609,7 @@ namespace ValheimArmory
             Elders_Fist.Prefab = "VAElder_mace";
             Elders_Fist.Icon = "elder_mace";
             Elders_Fist.CraftedAt = "forge";
+            Elders_Fist.UpgraderResource = "Upgrader2Weapon";
             Elders_Fist.CraftAmount = 1;
             Elders_Fist.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  90 } },
@@ -4068,6 +4622,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Elders_Fist.Recipe = new RecipeDefinition
             {
@@ -4089,6 +4647,7 @@ namespace ValheimArmory
             FlintMace.Prefab = "VAFlintMace";
             FlintMace.Icon = "flintMace";
             FlintMace.CraftedAt = "piece_workbench";
+            FlintMace.UpgraderResource = "Upgrader0Weapon";
             FlintMace.CraftAmount = 1;
             FlintMace.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.blunt, new ItemStatConfig{ Default_value = 16, Min =  0, Max =  90 } },
@@ -4099,6 +4658,10 @@ namespace ValheimArmory
                 { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             FlintMace.Recipe = new RecipeDefinition
             {
@@ -4123,6 +4686,7 @@ namespace ValheimArmory
             Staff_of_poison.Prefab = "VAStaff_Poison";
             Staff_of_poison.Icon = "poison_staff";
             Staff_of_poison.CraftedAt = "piece_magetable";
+            Staff_of_poison.UpgraderResource = "Upgrader5Weapon";
             Staff_of_poison.CraftAmount = 1;
             Staff_of_poison.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 48, Min =  0, Max =  90 } },
@@ -4135,6 +4699,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 0, Min =  0, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 3, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Staff_of_poison.Recipe = new RecipeDefinition
             {
@@ -4153,6 +4721,7 @@ namespace ValheimArmory
             Staff_of_Spirit.Prefab = "VAStaff_Spirit";
             Staff_of_Spirit.Icon = "spirit_staff";
             Staff_of_Spirit.CraftedAt = "piece_magetable";
+            Staff_of_Spirit.UpgraderResource = "Upgrader5Weapon";
             Staff_of_Spirit.CraftAmount = 1;
             Staff_of_Spirit.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 48, Min =  0, Max =  90 } },
@@ -4167,6 +4736,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 0, Min =  0, Max =  50 } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  400 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 3, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Staff_of_Spirit.Recipe = new RecipeDefinition
             {
@@ -4186,6 +4759,7 @@ namespace ValheimArmory
             Druidic_Staff_of_Poison.Prefab = "VAStaff_Druid_Poison";
             Druidic_Staff_of_Poison.Icon = "poison_staff_druidic";
             Druidic_Staff_of_Poison.CraftedAt = "piece_workbench";
+            Druidic_Staff_of_Poison.UpgraderResource = "Upgrader2Weapon";
             Druidic_Staff_of_Poison.CraftAmount = 1;
             Druidic_Staff_of_Poison.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 24, Min =  0, Max =  48 } },
@@ -4198,6 +4772,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  50 } },
                 { ItemStat.primary_attack_eitr, new ItemStatConfig{ Default_value = 0, Min =  0, Max =  50 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 3, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Druidic_Staff_of_Poison.Recipe = new RecipeDefinition
             {
@@ -4216,6 +4794,7 @@ namespace ValheimArmory
             Druidic_Staff_of_Spirit.Prefab = "VAStaff_Druid_Spirit";
             Druidic_Staff_of_Spirit.Icon = "spirit_staff_druid";
             Druidic_Staff_of_Spirit.CraftedAt = "piece_workbench";
+            Druidic_Staff_of_Spirit.UpgraderResource = "Upgrader2Weapon";
             Druidic_Staff_of_Spirit.CraftAmount = 1;
             Druidic_Staff_of_Spirit.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 24, Min =  0, Max =  48 } },
@@ -4230,6 +4809,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  50 } },
                 { ItemStat.primary_attack_eitr, new ItemStatConfig{ Default_value = 0, Min =  0, Max =  50 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 3, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Druidic_Staff_of_Spirit.Recipe = new RecipeDefinition
             {
@@ -4248,6 +4831,7 @@ namespace ValheimArmory
             Druidic_Staff_of_Ice.Prefab = "VAStaff_Druid_Ice";
             Druidic_Staff_of_Ice.Icon = "ice_staff_druidic";
             Druidic_Staff_of_Ice.CraftedAt = "piece_workbench";
+            Druidic_Staff_of_Ice.UpgraderResource = "Upgrader3Weapon";
             Druidic_Staff_of_Ice.CraftAmount = 1;
             Druidic_Staff_of_Ice.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 24, Min =  0, Max =  48 } },
@@ -4260,6 +4844,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  50 } },
                 { ItemStat.primary_attack_eitr, new ItemStatConfig{ Default_value = 0, Min =  0, Max =  50 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Druidic_Staff_of_Ice.Recipe = new RecipeDefinition
             {
@@ -4278,6 +4866,7 @@ namespace ValheimArmory
             Druidic_Staff_of_Fire.Prefab = "VAStaff_Druid_Fire";
             Druidic_Staff_of_Fire.Icon = "fire_staff_druidic";
             Druidic_Staff_of_Fire.CraftedAt = "piece_workbench";
+            Druidic_Staff_of_Fire.UpgraderResource = "Upgrader2Weapon";
             Druidic_Staff_of_Fire.CraftAmount = 1;
             Druidic_Staff_of_Fire.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.block_armor, new ItemStatConfig{ Default_value = 24, Min =  0, Max =  48 } },
@@ -4290,6 +4879,10 @@ namespace ValheimArmory
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  150 } },
                 { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 35, Min =  0, Max =  50 } },
                 { ItemStat.primary_attack_eitr, new ItemStatConfig{ Default_value = 0, Min =  0, Max =  50 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 3, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Druidic_Staff_of_Fire.Recipe = new RecipeDefinition
             {
@@ -4308,7 +4901,9 @@ namespace ValheimArmory
             Soulstealer.Prefab = "VASoulStealer";
             Soulstealer.Icon = "soulstealer";
             Soulstealer.CraftedAt = "piece_magetable";
+            Soulstealer.UpgraderResource = "Upgrader6Weapon";
             Soulstealer.CraftAmount = 1;
+            Soulstealer.HybridSkills = new List<Skills.SkillType> { Skills.SkillType.Crossbows };
             Soulstealer.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
                 { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
@@ -4324,6 +4919,10 @@ namespace ValheimArmory
                 { ItemStat.primary_attack_health_returned, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  50 } },
                 { ItemStat.primary_attack_projectile_count, new ItemStatConfig { Default_value = 2, Min =  1, Max =  10, IsInt = true } },
                 { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.projectile_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             Soulstealer.Recipe = new RecipeDefinition
             {
@@ -4350,8 +4949,10 @@ namespace ValheimArmory
             bonepick.Prefab = "VABlood_Bones_pickaxe";
             bonepick.Icon = "blood_bone_pickaxe";
             bonepick.CraftedAt = "forge";
+            bonepick.UpgraderResource = "Upgrader1Weapon";
             bonepick.CraftAmount = 1;
             bonepick.ReqStationlevel = 1;
+            bonepick.HybridSkills = new List<Skills.SkillType> { Skills.SkillType.BloodMagic };
             bonepick.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 26, Min = 0, Max = 200 } },
                 { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 4, Min = 0, Max = 50 } },
@@ -4369,6 +4970,10 @@ namespace ValheimArmory
                 { ItemStat.tool_level, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 5, IsInt = true } },
                 { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min = 0, Max = 800 } },
                 { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min = 0, Max = 200 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
             };
             bonepick.Recipe = new RecipeDefinition {
                 RecipeItems = new List<RecipeIngredient> {
@@ -4403,6 +5008,7 @@ namespace ValheimArmory
             NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAspearblackmetal_projectile.Prefab");
             NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAspearmoder_projectile.Prefab");
             NonCraftablePrefab("Assets/Custom/Weapons/Spears/VASpearFlint_projectile.Prefab");
+            NonCraftablePrefab("Assets/Custom/Weapons/Spears/VAFader_projectile.Prefab");
 
             // Magic projectiles
             //new NonCraftablePrefab(EmbeddedResourceBundle, "Assets/Custom/Weapons/Magics/projectiles/staff_ice_projectile.Prefab");
@@ -4420,7 +5026,7 @@ namespace ValheimArmory
 
         private static void NonCraftableItem(string full_path) {
             SE_Stats status_effect = ValheimArmory.EmbeddedResourceBundle.LoadAsset<SE_Stats>($"{full_path}");
-            CustomStatusEffect customEffect = new CustomStatusEffect(status_effect, fixReference: false); ;
+            CustomStatusEffect customEffect = new CustomStatusEffect(status_effect, fixReference: true); ;
             ItemManager.Instance.AddStatusEffect(customEffect);
         }
 

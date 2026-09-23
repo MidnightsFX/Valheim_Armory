@@ -1,39 +1,58 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 using static Skills;
-using Logger = Jotunn.Logger;
 
 namespace ValheimArmory.patches
 {
     public static class HybridBloodWeapon
     {
+        // Weapon prefab -> extra skills trained whenever that weapon trains its own skill.
+        // Keyed by the ObjectDB prefab that every ItemData.m_dropPrefab points at, so the lookup is an instance id hash instead of a native name string allocation.
+        private static readonly Dictionary<GameObject, SkillType[]> HybridWeapons = new Dictionary<GameObject, SkillType[]>();
 
-        [HarmonyPatch(typeof(Skills), nameof(Skills.RaiseSkill))]
+        // Registered from ItemDefinition.HybridSkills as items are added
+        internal static void RegisterHybridWeapon(ItemDrop weapon, List<SkillType> hybridSkills)
+        {
+            SkillType weaponSkill = weapon.m_itemData.m_shared.m_skillType;
+            if (hybridSkills.Contains(weaponSkill)) {
+                Logger.LogWarning($"{weapon.name} lists its own skill {weaponSkill} as a hybrid skill, ignoring it.");
+            }
+            SkillType[] skills = hybridSkills.Where(skill => skill != weaponSkill && skill != SkillType.None).Distinct().ToArray();
+            if (skills.Length == 0) { return; }
+            HybridWeapons[weapon.gameObject] = skills;
+            Logger.LogDebug($"{weapon.name} ({weaponSkill}) also trains {string.Join(", ", skills)}");
+        }
+
+        // Player rather than Skills: summons and tames raise their owner's skill directly through Skills,
+        // and those raises should not grant hybrid XP for whatever weapon the owner happens to be holding.
+        [HarmonyPatch(typeof(Player), nameof(Player.RaiseSkill))]
         public static class BloodHybridWeaponsRaiseSkills
         {
-            static List<string> HybridWeapons = new List<string>() { "VABlood_bone_bow", "VABlood_Bones_pickaxe", "VAHeavy_Blood_Bone_Bow" };
-            static string SoulStealer = "VASoulStealer";
-            // This doesn't need to manipulate the result, we just want to hook into the skill type and item that cause the skill increase etc
-            public static void Postfix(SkillType skillType, float factor)
+            // Set while granting hybrid skills so those raises can never re-enter this patch
+            private static bool raisingHybridSkills = false;
+
+            public static void Postfix(Player __instance, SkillType skill)
             {
-                // Current weapon skill types that have blood magic usage
-                if (skillType == Skills.SkillType.Bows || skillType == Skills.SkillType.Pickaxes)
-                {
-                    if (Player.m_localPlayer == null) return;
-                    ItemDrop.ItemData id = Player.m_localPlayer.GetCurrentWeapon();
-                    if (id == null || id.m_dropPrefab == null) return;
-                    string currentWeapon = Player.m_localPlayer.GetCurrentWeapon().m_dropPrefab.name;
-                    if (HybridWeapons.Contains(currentWeapon)) {
-                        Player.m_localPlayer.RaiseSkill(Skills.SkillType.BloodMagic, ValConfig.HybridWeaponBloodMagicSkillIncrease.Value);
+                if (raisingHybridSkills) { return; }
+                ItemDrop.ItemData weapon = __instance.GetCurrentWeapon();
+                // Only the weapon training its own skill counts as a use, not running, blocking etc while holding it
+                if (weapon == null || weapon.m_shared.m_skillType != skill || weapon.m_dropPrefab == null) { return; }
+                if (!HybridWeapons.TryGetValue(weapon.m_dropPrefab, out SkillType[] hybridSkills)) { return; }
+
+                raisingHybridSkills = true;
+                try {
+                    foreach (SkillType hybridSkill in hybridSkills) {
+                        __instance.RaiseSkill(hybridSkill, ValConfig.HybridWeaponBloodMagicSkillIncrease.Value);
                     }
-                    if (SoulStealer == currentWeapon) {
-                        Player.m_localPlayer.RaiseSkill(Skills.SkillType.Crossbows, ValConfig.HybridWeaponBloodMagicSkillIncrease.Value);
-                    }
+                } finally {
+                    raisingHybridSkills = false;
                 }
             }
         }
 
-
+        // TODO:
         // Modify damage for hybrid weapons by their blood factor
         //[HarmonyPatch(typeof(Character), nameof(Character.Damage))]
         //public static class IncreaseBloodHybridWeaponDamage

@@ -54,7 +54,13 @@ namespace ValheimArmory.Common {
         durability_per_level,
         max_item_level,
         amount,
-        tool_level
+        tool_level,
+        primary_attack_adrenaline,
+        secondary_attack_adrenaline,
+        primary_attack_use_adrenaline,
+        projectile_adrenaline,
+        block_adrenaline,
+        parry_adrenaline
     }
 
     enum ItemCategory {
@@ -97,6 +103,13 @@ namespace ValheimArmory.Common {
         public BepInEx.Configuration.ConfigEntry<string> CraftedAtCfg {
             get; set;
         }
+        // Item consumed per refinement attempt at the Forge of Potential (eg: Upgrader3Weapon). Null = not refinable.
+        public string UpgraderResource {
+            get; set;
+        }
+        public BepInEx.Configuration.ConfigEntry<string> UpgraderResourceCfg {
+            get; set;
+        }
         public bool Craftable { get; set; } = true;
         public BepInEx.Configuration.ConfigEntry<bool> CraftableCfg {
             get; set;
@@ -117,6 +130,10 @@ namespace ValheimArmory.Common {
             get; set;
         }
         public Dictionary<HitData.DamageType, HitCustomDamageMod> DamageMods {
+            get; set;
+        }
+        // Extra skills trained whenever this weapon trains its own skill (eg: blood magic hybrids)
+        public List<Skills.SkillType> HybridSkills {
             get; set;
         }
 

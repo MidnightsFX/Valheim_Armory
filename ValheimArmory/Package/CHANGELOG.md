@@ -1,3 +1,60 @@
+**1.33.1**
+ ---
+ ```
+- Fixes fire effects causing rainbow fire
+    - Certain weapons now provide their lore accurate green fire
+    - Most fire weapons now use red fire
+ ```
+
+**1.33.0**
+ ---
+ ```
+- Fixes some staves not providing adrenaline in any way
+- Removes the readme section about Epicloot patches. These haven't been required for a year or more, I should know, I wrote the auto-assigner for Epicloot to support this.
+- Adds Adrenaline configuration for ALL weapons/shields
+- Added primary attacks toggle support for the Deep North Sledges
+- Adds a SledgeStance config for how sledges are held while idle, covering the vanilla sledges as well as this mods. Defaults to the two handed axe stance these sledges already use, set it to Sledge for the vanilla sledge stance
+ ```
+
+**1.32.0**
+ ---
+ ```
+- Adds a LoadPrefabsOnServer config to register Valheim Armory items on a dedicated server, for server side mods that need to resolve them
+- Fixes the blackmetal spear and blackmetal dual axes not hitting targets at or below the player's elevation
+- Corrects spear primary attack horizontal offset to match vanilla
+ ```
+
+**1.31.0**
+ ---
+ ```
+- Optimizes to on config change for large object modifications and loaded objects
+ ```
+
+**1.30.0**
+ ---
+ ```
+- Adds support for all Valheim Armory weapons to be used at the Upgrader
+ ```
+
+**1.29.5**
+ ---
+ ```
+- Fixes NRE on disconnect/shutdown
+ ```
+
+**1.29.4**
+ ---
+ ```
+- Fixes soulstealer and other hybrid weapons not getting XP
+- Changes blood bone pickaxe to also give blood XP when mining
+ ```
+
+**1.29.3**
+ ---
+ ```
+- Fixes Soulstealer not getting hybrid XP
+ ```
+
 **1.29.2**
  ---
  ```
