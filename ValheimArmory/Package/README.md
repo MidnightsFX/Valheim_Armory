@@ -128,6 +128,24 @@ It is encouraged that you find these items by exploring and discovery, but many 
   | Obsidian Bolt | Workbench | Mountain | `VAObsidianBolt` | ![obsidian bolt](https://i.imgur.com/luqYGzO.png) |
   | Needle Bolt | Workbench | Plains | `VABoltNeedle` | ![needle bolt](https://i.postimg.cc/t4VwknJ4/needle-bolt.png) |
 
+  #### Bolts in treasure chests
+
+  Treasure chests in the world can hold crossbow bolts next to the arrows they already hold, with the same stack size and chance as those arrows.
+  Configured in the `Chest Loot` config section (server synced): `EnableChestBolts`, plus one entry per chest in the format `Prefab,StackMin,StackMax,Weight|...`.
+
+  | Chest | Arrow | Bolt |
+  | ----------- | ----------- | ----------- |
+  | Meadows chests | Flint arrow 10-20 | `VABoltWood` 10-20 |
+  | Buried meadows chest | Fire arrow 10-15 | `VAFireBolt` 10-15 |
+  | Black Forest and burial chamber chests | Flint arrow 5-10 | `VABoltWood` 5-10 |
+  | Swamp and sunken crypt chests | Iron and poison arrows 10-15 | `BoltIron` and `VAbolt_poison` 10-15 |
+  | Mountain chests | Frost arrow 5-10 | `VAbolt_frost` 5-10 |
+  | Plains stone chests | Obsidian arrow 5-10 | `VAObsidianBolt` 5-10 |
+  | Ashlands stone chests | Carapace arrow 3-12 | `BoltCarapace` 3-12 |
+  | Morkhalla chests | Charred arrow 5-11 | `BoltCharred` 5-11 |
+
+  Chest loot is rolled once, when the area is first generated, so only chests in areas not yet visited get bolts. On a dedicated server the server rolls chest loot: install the mod on the server, which then registers this mod's items for the bolts.
+
 
 </details>
 
