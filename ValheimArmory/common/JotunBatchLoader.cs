@@ -20,6 +20,7 @@ namespace ValheimArmory.Common {
         internal static bool runningQueuedChanges = false;
         internal static AssetBundle Assets;
         internal static Dictionary<string, string> AddedItems = new Dictionary<string, string>();
+        private static readonly Dictionary<string, ItemDefinition> definitionsByPrefab = new Dictionary<string, ItemDefinition>();
         internal static List<string> ArcheryAmmoToAdd = new List<string>();
 
         // Pending in-world item updates, drained once per frame so an entire burst of SettingChanged
@@ -50,30 +51,17 @@ namespace ValheimArmory.Common {
             }
             WireConfigDefs();
 
-            // BatchSetup runs from plugin Awake, before any world exists -- ZNet.instance is always null
-            // here, so the ZNet probe could never detect a server. The headless graphics-device check is
-            // what actually identifies a dedicated server this early.
-            bool on_server = UnityEngine.SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Null;
-            // The server does not actually do anything with prefabs, and is not responsible for modifying them,
-            // so it skips registration by default. Opting in puts the items in the server's ObjectDB for other
-            // server side mods that need to resolve them (spawn/loot tables, admin spawn commands).
-            // The server also rolls treasure chest loot for the zones it generates, so the bolts Chest Loot adds
-            // must resolve there.
-            bool chest_loot_needs_prefabs = on_server && ChestBoltLoot.NeedsModPrefabs();
-            bool load_prefabs = on_server == false || ValConfig.LoadPrefabsOnServer.Value || chest_loot_needs_prefabs;
-            if (on_server && ValConfig.LoadPrefabsOnServer.Value) { Logger.LogInfo("LoadPrefabsOnServer is enabled, registering Valheim Armory items on this server."); }
-            else if (chest_loot_needs_prefabs) { Logger.LogInfo("Chest Loot adds Valheim Armory bolts to treasure chests, registering Valheim Armory items on this server."); }
-
-            if (load_prefabs) {
-                BatchAddItems();
-                SetupOnChange();
-                ItemManager.OnItemsRegistered += AddAmmoItemsToArcheryTarget;
-                // Re-apply config driven recipe values whenever the ObjectDB is (re)built. Jotunn re-adds the
-                // cached (local-config) recipes on every ObjectDB.Awake, so this reconciles them to the current
-                // (possibly server-synced) config values. Also re-apply when admin config arrives from the server.
-                ItemManager.OnItemsRegistered += ReapplyAllRecipeConfig;
-                SynchronizationManager.OnConfigurationSynchronized += OnModConfigsChanged;
-            }
+            // Dedicated servers register the items too: the server rolls treasure chest loot for the zones it
+            // generates (see ChestBoltLoot), and server side mods resolve these items from its ObjectDB
+            // (spawn/loot tables, admin spawn commands).
+            BatchAddItems();
+            SetupOnChange();
+            ItemManager.OnItemsRegistered += AddAmmoItemsToArcheryTarget;
+            // Re-apply config driven recipe values whenever the ObjectDB is (re)built. Jotunn re-adds the
+            // cached (local-config) recipes on every ObjectDB.Awake, so this reconciles them to the current
+            // (possibly server-synced) config values. Also re-apply when admin config arrives from the server.
+            ItemManager.OnItemsRegistered += ReapplyAllRecipeConfig;
+            SynchronizationManager.OnConfigurationSynchronized += OnModConfigsChanged;
 
             // Flush to disk. SaveOnConfigSet stays off; later changes are written in batches (ValConfig.EnableDeferredSave).
             ValConfig.Save();
@@ -83,6 +71,11 @@ namespace ValheimArmory.Common {
         public bool AddDefinition(ItemDefinition itemdef) {
             resourceDefinitions.Add(itemdef);
             return true;
+        }
+
+        // True when prefab is one of this mod's items and its crafting recipe is disabled by config.
+        internal static bool IsCraftingDisabled(string prefab) {
+            return definitionsByPrefab.TryGetValue(prefab, out ItemDefinition itemdef) && itemdef.CraftableCfg != null && itemdef.CraftableCfg.Value == false;
         }
 
         private static bool WireConfigDefs() {
@@ -101,6 +94,7 @@ namespace ValheimArmory.Common {
                 // Skip over all loading of items that are disabled.
                 // Blow up if adding a non-unique data control
                 AddedItems.Add(itemdef.DisplayName, itemdef.Prefab);
+                definitionsByPrefab[itemdef.Prefab] = itemdef;
                 // if (!itemdef.enabled) { continue; }
                 itemdef.CraftableCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftable", itemdef.Craftable, $"Enable/Disable the crafting recipe for {itemdef.Name}.");
                 itemdef.StationLVLCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-stationRequiredLevel", itemdef.ReqStationlevel, $"Sets the required minimum crafting station level to craft {itemdef.Name}", true, 1, 4);

@@ -1,3 +1,14 @@
+**1.34.0**
+ ---
+ ```
+- Adds crossbow bolts to treasure chests: any chest whose loot includes arrows can also hold the matching bolts (thanks euj3ne)
+    - Configured in the new Chest Loot section, including which bolt goes with each arrow
+    - Bolts share the weight of the chest's arrows, so the rest of a chest's loot keeps its vanilla odds
+    - Bolts whose crafting is disabled are left out of chests
+    - Only chests in areas generated after updating get bolts
+- Dedicated servers now always register Valheim Armory items, the LoadPrefabsOnServer config is removed
+ ```
+
 **1.33.1**
  ---
  ```

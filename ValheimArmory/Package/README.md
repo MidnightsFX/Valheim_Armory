@@ -130,21 +130,24 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
   #### Bolts in treasure chests
 
-  Treasure chests in the world can hold crossbow bolts next to the arrows they already hold, with the same stack size and chance as those arrows.
-  Configured in the `Chest Loot` config section (server synced): `EnableChestBolts`, plus one entry per chest in the format `Prefab,StackMin,StackMax,Weight|...`.
+  Any treasure chest whose loot includes arrows can also hold the matching crossbow bolts, with the same stack size as those arrows.
+  The bolts share the arrows' slot in the chest: a chest turns up ammo about as often as before, split between arrows and bolts, and the rest of its loot keeps its vanilla odds. Bolts whose crafting is disabled are left out, and a chest that already holds the bolt is left as it is.
+  Configured in the `Chest Loot` config section (server synced): `EnableChestBolts`, `BoltShare` (the share of each arrow's weight that goes to its bolt, half by default) and `ArrowBolts`, the arrow and bolt pairs in the format `Arrow,Bolt|Arrow,Bolt`.
 
-  | Chest | Arrow | Bolt |
-  | ----------- | ----------- | ----------- |
-  | Meadows chests | Flint arrow 10-20 | `VABoltWood` 10-20 |
-  | Buried meadows chest | Fire arrow 10-15 | `VAFireBolt` 10-15 |
-  | Black Forest and burial chamber chests | Flint arrow 5-10 | `VABoltWood` 5-10 |
-  | Swamp and sunken crypt chests | Iron and poison arrows 10-15 | `BoltIron` and `VAbolt_poison` 10-15 |
-  | Mountain chests | Frost arrow 5-10 | `VAbolt_frost` 5-10 |
-  | Plains stone chests | Obsidian arrow 5-10 | `VAObsidianBolt` 5-10 |
-  | Ashlands stone chests | Carapace arrow 3-12 | `BoltCarapace` 3-12 |
-  | Morkhalla chests | Charred arrow 5-11 | `BoltCharred` 5-11 |
+  | Arrow | Bolt |
+  | ----------- | ----------- |
+  | Wood and flint arrows | `VABoltWood` |
+  | Fire arrow | `VAFireBolt` |
+  | Bronze arrow | `VAbolt_bronze` |
+  | Iron arrow | `BoltIron` |
+  | Poison arrow | `VAbolt_poison` |
+  | Frost arrow | `VAbolt_frost` |
+  | Obsidian arrow | `VAObsidianBolt` |
+  | Needle arrow | `VABoltNeedle` |
+  | Carapace arrow | `BoltCarapace` |
+  | Charred arrow | `BoltCharred` |
 
-  Chest loot is rolled once, when the area is first generated, so only chests in areas not yet visited get bolts. On a dedicated server the server rolls chest loot: install the mod on the server, which then registers this mod's items for the bolts.
+  Chest loot is rolled once, when the area is first generated, so only chests in areas not yet visited get bolts. On a dedicated server the server rolls chest loot, so the mod has to be installed there.
 
 
 </details>
@@ -415,10 +418,9 @@ Current configuration options:
 
 ### Dedicated servers
 
-A dedicated server does not render or modify the weapons itself, so it skips registering their prefabs by
-default. Set `LoadPrefabsOnServer` to `true` under `[Server config]` if another server side mod has to
-resolve Valheim Armory items - spawn or loot tables, admin spawn commands and the like. This one is local to
-the machine rather than server enforced, and takes effect on the next server restart.
+A dedicated server registers Valheim Armory's items the same way a client does. The server rolls treasure
+chest loot for the areas it generates, and other server side mods can resolve the items from its ObjectDB -
+spawn or loot tables, admin spawn commands and the like.
 
 ### Forge of Potential
 
