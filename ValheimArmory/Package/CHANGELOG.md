@@ -1,3 +1,9 @@
+**1.34.1**
+ ---
+ ```
+- Fixes auto-pickup for the silver greatsword
+ ```
+
 **1.34.0**
  ---
  ```
