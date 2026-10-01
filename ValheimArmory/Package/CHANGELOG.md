@@ -1,3 +1,9 @@
+**1.35.0**
+ ---
+ ```
+- Adds options to keep the attack combo going when chopping trees, set separately for axes, dual axes and greataxes.
+ ```
+
 **1.34.1**
  ---
  ```

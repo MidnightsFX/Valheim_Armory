@@ -141,6 +141,7 @@ namespace ValheimArmory
             ConfigPollIntervalSeconds = BindServerConfig("Config", "Config Poll Interval", 30f, "Seconds between checks for edits to this mod's config file while a world is running. Lower reacts faster to a hand edit, higher does less disk work.", true, 1f, 300f);
 
             ChestBoltLoot.BindConfig();
+            AxeTreeCombo.BindConfig();
         }
 
         // Watches the config file for edits made outside the game. Only a server reloads (see
