@@ -22,9 +22,9 @@ If you would like to contribute a new translation, or improve an existing one pl
 Here is a sample gallery of weapons added by this mod. There are over 115 items added by this mod, and you might not notice.
 
 
-*Completed Axe Update*
+*Deep North Weapons*
 
-[![image.png](https://i.postimg.cc/257dFJTh/image.png)](https://postimg.cc/v1D6G0JZ)
+![image.png](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/splash_dn.png?raw=true)]
 
 
 Below is more information on all of the items added, what tier they are in, where they are crafted and at what progression point. All of the sections below are expandable to view the details. 
