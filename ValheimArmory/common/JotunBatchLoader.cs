@@ -56,6 +56,7 @@ namespace ValheimArmory.Common {
             // (spawn/loot tables, admin spawn commands).
             BatchAddItems();
             SetupOnChange();
+            PrefabManager.OnVanillaPrefabsAvailable += FrostForged.CreateMouldsAndCasts;
             ItemManager.OnItemsRegistered += AddAmmoItemsToArcheryTarget;
             // Re-apply config driven recipe values whenever the ObjectDB is (re)built. Jotunn re-adds the
             // cached (local-config) recipes on every ObjectDB.Awake, so this reconciles them to the current
@@ -98,6 +99,10 @@ namespace ValheimArmory.Common {
                 // if (!itemdef.enabled) { continue; }
                 itemdef.CraftableCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftable", itemdef.Craftable, $"Enable/Disable the crafting recipe for {itemdef.Name}.");
                 itemdef.StationLVLCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-stationRequiredLevel", itemdef.ReqStationlevel, $"Sets the required minimum crafting station level to craft {itemdef.Name}", true, 1, 4);
+                // Arrows and bolts have no durability, so there is nothing to repair
+                if (itemdef.Category != ItemCategory.Arrows) {
+                    itemdef.RepairStationLVLCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-repairStationLevel", 0, $"Sets the required minimum crafting station level to repair {itemdef.Name}. 0 uses the level required to craft it.", true, 0, 4);
+                }
                 itemdef.CraftAmountCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftAmount", itemdef.CraftAmount, $"Sets the amount of {itemdef.Name} crafted per recipe.", true, 1, 50);
                 itemdef.CraftedAtCfg = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-craftedAt", itemdef.CraftedAt, $"Sets the crafting station for {itemdef.Name}.");
                 // Setup the modifiable stats that this item has defined
@@ -117,7 +122,8 @@ namespace ValheimArmory.Common {
                 }
 
                 // Build the item recipe
-                itemdef.Recipe.RecipeConfig = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-recipe", BuildStringRecipeFromItemDef(itemdef), $"Recipe for {itemdef.Name}. Should be in the format of Prefab,Amount,AmountPerLevel|Prefab,Amount,AmountPerLevel eg: Wood,12,2|Stone,2,0");
+                string frostForgedNote = itemdef.FrostForged != null ? $" {itemdef.Name} is frost forged: the amounts make its cast, which the Frost Foundry hardens into the weapon, and its mould is required on top of what is listed here." : "";
+                itemdef.Recipe.RecipeConfig = ValConfig.BindServerConfig($"{itemdef.Category} - {itemdef.Name}", $"{itemdef.DisplayName}-recipe", BuildStringRecipeFromItemDef(itemdef), $"Recipe for {itemdef.Name}. Should be in the format of Prefab,Amount,AmountPerLevel|Prefab,Amount,AmountPerLevel eg: Wood,12,2|Stone,2,0{frostForgedNote}");
                 if (ValidateRecipeConfig(itemdef) == false) {
                     BuildRecipeReqsFromDefault(itemdef);
                 }
@@ -265,6 +271,12 @@ namespace ValheimArmory.Common {
                 Sprite ItemSprite = Assets.LoadAsset<Sprite>($"Assets/Custom/Icons/{itemdef.Icon}.png");
                 //Logger.LogInfo($"Adding {itemdef.Name} gopath: {prefabPath} go: {ItemPrefab} sprite: {ItemSprite}");
                 ItemDrop ItemD = ItemPrefab.GetComponent<ItemDrop>();
+                // A bundle built before the icon was added has no sprite for it, and handing Jotunn a null icon
+                // blanks the one authored on the prefab, so the item shows no icon at all. Keep the prefab's instead.
+                Sprite[] ItemIcons = ItemSprite != null ? new[] { ItemSprite } : ItemD.m_itemData.m_shared.m_icons;
+                if (ItemSprite == null) {
+                    Logger.LogWarning($"Icon {itemdef.Icon} for {itemdef.Name} is not in the asset bundle, using the icon on the {itemdef.Prefab} prefab. Rebuild the asset bundle to pick it up.");
+                }
                 // Modify this items stats
                 foreach (KeyValuePair<ItemStat, ItemStatConfig> modstat in itemdef.ModifableStats) {
                     if (modstat.Value.Configurable == false) {
@@ -302,7 +314,7 @@ namespace ValheimArmory.Common {
                         // disabled item still lives in the DB (m_enabled=false), stays modifiable, and re-enables
                         // correctly - including after a server ObjectDB copy replaces the recipe list.
                         Enabled = true,
-                        Icons = new[] { ItemSprite },
+                        Icons = ItemIcons,
                         Requirements = itemdef.Recipe.RecipeReqs.ToArray()
                     };
                     ItemManager.Instance.AddItem(new CustomItem(ItemPrefab, fixReference: true, itemcfg));
@@ -313,9 +325,19 @@ namespace ValheimArmory.Common {
                     ArcheryAmmoToAdd.Add(itemdef.Prefab);
                 }
 
+                // This item can need a different station level to repair than to craft
+                if (itemdef.RepairStationLVLCfg != null) {
+                    RepairStationLevel.Register(ItemD, itemdef.RepairStationLVLCfg);
+                }
+
                 // This weapon also trains other skills when used
                 if (itemdef.HybridSkills != null) {
                     HybridBloodWeapon.RegisterHybridWeapon(ItemD, itemdef.HybridSkills);
+                }
+
+                // This weapon is made from a cast that the Frost Foundry hardens
+                if (itemdef.FrostForged != null) {
+                    FrostForged.Register(itemdef, ItemD);
                 }
 
                 // Projectiles fired by (or loaded as) this item grant its configured adrenaline on hit
@@ -572,6 +594,7 @@ namespace ValheimArmory.Common {
             ObjectDB.instance.m_recipes[index].m_craftingStation = craftable_at;
             // repair station should likely be split out into a seperate config
             ObjectDB.instance.m_recipes[index].m_repairStation = craftable_at;
+            SyncFrostForgedRecipes(itemdef, ObjectDB.instance.m_recipes[index]);
             return true;
         }
 
@@ -604,6 +627,46 @@ namespace ValheimArmory.Common {
             // put back (an IndexOf to find it again was a second linear search per item).
             newRecipe.m_resources = newRequirements.ToArray();
             itemdef.Recipe.ResolvedRecipe = newRecipe;
+            SyncFrostForgedRecipes(itemdef, newRecipe);
+        }
+
+        // For a frost forged weapon (see FrostForged): makes its recipe upgrade only, with its mould among the
+        // requirements as vanilla's gold weapons have, and mirrors that recipe onto the one that crafts the cast:
+        // same station, level, amount, enabled state and ingredients, less the Forge of Potential idol. Call after
+        // any change to the weapon's recipe. If the mould or cast is missing the weapon stays craftable directly,
+        // so it can still be made.
+        private static void SyncFrostForgedRecipes(ItemDefinition itemdef, Recipe weaponRecipe) {
+            FrostForgedDefinition frostForged = itemdef.FrostForged;
+            if (frostForged == null || weaponRecipe == null) { return; }
+            ItemDrop mould = ObjectDB.instance.GetItemPrefab(frostForged.MouldPrefab)?.GetComponent<ItemDrop>();
+            ItemDrop cast = ObjectDB.instance.GetItemPrefab(frostForged.CastPrefab)?.GetComponent<ItemDrop>();
+            if (mould == null || cast == null) {
+                weaponRecipe.m_noCraftOnlyUpgrade = false;
+                return;
+            }
+            weaponRecipe.m_noCraftOnlyUpgrade = true;
+            if (weaponRecipe.m_resources.Any(req => req.m_resItem == mould) == false) {
+                // One mould per cast and none for upgrades, listed first as vanilla lists its moulds.
+                Piece.Requirement mouldReq = new Piece.Requirement { m_resItem = mould, m_amount = 1, m_amountPerLevel = 0 };
+                weaponRecipe.m_resources = new[] { mouldReq }.Concat(weaponRecipe.m_resources).ToArray();
+            }
+
+            if (frostForged.CastRecipe == null) {
+                frostForged.CastRecipe = ScriptableObject.CreateInstance<Recipe>();
+                frostForged.CastRecipe.name = $"Recipe_{frostForged.CastPrefab}";
+            }
+            Recipe castRecipe = frostForged.CastRecipe;
+            castRecipe.m_item = cast;
+            castRecipe.m_amount = weaponRecipe.m_amount;
+            castRecipe.m_enabled = weaponRecipe.m_enabled;
+            castRecipe.m_craftingStation = weaponRecipe.m_craftingStation;
+            castRecipe.m_repairStation = weaponRecipe.m_repairStation;
+            castRecipe.m_minStationLevel = weaponRecipe.m_minStationLevel;
+            castRecipe.m_resources = weaponRecipe.m_resources.Where(req => req.m_upgraderResource == false).ToArray();
+            // Not registered through Jotunn, so it is put back here whenever a new ObjectDB lacks it.
+            if (GetRecipeIndexByPrefab(frostForged.CastPrefab) == -1) {
+                AddRecipeToDB(frostForged.CastPrefab, castRecipe);
+            }
         }
 
         // Builds the Forge of Potential requirement for this item, mirroring vanilla idol requirements: one idol per
@@ -642,6 +705,7 @@ namespace ValheimArmory.Common {
                 if (itemdef.Recipe.ResolvedRecipe != null) {
                     itemdef.Recipe.ResolvedRecipe.m_enabled = enable;
                     AddRecipeToDB(itemdef.Prefab, itemdef.Recipe.ResolvedRecipe);
+                    SyncFrostForgedRecipes(itemdef, itemdef.Recipe.ResolvedRecipe);
                 } else {
                     Logger.LogWarning($"Recipe of {itemdef.Prefab} not found in ObjectDB and no cached recipe to re-add.");
                 }
@@ -650,6 +714,7 @@ namespace ValheimArmory.Common {
             // recipe exists in the ODB
             ObjectDB.instance.m_recipes[index].m_enabled = enable;
             itemdef.Recipe.ResolvedRecipe = ObjectDB.instance.m_recipes[index];
+            SyncFrostForgedRecipes(itemdef, itemdef.Recipe.ResolvedRecipe);
         }
 
         private static void ModifyItemRecipeLevel(ItemDefinition itemdef, int level) {
@@ -664,6 +729,7 @@ namespace ValheimArmory.Common {
             ObjectDB.instance.m_recipes[index].m_minStationLevel = level;
             // Update the stored recipe so if we use it to target things again it will still be accurate
             itemdef.Recipe.ResolvedRecipe = ObjectDB.instance.m_recipes[index];
+            SyncFrostForgedRecipes(itemdef, itemdef.Recipe.ResolvedRecipe);
         }
 
         private static void ModifyItemRecipeCraftAmount(ItemDefinition itemdef, int amount) {
@@ -676,6 +742,7 @@ namespace ValheimArmory.Common {
             ObjectDB.instance.m_recipes[index].m_amount = amount;
             // Update the stored recipe so if we use it to target things again it will still be accurate
             itemdef.Recipe.ResolvedRecipe = ObjectDB.instance.m_recipes[index];
+            SyncFrostForgedRecipes(itemdef, itemdef.Recipe.ResolvedRecipe);
         }
 
         private static int GetRecipeIndexByPrefab(string prefab) {

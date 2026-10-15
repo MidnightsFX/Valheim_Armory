@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Куче на драугр",
   "va_item_crossbow_silver_description": "Тъмно дърво подплатено със сребърно, тя блести в лунната светлина.",
   "va_item_soulstealer": "Душокрадец.",
-  "va_item_soulstealer_description": "На каква цена сте готови да платите?"
+  "va_item_soulstealer_description": "На каква цена сте готови да платите?",
+  "item_mold_va": "Калъп:",
+  "item_cast_va": "Отливка:",
+  "item_knife_gold_2h": "Нордически кинжали",
+  "item_knife_gold_2h_description": "Два златни проблясъка са последното, което враговете ти ще видят.",
+  "item_knife_gold_2h_frostfire": "Ледено-огнени кинжали",
+  "item_knife_gold_2h_frostfire_description": "Двойни остриета, обвити в студен син пламък. Раните им първо замразяват, после изгарят.",
+  "item_knife_gold_2h_thunderblood": "Гръмокръвни кинжали",
+  "item_knife_gold_2h_thunderblood_description": "Двойни остриета, пращящи от червени мълнии, вечно жадни за следващата рана.",
+  "item_dual_axes_gold": "Нордически двойни брадви",
+  "item_dual_axes_gold_description": "Две глави от закалено злато, достатъчно тежки да повалят гора или йотун.",
+  "item_dual_axes_gold_frostfire": "Ледено-огнени двойни брадви",
+  "item_dual_axes_gold_frostfire_description": "Двойни брадви, обвити в студен син пламък. Всеки удар първо замразява, после изгаря.",
+  "item_dual_axes_gold_thunderblood": "Гръмокръвни двойни брадви",
+  "item_dual_axes_gold_thunderblood_description": "Двойни брадви, пращящи от червени мълнии, жадни за следващия удар."
 }

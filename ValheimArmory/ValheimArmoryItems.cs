@@ -755,13 +755,14 @@ namespace ValheimArmory
 
             // Moder Crossbow
             ItemDefinition Moder_Crossbow = new ItemDefinition();
-            Moder_Crossbow.Name = "Moder Crossbow";
+            Moder_Crossbow.Name = "Moder Crossbow (Legacy)";
             Moder_Crossbow.Category = ItemCategory.Bows;
             Moder_Crossbow.Prefab = "VACrossbowModer";
             Moder_Crossbow.Icon = "moder_crossbow";
             Moder_Crossbow.CraftedAt = "forge";
             Moder_Crossbow.UpgraderResource = "Upgrader4Weapon";
             Moder_Crossbow.CraftAmount = 1;
+            Moder_Crossbow.Craftable = false;
             Moder_Crossbow.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
                 { ItemStat.pierce, new ItemStatConfig{ Default_value = 150, Min =  0, Max =  300 } },
                 { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
@@ -789,6 +790,41 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(Moder_Crossbow);
+
+            ItemDefinition Moder_Crossbow_New = new ItemDefinition();
+            Moder_Crossbow_New.Name = "Moder Crossbow";
+            Moder_Crossbow_New.Category = ItemCategory.Bows;
+            Moder_Crossbow_New.Prefab = "VACrossbowModerNew";
+            Moder_Crossbow_New.Icon = "moder_crossbow_new";
+            Moder_Crossbow_New.CraftedAt = "forge";
+            Moder_Crossbow_New.UpgraderResource = "Upgrader4Weapon";
+            Moder_Crossbow_New.CraftAmount = 1;
+            Moder_Crossbow_New.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.pierce, new ItemStatConfig{ Default_value = 150, Min =  0, Max =  300 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
+                { ItemStat.frost, new ItemStatConfig{ Default_value = 25, Min =  0, Max =  300 } },
+                { ItemStat.frost_per_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  50 } },
+                { ItemStat.block_armor, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  150 } },
+                { ItemStat.attack_force, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.durability, new ItemStatConfig{ Default_value = 100, Min =  0, Max =  300 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.crossbow_reload_speed, new ItemStatConfig{ Default_value = 3.5f, Min =  0.01f, Max =  3.5f } },
+                { ItemStat.crossbow_reload_stamina_drain, new ItemStatConfig{ Default_value = 1, Min =  1, Max =  50 } },
+                { ItemStat.projectile_velocity, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  300 } },
+                { ItemStat.primary_attack_use_adrenaline, new ItemStatConfig{ Default_value = 0, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
+            };
+            Moder_Crossbow_New.Recipe = new RecipeDefinition {
+                RecipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { Prefab = "ElderBark", Amount = 10, UpgradeCost = 5 },
+                    new RecipeIngredient { Prefab = "Obsidian", Amount = 20, UpgradeCost = 10 },
+                    new RecipeIngredient { Prefab = "DragonTear", Amount = 10, UpgradeCost = 0 },
+                    new RecipeIngredient { Prefab = "TrophyDragonQueen", Amount = 1, UpgradeCost = 0 },
+                    new RecipeIngredient { Prefab = "Silver", Amount = 0, UpgradeCost = 6 },
+                }
+            };
+            Loader.AddDefinition(Moder_Crossbow_New);
 
             // Queen Bow
             ItemDefinition Queens_Greatbow = new ItemDefinition();
@@ -2593,6 +2629,133 @@ namespace ValheimArmory
                 }
             };
             Loader.AddDefinition(Flametal_Blood_Axe);
+
+            // Gold (Deep North) Dual Axes
+            ItemDefinition Gold_Dualaxe = new ItemDefinition();
+            Gold_Dualaxe.Name = "Gold Dualaxes";
+            Gold_Dualaxe.Category = ItemCategory.Axes;
+            Gold_Dualaxe.Prefab = "VAGold_dualaxes";
+            Gold_Dualaxe.Icon = "gold_dualaxes";
+            Gold_Dualaxe.CraftedAt = "blackforge";
+            Gold_Dualaxe.ReqStationlevel = 4;
+            Gold_Dualaxe.UpgraderResource = "Upgrader7Weapon";
+            Gold_Dualaxe.CraftAmount = 1;
+            Gold_Dualaxe.FrostForged = new FrostForgedDefinition { Mould = "MoldAxe", Cast = "AxeGoldUncooked" };
+            // A little above the vanilla Nord Axe (176 slash, 90 chop; 10 and 3 per level), with the force and stamina of the other dualaxes.
+            Gold_Dualaxe.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ Default_value = 6, Min =  0, Max =  6, IsInt = true } },
+                { ItemStat.slash, new ItemStatConfig{ Default_value = 192, Min =  0, Max =  300 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  50 } },
+                { ItemStat.chop, new ItemStatConfig{ Default_value = 90, Min =  0, Max =  200 } },
+                { ItemStat.chop_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ Default_value = 20, Min =  0, Max =  200 } },
+                { ItemStat.block_armor, new ItemStatConfig{ Default_value = 66, Min =  0, Max =  150 } },
+                { ItemStat.block_force, new ItemStatConfig{ Default_value = 20, Min =  0, Max =  150 } },
+                { ItemStat.durability, new ItemStatConfig{ Default_value = 175, Min =  0, Max =  400 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
+                { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
+            };
+            // A little above the vanilla Nord Axe (20 Gold and 10 Frostwood, 10 and 5 per level). The mould is added on top.
+            Gold_Dualaxe.Recipe = new RecipeDefinition {
+                RecipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { Prefab = "Gold", Amount = 24, UpgradeCost = 12 },
+                    new RecipeIngredient { Prefab = "Frostwood", Amount = 12, UpgradeCost = 6 },
+                }
+            };
+            Loader.AddDefinition(Gold_Dualaxe);
+
+            // Frostfire Gold Dual Axes, made from the Gold Dualaxes like the vanilla Frostfire Axe
+            ItemDefinition Gold_Dualaxe_Frostfire = new ItemDefinition();
+            Gold_Dualaxe_Frostfire.Name = "Frostfire Gold Dualaxes";
+            Gold_Dualaxe_Frostfire.Category = ItemCategory.Axes;
+            Gold_Dualaxe_Frostfire.Prefab = "VAGold_dualaxes_frostfire";
+            Gold_Dualaxe_Frostfire.Icon = "gold_dualaxes_frostfire";
+            Gold_Dualaxe_Frostfire.CraftedAt = "blackforge";
+            Gold_Dualaxe_Frostfire.ReqStationlevel = 4;
+            Gold_Dualaxe_Frostfire.UpgraderResource = "Upgrader7Weapon";
+            Gold_Dualaxe_Frostfire.CraftAmount = 1;
+            // A little above the vanilla Frostfire Axe (144 slash, 90 chop, 12 fire, 88 frost; 10, 3, 3 and 3 per level).
+            Gold_Dualaxe_Frostfire.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ Default_value = 6, Min =  0, Max =  6, IsInt = true } },
+                { ItemStat.slash, new ItemStatConfig{ Default_value = 157, Min =  0, Max =  300 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  50 } },
+                { ItemStat.chop, new ItemStatConfig{ Default_value = 90, Min =  0, Max =  200 } },
+                { ItemStat.chop_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
+                { ItemStat.fire, new ItemStatConfig{ Default_value = 13, Min =  0, Max =  99 } },
+                { ItemStat.fire_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
+                { ItemStat.frost, new ItemStatConfig{ Default_value = 96, Min =  0, Max =  200 } },
+                { ItemStat.frost_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ Default_value = 20, Min =  0, Max =  200 } },
+                { ItemStat.block_armor, new ItemStatConfig{ Default_value = 66, Min =  0, Max =  150 } },
+                { ItemStat.block_force, new ItemStatConfig{ Default_value = 20, Min =  0, Max =  150 } },
+                { ItemStat.durability, new ItemStatConfig{ Default_value = 175, Min =  0, Max =  400 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
+                { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
+            };
+            // A little above the vanilla Frostfire Axe (the Nord Axe, 20 Gold and a Frostfire Orb, 10 and 1 per level).
+            Gold_Dualaxe_Frostfire.Recipe = new RecipeDefinition {
+                RecipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { Prefab = "VAGold_dualaxes", Amount = 1, UpgradeCost = 0 },
+                    new RecipeIngredient { Prefab = "Gold", Amount = 24, UpgradeCost = 12 },
+                    new RecipeIngredient { Prefab = "OrbFrostFire", Amount = 1, UpgradeCost = 1 },
+                }
+            };
+            Loader.AddDefinition(Gold_Dualaxe_Frostfire);
+
+            // Thunderblood Gold Dual Axes, made from the Gold Dualaxes like the vanilla Thunderblood Axe.
+            // As in vanilla, their attacks can also chain red lightning and hit harder the more health the wielder is missing (set on the prefab).
+            ItemDefinition Gold_Dualaxe_Thunderblood = new ItemDefinition();
+            Gold_Dualaxe_Thunderblood.Name = "Thunderblood Gold Dualaxes";
+            Gold_Dualaxe_Thunderblood.Category = ItemCategory.Axes;
+            Gold_Dualaxe_Thunderblood.Prefab = "VAGold_dualaxes_thunderblood";
+            Gold_Dualaxe_Thunderblood.Icon = "gold_dualaxes_thunderblood";
+            Gold_Dualaxe_Thunderblood.CraftedAt = "blackforge";
+            Gold_Dualaxe_Thunderblood.ReqStationlevel = 4;
+            Gold_Dualaxe_Thunderblood.UpgraderResource = "Upgrader7Weapon";
+            Gold_Dualaxe_Thunderblood.CraftAmount = 1;
+            // A little above the vanilla Thunderblood Axe (186 slash, 90 chop, 45 lightning; 10, 3 and 5 per level).
+            Gold_Dualaxe_Thunderblood.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.tool_level, new ItemStatConfig{ Default_value = 6, Min =  0, Max =  6, IsInt = true } },
+                { ItemStat.slash, new ItemStatConfig{ Default_value = 203, Min =  0, Max =  300 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  50 } },
+                { ItemStat.chop, new ItemStatConfig{ Default_value = 90, Min =  0, Max =  200 } },
+                { ItemStat.chop_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
+                { ItemStat.lightning, new ItemStatConfig{ Default_value = 49, Min =  0, Max =  99 } },
+                { ItemStat.lightning_per_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ Default_value = 20, Min =  0, Max =  200 } },
+                { ItemStat.block_armor, new ItemStatConfig{ Default_value = 66, Min =  0, Max =  150 } },
+                { ItemStat.block_force, new ItemStatConfig{ Default_value = 20, Min =  0, Max =  150 } },
+                { ItemStat.durability, new ItemStatConfig{ Default_value = 175, Min =  0, Max =  400 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 16, Min =  1, Max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 22, Min =  1, Max =  50 } },
+                { ItemStat.movement_speed, new ItemStatConfig{ Default_value = -0.05f, Min =  -0.20f, Max =  0 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
+            };
+            // A little above the vanilla Thunderblood Axe (the Nord Axe, 20 Gold and a Thunderblood Orb, 10 and 1 per level).
+            Gold_Dualaxe_Thunderblood.Recipe = new RecipeDefinition {
+                RecipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { Prefab = "VAGold_dualaxes", Amount = 1, UpgradeCost = 0 },
+                    new RecipeIngredient { Prefab = "Gold", Amount = 24, UpgradeCost = 12 },
+                    new RecipeIngredient { Prefab = "OrbThunderBlood", Amount = 1, UpgradeCost = 1 },
+                }
+            };
+            Loader.AddDefinition(Gold_Dualaxe_Thunderblood);
         }
 
         private void LoadHammers()
@@ -3524,6 +3687,125 @@ namespace ValheimArmory
         private void LoadDaggers()
         {
             Logger.LogInfo("Loading Daggers");
+
+            // GoldKnives (Deep North) 1H Daggers
+            ItemDefinition GoldKnives = new ItemDefinition();
+            GoldKnives.Name = "Bloodgold Knives";
+            GoldKnives.Category = ItemCategory.Knives;
+            GoldKnives.Prefab = "VAknife_gold";
+            GoldKnives.Icon = "gold_dualknives";
+            GoldKnives.CraftedAt = "blackforge";
+            GoldKnives.ReqStationlevel = 4;
+            GoldKnives.UpgraderResource = "Upgrader7Weapon";
+            GoldKnives.CraftAmount = 1;
+            GoldKnives.FrostForged = new FrostForgedDefinition { Mould = "MoldKnife", Cast = "KnifeGoldUncooked" };
+            // A little above the vanilla Nord Dagger (75 slash, 75 pierce, 5 of each per level).
+            GoldKnives.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.block_armor, new ItemStatConfig{ Default_value = 4, Min =  0, Max =  48 } },
+                { ItemStat.slash, new ItemStatConfig{ Default_value = 82, Min =  0, Max =  99 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  50 } },
+                { ItemStat.pierce, new ItemStatConfig{ Default_value = 82, Min =  0, Max =  99 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  40 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 38, Min =  1, Max =  50 } },
+                { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
+            };
+            // A little above the vanilla Nord Dagger (20 Gold and 10 Frostwood, 10 and 5 per level). The mould is added on top.
+            GoldKnives.Recipe = new RecipeDefinition {
+                RecipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { Prefab = "Gold", Amount = 24, UpgradeCost = 12 },
+                    new RecipeIngredient { Prefab = "Frostwood", Amount = 12, UpgradeCost = 6 },
+                }
+            };
+            Loader.AddDefinition(GoldKnives);
+
+            // Frostfire GoldKnives (Deep North) 1H Daggers, made from the Bloodgold Knives like the vanilla Frostfire Dagger
+            ItemDefinition GoldKnivesFrostfire = new ItemDefinition();
+            GoldKnivesFrostfire.Name = "Frostfire Bloodgold Knives";
+            GoldKnivesFrostfire.Category = ItemCategory.Knives;
+            GoldKnivesFrostfire.Prefab = "VAknife_gold_frostfire";
+            GoldKnivesFrostfire.Icon = "gold_dualknives_frostfire";
+            GoldKnivesFrostfire.CraftedAt = "blackforge";
+            GoldKnivesFrostfire.ReqStationlevel = 4;
+            GoldKnivesFrostfire.UpgraderResource = "Upgrader7Weapon";
+            GoldKnivesFrostfire.CraftAmount = 1;
+            // A little above the vanilla Frostfire Dagger (62 slash, 62 pierce, 10 fire, 88 frost; 5, 5, 3 and 3 per level).
+            GoldKnivesFrostfire.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.block_armor, new ItemStatConfig{ Default_value = 4, Min =  0, Max =  48 } },
+                { ItemStat.slash, new ItemStatConfig{ Default_value = 68, Min =  0, Max =  99 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  50 } },
+                { ItemStat.pierce, new ItemStatConfig{ Default_value = 68, Min =  0, Max =  99 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  50 } },
+                { ItemStat.fire, new ItemStatConfig{ Default_value = 11, Min =  0, Max =  99 } },
+                { ItemStat.fire_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
+                { ItemStat.frost, new ItemStatConfig{ Default_value = 96, Min =  0, Max =  200 } },
+                { ItemStat.frost_per_level, new ItemStatConfig{ Default_value = 3, Min =  0, Max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  40 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 38, Min =  1, Max =  50 } },
+                { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
+            };
+            // A little above the vanilla Frostfire Dagger (the Nord Dagger, 20 Gold and a Frostfire Orb, 10 and 1 per level).
+            GoldKnivesFrostfire.Recipe = new RecipeDefinition {
+                RecipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { Prefab = "VAknife_gold", Amount = 1, UpgradeCost = 0 },
+                    new RecipeIngredient { Prefab = "Gold", Amount = 24, UpgradeCost = 12 },
+                    new RecipeIngredient { Prefab = "OrbFrostFire", Amount = 1, UpgradeCost = 1 },
+                }
+            };
+            Loader.AddDefinition(GoldKnivesFrostfire);
+
+            // Thunderblood GoldKnives (Deep North) 1H Daggers, made from the Bloodgold Knives like the vanilla Thunderblood Dagger.
+            // As in vanilla, their attacks can also chain red lightning and hit harder the more health the wielder is missing (set on the prefab).
+            ItemDefinition GoldKnivesThunderblood = new ItemDefinition();
+            GoldKnivesThunderblood.Name = "Thunderblood Bloodgold Knives";
+            GoldKnivesThunderblood.Category = ItemCategory.Knives;
+            GoldKnivesThunderblood.Prefab = "VAknife_gold_thunderblood";
+            GoldKnivesThunderblood.Icon = "gold_dualknives_thunderblood";
+            GoldKnivesThunderblood.CraftedAt = "blackforge";
+            GoldKnivesThunderblood.ReqStationlevel = 4;
+            GoldKnivesThunderblood.UpgraderResource = "Upgrader7Weapon";
+            GoldKnivesThunderblood.CraftAmount = 1;
+            // A little above the vanilla Thunderblood Dagger (80 slash, 80 pierce, 45 lightning; 5 of each per level).
+            GoldKnivesThunderblood.ModifableStats = new Dictionary<ItemStat, ItemStatConfig> {
+                { ItemStat.block_armor, new ItemStatConfig{ Default_value = 4, Min =  0, Max =  48 } },
+                { ItemStat.slash, new ItemStatConfig{ Default_value = 87, Min =  0, Max =  99 } },
+                { ItemStat.slash_per_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  50 } },
+                { ItemStat.pierce, new ItemStatConfig{ Default_value = 87, Min =  0, Max =  99 } },
+                { ItemStat.pierce_per_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  50 } },
+                { ItemStat.lightning, new ItemStatConfig{ Default_value = 49, Min =  0, Max =  99 } },
+                { ItemStat.lightning_per_level, new ItemStatConfig{ Default_value = 5, Min =  0, Max =  50 } },
+                { ItemStat.attack_force, new ItemStatConfig{ Default_value = 10, Min =  0, Max =  40 } },
+                { ItemStat.primary_attack_stamina, new ItemStatConfig{ Default_value = 14, Min =  1, Max =  50 } },
+                { ItemStat.secondary_attack_stamina, new ItemStatConfig{ Default_value = 38, Min =  1, Max =  50 } },
+                { ItemStat.durability, new ItemStatConfig{ Default_value = 200, Min =  0, Max =  500 } },
+                { ItemStat.durability_per_level, new ItemStatConfig{ Default_value = 50, Min =  0, Max =  150 } },
+                { ItemStat.primary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.secondary_attack_adrenaline, new ItemStatConfig{ Default_value = 1, Min = 0, Max = 25 } },
+                { ItemStat.block_adrenaline, new ItemStatConfig{ Default_value = 2, Min = 0, Max = 25 } },
+                { ItemStat.parry_adrenaline, new ItemStatConfig{ Default_value = 5, Min = 0, Max = 25 } },
+            };
+            // A little above the vanilla Thunderblood Dagger (the Nord Dagger, 20 Gold and a Thunderblood Orb, 10 and 1 per level).
+            GoldKnivesThunderblood.Recipe = new RecipeDefinition {
+                RecipeItems = new List<RecipeIngredient> {
+                    new RecipeIngredient { Prefab = "VAknife_gold", Amount = 1, UpgradeCost = 0 },
+                    new RecipeIngredient { Prefab = "Gold", Amount = 24, UpgradeCost = 12 },
+                    new RecipeIngredient { Prefab = "OrbThunderBlood", Amount = 1, UpgradeCost = 1 },
+                }
+            };
+            Loader.AddDefinition(GoldKnivesThunderblood);
+
             // Blackmetal (mistlands) 1H Daggers
             ItemDefinition Hati_Knife = new ItemDefinition();
             Hati_Knife.Name = "Hati Knife";

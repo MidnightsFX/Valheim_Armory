@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Draugr Pazur",
   "va_item_crossbow_silver_description": " Ciemne drewno wzmocnione srebrem, lśni w blasku księżyca.",
   "va_item_soulstealer": "Złodziej dusz",
-  "va_item_soulstealer_description": "Jaka cenę jesteś gotowy zapłacić?"
+  "va_item_soulstealer_description": "Jaka cenę jesteś gotowy zapłacić?",
+  "item_mold_va": "Forma:",
+  "item_cast_va": "Odlew:",
+  "item_knife_gold_2h": "Nordyckie sztylety",
+  "item_knife_gold_2h_description": "Podwójny złoty błysk to ostatnie, co zobaczą twoi wrogowie.",
+  "item_knife_gold_2h_frostfire": "Mroźnogniste sztylety",
+  "item_knife_gold_2h_frostfire_description": "Bliźniacze ostrza spowite zimnym błękitnym płomieniem. Ich cięcia najpierw mrożą, potem palą.",
+  "item_knife_gold_2h_thunderblood": "Grzmotokrwiste sztylety",
+  "item_knife_gold_2h_thunderblood_description": "Bliźniacze ostrza trzaskające czerwonymi błyskawicami, wiecznie spragnione kolejnej rany.",
+  "item_dual_axes_gold": "Nordyckie podwójne topory",
+  "item_dual_axes_gold_description": "Dwa ostrza z hartowanego złota, dość ciężkie, by powalić las albo jotuna.",
+  "item_dual_axes_gold_frostfire": "Mroźnogniste podwójne topory",
+  "item_dual_axes_gold_frostfire_description": "Bliźniacze topory spowite zimnym błękitnym płomieniem. Każde cięcie najpierw mrozi, potem pali.",
+  "item_dual_axes_gold_thunderblood": "Grzmotokrwiste podwójne topory",
+  "item_dual_axes_gold_thunderblood_description": "Bliźniacze topory trzaskające czerwonymi błyskawicami, wiecznie głodne kolejnego ciosu."
 }

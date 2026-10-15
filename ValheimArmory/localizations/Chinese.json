@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "巨灵之爪",
   "va_item_crossbow_silver_description": "黑木架配银色，在月光下闪闪发光。",
   "va_item_soulstealer": "灵魂窃取者",
-  "va_item_soulstealer_description": "你愿意付出什么代价？"
+  "va_item_soulstealer_description": "你愿意付出什么代价？",
+  "item_mold_va": "模具：",
+  "item_cast_va": "铸胚：",
+  "item_knife_gold_2h": "北境双刀",
+  "item_knife_gold_2h_description": "眼前闪过的两道金光是你的敌人生前最后的景象。",
+  "item_knife_gold_2h_frostfire": "冰火双刀",
+  "item_knife_gold_2h_frostfire_description": "两柄缠绕着冰冷蓝焰的利刃，伤口先被冻结，继而灼烧。",
+  "item_knife_gold_2h_thunderblood": "雷血双刀",
+  "item_knife_gold_2h_thunderblood_description": "两柄迸发着赤红雷电的利刃，永远渴求着下一道伤口。",
+  "item_dual_axes_gold": "北境双斧",
+  "item_dual_axes_gold_description": "两柄淬火黄金铸成的战斧，足以砍倒森林，或是巨人。",
+  "item_dual_axes_gold_frostfire": "冰火双斧",
+  "item_dual_axes_gold_frostfire_description": "两柄缠绕着冰冷蓝焰的战斧，每一击先冻结，继而灼烧。",
+  "item_dual_axes_gold_thunderblood": "雷血双斧",
+  "item_dual_axes_gold_thunderblood_description": "两柄迸发着赤红雷电的战斧，渴求着下一次劈砍。"
 }

@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Åndeklo",
   "va_item_crossbow_silver_description": "Mørkt tre støttet med sølv, det glitrer i månelyset.",
   "va_item_soulstealer": "Sjeltyv",
-  "va_item_soulstealer_description": "Hvilken pris er du villig til å betale?"
+  "va_item_soulstealer_description": "Hvilken pris er du villig til å betale?",
+  "item_mold_va": "Støpeform:",
+  "item_cast_va": "Avstøpning:",
+  "item_knife_gold_2h": "Nordiske dolker",
+  "item_knife_gold_2h_description": "To glimt av gull er det siste fiendene dine noensinne får se.",
+  "item_knife_gold_2h_frostfire": "Frostildsdolker",
+  "item_knife_gold_2h_frostfire_description": "Tvillingblader omhyllet av kald blå flamme. Kuttene deres fryser først og brenner så.",
+  "item_knife_gold_2h_thunderblood": "Tordenblodsdolker",
+  "item_knife_gold_2h_thunderblood_description": "Tvillingblader som knitrer av røde lyn, alltid tørste etter neste sår.",
+  "item_dual_axes_gold": "Nordiske dobbeltøkser",
+  "item_dual_axes_gold_description": "To hoder av herdet gull, tunge nok til å felle en skog eller en jotun.",
+  "item_dual_axes_gold_frostfire": "Frostildsdobbeltøkser",
+  "item_dual_axes_gold_frostfire_description": "Tvillingøkser omhyllet av kald blå flamme. Hvert hugg fryser først og brenner så.",
+  "item_dual_axes_gold_thunderblood": "Tordenblodsdobbeltøkser",
+  "item_dual_axes_gold_thunderblood_description": "Tvillingøkser som knitrer av røde lyn, alltid sultne på neste hugg."
 }

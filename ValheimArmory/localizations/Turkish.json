@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Draugr Pençesi",
   "va_item_crossbow_silver_description": "Karanlık ahşap gümüşle desteklenmiş, ay ışığında parlıyor.",
   "va_item_soulstealer": "Ruh Hırsızı",
-  "va_item_soulstealer_description": "Ne kadar ödemeye isteklisiniz?"
+  "va_item_soulstealer_description": "Ne kadar ödemeye isteklisiniz?",
+  "item_mold_va": "Kalıp:",
+  "item_cast_va": "Döküm:",
+  "item_knife_gold_2h": "Nord Hançerleri",
+  "item_knife_gold_2h_description": "Rakiplerinin göreceği son şey, anlık iki altın parıltısı.",
+  "item_knife_gold_2h_frostfire": "Buzateşi Hançerleri",
+  "item_knife_gold_2h_frostfire_description": "Soğuk mavi alevlere bürünmüş ikiz bıçaklar. Açtıkları yaralar önce donar, sonra yanar.",
+  "item_knife_gold_2h_thunderblood": "Şimşekkanı Hançerleri",
+  "item_knife_gold_2h_thunderblood_description": "Kızıl şimşeklerle çatırdayan ikiz bıçaklar, her zaman bir sonraki yaraya susamış.",
+  "item_dual_axes_gold": "Nord Çift Baltaları",
+  "item_dual_axes_gold_description": "Bir ormanı ya da bir jotunu devirecek kadar ağır, sertleştirilmiş altından iki ağız.",
+  "item_dual_axes_gold_frostfire": "Buzateşi Çift Baltaları",
+  "item_dual_axes_gold_frostfire_description": "Soğuk mavi alevlere bürünmüş ikiz baltalar. Her darbe önce dondurur, sonra yakar.",
+  "item_dual_axes_gold_thunderblood": "Şimşekkanı Çift Baltaları",
+  "item_dual_axes_gold_thunderblood_description": "Kızıl şimşeklerle çatırdayan ikiz baltalar, her zaman bir sonraki darbeye aç."
 }

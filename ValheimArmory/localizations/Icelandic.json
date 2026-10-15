@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Draugr kló.",
   "va_item_crossbow_silver_description": "Dökk viður með silfri styrkt, það glímir í tunglinu.Dökkur viður styrktur með silfri, það glítur í tunglinu.",
   "va_item_soulstealer": "Sálarkrani",
-  "va_item_soulstealer_description": "Hvaða verð ert þú tilbúin(n) að borga?"
+  "va_item_soulstealer_description": "Hvaða verð ert þú tilbúin(n) að borga?",
+  "item_mold_va": "Steypumót:",
+  "item_cast_va": "Steypa:",
+  "item_knife_gold_2h": "Norrænir rýtingar",
+  "item_knife_gold_2h_description": "Tveir gullnir glampar eru það síðasta sem óvinir þínir munu nokkurn tíma sjá.",
+  "item_knife_gold_2h_frostfire": "Frosteldsrýtingar",
+  "item_knife_gold_2h_frostfire_description": "Tvíburablöð sveipuð köldum bláum loga. Skurðir þeirra frjósa fyrst og brenna svo.",
+  "item_knife_gold_2h_thunderblood": "Þrumublóðsrýtingar",
+  "item_knife_gold_2h_thunderblood_description": "Tvíburablöð sem snarka af rauðum eldingum, ætíð þyrst í næsta sár.",
+  "item_dual_axes_gold": "Norrænar tvíaxir",
+  "item_dual_axes_gold_description": "Tvö blöð úr hertu gulli, nógu þung til að fella skóg eða jötun.",
+  "item_dual_axes_gold_frostfire": "Frosteldstvíaxir",
+  "item_dual_axes_gold_frostfire_description": "Tvíburaaxir sveipaðar köldum bláum loga. Hvert högg frystir fyrst og brennir svo.",
+  "item_dual_axes_gold_thunderblood": "Þrumublóðstvíaxir",
+  "item_dual_axes_gold_thunderblood_description": "Tvíburaaxir sem snarka af rauðum eldingum, ætíð hungraðar í næsta högg."
 }

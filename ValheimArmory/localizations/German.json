@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Draugr Klaue",
   "va_item_crossbow_silver_description": "Dunkles Holz, verstärkt mit Silber, es glänzt im Mondlicht.",
   "va_item_soulstealer": "Seelenräuber",
-  "va_item_soulstealer_description": "Zu welchem Preis bist du bereit zu zahlen?"
+  "va_item_soulstealer_description": "Zu welchem Preis bist du bereit zu zahlen?",
+  "item_mold_va": "Gussform:",
+  "item_cast_va": "Guss:",
+  "item_knife_gold_2h": "Nord-Dolche",
+  "item_knife_gold_2h_description": "Ein doppelter goldener Blitz wird das Letzte sein, was deine Feinde sehen werden.",
+  "item_knife_gold_2h_frostfire": "Frostfeuer-Dolche",
+  "item_knife_gold_2h_frostfire_description": "Zwillingsklingen, umhüllt von kalter blauer Flamme. Ihre Schnitte gefrieren erst und brennen dann.",
+  "item_knife_gold_2h_thunderblood": "Donnerblut-Dolche",
+  "item_knife_gold_2h_thunderblood_description": "Zwillingsklingen, die vor roten Blitzen knistern und stets nach der nächsten Wunde dürsten.",
+  "item_dual_axes_gold": "Nord-Doppeläxte",
+  "item_dual_axes_gold_description": "Zwei Blätter aus gehärtetem Gold, schwer genug, um einen Wald oder einen Jotun zu fällen.",
+  "item_dual_axes_gold_frostfire": "Frostfeuer-Doppeläxte",
+  "item_dual_axes_gold_frostfire_description": "Zwillingsäxte, umhüllt von kalter blauer Flamme. Jeder Hieb gefriert erst und brennt dann.",
+  "item_dual_axes_gold_thunderblood": "Donnerblut-Doppeläxte",
+  "item_dual_axes_gold_thunderblood_description": "Zwillingsäxte, die vor roten Blitzen knistern und nach dem nächsten Hieb hungern."
 }

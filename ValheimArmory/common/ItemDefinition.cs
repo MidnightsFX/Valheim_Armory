@@ -120,6 +120,10 @@ namespace ValheimArmory.Common {
         public BepInEx.Configuration.ConfigEntry<int> StationLVLCfg {
             get; set;
         }
+        // Station level needed to repair the item, 0 = the crafting level (see RepairStationLevel). Null for ammo, which has no durability.
+        public BepInEx.Configuration.ConfigEntry<int> RepairStationLVLCfg {
+            get; set;
+        }
         public int CraftAmount {
             get; set;
         }
@@ -136,8 +140,35 @@ namespace ValheimArmory.Common {
         public List<Skills.SkillType> HybridSkills {
             get; set;
         }
+        // Set on weapons made the way vanilla makes its Deep North gold weapons: a mould found in loot is filled at
+        // the crafting station to make a cast, and the Frost Foundry hardens the cast into the weapon. Null for every other item.
+        public FrostForgedDefinition FrostForged {
+            get; set;
+        }
 
         public RecipeDefinition Recipe {
+            get; set;
+        }
+    }
+
+    class FrostForgedDefinition {
+        // Vanilla mould this weapon's own mould is copied from (eg: MoldKnife). Ours drops wherever that one does.
+        public string Mould {
+            get; set;
+        }
+        // Vanilla cast this weapon's own cast is copied from, for its look (eg: KnifeGoldUncooked).
+        public string Cast {
+            get; set;
+        }
+        // Prefabs generated for this weapon, named after it.
+        public string MouldPrefab {
+            get; set;
+        }
+        public string CastPrefab {
+            get; set;
+        }
+        // Crafts the cast. Kept in step with the weapon's own recipe, which only upgrades the weapon.
+        public Recipe CastRecipe {
             get; set;
         }
     }

@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Artăgripa Draugr",
   "va_item_crossbow_silver_description": "Lemn întunecat întărit cu argint, strălucește în lumina lunii.",
   "va_item_soulstealer": "Fură-suflete",
-  "va_item_soulstealer_description": "La ce preț ești dispus să plătești?"
+  "va_item_soulstealer_description": "La ce preț ești dispus să plătești?",
+  "item_mold_va": "Matriță:",
+  "item_cast_va": "Piesă turnată:",
+  "item_knife_gold_2h": "Pumnale nordice",
+  "item_knife_gold_2h_description": "Două sclipiri de aur sunt ultimul lucru pe care îl vor vedea dușmanii tăi.",
+  "item_knife_gold_2h_frostfire": "Pumnale de foc înghețat",
+  "item_knife_gold_2h_frostfire_description": "Lame gemene învăluite într-o flacără albastră și rece. Tăieturile lor mai întâi îngheață, apoi ard.",
+  "item_knife_gold_2h_thunderblood": "Pumnale de sânge-tunet",
+  "item_knife_gold_2h_thunderblood_description": "Lame gemene care trosnesc de fulgere roșii, mereu însetate de următoarea rană.",
+  "item_dual_axes_gold": "Topoare duble nordice",
+  "item_dual_axes_gold_description": "Două tăișuri din aur călit, destul de grele încât să doboare o pădure sau un jotun.",
+  "item_dual_axes_gold_frostfire": "Topoare duble de foc înghețat",
+  "item_dual_axes_gold_frostfire_description": "Topoare gemene învăluite într-o flacără albastră și rece. Fiecare lovitură mai întâi îngheață, apoi arde.",
+  "item_dual_axes_gold_thunderblood": "Topoare duble de sânge-tunet",
+  "item_dual_axes_gold_thunderblood_description": "Topoare gemene care trosnesc de fulgere roșii, mereu flămânde de următoarea lovitură."
 }

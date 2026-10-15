@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Δράουγκρ Νύχι",
   "va_item_crossbow_silver_description": "Σκούρο ξύλο στηριγμένο με ασημένια, λάμπει στο φως του φεγγαριού.",
   "va_item_soulstealer": "Κλέφτης ψυχών",
-  "va_item_soulstealer_description": "Ποια τιμή είστε διατεθειμένοι να πληρώσετε;"
+  "va_item_soulstealer_description": "Ποια τιμή είστε διατεθειμένοι να πληρώσετε;",
+  "item_mold_va": "Καλούπι:",
+  "item_cast_va": "Χύτευμα:",
+  "item_knife_gold_2h": "Στιλέτα του Βορρά",
+  "item_knife_gold_2h_description": "Δύο χρυσές λάμψεις είναι το τελευταίο πράγμα που θα δουν ποτέ οι εχθροί σου.",
+  "item_knife_gold_2h_frostfire": "Στιλέτα της Παγοφωτιάς",
+  "item_knife_gold_2h_frostfire_description": "Δίδυμες λεπίδες τυλιγμένες σε ψυχρή γαλάζια φλόγα. Οι πληγές τους πρώτα παγώνουν και μετά καίνε.",
+  "item_knife_gold_2h_thunderblood": "Στιλέτα του Βροντοαίματος",
+  "item_knife_gold_2h_thunderblood_description": "Δίδυμες λεπίδες που τριζοβολούν με κόκκινους κεραυνούς, πάντα διψασμένες για την επόμενη πληγή.",
+  "item_dual_axes_gold": "Διπλά τσεκούρια του Βορρά",
+  "item_dual_axes_gold_description": "Δύο λεπίδες από σκληρυμένο χρυσό, αρκετά βαριές για να ρίξουν ένα δάσος ή έναν γίγαντα.",
+  "item_dual_axes_gold_frostfire": "Διπλά τσεκούρια της Παγοφωτιάς",
+  "item_dual_axes_gold_frostfire_description": "Δίδυμα τσεκούρια τυλιγμένα σε ψυχρή γαλάζια φλόγα. Κάθε χτύπημα πρώτα παγώνει και μετά καίει.",
+  "item_dual_axes_gold_thunderblood": "Διπλά τσεκούρια του Βροντοαίματος",
+  "item_dual_axes_gold_thunderblood_description": "Δίδυμα τσεκούρια που τριζοβολούν με κόκκινους κεραυνούς, πεινασμένα για το επόμενο χτύπημα."
 }

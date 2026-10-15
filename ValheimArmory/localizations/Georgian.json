@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "დრაუგრ კლოუ(translation from English to Georgian: დრაუგრ კლოუ)",
   "va_item_crossbow_silver_description": "ნაცნობი ტყე ვერცხლით დაიკარგება, მთვარის ნაცნობში იწვანებს.",
   "va_item_soulstealer": "სულის მოლისე",
-  "va_item_soulstealer_description": "რა ფასი ხარ მიიღებით?"
+  "va_item_soulstealer_description": "რა ფასი ხარ მიიღებით?",
+  "item_mold_va": "ყალიბი:",
+  "item_cast_va": "ჩამოსხმა:",
+  "item_knife_gold_2h": "ნორდული ხანჯლები",
+  "item_knife_gold_2h_description": "ორი ოქროსფერი ელვარება იქნება ბოლო, რასაც შენი მტრები ოდესმე დაინახავენ.",
+  "item_knife_gold_2h_frostfire": "ყინვაცეცხლის ხანჯლები",
+  "item_knife_gold_2h_frostfire_description": "ცივი ლურჯი ალით მოცული ტყუპი პირები. მათი ჭრილობები ჯერ იყინება, მერე იწვის.",
+  "item_knife_gold_2h_thunderblood": "ჭექასისხლის ხანჯლები",
+  "item_knife_gold_2h_thunderblood_description": "წითელი ელვით მოციმციმე ტყუპი პირები, რომლებსაც მუდამ ახალი ჭრილობა სწყურიათ.",
+  "item_dual_axes_gold": "ნორდული ორმაგი ცულები",
+  "item_dual_axes_gold_description": "წრთობილი ოქროს ორი პირი, საკმარისად მძიმე ტყის ან იოტუნის წასაქცევად.",
+  "item_dual_axes_gold_frostfire": "ყინვაცეცხლის ორმაგი ცულები",
+  "item_dual_axes_gold_frostfire_description": "ცივი ლურჯი ალით მოცული ტყუპი ცულები. ყოველი დარტყმა ჯერ ყინავს, მერე წვავს.",
+  "item_dual_axes_gold_thunderblood": "ჭექასისხლის ორმაგი ცულები",
+  "item_dual_axes_gold_thunderblood_description": "წითელი ელვით მოციმციმე ტყუპი ცულები, რომლებსაც მუდამ შემდეგი დარტყმა სწყურიათ."
 }

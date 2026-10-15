@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Griffe de Draugr",
   "va_item_crossbow_silver_description": "Bois sombre renforcé d'argent, il scintille dans la lumière de la lune.",
   "va_item_soulstealer": "Voleur d'âmes",
-  "va_item_soulstealer_description": "À quel prix êtes-vous prêt à payer ?"
+  "va_item_soulstealer_description": "À quel prix êtes-vous prêt à payer ?",
+  "item_mold_va": "Moule :",
+  "item_cast_va": "Moulage :",
+  "item_knife_gold_2h": "Dagues nordiques",
+  "item_knife_gold_2h_description": "La dernière chose que verront vos ennemis, c'est un double éclair doré.",
+  "item_knife_gold_2h_frostfire": "Dagues de givrefeu",
+  "item_knife_gold_2h_frostfire_description": "Des lames jumelles nimbées d'une froide flamme bleue. Leurs entailles gèlent, puis brûlent.",
+  "item_knife_gold_2h_thunderblood": "Dagues de sang-tonnerre",
+  "item_knife_gold_2h_thunderblood_description": "Des lames jumelles crépitant d'éclairs rouges, toujours assoiffées de la prochaine blessure.",
+  "item_dual_axes_gold": "Haches doubles nordiques",
+  "item_dual_axes_gold_description": "Deux fers d'or trempé, assez lourds pour abattre une forêt ou un jotun.",
+  "item_dual_axes_gold_frostfire": "Haches doubles de givrefeu",
+  "item_dual_axes_gold_frostfire_description": "Des haches jumelles nimbées d'une froide flamme bleue. Chaque coup gèle, puis brûle.",
+  "item_dual_axes_gold_thunderblood": "Haches doubles de sang-tonnerre",
+  "item_dual_axes_gold_thunderblood_description": "Des haches jumelles crépitant d'éclairs rouges, avides du prochain coup."
 }

@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Кіготь драугра",
   "va_item_crossbow_silver_description": "Темне дерево підтримується сріблом, воно блищить у місячному сяйві.",
   "va_item_soulstealer": "Душевик",
-  "va_item_soulstealer_description": "Яку ціну ви готові заплатити?"
+  "va_item_soulstealer_description": "Яку ціну ви готові заплатити?",
+  "item_mold_va": "Форма:",
+  "item_cast_va": "Заготовина:",
+  "item_knife_gold_2h": "Нордичні кинджали",
+  "item_knife_gold_2h_description": "Подвійний золотий відблиск стане останнім, що побачать ваші вороги.",
+  "item_knife_gold_2h_frostfire": "Вогнекрижні кинджали",
+  "item_knife_gold_2h_frostfire_description": "Парні клинки, огорнуті холодним синім полум'ям. Їхні порізи спершу морозять, а тоді палять.",
+  "item_knife_gold_2h_thunderblood": "Громокровні кинджали",
+  "item_knife_gold_2h_thunderblood_description": "Парні клинки, що потріскують червоними блискавками й завжди прагнуть нової рани.",
+  "item_dual_axes_gold": "Нордичні парні сокири",
+  "item_dual_axes_gold_description": "Два леза із загартованого золота, досить важкі, щоб звалити ліс або йотуна.",
+  "item_dual_axes_gold_frostfire": "Вогнекрижні парні сокири",
+  "item_dual_axes_gold_frostfire_description": "Парні сокири, огорнуті холодним синім полум'ям. Кожен удар спершу морозить, а тоді палить.",
+  "item_dual_axes_gold_thunderblood": "Громокровні парні сокири",
+  "item_dual_axes_gold_thunderblood_description": "Парні сокири, що потріскують червоними блискавками й завжди прагнуть нового удару."
 }

@@ -284,5 +284,19 @@
   "va_item_soulstealer": "소울스틸러",
   "va_item_soulstealer_description": "당신은 얼마만큼의 가격을 지불할 의향이 있나요?",
   "item_battleaxe_blackmetal_herkir": "헤르키르의 분노",
-  "item_battleaxe_blackmetal_herkir_description": "거인을 죽이는 자, 불을 가져오는 자, 고통을 주는 자."
+  "item_battleaxe_blackmetal_herkir_description": "거인을 죽이는 자, 불을 가져오는 자, 고통을 주는 자.",
+  "item_mold_va": "거푸집:",
+  "item_cast_va": "주물:",
+  "item_knife_gold_2h": "노드의 쌍단검",
+  "item_knife_gold_2h_description": "적이 마지막으로 보게 될 건 두 줄기 금빛 섬광일 것입니다.",
+  "item_knife_gold_2h_frostfire": "서리불길 쌍단검",
+  "item_knife_gold_2h_frostfire_description": "차가운 푸른 불꽃에 휩싸인 쌍날. 그 상처는 먼저 얼어붙고, 이내 타오른다.",
+  "item_knife_gold_2h_thunderblood": "천둥피 쌍단검",
+  "item_knife_gold_2h_thunderblood_description": "붉은 번개가 튀는 쌍날. 언제나 다음 상처에 목말라 있다.",
+  "item_dual_axes_gold": "노드의 쌍도끼",
+  "item_dual_axes_gold_description": "담금질한 황금 날 두 개. 숲도, 요툰도 쓰러뜨릴 만큼 묵직하다.",
+  "item_dual_axes_gold_frostfire": "서리불길 쌍도끼",
+  "item_dual_axes_gold_frostfire_description": "차가운 푸른 불꽃에 휩싸인 쌍도끼. 일격은 먼저 얼리고, 이내 태운다.",
+  "item_dual_axes_gold_thunderblood": "천둥피 쌍도끼",
+  "item_dual_axes_gold_thunderblood_description": "붉은 번개가 튀는 쌍도끼. 언제나 다음 일격에 굶주려 있다."
 }

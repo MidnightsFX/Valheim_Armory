@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Artiglio del Draugr",
   "va_item_crossbow_silver_description": "Legno scuro rinforzato con argento, luccica al chiaro di luna.",
   "va_item_soulstealer": "Rubas anime",
-  "va_item_soulstealer_description": "Quale prezzo sei disposto a pagare?"
+  "va_item_soulstealer_description": "Quale prezzo sei disposto a pagare?",
+  "item_mold_va": "Stampo:",
+  "item_cast_va": "Colata:",
+  "item_knife_gold_2h": "Pugnali del nord",
+  "item_knife_gold_2h_description": "Un doppio lampo dorato sarà l'ultima cosa che vedranno i tuoi nemici.",
+  "item_knife_gold_2h_frostfire": "Pugnali di Fuocoghiaccio",
+  "item_knife_gold_2h_frostfire_description": "Lame gemelle avvolte da una fredda fiamma blu. I loro tagli prima gelano, poi bruciano.",
+  "item_knife_gold_2h_thunderblood": "Pugnali di Sangue tonante",
+  "item_knife_gold_2h_thunderblood_description": "Lame gemelle che crepitano di fulmini rossi, sempre assetate della prossima ferita.",
+  "item_dual_axes_gold": "Asce doppie del nord",
+  "item_dual_axes_gold_description": "Due lame d'oro temprato, abbastanza pesanti da abbattere una foresta o uno jotun.",
+  "item_dual_axes_gold_frostfire": "Asce doppie di Fuocoghiaccio",
+  "item_dual_axes_gold_frostfire_description": "Asce gemelle avvolte da una fredda fiamma blu. Ogni colpo prima gela, poi brucia.",
+  "item_dual_axes_gold_thunderblood": "Asce doppie di Sangue tonante",
+  "item_dual_axes_gold_thunderblood_description": "Asce gemelle che crepitano di fulmini rossi, affamate del prossimo colpo."
 }

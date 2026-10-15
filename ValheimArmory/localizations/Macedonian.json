@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Драугр кога.",
   "va_item_crossbow_silver_description": "Темен дрвен матиран со сребро, блеска во месечината.",
   "va_item_soulstealer": "Душекрадец",
-  "va_item_soulstealer_description": "Колку цена сте спремни да платите?Колку цена сте спремни да платите?"
+  "va_item_soulstealer_description": "Колку цена сте спремни да платите?Колку цена сте спремни да платите?",
+  "item_mold_va": "Калап:",
+  "item_cast_va": "Одлеанок:",
+  "item_knife_gold_2h": "Нордиски ками",
+  "item_knife_gold_2h_description": "Два златни блесоци се последното што ќе го видат твоите непријатели.",
+  "item_knife_gold_2h_frostfire": "Ками на мразен оган",
+  "item_knife_gold_2h_frostfire_description": "Двојни сечива обвиткани со студен син пламен. Нивните рани прво замрзнуваат, потоа горат.",
+  "item_knife_gold_2h_thunderblood": "Ками на громовна крв",
+  "item_knife_gold_2h_thunderblood_description": "Двојни сечива што пукаат од црвени молњи, секогаш жедни за следната рана.",
+  "item_dual_axes_gold": "Нордиски двојни секири",
+  "item_dual_axes_gold_description": "Две сечива од калено злато, доволно тешки да соборат шума или јотун.",
+  "item_dual_axes_gold_frostfire": "Двојни секири на мразен оган",
+  "item_dual_axes_gold_frostfire_description": "Двојни секири обвиткани со студен син пламен. Секој удар прво замрзнува, потоа гори.",
+  "item_dual_axes_gold_thunderblood": "Двојни секири на громовна крв",
+  "item_dual_axes_gold_thunderblood_description": "Двојни секири што пукаат од црвени молњи, секогаш гладни за следниот удар."
 }

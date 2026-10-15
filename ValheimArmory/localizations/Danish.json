@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Det er ikke en korrekt sætning på dansk. Kan du give mig mere kontekst?",
   "va_item_crossbow_silver_description": "Mørkt træ forstærket med sølv, det glimter i måneskinnet.",
   "va_item_soulstealer": "Sjælero",
-  "va_item_soulstealer_description": "Hvilken pris er du villig til at betale?"
+  "va_item_soulstealer_description": "Hvilken pris er du villig til at betale?",
+  "item_mold_va": "Støbeform:",
+  "item_cast_va": "Støbning:",
+  "item_knife_gold_2h": "Nordiske dolke",
+  "item_knife_gold_2h_description": "To glimt af guld er det sidste, dine fjender nogensinde ser.",
+  "item_knife_gold_2h_frostfire": "Frostildsdolke",
+  "item_knife_gold_2h_frostfire_description": "Tvillingeklinger omgivet af kold blå ild. Deres hug fryser først og brænder så.",
+  "item_knife_gold_2h_thunderblood": "Tordenblodsdolke",
+  "item_knife_gold_2h_thunderblood_description": "Tvillingeklinger, der knitrer af røde lyn og altid tørster efter det næste sår.",
+  "item_dual_axes_gold": "Nordiske dobbeltøkser",
+  "item_dual_axes_gold_description": "To hoveder af hærdet guld, tunge nok til at fælde en skov eller en jotun.",
+  "item_dual_axes_gold_frostfire": "Frostildsdobbeltøkser",
+  "item_dual_axes_gold_frostfire_description": "Tvillingeøkser omgivet af kold blå ild. Hvert hug fryser først og brænder så.",
+  "item_dual_axes_gold_thunderblood": "Tordenblodsdobbeltøkser",
+  "item_dual_axes_gold_thunderblood_description": "Tvillingeøkser, der knitrer af røde lyn og hungrer efter det næste hug."
 }

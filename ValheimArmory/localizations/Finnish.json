@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Draugr kynsi",
   "va_item_crossbow_silver_description": "Pimeä puu tuettuna hopealla, se kimaltelee kuutamossa.",
   "va_item_soulstealer": "Sielunkaappari",
-  "va_item_soulstealer_description": "Minkä hinnan olet valmis maksamaan?"
+  "va_item_soulstealer_description": "Minkä hinnan olet valmis maksamaan?",
+  "item_mold_va": "Valumuotti:",
+  "item_cast_va": "Valos:",
+  "item_knife_gold_2h": "Pohjolan tikarit",
+  "item_knife_gold_2h_description": "Kaksi kultaista välähdystä on viimeinen asia, jonka vihollisesi koskaan näkevät.",
+  "item_knife_gold_2h_frostfire": "Pakkastulen tikarit",
+  "item_knife_gold_2h_frostfire_description": "Kylmän sinisen liekin verhoamat kaksoisterät. Niiden haavat ensin jäätyvät ja sitten palavat.",
+  "item_knife_gold_2h_thunderblood": "Ukkosveren tikarit",
+  "item_knife_gold_2h_thunderblood_description": "Punaisesta salamasta rätisevät kaksoisterät, aina janoissaan seuraavaa haavaa.",
+  "item_dual_axes_gold": "Pohjolan kaksoiskirveet",
+  "item_dual_axes_gold_description": "Kaksi karkaistua kultaterää, tarpeeksi raskaita kaatamaan metsän tai jotunin.",
+  "item_dual_axes_gold_frostfire": "Pakkastulen kaksoiskirveet",
+  "item_dual_axes_gold_frostfire_description": "Kylmän sinisen liekin verhoamat kaksoiskirveet. Jokainen isku ensin jäädyttää ja sitten polttaa.",
+  "item_dual_axes_gold_thunderblood": "Ukkosveren kaksoiskirveet",
+  "item_dual_axes_gold_thunderblood_description": "Punaisesta salamasta rätisevät kaksoiskirveet, aina seuraavaa iskua janoten."
 }

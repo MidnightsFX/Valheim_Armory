@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Garras de Draugr",
   "va_item_crossbow_silver_description": "Madeira escura reforçada com prata, ela brilha na luz do luar.",
   "va_item_soulstealer": "Roubalmas",
-  "va_item_soulstealer_description": "Que preço está disposto a pagar?"
+  "va_item_soulstealer_description": "Que preço está disposto a pagar?",
+  "item_mold_va": "Molde:",
+  "item_cast_va": "Peça fundida:",
+  "item_knife_gold_2h": "Adagas nórdicas",
+  "item_knife_gold_2h_description": "Dois clarões dourados serão a última coisa que os teus inimigos alguma vez verão.",
+  "item_knife_gold_2h_frostfire": "Adagas de fogo-gelo",
+  "item_knife_gold_2h_frostfire_description": "Lâminas gémeas envoltas numa fria chama azul. Os seus cortes primeiro congelam, depois queimam.",
+  "item_knife_gold_2h_thunderblood": "Adagas de sangue-trovão",
+  "item_knife_gold_2h_thunderblood_description": "Lâminas gémeas que crepitam com relâmpagos vermelhos, sempre sedentas da próxima ferida.",
+  "item_dual_axes_gold": "Machados duplos nórdicos",
+  "item_dual_axes_gold_description": "Duas lâminas de ouro temperado, pesadas o suficiente para derrubar uma floresta ou um jotun.",
+  "item_dual_axes_gold_frostfire": "Machados duplos de fogo-gelo",
+  "item_dual_axes_gold_frostfire_description": "Machados gémeos envoltos numa fria chama azul. Cada golpe primeiro congela, depois queima.",
+  "item_dual_axes_gold_thunderblood": "Machados duplos de sangue-trovão",
+  "item_dual_axes_gold_thunderblood_description": "Machados gémeos que crepitam com relâmpagos vermelhos, sempre famintos do próximo golpe."
 }

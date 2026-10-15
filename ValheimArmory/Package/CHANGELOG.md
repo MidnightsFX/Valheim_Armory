@@ -1,3 +1,16 @@
+**1.36.0**
+ ---
+ ```
+- Updates the Moder crossbow model to be more in line with the other Moder weapons
+    - Legacy Moder crossbow model is still available in the config, existing crossbows will not change
+- Deep North weapons are here!
+    - The missing Deep North weapons have been added! Crafted the same way other Deep North weapons are.
+    - All added Deep North weapons have their elemental options available also.
+- All weapons, shields and ammo from this mod now float in water, so thrown spears and dropped gear can be picked back up.
+- Adds a setting for the crafting station level each weapon and shield needs to be repaired, separate from the level needed to craft it.
+    - This defaults to 0, which means it uses the required crafting level.
+ ```
+
 **1.35.0**
  ---
  ```

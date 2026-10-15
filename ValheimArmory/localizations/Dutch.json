@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Draugr Klauw",
   "va_item_crossbow_silver_description": "Donker hout gestut met zilver, het glinstert in het maanlicht.",
   "va_item_soulstealer": "Zieleneter",
-  "va_item_soulstealer_description": "Welke prijs ben je bereid te betalen?"
+  "va_item_soulstealer_description": "Welke prijs ben je bereid te betalen?",
+  "item_mold_va": "Gietvorm:",
+  "item_cast_va": "Gietstuk:",
+  "item_knife_gold_2h": "Noordse dolken",
+  "item_knife_gold_2h_description": "Twee gouden flitsen zijn het laatste wat je vijanden ooit zullen zien.",
+  "item_knife_gold_2h_frostfire": "Vorstvuurdolken",
+  "item_knife_gold_2h_frostfire_description": "Tweelingklingen omhuld door koude blauwe vlammen. Hun sneden bevriezen eerst en branden dan.",
+  "item_knife_gold_2h_thunderblood": "Donderbloeddolken",
+  "item_knife_gold_2h_thunderblood_description": "Tweelingklingen die knetteren van rode bliksem, altijd dorstig naar de volgende wond.",
+  "item_dual_axes_gold": "Noordse dubbele bijlen",
+  "item_dual_axes_gold_description": "Twee bladen van gehard goud, zwaar genoeg om een woud of een jotun te vellen.",
+  "item_dual_axes_gold_frostfire": "Vorstvuur dubbele bijlen",
+  "item_dual_axes_gold_frostfire_description": "Tweelingbijlen omhuld door koude blauwe vlammen. Elke slag bevriest eerst en brandt dan.",
+  "item_dual_axes_gold_thunderblood": "Donderbloed dubbele bijlen",
+  "item_dual_axes_gold_thunderblood_description": "Tweelingbijlen die knetteren van rode bliksem, hongerig naar de volgende slag."
 }

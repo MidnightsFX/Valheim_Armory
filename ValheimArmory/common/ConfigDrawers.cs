@@ -195,6 +195,7 @@ namespace ValheimArmory.Common {
         // Hides the item's sub-entries and turns CraftableCfg into the single visible drawer row.
         internal static void Attach(ItemDefinition itemdef) {
             ConfigDrawHelpers.Hide(itemdef.StationLVLCfg);
+            if (itemdef.RepairStationLVLCfg != null) { ConfigDrawHelpers.Hide(itemdef.RepairStationLVLCfg); }
             ConfigDrawHelpers.Hide(itemdef.CraftAmountCfg);
             ConfigDrawHelpers.Hide(itemdef.CraftedAtCfg);
             ConfigDrawHelpers.Hide(itemdef.Recipe.RecipeConfig);
@@ -241,6 +242,7 @@ namespace ValheimArmory.Common {
                 ConfigDrawHelpers.DrawBool("Craftable", itemdef.CraftableCfg);
                 ConfigDrawHelpers.DrawString("Crafted at", itemdef.CraftedAtCfg);
                 ConfigDrawHelpers.DrawInt("Station level", itemdef.StationLVLCfg);
+                if (itemdef.RepairStationLVLCfg != null) { ConfigDrawHelpers.DrawInt("Repair station level (0 = craft)", itemdef.RepairStationLVLCfg); }
                 ConfigDrawHelpers.DrawInt("Craft amount", itemdef.CraftAmountCfg);
                 if (itemdef.UpgraderResourceCfg != null) { ConfigDrawHelpers.DrawString("Forge of Potential idol", itemdef.UpgraderResourceCfg); }
 

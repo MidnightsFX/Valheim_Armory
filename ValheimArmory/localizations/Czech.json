@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Draugr Dráp",
   "va_item_crossbow_silver_description": "Tmavé dřevo podepřené stříbrem, jiskří v měsíčním světle.",
   "va_item_soulstealer": "Zloděj duší",
-  "va_item_soulstealer_description": "Jakou cenu jsi ochoten zaplatit?"
+  "va_item_soulstealer_description": "Jakou cenu jsi ochoten zaplatit?",
+  "item_mold_va": "Forma:",
+  "item_cast_va": "Odlitek:",
+  "item_knife_gold_2h": "Severské dýky",
+  "item_knife_gold_2h_description": "Dva zlaté záblesky jsou to poslední, co tví nepřátelé kdy uvidí.",
+  "item_knife_gold_2h_frostfire": "Dýky mrazivého ohně",
+  "item_knife_gold_2h_frostfire_description": "Dvojice čepelí zahalených chladným modrým plamenem. Jejich rány nejprve zmrazí, pak spálí.",
+  "item_knife_gold_2h_thunderblood": "Dýky hromové krve",
+  "item_knife_gold_2h_thunderblood_description": "Dvojice čepelí praskajících rudými blesky, vždy žíznících po další ráně.",
+  "item_dual_axes_gold": "Severské dvojité sekery",
+  "item_dual_axes_gold_description": "Dvě čepele z kaleného zlata, dost těžké na to, aby skácely les i jotuna.",
+  "item_dual_axes_gold_frostfire": "Dvojité sekery mrazivého ohně",
+  "item_dual_axes_gold_frostfire_description": "Dvojice seker zahalených chladným modrým plamenem. Každý úder nejprve zmrazí, pak spálí.",
+  "item_dual_axes_gold_thunderblood": "Dvojité sekery hromové krve",
+  "item_dual_axes_gold_thunderblood_description": "Dvojice seker praskajících rudými blesky, lačných po dalším úderu."
 }

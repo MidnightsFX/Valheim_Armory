@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "不死者之爪",
   "va_item_crossbow_silver_description": "暗木撐起銀色，在月光下閃閃發光。",
   "va_item_soulstealer": "靈魂掠奪者",
-  "va_item_soulstealer_description": "你愿意付出什么代价？"
+  "va_item_soulstealer_description": "你愿意付出什么代价？",
+  "item_mold_va": "模具：",
+  "item_cast_va": "鑄胚：",
+  "item_knife_gold_2h": "諾德雙刀",
+  "item_knife_gold_2h_description": "你的敵人最後看見的，將是兩道金色閃光。",
+  "item_knife_gold_2h_frostfire": "霜火雙刀",
+  "item_knife_gold_2h_frostfire_description": "兩柄纏繞著冰冷藍焰的利刃，傷口先被凍結，繼而灼燒。",
+  "item_knife_gold_2h_thunderblood": "雷血雙刀",
+  "item_knife_gold_2h_thunderblood_description": "兩柄迸發著赤紅雷電的利刃，永遠渴求著下一道傷口。",
+  "item_dual_axes_gold": "諾德雙斧",
+  "item_dual_axes_gold_description": "兩柄淬火黃金鑄成的戰斧，足以砍倒森林，或是巨人。",
+  "item_dual_axes_gold_frostfire": "霜火雙斧",
+  "item_dual_axes_gold_frostfire_description": "兩柄纏繞著冰冷藍焰的戰斧，每一擊先凍結，繼而灼燒。",
+  "item_dual_axes_gold_thunderblood": "雷血雙斧",
+  "item_dual_axes_gold_thunderblood_description": "兩柄迸發著赤紅雷電的戰斧，渴求著下一次劈砍。"
 }

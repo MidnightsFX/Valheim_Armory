@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Drauga Nagla",
   "va_item_crossbow_silver_description": "Tumšs koks nostiprināts ar sudrabu, tas spīd mēness gaismā.",
   "va_item_soulstealer": "Dvēseles zagli.",
-  "va_item_soulstealer_description": "Kādu cenu esat gatavs maksāt?"
+  "va_item_soulstealer_description": "Kādu cenu esat gatavs maksāt?",
+  "item_mold_va": "Veidne:",
+  "item_cast_va": "Lējums:",
+  "item_knife_gold_2h": "Ziemeļu dunči",
+  "item_knife_gold_2h_description": "Divi zelta uzplaiksnījumi ir pēdējais, ko tavi ienaidnieki jebkad redzēs.",
+  "item_knife_gold_2h_frostfire": "Salnuguns dunči",
+  "item_knife_gold_2h_frostfire_description": "Dvīņu asmeņi, ietīti aukstā zilā liesmā. To brūces vispirms sasalst, tad sadeg.",
+  "item_knife_gold_2h_thunderblood": "Pērkonasiņu dunči",
+  "item_knife_gold_2h_thunderblood_description": "Dvīņu asmeņi, kas sprakšķ ar sarkaniem zibeņiem un vienmēr slāpst pēc nākamās brūces.",
+  "item_dual_axes_gold": "Ziemeļu dubultcirvji",
+  "item_dual_axes_gold_description": "Divi rūdīta zelta asmeņi, pietiekami smagi, lai nogāztu mežu vai jotunu.",
+  "item_dual_axes_gold_frostfire": "Salnuguns dubultcirvji",
+  "item_dual_axes_gold_frostfire_description": "Dvīņu cirvji, ietīti aukstā zilā liesmā. Katrs cirtiens vispirms sasaldē, tad sadedzina.",
+  "item_dual_axes_gold_thunderblood": "Pērkonasiņu dubultcirvji",
+  "item_dual_axes_gold_thunderblood_description": "Dvīņu cirvji, kas sprakšķ ar sarkaniem zibeņiem un alkst nākamā cirtiena."
 }

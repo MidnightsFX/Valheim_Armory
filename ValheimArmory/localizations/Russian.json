@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Коготь драугра",
   "va_item_crossbow_silver_description": "Темное дерево, обитое серебром, сверкает в лунном свете.",
   "va_item_soulstealer": "Душегуб",
-  "va_item_soulstealer_description": "Какую цену ты готов заплатить?"
+  "va_item_soulstealer_description": "Какую цену ты готов заплатить?",
+  "item_mold_va": "Форма:",
+  "item_cast_va": "Заготовка:",
+  "item_knife_gold_2h": "Нордские кинжалы",
+  "item_knife_gold_2h_description": "Двойная золотая вспышка будет последним, что увидят ваши враги.",
+  "item_knife_gold_2h_frostfire": "Кинжалы льда и огня",
+  "item_knife_gold_2h_frostfire_description": "Парные клинки, окутанные холодным синим пламенем. Их порезы сперва леденят, а затем жгут.",
+  "item_knife_gold_2h_thunderblood": "Кинжалы громовой крови",
+  "item_knife_gold_2h_thunderblood_description": "Парные клинки, потрескивающие красными молниями и вечно жаждущие новой раны.",
+  "item_dual_axes_gold": "Нордские парные топоры",
+  "item_dual_axes_gold_description": "Два лезвия из закалённого золота, достаточно тяжёлые, чтобы свалить лес или йотуна.",
+  "item_dual_axes_gold_frostfire": "Парные топоры льда и огня",
+  "item_dual_axes_gold_frostfire_description": "Парные топоры, окутанные холодным синим пламенем. Каждый удар сперва леденит, а затем жжёт.",
+  "item_dual_axes_gold_thunderblood": "Парные топоры громовой крови",
+  "item_dual_axes_gold_thunderblood_description": "Парные топоры, потрескивающие красными молниями и вечно жаждущие нового удара."
 }

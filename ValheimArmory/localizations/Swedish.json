@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Draugr Klo",
   "va_item_crossbow_silver_description": "Mörkt trä förstärkt med silver, det glittrar i månskenet.",
   "va_item_soulstealer": "Själstjälare",
-  "va_item_soulstealer_description": "Vilket pris är du beredd att betala?"
+  "va_item_soulstealer_description": "Vilket pris är du beredd att betala?",
+  "item_mold_va": "Gjutform:",
+  "item_cast_va": "Gjutning:",
+  "item_knife_gold_2h": "Nordiska dolkar",
+  "item_knife_gold_2h_description": "Två guldglimtar är det sista dina fiender någonsin får se.",
+  "item_knife_gold_2h_frostfire": "Frosteldsdolkar",
+  "item_knife_gold_2h_frostfire_description": "Tvillingklingor höljda i kall blå låga. Deras hugg fryser först och bränner sedan.",
+  "item_knife_gold_2h_thunderblood": "Åskblodsdolkar",
+  "item_knife_gold_2h_thunderblood_description": "Tvillingklingor som sprakar av röda blixtar, alltid törstande efter nästa sår.",
+  "item_dual_axes_gold": "Nordiska dubbelyxor",
+  "item_dual_axes_gold_description": "Två huvuden av härdat guld, tunga nog att fälla en skog eller en jätte.",
+  "item_dual_axes_gold_frostfire": "Frosteldsdubbelyxor",
+  "item_dual_axes_gold_frostfire_description": "Tvillingyxor höljda i kall blå låga. Varje hugg fryser först och bränner sedan.",
+  "item_dual_axes_gold_thunderblood": "Åskblodsdubbelyxor",
+  "item_dual_axes_gold_thunderblood_description": "Tvillingyxor som sprakar av röda blixtar, alltid hungriga efter nästa hugg."
 }

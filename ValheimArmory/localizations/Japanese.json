@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "ドラウグルの爪",
   "va_item_crossbow_silver_description": "銀で補強されたダークウッドは、月明かりの中で輝いています。",
   "va_item_soulstealer": "魂を奪う者",
-  "va_item_soulstealer_description": "どのくらいの価格を払うつもりですか？"
+  "va_item_soulstealer_description": "どのくらいの価格を払うつもりですか？",
+  "item_mold_va": "鋳型：",
+  "item_cast_va": "鋳造：",
+  "item_knife_gold_2h": "ノルドのツインダガー",
+  "item_knife_gold_2h_description": "敵が最後に目の当たりにするのは、二筋の黄金の閃光。",
+  "item_knife_gold_2h_frostfire": "氷炎のツインダガー",
+  "item_knife_gold_2h_frostfire_description": "冷たい青い炎をまとった双刃。その傷はまず凍りつき、そして焼ける。",
+  "item_knife_gold_2h_thunderblood": "雷血のツインダガー",
+  "item_knife_gold_2h_thunderblood_description": "赤い稲妻を迸らせる双刃。常に次の傷を渇望している。",
+  "item_dual_axes_gold": "ノルドの双斧",
+  "item_dual_axes_gold_description": "焼き入れた黄金の二枚刃。森もヨトゥンも切り倒せるほど重い。",
+  "item_dual_axes_gold_frostfire": "氷炎の双斧",
+  "item_dual_axes_gold_frostfire_description": "冷たい青い炎をまとった双斧。その一撃はまず凍らせ、そして焼く。",
+  "item_dual_axes_gold_thunderblood": "雷血の双斧",
+  "item_dual_axes_gold_thunderblood_description": "赤い稲妻を迸らせる双斧。常に次の一撃を渇望している。"
 }

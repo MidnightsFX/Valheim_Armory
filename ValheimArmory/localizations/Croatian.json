@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Draugrov kandža",
   "va_item_crossbow_silver_description": "Tamno drvo oslonjeno srebrom, sjaji se na mjesečini.",
   "va_item_soulstealer": "Kradljivac duša",
-  "va_item_soulstealer_description": "Koju cijenu ste spremni platiti?"
+  "va_item_soulstealer_description": "Koju cijenu ste spremni platiti?",
+  "item_mold_va": "Kalup:",
+  "item_cast_va": "Odljevak:",
+  "item_knife_gold_2h": "Nordijski bodeži",
+  "item_knife_gold_2h_description": "Dva zlatna bljeska posljednje su što će tvoji neprijatelji ikada vidjeti.",
+  "item_knife_gold_2h_frostfire": "Bodeži ledene vatre",
+  "item_knife_gold_2h_frostfire_description": "Dvostruke oštrice obavijene hladnim plavim plamenom. Njihove posjekotine najprije smrzavaju, a zatim pale.",
+  "item_knife_gold_2h_thunderblood": "Bodeži gromovite krvi",
+  "item_knife_gold_2h_thunderblood_description": "Dvostruke oštrice koje pucketaju crvenim munjama, uvijek žedne nove rane.",
+  "item_dual_axes_gold": "Nordijske dvostruke sjekire",
+  "item_dual_axes_gold_description": "Dvije oštrice od kaljenog zlata, dovoljno teške da obore šumu ili jotuna.",
+  "item_dual_axes_gold_frostfire": "Dvostruke sjekire ledene vatre",
+  "item_dual_axes_gold_frostfire_description": "Dvostruke sjekire obavijene hladnim plavim plamenom. Svaki udarac najprije smrzava, a zatim pali.",
+  "item_dual_axes_gold_thunderblood": "Dvostruke sjekire gromovite krvi",
+  "item_dual_axes_gold_thunderblood_description": "Dvostruke sjekire koje pucketaju crvenim munjama, gladne sljedećeg udarca."
 }

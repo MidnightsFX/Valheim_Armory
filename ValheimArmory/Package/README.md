@@ -29,6 +29,7 @@ Here is a sample gallery of weapons added by this mod. There are over 115 items 
 
 Below is more information on all of the items added, what tier they are in, where they are crafted and at what progression point. All of the sections below are expandable to view the details. 
 It is encouraged that you find these items by exploring and discovery, but many details about the items are listed here.
+The ingredients shown are the default recipes; a server can change them in the config.
 
 <details>
   <summary>Boss Weapons</summary>
@@ -36,67 +37,68 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
   ## Eikthyrs
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Antler Bow | Workbench | Post-Meadows | `VAAntler_Bow` | ![Antler Bow Icon](https://i.imgur.com/YYavFT6.png) |
-  | Antler Dagger | Workbench | Post-Meadows | `VAAntler_dagger` | ![Antler Dagger Icon](https://i.imgur.com/TImtKNo.png) |
-  | Antler Sword | Workbench | Post-Meadows | `VAAntler_Sword` | ![Antler Sword Icon](https://i.imgur.com/uw1ZNgz.png) |
-  | Antler Atgeir | Workbench | Post-Meadows | `VAatgeir_antler` | ![Antler Atgier Icon](https://i.imgur.com/URdXvZc.png) |
-  | Antler Greataxe | Workbench | Post-Meadows | `VAAntler_greataxe` | ![Antler Greataxe Icon](https://i.imgur.com/jIAHbCD.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Antler Bow | Workbench | Post-Meadows | 15 Finewood, 20 Resin, 3 Hard Antler, 1 Eikthyr Trophy | `VAAntler_Bow` | ![Antler Bow Icon](https://i.imgur.com/YYavFT6.png) |
+  | Antler Dagger | Workbench | Post-Meadows | 3 Finewood, 16 Resin, 3 Hard Antler, 1 Eikthyr Trophy | `VAAntler_dagger` | ![Antler Dagger Icon](https://i.imgur.com/TImtKNo.png) |
+  | Antler Sword | Workbench | Post-Meadows | 3 Finewood, 16 Resin, 3 Hard Antler, 1 Eikthyr Trophy | `VAAntler_Sword` | ![Antler Sword Icon](https://i.imgur.com/uw1ZNgz.png) |
+  | Antler Atgeir | Workbench | Post-Meadows | 15 Finewood, 30 Resin, 3 Hard Antler, 1 Eikthyr Trophy | `VAatgeir_antler` | ![Antler Atgier Icon](https://i.imgur.com/URdXvZc.png) |
+  | Antler Greataxe | Workbench | Post-Meadows | 15 Finewood, 30 Resin, 3 Hard Antler, 1 Eikthyr Trophy | `VAAntler_greataxe` | ![Antler Greataxe Icon](https://i.imgur.com/jIAHbCD.png) |
 
   ## Elder
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Vine hammer | Forge | Post-Blackforest | `VAElderHammer` | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
-  | Vine shield | Forge | Post-Blackforest | `VAElderRoundShield` | ![Elders roundshield icon](https://i.imgur.com/2eNj45X.png) |
-  | Vine crossbow | Forge | Post-Blackforest | `VACrossbowElder` | ![Elders crossbow Icon](https://i.imgur.com/fDaATMs.png) |
-  | Vine sword | Forge | Post-Blackforest | `VAVine_Sword` | ![Elders Sword Icon](https://i.imgur.com/621VD59.png) |
-  | Vine mace | Forge | Post-Blackforest | `VAElder_mace` | ![Elders Mace Icon](https://i.imgur.com/SfYdLP7.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Vine hammer | Forge | Post-Blackforest | 4 Bronze, 30 Stone, 1 Swamp Key, 1 The Elder Trophy | `VAElderHammer` | ![Elder Sledgehammer icon](https://i.imgur.com/IvJzuX3.png) |
+  | Vine shield | Forge | Post-Blackforest | 16 Wood, 8 Bronze, 1 Swamp Key, 1 The Elder Trophy | `VAElderRoundShield` | ![Elders roundshield icon](https://i.imgur.com/2eNj45X.png) |
+  | Vine crossbow | Forge | Post-Blackforest | 4 Bronze, 20 Corewood, 1 Swamp Key, 1 The Elder Trophy | `VACrossbowElder` | ![Elders crossbow Icon](https://i.imgur.com/fDaATMs.png) |
+  | Vine sword | Forge | Post-Blackforest | 2 Bronze, 16 Stone, 1 Swamp Key, 1 The Elder Trophy | `VAVine_Sword` | ![Elders Sword Icon](https://i.imgur.com/621VD59.png) |
+  | Vine mace | Forge | Post-Blackforest | 2 Bronze, 16 Stone, 1 Swamp Key, 1 The Elder Trophy | `VAElder_mace` | ![Elders Mace Icon](https://i.imgur.com/SfYdLP7.png) |
 
   ## Bonemass
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Bonerot Sledge | Forge | Post-Swamp | `VABonemassWarhammer` | ![Bonemass Warhammer icon](https://i.postimg.cc/LXhpnFY0/bonemass-warhammer.png) |
-  | Bonerot Greatsword | Forge | Post-Swamp | `VABonemassGreatsword` | ![bonemass greatsword icon](https://i.postimg.cc/0Q3qSX75/bonemass-greatsword.png) |
-  | Bonerot Sword | Forge | Post-Swamp | `VABonemassSword` | ![bonemass sword icon](https://i.postimg.cc/TYnpRnX5/bonemass-sword.png) |
-  | Bonerot Knife | Forge | Post-Swamp | `VABonemassDagger` | ![Bonemasses dagger icon](https://i.postimg.cc/qq3HxcGs/bonemass-dagger.png) |
-  | Bonerot Axe | Forge | Post-Swamp | `VABone_axe` | ![Bonemasses axe](https://i.postimg.cc/Wzr98FpZ/bonemass-axe.png) |
-  | Bonerot Dualaxes | Forge | Post-Swamp | `VABone_dualaxes` | ![Bonemasses dualaxe](https://i.postimg.cc/P5d6b5g8/bonerot-dualaxes.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Bonerot Sledge | Forge | Post-Swamp | 10 Withered Bone, 30 Iron, 1 Wishbone, 1 Bonemass Trophy | `VABonemassWarhammer` | ![Bonemass Warhammer icon](https://i.postimg.cc/LXhpnFY0/bonemass-warhammer.png) |
+  | Bonerot Greatsword | Forge | Post-Swamp | 15 Withered Bone, 30 Iron, 1 Wishbone, 1 Bonemass Trophy | `VABonemassGreatsword` | ![bonemass greatsword icon](https://i.postimg.cc/0Q3qSX75/bonemass-greatsword.png) |
+  | Bonerot Sword | Forge | Post-Swamp | 10 Withered Bone, 22 Iron, 1 Wishbone, 1 Bonemass Trophy | `VABonemassSword` | ![bonemass sword icon](https://i.postimg.cc/TYnpRnX5/bonemass-sword.png) |
+  | Bonerot Knife | Forge | Post-Swamp | 2 Withered Bone, 12 Iron, 1 Wishbone, 1 Bonemass Trophy | `VABonemassDagger` | ![Bonemasses dagger icon](https://i.postimg.cc/qq3HxcGs/bonemass-dagger.png) |
+  | Bonerot Axe | Forge | Post-Swamp | 6 Withered Bone, 20 Iron, 1 Wishbone, 1 Bonemass Trophy | `VABone_axe` | ![Bonemasses axe](https://i.postimg.cc/Wzr98FpZ/bonemass-axe.png) |
+  | Bonerot Dualaxes | Forge | Post-Swamp | 12 Withered Bone, 40 Iron, 1 Wishbone, 1 Bonemass Trophy | `VABone_dualaxes` | ![Bonemasses dualaxe](https://i.postimg.cc/P5d6b5g8/bonerot-dualaxes.png) |
 
   ## Moder
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Dragonfrost sword | Forge | Post-Mountain | `VASwordModer` | ![Ice sword Icon](https://i.postimg.cc/hPTmNHFS/moder-sword.png) |
-  | Dragonfrost spear | Forge | Post-Mountain | `VASpearModer` | ![Ice Spear Icon](https://i.postimg.cc/t7QXhSDk/moder-spear.png) |
-  | Dragonfrost crossbow | Forge | Post-Mountain | `VACrossbowModer` | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
-  | Dragonfrost shield | Forge | Post-Mountain | `VAModer_shield` | ![Moder shield](https://i.postimg.cc/C1q7K5BQ/modershiled-v2.png) |
-  | Dragonfrost knife | Forge | Post-Mountain | `VAdagger_moder` | ![Moder Knife](https://i.postimg.cc/FHbKx4ML/moder-dagger.png) |
-  | Dragonfrost dual knives | Forge | Post-Mountain | `VAdagger_moder_2h` | ![Dual Ice Knives](https://i.postimg.cc/t4zx4WCw/moder-dagger-2h.png) |
-  | Dragonfrost greatsword | Forge | Post-Mountain | `VAModer_greatsword` | ![Moder greatsword](https://i.postimg.cc/c4nCrYTT/moder-greatsword.png) |
-  | Dragonfrost Axe | Forge | Post-Mountain | `VAModer_Axe` | ![Moder Knife](https://i.postimg.cc/qvjBRLDq/moder-axe-1h.png) |
-  | Dragonfrost Dual axes | Forge | Post-Mountain | `VAModer_dualaxes` | ![Moder Knife](https://i.postimg.cc/FH9sNqZw/moder-dualaxes.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Dragonfrost sword | Forge | Post-Mountain | 4 Ancient Bark, 30 Obsidian, 10 Dragon Tear, 1 Moder Trophy | `VASwordModer` | ![Ice sword Icon](https://i.postimg.cc/hPTmNHFS/moder-sword.png) |
+  | Dragonfrost spear | Forge | Post-Mountain | 15 Ancient Bark, 8 Obsidian, 10 Dragon Tear, 1 Moder Trophy | `VASpearModer` | ![Ice Spear Icon](https://i.postimg.cc/t7QXhSDk/moder-spear.png) |
+  | Dragonfrost crossbow | Forge | Post-Mountain | 10 Ancient Bark, 20 Obsidian, 10 Dragon Tear, 1 Moder Trophy | `VACrossbowModer` | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
+  | Dragonfrost shield | Forge | Post-Mountain | 24 Finewood, 16 Silver, 10 Dragon Tear, 1 Moder Trophy | `VAModer_shield` | ![Moder shield](https://i.postimg.cc/C1q7K5BQ/modershiled-v2.png) |
+  | Dragonfrost buckler | Forge | Post-Mountain | 24 Finewood, 16 Silver, 10 Dragon Tear, 1 Moder Trophy | `VAModer_RoundShield` | ![Moder roundshield](https://i.imgur.com/kDHDtJT.png) |
+  | Dragonfrost knife | Forge | Post-Mountain | 4 Ancient Bark, 15 Obsidian, 10 Dragon Tear, 1 Moder Trophy | `VAdagger_moder` | ![Moder Knife](https://i.postimg.cc/FHbKx4ML/moder-dagger.png) |
+  | Dragonfrost dual knives | Forge | Post-Mountain | 10 Dragon Tear, 1 Moder Trophy, 15 Silver, 6 Ancient Bark | `VAdagger_moder_2h` | ![Dual Ice Knives](https://i.postimg.cc/t4zx4WCw/moder-dagger-2h.png) |
+  | Dragonfrost greatsword | Forge | Post-Mountain | 25 Crystal, 15 Obsidian, 10 Dragon Tear, 1 Moder Trophy | `VAModer_greatsword` | ![Moder greatsword](https://i.postimg.cc/c4nCrYTT/moder-greatsword.png) |
+  | Dragonfrost Axe | Forge | Post-Mountain | 10 Dragon Tear, 1 Moder Trophy, 15 Silver, 8 Finewood | `VAModer_Axe` | ![Moder Knife](https://i.postimg.cc/qvjBRLDq/moder-axe-1h.png) |
+  | Dragonfrost Dual axes | Forge | Post-Mountain | 10 Dragon Tear, 1 Moder Trophy, 30 Silver, 16 Finewood | `VAModer_dualaxes` | ![Moder Knife](https://i.postimg.cc/FH9sNqZw/moder-dualaxes.png) |
 
   ## Yagluth
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Goblin king atgeir | Forge | Post-Plains | `VAYagluthAtgeir` | ![darkmetal atgeir](https://i.imgur.com/LXLNlF0.png) |
-  | Goblin king greatsword | Forge | Post-Plains | `VAYagluth_greatsword` | ![darkmetal greatsword](https://i.imgur.com/diyEKHx.png) |
-  | Goblin king knuckles | Forge | Post-Plains | `VAFist_Yagluth` | ![darkmetal knuckles](https://i.imgur.com/yGTlNh1.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Goblin king atgeir | Forge | Post-Plains | 10 Black Metal, 4 Iron, 2 Torn Spirit, 1 Yagluth Trophy | `VAYagluthAtgeir` | ![darkmetal atgeir](https://i.imgur.com/LXLNlF0.png) |
+  | Goblin king greatsword | Forge | Post-Plains | 10 Black Metal, 4 Iron, 2 Torn Spirit, 1 Yagluth Trophy | `VAYagluth_greatsword` | ![darkmetal greatsword](https://i.imgur.com/diyEKHx.png) |
+  | Goblin king knuckles | Forge | Post-Plains | 4 Black Metal, 6 Iron, 2 Torn Spirit, 1 Yagluth Trophy | `VAFist_Yagluth` | ![darkmetal knuckles](https://i.imgur.com/yGTlNh1.png) |
 
   ## Queen
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Carapace sword | Blackforge | Post-Mistlands | `VASwordQueen` | ![carapace sword](https://i.imgur.com/hXZKfvN.png) |
-  | Carapace dagger | Blackforge | Post-Mistlands | `VAdagger_queen` | ![carapace dagger](https://i.imgur.com/zbJagxI.png) |
-  | Pincer greatsword | Blackforge | Post-Mistlands | `VAQueen_greatsword` | ![pincer greatsword](https://i.imgur.com/cR358cp.png) |
-  | Pincer greatbow | Blackforge | Post-Mistlands | `VAQueen_bow` | ![pincer greatbow](https://i.imgur.com/CUFQTOp.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Carapace sword | Blackforge | Post-Mistlands | 3 Yggdrasil Wood, 10 Refined Eitr, 3 Blue Jute, 1 The Queen Trophy | `VASwordQueen` | ![carapace sword](https://i.imgur.com/hXZKfvN.png) |
+  | Carapace dagger | Blackforge | Post-Mistlands | 2 Yggdrasil Wood, 10 Refined Eitr, 2 Blue Jute, 1 The Queen Trophy | `VAdagger_queen` | ![carapace dagger](https://i.imgur.com/zbJagxI.png) |
+  | Pincer greatsword | Blackforge | Post-Mistlands | 10 Yggdrasil Wood, 20 Refined Eitr, 4 Blue Jute, 1 The Queen Trophy | `VAQueen_greatsword` | ![pincer greatsword](https://i.imgur.com/cR358cp.png) |
+  | Pincer greatbow | Blackforge | Post-Mistlands | 10 Yggdrasil Wood, 20 Refined Eitr, 4 Blue Jute, 1 The Queen Trophy | `VAQueen_bow` | ![pincer greatbow](https://i.imgur.com/CUFQTOp.png) |
 
   ## Fader
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Dreadfire sword | Blackforge | Post-Ashlands | `VASwordFader` | ![fader sword](https://i.postimg.cc/NFwjfrtZ/fader-sword.png) |
-  | Dreadfire greatsword | Blackforge | Post-Ashlands | `VAGreatswordFader` | ![fader greatsword](https://i.postimg.cc/G2DpCxWk/fader-greatsword.png) |
-  | Dreadfire spear | Blackforge | Post-Ashlands | `VASpearFader` | ![pincer greatsword](https://i.postimg.cc/QNpMYSkD/fader-spear.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Dreadfire sword | Blackforge | Post-Ashlands | 30 Flametal, 30 Charred Bone, 1 Fader Trophy, 1 Fader Relic | `VASwordFader` | ![fader sword](https://i.postimg.cc/NFwjfrtZ/fader-sword.png) |
+  | Dreadfire greatsword | Blackforge | Post-Ashlands | 40 Flametal, 20 Charred Bone, 1 Fader Trophy, 1 Fader Relic | `VAGreatswordFader` | ![fader greatsword](https://i.postimg.cc/G2DpCxWk/fader-greatsword.png) |
+  | Dreadfire spear | Blackforge | Post-Ashlands | 24 Flametal, 10 Ashwood, 1 Fader Trophy, 1 Fader Relic | `VASpearFader` | ![pincer greatsword](https://i.postimg.cc/QNpMYSkD/fader-spear.png) |
 
 </details>
 
@@ -105,28 +107,28 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
   ### Arrows
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Bone arrow | Workbench | Meadows | `VAArrowBone` | ![bone arrow icon](https://imgur.com/KUYj0Zp.png) |
-  | Chitin arrow | Workbench | Ocean | `VAchitinarrow` | ![chitin arrow icon](https://imgur.com/LKNQnEt.png) |
-  | Ancient Wood arrow | Workbench | Swamp | `VAarrowancient` | ![ancient wood arrow icon](https://imgur.com/d28tCPw.png) |
-  | Surtling Fire arrow | Forge | Mountain | `VAarrow_surtling_fire` | ![surtling fire arrow icon](https://i.imgur.com/K5Erlwt.png) |
-  | Blackmetal arrow | Forge | Plains | `VAArrowGreenMetal` | ![blackmetal arrow icon](https://imgur.com/yiJKz6s.png) | 
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Bone arrow | Workbench | Meadows | 8 Bone Fragments, 2 Feathers (makes 20) | `VAArrowBone` | ![bone arrow icon](https://imgur.com/KUYj0Zp.png) |
+  | Chitin arrow | Workbench | Ocean | 8 Wood, 2 Chitin, 2 Feathers (makes 20) | `VAChitinArrow` | ![chitin arrow icon](https://imgur.com/LKNQnEt.png) |
+  | Ancient Wood arrow | Workbench | Swamp | 8 Ancient Bark, 2 Feathers (makes 20) | `VAArrowAncient` | ![ancient wood arrow icon](https://imgur.com/d28tCPw.png) |
+  | Surtling Fire arrow | Workbench | Mountain | 8 Wood, 4 Obsidian, 2 Feathers, 1 Surtling Core (makes 20) | `VAarrow_surtling_fire` | ![surtling fire arrow icon](https://i.imgur.com/K5Erlwt.png) |
+  | Blackmetal arrow | Forge | Plains | 8 Wood, 2 Black Metal, 2 Feathers (makes 20) | `VAArrowGreenMetal` | ![blackmetal arrow icon](https://imgur.com/yiJKz6s.png) | 
 
   ---
   ### Bolts
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Wood Bolt | Workbench | Blackforest | `VABoltWood` | ![wood crossbow bolt](https://i.postimg.cc/gkc96zKV/bolt-wood.png) |
-  | Corewood Bolt | Workbench | Blackforest | `VABoltWood` | ![corewood crossbow bolt](https://i.postimg.cc/RFJy4q4m/bolt-corewood.png) |
-  | Bronze Bolt | Forge | Blackforest | `VAbolt_bronze` | ![bronze bolt](https://i.imgur.com/cUJTlB3.png) |
-  | Fire Bolt | Workbench | Blackforest | `VAFireBolt` | ![fire bolt](https://i.imgur.com/iZ5fOrF.png) |
-  | Poison Bolt | Forge | Swamp | `VAbolt_poison` | ![iron poison bolt](https://i.imgur.com/mVLDfm8.png) |
-  | Surtling Bolt | Forge | Swamp | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/iZ5fOrF.png) |
-  | Frost Bolt | Forge | Mountain | `VAbolt_frost` | ![Silver Frost bolt](https://i.imgur.com/0FGHrBB.png) |
-  | Obsidian Bolt | Workbench | Mountain | `VAObsidianBolt` | ![obsidian bolt](https://i.imgur.com/luqYGzO.png) |
-  | Needle Bolt | Workbench | Plains | `VABoltNeedle` | ![needle bolt](https://i.postimg.cc/t4VwknJ4/needle-bolt.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Wood Bolt | Workbench | Blackforest | 8 Wood (makes 20) | `VABoltWood` | ![wood crossbow bolt](https://i.postimg.cc/gkc96zKV/bolt-wood.png) |
+  | Corewood Bolt | Workbench | Blackforest | 8 Corewood, 2 Feathers (makes 20) | `VABoltCoreWood` | ![corewood crossbow bolt](https://i.postimg.cc/RFJy4q4m/bolt-corewood.png) |
+  | Bronze Bolt | Forge | Blackforest | 8 Wood, 1 Bronze, 2 Feathers (makes 20) | `VAbolt_bronze` | ![bronze bolt](https://i.imgur.com/cUJTlB3.png) |
+  | Fire Bolt | Workbench | Blackforest | 8 Wood, 8 Resin, 2 Feathers (makes 20) | `VAFireBolt` | ![fire bolt](https://i.imgur.com/iZ5fOrF.png) |
+  | Poison Bolt | Forge | Swamp | 8 Wood, 1 Iron, 2 Feathers, 1 Ooze (makes 20) | `VAbolt_poison` | ![iron poison bolt](https://i.imgur.com/mVLDfm8.png) |
+  | Surtling Bolt | Forge | Swamp | 8 Wood, 1 Iron, 2 Feathers, 1 Surtling Core (makes 20) | `VASurtlingBolt` | ![blackmetal surtling bolt](https://i.imgur.com/iZ5fOrF.png) |
+  | Frost Bolt | Forge | Mountain | 8 Wood, 1 Silver, 2 Feathers, 1 Freeze Gland (makes 20) | `VAbolt_frost` | ![Silver Frost bolt](https://i.imgur.com/0FGHrBB.png) |
+  | Obsidian Bolt | Workbench | Mountain | 8 Wood, 4 Obsidian, 2 Feathers (makes 20) | `VAObsidianBolt` | ![obsidian bolt](https://i.imgur.com/luqYGzO.png) |
+  | Needle Bolt | Workbench | Plains | 8 Needle, 2 Feathers (makes 20) | `VABoltNeedle` | ![needle bolt](https://i.postimg.cc/t4VwknJ4/needle-bolt.png) |
 
   #### Bolts in treasure chests
 
@@ -157,15 +159,15 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
   Added Atgiers help fill in missing tiers.
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Flint Atgeir | Workbench | Meadows | `VAAtgeir_Flint` | ![flint atgeir icon](https://i.imgur.com/ASQRVLD.png) |
-  | Royal Abyssal Atgeir | Forge | Mountain | `VAAtgeirchitin` | ![royal abyssal atgeir icon](https://i.imgur.com/FCO85Nq.png) |
-  | Silver Atgeir | Forge | Mountain | `VASilverAtgeir` | ![silver atgeir icon](https://i.imgur.com/WLB6PWp.png) |
-  | Flametal Atgeir | Blackforge | Ashlands | `VAMeteorAtgeir` | ![meteor atgeir icon](https://i.postimg.cc/kGvHd2Mh/meteor-atgeir.png) |
-  | Flametal primal Atgeir | Blackforge | Ashlands | `VAMeteorAtgeir_nature` | ![meteor atgeir icon](https://i.postimg.cc/sgNNydyy/meteor-atgeir-nature.png) |
-  | Flametal lightning Atgeir | Blackforge | Ashlands | `VAMeteorAtgeir_lightning` | ![meteor atgeir icon](https://i.postimg.cc/P5xRBfg2/meteor-atgeir-lightning.png) |
-  | Flametal blood Atgeir | Blackforge | Ashlands | `VAMeteorAtgeir_blood` | ![meteor atgeir icon](https://i.postimg.cc/4NXMQQBC/meteor-atgeir-blood.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Atgeir | Workbench | Meadows | 10 Wood, 6 Flint | `VAAtgeir_Flint` | ![flint atgeir icon](https://i.imgur.com/ASQRVLD.png) |
+  | Royal Abyssal Atgeir | Workbench | Mountain | 10 Finewood, 30 Chitin, 2 Deer Hide | `VAAtgeirChitin` | ![royal abyssal atgeir icon](https://i.imgur.com/FCO85Nq.png) |
+  | Silver Atgeir | Forge | Mountain | 10 Wood, 25 Silver, 4 Iron, 3 Leather Scraps | `VASilverAtgeir` | ![silver atgeir icon](https://i.imgur.com/WLB6PWp.png) |
+  | Flametal Atgeir | Blackforge | Ashlands | 15 Flametal, 4 Iron, 10 Ashwood, 2 Morgen Sinew | `VAMeteorAtgeir` | ![meteor atgeir icon](https://i.postimg.cc/kGvHd2Mh/meteor-atgeir.png) |
+  | Flametal primal Atgeir | Blackforge | Ashlands | 1 Flametal Atgeir, 8 Flametal, 5 Ashwood, 1 Jade | `VAMeteorAtgeir_nature` | ![meteor atgeir icon](https://i.postimg.cc/sgNNydyy/meteor-atgeir-nature.png) |
+  | Flametal lightning Atgeir | Blackforge | Ashlands | 1 Flametal Atgeir, 8 Flametal, 5 Ashwood, 1 Iolite | `VAMeteorAtgeir_lightning` | ![meteor atgeir icon](https://i.postimg.cc/P5xRBfg2/meteor-atgeir-lightning.png) |
+  | Flametal blood Atgeir | Blackforge | Ashlands | 1 Flametal Atgeir, 8 Flametal, 5 Ashwood, 1 Bloodstone | `VAMeteorAtgeir_blood` | ![meteor atgeir icon](https://i.postimg.cc/4NXMQQBC/meteor-atgeir-blood.png) |
 </details>
 
 
@@ -174,45 +176,41 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
   ### Axes
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Flint Axe | Workbench | Meadows | `VAFlint_Axe` | ![flint axe](https://i.postimg.cc/65XzwQ5Y/flint-axe.png) |
-  | Silver Axe | Forge | Mountain | `VAcrystal_axe` | ![crystal axe icon](https://i.postimg.cc/KjVkkWNf/silver-axe-1h-icon.png) |
-  | Jotuns Bane (half) | Blackforge | Mistlands | `VAJotunn_single_axe` | ![jotun half blade](https://i.postimg.cc/63xxYX7M/jotunn-halfblade.png) |
-  | Flametal Axe | Blackforge | Ashlands | `VAFlametal_Axe` | ![flametal axe](https://i.postimg.cc/6Q9CMc8Z/flametal-Axe-Base.png) |
-  | Flametal Blood Axe | Blackforge | Ashlands | `VAFlametal_Axe_Blood` | ![flametal blood axe](https://i.postimg.cc/sXg9gmyz/flametal_axe_1h_blood.png) |
-  | Flametal Lightning Axe | Blackforge | Ashlands | `VAFlametal_Axe_Lightning` | ![flametal lightning axe](https://i.postimg.cc/QMbJDP2S/flametal_axe_1h_lightning.png) |
-  | Flametal Primal Axe | Blackforge | Ashlands | `VAFlametal_Axe_Primal` | ![flametal primal axe](https://i.postimg.cc/JnY3DX4k/flametal_axe_1h_primal.png) |
-
-  *Note the Jotun Bane half axe is uncraftable by default*
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Axe | Workbench | Meadows | 4 Wood, 6 Flint | `VAFlint_Axe` | ![flint axe](https://i.postimg.cc/65XzwQ5Y/flint-axe.png) |
+  | Silver Axe | Forge | Mountain | 15 Ancient Bark, 20 Silver, 8 Crystal | `VAcrystal_axe` | ![crystal axe icon](https://i.postimg.cc/KjVkkWNf/silver-axe-1h-icon.png) |
+  | Jotuns Bane (half) | Blackforge | Mistlands | 10 Refined Eitr, 15 Iron, 5 Yggdrasil Wood, 3 Bilebag | `VAJotunn_single_axe` | ![jotun half blade](https://i.postimg.cc/63xxYX7M/jotunn-halfblade.png) |
+  | Flametal Axe | Blackforge | Ashlands | 12 Flametal, 4 Asksvin Hide, 10 Charred Bone | `VAFlametal_Axe` | ![flametal axe](https://i.postimg.cc/6Q9CMc8Z/flametal-Axe-Base.png) |
+  | Flametal Blood Axe | Blackforge | Ashlands | 12 Flametal, 1 Bloodstone, 10 Charred Bone, 1 Flametal Axe | `VAFlametal_Axe_Blood` | ![flametal blood axe](https://i.postimg.cc/sXg9gmyz/flametal_axe_1h_blood.png) |
+  | Flametal Lightning Axe | Blackforge | Ashlands | 12 Flametal, 1 Iolite, 10 Charred Bone, 1 Flametal Axe | `VAFlametal_Axe_Lightning` | ![flametal lightning axe](https://i.postimg.cc/QMbJDP2S/flametal_axe_1h_lightning.png) |
+  | Flametal Primal Axe | Blackforge | Ashlands | 12 Flametal, 1 Jade, 10 Charred Bone, 1 Flametal Axe | `VAFlametal_Axe_Primal` | ![flametal primal axe](https://i.postimg.cc/JnY3DX4k/flametal_axe_1h_primal.png) |
 
   ### Dualaxes
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Flint Dualaxes | Workbench | Meadows | `VAFlint_dualaxes` | ![flint dualaxes icon](https://i.postimg.cc/d0Ljnkng/flint-dualaxes.png) |
-  | Bronze Dualaxes | Forge | Blackforest | `VABronze_dualaxes` | ![bronze dualaxes icon](https://i.postimg.cc/dtNPdYGw/bronze-dualaxes.png) |
-  | Iron Dualaxes | Forge | Swamp | `VAIron_dualaxes` | ![iron dualaxes icon](https://i.postimg.cc/TP4JqtCy/iron-dualaxes.png) |
-  | Crystal Dualaxes | Forge | Mountain | `VACrystal_dualaxes` | ![crystal dualaxes icon](https://i.postimg.cc/MGQvNtzf/crystal-dualaxes.png) |
-  | Blackmetal Dualaxes | Forge | Plains | `VABlackmetal_dualaxes` | ![blackmetal dualaxes icon](https://i.postimg.cc/509WLNK9/blackmetal-dualaxes.png) |
-  | Jotun Dualaxes | Blackforge | Mistlands | `VAJotunn_dualaxes` | ![blackmetal dualaxes icon](https://i.postimg.cc/fWj51fbP/jotun-dualaxes.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Dualaxes | Workbench | Meadows | 10 Wood, 12 Flint | `VAFlint_dualaxes` | ![flint dualaxes icon](https://i.postimg.cc/d0Ljnkng/flint-dualaxes.png) |
+  | Bronze Dualaxes | Forge | Blackforest | 8 Wood, 16 Bronze, 4 Leather Scraps | `VABronze_dualaxes` | ![bronze dualaxes icon](https://i.postimg.cc/dtNPdYGw/bronze-dualaxes.png) |
+  | Iron Dualaxes | Forge | Swamp | 8 Ancient Bark, 40 Iron, 4 Leather Scraps | `VAIron_dualaxes` | ![iron dualaxes icon](https://i.postimg.cc/TP4JqtCy/iron-dualaxes.png) |
+  | Crystal Dualaxes | Forge | Mountain | 30 Ancient Bark, 50 Silver, 16 Crystal | `VACrystal_dualaxes` | ![crystal dualaxes icon](https://i.postimg.cc/MGQvNtzf/crystal-dualaxes.png) |
+  | Blackmetal Dualaxes | Forge | Plains | 50 Black Metal, 14 Finewood, 8 Linen Thread | `VABlackmetal_dualaxes` | ![blackmetal dualaxes icon](https://i.postimg.cc/509WLNK9/blackmetal-dualaxes.png) |
+  | Jotun Dualaxes | Blackforge | Mistlands | 35 Refined Eitr, 25 Iron, 14 Yggdrasil Wood, 6 Bilebag | `VAJotunn_dualaxes` | ![blackmetal dualaxes icon](https://i.postimg.cc/fWj51fbP/jotun-dualaxes.png) |
 
 
   ### Greataxes (2H Axes)
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Flint Greataxe | Workbench | Meadows | `VAFlint_greataxe` | ![flint greataxe icon](https://i.imgur.com/dPbaKtX.png) |
-  | Bronze Lumber Axe | Forge | Blackforest | `VAbronze_battleaxe` | ![bronze greataxe icon](https://i.postimg.cc/v839g0k3/bronze-axe-rebuild.png) |
-  | Blackmetal Greataxe | Forge | Plains | `VAblackmetal_2h_axe` | ![blackmetal greataxe icon](https://i.postimg.cc/2yYnjM0Z/blackmetal-2h-axe.png) |
-  | Herkirs Wrath | Forge | Plains | `VAblackmetal_battleaxe` | ![blackmetal greataxe icon](https://i.imgur.com/2H94zhh.png) |
-  | Jotuns Greataxe | Blackforge | Mistlands | `VAJotunn_2h_axe` | ![jotun greataxe icon](https://i.postimg.cc/TwtThW9J/jotun-2h-axe.png) |
-  | Flametal Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_2h` | ![flametal greataxe](https://i.postimg.cc/0NqV42fK/flametal-battleaxe.png) |
-  | Flametal Blood Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_blood_2h` | ![flametal blood greataxe](https://i.postimg.cc/6qdTdfz9/flametal_battleaxe_blood.png) |
-  | Flametal Lightning Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_lightning_2h` | ![flametal lightning greataxe](https://i.postimg.cc/dVW3m1RT/flametal_battleaxe_lightning.png) |
-  | Flametal Primal Battleaxe | Blackforge | Ashlands | `VAFlametalAxe_primal_2h` | ![flametal primal greataxe](https://i.postimg.cc/bvsJ6hLV/flametal_battleaxe_primal.png) |
-
-  *Note Herkirs Wrath is uncraftable by default*
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Greataxe | Workbench | Meadows | 8 Wood, 9 Flint | `VAFlint_greataxe` | ![flint greataxe icon](https://i.imgur.com/dPbaKtX.png) |
+  | Bronze Lumber Axe | Forge | Blackforest | 20 Corewood, 10 Bronze, 2 Deer Hide | `VAbronze_battleaxe` | ![bronze greataxe icon](https://i.postimg.cc/v839g0k3/bronze-axe-rebuild.png) |
+  | Blackmetal Greataxe | Forge | Plains | 10 Finewood, 35 Black Metal, 5 Linen Thread | `VAblackmetal_2h_axe` | ![blackmetal greataxe icon](https://i.postimg.cc/2yYnjM0Z/blackmetal-2h-axe.png) |
+  | Herkirs Wrath | Forge | Plains | 10 Finewood, 35 Black Metal, 5 Linen Thread, 4 Surtling Core | `VAblackmetal_battleaxe` | ![blackmetal greataxe icon](https://i.imgur.com/2H94zhh.png) |
+  | Jotuns Greataxe | Blackforge | Mistlands | 30 Refined Eitr, 20 Iron, 14 Yggdrasil Wood, 6 Bilebag | `VAJotunn_2h_axe` | ![jotun greataxe icon](https://i.postimg.cc/TwtThW9J/jotun-2h-axe.png) |
+  | Flametal Battleaxe | Blackforge | Ashlands | 10 Ashwood, 20 Flametal, 20 Charred Bone, 4 Asksvin Hide | `VAFlametalAxe_2h` | ![flametal greataxe](https://i.postimg.cc/0NqV42fK/flametal-battleaxe.png) |
+  | Flametal Blood Battleaxe | Blackforge | Ashlands | 1 Flametal Battleaxe, 5 Ashwood, 10 Flametal, 1 Bloodstone | `VAFlametalAxe_blood_2h` | ![flametal blood greataxe](https://i.postimg.cc/6qdTdfz9/flametal_battleaxe_blood.png) |
+  | Flametal Lightning Battleaxe | Blackforge | Ashlands | 1 Flametal Battleaxe, 5 Ashwood, 10 Flametal, 1 Iolite | `VAFlametalAxe_lightning_2h` | ![flametal lightning greataxe](https://i.postimg.cc/dVW3m1RT/flametal_battleaxe_lightning.png) |
+  | Flametal Primal Battleaxe | Blackforge | Ashlands | 1 Flametal Battleaxe, 5 Ashwood, 10 Flametal, 1 Jade | `VAFlametalAxe_primal_2h` | ![flametal primal greataxe](https://i.postimg.cc/bvsJ6hLV/flametal_battleaxe_primal.png) |
 
 </details>
 
@@ -222,31 +220,31 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
   ### Added Knives
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Iron knife | Forge | Swamp | `VAdagger_iron` | ![iron dagger icon](https://i.postimg.cc/CxfC5ZQf/iron-dagger.png) |
-  | Hati knife | Forge | Mistlands | `VAdagger_blackmetal_mistlands` | ![hati knife icon](https://i.postimg.cc/5yBdfNMc/hatti-knife.png) |
-  | Flametal knife | Blackforge | Ashlands | `VAdagger_meteor` | ![meteor dagger icon](https://i.postimg.cc/Xq8H2Zbv/meteor-dagger.png) |
-  | Flametal primal knife | Blackforge | Ashlands | `VAdagger_meteor_nature` | ![meteor nature dagger icon](https://i.postimg.cc/nhpPw4jc/meteor-dagger-primal.png) |
-  | Flametal lightning knife | Blackforge | Ashlands | `VAdagger_meteor_lightning` | ![meteor lightning dagger icon](https://i.postimg.cc/gJCMy8bp/meteor-dagger-lightning.png) |
-  | Flametal blood knife | Blackforge | Ashlands | `VAdagger_meteor_blood` | ![meteor blood dagger icon](https://i.postimg.cc/sgmNFM7P/meteor-dagger-blood.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Iron knife | Forge | Swamp | 2 Wood, 12 Iron, 4 Leather Scraps | `VAdagger_iron` | ![iron dagger icon](https://i.postimg.cc/CxfC5ZQf/iron-dagger.png) |
+  | Hati knife | Blackforge | Mistlands | 4 Finewood, 8 Black Metal, 2 Iron | `VAdagger_blackmetal_mistlands` | ![hati knife icon](https://i.postimg.cc/5yBdfNMc/hatti-knife.png) |
+  | Flametal knife | Blackforge | Ashlands | 10 Flametal, 2 Iron, 4 Ashwood, 4 Morgen Sinew | `VAdagger_meteor` | ![meteor dagger icon](https://i.postimg.cc/Xq8H2Zbv/meteor-dagger.png) |
+  | Flametal primal knife | Blackforge | Ashlands | 1 Flametal knife, 4 Flametal, 1 Jade | `VAdagger_meteor_nature` | ![meteor nature dagger icon](https://i.postimg.cc/nhpPw4jc/meteor-dagger-primal.png) |
+  | Flametal lightning knife | Blackforge | Ashlands | 1 Flametal knife, 4 Flametal, 1 Iolite | `VAdagger_meteor_lightning` | ![meteor lightning dagger icon](https://i.postimg.cc/gJCMy8bp/meteor-dagger-lightning.png) |
+  | Flametal blood knife | Blackforge | Ashlands | 1 Flametal knife, 4 Flametal, 1 Bloodstone | `VAdagger_meteor_blood` | ![meteor blood dagger icon](https://i.postimg.cc/sgmNFM7P/meteor-dagger-blood.png) |
 
   ---
 
   ### Added 2H Knives
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Flint knives | Workbench | Meadows | `VADagger_Flint_2h` | ![flint daggers icon](https://i.postimg.cc/ryj3qHBt/2h-flint-knives.png) |
-  | Copper knives | Forge | Blackforest | `VAdagger_copper_2h` | ![rascal daggers icon](https://i.postimg.cc/yYN5xPKp/copper-knives-2h.png) |
-  | Iron knives | Forge | Swamp | `VAdagger_iron_2h` | ![rogue daggers icon](https://i.postimg.cc/yN4mZVMp/iron-dagger-2h.png) |
-  | Chitin knives | Workbench | Swamp | `VAdagger_chitin_2h` | ![chitin knives icon](https://i.postimg.cc/DwyFtGfT/chitin-knives.png) |
-  | Silver knives | Forge | Mountain | `VAdagger_silver_2h` | ![blackguard runic daggers icon](https://i.postimg.cc/7L3g1FDH/silver-dagger-2h.png) |
-  | Blackmetal knives | Forge | Plains | `VAknife_blackmetal` | ![blackmetal icon 2h](https://i.postimg.cc/ZY9GTHLb/2h-blackmetal-knives.png) |
-  | Assassins knives | Blackforge | Ashlands | `VAdagger_meteor_2h` | ![meteor dagger icon 2h](https://i.postimg.cc/pTWNZtNR/2h-meteor-daggers.png) |
-  | Assassins primal knives | Blackforge | Ashlands | `VAdagger_meteor_2h_nature` | ![meteor nature dagger icon 2h](https://i.postimg.cc/jjjkRR4p/meteor-dagger-primal-2h.png) |
-  | Assassins lightning knives | Blackforge | Ashlands | `VAdagger_meteor_2h_lightning` | ![meteor lightning dagger icon 2h](https://i.postimg.cc/FRdWJGqG/meteor-dagger-lightning-2h.png) |
-  | Assassins blood knives | Blackforge | Ashlands | `VAdagger_meteor_2h_blood` | ![meteor blood dagger icon 2h](https://i.postimg.cc/yNrpd2fk/meteor-dagger-blood-2h.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint knives | Workbench | Meadows | 4 Wood, 6 Flint, 2 Leather Scraps | `VADagger_Flint_2h` | ![flint daggers icon](https://i.postimg.cc/ryj3qHBt/2h-flint-knives.png) |
+  | Copper knives | Forge | Blackforest | 4 Corewood, 16 Copper, 4 Leather Scraps | `VAdagger_copper_2h` | ![rascal daggers icon](https://i.postimg.cc/yYN5xPKp/copper-knives-2h.png) |
+  | Iron knives | Forge | Swamp | 4 Wood, 16 Iron, 6 Leather Scraps | `VAdagger_iron_2h` | ![rogue daggers icon](https://i.postimg.cc/yN4mZVMp/iron-dagger-2h.png) |
+  | Chitin knives | Workbench | Swamp | 6 Finewood, 32 Chitin, 8 Leather Scraps | `VAdagger_chitin_2h` | ![chitin knives icon](https://i.postimg.cc/DwyFtGfT/chitin-knives.png) |
+  | Silver knives | Forge | Mountain | 4 Wood, 12 Silver, 4 Iron, 6 Leather Scraps | `VAdagger_silver_2h` | ![blackguard runic daggers icon](https://i.postimg.cc/7L3g1FDH/silver-dagger-2h.png) |
+  | Blackmetal knives | Forge | Plains | 8 Finewood, 20 Black Metal, 10 Linen Thread | `VAknife_blackmetal` | ![blackmetal icon 2h](https://i.postimg.cc/ZY9GTHLb/2h-blackmetal-knives.png) |
+  | Assassins knives | Blackforge | Ashlands | 14 Flametal, 2 Iron, 6 Ashwood, 4 Morgen Sinew | `VAdagger_meteor_2h` | ![meteor dagger icon 2h](https://i.postimg.cc/pTWNZtNR/2h-meteor-daggers.png) |
+  | Assassins primal knives | Blackforge | Ashlands | 1 Assassins knives, 8 Flametal, 1 Jade | `VAdagger_meteor_2h_nature` | ![meteor nature dagger icon 2h](https://i.postimg.cc/jjjkRR4p/meteor-dagger-primal-2h.png) |
+  | Assassins lightning knives | Blackforge | Ashlands | 1 Assassins knives, 8 Flametal, 1 Iolite | `VAdagger_meteor_2h_lightning` | ![meteor lightning dagger icon 2h](https://i.postimg.cc/FRdWJGqG/meteor-dagger-lightning-2h.png) |
+  | Assassins blood knives | Blackforge | Ashlands | 1 Assassins knives, 8 Flametal, 1 Bloodstone | `VAdagger_meteor_2h_blood` | ![meteor blood dagger icon 2h](https://i.postimg.cc/yNrpd2fk/meteor-dagger-blood-2h.png) |
 
 </details>
 
@@ -256,14 +254,24 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
   ### Added Crossbows
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Wood Crossbow | Workbench | Meadows | `VACrossbowWood` | ![bronze crossbow icon](https://i.postimg.cc/02nGsdBH/wood-Crossbow.png) |
-  | Bronze Crossbow | Forge | Blackforest | `VACrossbowBronze` | ![bronze crossbow icon](https://i.imgur.com/GkWbooT.png) |
-  | Iron Crossbow | Forge | Swamp | `VACrossbowIron` | ![bronze arbalist icon](https://i.postimg.cc/QCCMz0sb/iron-crossbow.png) |
-  | Draugr Claw | Forge | Mountain | `VACrossbowSilver` | ![bronze arbalist icon](https://i.postimg.cc/Hxb5PQMz/silver-crossbow.png) |
-  | Blackmetal Crossbow | Forge | Plains | `VACrossbowBlackmetal` | ![blackmetal crossbow](https://i.postimg.cc/nrkpFR0Q/blackmetal-crossbow.png) |
-  | Bronze Arbalist | Forge | Plains | `VAArbalistBronze` | ![bronze arbalist icon](https://i.imgur.com/iuk67H0.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Wood Crossbow | Workbench | Meadows | 30 Wood, 10 Resin, 2 Deer Hide | `VACrossbowWood` | ![bronze crossbow icon](https://i.postimg.cc/02nGsdBH/wood-Crossbow.png) |
+  | Bronze Crossbow | Forge | Blackforest | 10 Finewood, 10 Corewood, 4 Bronze, 2 Deer Hide | `VACrossbowBronze` | ![bronze crossbow icon](https://i.imgur.com/GkWbooT.png) |
+  | Iron Crossbow | Forge | Swamp | 5 Ancient Bark, 20 Finewood, 10 Iron, 2 Iron Nails | `VACrossbowIron` | ![bronze arbalist icon](https://i.postimg.cc/QCCMz0sb/iron-crossbow.png) |
+  | Draugr Claw | Forge | Mountain | 5 Guck, 20 Ancient Bark, 12 Silver, 2 Iron Nails | `VACrossbowSilver` | ![bronze arbalist icon](https://i.postimg.cc/Hxb5PQMz/silver-crossbow.png) |
+  | Blackmetal Crossbow | Forge | Plains | 16 Finewood, 20 Black Metal, 6 Linen Thread, 4 Iron | `VACrossbowBlackmetal` | ![blackmetal crossbow](https://i.postimg.cc/nrkpFR0Q/blackmetal-crossbow.png) |
+  | Bronze Arbalist | Forge | Plains | 10 Ancient Bark, 20 Bronze, 5 Red Jute, 2 Silver | `VAArbalistBronze` | ![bronze arbalist icon](https://i.imgur.com/iuk67H0.png) |
+
+  *Note the Bronze Arbalist is uncraftable by default*
+
+  ---
+
+  ### Added Bows
+
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Blackmetal Bow | Forge | Plains | 15 Finewood, 20 Black Metal, 5 Linen Thread | `VABlackmetal_bow` | |
 
 </details>
 
@@ -274,22 +282,22 @@ It is encouraged that you find these items by exploring and discovery, but many 
 
   *Note: Vanilla sledge hammers are modified to have the same attack sequence as warhammers by default (this can be turned off)*
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Bronze sledge | Forge | Blackforest | `VABronzeSledge` | ![Bronze sledge icon](https://i.postimg.cc/4yMhXkZK/bronze-sledge.png) |
-  | Silver sledge | Forge | Mountain | `VASilverSledge` | ![silver sledge icon](https://i.postimg.cc/RVCP5H7M/silver-sledge.png) |
-  | Skyshatter | Forge | Plains | `VAblackmetal_sledge` | ![blackmetal sledge icon](https://i.imgur.com/ChVYaYS.png) |
-  | Flametal Sledge | Blackforge | Ashlands | `VAflametal_sledge` | ![Flametal Sledge icon](https://i.postimg.cc/fRkfScXC/flametal-sledge.png) |
-  | Thundermaker | Blackforge | Ashlands | `VAflametal_sledge_lightning` | ![Flametal Sledge lightning icon](https://i.postimg.cc/sgB5gVdS/flametal-sledge-lightning.png) |
-  | Earthshaker | Blackforge | Ashlands | `VAflametal_sledge_nature` | ![Flametal Sledge nature icon](https://i.postimg.cc/WzbkLVwF/flametal-sledge-nature.png) |
-  | Deathblow | Blackforge | Ashlands | `VAflametal_sledge_blood` | ![Flametal Sledge blood icon](https://i.postimg.cc/BQkY4xyV/flametal-sledge-blood.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Bronze sledge | Forge | Blackforest | 8 Bronze, 25 Stone, 6 Troll Hide, 4 Corewood | `VABronzeSledge` | ![Bronze sledge icon](https://i.postimg.cc/4yMhXkZK/bronze-sledge.png) |
+  | Silver sledge | Forge | Mountain | 10 Corewood, 30 Silver, 4 Ymir Flesh, 1 Fenring Trophy | `VASilverSledge` | ![silver sledge icon](https://i.postimg.cc/RVCP5H7M/silver-sledge.png) |
+  | Skyshatter | Forge | Plains | 10 Finewood, 30 Black Metal, 5 Linen Thread, 4 Thunder Stone | `VAblackmetal_sledge` | ![blackmetal sledge icon](https://i.imgur.com/ChVYaYS.png) |
+  | Flametal Sledge | Blackforge | Ashlands | 30 Flametal, 4 Iron, 6 Refined Eitr, 12 Ashwood | `VAflametal_sledge` | ![Flametal Sledge icon](https://i.postimg.cc/fRkfScXC/flametal-sledge.png) |
+  | Thundermaker | Blackforge | Ashlands | 1 Flametal Sledge, 8 Flametal, 5 Ashwood, 1 Iolite | `VAflametal_sledge_lightning` | ![Flametal Sledge lightning icon](https://i.postimg.cc/sgB5gVdS/flametal-sledge-lightning.png) |
+  | Earthshaker | Blackforge | Ashlands | 1 Flametal Sledge, 8 Flametal, 5 Ashwood, 1 Jade | `VAflametal_sledge_nature` | ![Flametal Sledge nature icon](https://i.postimg.cc/WzbkLVwF/flametal-sledge-nature.png) |
+  | Deathblow | Blackforge | Ashlands | 1 Flametal Sledge, 8 Flametal, 5 Ashwood, 1 Bloodstone | `VAflametal_sledge_blood` | ![Flametal Sledge blood icon](https://i.postimg.cc/BQkY4xyV/flametal-sledge-blood.png) |
 
   ### Added Maces
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Flint mace | Meadows | Workbench | `VAFlintMace` | ![flint mace](https://i.postimg.cc/k4jVHf4c/flint-Mace.png) |
-  | Blackmarble mace | Blackforge | Mistlands | `VAmistland_mace` | ![mistlands mace icon](https://i.postimg.cc/MTnD0TJ8/mist-mace.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint mace | Workbench | Meadows | 4 Wood, 8 Flint, 2 Leather Scraps | `VAFlintMace` | ![flint mace](https://i.postimg.cc/k4jVHf4c/flint-Mace.png) |
+  | Blackmarble mace | Blackforge | Mistlands | 6 Yggdrasil Wood, 10 Bronze, 8 Refined Eitr, 20 Black Marble | `VAmistland_mace` | ![mistlands mace icon](https://i.postimg.cc/MTnD0TJ8/mist-mace.png) |
 
 </details>
 
@@ -298,11 +306,11 @@ It is encouraged that you find these items by exploring and discovery, but many 
   
   ### Added Shields
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Serpent Scale Buckler | Forge | Swamp | `VAserpent_buckler` | ![serpent scale buckler icon](https://i.imgur.com/jtB6efS.png) |
-  | Silver tower shield | Forge | Mountain | `VAsilver_tower` | ![silver wolf tower shield icon](https://i.postimg.cc/L6yxH8Dj/silver-tower-shield.png) |
-  | Dverger Towershield | Blackforge | Mistlands | `VAdverger_tower` | ![blackmarble tower shield](https://i.postimg.cc/tC8q78wD/dverger-towershield.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Serpent Scale Buckler | Forge | Swamp | 8 Finewood, 2 Iron, 6 Serpent Scale | `VAserpent_buckler` | ![serpent scale buckler icon](https://i.imgur.com/jtB6efS.png) |
+  | Silver tower shield | Forge | Mountain | 15 Finewood, 10 Silver, 1 Ulv Trophy | `VAsilver_tower` | ![silver wolf tower shield icon](https://i.postimg.cc/L6yxH8Dj/silver-tower-shield.png) |
+  | Dverger Towershield | Blackforge | Mistlands | 20 Black Marble, 12 Yggdrasil Wood, 1 Black Core, 14 Copper | `VAdverger_tower` | ![blackmarble tower shield](https://i.postimg.cc/tC8q78wD/dverger-towershield.png) |
 
 </details>
 
@@ -311,22 +319,22 @@ It is encouraged that you find these items by exploring and discovery, but many 
   
   ### Added Greatswords
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Flint Greatsword | Workbench | Meadows | `VAFlint_greatsword` | ![flint greatsword icon](https://i.imgur.com/IWwo2x0.png) |
-  | Bronze Greatsword | Forge | Blackforest | `VAbronze_greatsword` | ![bronze greatsword icon](https://i.postimg.cc/bYmChnN3/bronze-greatsword-reforged.png) |
-  | Iron Greatsword | Forge | Swamp | `VAiron_greatsword` | ![iron greatsword icon](https://i.postimg.cc/tTySXtxm/iron-greatsword-reforged.png) |
-  | Silver Greatsword | Forge | Mountain | `VAsilver_greatsword` | ![silver greatsword icon](https://i.postimg.cc/cJGTmMX4/silver-greatsword-reforged.png) |
-  | Blackmetal Greatsword | Forge | Plains | `VABlackmetal_greatsword` | ![blackmetal greatsword icon](https://i.postimg.cc/VkrH4Nw4/blackmetal-greatsword.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Greatsword | Workbench | Meadows | 4 Wood, 9 Flint | `VAFlint_Greatsword` | ![flint greatsword icon](https://i.imgur.com/IWwo2x0.png) |
+  | Bronze Greatsword | Forge | Blackforest | 4 Corewood, 20 Bronze, 3 Deer Hide | `VAbronze_greatsword` | ![bronze greatsword icon](https://i.postimg.cc/bYmChnN3/bronze-greatsword-reforged.png) |
+  | Iron Greatsword | Forge | Swamp | 15 Ancient Bark, 30 Iron, 4 Leather Scraps | `VAiron_greatsword` | ![iron greatsword icon](https://i.postimg.cc/tTySXtxm/iron-greatsword-reforged.png) |
+  | Silver Greatsword | Forge | Mountain | 10 Wood, 45 Silver, 5 Iron, 3 Leather Scraps | `VAsilver_greatsword` | ![silver greatsword icon](https://i.postimg.cc/cJGTmMX4/silver-greatsword-reforged.png) |
+  | Blackmetal Greatsword | Forge | Plains | 30 Black Metal, 10 Linen Thread, 6 Finewood | `VABlackmetal_greatsword` | ![blackmetal greatsword icon](https://i.postimg.cc/VkrH4Nw4/blackmetal-greatsword.png) |
 
   ---
   
   ### Added Swords
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Flint Sword | Workbench | Meadows | `VAFlint_Sword` | ![flint sword icon](https://i.imgur.com/8PEvo8I.png) |
-  | Chitin Sword | Workbench | Blackforest | `VASwordChitin` | ![chitin sword icon](https://i.imgur.com/HtNvGaA.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint Sword | Workbench | Meadows | 2 Wood, 6 Flint | `VAFlint_Sword` | ![flint sword icon](https://i.imgur.com/8PEvo8I.png) |
+  | Chitin Sword | Workbench | Blackforest | 2 Finewood, 30 Chitin, 2 Deer Hide | `VASwordChitin` | ![chitin sword icon](https://i.imgur.com/HtNvGaA.png) |
 
 </details>
 
@@ -335,11 +343,11 @@ It is encouraged that you find these items by exploring and discovery, but many 
   
   ### Added Hand weapons
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Flint knuckles | Workbench | Meadows | `VAFist_Flint` | ![flint knuckles](https://i.imgur.com/IhPPv7q.png) |
-  | Bronze knuckles | Forge | BlackForest | `VAFist_Bronze` | ![bronze knuckles](https://i.imgur.com/PEYLGow.png) |
-  | Iron knuckles | Forge | Swamp | `VAFist_Iron` | ![iron knuckles](https://i.imgur.com/Y1TkBxk.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint knuckles | Workbench | Meadows | 4 Wood, 4 Flint, 2 Leather Scraps | `VAFist_Flint` | ![flint knuckles](https://i.imgur.com/IhPPv7q.png) |
+  | Bronze knuckles | Forge | BlackForest | 4 Corewood, 6 Bronze, 4 Leather Scraps | `VAFist_Bronze` | ![bronze knuckles](https://i.imgur.com/PEYLGow.png) |
+  | Iron knuckles | Forge | Swamp | 4 Wood, 12 Iron, 6 Leather Scraps | `VAFist_Iron` | ![iron knuckles](https://i.imgur.com/Y1TkBxk.png) |
 
 </details>
 
@@ -348,10 +356,10 @@ It is encouraged that you find these items by exploring and discovery, but many 
   
   ### Added Spears
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Flint spear | Workbench | Meadows | `VASpearFlint` | ![flint spear](https://i.postimg.cc/q7SSGdcP/flint-spear.png) |
-  | Blackmetal Spear | Forge | Plains | `VASpearBlackmetal` | ![blackmetal spear](https://i.postimg.cc/brTm4Xb8/blackmetal-spear.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Flint spear | Workbench | Meadows | 5 Wood, 10 Flint, 2 Leather Scraps | `VASpearFlint` | ![flint spear](https://i.postimg.cc/q7SSGdcP/flint-spear.png) |
+  | Blackmetal Spear | Forge | Plains | 6 Black Metal, 10 Finewood, 2 Chain, 2 Red Jute | `VASpearBlackmetal` | ![blackmetal spear](https://i.postimg.cc/brTm4Xb8/blackmetal-spear.png) |
 
 </details>
 
@@ -361,23 +369,23 @@ It is encouraged that you find these items by exploring and discovery, but many 
   
   ### Added Magic weapons
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Druidic staff of spirit | Workbench | Swamp | `VAStaff_Druid_Spirit` | ![druidic spirit staff](https://i.imgur.com/4WrNu8i.png) |
-  | Druidic staff of poison | Workbench | Swamp | `VAStaff_Druid_Poison` | ![druidic poison staff](https://i.imgur.com/PXi8ztI.png) |
-  | Druidic staff of fire | Workbench | Swamp | `VAStaff_Druid_Fire` | ![fire druidic staff](https://i.imgur.com/Xq7o8MW.png) |
-  | Druidic staff of ice | Workbench | Mountains | `VAStaff_Druid_Ice` | ![druidic ice staff](https://i.imgur.com/AFtAeV7.png) |
-  | Staff of Spirit | Magetable | Mistlands | `VAStaff_Spirit` | ![Staff of spirit](https://i.imgur.com/BuIbWQN.png) |
-  | Staff of Poison | Magetable | Mistlands | `VAStaff_Poison` | ![fire druidic staff](https://i.imgur.com/UKn5TJC.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Druidic staff of spirit | Workbench | Swamp | 20 Ancient Bark, 4 Greydwarf Eye, 2 Greydwarf Shaman Trophy | `VAStaff_Druid_Spirit` | ![druidic spirit staff](https://i.imgur.com/4WrNu8i.png) |
+  | Druidic staff of poison | Workbench | Swamp | 20 Ancient Bark, 4 Guck, 2 Blob Trophy | `VAStaff_Druid_Poison` | ![druidic poison staff](https://i.imgur.com/PXi8ztI.png) |
+  | Druidic staff of fire | Workbench | Swamp | 20 Ancient Bark, 4 Surtling Core, 2 Surtling Trophy | `VAStaff_Druid_Fire` | ![fire druidic staff](https://i.imgur.com/Xq7o8MW.png) |
+  | Druidic staff of ice | Workbench | Mountains | 20 Ancient Bark, 4 Freeze Gland, 2 Drake Trophy | `VAStaff_Druid_Ice` | ![druidic ice staff](https://i.imgur.com/AFtAeV7.png) |
+  | Staff of Spirit | Magetable | Mistlands | 20 Yggdrasil Wood, 8 Greydwarf Eye, 16 Refined Eitr, 2 Dvergr Trophy | `VAStaff_Spirit` | ![Staff of spirit](https://i.imgur.com/BuIbWQN.png) |
+  | Staff of Poison | Magetable | Mistlands | 20 Yggdrasil Wood, 4 Guck, 16 Refined Eitr | `VAStaff_Poison` | ![fire druidic staff](https://i.imgur.com/UKn5TJC.png) |
 
   ### Added Blood Magic weapons
 
-  | Name | Crafted At | Stage | prefab | Icon |
-  | ----------- | ----------- | ----------- | ----------- | ----------- |
-  | Blood bone battlepick | forge | BlackForest | `VABlood_Bones_pickaxe` | ![blood bone battlepick](https://i.imgur.com/W18gjEx.png) |
-  | Blood bone bow | forge | Mountains | `VABlood_bone_bow` | ![blood bone bow](https://i.imgur.com/nBN4Jac.png) |
-  | Carapace bone bow | Magetable | Mistlands | `VAHeavy_Blood_Bone_Bow` | ![carapace bone bow](https://i.postimg.cc/SKF5vQY7/blood-bone-bow-heavy.png) |
-  | Soulstealer | Magetable | Ashlands | `VASoulStealer` | ![soulstealer](https://i.postimg.cc/PrvhG2JY/soulstealer.png) |
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Blood bone battlepick | forge | BlackForest | 12 Corewood, 20 Bone Fragments, 4 Bronze, 2 Skeleton Trophy | `VABlood_Bones_pickaxe` | ![blood bone battlepick](https://i.imgur.com/W18gjEx.png) |
+  | Blood bone bow | forge | Mountains | 10 Ancient Bark, 10 Silver, 20 Bone Fragments, 2 Ulv Trophy | `VABlood_bone_bow` | ![blood bone bow](https://i.imgur.com/nBN4Jac.png) |
+  | Carapace bone bow | Magetable | Mistlands | 14 Yggdrasil Wood, 10 Iron, 24 Carapace, 2 Tick Trophy | `VAHeavy_Blood_Bone_Bow` | ![carapace bone bow](https://i.postimg.cc/SKF5vQY7/blood-bone-bow-heavy.png) |
+  | Soulstealer | Magetable | Ashlands | 18 Flametal, 24 Ashwood, 2 Bloodstone, 1 Dvergr Extractor | `VASoulStealer` | ![soulstealer](https://i.postimg.cc/PrvhG2JY/soulstealer.png) |
   
 
 </details>
@@ -412,6 +420,7 @@ Current configuration options:
 * crafting recipe
 * crafting station used
 * min level required to craft
+* min level required to repair (`-repairStationLevel`), 0 uses the level required to craft
 * recipe enabled
 * item enabled
 * Forge of Potential idol (`-upgraderResource`)
@@ -425,6 +434,18 @@ spawn or loot tables, admin spawn commands and the like.
 ### Forge of Potential
 
 Every upgradeable weapon and shield can be refined past its max level at the Forge of Potential. Each attempt costs one idol, chosen by the item's biome tier (Wooden through Bloodgold), and boss weapons use the idol one tier higher. Weapons use Battle idols (`Upgrader0Weapon`-`Upgrader7Weapon`) and shields use Protection idols (`Upgrader0Armor`-`Upgrader7Armor`). Change an item's idol with its `-upgraderResource` config, or leave the value empty to disable refinement for that item.
+
+### Frost forged weapons
+
+Some Deep North weapons are made the way the vanilla gold weapons are. Each has its own mould (eg: `Mould: Nord Daggers`, prefab `VAknife_gold_mold`), found wherever the vanilla mould of the same kind turns up: chests, trash piles, weapon stands and the like.
+Craft the weapon's cast at its crafting station from the mould and the recipe's materials, then place the cast in the Frost Foundry to harden it into the weapon. The weapon's recipe is then only used to upgrade it.
+The recipe config sets the cast's materials and the upgrade costs, and the mould is always required on top of those. The cast follows the weapon's crafting station, station level, craft amount and craftable settings.
+Configured in the `Mould Loot` config section (server synced): `EnableMouldLoot`, and `MouldWeight`, how often a mould turns up compared to the vanilla mould it is found with (as often by default). Moulds of weapons whose crafting is disabled are left out of loot, and loot is rolled once, so only areas not yet visited get the moulds.
+
+| Weapon | Vanilla mould it is found with |
+| ----------- | ----------- |
+| Nord Daggers (config section `Knives - Bloodgold Knives`) | Mould: Nord Dagger (`MoldKnife`) |
+| Nord Dualaxes (config section `Axes - Gold Dualaxes`) | Mould: Nord Axe (`MoldAxe`) |
 
 ---
 
@@ -493,3 +514,9 @@ Please report any issues you encounter on the [github issue tracker](https://git
 * Jotun community for answering some silly questions :)
 * The Valheim team at Irongate which makes all of this possible!
 * Unity Ultimate VFX for some or partial visual effects
+
+---
+
+If you enjoy my mods donations are appreciated. My mods will never be paid and donations are not required.
+
+<a href="https://ko-fi.com/midnightsfx"><img height="36" src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Support me on Ko-fi"></a>

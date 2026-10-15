@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Garra de Draugr",
   "va_item_crossbow_silver_description": "Madera oscura reforzada con plata, brilla a la luz de la luna.",
   "va_item_soulstealer": "Robaalmas",
-  "va_item_soulstealer_description": "¿Qué precio estás dispuesto a pagar?"
+  "va_item_soulstealer_description": "¿Qué precio estás dispuesto a pagar?",
+  "item_mold_va": "Molde:",
+  "item_cast_va": "Pieza fundida:",
+  "item_knife_gold_2h": "Dagas nord",
+  "item_knife_gold_2h_description": "Un doble destello de oro es lo último que verán tus enemigos.",
+  "item_knife_gold_2h_frostfire": "Dagas de fuego gélido",
+  "item_knife_gold_2h_frostfire_description": "Hojas gemelas envueltas en una fría llama azul. Sus cortes primero congelan y luego queman.",
+  "item_knife_gold_2h_thunderblood": "Dagas de sangre de trueno",
+  "item_knife_gold_2h_thunderblood_description": "Hojas gemelas que crepitan con relámpagos rojos, siempre sedientas de la siguiente herida.",
+  "item_dual_axes_gold": "Hachas dobles nord",
+  "item_dual_axes_gold_description": "Dos hojas de oro templado, lo bastante pesadas para talar un bosque o a un jotun.",
+  "item_dual_axes_gold_frostfire": "Hachas dobles de fuego gélido",
+  "item_dual_axes_gold_frostfire_description": "Hachas gemelas envueltas en una fría llama azul. Cada golpe primero congela y luego quema.",
+  "item_dual_axes_gold_thunderblood": "Hachas dobles de sangre de trueno",
+  "item_dual_axes_gold_thunderblood_description": "Hachas gemelas que crepitan con relámpagos rojos, siempre hambrientas del siguiente golpe."
 }

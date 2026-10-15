@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "Draugr Claw",
   "va_item_crossbow_silver_description": "Dark wood braced with silver, it glistens in the moonlight.",
   "va_item_soulstealer": "Soulstealer",
-  "va_item_soulstealer_description": "What price are you willing to pay?"
+  "va_item_soulstealer_description": "What price are you willing to pay?",
+  "item_mold_va": "Mould:",
+  "item_cast_va": "Cast:",
+  "item_knife_gold_2h": "Nord Daggers",
+  "item_knife_gold_2h_description": "Two flashes of gold are the last thing your foes will ever see.",
+  "item_knife_gold_2h_frostfire": "Frostfire Daggers",
+  "item_knife_gold_2h_frostfire_description": "Twin blades wreathed in cold blue flame. Their cuts freeze, then burn.",
+  "item_knife_gold_2h_thunderblood": "Thunderblood Daggers",
+  "item_knife_gold_2h_thunderblood_description": "Twin blades crackling with red lightning, always thirsting for the next wound.",
+  "item_dual_axes_gold": "Nord Dualaxes",
+  "item_dual_axes_gold_description": "Two heads of hardened gold, heavy enough to fell a forest or a jotun.",
+  "item_dual_axes_gold_frostfire": "Frostfire Dualaxes",
+  "item_dual_axes_gold_frostfire_description": "Twin axes wreathed in cold blue flame. Each blow freezes, then burns.",
+  "item_dual_axes_gold_thunderblood": "Thunderblood Dualaxes",
+  "item_dual_axes_gold_thunderblood_description": "Twin axes crackling with red lightning, hungry for the next blow."
 }

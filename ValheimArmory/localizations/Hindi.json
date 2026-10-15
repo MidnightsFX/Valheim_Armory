@@ -284,5 +284,19 @@
   "va_item_crossbow_silver": "ड्रॉगर क्लॉ जवाब दो",
   "va_item_crossbow_silver_description": "चांदनी में चमकता हुआ चांदी से बंधा काला लकड़ी, यह चांदनी में चमकता है।",
   "va_item_soulstealer": "आत्मा चुरानेवाला",
-  "va_item_soulstealer_description": "तुम किस कीमत पर तैयार हो?"
+  "va_item_soulstealer_description": "तुम किस कीमत पर तैयार हो?",
+  "item_mold_va": "साँचा:",
+  "item_cast_va": "ढलाई:",
+  "item_knife_gold_2h": "नॉर्ड खंजर",
+  "item_knife_gold_2h_description": "सोने की दो चमक ही वह आख़िरी चीज़ होगी जो तुम्हारे दुश्मन कभी देखेंगे।",
+  "item_knife_gold_2h_frostfire": "हिमअग्नि खंजर",
+  "item_knife_gold_2h_frostfire_description": "ठंडी नीली लपटों में लिपटे जुड़वां फलक। इनके घाव पहले जमते हैं, फिर जलते हैं।",
+  "item_knife_gold_2h_thunderblood": "वज्ररक्त खंजर",
+  "item_knife_gold_2h_thunderblood_description": "लाल बिजली से चटकते जुड़वां फलक, जो हमेशा अगले घाव के प्यासे रहते हैं।",
+  "item_dual_axes_gold": "नॉर्ड दोहरी कुल्हाड़ियाँ",
+  "item_dual_axes_gold_description": "तपाए हुए सोने के दो फल, जंगल या जोतुन को गिराने लायक भारी।",
+  "item_dual_axes_gold_frostfire": "हिमअग्नि दोहरी कुल्हाड़ियाँ",
+  "item_dual_axes_gold_frostfire_description": "ठंडी नीली लपटों में लिपटी जुड़वां कुल्हाड़ियाँ। हर वार पहले जमाता है, फिर जलाता है।",
+  "item_dual_axes_gold_thunderblood": "वज्ररक्त दोहरी कुल्हाड़ियाँ",
+  "item_dual_axes_gold_thunderblood_description": "लाल बिजली से चटकती जुड़वां कुल्हाड़ियाँ, जो अगले वार की भूखी रहती हैं।"
 }
