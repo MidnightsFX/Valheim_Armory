@@ -69,7 +69,8 @@ The ingredients shown are the default recipes; a server can change them in the c
   | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
   | Dragonfrost sword | Forge | Post-Mountain | 4 Ancient Bark, 30 Obsidian, 10 Dragon Tear, 1 Moder Trophy | `VASwordModer` | ![Ice sword Icon](https://i.postimg.cc/hPTmNHFS/moder-sword.png) |
   | Dragonfrost spear | Forge | Post-Mountain | 15 Ancient Bark, 8 Obsidian, 10 Dragon Tear, 1 Moder Trophy | `VASpearModer` | ![Ice Spear Icon](https://i.postimg.cc/t7QXhSDk/moder-spear.png) |
-  | Dragonfrost crossbow | Forge | Post-Mountain | 10 Ancient Bark, 20 Obsidian, 10 Dragon Tear, 1 Moder Trophy | `VACrossbowModer` | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
+  | Dragonfrost crossbow | Forge | Post-Mountain | 10 Ancient Bark, 20 Obsidian, 10 Dragon Tear, 1 Moder Trophy | `VACrossbowModerNew` | ![Dragonfrost crossbow icon](https://i.postimg.cc/cJycSr3x/moder-crossbow-new.png) |
+  | Dragonfrost crossbow (legacy) | Forge | Post-Mountain | 10 Ancient Bark, 20 Obsidian, 10 Dragon Tear, 1 Moder Trophy | `VACrossbowModer` | ![Mechanical Crossbow Icon](https://i.imgur.com/KMNzFgZ.png) |
   | Dragonfrost shield | Forge | Post-Mountain | 24 Finewood, 16 Silver, 10 Dragon Tear, 1 Moder Trophy | `VAModer_shield` | ![Moder shield](https://i.postimg.cc/C1q7K5BQ/modershiled-v2.png) |
   | Dragonfrost buckler | Forge | Post-Mountain | 24 Finewood, 16 Silver, 10 Dragon Tear, 1 Moder Trophy | `VAModer_RoundShield` | ![Moder roundshield](https://i.imgur.com/kDHDtJT.png) |
   | Dragonfrost knife | Forge | Post-Mountain | 4 Ancient Bark, 15 Obsidian, 10 Dragon Tear, 1 Moder Trophy | `VAdagger_moder` | ![Moder Knife](https://i.postimg.cc/FHbKx4ML/moder-dagger.png) |
@@ -77,6 +78,8 @@ The ingredients shown are the default recipes; a server can change them in the c
   | Dragonfrost greatsword | Forge | Post-Mountain | 25 Crystal, 15 Obsidian, 10 Dragon Tear, 1 Moder Trophy | `VAModer_greatsword` | ![Moder greatsword](https://i.postimg.cc/c4nCrYTT/moder-greatsword.png) |
   | Dragonfrost Axe | Forge | Post-Mountain | 10 Dragon Tear, 1 Moder Trophy, 15 Silver, 8 Finewood | `VAModer_Axe` | ![Moder Knife](https://i.postimg.cc/qvjBRLDq/moder-axe-1h.png) |
   | Dragonfrost Dual axes | Forge | Post-Mountain | 10 Dragon Tear, 1 Moder Trophy, 30 Silver, 16 Finewood | `VAModer_dualaxes` | ![Moder Knife](https://i.postimg.cc/FH9sNqZw/moder-dualaxes.png) |
+
+  *Note the legacy Dragonfrost crossbow is uncraftable by default, existing ones keep working*
 
   ## Yagluth
   | Name | Crafted At | Stage | Ingredients | prefab | Icon |
@@ -196,6 +199,9 @@ The ingredients shown are the default recipes; a server can change them in the c
   | Crystal Dualaxes | Forge | Mountain | 30 Ancient Bark, 50 Silver, 16 Crystal | `VACrystal_dualaxes` | ![crystal dualaxes icon](https://i.postimg.cc/MGQvNtzf/crystal-dualaxes.png) |
   | Blackmetal Dualaxes | Forge | Plains | 50 Black Metal, 14 Finewood, 8 Linen Thread | `VABlackmetal_dualaxes` | ![blackmetal dualaxes icon](https://i.postimg.cc/509WLNK9/blackmetal-dualaxes.png) |
   | Jotun Dualaxes | Blackforge | Mistlands | 35 Refined Eitr, 25 Iron, 14 Yggdrasil Wood, 6 Bilebag | `VAJotunn_dualaxes` | ![blackmetal dualaxes icon](https://i.postimg.cc/fWj51fbP/jotun-dualaxes.png) |
+  | Nord Dualaxes | Blackforge, then Frost Foundry | Deep North | 1 Mould: Nord Dualaxes, 24 Bloodgold, 12 Timberwood | `VAGold_dualaxes` | ![nord dualaxes icon](https://i.postimg.cc/ZCyjLNy7/gold-dualaxes.png) |
+  | Frostfire Dualaxes | Blackforge | Deep North | 1 Nord Dualaxes, 24 Bloodgold, 1 Frostfire Essence | `VAGold_dualaxes_frostfire` | ![frostfire dualaxes icon](https://i.postimg.cc/rzHQWjKL/gold-dualaxes-frostfire.png) |
+  | Thunderblood Dualaxes | Blackforge | Deep North | 1 Nord Dualaxes, 24 Bloodgold, 1 Thunderblood Essence | `VAGold_dualaxes_thunderblood` | ![thunderblood dualaxes icon](https://i.postimg.cc/zVRpkhR2/gold-dualaxes-thunderblood.png) |
 
 
   ### Greataxes (2H Axes)
@@ -245,6 +251,9 @@ The ingredients shown are the default recipes; a server can change them in the c
   | Assassins primal knives | Blackforge | Ashlands | 1 Assassins knives, 8 Flametal, 1 Jade | `VAdagger_meteor_2h_nature` | ![meteor nature dagger icon 2h](https://i.postimg.cc/jjjkRR4p/meteor-dagger-primal-2h.png) |
   | Assassins lightning knives | Blackforge | Ashlands | 1 Assassins knives, 8 Flametal, 1 Iolite | `VAdagger_meteor_2h_lightning` | ![meteor lightning dagger icon 2h](https://i.postimg.cc/FRdWJGqG/meteor-dagger-lightning-2h.png) |
   | Assassins blood knives | Blackforge | Ashlands | 1 Assassins knives, 8 Flametal, 1 Bloodstone | `VAdagger_meteor_2h_blood` | ![meteor blood dagger icon 2h](https://i.postimg.cc/yNrpd2fk/meteor-dagger-blood-2h.png) |
+  | Nord Daggers | Blackforge, then Frost Foundry | Deep North | 1 Mould: Nord Daggers, 24 Bloodgold, 12 Timberwood | `VAknife_gold` | ![nord daggers icon](https://i.postimg.cc/w7sFkNsG/gold-dualknives.png) |
+  | Frostfire Daggers | Blackforge | Deep North | 1 Nord Daggers, 24 Bloodgold, 1 Frostfire Essence | `VAknife_gold_frostfire` | ![frostfire daggers icon](https://i.postimg.cc/8jrwbvrx/gold-dualknives-frostfire.png) |
+  | Thunderblood Daggers | Blackforge | Deep North | 1 Nord Daggers, 24 Bloodgold, 1 Thunderblood Essence | `VAknife_gold_thunderblood` | ![thunderblood daggers icon](https://i.postimg.cc/nCQT1mQ6/gold-dualknives-thunderblood.png) |
 
 </details>
 
