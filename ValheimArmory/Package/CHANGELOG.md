@@ -1,3 +1,9 @@
+**1.36.1**
+ ---
+ ```
+- Adds a Vietnamese translation.
+ ```
+
 **1.36.0**
  ---
  ```
