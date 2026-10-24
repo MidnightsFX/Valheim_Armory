@@ -16,6 +16,7 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using ValheimArmory.common;
+using ValheimArmory.patches;
 
 namespace ValheimArmory
 {
@@ -26,7 +27,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.36.1";
+        public const string PluginVersion = "1.37.0";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -51,9 +52,12 @@ namespace ValheimArmory
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaHammersToWarhammers;
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaKnife;
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ApplySledgeStance;
+            PrefabManager.OnVanillaPrefabsAvailable += DualSwords.CreateDualSwords;
             MinimapManager.OnVanillaMapDataLoaded += WeaponModifier.ToggleVanillaFlintAxe;
             MinimapManager.OnVanillaMapDataLoaded += WeaponModifier.ToggleVanillaFlintSpear;
             PrefabManager.OnPrefabsRegistered += StatusModifiers.SyncStatusEffectsToConfig;
+            ItemManager.OnItemsRegisteredFejd += UnsupportedShaders.Fix;
+            ItemManager.OnItemsRegistered += UnsupportedShaders.Fix;
             ValConfig.OnChangeDebounced(ValConfig.VanillaHammersHavePrimaryAttack, WeaponModifier.OnConfigChangeModifyHammers);
             ValConfig.OnChangeDebounced(ValConfig.ModHammersHavePrimaryAttack, WeaponModifier.OnConfigChangeModifyModHammers);
             ValConfig.OnChangeDebounced(ValConfig.VanillaAbyssalKnifeBluntDamageConvert, WeaponModifier.OnConfigChangeModifyVanillaKnife);

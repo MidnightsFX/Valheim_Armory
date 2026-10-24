@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "どれほどの代償を払う覚悟がある？",
   "item_mold_va": "鋳型：",
   "item_cast_va": "鋳造：",
+  "item_dual_va": "二刀流：",
+  "item_dual_va_description": "揃いの一対。両手に一振りずつ。",
   "item_knife_gold_2h": "ノルドのツインダガー",
   "item_knife_gold_2h_description": "敵が最後に目の当たりにするのは、二筋の黄金の閃光。",
   "item_knife_gold_2h_frostfire": "氷炎のツインダガー",

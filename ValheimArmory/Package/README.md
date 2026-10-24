@@ -345,6 +345,39 @@ The ingredients shown are the default recipes; a server can change them in the c
   | Flint Sword | Workbench | Meadows | 2 Wood, 6 Flint | `VAFlint_Sword` | ![flint sword icon](https://i.imgur.com/8PEvo8I.png) |
   | Chitin Sword | Workbench | Blackforest | 2 Finewood, 30 Chitin, 2 Deer Hide | `VASwordChitin` | ![chitin sword icon](https://i.imgur.com/HtNvGaA.png) |
 
+  ---
+
+  ### Dual Swords
+
+  Every one handed sword, vanilla and Valheim Armory, can also be crafted as a dual wielded pair that swings like dual axes.
+  Each pair starts with its sword's stats and has its own config section (eg: `Swords - Dual Iron Sword`). Its recipe takes one and a half times the sword's materials, and the pair of a variant sword is made from the plain sword's pair.
+  `EnableDualSwords` in the `Dual Swords` config section turns all of their recipes off; dual swords already made keep working.
+
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Dual Wooden Sword | Workbench | Meadows | 8 Wood, 5 Finewood, 3 Corewood | `VADual_SwordWood` | ![dual wooden sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordWood.png?raw=true) |
+  | Dual Flint Sword | Workbench | Meadows | 3 Wood, 9 Flint | `VADual_VAFlint_Sword` | ![dual flint sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_VAFlint_Sword.png?raw=true) |
+  | Dual Antler Sword | Workbench | Post-Meadows | 5 Finewood, 24 Resin, 5 Hard Antler, 1 Eikthyr Trophy | `VADual_VAAntler_Sword` | ![dual antler sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_VAAntler_Sword.png?raw=true) |
+  | Dual Bronze Sword | Forge | Blackforest | 3 Wood, 12 Bronze, 3 Leather Scraps | `VADual_SwordBronze` | ![dual bronze sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordBronze.png?raw=true) |
+  | Dual Abyssal Sword | Workbench | Blackforest | 3 Finewood, 45 Chitin, 3 Deer Hide | `VADual_VASwordChitin` | ![dual abyssal sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_VASwordChitin.png?raw=true) |
+  | Dual Vine Sword | Forge | Post-Blackforest | 3 Bronze, 24 Stone, 1 Swamp Key, 1 The Elder Trophy | `VADual_VAVine_Sword` | ![dual vine sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_VAVine_Sword.png?raw=true) |
+  | Dual Iron Sword | Forge | Swamp | 3 Wood, 30 Iron, 5 Leather Scraps | `VADual_SwordIron` | ![dual iron sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordIron.png?raw=true) |
+  | Dual Bonerot Sword | Forge | Post-Swamp | 15 Withered Bone, 33 Iron, 1 Wishbone, 1 Bonemass Trophy | `VADual_VABonemassSword` | ![dual bonerot sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_VABonemassSword.png?raw=true) |
+  | Dual Silver Sword | Forge | Mountain | 3 Wood, 60 Silver, 5 Leather Scraps, 8 Iron | `VADual_SwordSilver` | ![dual silver sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordSilver.png?raw=true) |
+  | Dual Dragonfrost Sword | Forge | Post-Mountain | 6 Ancient Bark, 45 Obsidian, 15 Dragon Tear, 1 Moder Trophy | `VADual_VASwordModer` | ![dual dragonfrost sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_VASwordModer.png?raw=true) |
+  | Dual Black Metal Sword | Forge | Plains | 3 Finewood, 30 Black Metal, 8 Linen Thread | `VADual_SwordBlackmetal` | ![dual black metal sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordBlackmetal.png?raw=true) |
+  | Dual Mistwalker | Blackforge | Mistlands | 5 Finewood, 23 Iron, 15 Refined Eitr, 5 Wisp | `VADual_SwordMistwalker` | ![dual mistwalker icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordMistwalker.png?raw=true) |
+  | Dual Carapace Sword | Blackforge | Post-Mistlands | 5 Yggdrasil Wood, 15 Refined Eitr, 5 Blue Jute, 1 The Queen Trophy | `VADual_VASwordQueen` | ![dual carapace sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_VASwordQueen.png?raw=true) |
+  | Dual Nidhögg | Blackforge | Ashlands | 5 Charred Bone, 18 Flametal, 3 Asksvin Hide | `VADual_SwordNiedhogg` | ![dual nidhögg icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordNiedhogg.png?raw=true) |
+  | Dual Nidhögg the Primal | Blackforge | Ashlands | 1 Dual Nidhögg, 9 Flametal, 1 Jade | `VADual_SwordNiedhoggNature` | ![dual nidhögg the primal icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordNiedhoggNature.png?raw=true) |
+  | Dual Nidhögg the Thundering | Blackforge | Ashlands | 1 Dual Nidhögg, 9 Flametal, 1 Iolite | `VADual_SwordNiedhoggLightning` | ![dual nidhögg the thundering icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordNiedhoggLightning.png?raw=true) |
+  | Dual Nidhögg the Bleeding | Blackforge | Ashlands | 1 Dual Nidhögg, 9 Flametal, 1 Bloodstone | `VADual_SwordNiedhoggBlood` | ![dual nidhögg the bleeding icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordNiedhoggBlood.png?raw=true) |
+  | Dual Dyrnwyn | Blackforge | Ashlands | 1 Dyrnwyn Hilt Fragment, 1 Dyrnwyn Blade Fragment, 1 Dyrnwyn Tip Fragment, 30 Flametal, 1 Bloodstone | `VADual_SwordDyrnwyn` | ![dual dyrnwyn icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordDyrnwyn.png?raw=true) |
+  | Dual Dreadfire Sword | Blackforge | Post-Ashlands | 45 Flametal, 45 Charred Bone, 1 Fader Trophy, 1 Kindled Ribs | `VADual_VASwordFader` | ![dual dreadfire sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_VASwordFader.png?raw=true) |
+  | Dual Nord Sword | Blackforge, then Frost Foundry | Deep North | 1 Mould: Dual Nord Sword, 30 Bloodgold, 15 Timberwood | `VADual_SwordGold` | ![dual nord sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordGold.png?raw=true) |
+  | Dual Frostfire Sword | Blackforge | Deep North | 1 Dual Nord Sword, 30 Bloodgold, 1 Frostfire Essence | `VADual_SwordGold_FrostFire` | ![dual frostfire sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordGold_FrostFire.png?raw=true) |
+  | Dual Thunderblood Sword | Blackforge | Deep North | 1 Dual Nord Sword, 30 Bloodgold, 1 Thunderblood Essence | `VADual_SwordGold_BloodLightning` | ![dual thunderblood sword icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_swords/VADual_SwordGold_BloodLightning.png?raw=true) |
+
 </details>
 
 <details>
@@ -455,6 +488,7 @@ Configured in the `Mould Loot` config section (server synced): `EnableMouldLoot`
 | ----------- | ----------- |
 | Nord Daggers (config section `Knives - Bloodgold Knives`) | Mould: Nord Dagger (`MoldKnife`) |
 | Nord Dualaxes (config section `Axes - Gold Dualaxes`) | Mould: Nord Axe (`MoldAxe`) |
+| Dual Nord Sword (config section `Swords - Dual Nord Sword`) | Mould: Nord Sword (`MoldSword`) |
 
 ---
 

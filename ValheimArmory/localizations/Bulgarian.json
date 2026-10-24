@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "На каква цена сте готови да платите?",
   "item_mold_va": "Калъп:",
   "item_cast_va": "Отливка:",
+  "item_dual_va": "Чифт:",
+  "item_dual_va_description": "Съвпадащ чифт, по един за всяка ръка.",
   "item_knife_gold_2h": "Нордически кинжали",
   "item_knife_gold_2h_description": "Два златни проблясъка са последното, което враговете ти ще видят.",
   "item_knife_gold_2h_frostfire": "Ледено-огнени кинжали",

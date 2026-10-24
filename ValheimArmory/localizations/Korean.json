@@ -287,6 +287,8 @@
   "item_battleaxe_blackmetal_herkir_description": "거인을 죽이는 자, 불을 가져오는 자, 고통을 주는 자.",
   "item_mold_va": "거푸집:",
   "item_cast_va": "주물:",
+  "item_dual_va": "쌍검:",
+  "item_dual_va_description": "한 쌍으로 맞춘 무기, 양손에 하나씩.",
   "item_knife_gold_2h": "노드의 쌍단검",
   "item_knife_gold_2h_description": "적이 마지막으로 보게 될 건 두 줄기 금빛 섬광일 것입니다.",
   "item_knife_gold_2h_frostfire": "서리불길 쌍단검",

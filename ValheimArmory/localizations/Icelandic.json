@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "Hvaða verð ert þú tilbúin(n) að borga?",
   "item_mold_va": "Steypumót:",
   "item_cast_va": "Steypa:",
+  "item_dual_va": "Par:",
+  "item_dual_va_description": "Samstætt par, eitt í hvora hönd.",
   "item_knife_gold_2h": "Norrænir rýtingar",
   "item_knife_gold_2h_description": "Tveir gullnir glampar eru það síðasta sem óvinir þínir munu nokkurn tíma sjá.",
   "item_knife_gold_2h_frostfire": "Frosteldsrýtingar",

@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "Яку ціну ви готові заплатити?",
   "item_mold_va": "Форма:",
   "item_cast_va": "Заготовина:",
+  "item_dual_va": "Пара:",
+  "item_dual_va_description": "Підібрана пара, по одному в кожну руку.",
   "item_knife_gold_2h": "Нордичні кинджали",
   "item_knife_gold_2h_description": "Подвійний золотий відблиск стане останнім, що побачать ваші вороги.",
   "item_knife_gold_2h_frostfire": "Вогнекрижні кинджали",

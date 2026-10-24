@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "Ne kadar ödemeye isteklisiniz?",
   "item_mold_va": "Kalıp:",
   "item_cast_va": "Döküm:",
+  "item_dual_va": "Çift:",
+  "item_dual_va_description": "Uyumlu bir çift, her ele bir tane.",
   "item_knife_gold_2h": "Nord Hançerleri",
   "item_knife_gold_2h_description": "Rakiplerinin göreceği son şey, anlık iki altın parıltısı.",
   "item_knife_gold_2h_frostfire": "Buzateşi Hançerleri",

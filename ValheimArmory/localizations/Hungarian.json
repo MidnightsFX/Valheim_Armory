@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "Milyen árat vagy hajlandó fizetni?",
   "item_mold_va": "Öntőforma:",
   "item_cast_va": "Öntvény:",
+  "item_dual_va": "Pár:",
+  "item_dual_va_description": "Összeillő pár, mindkét kézbe egy-egy.",
   "item_knife_gold_2h": "Északi tőrök",
   "item_knife_gold_2h_description": "Két arany villanás az utolsó, amit az ellenségeid valaha látnak.",
   "item_knife_gold_2h_frostfire": "Fagytűz tőrök",

@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "¿Qué precio estás dispuesto a pagar?",
   "item_mold_va": "Molde:",
   "item_cast_va": "Pieza fundida:",
+  "item_dual_va": "Par:",
+  "item_dual_va_description": "Un par a juego, uno para cada mano.",
   "item_knife_gold_2h": "Dagas nord",
   "item_knife_gold_2h_description": "Un doble destello de oro es lo último que verán tus enemigos.",
   "item_knife_gold_2h_frostfire": "Dagas de fuego gélido",

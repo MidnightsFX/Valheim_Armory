@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "Qual preço você está disposto a pagar?",
   "item_mold_va": "Molde:",
   "item_cast_va": "Peça fundida:",
+  "item_dual_va": "Par:",
+  "item_dual_va_description": "Um par combinado, um para cada mão.",
   "item_knife_gold_2h": "Adagas Nord",
   "item_knife_gold_2h_description": "Dois brilhos dourados serão a última coisa que seus inimigos verão na vida.",
   "item_knife_gold_2h_frostfire": "Adagas de fogogelo",

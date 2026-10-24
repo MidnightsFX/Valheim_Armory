@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "Hvilken pris er du villig til at betale?",
   "item_mold_va": "Støbeform:",
   "item_cast_va": "Støbning:",
+  "item_dual_va": "Par:",
+  "item_dual_va_description": "Et matchende par, ét til hver hånd.",
   "item_knife_gold_2h": "Nordiske dolke",
   "item_knife_gold_2h_description": "To glimt af guld er det sidste, dine fjender nogensinde ser.",
   "item_knife_gold_2h_frostfire": "Frostildsdolke",

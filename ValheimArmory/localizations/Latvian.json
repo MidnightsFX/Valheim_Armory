@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "Kādu cenu esat gatavs maksāt?",
   "item_mold_va": "Veidne:",
   "item_cast_va": "Lējums:",
+  "item_dual_va": "Pāris:",
+  "item_dual_va_description": "Saskaņots pāris, pa vienam katrai rokai.",
   "item_knife_gold_2h": "Ziemeļu dunči",
   "item_knife_gold_2h_description": "Divi zelta uzplaiksnījumi ir pēdējais, ko tavi ienaidnieki jebkad redzēs.",
   "item_knife_gold_2h_frostfire": "Salnuguns dunči",

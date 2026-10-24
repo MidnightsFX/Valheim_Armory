@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "Zu welchem Preis bist du bereit zu zahlen?",
   "item_mold_va": "Gussform:",
   "item_cast_va": "Guss:",
+  "item_dual_va": "Paar:",
+  "item_dual_va_description": "Ein passendes Paar, eins für jede Hand.",
   "item_knife_gold_2h": "Nord-Dolche",
   "item_knife_gold_2h_description": "Ein doppelter goldener Blitz wird das Letzte sein, was deine Feinde sehen werden.",
   "item_knife_gold_2h_frostfire": "Frostfeuer-Dolche",

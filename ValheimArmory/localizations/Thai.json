@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "คุณยินดีจ่ายราคาเท่าไหร่?",
   "item_mold_va": "แม่พิมพ์:",
   "item_cast_va": "ชิ้นหล่อ:",
+  "item_dual_va": "คู่:",
+  "item_dual_va_description": "อาวุธคู่ที่เข้าชุดกัน ถือข้างละเล่ม",
   "item_knife_gold_2h": "กริชนอร์ดคู่",
   "item_knife_gold_2h_description": "ประกายทองสองสายคือสิ่งสุดท้ายที่ศัตรูของคุณจะได้เห็น",
   "item_knife_gold_2h_frostfire": "กริชเพลิงเยือกแข็งคู่",

@@ -1,6 +1,7 @@
 ﻿using Jotunn.Configs;
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace ValheimArmory.Common {
     enum ItemStat {
@@ -147,6 +148,15 @@ namespace ValheimArmory.Common {
         }
 
         public RecipeDefinition Recipe {
+            get; set;
+        }
+
+        // Set for an item made at runtime from another one (eg: a dual sword, see DualSwords) instead of loaded from the
+        // asset bundle: its prefab, and its icon. A null icon keeps the one on the prefab.
+        public GameObject GeneratedPrefab {
+            get; set;
+        }
+        public Sprite GeneratedIcon {
             get; set;
         }
     }

@@ -49,13 +49,13 @@ namespace ValheimArmory.Common {
             if (reverse_order) {
                 resourceDefinitions.Reverse();
             }
-            WireConfigDefs();
+            WireConfigDefs(resourceDefinitions);
 
             // Dedicated servers register the items too: the server rolls treasure chest loot for the zones it
             // generates (see ChestBoltLoot), and server side mods resolve these items from its ObjectDB
             // (spawn/loot tables, admin spawn commands).
-            BatchAddItems();
-            SetupOnChange();
+            BatchAddItems(resourceDefinitions);
+            SetupOnChange(resourceDefinitions);
             PrefabManager.OnVanillaPrefabsAvailable += FrostForged.CreateMouldsAndCasts;
             ItemManager.OnItemsRegistered += AddAmmoItemsToArcheryTarget;
             // Re-apply config driven recipe values whenever the ObjectDB is (re)built. Jotunn re-adds the
@@ -74,14 +74,30 @@ namespace ValheimArmory.Common {
             return true;
         }
 
-        // True when prefab is one of this mod's items and its crafting recipe is disabled by config.
-        internal static bool IsCraftingDisabled(string prefab) {
-            return definitionsByPrefab.TryGetValue(prefab, out ItemDefinition itemdef) && itemdef.CraftableCfg != null && itemdef.CraftableCfg.Value == false;
+        // Adds items made at runtime rather than loaded from the asset bundle (see DualSwords), through the same steps as
+        // the bundle's items: their configs are bound, their stats and recipe come from those configs, and changes to them
+        // reach the items. Call before any world's ObjectDB is built, eg: from OnVanillaPrefabsAvailable.
+        internal static void AddGeneratedDefinitions(List<ItemDefinition> definitions) {
+            resourceDefinitions.AddRange(definitions);
+            WireConfigDefs(definitions);
+            BatchAddItems(definitions);
+            SetupOnChange(definitions);
+            ValConfig.Save();
         }
 
-        private static bool WireConfigDefs() {
+        // True when prefab is one of this mod's items and its crafting recipe is disabled by config.
+        internal static bool IsCraftingDisabled(string prefab) {
+            return definitionsByPrefab.TryGetValue(prefab, out ItemDefinition itemdef) && itemdef.CraftableCfg != null && IsCraftable(itemdef) == false;
+        }
+
+        // The item's own craftable config, and for a dual sword the switch for all of them as well.
+        private static bool IsCraftable(ItemDefinition itemdef) {
+            return itemdef.CraftableCfg.Value && DualSwords.CraftingAllowed(itemdef.Prefab);
+        }
+
+        private static bool WireConfigDefs(IEnumerable<ItemDefinition> definitions) {
             // Ensure save on set is false, we will save at the end of this process.
-            foreach (ItemDefinition itemdef in resourceDefinitions) {
+            foreach (ItemDefinition itemdef in definitions) {
                 // A definition registered without a Recipe (or with a null item list) used to NRE here,
                 // killing the whole mod during Awake. Normalize instead: the item is still registered,
                 // it just gets no crafting recipe (see BatchAddItems).
@@ -141,13 +157,13 @@ namespace ValheimArmory.Common {
         }
 
         // TODO: Change batch onchange actions to pass to a queue and execute queue from a couroutine.
-        private bool SetupOnChange() {
-            foreach (ItemDefinition itemdef in resourceDefinitions) {
+        private static bool SetupOnChange(IEnumerable<ItemDefinition> definitions) {
+            foreach (ItemDefinition itemdef in definitions) {
                 // Need to have config onchange settings available for items which are not enabled to ensure that we can enable them when joining a remote server with different items enabled
                 // if (!itemdef.enabled) { continue; }
                 // Craftable config toggle
                 itemdef.CraftableCfg.SettingChanged += (_, _) => {
-                    ConfigChangeDebouncer.Schedule(itemdef.CraftableCfg, () => EnableDisableItemInDB(itemdef, itemdef.CraftableCfg.Value));
+                    ConfigChangeDebouncer.Schedule(itemdef.CraftableCfg, () => EnableDisableItemInDB(itemdef, IsCraftable(itemdef)));
                 };
                 // Logger.LogInfo("Setup Craftable toggle");
                 // Station level config
@@ -231,7 +247,7 @@ namespace ValheimArmory.Common {
 
         // Idempotently reconciles every item recipe in the live ObjectDB to the current config values.
         // Safe to call repeatedly and from multiple lifecycle events; self guards when no ObjectDB exists.
-        private static void ReapplyAllRecipeConfig() {
+        internal static void ReapplyAllRecipeConfig() {
             if (ObjectDB.instance == null || ObjectDB.instance.m_recipes == null) { return; }
             // Every item below looks its recipe up several times. Without the index each lookup is a linear
             // search of the whole recipe list reading m_item.name (a native call that allocates), which made
@@ -247,7 +263,7 @@ namespace ValheimArmory.Common {
                     ModifyItemRecipeLevel(itemdef, itemdef.StationLVLCfg.Value);
                     ModifyItemRecipeCraftedAt(itemdef);
                     ModifyItemRecipeCraftAmount(itemdef, itemdef.CraftAmountCfg.Value);
-                    EnableDisableItemInDB(itemdef, itemdef.CraftableCfg.Value);
+                    EnableDisableItemInDB(itemdef, IsCraftable(itemdef));
                 }
             } finally {
                 recipeIndexCache = null;
@@ -265,16 +281,17 @@ namespace ValheimArmory.Common {
             ReapplyAllRecipeConfig();
         }
 
-        private static bool BatchAddItems() {
-            foreach (ItemDefinition itemdef in resourceDefinitions) {
-                GameObject ItemPrefab = Assets.LoadAsset<GameObject>($"Assets/Custom/Weapons/{itemdef.Category}/{itemdef.Prefab}.prefab");
-                Sprite ItemSprite = Assets.LoadAsset<Sprite>($"Assets/Custom/Icons/{itemdef.Icon}.png");
+        private static bool BatchAddItems(IEnumerable<ItemDefinition> definitions) {
+            foreach (ItemDefinition itemdef in definitions) {
+                bool generated = itemdef.GeneratedPrefab != null;
+                GameObject ItemPrefab = generated ? itemdef.GeneratedPrefab : Assets.LoadAsset<GameObject>($"Assets/Custom/Weapons/{itemdef.Category}/{itemdef.Prefab}.prefab");
+                Sprite ItemSprite = generated ? itemdef.GeneratedIcon : Assets.LoadAsset<Sprite>($"Assets/Custom/Icons/{itemdef.Icon}.png");
                 //Logger.LogInfo($"Adding {itemdef.Name} gopath: {prefabPath} go: {ItemPrefab} sprite: {ItemSprite}");
                 ItemDrop ItemD = ItemPrefab.GetComponent<ItemDrop>();
                 // A bundle built before the icon was added has no sprite for it, and handing Jotunn a null icon
                 // blanks the one authored on the prefab, so the item shows no icon at all. Keep the prefab's instead.
                 Sprite[] ItemIcons = ItemSprite != null ? new[] { ItemSprite } : ItemD.m_itemData.m_shared.m_icons;
-                if (ItemSprite == null) {
+                if (ItemSprite == null && generated == false) {
                     Logger.LogWarning($"Icon {itemdef.Icon} for {itemdef.Name} is not in the asset bundle, using the icon on the {itemdef.Prefab} prefab. Rebuild the asset bundle to pick it up.");
                 }
                 // Modify this items stats

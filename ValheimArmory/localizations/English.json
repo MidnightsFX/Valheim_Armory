@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "What price are you willing to pay?",
   "item_mold_va": "Mould:",
   "item_cast_va": "Cast:",
+  "item_dual_va": "Dual",
+  "item_dual_va_description": "A matched pair, one for each hand.",
   "item_knife_gold_2h": "Nord Daggers",
   "item_knife_gold_2h_description": "Two flashes of gold are the last thing your foes will ever see.",
   "item_knife_gold_2h_frostfire": "Frostfire Daggers",

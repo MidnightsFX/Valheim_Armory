@@ -1,3 +1,11 @@
+**1.37.0**
+ ---
+ ```
+- Adds a dual wielded version of every one handed sword, vanilla and Valheim Armory
+- Fixes weapon glows, arrow trails and dropped item sparkles turning pink when installed with Chebs Necromancy.
+- The Blood Bone Battlepick now trains pickaxes and blood magic when mining
+ ```
+
 **1.36.1**
  ---
  ```

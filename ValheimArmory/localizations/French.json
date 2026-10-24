@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "À quel prix êtes-vous prêt à payer ?",
   "item_mold_va": "Moule :",
   "item_cast_va": "Moulage :",
+  "item_dual_va": "Paire :",
+  "item_dual_va_description": "Une paire assortie, une pour chaque main.",
   "item_knife_gold_2h": "Dagues nordiques",
   "item_knife_gold_2h_description": "La dernière chose que verront vos ennemis, c'est un double éclair doré.",
   "item_knife_gold_2h_frostfire": "Dagues de givrefeu",

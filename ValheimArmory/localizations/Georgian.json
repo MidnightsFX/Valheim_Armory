@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "რა ფასის გადახდისთვის ხარ მზად?",
   "item_mold_va": "ყალიბი:",
   "item_cast_va": "ჩამოსხმა:",
+  "item_dual_va": "წყვილი:",
+  "item_dual_va_description": "შეწყობილი წყვილი, თითო თითოეული ხელისთვის.",
   "item_knife_gold_2h": "ნორდული ხანჯლები",
   "item_knife_gold_2h_description": "ორი ოქროსფერი ელვარება იქნება ბოლო, რასაც შენი მტრები ოდესმე დაინახავენ.",
   "item_knife_gold_2h_frostfire": "ყინვაცეცხლის ხანჯლები",

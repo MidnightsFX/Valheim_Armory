@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "तुम किस कीमत पर तैयार हो?",
   "item_mold_va": "साँचा:",
   "item_cast_va": "ढलाई:",
+  "item_dual_va": "जोड़ी:",
+  "item_dual_va_description": "एक मेल खाती जोड़ी, हर हाथ के लिए एक।",
   "item_knife_gold_2h": "नॉर्ड खंजर",
   "item_knife_gold_2h_description": "सोने की दो चमक ही वह आख़िरी चीज़ होगी जो तुम्हारे दुश्मन कभी देखेंगे।",
   "item_knife_gold_2h_frostfire": "हिमअग्नि खंजर",

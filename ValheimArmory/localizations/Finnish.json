@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "Minkä hinnan olet valmis maksamaan?",
   "item_mold_va": "Valumuotti:",
   "item_cast_va": "Valos:",
+  "item_dual_va": "Pari:",
+  "item_dual_va_description": "Yhteensopiva pari, yksi kumpaankin käteen.",
   "item_knife_gold_2h": "Pohjolan tikarit",
   "item_knife_gold_2h_description": "Kaksi kultaista välähdystä on viimeinen asia, jonka vihollisesi koskaan näkevät.",
   "item_knife_gold_2h_frostfire": "Pakkastulen tikarit",

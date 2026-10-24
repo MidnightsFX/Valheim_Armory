@@ -36,6 +36,9 @@ namespace ValheimArmory.patches
         // Vanilla mould prefab -> the weapons whose moulds are copied from it.
         private static readonly Dictionary<string, List<ItemDefinition>> WeaponsByVanillaMould = new Dictionary<string, List<ItemDefinition>>();
         private static readonly HashSet<string> MissingMouldsLogged = new HashSet<string>();
+        // Set once the vanilla moulds and casts could be copied. A weapon registered after that (the dual Nord sword, made
+        // from vanilla's sword in the same event) gets its copies right away.
+        private static bool copiesCreated = false;
 
         internal static void BindConfig()
         {
@@ -61,6 +64,9 @@ namespace ValheimArmory.patches
                 ToItem = itemdef.Prefab,
                 CookTime = CastHardenTime
             }));
+            if (copiesCreated) {
+                AddMouldAndCast(itemdef, weapon);
+            }
         }
 
         // Vanilla moulds and casts can only be copied once the game's prefabs are loaded. Runs once: Jotunn adds the
@@ -68,14 +74,20 @@ namespace ValheimArmory.patches
         internal static void CreateMouldsAndCasts()
         {
             PrefabManager.OnVanillaPrefabsAvailable -= CreateMouldsAndCasts;
+            copiesCreated = true;
             foreach (KeyValuePair<ItemDefinition, ItemDrop> weapon in Weapons) {
-                FrostForgedDefinition frostForged = weapon.Key.FrostForged;
-                string weaponName = weapon.Value.m_itemData.m_shared.m_name;
-                // Named like the vanilla ones ("Mould: Nord Dagger"), so they follow the weapon's own translation.
-                // A name starting with $item_mold also gives the mould the vanilla mould tutorial.
-                AddCopy(frostForged.MouldPrefab, frostForged.Mould, $"$item_mold_va {weaponName}");
-                AddCopy(frostForged.CastPrefab, frostForged.Cast, $"$item_cast_va {weaponName}");
+                AddMouldAndCast(weapon.Key, weapon.Value);
             }
+        }
+
+        private static void AddMouldAndCast(ItemDefinition itemdef, ItemDrop weapon)
+        {
+            FrostForgedDefinition frostForged = itemdef.FrostForged;
+            string weaponName = weapon.m_itemData.m_shared.m_name;
+            // Named like the vanilla ones ("Mould: Nord Dagger"), so they follow the weapon's own translation.
+            // A name starting with $item_mold also gives the mould the vanilla mould tutorial.
+            AddCopy(frostForged.MouldPrefab, frostForged.Mould, $"$item_mold_va {weaponName}");
+            AddCopy(frostForged.CastPrefab, frostForged.Cast, $"$item_cast_va {weaponName}");
         }
 
         // Keeps the vanilla item's look, icon and description, and only renames it.

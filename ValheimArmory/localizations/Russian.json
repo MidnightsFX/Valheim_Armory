@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "Какую цену ты готов заплатить?",
   "item_mold_va": "Форма:",
   "item_cast_va": "Заготовка:",
+  "item_dual_va": "Пара:",
+  "item_dual_va_description": "Подобранная пара, по одному в каждую руку.",
   "item_knife_gold_2h": "Нордские кинжалы",
   "item_knife_gold_2h_description": "Двойная золотая вспышка будет последним, что увидят ваши враги.",
   "item_knife_gold_2h_frostfire": "Кинжалы льда и огня",

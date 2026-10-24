@@ -287,6 +287,8 @@
   "va_item_soulstealer_description": "Vilket pris är du beredd att betala?",
   "item_mold_va": "Gjutform:",
   "item_cast_va": "Gjutning:",
+  "item_dual_va": "Par:",
+  "item_dual_va_description": "Ett matchande par, ett för varje hand.",
   "item_knife_gold_2h": "Nordiska dolkar",
   "item_knife_gold_2h_description": "Två guldglimtar är det sista dina fiender någonsin får se.",
   "item_knife_gold_2h_frostfire": "Frosteldsdolkar",
