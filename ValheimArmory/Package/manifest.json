@@ -4,7 +4,7 @@
   "version_number": "1.38.0",
   "website_url": "https://discord.gg/Dmr9PQTy9m",
   "dependencies": [
-    "denikson-BepInExPack_Valheim-5.4.2351",
+    "denikson-BepInExPack_Valheim-5.4.2360",
     "ValheimModding-Jotunn-2.30.2"
   ]
 }
