@@ -74,7 +74,7 @@ namespace ValheimArmory.Common {
             return true;
         }
 
-        // Adds items made at runtime rather than loaded from the asset bundle (see DualSwords), through the same steps as
+        // Adds items made at runtime rather than loaded from the asset bundle (see DualWeapons), through the same steps as
         // the bundle's items: their configs are bound, their stats and recipe come from those configs, and changes to them
         // reach the items. Call before any world's ObjectDB is built, eg: from OnVanillaPrefabsAvailable.
         internal static void AddGeneratedDefinitions(List<ItemDefinition> definitions) {
@@ -90,9 +90,9 @@ namespace ValheimArmory.Common {
             return definitionsByPrefab.TryGetValue(prefab, out ItemDefinition itemdef) && itemdef.CraftableCfg != null && IsCraftable(itemdef) == false;
         }
 
-        // The item's own craftable config, and for a dual sword the switch for all of them as well.
+        // The item's own craftable config, and for a dual weapon the switch for all of its kind as well.
         private static bool IsCraftable(ItemDefinition itemdef) {
-            return itemdef.CraftableCfg.Value && DualSwords.CraftingAllowed(itemdef.Prefab);
+            return itemdef.CraftableCfg.Value && DualWeapons.CraftingAllowed(itemdef.Prefab);
         }
 
         private static bool WireConfigDefs(IEnumerable<ItemDefinition> definitions) {
@@ -187,16 +187,16 @@ namespace ValheimArmory.Common {
                     object statKey = stat.Value.IsInt ? (object)stat.Value.CfgInt : stat.Value.Cfg;
                     void UpdateFromConfig(object sender, EventArgs args) {
                         ConfigChangeDebouncer.Schedule(statKey, () => {
-                            if (ZNet.instance == null || ZNet.instance.enabled == false) { return; }
+                            // No world is needed. Leaving a server lands here at the main menu to put the local values back, and the next world builds its items from the prefab written below.
                             if (stat.Value.IsInt) {
                                 stat.Value.Default_value = stat.Value.CfgInt.Value;
                             } else {
                                 stat.Value.Default_value = stat.Value.Cfg.Value;
                             }
                             // Update player items
-                            UpdateItemInPlayerInventory(itemdef.Prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.Default_value, item); });
+                            UpdateItemInPlayerInventory(itemdef.Prefab, (ItemDrop.ItemData item) => { WeaponModifier.WriteModSledgeStat(itemdef.Prefab, item, () => ItemDataConfigModifier(stat.Key, stat.Value.Default_value, item)); });
                             // Update in world items, batched into a single scan to prevent lag spikes (e.g. on server config sync).
-                            EnqueueWorldUpdate(itemdef.Prefab, (ItemDrop.ItemData item) => { ItemDataConfigModifier(stat.Key, stat.Value.Default_value, item); });
+                            EnqueueWorldUpdate(itemdef.Prefab, (ItemDrop.ItemData item) => { WeaponModifier.WriteModSledgeStat(itemdef.Prefab, item, () => ItemDataConfigModifier(stat.Key, stat.Value.Default_value, item)); });
                         });
                     }
 
@@ -231,7 +231,6 @@ namespace ValheimArmory.Common {
                 foreach (KeyValuePair<HitData.DamageType, HitCustomDamageMod> dmgmod in itemdef.DamageMods) {
                     dmgmod.Value.DmgModCfg.SettingChanged += (_, _) => {
                         ConfigChangeDebouncer.Schedule(dmgmod.Value.DmgModCfg, () => {
-                            if (ZNet.instance == null || ZNet.instance.enabled == false) { return; }
                             HitData.DamageModifier modifier = (HitData.DamageModifier)Enum.Parse(typeof(HitData.DamageModifier), dmgmod.Value.DmgModCfg.Value);
                             // Update player items
                             UpdateItemInPlayerInventory(itemdef.Prefab, (ItemDrop.ItemData item) => { SetItemDamageModifier(modifier, dmgmod.Key, item); });

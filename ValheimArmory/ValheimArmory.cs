@@ -27,7 +27,7 @@ namespace ValheimArmory
     {
         public const string PluginGUID = "MidnightsFX.ValheimArmory";
         public const string PluginName = "ValheimArmory";
-        public const string PluginVersion = "1.37.0";
+        public const string PluginVersion = "1.38.0";
 
         internal static AssetBundle EmbeddedResourceBundle;
         CustomLocalization Localization;
@@ -50,9 +50,10 @@ namespace ValheimArmory
             // extra Modifying Weapon configurations
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.SetupEffects;
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaHammersToWarhammers;
+            PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ApplyModHammerConfig;
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ModifyVanillaKnife;
             PrefabManager.OnVanillaPrefabsAvailable += WeaponModifier.ApplySledgeStance;
-            PrefabManager.OnVanillaPrefabsAvailable += DualSwords.CreateDualSwords;
+            PrefabManager.OnVanillaPrefabsAvailable += DualWeapons.CreateDualWeapons;
             MinimapManager.OnVanillaMapDataLoaded += WeaponModifier.ToggleVanillaFlintAxe;
             MinimapManager.OnVanillaMapDataLoaded += WeaponModifier.ToggleVanillaFlintSpear;
             PrefabManager.OnPrefabsRegistered += StatusModifiers.SyncStatusEffectsToConfig;

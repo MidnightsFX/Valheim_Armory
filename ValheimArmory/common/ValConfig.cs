@@ -143,7 +143,7 @@ namespace ValheimArmory
             ChestBoltLoot.BindConfig();
             FrostForged.BindConfig();
             AxeTreeCombo.BindConfig();
-            DualSwords.BindConfig();
+            DualWeapons.BindConfig();
         }
 
         // Watches the config file for edits made outside the game. Only a server reloads (see

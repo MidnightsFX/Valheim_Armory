@@ -308,6 +308,32 @@ The ingredients shown are the default recipes; a server can change them in the c
   | Flint mace | Workbench | Meadows | 4 Wood, 8 Flint, 2 Leather Scraps | `VAFlintMace` | ![flint mace](https://i.postimg.cc/k4jVHf4c/flint-Mace.png) |
   | Blackmarble mace | Blackforge | Mistlands | 6 Yggdrasil Wood, 10 Bronze, 8 Refined Eitr, 20 Black Marble | `VAmistland_mace` | ![mistlands mace icon](https://i.postimg.cc/MTnD0TJ8/mist-mace.png) |
 
+  ---
+
+  ### Dual Maces
+
+  Every one handed mace, vanilla and Valheim Armory, can also be crafted as a dual wielded pair that swings like dual axes.
+  Each pair starts with its mace's stats and has its own config section (eg: `Maces - Dual Iron Mace`). Its recipe takes one and a half times the mace's materials, and the pair of a variant mace is made from the plain mace's pair.
+  `EnableDualMaces` in the `Dual Maces` config section turns all of their recipes off; dual maces already made keep working.
+
+  | Name | Crafted At | Stage | Ingredients | prefab | Icon |
+  | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+  | Dual Club | Workbench | Meadows | 9 Wood | `VADual_Club` | ![dual club icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_Club.png?raw=true) |
+  | Dual Flint mace | Workbench | Meadows | 6 Wood, 12 Flint, 3 Leather Scraps | `VADual_VAFlintMace` | ![dual flint mace icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_VAFlintMace.png?raw=true) |
+  | Dual Bronze Mace | Forge | Blackforest | 6 Wood, 12 Bronze, 5 Leather Scraps | `VADual_MaceBronze` | ![dual bronze mace icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_MaceBronze.png?raw=true) |
+  | Dual Vine Mace | Forge | Post-Blackforest | 3 Bronze, 24 Stone, 1 Swamp Key, 1 The Elder Trophy | `VADual_VAElder_mace` | ![dual vine mace icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_VAElder_mace.png?raw=true) |
+  | Dual Iron Mace | Forge | Swamp | 6 Wood, 30 Iron, 5 Leather Scraps | `VADual_MaceIron` | ![dual iron mace icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_MaceIron.png?raw=true) |
+  | Dual Frostner | Forge | Mountain | 15 Ancient Bark, 45 Silver, 8 Ymir Flesh, 8 Freeze Gland | `VADual_MaceSilver` | ![dual frostner icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_MaceSilver.png?raw=true) |
+  | Dual Porcupine | Forge | Plains | 8 Finewood, 30 Iron, 8 Needle, 15 Linen Thread | `VADual_MaceNeedle` | ![dual porcupine icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_MaceNeedle.png?raw=true) |
+  | Dual Blackmarble Mace | Blackforge | Mistlands | 9 Yggdrasil Wood, 15 Bronze, 12 Refined Eitr, 30 Black Marble | `VADual_VAmistland_mace` | ![dual blackmarble mace icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_VAmistland_mace.png?raw=true) |
+  | Dual Flametal Mace | Blackforge | Ashlands | 15 Charred Bone, 23 Flametal, 8 Sulfur, 5 Asksvin Hide | `VADual_MaceEldner` | ![dual flametal mace icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_MaceEldner.png?raw=true) |
+  | Dual Klossen | Blackforge | Ashlands | 1 Dual Flametal Mace, 12 Flametal, 1 Jade | `VADual_MaceEldnerNature` | ![dual klossen icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_MaceEldnerNature.png?raw=true) |
+  | Dual Storm Star | Blackforge | Ashlands | 1 Dual Flametal Mace, 12 Flametal, 1 Iolite | `VADual_MaceEldnerLightning` | ![dual storm star icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_MaceEldnerLightning.png?raw=true) |
+  | Dual Bloodgeon | Blackforge | Ashlands | 1 Dual Flametal Mace, 12 Flametal, 1 Bloodstone | `VADual_MaceEldnerBlood` | ![dual bloodgeon icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_MaceEldnerBlood.png?raw=true) |
+  | Dual Nord Mace | Blackforge, then Frost Foundry | Deep North | 1 Mould: Dual Nord Mace, 30 Bloodgold, 15 Timberwood | `VADual_MaceGold` | ![dual nord mace icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_MaceGold.png?raw=true) |
+  | Dual Frostfire Mace | Blackforge | Deep North | 1 Dual Nord Mace, 30 Bloodgold, 1 Frostfire Essence | `VADual_MaceGold_FrostFire` | ![dual frostfire mace icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_MaceGold_FrostFire.png?raw=true) |
+  | Dual Thunderblood Mace | Blackforge | Deep North | 1 Dual Nord Mace, 30 Bloodgold, 1 Thunderblood Essence | `VADual_MaceGold_BloodLightning` | ![dual thunderblood mace icon](https://github.com/MidnightsFX/Valheim_Armory/blob/master/ValheimArmoryArt/icons/dual_maces/VADual_MaceGold_BloodLightning.png?raw=true) |
+
 </details>
 
 <details>
@@ -489,6 +515,7 @@ Configured in the `Mould Loot` config section (server synced): `EnableMouldLoot`
 | Nord Daggers (config section `Knives - Bloodgold Knives`) | Mould: Nord Dagger (`MoldKnife`) |
 | Nord Dualaxes (config section `Axes - Gold Dualaxes`) | Mould: Nord Axe (`MoldAxe`) |
 | Dual Nord Sword (config section `Swords - Dual Nord Sword`) | Mould: Nord Sword (`MoldSword`) |
+| Dual Nord Mace (config section `Maces - Dual Nord Mace`) | Mould: Nord Mace (`MoldMace`) |
 
 ---
 

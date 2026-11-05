@@ -15,23 +15,27 @@ namespace ValheimArmory.patches
     // materials left on a shader that cannot run is moved to a loaded shader of the same name that can.
     public static class UnsupportedShaders
     {
-        // Every material on this mod's prefabs, collected once after Jotunn first resolved them. Runtime made copies
-        // (DualSwords) are instantiated from these prefabs and share their materials.
-        private static List<Material> materials;
+        // Every prefab this mod makes: those in its asset bundle and the runtime made copies of them (DualWeapons).
+        private static List<GameObject> prefabs;
         // Shader names already reported as having no working copy, so each is logged once.
         private static readonly HashSet<string> reportedMissing = new HashSet<string>();
+        // Unity's stand in for a material with no usable shader. Jotunn puts a material with it in each empty material
+        // slot, such as the first slot of the particle effects here that only draw trails. That slot is never drawn and
+        // the shader never runs anywhere, so there is nothing to switch or report.
+        private const string ErrorShader = "Hidden/InternalErrorShader";
 
         // Runs after Jotunn registers items and resolves their mocks, in the main menu and in a world.
         internal static void Fix()
         {
             if (GUIManager.IsHeadless()) { return; }
-            if (materials == null) { materials = CollectMaterials(); }
+            if (prefabs == null) { prefabs = CollectPrefabs(); }
 
             Dictionary<string, Shader> working = null;
             Dictionary<string, int> moved = new Dictionary<string, int>();
-            foreach (Material material in materials) {
+            foreach (Material material in CurrentMaterials()) {
                 if (material == null || material.shader == null || material.shader.isSupported) { continue; }
                 string name = material.shader.name;
+                if (name == ErrorShader) { continue; }
                 // Only built when something needs it, which is never on a normal install.
                 if (working == null) { working = WorkingShadersByName(); }
                 if (working.TryGetValue(name, out Shader shader) == false) {
@@ -49,18 +53,33 @@ namespace ValheimArmory.patches
             }
         }
 
-        private static List<Material> CollectMaterials()
+        private static List<GameObject> CollectPrefabs()
+        {
+            List<GameObject> found = new List<GameObject>(JotunBatchLoader.Assets.LoadAllAssets<GameObject>());
+            foreach (ItemDefinition itemdef in JotunBatchLoader.resourceDefinitions) {
+                if (itemdef.GeneratedPrefab != null) { found.Add(itemdef.GeneratedPrefab); }
+            }
+            return found;
+        }
+
+        // Read again on every pass. When Jotunn resolves a prefab's mocks it reads each renderer's material property,
+        // which swaps the material for a copy, and gives the copy the resolved shader. Items are resolved in the main
+        // menu, but projectiles and their hit effects only once a world loads, so materials kept from an earlier pass
+        // would miss their copies.
+        private static HashSet<Material> CurrentMaterials()
         {
             HashSet<Material> found = new HashSet<Material>();
-            foreach (GameObject prefab in JotunBatchLoader.Assets.LoadAllAssets<GameObject>()) {
-                // ParticleSystemRenderer lists its trail material here too.
+            foreach (GameObject prefab in prefabs) {
+                if (prefab == null) { continue; }
+                // ParticleSystemRenderer lists its trail material here too. Only the shared materials are read, reading
+                // material or materials would make yet more copies.
                 foreach (Renderer renderer in prefab.GetComponentsInChildren<Renderer>(true)) {
                     foreach (Material material in renderer.sharedMaterials) {
                         if (material != null) { found.Add(material); }
                     }
                 }
             }
-            return new List<Material>(found);
+            return found;
         }
 
         private static Dictionary<string, Shader> WorkingShadersByName()

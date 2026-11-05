@@ -12,11 +12,6 @@ namespace ValheimArmory.common
 
     internal static class WeaponModifier
     {
-        static GameObject vfx_sledge_hit;
-        static GameObject fx_camshake;
-        static GameObject sfx_sledge_hit;
-        static GameObject sfx_sledge_swing;
-        static GameObject fx_demolisher_hit;
         static GameObject vfx_clubhit;
         static GameObject sfx_clubhit;
         static GameObject sfx_swing_wosh;
@@ -27,12 +22,26 @@ namespace ValheimArmory.common
             public Attack secondary_attack { get; set; }
         }
 
+        // A vanilla sledge as it was before this mod first changed it. The conversions build on this rather than on an
+        // attack written out here, so what a sledge has of its own stays with it: the Thunderblood sledge's chain
+        // lightning and damage per missing health, the slam visuals of the iron and bloodgold sledges, the slam's stagger
+        // and adrenaline.
+        internal class VanillaSledgeData
+        {
+            public Attack attack { get; set; }
+            public Attack secondary_attack { get; set; }
+            public EffectList start_effect { get; set; }
+            public EffectList trigger_effect { get; set; }
+            public EffectList hit_effect { get; set; }
+            public EffectList hit_terrain_effect { get; set; }
+        }
+
         static Dictionary<String, WeaponAttackData> OriginalWeaponAttackCache = new Dictionary<String, WeaponAttackData>();
+        static Dictionary<String, VanillaSledgeData> VanillaSledgeCache = new Dictionary<String, VanillaSledgeData>();
 
         // The bloodgold sledge and the two enchanted variants crafted from it. One weapon line: same slam,
         // same stamina, so they convert together and share a single primary attack stamina config.
         private static readonly string[] GoldSledges = { "SledgeGold", "SledgeGold_BloodLightning", "SledgeGold_FrostFire" };
-        private const float GoldSledgeSlamStamina = 28f;
 
         // This mod's sledges, the ones ModHammersHavePrimaryAttack switches between warhammer and sledge.
         private static readonly string[] ModSledges = {
@@ -66,18 +75,40 @@ namespace ValheimArmory.common
             return OriginalWeaponAttackCache[weapon_name];
         }
 
+        // Taken the first time a sledge is converted, before this mod has changed it, and kept for every later conversion:
+        // each menu start and each config change convert again. Null when the game has no such prefab.
+        private static VanillaSledgeData VanillaDataFor(string weapon_prefab)
+        {
+            if (VanillaSledgeCache.TryGetValue(weapon_prefab, out VanillaSledgeData data)) { return data; }
+
+            ItemDrop prefab = PrefabManager.Instance.GetPrefab(weapon_prefab)?.GetComponent<ItemDrop>();
+            if (prefab == null)
+            {
+                Logger.LogWarning($"Could not find {weapon_prefab}, it keeps its own attacks.");
+                return null;
+            }
+
+            ItemDrop.ItemData.SharedData shared = prefab.m_itemData.m_shared;
+            data = new VanillaSledgeData()
+            {
+                attack = shared.m_attack.Clone(),
+                secondary_attack = shared.m_secondaryAttack.Clone(),
+                start_effect = shared.m_startEffect,
+                trigger_effect = shared.m_triggerEffect,
+                hit_effect = shared.m_hitEffect,
+                hit_terrain_effect = shared.m_hitTerrainEffect,
+            };
+            VanillaSledgeCache.Add(weapon_prefab, data);
+            return data;
+        }
+
         public static void SetupEffects()
         {
-            vfx_sledge_hit = PrefabManager.Instance.GetPrefab("vfx_sledge_hit");
-            fx_camshake = PrefabManager.Instance.GetPrefab("fx_swing_camshake");
-            sfx_sledge_hit = PrefabManager.Instance.GetPrefab("sfx_sledge_hit");
-            sfx_sledge_swing = PrefabManager.Instance.GetPrefab("sfx_sledge_swing");
-            fx_demolisher_hit = PrefabManager.Instance.GetPrefab("fx_sledge_demolisher_hit");
             vfx_clubhit = PrefabManager.Instance.GetPrefab("vfx_clubhit");
             sfx_clubhit = PrefabManager.Instance.GetPrefab("sfx_club_hit");
             sfx_swing_wosh = PrefabManager.Instance.GetPrefab("sfx_battleaxe_swing_wosh");
 
-            Logger.LogDebug($"Set Effect Prefabs: vfx_sledge_hit:{vfx_sledge_hit} fx_camshake:{fx_camshake} sfx_sledge_hit:{sfx_sledge_hit} sfx_sledge_swing:{sfx_sledge_swing} fx_demolisher_hit:{fx_demolisher_hit} vfx_clubhit:{vfx_clubhit} sfx_clubhit:{sfx_clubhit} sfx_swing_wosh: {sfx_swing_wosh}");
+            Logger.LogDebug($"Set Effect Prefabs: vfx_clubhit:{vfx_clubhit} sfx_clubhit:{sfx_clubhit} sfx_swing_wosh: {sfx_swing_wosh}");
         }
 
         public static Attack SetWarhammerPrimaryAttack(float stamina_cost = 22f)
@@ -114,55 +145,38 @@ namespace ValheimArmory.common
             return primary_attack;
         }
 
-        // stagger_multiplier defaults to the vanilla slam value shared by every sledge except the
-        // stagbreaker, which staggers for 1.
-        public static Attack SetSledgeSmash(float stamina_cost = 14f, float stagger_multiplier = 2f)
+        // The swing is this mod's, so it takes over what the sledge's own attack does on a hit.
+        private static void CopyOnHit(Attack from, Attack to)
         {
-            Attack sledge_attack = new Attack();
-            sledge_attack.m_attackChainLevels = 0;
-            sledge_attack.m_attackRandomAnimations = 0;
-            sledge_attack.m_hitTerrain = true;
-            sledge_attack.m_speedFactor = 0.3f;
-            sledge_attack.m_speedFactorRotation = 0.1f;
-            sledge_attack.m_attackStartNoise = 10f;
-            sledge_attack.m_attackHitNoise = 60f;
-            sledge_attack.m_forceMultiplier = 1f;
-            sledge_attack.m_damageMultiplier = 1f;
-            sledge_attack.m_attackAnimation = "swing_sledge";
-            sledge_attack.m_attackType = Attack.AttackType.Area;
-            sledge_attack.m_attackRange = 2f;
-            sledge_attack.m_attackHeight = 0f;
-            sledge_attack.m_skillHitType = DestructibleType.Character;
-            sledge_attack.m_attackAngle = 90f;
-            sledge_attack.m_attackRayWidth = 4f;
-            sledge_attack.m_multiHit = true;
-            sledge_attack.m_raiseSkillAmount = 1f;
-            sledge_attack.m_lastChainDamageMultiplier = 2f;
-            sledge_attack.m_hitPointtype = Attack.HitPointType.Closest;
-            sledge_attack.m_lowerDamagePerHit = true;
-            sledge_attack.m_resetChainIfHit = DestructibleType.None;
+            to.m_damageMultiplierPerMissingHP = from.m_damageMultiplierPerMissingHP;
+            to.m_damageMultiplierByTotalHealthMissing = from.m_damageMultiplierByTotalHealthMissing;
+            to.m_staminaReturnPerMissingHP = from.m_staminaReturnPerMissingHP;
+            to.m_attackHealthReturnHit = from.m_attackHealthReturnHit;
+            to.m_attackEitrAdd = from.m_attackEitrAdd;
+            to.m_spawnOnHit = from.m_spawnOnHit;
+            to.m_spawnOnHitChance = from.m_spawnOnHitChance;
+        }
 
-            // Things specific to each weapon
-            sledge_attack.m_attackStamina = stamina_cost;
-            sledge_attack.m_staggerMultiplier = stagger_multiplier;
-            sledge_attack.m_lastChainDamageMultiplier = 2f;
-
+        // The sledge's own attack, as its secondary. A sledge plays its effects from its shared data, which every attack
+        // of the weapon would play, so the slam carries them itself.
+        private static Attack SetSledgeSmash(VanillaSledgeData vanilla)
+        {
+            Attack sledge_attack = vanilla.attack.Clone();
+            sledge_attack.m_startEffect = vanilla.start_effect;
+            sledge_attack.m_triggerEffect = vanilla.trigger_effect;
+            sledge_attack.m_hitEffect = vanilla.hit_effect;
+            sledge_attack.m_hitTerrainEffect = vanilla.hit_terrain_effect;
             return sledge_attack;
         }
 
-        public static EffectList SledgeTriggerEffects(bool demolisher = false)
+        private static void RestoreVanillaSledge(ItemDrop.ItemData.SharedData shared, VanillaSledgeData vanilla)
         {
-            EffectData[] sledge_trigger_effects = { new EffectData() { m_prefab = fx_camshake, m_enabled = true, m_variant = -1 }, new EffectData() { m_prefab = vfx_sledge_hit, m_enabled = true, m_variant = -1 }, new EffectData() { m_prefab = sfx_sledge_hit, m_enabled = true, m_variant = -1 } };
-            EffectData[] demolisher_trigger_effects = { new EffectData() { m_prefab = fx_camshake, m_enabled = true, m_variant = -1 }, new EffectData() { m_prefab = fx_demolisher_hit, m_enabled = true, m_variant = -1 } };
-
-            if (demolisher) { sledge_trigger_effects = demolisher_trigger_effects; }
-            return new EffectList { m_effectPrefabs = sledge_trigger_effects };
-        }
-
-        public static EffectList SledgeStartEffects()
-        {
-            EffectData[] sledge_start_efffect = { new EffectData() { m_prefab = sfx_sledge_swing, m_enabled = true, m_variant = -1 } };
-            return new EffectList { m_effectPrefabs = sledge_start_efffect }; ;
+            shared.m_attack = vanilla.attack.Clone();
+            shared.m_secondaryAttack = vanilla.secondary_attack.Clone();
+            shared.m_startEffect = vanilla.start_effect;
+            shared.m_triggerEffect = vanilla.trigger_effect;
+            shared.m_hitEffect = vanilla.hit_effect;
+            shared.m_hitTerrainEffect = vanilla.hit_terrain_effect;
         }
 
         public static EffectList SledgeComboSwingSFX()
@@ -177,11 +191,6 @@ namespace ValheimArmory.common
             return new EffectList { m_effectPrefabs = club_hit_effects };
         }
 
-        public static void ClearSecondaryAttack(ItemDrop.ItemData id)
-        {
-            id.m_shared.m_secondaryAttack = new Attack { };
-        }
-
         public static void ClearSharedVFX(ItemDrop.ItemData id)
         {
             id.m_shared.m_startEffect = new EffectList();
@@ -190,15 +199,14 @@ namespace ValheimArmory.common
             id.m_shared.m_hitTerrainEffect = new EffectList();
         }
 
-        public static void SledgeToWarhammer(string weapon_prefab, float primary_stamina, float secondary_stamina, float stagger_multiplier = 2f)
+        public static void SledgeToWarhammer(string weapon_prefab, float primary_stamina)
         {
-            bool demolisher = false;
-            if (weapon_prefab == "SledgeDemolisher") { demolisher = true; }
+            VanillaSledgeData vanilla = VanillaDataFor(weapon_prefab);
+            if (vanilla == null) { return; }
             Attack primary = SetWarhammerPrimaryAttack(primary_stamina);
-            Attack secondary = SetSledgeSmash(secondary_stamina, stagger_multiplier);
+            CopyOnHit(vanilla.attack, primary);
+            Attack secondary = SetSledgeSmash(vanilla);
             EffectList warhammer_primary_effects = SetWarhammerAttackVFX();
-            EffectList sledge_trigger_effects = SledgeTriggerEffects(demolisher);
-            EffectList sledge_start_effects = SledgeStartEffects();
             EffectList sledge_swing_effects = SledgeComboSwingSFX();
             // This ensures modifications of clones also
             foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
@@ -207,8 +215,6 @@ namespace ValheimArmory.common
                 id.m_itemData.m_shared.m_secondaryAttack = secondary;
                 id.m_itemData.m_shared.m_attack.m_hitEffect = warhammer_primary_effects;
                 id.m_itemData.m_shared.m_attack.m_trailStartEffect = sledge_swing_effects;
-                id.m_itemData.m_shared.m_secondaryAttack.m_triggerEffect = sledge_trigger_effects;
-                id.m_itemData.m_shared.m_secondaryAttack.m_startEffect = sledge_start_effects;
                 ClearSharedVFX(id.m_itemData);
             }
 
@@ -226,29 +232,19 @@ namespace ValheimArmory.common
                     user_item.m_shared.m_secondaryAttack = secondary;
                     user_item.m_shared.m_attack.m_hitEffect = warhammer_primary_effects;
                     user_item.m_shared.m_attack.m_trailStartEffect = sledge_swing_effects;
-                    user_item.m_shared.m_secondaryAttack.m_triggerEffect = sledge_trigger_effects;
-                    user_item.m_shared.m_secondaryAttack.m_startEffect = sledge_start_effects;
                     ClearSharedVFX(user_item);
                 }
             }
         }
 
-        public static void ToSledge(string weapon_prefab, float sledge_stamina, float stagger_multiplier = 2f)
+        public static void ToSledge(string weapon_prefab)
         {
-            bool demolisher = false;
-            if (weapon_prefab == "SledgeDemolisher") { demolisher = true; }
-            Attack sledgesmash = SetSledgeSmash(sledge_stamina, stagger_multiplier);
-            EffectList sledge_trigger_effects = SledgeTriggerEffects(demolisher);
-            EffectList sledge_start_effects = SledgeStartEffects();
+            VanillaSledgeData vanilla = VanillaDataFor(weapon_prefab);
+            if (vanilla == null) { return; }
             // This ensures modifications of clones also
             foreach (ItemDrop id in LiveItemDrops.Find(weapon_prefab))
             {
-                id.m_itemData.m_shared.m_attack = sledgesmash;
-                ClearSharedVFX(id.m_itemData);
-                ClearSecondaryAttack(id.m_itemData);
-                id.m_itemData.m_shared.m_triggerEffect = sledge_trigger_effects;
-                id.m_itemData.m_shared.m_startEffect = sledge_start_effects;
-                id.m_itemData.m_shared.m_attack.m_trailStartEffect = null;
+                RestoreVanillaSledge(id.m_itemData.m_shared, vanilla);
             }
 
             if (Player.m_localPlayer != null)
@@ -261,12 +257,7 @@ namespace ValheimArmory.common
                     if (user_item.m_dropPrefab.name != weapon_prefab) { continue; }
 
                     Logger.LogDebug($"{user_item.m_shared.m_name} found in the players backpack, updating.");
-                    user_item.m_shared.m_attack = sledgesmash;
-                    ClearSharedVFX(user_item);
-                    ClearSecondaryAttack(user_item);
-                    user_item.m_shared.m_triggerEffect = sledge_trigger_effects;
-                    user_item.m_shared.m_startEffect = sledge_start_effects;
-                    user_item.m_shared.m_attack.m_trailStartEffect = null;
+                    RestoreVanillaSledge(user_item.m_shared, vanilla);
                 }
             }
         }
@@ -323,24 +314,21 @@ namespace ValheimArmory.common
         {
             if (ValConfig.VanillaHammersHavePrimaryAttack.Value)
             {
-                SledgeToWarhammer("SledgeStagbreaker", ValConfig.StagbreakerPrimaryAttackStamina.Value, 12, stagger_multiplier: 1f);
-                SledgeToWarhammer("SledgeIron", ValConfig.IronSledgePrimaryAttackStamina.Value, 20);
-                SledgeToWarhammer("SledgeDemolisher", ValConfig.DemolisherPrimaryAttackStamina.Value, 28);
+                SledgeToWarhammer("SledgeStagbreaker", ValConfig.StagbreakerPrimaryAttackStamina.Value);
+                SledgeToWarhammer("SledgeIron", ValConfig.IronSledgePrimaryAttackStamina.Value);
+                SledgeToWarhammer("SledgeDemolisher", ValConfig.DemolisherPrimaryAttackStamina.Value);
                 foreach (string goldSledge in GoldSledges)
                 {
-                    SledgeToWarhammer(goldSledge, ValConfig.GoldSledgePrimaryAttackStamina.Value, GoldSledgeSlamStamina);
+                    SledgeToWarhammer(goldSledge, ValConfig.GoldSledgePrimaryAttackStamina.Value);
                 }
             }
         }
 
         public static void ModifyVanillaHammersToSledges()
         {
-            ToSledge("SledgeStagbreaker", 12, stagger_multiplier: 1f);
-            ToSledge("SledgeIron", 20);
-            ToSledge("SledgeDemolisher", 28);
-            foreach (string goldSledge in GoldSledges)
+            foreach (string sledge in VanillaSledges.Concat(GoldSledges))
             {
-                ToSledge(goldSledge, GoldSledgeSlamStamina);
+                ToSledge(sledge);
             }
         }
 
@@ -360,9 +348,33 @@ namespace ValheimArmory.common
             }
         }
 
+        // A mod sledge's stats are configured for its swing and its slam, and written to the primary and secondary attack.
+        // With the swing turned off the slam is the primary and the secondary is empty, so those writes would change the
+        // slam with the swing's values and lose the slam's own. The attacks go back in their own slots for the write. The
+        // layout is read from the item, as a drop made since the swap holds its own copy of it, and that drop's attacks
+        // become the shared ones, as they do when the config is toggled.
+        internal static void WriteModSledgeStat(string weapon_prefab, ItemDrop.ItemData item, Action write)
+        {
+            ItemDrop.ItemData.SharedData shared = item.m_shared;
+            if (ModSledges.Contains(weapon_prefab) == false || string.IsNullOrEmpty(shared.m_secondaryAttack.m_attackAnimation) == false)
+            {
+                write();
+                return;
+            }
+
+            WeaponAttackData attacks = CheckForWeaponData(weapon_prefab);
+            Attack empty_secondary = shared.m_secondaryAttack;
+            shared.m_attack = attacks.primary_attack;
+            shared.m_secondaryAttack = attacks.secondary_attack;
+            write();
+            shared.m_attack = attacks.secondary_attack;
+            shared.m_secondaryAttack = empty_secondary;
+        }
+
+        // There is no Game at the main menu, where a config edit or leaving a server with other settings lands here.
         public static void OnConfigChangeModifyHammers(object sender, EventArgs e)
         {
-            if (Game.instance.IsShuttingDown()) { return; }
+            if (Game.instance != null && Game.instance.IsShuttingDown()) { return; }
             if (ValConfig.VanillaHammersHavePrimaryAttack.Value)
             {
                 ModifyVanillaHammersToWarhammers();
@@ -375,7 +387,14 @@ namespace ValheimArmory.common
 
         public static void OnConfigChangeModifyModHammers(object sender, EventArgs e)
         {
-            if (Game.instance.IsShuttingDown()) { return; }
+            if (Game.instance != null && Game.instance.IsShuttingDown()) { return; }
+            ApplyModHammerConfig();
+        }
+
+        // Mod sledges have the swing on their prefabs, so a config that turns it off has to be applied at startup too:
+        // no change event fires for a value that was already off when the game started, or that a server also has off.
+        public static void ApplyModHammerConfig()
+        {
             if (ValConfig.ModHammersHavePrimaryAttack.Value)
             {
                 ModifyModHammersToWarhammers();

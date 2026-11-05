@@ -151,7 +151,7 @@ namespace ValheimArmory.Common {
             get; set;
         }
 
-        // Set for an item made at runtime from another one (eg: a dual sword, see DualSwords) instead of loaded from the
+        // Set for an item made at runtime from another one (eg: a dual sword, see DualWeapons) instead of loaded from the
         // asset bundle: its prefab, and its icon. A null icon keeps the one on the prefab.
         public GameObject GeneratedPrefab {
             get; set;

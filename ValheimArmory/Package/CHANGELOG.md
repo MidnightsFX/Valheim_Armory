@@ -1,3 +1,14 @@
+**1.38.0**
+ ---
+ ```
+- Adds a dual wielded version of every vanilla and VA one handed mace
+- Fixes projectiles, their impacts and dual sword glows still turning pink when installed with Chebs Necromancy, and drops a harmless pink shader warning from the log.
+- Dual swords no longer lose their attack combo when they hit a tree.
+- Thrown spears now line up with vanilla spears instead of flying off to the right and too far ahead.
+- Server synced configuration modifying vanilla weapons now reverts properly when disconnected from the server
+- Turning the sledge primary attack settings on or off at the main menu works again
+ ```
+
 **1.37.0**
  ---
  ```
