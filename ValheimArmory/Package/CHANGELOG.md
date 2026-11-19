@@ -1,3 +1,9 @@
+**1.38.1**
+ ---
+ ```
+- Fire bolts, surtling bolts and surtling fire arrows now spread fire like vanilla fire arrows when the fire spread world modifier is on.
+ ```
+
 **1.38.0**
  ---
  ```
